@@ -1,0 +1,92 @@
+{
+  "criminal": {
+    "label": "Criminal Law",
+    "description": "Criminal prosecutions, indictments, sentences, and related constitutional rights",
+    "keywords": ["criminal", "indictment", "defendant", "sentence", "felony", "misdemeanor", "RSA 625", "RSA 626", "RSA 627", "RSA 628", "RSA 629", "RSA 630", "RSA 631", "RSA 632", "RSA 633", "RSA 634", "RSA 635", "RSA 636", "RSA 637", "RSA 638", "RSA 639", "RSA 640", "RSA 641", "RSA 642", "RSA 643", "RSA 644", "RSA 645", "RSA 651"]
+  },
+  "competency": {
+    "label": "Mental Competency",
+    "description": "Competency to stand trial, mental health proceedings",
+    "keywords": ["competency", "competent to stand trial", "incompetent", "RSA 135:17", "RSA 135-C", "mental health", "psychiatric"]
+  },
+  "insurance": {
+    "label": "Insurance",
+    "description": "Insurance coverage disputes, insurer obligations, liquidation proceedings",
+    "keywords": ["insurance", "insurer", "insured", "coverage", "policy", "liquidation", "RSA 402", "RSA 403", "RSA 404", "RSA 405", "RSA 406"]
+  },
+  "medicaid": {
+    "label": "Medicaid / Healthcare",
+    "description": "Medicaid reimbursement, managed care, DHHS administrative proceedings",
+    "keywords": ["medicaid", "MCO", "managed care", "RSA 126-A", "DHHS", "department of health", "reimbursement", "treatment center"]
+  },
+  "administrative_law": {
+    "label": "Administrative Law",
+    "description": "Agency decisions, certiorari, administrative appeals",
+    "keywords": ["administrative", "agency", "certiorari", "jurisdiction", "RSA 541", "RSA 541-A", "board", "commission", "petition for original jurisdiction"]
+  },
+  "family_law": {
+    "label": "Family Law",
+    "description": "Divorce, child custody, parenting plans, alimony",
+    "keywords": ["divorce", "parenting", "custody", "RSA 458", "RSA 461-A", "alimony", "marital", "guardian ad litem", "termination of parental rights"]
+  },
+  "civil_procedure": {
+    "label": "Civil Procedure",
+    "description": "Motions to dismiss, summary judgment, procedural rules",
+    "keywords": ["summary judgment", "motion to dismiss", "RSA 508", "pleading", "discovery", "res judicata", "collateral estoppel", "subject matter jurisdiction"]
+  },
+  "statutory_interpretation": {
+    "label": "Statutory Interpretation",
+    "description": "Plain meaning analysis, legislative intent, statutory construction",
+    "keywords": ["plain meaning", "statutory interpretation", "construe", "legislative intent", "ambiguous", "unambiguous", "plain language", "text"]
+  },
+  "constitutional": {
+    "label": "Constitutional Law",
+    "description": "Federal and NH constitutional issues, due process, equal protection",
+    "keywords": ["constitutional", "First Amendment", "due process", "equal protection", "Part I", "Part II", "NH Const", "Fourth Amendment", "Fifth Amendment", "Sixth Amendment", "Fourteenth Amendment"]
+  },
+  "property": {
+    "label": "Property Law",
+    "description": "Real property, easements, zoning, land use",
+    "keywords": ["property", "easement", "zoning", "RSA 674", "RSA 676", "land use", "title", "deed", "boundary"]
+  },
+  "employment": {
+    "label": "Employment / Workers Comp",
+    "description": "Employment law, workers compensation, labor disputes",
+    "keywords": ["employment", "workers compensation", "RSA 281", "RSA 275", "discrimination", "wrongful termination", "wage", "labor"]
+  },
+  "contract": {
+    "label": "Contract Law",
+    "description": "Contract formation, breach, damages, interpretation",
+    "keywords": ["contract", "breach", "damages", "agreement", "warranty", "specific performance", "rescission"]
+  },
+  "tort": {
+    "label": "Tort Law",
+    "description": "Negligence, personal injury, products liability",
+    "keywords": ["negligence", "liability", "personal injury", "tort", "duty of care", "RSA 507", "products liability", "medical malpractice"]
+  },
+  "evidence": {
+    "label": "Evidence",
+    "description": "Admissibility, hearsay, expert testimony, privilege",
+    "keywords": ["hearsay", "Rule 403", "admissibility", "expert", "privilege", "authentication", "lay opinion", "Daubert"]
+  },
+  "DWI": {
+    "label": "DWI / Traffic",
+    "description": "Driving while intoxicated, implied consent, traffic offenses",
+    "keywords": ["DWI", "DUI", "implied consent", "RSA 265-A", "blood alcohol", "breathalyzer", "traffic"]
+  },
+  "domestic_violence": {
+    "label": "Domestic Violence",
+    "description": "Protective orders, stalking, domestic abuse",
+    "keywords": ["domestic violence", "protective order", "RSA 173-B", "stalking", "abuse"]
+  },
+  "tax": {
+    "label": "Tax Law",
+    "description": "Tax assessments, exemptions, municipal taxation",
+    "keywords": ["tax", "RSA 76", "RSA 77", "RSA 78", "assessment", "exemption", "abatement"]
+  },
+  "environmental": {
+    "label": "Environmental",
+    "description": "Environmental regulation, DES, wetlands, air quality",
+    "keywords": ["environmental", "DES", "wetland", "pollution", "RSA 485", "RSA 482-A", "wetlands"]
+  }
+}

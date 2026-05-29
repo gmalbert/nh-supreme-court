@@ -1,0 +1,45 @@
+name: Weekend UI Validation
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Weekend off-hours, after the Friday 9 PM ET local refresh window.
+    - cron: "0 14 * * 6"  # Saturday 14:00 UTC
+    - cron: "0 14 * * 0"  # Sunday 14:00 UTC
+
+permissions:
+  contents: read
+
+jobs:
+  ui-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright browser
+        run: python -m playwright install --with-deps chromium
+
+      - name: Run UI validation
+        run: python validate_ui.py
+
+      - name: Upload UI validation results
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-validation-${{ github.run_id }}
+          path: |
+            data/raw/playwright_results.json
+            logs/
+          if-no-files-found: warn

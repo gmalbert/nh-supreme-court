@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.whl
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Data — raw PDFs (large; not for version control)
+data/raw/pdfs/
+data/processed/text/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Secrets / keys
+.env
+*.pem
+*.key
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage
+
+old/
+orders/
+download_log.txt
+
+# Local collection helpers and notes
+scripts/
+update_pipeline.ps1

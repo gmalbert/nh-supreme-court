@@ -1,0 +1,109 @@
+name: Post-Refresh Maintenance
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Weekend-only off-hours runs (UTC).
+    # Intended to follow local Friday 9 PM ET refreshes.
+    - cron: "30 8 * * 6"  # Saturday 08:30 UTC
+    - cron: "30 8 * * 0"  # Sunday 08:30 UTC
+
+permissions:
+  contents: read
+
+jobs:
+  rebuild-and-validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Rebuild processed datasets
+        run: python scripts/build_dataset.py
+
+      - name: Run data sanity checks and create summary
+        shell: bash
+        run: |
+          python - << 'PY'
+          import json
+          import os
+          from pathlib import Path
+          import pandas as pd
+
+          processed = Path("data/processed")
+          opinions_path = processed / "opinions.csv"
+          orders_path = processed / "case_orders.csv"
+          jx3_path = processed / "3jx_orders.csv"
+
+          report = {
+              "opinions_rows": 0,
+              "orders_rows": 0,
+              "jx3_rows": 0,
+              "opinion_case_type_counts": {},
+              "order_case_type_counts": {},
+          }
+
+          if opinions_path.exists():
+              opinions = pd.read_csv(opinions_path, low_memory=False)
+              report["opinions_rows"] = int(len(opinions))
+              if "case_type" in opinions.columns:
+                  counts = opinions["case_type"].fillna("NaN").value_counts().to_dict()
+                  report["opinion_case_type_counts"] = {str(k): int(v) for k, v in counts.items()}
+
+          if orders_path.exists():
+              orders = pd.read_csv(orders_path, low_memory=False)
+              report["orders_rows"] = int(len(orders))
+              if "case_type" in orders.columns:
+                  counts = orders["case_type"].fillna("NaN").value_counts().to_dict()
+                  report["order_case_type_counts"] = {str(k): int(v) for k, v in counts.items()}
+
+          if jx3_path.exists():
+              jx3 = pd.read_csv(jx3_path, low_memory=False)
+              report["jx3_rows"] = int(len(jx3))
+
+          Path("logs").mkdir(parents=True, exist_ok=True)
+          out_path = Path("logs") / "post_refresh_report.json"
+          out_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
+
+          summary = Path(os.environ["GITHUB_STEP_SUMMARY"])
+          with summary.open("a", encoding="utf-8") as s:
+              s.write("## Post-Refresh Maintenance\n")
+              s.write(f"- Opinions rows: {report['opinions_rows']}\n")
+              s.write(f"- Case orders rows: {report['orders_rows']}\n")
+              s.write(f"- 3JX rows: {report['jx3_rows']}\n")
+              s.write("\n### Opinion Case Type Counts\n")
+              if report["opinion_case_type_counts"]:
+                  for k, v in report["opinion_case_type_counts"].items():
+                      s.write(f"- {k}: {v}\n")
+              else:
+                  s.write("- (none)\n")
+              s.write("\n### Order Case Type Counts\n")
+              if report["order_case_type_counts"]:
+                  for k, v in report["order_case_type_counts"].items():
+                      s.write(f"- {k}: {v}\n")
+              else:
+                  s.write("- (none)\n")
+          PY
+
+      - name: Upload maintenance artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: post-refresh-maintenance-${{ github.run_id }}
+          path: |
+            logs/post_refresh_report.json
+            data/processed/opinions.csv
+            data/processed/case_orders.csv
+            data/processed/3jx_orders.csv
+          if-no-files-found: warn
