@@ -64,5 +64,6 @@ orders/
 download_log.txt
 
 # Local collection helpers and notes
-scripts/
+scripts/*
+!scripts/build_dataset.py
 update_pipeline.ps1
