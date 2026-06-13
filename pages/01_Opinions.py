@@ -90,6 +90,14 @@ if search_query:
     )
     filtered = filtered[mask]
 
+if "date_issued" in filtered.columns:
+    filtered = (
+        filtered.assign(_date_issued_sort=pd.to_datetime(filtered["date_issued"], errors="coerce"))
+        .sort_values("_date_issued_sort", ascending=False, na_position="last")
+        .drop(columns=["_date_issued_sort"])
+        .reset_index(drop=True)
+    )
+
 st.caption(f"Showing {len(filtered)} of {len(df)} opinions")
 
 # ── Table ──────────────────────────────────────────────────────────────────────

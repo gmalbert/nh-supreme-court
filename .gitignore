@@ -58,6 +58,7 @@ logs/
 .pytest_cache/
 htmlcov/
 .coverage
+data/raw/playwright_results.json
 
 old/
 orders/
@@ -67,3 +68,5 @@ download_log.txt
 scripts/*
 !scripts/build_dataset.py
 update_pipeline.ps1
+
+*.code-workspace
