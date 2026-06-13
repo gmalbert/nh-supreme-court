@@ -17,6 +17,7 @@ sys.path.insert(0, str(ROOT))
 
 from utils.constants import APP_NAME, OUTCOME_COLORS, OUTCOME_LABELS, JUSTICE_DISPLAY
 from utils.data_loader import load_opinions, load_opinion_text, data_last_updated
+from footer import add_gavel_glimpse_footer
 
 
 def _clean_summary_text(value: str) -> str:
@@ -175,4 +176,6 @@ st.sidebar.download_button(
     file_name="nh_sc_opinions_filtered.csv",
     mime="text/csv",
 )
+
+add_gavel_glimpse_footer()
 

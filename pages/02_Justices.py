@@ -22,6 +22,7 @@ from utils.charts import (
     authorship_bar,
     opinions_per_year,
 )
+from footer import add_gavel_glimpse_footer
 
 
 def _title_columns(frame: pd.DataFrame) -> pd.DataFrame:
@@ -322,4 +323,5 @@ with tab4:
         fig_pc.update_layout(plot_bgcolor="white")
         st.plotly_chart(fig_pc, width="stretch")
 
+add_gavel_glimpse_footer()
 

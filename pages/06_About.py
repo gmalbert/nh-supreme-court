@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT))
 
 from utils.constants import APP_NAME
 from utils.data_loader import load_justices, load_opinions, data_last_updated
+from footer import add_gavel_glimpse_footer
 
 logo_path = ROOT / "data_files" / "logo.png"
 st.title(f"About {APP_NAME}")
@@ -106,4 +107,6 @@ st.markdown("""
 
 *Granite State Appeals is not affiliated with the New Hampshire Judicial Branch or any government entity.*
 """)
+
+add_gavel_glimpse_footer()
 

@@ -16,6 +16,7 @@ sys.path.insert(0, str(ROOT))
 
 from utils.constants import APP_NAME
 from utils.data_loader import load_case_orders, data_last_updated
+from footer import add_gavel_glimpse_footer
 
 logo_path = ROOT / "data_files" / "logo.png"
 st.title("Case Orders")
@@ -160,4 +161,6 @@ st.sidebar.download_button(
     file_name="nh_sc_case_orders_filtered.csv",
     mime="text/csv",
 )
+
+add_gavel_glimpse_footer()
 

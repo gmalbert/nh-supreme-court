@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT))
 
 from utils.constants import OUTCOME_COLORS, OUTCOME_LABELS
 from utils.data_loader import load_opinions, data_last_updated
+from footer import add_gavel_glimpse_footer
 
 # ── Page header ────────────────────────────────────────────────────────────────
 st.title("Trial Courts")
@@ -418,3 +419,5 @@ st.sidebar.download_button(
     file_name="nh_sc_trial_courts_filtered.csv",
     mime="text/csv",
 )
+
+add_gavel_glimpse_footer()

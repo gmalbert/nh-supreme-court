@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT))
 
 from utils.constants import APP_NAME, OUTCOME_COLORS, OUTCOME_LABELS
 from utils.data_loader import load_opinions, load_topic_taxonomy, data_last_updated
+from footer import add_gavel_glimpse_footer
 
 
 def parse_topic_list(cell) -> list[str]:
@@ -87,9 +88,12 @@ with tab1:
         )
 
         available_topics = t_counts["topic_key"].tolist()
+        requested_topic = st.query_params.get("topic", "")
+        default_topics = [requested_topic] if requested_topic in available_topics else []
         selected_topics = st.multiselect(
             "Select Topics to Explore",
             options=available_topics,
+            default=default_topics,
             format_func=lambda k: taxonomy.get(k, {}).get("label", k.replace("_", " ").title()),
         )
 
@@ -370,4 +374,6 @@ with tab3:
     render_group(c1, "Criminal", criminal_df, "#8B0000")
     render_group(c2, "Civil", civil_df, "#003057")
     render_group(c3, "Family/Domestic", family_df, "#2E7D32")
+
+add_gavel_glimpse_footer()
 

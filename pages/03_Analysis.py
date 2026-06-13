@@ -27,6 +27,7 @@ from utils.charts import (
     avg_word_count_by_justice,
     avg_word_count_by_year_per_justice,
 )
+from footer import add_gavel_glimpse_footer
 
 
 def _format_outcome(value):
@@ -350,3 +351,4 @@ with tab4:
             },
         )
 
+add_gavel_glimpse_footer()
