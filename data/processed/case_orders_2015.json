@@ -92,7 +92,7 @@
     "word_count": 455,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:40.610756",
+    "parse_timestamp": "2026-06-13T20:42:30.403635",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -196,7 +196,7 @@
     "word_count": 775,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:40.927897",
+    "parse_timestamp": "2026-06-13T20:42:30.736624",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -217,7 +217,7 @@
     "lower_court_judge": "Smukler",
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -242,14 +242,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -272,16 +272,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -300,10 +300,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 1367,
+    "word_count": 1319,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:41.499490",
+    "parse_timestamp": "2026-06-13T20:42:31.161280",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -402,7 +402,7 @@
     "word_count": 215,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:41.692778",
+    "parse_timestamp": "2026-06-13T20:42:31.258963",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -504,7 +504,7 @@
     "word_count": 461,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:41.972114",
+    "parse_timestamp": "2026-06-13T20:42:31.426011",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -525,7 +525,7 @@
     "lower_court_judge": "Smukler",
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -550,8 +550,8 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
@@ -580,16 +580,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -606,10 +606,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2142,
+    "word_count": 1226,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:43.197446",
+    "parse_timestamp": "2026-06-13T20:42:31.895246",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -628,9 +628,9 @@
     "lower_court": "Superior Court (Delker, J.)",
     "lower_court_type": "superior_court",
     "lower_court_judge": "Delker",
-    "case_type": "criminal",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "reversed",
+    "outcome": "remanded",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -655,14 +655,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -685,16 +685,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -712,10 +712,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2674,
+    "word_count": 1361,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:44.741821",
+    "parse_timestamp": "2026-06-13T20:42:32.335301",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -736,7 +736,7 @@
     "lower_court_judge": null,
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": "dismissed",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -761,14 +761,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -791,16 +791,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -812,17 +812,16 @@
       "RSA 642:2",
       "RSA 265:4",
       "RSA 625:11, V",
-      "RSA 631:3, II",
-      "RSA 627:3"
+      "RSA 631:3, II"
     ],
     "rsa_primary": "RSA 631:3",
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2301,
+    "word_count": 1494,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:46.264974",
+    "parse_timestamp": "2026-06-13T20:42:32.732019",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -843,7 +842,7 @@
     "lower_court_judge": "Lewis",
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -868,8 +867,8 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
@@ -898,16 +897,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -922,10 +921,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1765,
+    "word_count": 1367,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:46.944785",
+    "parse_timestamp": "2026-06-13T20:42:33.327669",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1031,7 +1030,7 @@
     "word_count": 776,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:47.387930",
+    "parse_timestamp": "2026-06-13T20:42:33.628572",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1052,7 +1051,7 @@
     "lower_court_judge": "Nicolosi",
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -1077,14 +1076,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -1107,16 +1106,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -1130,14 +1129,12 @@
     ],
     "rsa_primary": "RSA 630:1-b",
     "involves_statutory_interpretation": false,
-    "standard_of_review": [
-      "plain_error"
-    ],
+    "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 3000,
+    "word_count": 1399,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:48.535224",
+    "parse_timestamp": "2026-06-13T20:42:34.021936",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1158,7 +1155,7 @@
     "lower_court_judge": null,
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -1183,14 +1180,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -1213,16 +1210,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -1241,10 +1238,10 @@
       "plain_error"
     ],
     "summary_paragraph": "",
-    "word_count": 1496,
+    "word_count": 1455,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:49.614524",
+    "parse_timestamp": "2026-06-13T20:42:34.690573",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1265,7 +1262,7 @@
     "lower_court_judge": "Garfunkel",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "reversed",
+    "outcome": "remanded",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -1290,14 +1287,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -1324,30 +1321,27 @@
         "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "insurance",
-      "civil_procedure",
-      "property",
-      "contract",
-      "tort"
+      "civil_procedure"
     ],
     "rsa_citations": [],
     "rsa_primary": null,
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2225,
+    "word_count": 1354,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:51.247612",
+    "parse_timestamp": "2026-06-13T20:42:35.317116",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1452,7 +1446,7 @@
     "word_count": 867,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:51.691149",
+    "parse_timestamp": "2026-06-13T20:42:35.636914",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1473,7 +1467,7 @@
     "lower_court_judge": "Kissinger",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -1498,14 +1492,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -1532,12 +1526,12 @@
         "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -1549,10 +1543,7 @@
       "RSA 367:45",
       "RSA 229",
       "RSA 229:5",
-      "RSA 229:5, VII",
-      "RSA 265",
-      "RSA 265:36",
-      "RSA 265:39"
+      "RSA 229:5, VII"
     ],
     "rsa_primary": "RSA 229:1",
     "involves_statutory_interpretation": true,
@@ -1560,10 +1551,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2263,
+    "word_count": 1448,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:53.657622",
+    "parse_timestamp": "2026-06-13T20:42:36.070272",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1584,7 +1575,7 @@
     "lower_court_judge": null,
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -1609,14 +1600,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -1639,16 +1630,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -1665,10 +1656,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1795,
+    "word_count": 1319,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:54.784718",
+    "parse_timestamp": "2026-06-13T20:42:36.502897",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1769,7 +1760,7 @@
     "word_count": 634,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:55.147143",
+    "parse_timestamp": "2026-06-13T20:42:36.836330",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1788,9 +1779,9 @@
     "lower_court": "Superior Court (Delker, J.)",
     "lower_court_type": "superior_court",
     "lower_court_judge": "Delker",
-    "case_type": "criminal",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -1815,14 +1806,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -1845,16 +1836,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -1870,10 +1861,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2393,
+    "word_count": 1293,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:56.951602",
+    "parse_timestamp": "2026-06-13T20:42:37.175377",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1975,7 +1966,7 @@
     "word_count": 441,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:57.221491",
+    "parse_timestamp": "2026-06-13T20:42:37.316055",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1994,9 +1985,9 @@
     "lower_court": null,
     "lower_court_type": null,
     "lower_court_judge": null,
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -2021,14 +2012,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -2051,16 +2042,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -2079,10 +2070,10 @@
       "clear_error"
     ],
     "summary_paragraph": "",
-    "word_count": 1558,
+    "word_count": 1460,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:58.684297",
+    "parse_timestamp": "2026-06-13T20:42:37.820623",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2185,7 +2176,7 @@
     "word_count": 1089,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:59.192171",
+    "parse_timestamp": "2026-06-13T20:42:38.172435",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2286,7 +2277,7 @@
     "word_count": 314,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:59.368271",
+    "parse_timestamp": "2026-06-13T20:42:38.512565",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2392,7 +2383,7 @@
     "word_count": 423,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:18:59.928142",
+    "parse_timestamp": "2026-06-13T20:42:38.663605",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2413,7 +2404,7 @@
     "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": "reversed",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -2438,14 +2429,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -2468,16 +2459,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -2488,9 +2479,7 @@
       "tax"
     ],
     "rsa_citations": [
-      "RSA 507-B:2-b",
-      "RSA 507",
-      "RSA 231:92-a"
+      "RSA 507-B:2-b"
     ],
     "rsa_primary": "RSA 507-B:2-b",
     "involves_statutory_interpretation": false,
@@ -2498,10 +2487,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2003,
+    "word_count": 1419,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:01.088190",
+    "parse_timestamp": "2026-06-13T20:42:39.138493",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2602,7 +2591,7 @@
     "word_count": 384,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:01.245328",
+    "parse_timestamp": "2026-06-13T20:42:39.279462",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2707,7 +2696,7 @@
     "word_count": 717,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:01.659292",
+    "parse_timestamp": "2026-06-13T20:42:39.512954",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2812,7 +2801,7 @@
     "word_count": 447,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:01.991323",
+    "parse_timestamp": "2026-06-13T20:42:39.672743",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2911,7 +2900,7 @@
     "word_count": 212,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:02.168258",
+    "parse_timestamp": "2026-06-13T20:42:39.783655",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3014,7 +3003,7 @@
     "word_count": 718,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:02.946530",
+    "parse_timestamp": "2026-06-13T20:42:39.972672",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3118,7 +3107,7 @@
     "word_count": 1148,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:03.502242",
+    "parse_timestamp": "2026-06-13T20:42:40.444594",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3137,7 +3126,7 @@
     "lower_court": "Circuit Court (Cardello, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Cardello",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -3219,7 +3208,7 @@
     "word_count": 1088,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:03.892993",
+    "parse_timestamp": "2026-06-13T20:42:40.811090",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3316,7 +3305,7 @@
     "word_count": 531,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:04.139767",
+    "parse_timestamp": "2026-06-13T20:42:40.981551",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3421,7 +3410,7 @@
     "word_count": 319,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:04.306552",
+    "parse_timestamp": "2026-06-13T20:42:41.078707",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3521,7 +3510,7 @@
     "word_count": 622,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:04.576270",
+    "parse_timestamp": "2026-06-13T20:42:41.256605",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3542,7 +3531,7 @@
     "lower_court_judge": "Wageling",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "reversed",
+    "outcome": "dismissed",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -3567,14 +3556,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -3597,16 +3586,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -3619,17 +3608,16 @@
       "RSA 674:33, I",
       "RSA 677:15, I",
       "RSA 677:15",
-      "RSA 676",
-      "RSA 676:5"
+      "RSA 676"
     ],
     "rsa_primary": "RSA 676:5, III",
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1449,
+    "word_count": 1270,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:05.983877",
+    "parse_timestamp": "2026-06-13T20:42:41.661569",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3732,7 +3720,7 @@
     "word_count": 303,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:06.335317",
+    "parse_timestamp": "2026-06-13T20:42:41.765811",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3835,7 +3823,7 @@
     "word_count": 949,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:07.191755",
+    "parse_timestamp": "2026-06-13T20:42:42.032788",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3942,7 +3930,7 @@
     "word_count": 1135,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:08.042679",
+    "parse_timestamp": "2026-06-13T20:42:42.279632",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3963,7 +3951,7 @@
     "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -3994,8 +3982,8 @@
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, and Lynn, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -4018,16 +4006,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, and Lynn, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -4045,10 +4033,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 1388,
+    "word_count": 1342,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:08.670714",
+    "parse_timestamp": "2026-06-13T20:42:42.569394",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4147,7 +4135,7 @@
     "word_count": 514,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:09.204127",
+    "parse_timestamp": "2026-06-13T20:42:42.713865",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4168,7 +4156,7 @@
     "lower_court_judge": "Delker",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "vacated",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -4193,14 +4181,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -4223,16 +4211,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -4249,10 +4237,10 @@
       "clear_error"
     ],
     "summary_paragraph": "",
-    "word_count": 1836,
+    "word_count": 1286,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:10.264916",
+    "parse_timestamp": "2026-06-13T20:42:43.187984",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4273,7 +4261,7 @@
     "lower_court_judge": "Houran",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -4304,8 +4292,8 @@
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -4328,16 +4316,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -4350,10 +4338,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1769,
+    "word_count": 1406,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:10.970492",
+    "parse_timestamp": "2026-06-13T20:42:43.489082",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4454,7 +4442,7 @@
     "word_count": 871,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:11.664169",
+    "parse_timestamp": "2026-06-13T20:42:43.696940",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4553,7 +4541,7 @@
     "word_count": 183,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:11.778109",
+    "parse_timestamp": "2026-06-13T20:42:43.743206",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4657,7 +4645,7 @@
     "word_count": 638,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:12.513186",
+    "parse_timestamp": "2026-06-13T20:42:43.898924",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4762,7 +4750,7 @@
     "word_count": 579,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:13.223294",
+    "parse_timestamp": "2026-06-13T20:42:44.168772",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4781,7 +4769,7 @@
     "lower_court": "Circuit Court (Coughlin, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Coughlin",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "reversed",
     "author": "per_curiam",
@@ -4866,7 +4854,7 @@
     "word_count": 693,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:13.769910",
+    "parse_timestamp": "2026-06-13T20:42:44.347788",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4963,7 +4951,7 @@
     "word_count": 183,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:13.925679",
+    "parse_timestamp": "2026-06-13T20:42:44.405293",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5070,7 +5058,7 @@
     "word_count": 1014,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:14.805536",
+    "parse_timestamp": "2026-06-13T20:42:44.674575",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5089,9 +5077,9 @@
     "lower_court": "Circuit Court (Patten, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Patten",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -5116,14 +5104,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -5146,16 +5134,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -5175,10 +5163,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1478,
+    "word_count": 1408,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:15.807104",
+    "parse_timestamp": "2026-06-13T20:42:45.001725",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5197,7 +5185,7 @@
     "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Stephen",
-    "case_type": "criminal",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "reversed",
     "author": "per_curiam",
@@ -5284,7 +5272,7 @@
     "word_count": 941,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:16.553777",
+    "parse_timestamp": "2026-06-13T20:42:45.219072",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5389,7 +5377,7 @@
     "word_count": 962,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:17.146697",
+    "parse_timestamp": "2026-06-13T20:42:45.552485",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5493,7 +5481,7 @@
     "word_count": 318,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:17.620212",
+    "parse_timestamp": "2026-06-13T20:42:45.679803",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5512,7 +5500,7 @@
     "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Moore",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "vacated",
     "author": "per_curiam",
@@ -5592,7 +5580,7 @@
     "word_count": 1153,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:18.754915",
+    "parse_timestamp": "2026-06-13T20:42:46.113446",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5638,14 +5626,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -5668,16 +5656,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -5691,14 +5679,13 @@
     "rsa_primary": "RSA 540:13",
     "involves_statutory_interpretation": false,
     "standard_of_review": [
-      "de_novo",
-      "clear_error"
+      "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 1673,
+    "word_count": 1490,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:20.199220",
+    "parse_timestamp": "2026-06-13T20:42:46.540378",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5805,7 +5792,7 @@
     "word_count": 645,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:20.775375",
+    "parse_timestamp": "2026-06-13T20:42:46.776686",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5908,7 +5895,7 @@
     "word_count": 311,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:21.121408",
+    "parse_timestamp": "2026-06-13T20:42:46.988689",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6008,7 +5995,7 @@
     "word_count": 204,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:21.288501",
+    "parse_timestamp": "2026-06-13T20:42:47.073155",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6054,14 +6041,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -6084,16 +6071,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -6109,10 +6096,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1447,
+    "word_count": 1381,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:22.314720",
+    "parse_timestamp": "2026-06-13T20:42:47.433402",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6133,7 +6120,7 @@
     "lower_court_judge": "Delker",
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -6158,14 +6145,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -6188,16 +6175,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -6206,18 +6193,16 @@
     "rsa_citations": [
       "RSA 631:3, I",
       "RSA 625:11, V",
-      "RSA 626:2, II",
-      "RSA 631:3, II",
-      "RSA 631:4, I"
+      "RSA 626:2, II"
     ],
     "rsa_primary": "RSA 631:3, I",
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1978,
+    "word_count": 1341,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:23.761524",
+    "parse_timestamp": "2026-06-13T20:42:47.709034",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6316,7 +6301,7 @@
     "word_count": 304,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:23.941728",
+    "parse_timestamp": "2026-06-13T20:42:47.795947",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6335,9 +6320,9 @@
     "lower_court": "Circuit Court (Sadler, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Sadler",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -6362,14 +6347,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -6392,16 +6377,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -6421,10 +6406,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1857,
+    "word_count": 1371,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:25.129930",
+    "parse_timestamp": "2026-06-13T20:42:48.133470",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6527,7 +6512,7 @@
     "word_count": 1000,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:25.635852",
+    "parse_timestamp": "2026-06-13T20:42:48.467142",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6627,7 +6612,7 @@
     "word_count": 714,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:26.017543",
+    "parse_timestamp": "2026-06-13T20:42:48.629889",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6648,7 +6633,7 @@
     "lower_court_judge": "Bornstein",
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -6673,14 +6658,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -6703,16 +6688,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -6727,11 +6712,7 @@
     ],
     "rsa_citations": [
       "RSA 231:65",
-      "RSA 91-A",
-      "RSA 231:62-a",
-      "RSA 91-A:1",
-      "RSA 91-A:4",
-      "RSA 491:8-a, IV"
+      "RSA 91-A"
     ],
     "rsa_primary": "RSA 231:65",
     "involves_statutory_interpretation": true,
@@ -6739,10 +6720,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2565,
+    "word_count": 1391,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:28.379247",
+    "parse_timestamp": "2026-06-13T20:42:48.924575",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6844,7 +6825,7 @@
     "word_count": 286,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:28.561923",
+    "parse_timestamp": "2026-06-13T20:42:49.003864",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6943,7 +6924,7 @@
     "word_count": 353,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:28.760332",
+    "parse_timestamp": "2026-06-13T20:42:49.109050",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6962,7 +6943,7 @@
     "lower_court": "Superior Court (Nicolosi, J.)",
     "lower_court_type": "superior_court",
     "lower_court_judge": "Nicolosi",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -7042,7 +7023,7 @@
     "word_count": 309,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:28.931973",
+    "parse_timestamp": "2026-06-13T20:42:49.191235",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7141,7 +7122,7 @@
     "word_count": 1271,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:29.800787",
+    "parse_timestamp": "2026-06-13T20:42:49.558839",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7160,9 +7141,9 @@
     "lower_court": "Circuit Court (Lawrence, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Lawrence",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -7187,14 +7168,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -7217,16 +7198,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -7245,10 +7226,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1593,
+    "word_count": 1476,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:30.818712",
+    "parse_timestamp": "2026-06-13T20:42:49.893089",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7267,9 +7248,9 @@
     "lower_court": "Superior Court (Garfunkel, J.)",
     "lower_court_type": "superior_court",
     "lower_court_judge": "Garfunkel",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "reversed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -7294,14 +7275,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -7324,21 +7305,20 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "insurance",
-      "administrative_law",
       "family_law",
       "statutory_interpretation",
       "employment",
@@ -7351,10 +7331,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2075,
+    "word_count": 1294,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:31.852199",
+    "parse_timestamp": "2026-06-13T20:42:50.232296",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7453,7 +7433,7 @@
     "word_count": 321,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:32.068388",
+    "parse_timestamp": "2026-06-13T20:42:50.336775",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7558,7 +7538,7 @@
     "word_count": 918,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:32.438751",
+    "parse_timestamp": "2026-06-13T20:42:50.546328",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7577,9 +7557,9 @@
     "lower_court": "Superior Court (MacLeod, J.)",
     "lower_court_type": "superior_court",
     "lower_court_judge": "MacLeod",
-    "case_type": "criminal",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -7604,14 +7584,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -7634,22 +7614,20 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
-      "criminal",
       "family_law",
-      "constitutional",
       "property"
     ],
     "rsa_citations": [
@@ -7658,14 +7636,12 @@
     ],
     "rsa_primary": "RSA 638:1, I",
     "involves_statutory_interpretation": false,
-    "standard_of_review": [
-      "de_novo"
-    ],
+    "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 3199,
+    "word_count": 1425,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:34.262280",
+    "parse_timestamp": "2026-06-13T20:42:51.065634",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7774,7 +7750,7 @@
     "word_count": 1008,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:34.865297",
+    "parse_timestamp": "2026-06-13T20:42:51.257669",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7873,7 +7849,7 @@
     "word_count": 457,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:35.178090",
+    "parse_timestamp": "2026-06-13T20:42:51.393402",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7973,7 +7949,7 @@
     "word_count": 231,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:35.644986",
+    "parse_timestamp": "2026-06-13T20:42:51.453394",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7992,9 +7968,9 @@
     "lower_court": "Superior Court (Garfunkel",
     "lower_court_type": "superior_court",
     "lower_court_judge": "Garfunkel",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "remanded",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -8019,14 +7995,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -8049,23 +8025,22 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "administrative_law",
       "family_law",
       "statutory_interpretation",
-      "constitutional",
       "property"
     ],
     "rsa_citations": [
@@ -8081,10 +8056,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2002,
+    "word_count": 1384,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:36.577094",
+    "parse_timestamp": "2026-06-13T20:42:51.780642",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8103,7 +8078,7 @@
     "lower_court": "Superior Court",
     "lower_court_type": "superior_court",
     "lower_court_judge": "Smukler",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "dismissed",
     "author": "per_curiam",
@@ -8190,7 +8165,7 @@
     "word_count": 1286,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:37.359574",
+    "parse_timestamp": "2026-06-13T20:42:52.257700",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8211,7 +8186,7 @@
     "lower_court_judge": "Ashley",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -8236,14 +8211,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -8266,20 +8241,19 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
-      "constitutional",
       "DWI"
     ],
     "rsa_citations": [
@@ -8290,10 +8264,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2258,
+    "word_count": 1479,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:38.851986",
+    "parse_timestamp": "2026-06-13T20:42:52.543736",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8402,7 +8376,7 @@
     "word_count": 1215,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:39.528652",
+    "parse_timestamp": "2026-06-13T20:42:52.861648",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8421,7 +8395,7 @@
     "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Spath",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "dismissed",
     "author": "per_curiam",
@@ -8504,7 +8478,7 @@
     "word_count": 448,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:39.846735",
+    "parse_timestamp": "2026-06-13T20:42:52.995424",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8607,7 +8581,7 @@
     "word_count": 1135,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:40.360454",
+    "parse_timestamp": "2026-06-13T20:42:53.312894",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8712,7 +8686,7 @@
     "word_count": 742,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:41.416673",
+    "parse_timestamp": "2026-06-13T20:42:53.476347",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8812,7 +8786,7 @@
     "word_count": 1183,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:42.115629",
+    "parse_timestamp": "2026-06-13T20:42:53.726511",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8831,7 +8805,7 @@
     "lower_court": null,
     "lower_court_type": null,
     "lower_court_judge": null,
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "dismissed",
     "author": "per_curiam",
@@ -8911,7 +8885,7 @@
     "word_count": 323,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:42.237299",
+    "parse_timestamp": "2026-06-13T20:42:53.795306",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9014,7 +8988,7 @@
     "word_count": 426,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:42.487983",
+    "parse_timestamp": "2026-06-13T20:42:53.913214",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9035,7 +9009,7 @@
     "lower_court_judge": null,
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -9060,14 +9034,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -9090,16 +9064,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -9120,10 +9094,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1553,
+    "word_count": 1311,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:43.192140",
+    "parse_timestamp": "2026-06-13T20:42:54.324921",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9229,7 +9203,7 @@
     "word_count": 1263,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:43.914931",
+    "parse_timestamp": "2026-06-13T20:42:54.654829",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9248,7 +9222,7 @@
     "lower_court": "Circuit Court (Ryan, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Ryan",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -9332,7 +9306,7 @@
     "word_count": 466,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:44.139631",
+    "parse_timestamp": "2026-06-13T20:42:54.784145",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9353,7 +9327,7 @@
     "lower_court_judge": "Brown",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "vacated",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -9378,14 +9352,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -9408,24 +9382,21 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "insurance",
       "administrative_law",
-      "constitutional",
-      "property",
-      "contract",
       "tax"
     ],
     "rsa_citations": [],
@@ -9433,10 +9404,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2050,
+    "word_count": 1348,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:44.887815",
+    "parse_timestamp": "2026-06-13T20:42:55.035695",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9538,7 +9509,7 @@
     "word_count": 729,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:45.276492",
+    "parse_timestamp": "2026-06-13T20:42:55.265220",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9637,7 +9608,7 @@
     "word_count": 232,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:45.394825",
+    "parse_timestamp": "2026-06-13T20:42:55.342605",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9689,8 +9660,8 @@
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -9713,16 +9684,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -9734,14 +9705,12 @@
     ],
     "rsa_primary": "RSA 498:5-c",
     "involves_statutory_interpretation": false,
-    "standard_of_review": [
-      "de_novo"
-    ],
+    "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1861,
+    "word_count": 1446,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:46.445141",
+    "parse_timestamp": "2026-06-13T20:42:55.887463",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9840,7 +9809,7 @@
     "word_count": 257,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:46.610583",
+    "parse_timestamp": "2026-06-13T20:42:55.964147",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9947,7 +9916,7 @@
     "word_count": 1214,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:47.154234",
+    "parse_timestamp": "2026-06-13T20:42:56.241382",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9968,7 +9937,7 @@
     "lower_court_judge": "Morrison",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -9993,14 +9962,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -10023,16 +9992,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -10051,10 +10020,10 @@
       "plain_error"
     ],
     "summary_paragraph": "",
-    "word_count": 1498,
+    "word_count": 1397,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:48.025062",
+    "parse_timestamp": "2026-06-13T20:42:56.609121",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10154,7 +10123,7 @@
     "word_count": 772,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:48.403771",
+    "parse_timestamp": "2026-06-13T20:42:56.821690",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10262,7 +10231,7 @@
     "word_count": 603,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:48.933313",
+    "parse_timestamp": "2026-06-13T20:42:57.118315",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10283,7 +10252,7 @@
     "lower_court_judge": "Colburn",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "reversed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -10308,14 +10277,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -10338,21 +10307,20 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
-      "property",
-      "employment"
+      "property"
     ],
     "rsa_citations": [],
     "rsa_primary": null,
@@ -10361,10 +10329,10 @@
       "clear_error"
     ],
     "summary_paragraph": "",
-    "word_count": 1793,
+    "word_count": 1278,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:49.703417",
+    "parse_timestamp": "2026-06-13T20:42:57.418637",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10383,7 +10351,7 @@
     "lower_court": "Circuit Court (Lemire, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Lemire",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -10466,7 +10434,7 @@
     "word_count": 254,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:49.841123",
+    "parse_timestamp": "2026-06-13T20:42:57.494670",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10569,7 +10537,7 @@
     "word_count": 683,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:50.148921",
+    "parse_timestamp": "2026-06-13T20:42:57.664157",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10588,7 +10556,7 @@
     "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Lemire",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -10674,7 +10642,7 @@
     "word_count": 572,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:50.416977",
+    "parse_timestamp": "2026-06-13T20:42:57.857626",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10781,7 +10749,7 @@
     "word_count": 1224,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:51.125639",
+    "parse_timestamp": "2026-06-13T20:42:58.117132",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10800,7 +10768,7 @@
     "lower_court": "Circuit Court (Introcaso, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Introcaso",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -10882,7 +10850,7 @@
     "word_count": 1325,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:51.612315",
+    "parse_timestamp": "2026-06-13T20:42:58.532365",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10987,7 +10955,7 @@
     "word_count": 781,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:51.957745",
+    "parse_timestamp": "2026-06-13T20:42:58.745934",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11086,7 +11054,7 @@
     "word_count": 220,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:52.069103",
+    "parse_timestamp": "2026-06-13T20:42:58.806239",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11191,7 +11159,7 @@
     "word_count": 462,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:52.295024",
+    "parse_timestamp": "2026-06-13T20:42:58.937467",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11210,9 +11178,9 @@
     "lower_court": "Circuit Court (Yazinski, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Yazinski",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -11243,8 +11211,8 @@
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, and Lynn, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -11267,16 +11235,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, and Lynn, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -11286,21 +11254,18 @@
     "rsa_citations": [
       "RSA 458:16-a",
       "RSA 458:16",
-      "RSA 458:16-a, II",
-      "RSA 461-A:21",
-      "RSA 461"
+      "RSA 458:16-a, II"
     ],
     "rsa_primary": "RSA 458:16-a",
     "involves_statutory_interpretation": false,
     "standard_of_review": [
-      "de_novo",
-      "abuse_of_discretion"
+      "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2603,
+    "word_count": 1379,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:54.208047",
+    "parse_timestamp": "2026-06-13T20:42:59.277640",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11319,7 +11284,7 @@
     "lower_court": "Superior Court (Garfunkel, J.)",
     "lower_court_type": "superior_court",
     "lower_court_judge": "Garfunkel",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -11404,7 +11369,7 @@
     "word_count": 427,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:54.478798",
+    "parse_timestamp": "2026-06-13T20:42:59.382670",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11425,7 +11390,7 @@
     "lower_court_judge": "Abramson",
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -11450,14 +11415,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -11480,16 +11445,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -11506,10 +11471,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 1846,
+    "word_count": 1333,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:55.283887",
+    "parse_timestamp": "2026-06-13T20:42:59.854561",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11528,7 +11493,7 @@
     "lower_court": null,
     "lower_court_type": null,
     "lower_court_judge": null,
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "vacated",
     "author": "per_curiam",
@@ -11620,7 +11585,7 @@
     "word_count": 1130,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:56.023944",
+    "parse_timestamp": "2026-06-13T20:43:00.161537",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11722,7 +11687,7 @@
     "word_count": 200,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:56.149175",
+    "parse_timestamp": "2026-06-13T20:43:00.254674",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11741,7 +11706,7 @@
     "lower_court": "Circuit Court (Introcaso, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Introcaso",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -11825,7 +11790,7 @@
     "word_count": 322,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:56.330284",
+    "parse_timestamp": "2026-06-13T20:43:00.378765",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11846,7 +11811,7 @@
     "lower_court_judge": "McHugh, J. and Delker",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "vacated",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -11877,8 +11842,8 @@
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, and Lynn, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -11901,16 +11866,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, and Lynn, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -11921,14 +11886,13 @@
     "rsa_primary": null,
     "involves_statutory_interpretation": true,
     "standard_of_review": [
-      "de_novo",
-      "plain_error"
+      "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 3187,
+    "word_count": 1369,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:57.403758",
+    "parse_timestamp": "2026-06-13T20:43:00.647084",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11947,9 +11911,9 @@
     "lower_court": null,
     "lower_court_type": null,
     "lower_court_judge": null,
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -11974,14 +11938,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -12004,16 +11968,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -12030,10 +11994,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1800,
+    "word_count": 1542,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:58.430229",
+    "parse_timestamp": "2026-06-13T20:43:01.190385",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12138,7 +12102,7 @@
     "word_count": 1351,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:19:59.408103",
+    "parse_timestamp": "2026-06-13T20:43:01.646976",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12243,7 +12207,7 @@
     "word_count": 1018,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:00.143708",
+    "parse_timestamp": "2026-06-13T20:43:01.924124",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12264,7 +12228,7 @@
     "lower_court_judge": "McNamara",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "dismissed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -12295,8 +12259,8 @@
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS and LYNN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -12319,47 +12283,41 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS and LYNN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
-      "insurance",
       "administrative_law",
       "civil_procedure",
-      "statutory_interpretation",
       "constitutional",
       "employment",
       "contract",
-      "tort",
-      "tax"
+      "tort"
     ],
     "rsa_citations": [
       "RSA 292:7",
       "RSA 491:8",
       "RSA 5-B:4-a",
       "RSA 29",
-      "RSA 5-B",
-      "RSA 5-B:4-a, I",
-      "RSA 5-B:4-a, II",
-      "RSA 292"
+      "RSA 5-B"
     ],
     "rsa_primary": "RSA 292:7",
-    "involves_statutory_interpretation": true,
+    "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2342,
+    "word_count": 1323,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:01.610242",
+    "parse_timestamp": "2026-06-13T20:43:02.441570",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12462,7 +12420,7 @@
     "word_count": 481,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:01.847337",
+    "parse_timestamp": "2026-06-13T20:43:02.565638",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12508,14 +12466,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -12542,12 +12500,12 @@
         "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -12565,10 +12523,10 @@
       "clear_error"
     ],
     "summary_paragraph": "",
-    "word_count": 1938,
+    "word_count": 1507,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:02.841035",
+    "parse_timestamp": "2026-06-13T20:43:02.961640",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12587,9 +12545,9 @@
     "lower_court": null,
     "lower_court_type": "administrative",
     "lower_court_judge": null,
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -12614,14 +12572,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -12644,22 +12602,21 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "insurance",
       "family_law",
-      "statutory_interpretation",
       "property",
       "employment",
       "tax"
@@ -12669,21 +12626,18 @@
       "RSA 458-C:2, I",
       "RSA 458-C:2, VI",
       "RSA 458-C:3",
-      "RSA 458",
-      "RSA 458-C:4, II",
-      "RSA 458-C:5",
-      "RSA 458-C:5, I"
+      "RSA 458"
     ],
     "rsa_primary": "RSA 458-C:2, IV",
-    "involves_statutory_interpretation": true,
+    "involves_statutory_interpretation": false,
     "standard_of_review": [
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2120,
+    "word_count": 1372,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:05.320214",
+    "parse_timestamp": "2026-06-13T20:43:03.295460",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12788,7 +12742,7 @@
     "word_count": 1092,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:05.917060",
+    "parse_timestamp": "2026-06-13T20:43:03.583954",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12896,7 +12850,7 @@
     "word_count": 1395,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:06.583313",
+    "parse_timestamp": "2026-06-13T20:43:04.185512",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12995,7 +12949,7 @@
     "word_count": 288,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:07.170863",
+    "parse_timestamp": "2026-06-13T20:43:04.286597",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -13014,7 +12968,7 @@
     "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Sadler",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "reversed",
     "author": "per_curiam",
@@ -13097,7 +13051,7 @@
     "word_count": 809,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:08.073516",
+    "parse_timestamp": "2026-06-13T20:43:04.490734",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -13143,14 +13097,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -13173,16 +13127,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -13200,14 +13154,12 @@
     ],
     "rsa_primary": "RSA 49",
     "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
+    "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1534,
+    "word_count": 1426,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:09.376101",
+    "parse_timestamp": "2026-06-13T20:43:04.840154",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -13311,7 +13263,7 @@
     "word_count": 1106,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:09.819689",
+    "parse_timestamp": "2026-06-13T20:43:05.286189",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -13330,9 +13282,9 @@
     "lower_court": "Circuit Court (Yazinski, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Yazinski",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -13357,14 +13309,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -13387,32 +13339,29 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "family_law",
       "statutory_interpretation",
       "constitutional",
-      "property",
-      "employment",
       "tax"
     ],
     "rsa_citations": [
       "RSA 458:19",
       "RSA 461-A:6",
       "RSA 461-A:6, I",
-      "RSA 461",
-      "RSA 458:19, I"
+      "RSA 461"
     ],
     "rsa_primary": "RSA 458:19",
     "involves_statutory_interpretation": true,
@@ -13420,10 +13369,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2041,
+    "word_count": 1392,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:11.072413",
+    "parse_timestamp": "2026-06-13T20:43:05.706541",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -13529,7 +13478,7 @@
     "word_count": 1058,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:12.064483",
+    "parse_timestamp": "2026-06-13T20:43:05.996407",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -13550,7 +13499,7 @@
     "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -13575,14 +13524,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -13605,24 +13554,21 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
-      "insurance",
       "administrative_law",
       "civil_procedure",
-      "property",
-      "contract",
       "tax"
     ],
     "rsa_citations": [
@@ -13632,11 +13578,7 @@
       "RSA 195:8",
       "RSA 541",
       "RSA 21",
-      "RSA 541:13",
-      "RSA 194:2",
-      "RSA 195:6, I",
-      "RSA 194",
-      "RSA 186:5"
+      "RSA 541:13"
     ],
     "rsa_primary": "RSA 195:7, I",
     "involves_statutory_interpretation": false,
@@ -13644,10 +13586,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2216,
+    "word_count": 1461,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:13.341005",
+    "parse_timestamp": "2026-06-13T20:43:06.310045",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -13666,9 +13608,9 @@
     "lower_court": null,
     "lower_court_type": null,
     "lower_court_judge": null,
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -13693,14 +13635,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -13723,41 +13665,36 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "family_law",
       "property",
-      "employment",
-      "tort",
-      "tax"
+      "tort"
     ],
     "rsa_citations": [
       "RSA 458:16-a",
       "RSA 458:19",
-      "RSA 458:16-a, II",
-      "RSA 458:19, I",
-      "RSA 458:16-a, v",
-      "RSA 458:19, IV"
+      "RSA 458:16-a, II"
     ],
     "rsa_primary": "RSA 458:16-a",
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2180,
+    "word_count": 1498,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:14.551847",
+    "parse_timestamp": "2026-06-13T20:43:06.845330",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -13861,7 +13798,7 @@
     "word_count": 1364,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:15.000651",
+    "parse_timestamp": "2026-06-13T20:43:07.181063",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -13880,7 +13817,7 @@
     "lower_court": null,
     "lower_court_type": null,
     "lower_court_judge": null,
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -13964,7 +13901,7 @@
     "word_count": 850,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:15.735426",
+    "parse_timestamp": "2026-06-13T20:43:07.373601",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -13983,7 +13920,7 @@
     "lower_court": null,
     "lower_court_type": null,
     "lower_court_judge": null,
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -14067,7 +14004,7 @@
     "word_count": 850,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:16.254263",
+    "parse_timestamp": "2026-06-13T20:43:07.562882",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -14086,7 +14023,7 @@
     "lower_court": null,
     "lower_court_type": null,
     "lower_court_judge": null,
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -14169,7 +14106,7 @@
     "word_count": 383,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:16.458346",
+    "parse_timestamp": "2026-06-13T20:43:07.677266",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -14273,7 +14210,7 @@
     "word_count": 964,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:17.210914",
+    "parse_timestamp": "2026-06-13T20:43:08.035627",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -14292,7 +14229,7 @@
     "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Leonard",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -14375,7 +14312,7 @@
     "word_count": 200,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:17.332055",
+    "parse_timestamp": "2026-06-13T20:43:08.107011",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -14472,7 +14409,7 @@
     "word_count": 311,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:17.525306",
+    "parse_timestamp": "2026-06-13T20:43:08.196412",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -14491,9 +14428,9 @@
     "lower_court": "Circuit Court (LeFrancois, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "LeFrancois",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -14518,14 +14455,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -14548,16 +14485,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -14576,10 +14513,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1562,
+    "word_count": 1376,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:18.172328",
+    "parse_timestamp": "2026-06-13T20:43:08.486945",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -14598,9 +14535,9 @@
     "lower_court": "Circuit Court (Patten, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Patten",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": "remanded",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -14625,14 +14562,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -14655,16 +14592,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -14672,21 +14609,17 @@
       "property",
       "employment"
     ],
-    "rsa_citations": [
-      "RSA 458:19, III",
-      "RSA 458:19"
-    ],
-    "rsa_primary": "RSA 458:19, III",
+    "rsa_citations": [],
+    "rsa_primary": null,
     "involves_statutory_interpretation": false,
     "standard_of_review": [
-      "de_novo",
-      "plain_error"
+      "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2422,
+    "word_count": 1384,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:19.938321",
+    "parse_timestamp": "2026-06-13T20:43:08.803040",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -14705,9 +14638,9 @@
     "lower_court": "Circuit Court (Introcaso, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Introcaso",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -14732,14 +14665,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -14762,23 +14695,20 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
-      "family_law",
-      "property",
-      "evidence",
-      "tax"
+      "family_law"
     ],
     "rsa_citations": [
       "RSA 458:16-a",
@@ -14791,10 +14721,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2009,
+    "word_count": 1352,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:21.186351",
+    "parse_timestamp": "2026-06-13T20:43:09.242030",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -14815,7 +14745,7 @@
     "lower_court_judge": "Tucker",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -14840,8 +14770,8 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
@@ -14870,16 +14800,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -14903,10 +14833,10 @@
     "involves_statutory_interpretation": true,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1533,
+    "word_count": 1424,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:22.190548",
+    "parse_timestamp": "2026-06-13T20:43:09.584770",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -15003,7 +14933,7 @@
     "word_count": 185,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:22.321510",
+    "parse_timestamp": "2026-06-13T20:43:09.654161",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -15105,7 +15035,7 @@
     "word_count": 668,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:23.230286",
+    "parse_timestamp": "2026-06-13T20:43:09.890325",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -15124,7 +15054,7 @@
     "lower_court": "Circuit Court (Rappa, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Rappa",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "vacated",
     "author": "per_curiam",
@@ -15204,7 +15134,7 @@
     "word_count": 776,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:23.558308",
+    "parse_timestamp": "2026-06-13T20:43:10.056494",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -15303,7 +15233,7 @@
     "word_count": 324,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:23.707570",
+    "parse_timestamp": "2026-06-13T20:43:10.139943",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -15407,7 +15337,7 @@
     "word_count": 1367,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:24.331166",
+    "parse_timestamp": "2026-06-13T20:43:10.628889",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -15426,7 +15356,7 @@
     "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Varney",
-    "case_type": "criminal",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -15513,7 +15443,7 @@
     "word_count": 1337,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:24.937153",
+    "parse_timestamp": "2026-06-13T20:43:10.993108",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -15621,7 +15551,7 @@
     "word_count": 358,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:25.443436",
+    "parse_timestamp": "2026-06-13T20:43:11.101637",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -15640,9 +15570,9 @@
     "lower_court": "Circuit Court (Moore, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Moore",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "dismissed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -15667,14 +15597,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -15701,12 +15631,12 @@
         "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -15722,10 +15652,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1625,
+    "word_count": 1442,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:26.769065",
+    "parse_timestamp": "2026-06-13T20:43:11.396031",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -15827,7 +15757,7 @@
     "word_count": 450,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:27.356796",
+    "parse_timestamp": "2026-06-13T20:43:11.753221",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -15846,9 +15776,9 @@
     "lower_court": "Circuit Court (Moore, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Moore",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "vacated",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -15873,14 +15803,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -15903,41 +15833,37 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "insurance",
       "family_law",
-      "statutory_interpretation",
       "property",
       "evidence",
       "domestic_violence",
       "tax"
     ],
     "rsa_citations": [
-      "RSA 458:7, V",
-      "RSA 458:16-a, II",
-      "RSA 458:16-a, I",
-      "RSA 458:16-a, IV"
+      "RSA 458:7, V"
     ],
     "rsa_primary": "RSA 458:7, V",
-    "involves_statutory_interpretation": true,
+    "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2818,
+    "word_count": 1442,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:28.987539",
+    "parse_timestamp": "2026-06-13T20:43:12.144175",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -16041,7 +15967,7 @@
     "word_count": 979,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:29.329646",
+    "parse_timestamp": "2026-06-13T20:43:12.338315",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -16140,7 +16066,7 @@
     "word_count": 275,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:29.496605",
+    "parse_timestamp": "2026-06-13T20:43:12.424738",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -16247,7 +16173,7 @@
     "word_count": 974,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:29.932741",
+    "parse_timestamp": "2026-06-13T20:43:12.665326",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -16268,7 +16194,7 @@
     "lower_court_judge": "Brown",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -16293,14 +16219,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -16323,16 +16249,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -16350,10 +16276,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1501,
+    "word_count": 1452,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:30.689848",
+    "parse_timestamp": "2026-06-13T20:43:13.133945",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -16455,7 +16381,7 @@
     "word_count": 311,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:30.867485",
+    "parse_timestamp": "2026-06-13T20:43:13.226762",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -16558,7 +16484,7 @@
     "word_count": 1007,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:31.404696",
+    "parse_timestamp": "2026-06-13T20:43:13.476081",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -16661,7 +16587,7 @@
     "word_count": 638,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:31.714299",
+    "parse_timestamp": "2026-06-13T20:43:13.649512",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -16762,7 +16688,7 @@
     "word_count": 759,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:32.033425",
+    "parse_timestamp": "2026-06-13T20:43:13.850027",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -16814,8 +16740,8 @@
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks and Lynn, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -16838,16 +16764,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks and Lynn, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -16863,10 +16789,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2131,
+    "word_count": 1421,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:33.405970",
+    "parse_timestamp": "2026-06-13T20:43:14.361303",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -16971,7 +16897,7 @@
     "word_count": 394,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:33.646214",
+    "parse_timestamp": "2026-06-13T20:43:14.455697",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -17076,7 +17002,7 @@
     "word_count": 589,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:33.948656",
+    "parse_timestamp": "2026-06-13T20:43:14.586596",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -17097,7 +17023,7 @@
     "lower_court_judge": "Yazinski",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -17122,8 +17048,8 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
@@ -17152,16 +17078,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -17178,10 +17104,10 @@
       "plain_error"
     ],
     "summary_paragraph": "",
-    "word_count": 1459,
+    "word_count": 1409,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:34.662461",
+    "parse_timestamp": "2026-06-13T20:43:14.860793",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -17280,7 +17206,7 @@
     "word_count": 959,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:35.108637",
+    "parse_timestamp": "2026-06-13T20:43:15.108478",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -17299,7 +17225,7 @@
     "lower_court": "Circuit Court (Cooper, M., approved by Carbon, J.) denying her request to",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Cooper, M., approved by Carbon",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "vacated",
     "author": "per_curiam",
@@ -17384,7 +17310,7 @@
     "word_count": 980,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:35.829793",
+    "parse_timestamp": "2026-06-13T20:43:15.444683",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -17487,7 +17413,7 @@
     "word_count": 368,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:36.001958",
+    "parse_timestamp": "2026-06-13T20:43:15.538929",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -17588,7 +17514,7 @@
     "word_count": 292,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:36.146555",
+    "parse_timestamp": "2026-06-13T20:43:15.610474",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -17688,7 +17614,7 @@
     "word_count": 335,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:36.342975",
+    "parse_timestamp": "2026-06-13T20:43:15.712899",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -17795,7 +17721,7 @@
     "word_count": 1111,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:36.882083",
+    "parse_timestamp": "2026-06-13T20:43:16.042977",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -17905,7 +17831,7 @@
     "word_count": 1249,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:37.375871",
+    "parse_timestamp": "2026-06-13T20:43:16.316973",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -17924,9 +17850,9 @@
     "lower_court": "Circuit Court (Sadler, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Sadler",
-    "case_type": "criminal",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -17951,14 +17877,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -17981,16 +17907,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -18006,17 +17932,16 @@
       "RSA 631:2-a, I",
       "RSA 631:1",
       "RSA 631:3",
-      "RSA 173",
-      "RSA 631:2-a"
+      "RSA 173"
     ],
     "rsa_primary": "RSA 173-B:5, I",
     "involves_statutory_interpretation": true,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2139,
+    "word_count": 1406,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:38.284580",
+    "parse_timestamp": "2026-06-13T20:43:16.748631",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -18120,7 +18045,7 @@
     "word_count": 1161,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:38.889470",
+    "parse_timestamp": "2026-06-13T20:43:17.078800",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -18223,7 +18148,7 @@
     "word_count": 970,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:39.339994",
+    "parse_timestamp": "2026-06-13T20:43:17.264475",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -18244,7 +18169,7 @@
     "lower_court_judge": "Bamberger",
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -18269,14 +18194,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -18299,16 +18224,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -18324,10 +18249,10 @@
       "clear_error"
     ],
     "summary_paragraph": "",
-    "word_count": 1772,
+    "word_count": 1512,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:40.500946",
+    "parse_timestamp": "2026-06-13T20:43:17.660010",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -18431,7 +18356,7 @@
     "word_count": 677,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:40.785393",
+    "parse_timestamp": "2026-06-13T20:43:18.064702",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -18450,9 +18375,9 @@
     "lower_court": "Circuit Court (Forrest, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Forrest",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -18477,14 +18402,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -18507,16 +18432,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -18529,14 +18454,12 @@
     ],
     "rsa_primary": "RSA 461-A:11, I",
     "involves_statutory_interpretation": false,
-    "standard_of_review": [
-      "de_novo"
-    ],
+    "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1578,
+    "word_count": 1340,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:41.413048",
+    "parse_timestamp": "2026-06-13T20:43:18.385116",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -18555,7 +18478,7 @@
     "lower_court": "Circuit Court (Lemire, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Lemire",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -18640,7 +18563,7 @@
     "word_count": 1179,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:42.064260",
+    "parse_timestamp": "2026-06-13T20:43:18.702714",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -18659,7 +18582,7 @@
     "lower_court": "Superior Court (Brown, J.)",
     "lower_court_type": "superior_court",
     "lower_court_judge": "Brown",
-    "case_type": "criminal",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": null,
     "author": "per_curiam",
@@ -18746,7 +18669,7 @@
     "word_count": 899,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:42.466273",
+    "parse_timestamp": "2026-06-13T20:43:18.935089",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -18767,7 +18690,7 @@
     "lower_court_judge": "Smukler",
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": "dismissed",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -18792,14 +18715,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -18822,16 +18745,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -18850,10 +18773,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2592,
+    "word_count": 1441,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:44.286603",
+    "parse_timestamp": "2026-06-13T20:43:19.397322",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -18955,7 +18878,7 @@
     "word_count": 276,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:44.604150",
+    "parse_timestamp": "2026-06-13T20:43:19.482965",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -18974,7 +18897,7 @@
     "lower_court": "Circuit Court’s (Moran, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": null,
-    "case_type": "criminal",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "reversed",
     "author": "per_curiam",
@@ -19059,7 +18982,7 @@
     "word_count": 1245,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:45.607132",
+    "parse_timestamp": "2026-06-13T20:43:19.803375",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -19164,7 +19087,7 @@
     "word_count": 1229,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:46.872288",
+    "parse_timestamp": "2026-06-13T20:43:20.119879",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -19263,7 +19186,7 @@
     "word_count": 640,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:47.166310",
+    "parse_timestamp": "2026-06-13T20:43:20.263155",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -19309,14 +19232,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -19339,16 +19262,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -19367,10 +19290,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 1430,
+    "word_count": 1384,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:47.745713",
+    "parse_timestamp": "2026-06-13T20:43:20.767391",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -19389,7 +19312,7 @@
     "lower_court": "Circuit Court (Introcaso, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Introcaso",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -19473,7 +19396,7 @@
     "word_count": 311,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:47.942404",
+    "parse_timestamp": "2026-06-13T20:43:20.872920",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -19576,7 +19499,7 @@
     "word_count": 795,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:48.309281",
+    "parse_timestamp": "2026-06-13T20:43:21.134182",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -19595,7 +19518,7 @@
     "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Boyle",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -19680,7 +19603,7 @@
     "word_count": 379,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:48.450227",
+    "parse_timestamp": "2026-06-13T20:43:21.223956",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -19779,7 +19702,7 @@
     "word_count": 214,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:48.557257",
+    "parse_timestamp": "2026-06-13T20:43:21.286995",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -19885,7 +19808,7 @@
     "word_count": 943,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:49.207020",
+    "parse_timestamp": "2026-06-13T20:43:21.543858",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -19904,7 +19827,7 @@
     "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "DeVries",
-    "case_type": "criminal",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "vacated",
     "author": "per_curiam",
@@ -19987,7 +19910,7 @@
     "word_count": 305,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:49.353450",
+    "parse_timestamp": "2026-06-13T20:43:21.647211",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -20086,7 +20009,7 @@
     "word_count": 381,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:49.539689",
+    "parse_timestamp": "2026-06-13T20:43:21.749704",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -20189,7 +20112,7 @@
     "word_count": 1003,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:49.960009",
+    "parse_timestamp": "2026-06-13T20:43:22.204257",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -20210,7 +20133,7 @@
     "lower_court_judge": "Bornstein",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -20235,14 +20158,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -20265,16 +20188,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -20286,10 +20209,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1856,
+    "word_count": 1491,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:50.733793",
+    "parse_timestamp": "2026-06-13T20:43:22.523196",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -20308,9 +20231,9 @@
     "lower_court": null,
     "lower_court_type": null,
     "lower_court_judge": null,
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "remanded",
+    "outcome": "vacated",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -20341,8 +20264,8 @@
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, and Lynn, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -20365,40 +20288,36 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, and Lynn, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 7,
-    "vote_string": "2-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "family_law",
-      "property",
-      "tax"
+      "property"
     ],
     "rsa_citations": [
       "RSA 458",
       "RSA 458-C:1",
       "RSA 458-C:4, II",
-      "RSA 458-C:5, I",
-      "RSA 458-C:2, IV",
-      "RSA 458-C:5",
-      "RSA 458:19, IV"
+      "RSA 458-C:5, I"
     ],
     "rsa_primary": "RSA 458",
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2240,
+    "word_count": 1448,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:51.735169",
+    "parse_timestamp": "2026-06-13T20:43:22.920628",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -20507,7 +20426,7 @@
     "word_count": 603,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:52.048043",
+    "parse_timestamp": "2026-06-13T20:43:23.124499",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -20526,7 +20445,7 @@
     "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Lemire",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -20614,7 +20533,7 @@
     "word_count": 1275,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:52.489965",
+    "parse_timestamp": "2026-06-13T20:43:23.561769",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -20716,7 +20635,7 @@
     "word_count": 587,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:52.779572",
+    "parse_timestamp": "2026-06-13T20:43:23.728677",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -20820,7 +20739,7 @@
     "word_count": 1019,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:53.541773",
+    "parse_timestamp": "2026-06-13T20:43:24.019061",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -20926,7 +20845,7 @@
     "word_count": 746,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:53.951921",
+    "parse_timestamp": "2026-06-13T20:43:24.214777",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -21033,7 +20952,7 @@
     "word_count": 1232,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:54.475428",
+    "parse_timestamp": "2026-06-13T20:43:24.489653",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -21134,7 +21053,7 @@
     "word_count": 623,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:54.792802",
+    "parse_timestamp": "2026-06-13T20:43:24.800839",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -21153,7 +21072,7 @@
     "lower_court": "Circuit Court (Spath",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Spath",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -21235,7 +21154,7 @@
     "word_count": 257,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:54.984887",
+    "parse_timestamp": "2026-06-13T20:43:24.888241",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -21256,7 +21175,7 @@
     "lower_court_judge": "Gardner",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": "dismissed",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -21281,14 +21200,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -21311,22 +21230,21 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "civil_procedure",
       "constitutional",
-      "property",
       "evidence",
       "DWI"
     ],
@@ -21343,10 +21261,10 @@
       "clear_error"
     ],
     "summary_paragraph": "",
-    "word_count": 1647,
+    "word_count": 1443,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:55.873677",
+    "parse_timestamp": "2026-06-13T20:43:25.274040",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -21447,7 +21365,7 @@
     "word_count": 520,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:56.127011",
+    "parse_timestamp": "2026-06-13T20:43:25.399176",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -21558,7 +21476,7 @@
     "word_count": 837,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:56.498372",
+    "parse_timestamp": "2026-06-13T20:43:25.611724",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -21577,7 +21495,7 @@
     "lower_court": null,
     "lower_court_type": null,
     "lower_court_judge": null,
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "vacated",
     "author": "per_curiam",
@@ -21661,7 +21579,7 @@
     "word_count": 758,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:56.862305",
+    "parse_timestamp": "2026-06-13T20:43:25.822142",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -21766,7 +21684,7 @@
     "word_count": 795,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:57.119493",
+    "parse_timestamp": "2026-06-13T20:43:26.198707",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -21865,7 +21783,7 @@
     "word_count": 349,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:57.253681",
+    "parse_timestamp": "2026-06-13T20:43:26.285202",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -21962,7 +21880,7 @@
     "word_count": 301,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:57.387092",
+    "parse_timestamp": "2026-06-13T20:43:26.365645",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -22062,7 +21980,7 @@
     "word_count": 986,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:57.920131",
+    "parse_timestamp": "2026-06-13T20:43:26.610367",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -22165,7 +22083,7 @@
     "word_count": 1065,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:58.317278",
+    "parse_timestamp": "2026-06-13T20:43:26.873758",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -22184,7 +22102,7 @@
     "lower_court": null,
     "lower_court_type": null,
     "lower_court_judge": null,
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -22264,7 +22182,7 @@
     "word_count": 214,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:58.433714",
+    "parse_timestamp": "2026-06-13T20:43:26.979009",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -22285,7 +22203,7 @@
     "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -22310,14 +22228,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -22340,16 +22258,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -22372,10 +22290,10 @@
       "plain_error"
     ],
     "summary_paragraph": "",
-    "word_count": 1545,
+    "word_count": 1467,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:59.053627",
+    "parse_timestamp": "2026-06-13T20:43:27.433099",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -22472,7 +22390,7 @@
     "word_count": 191,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:20:59.147076",
+    "parse_timestamp": "2026-06-13T20:43:27.645455",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -22493,7 +22411,7 @@
     "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -22518,14 +22436,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -22548,16 +22466,16 @@
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -22570,17 +22488,16 @@
       "RSA 72:23, III",
       "RSA 72:34-a",
       "RSA 72:23-m",
-      "RSA 72:23",
-      "RSA 491:8-a, I"
+      "RSA 72:23"
     ],
     "rsa_primary": "RSA 72:23, III",
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1528,
+    "word_count": 1289,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:21:00.099868",
+    "parse_timestamp": "2026-06-13T20:43:27.993263",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -22684,7 +22601,7 @@
     "word_count": 1246,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:21:00.940853",
+    "parse_timestamp": "2026-06-13T20:43:28.358628",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -22789,7 +22706,7 @@
     "word_count": 877,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:21:01.648823",
+    "parse_timestamp": "2026-06-13T20:43:28.668765",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -22888,7 +22805,7 @@
     "word_count": 206,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:21:01.790979",
+    "parse_timestamp": "2026-06-13T20:43:28.749131",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -22988,7 +22905,7 @@
     "word_count": 365,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:21:02.012600",
+    "parse_timestamp": "2026-06-13T20:43:29.025366",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -23007,7 +22924,7 @@
     "lower_court": "Circuit Court (Lyons, J.)",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Lyons",
-    "case_type": "civil",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -23091,7 +23008,7 @@
     "word_count": 445,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:21:02.190572",
+    "parse_timestamp": "2026-06-13T20:43:29.132439",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -23190,7 +23107,7 @@
     "word_count": 282,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:21:02.363152",
+    "parse_timestamp": "2026-06-13T20:43:29.247350",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -23209,7 +23126,7 @@
     "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
     "lower_court_judge": "Foley",
-    "case_type": "criminal",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -23304,7 +23221,7 @@
     "word_count": 1337,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:21:03.351416",
+    "parse_timestamp": "2026-06-13T20:43:29.560094",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -23405,7 +23322,7 @@
     "word_count": 581,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:21:03.580029",
+    "parse_timestamp": "2026-06-13T20:43:29.730026",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -23509,7 +23426,7 @@
     "word_count": 1026,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-28T21:21:03.962192",
+    "parse_timestamp": "2026-06-13T20:43:29.962605",
     "parse_confidence": 0.8,
     "manual_override": false
   }

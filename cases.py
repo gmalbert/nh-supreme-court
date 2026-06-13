@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import ast
 import base64
+import importlib
 import re
 import sys
 from datetime import date
@@ -20,13 +21,23 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from utils.constants import APP_NAME, APP_TAGLINE, OUTCOME_COLORS, OUTCOME_LABELS, VOTE_COLORS
-from utils.data_loader import (
-    data_last_updated,
-    load_case_orders,
-    load_opinion_text,
-    load_opinions,
-    load_opinions_json,
-)
+try:
+    from utils.data_loader import (
+        data_last_updated,
+        load_case_orders,
+        load_opinion_text,
+        load_opinions,
+        load_opinions_json,
+    )
+except KeyError:
+    # Defensive recovery for intermittent import-state races during Streamlit reloads.
+    sys.modules.pop("utils.data_loader", None)
+    _data_loader = importlib.import_module("utils.data_loader")
+    data_last_updated = _data_loader.data_last_updated
+    load_case_orders = _data_loader.load_case_orders
+    load_opinion_text = _data_loader.load_opinion_text
+    load_opinions = _data_loader.load_opinions
+    load_opinions_json = _data_loader.load_opinions_json
 from utils.charts import bench_diagram
 from footer import add_gavel_glimpse_footer
 
@@ -411,6 +422,23 @@ def _render_on_this_day(df: pd.DataFrame) -> None:
         """,
         unsafe_allow_html=True,
     )
+
+    if len(matches) > 1:
+        with st.expander(f"View all {len(matches)} opinions from {display_day}"):
+            for _, match_row in matches.iterrows():
+                match_cn = str(match_row.get("case_number", "")).strip()
+                match_name = escape(str(match_row.get("case_name", "Unknown case")))
+                match_term = match_row.get("term_year", "")
+                match_citation = match_row.get("citation")
+                match_citation_text = (
+                    "" if pd.isna(match_citation) or not str(match_citation).strip() else f" \u00b7 {escape(str(match_citation))}"
+                )
+                match_href = f"case-explorer?case={quote(match_cn)}" if match_cn else "case-explorer"
+                st.markdown(
+                    f"- [{match_name}]({match_href}) ({match_term}){match_citation_text}",
+                    unsafe_allow_html=True,
+                )
+
     st.page_link("pages/01_Opinions.py", label="Explore Opinions")
 
 

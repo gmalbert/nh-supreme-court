@@ -11,8 +11,9 @@
     "date_issued": null,
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "rder\ndesignating eScribers as the transcriber and approving the rates that it may cha",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": null,
@@ -91,7 +92,7 @@
     "word_count": 455,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:06.096146",
+    "parse_timestamp": "2026-06-13T20:52:13.098352",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -104,12 +105,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-02/20220028.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220028.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-12-29",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court\n(Weaver, J.), which, among other things, denied his motion to modi",
+    "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Weaver",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -192,7 +194,7 @@
     "word_count": 912,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:06.391666",
+    "parse_timestamp": "2026-06-13T20:52:13.427561",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -205,11 +207,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-02/20220245.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220245.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-12-29",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Quigley, J.), on a charge of\nmisdemeanor criminal trespass. On ap",
+    "lower_court": "Circuit Court (Quigley, J.)",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Quigley",
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -293,7 +296,7 @@
     "word_count": 671,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:06.652301",
+    "parse_timestamp": "2026-06-13T20:52:13.667327",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -306,11 +309,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-02/20220105.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220105.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-12-28",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "dismissed",
@@ -394,7 +398,7 @@
     "word_count": 473,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:06.823339",
+    "parse_timestamp": "2026-06-13T20:52:13.809485",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -407,12 +411,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-02/20220056.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220056.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-12-28",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Weaver, J.) in her divorce from the respondent,\nJames Rubin. We a",
+    "lower_court": "Circuit Court (Weaver, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Weaver",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -492,7 +497,7 @@
     "word_count": 414,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:06.991135",
+    "parse_timestamp": "2026-06-13T20:52:13.939242",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -505,11 +510,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-02/20220072.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220072.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-12-27",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Lyons,\nJ.), dismissing her complaint brought under RSA chapter 54",
+    "lower_court": "Circuit Court (Lyons",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Lyons",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -583,9 +589,9 @@
       "statutory_interpretation"
     ],
     "rsa_citations": [
-      "RSA chapter"
+      "RSA 540-A"
     ],
-    "rsa_primary": "RSA chapter",
+    "rsa_primary": "RSA 540-A",
     "involves_statutory_interpretation": true,
     "standard_of_review": [
       "de_novo"
@@ -594,7 +600,7 @@
     "word_count": 236,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:07.249464",
+    "parse_timestamp": "2026-06-13T20:52:14.021377",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -607,11 +613,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-02/20220190.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220190.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-12-09",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (O’Neill, J.) granting the petition of\nthe child’s father, Jonatha",
+    "lower_court": "Circuit Court (O’Neill, J.)",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "O’Neill",
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -692,7 +699,7 @@
     "word_count": 697,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:07.518367",
+    "parse_timestamp": "2026-06-13T20:52:14.271070",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -705,11 +712,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-02/20220195.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220195.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-12-09",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nSuperior Court (Nicolosi, J.) granting summary judgment in favor of the\ndefendan",
+    "lower_court": "Superior Court (Nicolosi, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Nicolosi",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -791,7 +799,7 @@
     "word_count": 163,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:07.607772",
+    "parse_timestamp": "2026-06-13T20:52:14.350426",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -804,11 +812,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-02/20210432.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210432.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-12-08",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court\n(Steckowych, J.) erred by finding: (1) that her contact with the v",
+    "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Steckowych",
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -896,7 +905,7 @@
     "word_count": 827,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:07.945542",
+    "parse_timestamp": "2026-06-13T20:52:14.579593",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -909,46 +918,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-12/20210506.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210506.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-12-01",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court\n(Nicolosi, J.) dismissing her complaint against the defendant, wh",
+    "lower_court": "Superior Court",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Nicolosi",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "vacated",
+    "outcome": "dismissed",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -975,12 +985,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -991,9 +1001,7 @@
     "rsa_citations": [
       "RSA 547:3, I",
       "RSA 547:3-l",
-      "RSA 491:7",
-      "RSA 564-A:1, I",
-      "RSA 547:11-b"
+      "RSA 491:7"
     ],
     "rsa_primary": "RSA 547:3, I",
     "involves_statutory_interpretation": false,
@@ -1001,10 +1009,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2159,
+    "word_count": 1241,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:08.827075",
+    "parse_timestamp": "2026-06-13T20:52:14.933819",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1017,11 +1025,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220123.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220123.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-30",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Wageling and Ruoff, JJ.) related to the motion for contempt\nand",
+    "lower_court": "Superior Court (Wageling and Ruoff, JJ.) related to the motion for contempt",
     "lower_court_type": "superior_court",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -1094,7 +1103,7 @@
     "topics": [],
     "rsa_citations": [
       "RSA 524:6-a",
-      "RSA 293-",
+      "RSA 293",
       "RSA 490:14-a"
     ],
     "rsa_primary": "RSA 524:6-a",
@@ -1106,7 +1115,7 @@
     "word_count": 574,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:09.088713",
+    "parse_timestamp": "2026-06-13T20:52:15.118658",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1119,11 +1128,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220090.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220090.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-30",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -1206,7 +1216,7 @@
     "word_count": 153,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:09.279015",
+    "parse_timestamp": "2026-06-13T20:52:15.204826",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1219,11 +1229,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220031.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220031.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-30",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Murray, J.), for a violation level\noffense of operating without a",
+    "lower_court": "Circuit Court (Murray, J.)",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Murray",
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -1307,7 +1318,7 @@
     "word_count": 631,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:09.459568",
+    "parse_timestamp": "2026-06-13T20:52:15.419580",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1320,11 +1331,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220213.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220213.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-29",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Howard, J.) granting the motion of the defendants, Christine\nHog",
+    "lower_court": "Superior Court (Howard, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Howard",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "dismissed",
@@ -1405,7 +1417,7 @@
     "word_count": 209,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:09.543972",
+    "parse_timestamp": "2026-06-13T20:52:15.504439",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1418,12 +1430,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220024.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220024.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-29",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Hall, J.), which granted her petition to modify\nthe parenting pla",
+    "lower_court": "Circuit Court (Hall, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Hall",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -1506,7 +1519,7 @@
     "word_count": 573,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:09.708277",
+    "parse_timestamp": "2026-06-13T20:52:15.655485",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1519,11 +1532,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220185.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220185.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-29",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -1606,7 +1620,7 @@
     "word_count": 186,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:09.807696",
+    "parse_timestamp": "2026-06-13T20:52:15.747172",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1619,11 +1633,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220288.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220288.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-29",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -1702,7 +1717,7 @@
     "word_count": 239,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:09.909692",
+    "parse_timestamp": "2026-06-13T20:52:15.832729",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1715,11 +1730,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220109.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220109.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-29",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -1798,7 +1814,7 @@
     "word_count": 131,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:09.971952",
+    "parse_timestamp": "2026-06-13T20:52:15.992076",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1811,12 +1827,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220205.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220205.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-29",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nCircuit Court (Cross, J.), following a hearing, granting a domestic violence fin",
+    "lower_court": "Circuit Court (Cross, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "criminal",
+    "lower_court_judge": "Cross",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -1905,7 +1922,7 @@
     "word_count": 808,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:10.287093",
+    "parse_timestamp": "2026-06-13T20:52:16.223382",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1918,11 +1935,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220039.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220039.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-29",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Ignatius, J.), following a bench trial,\naffirming the decision o",
+    "lower_court": "Superior Court (Ignatius, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Ignatius",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -2011,7 +2029,7 @@
     "word_count": 1213,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:10.782436",
+    "parse_timestamp": "2026-06-13T20:52:16.636625",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2024,11 +2042,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220037.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220037.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-28",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that the appellant, as the appealing party, has not\nestablished reversible e",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -2107,7 +2126,7 @@
     "word_count": 103,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:10.847413",
+    "parse_timestamp": "2026-06-13T20:52:16.700405",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2120,46 +2139,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-11/20210294.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210294.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-16",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Forrest, J.)\nfollowing a hearing, implementing a parenting plan b",
+    "lower_court": "Circuit Court (Forrest, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Forrest",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred"
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred"
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "concur_separate",
-        "note": "HANTZ MARCONI, J., concurred specially."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred"
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred"
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -2186,17 +2206,16 @@
         "note": null
       }
     },
-    "majority": 4,
+    "majority": 0,
     "dissent": 0,
-    "concur_separate": 1,
-    "not_participating": 4,
-    "vote_string": "4-0",
-    "is_unanimous": true,
+    "concur_separate": 0,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
-    "has_separate_concurrence": true,
+    "has_separate_concurrence": false,
     "topics": [
       "family_law",
-      "statutory_interpretation",
       "constitutional"
     ],
     "rsa_citations": [
@@ -2205,19 +2224,18 @@
       "RSA 458:17, VI",
       "RSA 461-A:6, V",
       "RSA 461-A:20",
-      "RSA 461-",
-      "RSA 461-A:13, I"
+      "RSA 461"
     ],
     "rsa_primary": "RSA 461-A:6",
-    "involves_statutory_interpretation": true,
+    "involves_statutory_interpretation": false,
     "standard_of_review": [
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2177,
+    "word_count": 1295,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:11.878979",
+    "parse_timestamp": "2026-06-13T20:52:17.111544",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2230,12 +2248,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220345.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220345.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-16",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Pendleton, J.)\ngranting a domestic violence final order of protec",
+    "lower_court": "Circuit Court (Pendleton, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "criminal",
+    "lower_court_judge": "Pendleton",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -2328,7 +2347,7 @@
     "word_count": 1361,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:12.337601",
+    "parse_timestamp": "2026-06-13T20:52:17.557778",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2341,12 +2360,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220429.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220429.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-15",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is unnecessary in this case, see Sup. Ct. R. 18(1),\nand t",
+    "lower_court": null,
     "lower_court_type": "administrative",
-    "case_type": "civil",
+    "lower_court_judge": null,
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -2421,9 +2441,8 @@
     ],
     "rsa_citations": [
       "RSA 173-B:3, VIII",
-      "RSA chapter",
-      "RSA 633:3-a, III",
-      "RSA 173-B"
+      "RSA 173-B",
+      "RSA 633:3-a, III"
     ],
     "rsa_primary": "RSA 173-B:3, VIII",
     "involves_statutory_interpretation": false,
@@ -2432,7 +2451,7 @@
     "word_count": 268,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:12.442443",
+    "parse_timestamp": "2026-06-13T20:52:17.674004",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2445,11 +2464,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-11/20220166.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220166.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-15",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "ces (DES) granting a\nshoreland impact permit to the respondent, Lake Ave Realty, LLC.",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -2538,7 +2558,7 @@
     "word_count": 902,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:12.873797",
+    "parse_timestamp": "2026-06-13T20:52:17.949856",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2551,11 +2571,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210583.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210583.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-14",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is unnecessary in this case, see Sup.\nCt. R. 18(1), and t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -2634,7 +2655,7 @@
     "word_count": 98,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:12.950097",
+    "parse_timestamp": "2026-06-13T20:52:18.012618",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2647,11 +2668,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220036.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220036.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-11-10",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is unnecessary in this case, see Sup.\nCt. R. 18(1), and t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -2730,7 +2752,7 @@
     "word_count": 208,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:13.229288",
+    "parse_timestamp": "2026-06-13T20:52:18.107453",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2743,11 +2765,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210233.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210233.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-28",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is unnecessary in this case, see Sup. Ct. R. 18(1),\nand t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -2826,7 +2849,7 @@
     "word_count": 99,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:13.291665",
+    "parse_timestamp": "2026-06-13T20:52:18.169063",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2839,11 +2862,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210384.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210384.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-27",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nCircuit Court (Colligan, R., approved by Quigley, J.), following multiple hearin",
+    "lower_court": "Circuit Court (Colligan, R., approved by Quigley, J.), following multiple hearings.",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Colligan, R., approved by Quigley",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -2924,7 +2948,7 @@
     "word_count": 189,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:13.412019",
+    "parse_timestamp": "2026-06-13T20:52:18.269764",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2937,46 +2961,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210530.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210530.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-27",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Alfano, J.) denied his post-decree\nmotion for reconsideration. Hu",
+    "lower_court": "Circuit Court (Alfano, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Alfano",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "dismissed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -3003,12 +3028,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -3025,10 +3050,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1553,
+    "word_count": 1445,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:13.921605",
+    "parse_timestamp": "2026-06-13T20:52:18.722119",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3041,12 +3066,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210549.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210549.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-27",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Lown, J.) denying\nher motion to modify the final parenting plan e",
+    "lower_court": "Circuit Court (Lown, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Lown",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -3126,7 +3152,7 @@
     "word_count": 169,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:14.032386",
+    "parse_timestamp": "2026-06-13T20:52:18.806313",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3139,11 +3165,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210446.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210446.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-19",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": "Leonard",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -3227,7 +3254,7 @@
     "word_count": 590,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:14.227717",
+    "parse_timestamp": "2026-06-13T20:52:18.968810",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3240,12 +3267,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220189.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220189.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-18",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nSuperior Court (Tucker, J.) dismissing their complaint against the defendant,\nKy",
+    "lower_court": "Superior Court (Tucker, J.)",
     "lower_court_type": "superior_court",
-    "case_type": "civil",
+    "lower_court_judge": "Tucker",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -3329,7 +3357,7 @@
     "word_count": 683,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:14.506079",
+    "parse_timestamp": "2026-06-13T20:52:19.287384",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3342,12 +3370,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220023.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220023.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-18",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Alfano, J.) in his\ndivorce from the respondent, Christine Ansin (",
+    "lower_court": "Circuit Court (Alfano, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Alfano",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "dismissed",
     "author": "per_curiam",
@@ -3430,7 +3459,7 @@
     "word_count": 572,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:14.715574",
+    "parse_timestamp": "2026-06-13T20:52:19.465586",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3443,11 +3472,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210399.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210399.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-18",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court\n(Honigberg, J.) granting summary judgment to the plaintiff, Brand",
+    "lower_court": "Superior Court",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Honigberg",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -3532,7 +3562,7 @@
     "word_count": 554,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:14.958545",
+    "parse_timestamp": "2026-06-13T20:52:19.633642",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3545,11 +3575,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220100.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220100.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-18",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is unnecessary in this case, see Sup. Ct. R.\n18(1), and t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -3628,7 +3659,7 @@
     "word_count": 96,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:15.022885",
+    "parse_timestamp": "2026-06-13T20:52:19.695556",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3641,11 +3672,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210449.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210449.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-18",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is unnecessary in this case, see Sup. Ct.\nR. 18(1), and t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "dismissed",
@@ -3726,7 +3758,7 @@
     "word_count": 116,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:15.104162",
+    "parse_timestamp": "2026-06-13T20:52:19.776698",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3739,12 +3771,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210271.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210271.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-18",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (St. Hilaire, J.),\nwhich: (1) entered default against them on the",
+    "lower_court": "Superior Court (St. Hilaire, J.)",
     "lower_court_type": "superior_court",
-    "case_type": "civil",
+    "lower_court_judge": "St. Hilaire",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "vacated",
     "author": "per_curiam",
@@ -3753,32 +3786,32 @@
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -3805,29 +3838,28 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "civil_procedure",
-      "statutory_interpretation",
       "property",
       "domestic_violence"
     ],
     "rsa_citations": [],
     "rsa_primary": null,
-    "involves_statutory_interpretation": true,
+    "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1770,
+    "word_count": 1258,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:15.950954",
+    "parse_timestamp": "2026-06-13T20:52:20.130828",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3840,12 +3872,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210433.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210433.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-18",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Garner, J.) following a two-day\nhearing, governing the parties’ r",
+    "lower_court": "Circuit Court (Garner, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Garner",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -3925,7 +3958,7 @@
     "word_count": 531,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:16.197091",
+    "parse_timestamp": "2026-06-13T20:52:20.575265",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3938,11 +3971,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210467.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210467.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-17",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nSuperior Court (Leonard, J.), following a jury trial, entering judgment on the\nj",
+    "lower_court": "Superior Court (Leonard, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Leonard",
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -4021,7 +4055,7 @@
     "word_count": 206,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:16.273688",
+    "parse_timestamp": "2026-06-13T20:52:20.708351",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4034,12 +4068,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20220290.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220290.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-17",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Pendleton, J.) extending\na domestic violence final order of prote",
+    "lower_court": "Circuit Court (Pendleton, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Pendleton",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "reversed",
     "author": "per_curiam",
@@ -4121,7 +4156,7 @@
     "word_count": 602,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:16.431360",
+    "parse_timestamp": "2026-06-13T20:52:21.011405",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4134,11 +4169,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210557.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210557.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-17",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is unnecessary in\nthis case, see Sup. Ct. R. 18(1), and t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -4217,7 +4253,7 @@
     "word_count": 110,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:16.482415",
+    "parse_timestamp": "2026-06-13T20:52:21.123495",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4230,12 +4266,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210491.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210491.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-14",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nCircuit Court (Forrest, J.). The husband argues that the trial court erred in:\n(",
+    "lower_court": "Circuit Court (Forrest, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Forrest",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -4321,7 +4358,7 @@
     "word_count": 1308,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:16.933229",
+    "parse_timestamp": "2026-06-13T20:52:22.135443",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4334,11 +4371,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210576.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210576.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-13",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nSuperior Court (Schulman, J.) granting the motion to dismiss filed by the\ndefend",
+    "lower_court": "Superior Court (Schulman, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Schulman",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "dismissed",
@@ -4420,7 +4458,7 @@
     "word_count": 676,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:17.343861",
+    "parse_timestamp": "2026-06-13T20:52:22.426986",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4433,11 +4471,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210030.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210030.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-05",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is unnecessary in\nthis case, see Sup. Ct. R. 18(1), and t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "dismissed",
@@ -4516,7 +4555,7 @@
     "word_count": 124,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:17.406299",
+    "parse_timestamp": "2026-06-13T20:52:22.546425",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4529,11 +4568,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-01/20210490.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210490.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-05",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is unnecessary in this case, see Sup. Ct. R.\n18(1), and t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -4612,7 +4652,7 @@
     "word_count": 112,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:17.467498",
+    "parse_timestamp": "2026-06-13T20:52:22.654159",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4625,46 +4665,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210473.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210473.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-10-04",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "remaned",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -4691,18 +4732,16 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "administrative_law",
-      "family_law",
-      "statutory_interpretation",
       "property"
     ],
     "rsa_citations": [
@@ -4714,26 +4753,18 @@
       "RSA 679:9, I",
       "RSA 677:4",
       "RSA 677:16",
-      "RSA chapter",
-      "RSA 679:15",
       "RSA 541",
-      "RSA 541:13",
-      "RSA 672:1, III",
-      "RSA 674:59, I",
-      "RSA 679:9",
-      "RSA 541:4",
-      "RSA 679:5, I"
+      "RSA 679:15",
+      "RSA 541:13"
     ],
     "rsa_primary": "RSA 674:58, IV",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 3106,
+    "word_count": 1351,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:18.434803",
+    "parse_timestamp": "2026-06-13T20:52:23.337583",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4746,11 +4777,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210334.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210334.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-30",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is\nunnecessary in this case, see Sup. Ct. R. 18(1), and t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -4829,7 +4861,7 @@
     "word_count": 100,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:18.493060",
+    "parse_timestamp": "2026-06-13T20:52:23.408949",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4842,11 +4874,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210578.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210578.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-29",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is unnecessary in\nthis case, see Sup. Ct. R. 18(1), and t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -4925,7 +4958,7 @@
     "word_count": 101,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:18.549421",
+    "parse_timestamp": "2026-06-13T20:52:23.474189",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4938,11 +4971,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20220161.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220161.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-29",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes\nthat oral argument is unnecessary in this case, see Sup. Ct. R. 18(1), and t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -5021,7 +5055,7 @@
     "word_count": 138,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:18.615219",
+    "parse_timestamp": "2026-06-13T20:52:23.538826",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5034,11 +5068,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-09/20210161.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210161.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-29",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that a formal written opinion\nis unnecessary in this case. The defendant, Je",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "vacated",
@@ -5054,26 +5089,26 @@
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, and BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, and BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, and BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, and BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -5100,18 +5135,17 @@
         "note": null
       }
     },
-    "majority": 4,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 5,
-    "vote_string": "4-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "criminal",
-      "constitutional",
-      "tax"
+      "constitutional"
     ],
     "rsa_citations": [
       "RSA 263:64, I",
@@ -5119,28 +5153,18 @@
       "RSA 262:42",
       "RSA 259:39",
       "RSA 262:19",
-      "RSA 599:1",
-      "RSA 604-A:2, I",
-      "RSA 604-A:2-f, I",
-      "RSA 604-A:3",
-      "RSA 604-A:2",
-      "RSA 604-A:9",
-      "RSA 604-A:2-f",
-      "RSA 651:2, I",
-      "RSA 597:2, I",
-      "RSA 651:2, II"
+      "RSA 599:1"
     ],
     "rsa_primary": "RSA 263:64, I",
     "involves_statutory_interpretation": false,
     "standard_of_review": [
-      "de_novo",
-      "plain_error"
+      "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 4347,
+    "word_count": 1438,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:20.167751",
+    "parse_timestamp": "2026-06-13T20:52:24.078366",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5153,11 +5177,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210313.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210313.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-29",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "ces (DES) on the basis that the petitioners had not served the appeal upon\nentities e",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "reversed_and_remanded",
@@ -5235,12 +5260,13 @@
     "rsa_citations": [
       "RSA 482-A:3",
       "RSA 21-O:14",
-      "RSA chapter",
-      "RSA 21-",
+      "RSA 541",
+      "RSA 21",
       "RSA 541:13",
       "RSA 482-A:10",
       "RSA 482-A:10, III",
       "RSA 541-A",
+      "RSA 482-A",
       "RSA 482-A:10, I",
       "RSA 541:4"
     ],
@@ -5251,7 +5277,7 @@
     "word_count": 1107,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:20.601805",
+    "parse_timestamp": "2026-06-13T20:52:24.469299",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5264,11 +5290,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210538.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210538.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-29",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Mace, J.) granting possession of\nresidential property to the plai",
+    "lower_court": "Circuit Court (Mace, J.)",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Mace",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "vacated",
@@ -5352,7 +5379,7 @@
     "word_count": 483,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:20.798462",
+    "parse_timestamp": "2026-06-13T20:52:24.686015",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5365,46 +5392,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-09/20210448.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210448.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-28",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Temple, J.) granting summary judgment to the\ndefendant, Suzan A.",
+    "lower_court": "Superior Court (Temple, J.)",
     "lower_court_type": "superior_court",
-    "case_type": "civil",
+    "lower_court_judge": "Temple",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -5431,12 +5459,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -5456,10 +5484,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 1381,
+    "word_count": 1338,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:21.299207",
+    "parse_timestamp": "2026-06-13T20:52:25.147512",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5472,11 +5500,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-09/20210322.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210322.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-28",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Ruoff, J.) imposing a deferred sentence. He\ncontends that the tr",
+    "lower_court": "Superior Court (Ruoff, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Ruoff",
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -5558,7 +5587,7 @@
     "word_count": 1021,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:21.685729",
+    "parse_timestamp": "2026-06-13T20:52:25.594791",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5571,11 +5600,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210515.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210515.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-27",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "l in Circuit Court (Quigley, J.) on one misdemeanor count of resisting\narrest. See RS",
+    "lower_court": "Circuit Court (Quigley, J.)",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Quigley",
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "vacated",
@@ -5660,7 +5690,7 @@
     "word_count": 1090,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:22.008122",
+    "parse_timestamp": "2026-06-13T20:52:26.205724",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5673,11 +5703,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210395.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210395.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-19",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "s in Circuit Court\n(Stephen, J.) on charges of driving under the influence of liquor",
+    "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Stephen",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -5765,7 +5796,7 @@
     "word_count": 1194,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:22.653251",
+    "parse_timestamp": "2026-06-13T20:52:26.671263",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5778,11 +5809,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20220078.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220078.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-19",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Howard, J.) granting the\nmotion of the defendants to dismiss his",
+    "lower_court": "Superior Court (Howard, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Howard",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "dismissed",
@@ -5866,7 +5898,7 @@
     "word_count": 526,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:22.887785",
+    "parse_timestamp": "2026-06-13T20:52:26.828595",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5879,11 +5911,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210556.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210556.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-16",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Spath, J.) entering judgment in favor of the plaintiff on the\npla",
+    "lower_court": "Circuit Court (Spath, J.)",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Spath",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -5964,7 +5997,7 @@
     "word_count": 256,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:23.014244",
+    "parse_timestamp": "2026-06-13T20:52:26.945703",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5977,11 +6010,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210311.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210311.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-16",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Pendleton, J.) entering judgment of\n$8,320.44 in favor of the pla",
+    "lower_court": "Circuit Court (Pendleton, J.)",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Pendleton",
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -6060,7 +6094,7 @@
     "word_count": 238,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:23.169463",
+    "parse_timestamp": "2026-06-13T20:52:27.044190",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6073,11 +6107,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210536.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210536.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-16",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral\nargument is unnecessary in this case, see Sup. Ct. R. 18(1), and t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -6156,7 +6191,7 @@
     "word_count": 117,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:23.279174",
+    "parse_timestamp": "2026-06-13T20:52:27.117644",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6169,46 +6204,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210353.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210353.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-16",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nCircuit Court (Alfano, J.) in her divorce from the respondent, Dennis Rooney\n(Hu",
+    "lower_court": "Circuit Court (Alfano, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Alfano",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -6235,18 +6271,17 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "family_law",
-      "property",
-      "evidence"
+      "property"
     ],
     "rsa_citations": [
       "RSA 458:16-a",
@@ -6256,10 +6291,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1723,
+    "word_count": 1435,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:23.895769",
+    "parse_timestamp": "2026-06-13T20:52:27.592167",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6272,11 +6307,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210573.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210573.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-16",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -6357,7 +6393,7 @@
     "word_count": 268,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:24.030236",
+    "parse_timestamp": "2026-06-13T20:52:27.809044",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6370,11 +6406,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210514.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210514.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-16",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Howard, J.) denying his request for\nemergency relief. We affirm.",
+    "lower_court": "Superior Court (Howard, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Howard",
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -6453,7 +6490,7 @@
     "word_count": 320,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:24.190538",
+    "parse_timestamp": "2026-06-13T20:52:27.941770",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6466,12 +6503,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210390.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210390.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-15",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nCircuit Court (DalPra, M., approved by Curran, J.) in his divorce from the\nrespo",
+    "lower_court": "Circuit Court (DalPra, M., approved by Curran, J.) in his divorce from the",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "DalPra, M., approved by Curran",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -6553,7 +6591,7 @@
     "word_count": 683,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:24.610679",
+    "parse_timestamp": "2026-06-13T20:52:28.223811",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6566,11 +6604,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20220350.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220350.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-15",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": "Nicolosi",
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "dismissed",
@@ -6662,7 +6701,7 @@
     "word_count": 1249,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:24.987778",
+    "parse_timestamp": "2026-06-13T20:52:28.769251",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6675,46 +6714,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-09/20210286.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210286.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2020-09-09",
     "days_to_decision": null,
-    "term_year": 2022,
+    "term_year": 2020,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -6741,12 +6781,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -6758,7 +6798,7 @@
     ],
     "rsa_citations": [
       "RSA 227-H:9",
-      "RSA chapter",
+      "RSA 541",
       "RSA 541:6",
       "RSA 490:4"
     ],
@@ -6766,10 +6806,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1575,
+    "word_count": 1222,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:25.454717",
+    "parse_timestamp": "2026-06-13T20:52:29.456266",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6782,46 +6822,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-09/20210329.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210329.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-08",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that a formal written opinion is unnecessary in this case.\nThe claimant, JoA",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -6848,12 +6889,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -6864,9 +6905,8 @@
       "RSA 281-A:48",
       "RSA 541:13",
       "RSA 281-A:48, I",
-      "RSA 281-",
-      "RSA 281-A:2, X",
-      "RSA 281-A:44"
+      "RSA 281",
+      "RSA 281-A:2, X"
     ],
     "rsa_primary": "RSA 281-A:48",
     "involves_statutory_interpretation": false,
@@ -6874,10 +6914,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2098,
+    "word_count": 1351,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:26.180693",
+    "parse_timestamp": "2026-06-13T20:52:30.208115",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6890,11 +6930,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20210293.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210293.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-06",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is unnecessary in this case, see Sup. Ct. R. 18(1),\nand t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -6973,7 +7014,7 @@
     "word_count": 93,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:26.259132",
+    "parse_timestamp": "2026-06-13T20:52:30.291569",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6986,12 +7027,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20220071.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220071.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-06",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Mace, J.), following a\nhearing, granting a domestic violence fina",
+    "lower_court": "Circuit Court (Mace, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "criminal",
+    "lower_court_judge": "Mace",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": null,
     "author": "per_curiam",
@@ -7080,7 +7122,7 @@
     "word_count": 495,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:26.835137",
+    "parse_timestamp": "2026-06-13T20:52:30.739608",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7093,11 +7135,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-09/20210362.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210362.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-02",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Nicolosi, J.) denying his motion for earned time credit. See\nRSA",
+    "lower_court": "Superior Court (Nicolosi, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Nicolosi",
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "vacated",
@@ -7180,7 +7223,7 @@
     "word_count": 544,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:26.978554",
+    "parse_timestamp": "2026-06-13T20:52:30.968610",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7193,46 +7236,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/20220252.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220252.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-09-01",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Pendleton, J.) upon the\npetition of the plaintiff, K.M. We affirm",
+    "lower_court": "Circuit Court (Pendleton, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "criminal",
+    "lower_court_judge": "Pendleton",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -7259,12 +7303,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -7274,23 +7318,23 @@
       "domestic_violence"
     ],
     "rsa_citations": [
-      "RSA chapter",
+      "RSA 173-B",
       "RSA 173-B:1, I",
       "RSA 633:3-a",
       "RSA 644:4",
       "RSA 173-B:3, VI",
       "RSA 644:4, I"
     ],
-    "rsa_primary": "RSA chapter",
+    "rsa_primary": "RSA 173-B",
     "involves_statutory_interpretation": false,
     "standard_of_review": [
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 1929,
+    "word_count": 1368,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:27.540437",
+    "parse_timestamp": "2026-06-13T20:52:31.414725",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7303,14 +7347,15 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-08/20190130and20220331.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20190130and20220331.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-08-25",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Desjardins, J.)\nerred by denying her pretrial motion to suppress",
+    "lower_court": "Circuit Court (Desjardins, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "criminal",
+    "lower_court_judge": "Desjardins",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "vacated",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -7323,14 +7368,14 @@
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
@@ -7341,8 +7386,8 @@
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -7369,33 +7414,31 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "criminal",
-      "family_law",
-      "statutory_interpretation"
+      "family_law"
     ],
     "rsa_citations": [
-      "RSA 644:8, III",
-      "RSA 644:8, IV"
+      "RSA 644:8, III"
     ],
     "rsa_primary": "RSA 644:8, III",
-    "involves_statutory_interpretation": true,
+    "involves_statutory_interpretation": false,
     "standard_of_review": [
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2922,
+    "word_count": 1397,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:28.607230",
+    "parse_timestamp": "2026-06-13T20:52:31.956523",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7408,14 +7451,15 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-08/20210015.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210015.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-08-16",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "The Superior Court (Ruoff, J.) vacated the ZBA’s denial and\nremanded for further pro",
+    "lower_court": "Superior Court (Ruoff, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Ruoff",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -7488,19 +7532,17 @@
       "property",
       "DWI"
     ],
-    "rsa_citations": [
-      "RSA 674:44"
-    ],
-    "rsa_primary": "RSA 674:44",
+    "rsa_citations": [],
+    "rsa_primary": null,
     "involves_statutory_interpretation": true,
     "standard_of_review": [
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 2526,
+    "word_count": 1363,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:29.474808",
+    "parse_timestamp": "2026-06-13T20:52:32.367156",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7513,11 +7555,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-09/20210488.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210488.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-08-11",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nSuperior Court (Bornstein, J.) granting a motion for periodic payment of a\njudgm",
+    "lower_court": "Superior Court (Bornstein, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Bornstein",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -7601,7 +7644,7 @@
     "word_count": 349,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:29.581014",
+    "parse_timestamp": "2026-06-13T20:52:32.500861",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7614,46 +7657,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-09/20210282.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210282.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-08-11",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (LeFrancois, J.),\nfollowing a hearing, denying his petition to mod",
+    "lower_court": "Circuit Court (LeFrancois, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "LeFrancois",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "reversed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -7680,12 +7724,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -7702,10 +7746,10 @@
     "involves_statutory_interpretation": true,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2532,
+    "word_count": 1386,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:30.433895",
+    "parse_timestamp": "2026-06-13T20:52:32.987462",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7718,11 +7762,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-09/20210575.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210575.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-08-11",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Boyle, J.),\non a charge of harassment. See RSA 644:4 (Supp. 2021)",
+    "lower_court": "Circuit Court (Boyle, J.)",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Boyle",
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "reversed",
@@ -7803,7 +7848,7 @@
     "word_count": 127,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:30.512122",
+    "parse_timestamp": "2026-06-13T20:52:33.097291",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7816,12 +7861,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-09/20210320.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210320.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-08-11",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Leonard, J.) granting the motion for contempt filed\nby the respon",
+    "lower_court": "Circuit Court (Leonard, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Leonard",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -7905,7 +7951,7 @@
     "word_count": 919,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:31.082415",
+    "parse_timestamp": "2026-06-13T20:52:33.728416",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7918,14 +7964,15 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-08/20210222.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210222.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-08-05",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that a formal written opinion\nis unnecessary in this case. The petitioners,",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": "dismissed",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -7938,26 +7985,26 @@
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -7984,12 +8031,12 @@
         "note": null
       }
     },
-    "majority": 4,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 5,
-    "vote_string": "4-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -8007,20 +8054,16 @@
       "RSA 482-A:10, IV",
       "RSA 21-M:3, IX",
       "RSA 541:13",
-      "RSA 482-",
-      "RSA 482-A:2, IX",
-      "RSA chapter",
-      "RSA 482-A:3, IV",
-      "RSA 482-A:6, IV"
+      "RSA 482"
     ],
     "rsa_primary": "RSA 482-A:10, I",
     "involves_statutory_interpretation": true,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 3150,
+    "word_count": 1348,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:32.208808",
+    "parse_timestamp": "2026-06-13T20:52:34.275129",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8033,11 +8076,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-07/20200448.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20200448.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-07-21",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that a formal written opinion\nis unnecessary in this case. We affirm in part",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "vacated",
@@ -8113,7 +8157,7 @@
     ],
     "rsa_citations": [
       "RSA 105:13-b, II",
-      "RSA chapter",
+      "RSA 105",
       "RSA 105:13-d"
     ],
     "rsa_primary": "RSA 105:13-b, II",
@@ -8123,7 +8167,7 @@
     "word_count": 502,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:32.415854",
+    "parse_timestamp": "2026-06-13T20:52:34.471638",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8136,11 +8180,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-07/20200501.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20200501.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-07-21",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that a formal written opinion\nis unnecessary in this case. We affirm in part",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "vacated",
@@ -8216,7 +8261,7 @@
     ],
     "rsa_citations": [
       "RSA 105:13-b, II",
-      "RSA chapter",
+      "RSA 105",
       "RSA 105:13-d"
     ],
     "rsa_primary": "RSA 105:13-b, II",
@@ -8226,7 +8271,7 @@
     "word_count": 503,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:32.602186",
+    "parse_timestamp": "2026-06-13T20:52:34.666361",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8239,11 +8284,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-08/20210343.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210343.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-07-01",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -8328,7 +8374,7 @@
     "word_count": 838,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:33.066476",
+    "parse_timestamp": "2026-06-13T20:52:34.981127",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8341,46 +8387,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-08/20210368.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210368.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-07-01",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court\n(Yazinski, J.) denying his petition to change the parties’ parenti",
+    "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Yazinski",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -8407,12 +8454,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -8433,10 +8480,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1498,
+    "word_count": 1456,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:33.573875",
+    "parse_timestamp": "2026-06-13T20:52:35.704309",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8449,11 +8496,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-08/20210494.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210494.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-07-01",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court\n(Tucker, J.) dismissing his third amended complaint with prejudice",
+    "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Tucker",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "dismissed",
@@ -8539,7 +8587,7 @@
     "word_count": 582,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:33.853997",
+    "parse_timestamp": "2026-06-13T20:52:35.936454",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8552,11 +8600,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-07/20210365.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210365.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-06-30",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": "Ruoff",
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "vacated",
@@ -8635,7 +8684,7 @@
     "word_count": 788,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:34.217281",
+    "parse_timestamp": "2026-06-13T20:52:36.238100",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8648,12 +8697,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-07/20220151.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220151.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-06-30",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Rauseo, J.) upon the petition of the plaintiff, the\ndefendant’s s",
+    "lower_court": "Circuit Court (Rauseo, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "criminal",
+    "lower_court_judge": "Rauseo",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -8727,13 +8777,13 @@
       "domestic_violence"
     ],
     "rsa_citations": [
-      "RSA chapter",
+      "RSA 173-B",
       "RSA 173-B:1, I",
       "RSA 631:1",
       "RSA 631:3",
       "RSA 173-B:3, VI"
     ],
-    "rsa_primary": "RSA chapter",
+    "rsa_primary": "RSA 173-B",
     "involves_statutory_interpretation": false,
     "standard_of_review": [
       "de_novo"
@@ -8742,7 +8792,7 @@
     "word_count": 684,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:34.523564",
+    "parse_timestamp": "2026-06-13T20:52:36.462608",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8755,46 +8805,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-07/20220035.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220035.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-06-22",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court\n(Messer and Nicolosi, JJ.) denying his request for release pendin",
+    "lower_court": "Superior Court",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Temple",
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -8821,12 +8872,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -8842,10 +8893,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1557,
+    "word_count": 1453,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:35.233779",
+    "parse_timestamp": "2026-06-13T20:52:36.786307",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8858,11 +8909,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-07/20210584.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210584.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-06-20",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "provides: “A new trial may be granted in any case when through\naccident, mistake or m",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -8943,7 +8995,7 @@
     "word_count": 580,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:35.492267",
+    "parse_timestamp": "2026-06-13T20:52:36.955400",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8956,11 +9008,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-07/20210489.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210489.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-06-20",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -9036,11 +9089,10 @@
       "property"
     ],
     "rsa_citations": [
-      "RSA ch",
-      "RSA chapter",
+      "RSA 437",
       "RSA 437:18, II"
     ],
-    "rsa_primary": "RSA ch",
+    "rsa_primary": "RSA 437",
     "involves_statutory_interpretation": true,
     "standard_of_review": [
       "de_novo"
@@ -9049,7 +9101,7 @@
     "word_count": 1216,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:35.873765",
+    "parse_timestamp": "2026-06-13T20:52:37.365342",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9062,12 +9114,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-07/20210597.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210597.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-06-20",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nCircuit Court (Tenney, J.), following a hearing, granting a domestic violence\nfi",
+    "lower_court": "Circuit Court (Tenney, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "criminal",
+    "lower_court_judge": "Tenney",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -9144,7 +9197,8 @@
     ],
     "rsa_citations": [
       "RSA 173-B:5",
-      "RSA chapter",
+      "RSA 627",
+      "RSA 173-B",
       "RSA 173-B:5, I",
       "RSA 173-B:1",
       "RSA 631:1",
@@ -9159,7 +9213,7 @@
     "word_count": 582,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:36.089335",
+    "parse_timestamp": "2026-06-13T20:52:37.589149",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9172,46 +9226,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-07/20210500.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210500.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-06-17",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Messer, J.) denying Foy’s petition\nfor a new trial. We affirm.\nT",
+    "lower_court": "Superior Court (Messer, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Messer",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": "dismissed",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -9238,12 +9293,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -9261,10 +9316,10 @@
     "involves_statutory_interpretation": true,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2319,
+    "word_count": 1392,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:36.836122",
+    "parse_timestamp": "2026-06-13T20:52:37.906688",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9277,11 +9332,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-07/20210375.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210375.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-06-17",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that oral argument is unnecessary in this case,\nsee Sup. Ct. R. 18(1), and t",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -9360,7 +9416,7 @@
     "word_count": 94,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:36.902001",
+    "parse_timestamp": "2026-06-13T20:52:37.967933",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9373,14 +9429,15 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-07/20200082.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20200082.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-06-17",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "includes the following evidence. On\nJanuary 9, 2019, the Manchester Police Department",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -9393,26 +9450,26 @@
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -9439,32 +9496,31 @@
         "note": null
       }
     },
-    "majority": 4,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 5,
-    "vote_string": "4-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "criminal"
     ],
     "rsa_citations": [
-      "RSA 159-3:a",
-      "RSA 159:3-a, II"
+      "RSA 159-3"
     ],
-    "rsa_primary": "RSA 159-3:a",
+    "rsa_primary": "RSA 159-3",
     "involves_statutory_interpretation": false,
     "standard_of_review": [
       "de_novo",
       "clear_error"
     ],
     "summary_paragraph": "",
-    "word_count": 1620,
+    "word_count": 1333,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:37.520286",
+    "parse_timestamp": "2026-06-13T20:52:38.325488",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9477,12 +9533,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-07/20220040.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220040.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-06-17",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Boyle, R.,\napproved by Luneau, J.) granting a domestic violence f",
+    "lower_court": "Circuit Court (Boyle, R.",
     "lower_court_type": "circuit_court",
-    "case_type": "criminal",
+    "lower_court_judge": "Boyle, R.,\napproved by Luneau",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -9574,7 +9631,104 @@
     "word_count": 1331,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:48:37.955980",
+    "parse_timestamp": "2026-06-13T20:52:38.727922",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2022-0184",
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "2022-0184 Report and Plan of the Special Master",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-05/20220184specialmastersreportandplan.pdf",
+    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220184specialmastersreportandplan.pdf",
+    "date_argued": null,
+    "date_issued": "2022-05-12",
+    "days_to_decision": null,
+    "term_year": 2022,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": null,
+    "case_type": null,
+    "appeal_type": "standard",
+    "outcome": null,
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "hicks": {
+        "display_name": "Hicks, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "lynn": {
+        "display_name": "Lynn, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 0,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 537,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-06-13T20:52:39.062080",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9587,11 +9741,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-05/20210148.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210148.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-05-24",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Luneau, J.), on one\nmisdemeanor count of driving while his licens",
+    "lower_court": "Circuit Court (Luneau, J.)",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Luneau",
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -9678,7 +9833,7 @@
     "word_count": 447,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:07.313165",
+    "parse_timestamp": "2026-06-13T20:52:39.289899",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9691,11 +9846,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-05/20210274.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210274.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-05-20",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court\n(Messer, J.) finding in favor of the petitioner, Andrea Amodeo-Vi",
+    "lower_court": "Superior Court",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Messer",
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": null,
@@ -9711,26 +9867,26 @@
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred"
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred"
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred"
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "dissent",
-        "note": "HICKS, J., dissented."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -9757,35 +9913,34 @@
         "note": null
       }
     },
-    "majority": 3,
-    "dissent": 1,
+    "majority": 0,
+    "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 5,
-    "vote_string": "3-1",
+    "not_participating": 9,
+    "vote_string": "N/A",
     "is_unanimous": false,
-    "has_dissent": true,
+    "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "criminal",
-      "administrative_law",
       "statutory_interpretation",
       "tax"
     ],
     "rsa_citations": [
-      "RSA chapter",
+      "RSA 91-A",
       "RSA 91-A:8",
       "RSA 91-A:4, IV",
       "RSA 91-A:4",
       "RSA 91-A:7"
     ],
-    "rsa_primary": "RSA chapter",
+    "rsa_primary": "RSA 91-A",
     "involves_statutory_interpretation": true,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 2144,
+    "word_count": 1212,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:08.251500",
+    "parse_timestamp": "2026-06-13T20:52:39.602663",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9798,11 +9953,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-06/20210052.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210052.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-05-06",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Hall, J.) erred by excluding evidence relevant to the\narresting o",
+    "lower_court": "Circuit Court (Hall, J.)",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Hall",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -9887,7 +10043,7 @@
     "word_count": 919,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:08.603539",
+    "parse_timestamp": "2026-06-13T20:52:39.838941",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9900,11 +10056,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-05/20210407.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210407.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-04-28",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Ryan, R.,\napproved by DeVries, J.) dismissing his case against th",
+    "lower_court": "Circuit Court (Ryan, R.",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Ryan, R.,\napproved by DeVries",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "vacated",
@@ -9985,7 +10142,7 @@
     "word_count": 478,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:10.428467",
+    "parse_timestamp": "2026-06-13T20:52:40.067725",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9998,12 +10155,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-05/20210276.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210276.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-04-25",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court\n(Lemire, J.), on remand from our opinion in In the Matter of Kamil",
+    "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Lemire",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -10085,7 +10243,7 @@
     "word_count": 890,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:10.721734",
+    "parse_timestamp": "2026-06-13T20:52:40.279150",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10098,11 +10256,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-05/20210196.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210196.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-04-25",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Ignatius, J.)\nupholding decisions of the City of Portsmouth Plan",
+    "lower_court": "Superior Court (Ignatius, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Ignatius",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -10186,7 +10345,7 @@
     "word_count": 514,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:10.998711",
+    "parse_timestamp": "2026-06-13T20:52:40.455594",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10199,14 +10358,15 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-04/20210085.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210085.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-04-22",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that a formal written opinion is unnecessary in this case. The\nappellants, S",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -10219,8 +10379,8 @@
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
@@ -10231,14 +10391,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -10265,11 +10425,11 @@
         "note": null
       }
     },
-    "majority": 4,
+    "majority": 1,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 5,
-    "vote_string": "4-0",
+    "not_participating": 8,
+    "vote_string": "1-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -10278,20 +10438,20 @@
       "property"
     ],
     "rsa_citations": [
-      "RSA chapter",
+      "RSA 541",
       "RSA 21-O:14, III",
       "RSA 541:13"
     ],
-    "rsa_primary": "RSA chapter",
+    "rsa_primary": "RSA 541",
     "involves_statutory_interpretation": false,
     "standard_of_review": [
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 1437,
+    "word_count": 1358,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:11.527723",
+    "parse_timestamp": "2026-06-13T20:52:40.785362",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10304,12 +10464,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-05/20220006.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20220006.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-04-22",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
-    "case_type": "criminal",
+    "lower_court_judge": null,
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -10385,7 +10546,7 @@
     ],
     "rsa_citations": [
       "RSA 173-B:5",
-      "RSA chapter",
+      "RSA 173-B",
       "RSA 173-B:1"
     ],
     "rsa_primary": "RSA 173-B:5",
@@ -10395,7 +10556,7 @@
     "word_count": 621,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:11.756424",
+    "parse_timestamp": "2026-06-13T20:52:40.990184",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10408,11 +10569,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-04/20210031.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210031.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-04-21",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Temple, J.)\naffirming the decision of the Town of Pelham Plannin",
+    "lower_court": "Superior Court (Temple, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Temple",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -10502,7 +10664,7 @@
     "word_count": 1228,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:12.531045",
+    "parse_timestamp": "2026-06-13T20:52:41.460857",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10515,14 +10677,15 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-04/20210423.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210423.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-04-19",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that a formal written opinion is unnecessary in this case. After\ndenying the",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": "criminal",
     "appeal_type": "standard",
-    "outcome": "remanded",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
@@ -10535,26 +10698,26 @@
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -10581,12 +10744,12 @@
         "note": null
       }
     },
-    "majority": 4,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 5,
-    "vote_string": "4-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -10604,10 +10767,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 1647,
+    "word_count": 1319,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:13.224956",
+    "parse_timestamp": "2026-06-13T20:52:41.824709",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10620,11 +10783,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-05/20210305.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210305.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-04-11",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "vacated",
@@ -10706,7 +10870,7 @@
     "word_count": 1277,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:13.613151",
+    "parse_timestamp": "2026-06-13T20:52:42.141722",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10719,11 +10883,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-05/20210204.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210204.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-04-11",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -10812,7 +10977,7 @@
     "word_count": 1219,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:14.124574",
+    "parse_timestamp": "2026-06-13T20:52:42.461160",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10825,11 +10990,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-05/20210143.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210143.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-04-08",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Cassavechia, R., approved by Moran, J.)\ndismissing his amended pe",
+    "lower_court": "Circuit Court (Cassavechia, R., approved by Moran, J.)",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Cassavechia, R., approved by Moran",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "dismissed",
@@ -10910,7 +11076,7 @@
     "word_count": 720,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:14.670288",
+    "parse_timestamp": "2026-06-13T20:52:42.767905",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10923,11 +11089,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-05/20210326.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210326.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-04-06",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nCircuit Court (Alfano, J.) entering judgment in favor of the plaintiffs, James\nC",
+    "lower_court": "Circuit Court (Alfano, J.)",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Alfano",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -11010,7 +11177,7 @@
     "word_count": 665,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:14.953036",
+    "parse_timestamp": "2026-06-13T20:52:42.963433",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11023,11 +11190,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-04/20210208.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210208.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-03-23",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nSuperior Court (Colburn, J.) entering summary judgment for the plaintiff, Wells",
+    "lower_court": "Superior Court (Colburn, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Colburn",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -11108,7 +11276,7 @@
     "word_count": 210,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:15.093773",
+    "parse_timestamp": "2026-06-13T20:52:43.053550",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11121,46 +11289,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-04/20210418.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210418.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-03-22",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "ls a Circuit Court (Gleason, J.) order denying her request\nfor a further extension of",
+    "lower_court": "Circuit Court (Gleason, J.)",
     "lower_court_type": "circuit_court",
-    "case_type": "criminal",
+    "lower_court_judge": "Gleason",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -11187,12 +11356,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -11210,10 +11379,10 @@
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1547,
+    "word_count": 1380,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:15.587902",
+    "parse_timestamp": "2026-06-13T20:52:43.383552",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11226,11 +11395,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-04/20210284.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210284.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-03-18",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court (Greenhalgh\nand Maloney, JJ., and Ryan, R., approved by Maloney, J",
+    "lower_court": "Circuit Court (Greenhalgh",
     "lower_court_type": "circuit_court",
+    "lower_court_judge": "Greenhalgh\nand Maloney, JJ., and Ryan, R., approved by Maloney",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "dismissed",
@@ -11311,7 +11481,7 @@
     "word_count": 611,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:15.760250",
+    "parse_timestamp": "2026-06-13T20:52:43.561883",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11324,12 +11494,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-04/20210404.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210404.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-03-18",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the circuit court’s final stalking protective order, see\nRSA 633:3-a (2016 & Supp. 2",
+    "lower_court": "circuit court’s final stalking protective order, see",
     "lower_court_type": "circuit_court",
-    "case_type": "criminal",
+    "lower_court_judge": null,
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -11416,7 +11587,7 @@
     "word_count": 1045,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:16.313431",
+    "parse_timestamp": "2026-06-13T20:52:43.830029",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11429,11 +11600,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-03/20210142.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210142.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-03-16",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nSuperior Court (Honigberg, J.) dismissing their petition for declaratory\njudgmen",
+    "lower_court": "Superior Court (Honigberg, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Honigberg",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "remanded",
@@ -11523,7 +11695,7 @@
     "word_count": 921,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:16.602011",
+    "parse_timestamp": "2026-06-13T20:52:44.184884",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11536,46 +11708,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-04/20210527.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210527.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-03-15",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\ncircuit court for the protection of the plaintiff, H.F. We construe the\ndefendan",
+    "lower_court": "circuit court for the protection of the plaintiff, H.F. We construe the",
     "lower_court_type": "circuit_court",
-    "case_type": "criminal",
+    "lower_court_judge": null,
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -11602,12 +11775,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -11628,10 +11801,10 @@
     "involves_statutory_interpretation": true,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1408,
+    "word_count": 1373,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:17.109389",
+    "parse_timestamp": "2026-06-13T20:52:44.489483",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11644,28 +11817,29 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-03/20210114.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210114.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-03-09",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Temple, J.)\nentering judgment for the defendant, SNHS Management",
+    "lower_court": "Superior Court (Temple, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Temple",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": null,
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
@@ -11676,14 +11850,14 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -11710,18 +11884,17 @@
         "note": null
       }
     },
-    "majority": 4,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 5,
-    "vote_string": "4-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "civil_procedure",
-      "property",
-      "contract"
+      "property"
     ],
     "rsa_citations": [
       "RSA 508:2, I"
@@ -11732,10 +11905,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 3066,
+    "word_count": 1448,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:18.397842",
+    "parse_timestamp": "2026-06-13T20:52:44.843311",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11748,11 +11921,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-02/LD20210012.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\LD20210012.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-02-25",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": null,
@@ -11762,32 +11936,32 @@
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -11814,22 +11988,18 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
       "criminal",
-      "insurance",
       "statutory_interpretation",
-      "constitutional",
-      "property",
-      "tort",
-      "evidence"
+      "constitutional"
     ],
     "rsa_citations": [
       "RSA 311:8",
@@ -11841,10 +12011,10 @@
       "de_novo"
     ],
     "summary_paragraph": "",
-    "word_count": 3334,
+    "word_count": 1254,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:19.816910",
+    "parse_timestamp": "2026-06-13T20:52:45.219772",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11857,46 +12027,47 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-03/20210468.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210468.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-02-22",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "ding superior court judge, and for “intervention” by\nthis court are denied without pr",
+    "lower_court": "superior court judge, and for “intervention” by",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Temple",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": "affirmed",
+    "outcome": "dismissed",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Hicks, Bassett, Hantz Marconi, and Donovan, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -11923,12 +12094,12 @@
         "note": null
       }
     },
-    "majority": 5,
+    "majority": 0,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 4,
-    "vote_string": "5-0",
-    "is_unanimous": true,
+    "not_participating": 9,
+    "vote_string": "N/A",
+    "is_unanimous": false,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -11943,10 +12114,10 @@
       "plain_error"
     ],
     "summary_paragraph": "",
-    "word_count": 1968,
+    "word_count": 1595,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:20.585019",
+    "parse_timestamp": "2026-06-13T20:52:45.662940",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -11959,11 +12130,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-03/20210232.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210232.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-02-18",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the\nSuperior Court (Temple, J.) upholding decisions of the City of Nashua Zoning\nBoa",
+    "lower_court": "Superior Court (Temple, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Temple",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -12044,7 +12216,7 @@
     "word_count": 450,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:20.750249",
+    "parse_timestamp": "2026-06-13T20:52:45.796351",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12057,11 +12229,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-03/20190755_20210021.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20190755_20210021.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-02-18",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Delker, J.) erred by denying his motion for a mistrial based\nupo",
+    "lower_court": "Superior Court (Delker, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Delker",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -12145,7 +12318,7 @@
     "word_count": 796,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:21.091054",
+    "parse_timestamp": "2026-06-13T20:52:46.017213",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12158,12 +12331,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-02/20210075.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210075.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-02-10",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court\n(LeFrancois, J.) granting the petition of the respondent, Alejandr",
+    "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "LeFrancois",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -12246,7 +12420,7 @@
     "word_count": 676,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:21.359064",
+    "parse_timestamp": "2026-06-13T20:52:46.205865",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12259,11 +12433,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-02/20210250.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210250.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-02-02",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "oncludes that a formal written opinion is unnecessary in\nthis case. The plaintiffs, A",
+    "lower_court": null,
     "lower_court_type": "administrative",
+    "lower_court_judge": null,
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -12348,7 +12523,7 @@
     "word_count": 777,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:21.620435",
+    "parse_timestamp": "2026-06-13T20:52:46.421725",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12361,11 +12536,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-02/20190682.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20190682.pdf",
     "date_argued": ", among other things, that the Superior Court (Wageling, J.) may have",
-    "date_issued": null,
+    "date_issued": "2022-02-01",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court (Delker, J.), on five\ncounts of aggravated felonious sexual assau",
+    "lower_court": "Superior Court (Delker, J.)",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Delker",
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -12451,7 +12627,7 @@
     "word_count": 613,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:22.020004",
+    "parse_timestamp": "2026-06-13T20:52:46.692430",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12464,12 +12640,13 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-02/20210144.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210144.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-01-28",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Circuit Court\n(Alfano, J.) denying his motion to modify child support. He argues",
+    "lower_court": "Circuit Court",
     "lower_court_type": "circuit_court",
-    "case_type": "civil",
+    "lower_court_judge": "Alfano",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "reversed",
     "author": "per_curiam",
@@ -12553,7 +12730,7 @@
     "word_count": 1131,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:22.553983",
+    "parse_timestamp": "2026-06-13T20:52:47.025185",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12566,11 +12743,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-02/20210315.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210315.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-01-14",
     "days_to_decision": null,
     "term_year": 2022,
-    "lower_court": "the Superior Court\n(Temple, J.) in favor of the plaintiff, American Express National",
+    "lower_court": "Superior Court",
     "lower_court_type": "superior_court",
+    "lower_court_judge": "Temple",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "vacated",
@@ -12652,7 +12830,7 @@
     "word_count": 345,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:22.677743",
+    "parse_timestamp": "2026-06-13T20:52:47.136969",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -12665,11 +12843,12 @@
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-02/20210272.pdf",
     "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2022\\20210272.pdf",
     "date_argued": null,
-    "date_issued": null,
+    "date_issued": "2022-01-07",
     "days_to_decision": null,
     "term_year": 2022,
     "lower_court": null,
     "lower_court_type": null,
+    "lower_court_judge": null,
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -12752,7 +12931,7 @@
     "word_count": 328,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-05-27T11:49:22.799727",
+    "parse_timestamp": "2026-06-13T20:52:47.248642",
     "parse_confidence": 0.8,
     "manual_override": false
   }

@@ -107,11 +107,16 @@ if "case_type" in filtered.columns and not filtered.empty:
             st.plotly_chart(fig_yr, width="stretch")
 
 # ── Table ──────────────────────────────────────────────────────────────────────
-# Sort by date_issued descending, fall back to term_year then case_number
-if "date_issued" in filtered.columns:
-    filtered = filtered.copy()
-    filtered["date_issued"] = pd.to_datetime(filtered["date_issued"], errors="coerce")
-    filtered = filtered.sort_values("date_issued", ascending=False, na_position="last")
+# Sort by date_issued descending with robust fallbacks for rows that lack dates.
+filtered = filtered.copy()
+filtered["_date_sort"] = pd.to_datetime(filtered.get("date_issued"), errors="coerce")
+filtered["_year_sort"] = pd.to_numeric(filtered.get("term_year"), errors="coerce")
+filtered["_case_sort"] = filtered.get("case_number", "").astype(str)
+filtered = filtered.sort_values(
+    by=["_date_sort", "_year_sort", "_case_sort"],
+    ascending=[False, False, False],
+    na_position="last",
+).drop(columns=["_date_sort", "_year_sort", "_case_sort"])
 
 display_cols = [c for c in ["case_number", "case_name", "date_issued", "case_type", "outcome", "vote_string"]
                 if c in filtered.columns]
