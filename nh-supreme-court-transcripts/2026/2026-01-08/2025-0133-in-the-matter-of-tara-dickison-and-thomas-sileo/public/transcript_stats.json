@@ -1,0 +1,53 @@
+{
+  "case_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-08/2025-0133-in-the-matter-of-tara-dickison-and-thomas-sileo",
+  "case_name": "In the Matter of Tara Dickison and Thomas Sileo",
+  "docket_number": "2025-0133",
+  "argument_date": "2026-01-08",
+  "model": "small",
+  "operational_quality_score": 75,
+  "review_priority": "medium",
+  "recommendation": "review-opening",
+  "rerun_turbo_recommended": true,
+  "warnings": [
+    "Opening counsel phrase was not detected; review the beginning and consider rerunning with turbo."
+  ],
+  "metrics": {
+    "segment_count": 562,
+    "word_count": 3769,
+    "character_count": 21748,
+    "duration_seconds": 1827.306667,
+    "duration_minutes": 30.46,
+    "words_per_minute": 123.76,
+    "segments_per_minute": 18.45,
+    "questions_per_minute": 0.85,
+    "opening_counsel_index": null,
+    "opening_counsel_start_seconds": null,
+    "opening_counsel_start_minutes": null,
+    "long_segment_count": 0,
+    "very_long_segment_count": 0,
+    "max_segment_words": 31,
+    "avg_words_per_segment": 6.71,
+    "median_words_per_segment": 5.0,
+    "p90_words_per_segment": 13,
+    "avg_chars_per_segment": 36.7,
+    "median_chars_per_segment": 27.0,
+    "long_segment_ratio": 0.0,
+    "duplicate_segment_instances": 3,
+    "repeated_segment_ratio": 0.0053,
+    "repeated_window_count": 1,
+    "repeated_window_density": 0.0003,
+    "question_segment_count": 26,
+    "question_mark_count": 26,
+    "exclamation_mark_count": 0,
+    "speaker_guess_counts": {
+      "Counsel": 533,
+      "Justice": 29
+    },
+    "justice_guess_ratio": 0.0516,
+    "counsel_guess_ratio": 0.9484,
+    "language": "en",
+    "language_probability": 1.0,
+    "beam_size": 5,
+    "compute_type": "int8"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "case_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-02-10/2025-0064-petition-of-metro-treatment-of-new-hampshire-l-p-new-hampshire-department-of-health-and-human-services-administrative-appeals-unit",
+  "case_name": "Petition of Metro Treatment of New Hampshire, L.P. (New Hampshire Department of Health and Human Services, Administrative Appeals Unit)",
+  "docket_number": "2025-0064",
+  "argument_date": "2026-02-10",
+  "model": "small",
+  "operational_quality_score": 88,
+  "review_priority": "medium",
+  "recommendation": "review-opening",
+  "rerun_turbo_recommended": false,
+  "warnings": [
+    "Repeated segment text was detected; review for repetition artifacts or loops."
+  ],
+  "metrics": {
+    "segment_count": 284,
+    "word_count": 4327,
+    "character_count": 26191,
+    "duration_seconds": 1764.245333,
+    "duration_minutes": 29.4,
+    "words_per_minute": 147.16,
+    "segments_per_minute": 9.66,
+    "questions_per_minute": 1.33,
+    "opening_counsel_index": 7,
+    "opening_counsel_start_seconds": 24.46,
+    "opening_counsel_start_minutes": 0.41,
+    "long_segment_count": 0,
+    "very_long_segment_count": 0,
+    "max_segment_words": 55,
+    "avg_words_per_segment": 15.24,
+    "median_words_per_segment": 13.0,
+    "p90_words_per_segment": 30,
+    "avg_chars_per_segment": 90.23,
+    "median_chars_per_segment": 77.0,
+    "long_segment_ratio": 0.0,
+    "duplicate_segment_instances": 10,
+    "repeated_segment_ratio": 0.0352,
+    "repeated_window_count": 12,
+    "repeated_window_density": 0.0028,
+    "question_segment_count": 38,
+    "question_mark_count": 39,
+    "exclamation_mark_count": 0,
+    "speaker_guess_counts": {
+      "Counsel": 235,
+      "Justice": 49
+    },
+    "justice_guess_ratio": 0.1725,
+    "counsel_guess_ratio": 0.8275,
+    "language": "en",
+    "language_probability": 1.0,
+    "beam_size": 5,
+    "compute_type": "int8"
+  }
+}

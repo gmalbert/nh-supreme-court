@@ -1,0 +1,32 @@
+{
+  "discovery": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:12:07+00:00"
+  },
+  "download": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:41:41+00:00",
+    "audio_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-04-21/2025-0342-appeal-of-christos-gakis-new-hampshire-compensation-appeals-board/audio/oral_argument_audio.mp3",
+    "duration_seconds": 1477.098667,
+    "size_bytes": 31594896
+  },
+  "transcription": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:44:44+00:00",
+    "raw_json_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-04-21/2025-0342-appeal-of-christos-gakis-new-hampshire-compensation-appeals-board/raw/transcript_raw.json",
+    "public_markdown_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-04-21/2025-0342-appeal-of-christos-gakis-new-hampshire-compensation-appeals-board/public/transcript_public.md",
+    "segment_count": 401,
+    "model": "small"
+  },
+  "diarization": {
+    "status": "pending"
+  },
+  "public_render": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:44:44+00:00",
+    "repo_root": "/Volumes/Users/gmalb/Downloads/nh-supreme-court",
+    "export_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/2025-0342.json",
+    "export_text_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/text/2025-0342.txt",
+    "export_markdown_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/markdown/2025-0342.md"
+  }
+}

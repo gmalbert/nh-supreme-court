@@ -1,0 +1,32 @@
+{
+  "discovery": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:12:07+00:00"
+  },
+  "download": {
+    "status": "complete",
+    "completed_at": "2026-06-15T03:06:27+00:00",
+    "audio_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2025-0178-in-the-matter-of-the-liquidation-of-the-home-insurance-company/audio/oral_argument_audio.mp3",
+    "duration_seconds": 1711.872,
+    "size_bytes": 31966272
+  },
+  "transcription": {
+    "status": "complete",
+    "completed_at": "2026-06-15T03:09:51+00:00",
+    "raw_json_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2025-0178-in-the-matter-of-the-liquidation-of-the-home-insurance-company/raw/transcript_raw.json",
+    "public_markdown_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2025-0178-in-the-matter-of-the-liquidation-of-the-home-insurance-company/public/transcript_public.md",
+    "segment_count": 481,
+    "model": "small"
+  },
+  "diarization": {
+    "status": "pending"
+  },
+  "public_render": {
+    "status": "complete",
+    "completed_at": "2026-06-15T03:09:51+00:00",
+    "repo_root": "/Volumes/Users/gmalb/Downloads/nh-supreme-court",
+    "export_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/2025-0178.json",
+    "export_text_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/text/2025-0178.txt",
+    "export_markdown_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/markdown/2025-0178.md"
+  }
+}

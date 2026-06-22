@@ -1,0 +1,53 @@
+{
+  "case_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-08/2024-0465-donald-mcgowan-and-a-v-town-of-hampton",
+  "case_name": "Donald McGowan & a. v. Town of Hampton",
+  "docket_number": "2024-0465",
+  "argument_date": "2026-01-08",
+  "model": "small",
+  "operational_quality_score": 75,
+  "review_priority": "medium",
+  "recommendation": "review-opening",
+  "rerun_turbo_recommended": true,
+  "warnings": [
+    "Opening counsel phrase was not detected; review the beginning and consider rerunning with turbo."
+  ],
+  "metrics": {
+    "segment_count": 261,
+    "word_count": 2513,
+    "character_count": 13899,
+    "duration_seconds": 1736.042667,
+    "duration_minutes": 28.93,
+    "words_per_minute": 86.85,
+    "segments_per_minute": 9.02,
+    "questions_per_minute": 0.97,
+    "opening_counsel_index": null,
+    "opening_counsel_start_seconds": null,
+    "opening_counsel_start_minutes": null,
+    "long_segment_count": 0,
+    "very_long_segment_count": 0,
+    "max_segment_words": 45,
+    "avg_words_per_segment": 9.63,
+    "median_words_per_segment": 8.0,
+    "p90_words_per_segment": 17,
+    "avg_chars_per_segment": 51.26,
+    "median_chars_per_segment": 42.0,
+    "long_segment_ratio": 0.0,
+    "duplicate_segment_instances": 1,
+    "repeated_segment_ratio": 0.0038,
+    "repeated_window_count": 1,
+    "repeated_window_density": 0.0004,
+    "question_segment_count": 26,
+    "question_mark_count": 28,
+    "exclamation_mark_count": 0,
+    "speaker_guess_counts": {
+      "Counsel": 234,
+      "Justice": 27
+    },
+    "justice_guess_ratio": 0.1034,
+    "counsel_guess_ratio": 0.8966,
+    "language": "en",
+    "language_probability": 1.0,
+    "beam_size": 5,
+    "compute_type": "int8"
+  }
+}

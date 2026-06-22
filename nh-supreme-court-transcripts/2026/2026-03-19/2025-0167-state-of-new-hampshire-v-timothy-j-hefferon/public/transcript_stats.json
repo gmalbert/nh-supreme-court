@@ -1,0 +1,53 @@
+{
+  "case_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-03-19/2025-0167-state-of-new-hampshire-v-timothy-j-hefferon",
+  "case_name": "State of New Hampshire v. Timothy J. Hefferon",
+  "docket_number": "2025-0167",
+  "argument_date": "2026-03-19",
+  "model": "small",
+  "operational_quality_score": 90,
+  "review_priority": "medium",
+  "recommendation": "review-opening",
+  "rerun_turbo_recommended": false,
+  "warnings": [
+    "Opening counsel phrase appears late in the transcript; the opening handoff may be muddled."
+  ],
+  "metrics": {
+    "segment_count": 752,
+    "word_count": 4927,
+    "character_count": 28878,
+    "duration_seconds": 1952.128,
+    "duration_minutes": 32.54,
+    "words_per_minute": 151.43,
+    "segments_per_minute": 23.11,
+    "questions_per_minute": 1.32,
+    "opening_counsel_index": 9,
+    "opening_counsel_start_seconds": 65.86,
+    "opening_counsel_start_minutes": 1.1,
+    "long_segment_count": 0,
+    "very_long_segment_count": 0,
+    "max_segment_words": 15,
+    "avg_words_per_segment": 6.55,
+    "median_words_per_segment": 6.0,
+    "p90_words_per_segment": 9,
+    "avg_chars_per_segment": 36.4,
+    "median_chars_per_segment": 35.0,
+    "long_segment_ratio": 0.0,
+    "duplicate_segment_instances": 3,
+    "repeated_segment_ratio": 0.004,
+    "repeated_window_count": 13,
+    "repeated_window_density": 0.0026,
+    "question_segment_count": 41,
+    "question_mark_count": 43,
+    "exclamation_mark_count": 0,
+    "speaker_guess_counts": {
+      "Counsel": 701,
+      "Justice": 51
+    },
+    "justice_guess_ratio": 0.0678,
+    "counsel_guess_ratio": 0.9322,
+    "language": "en",
+    "language_probability": 1.0,
+    "beam_size": 5,
+    "compute_type": "int8"
+  }
+}

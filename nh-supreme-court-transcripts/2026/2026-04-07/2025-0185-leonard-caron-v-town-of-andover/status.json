@@ -1,0 +1,32 @@
+{
+  "discovery": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:12:07+00:00"
+  },
+  "download": {
+    "status": "complete",
+    "completed_at": "2026-06-15T00:41:54+00:00",
+    "audio_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-04-07/2025-0185-leonard-caron-v-town-of-andover/audio/oral_argument_audio.mp3",
+    "duration_seconds": 1847.957333,
+    "size_bytes": 38569008
+  },
+  "transcription": {
+    "status": "complete",
+    "completed_at": "2026-06-15T00:45:44+00:00",
+    "raw_json_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-04-07/2025-0185-leonard-caron-v-town-of-andover/raw/transcript_raw.json",
+    "public_markdown_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-04-07/2025-0185-leonard-caron-v-town-of-andover/public/transcript_public.md",
+    "segment_count": 352,
+    "model": "small"
+  },
+  "diarization": {
+    "status": "pending"
+  },
+  "public_render": {
+    "status": "complete",
+    "completed_at": "2026-06-15T00:45:44+00:00",
+    "repo_root": "/Volumes/Users/gmalb/Downloads/nh-supreme-court",
+    "export_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/2025-0185.json",
+    "export_text_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/text/2025-0185.txt",
+    "export_markdown_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/markdown/2025-0185.md"
+  }
+}

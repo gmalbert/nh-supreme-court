@@ -1,0 +1,32 @@
+{
+  "discovery": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:12:07+00:00"
+  },
+  "download": {
+    "status": "complete",
+    "completed_at": "2026-06-15T02:58:09+00:00",
+    "audio_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2024-0073-state-of-new-hampshire-v-dale-e-holloway-jr/audio/oral_argument_audio.mp3",
+    "duration_seconds": 1956.010667,
+    "size_bytes": 37784496
+  },
+  "transcription": {
+    "status": "complete",
+    "completed_at": "2026-06-15T03:02:07+00:00",
+    "raw_json_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2024-0073-state-of-new-hampshire-v-dale-e-holloway-jr/raw/transcript_raw.json",
+    "public_markdown_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2024-0073-state-of-new-hampshire-v-dale-e-holloway-jr/public/transcript_public.md",
+    "segment_count": 527,
+    "model": "small"
+  },
+  "diarization": {
+    "status": "pending"
+  },
+  "public_render": {
+    "status": "complete",
+    "completed_at": "2026-06-15T03:02:07+00:00",
+    "repo_root": "/Volumes/Users/gmalb/Downloads/nh-supreme-court",
+    "export_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/2024-0073.json",
+    "export_text_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/text/2024-0073.txt",
+    "export_markdown_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/markdown/2024-0073.md"
+  }
+}

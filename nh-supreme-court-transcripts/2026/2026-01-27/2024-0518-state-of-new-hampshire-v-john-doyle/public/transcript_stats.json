@@ -1,0 +1,53 @@
+{
+  "case_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2024-0518-state-of-new-hampshire-v-john-doyle",
+  "case_name": "State of New Hampshire v. John Doyle",
+  "docket_number": "2024-0518",
+  "argument_date": "2026-01-27",
+  "model": "small",
+  "operational_quality_score": 90,
+  "review_priority": "medium",
+  "recommendation": "review-opening",
+  "rerun_turbo_recommended": true,
+  "warnings": [
+    "Opening counsel phrase appears late in the transcript; the opening handoff may be muddled."
+  ],
+  "metrics": {
+    "segment_count": 600,
+    "word_count": 4481,
+    "character_count": 26320,
+    "duration_seconds": 1639.637333,
+    "duration_minutes": 27.33,
+    "words_per_minute": 163.98,
+    "segments_per_minute": 21.96,
+    "questions_per_minute": 0.84,
+    "opening_counsel_index": 132,
+    "opening_counsel_start_seconds": 628.77,
+    "opening_counsel_start_minutes": 10.48,
+    "long_segment_count": 0,
+    "very_long_segment_count": 0,
+    "max_segment_words": 28,
+    "avg_words_per_segment": 7.47,
+    "median_words_per_segment": 7.0,
+    "p90_words_per_segment": 12,
+    "avg_chars_per_segment": 41.87,
+    "median_chars_per_segment": 39.0,
+    "long_segment_ratio": 0.0,
+    "duplicate_segment_instances": 3,
+    "repeated_segment_ratio": 0.005,
+    "repeated_window_count": 21,
+    "repeated_window_density": 0.0047,
+    "question_segment_count": 23,
+    "question_mark_count": 23,
+    "exclamation_mark_count": 0,
+    "speaker_guess_counts": {
+      "Counsel": 453,
+      "Justice": 147
+    },
+    "justice_guess_ratio": 0.245,
+    "counsel_guess_ratio": 0.755,
+    "language": "en",
+    "language_probability": 1.0,
+    "beam_size": 5,
+    "compute_type": "int8"
+  }
+}

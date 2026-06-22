@@ -1,0 +1,32 @@
+{
+  "discovery": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:12:07+00:00"
+  },
+  "download": {
+    "status": "complete",
+    "completed_at": "2026-06-15T03:27:12+00:00",
+    "audio_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-08/2024-0465-donald-mcgowan-and-a-v-town-of-hampton/audio/oral_argument_audio.mp3",
+    "duration_seconds": 1736.042667,
+    "size_bytes": 27323664
+  },
+  "transcription": {
+    "status": "complete",
+    "completed_at": "2026-06-15T03:29:24+00:00",
+    "raw_json_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-08/2024-0465-donald-mcgowan-and-a-v-town-of-hampton/raw/transcript_raw.json",
+    "public_markdown_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-08/2024-0465-donald-mcgowan-and-a-v-town-of-hampton/public/transcript_public.md",
+    "segment_count": 261,
+    "model": "small"
+  },
+  "diarization": {
+    "status": "pending"
+  },
+  "public_render": {
+    "status": "complete",
+    "completed_at": "2026-06-15T03:29:24+00:00",
+    "repo_root": "/Volumes/Users/gmalb/Downloads/nh-supreme-court",
+    "export_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/2024-0465.json",
+    "export_text_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/text/2024-0465.txt",
+    "export_markdown_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/markdown/2024-0465.md"
+  }
+}

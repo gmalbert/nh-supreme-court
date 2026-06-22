@@ -1,0 +1,41 @@
+{
+  "argument_date": "2026-01-27",
+  "docket_number": "2025-0178",
+  "case_name": "In the Matter of the Liquidation of The Home Insurance Company",
+  "vimeo_url": "https://vimeo.com/1158827236",
+  "source_page_url": "https://www.courts.nh.gov/our-courts/supreme-court/oral-argument/live-stream#2026",
+  "source_label": "NH Supreme Court oral argument archive",
+  "archive_root": "/Volumes/AI-Storage/nh-supreme-court-transcripts",
+  "case_slug": "2025-0178-in-the-matter-of-the-liquidation-of-the-home-insurance-company",
+  "created_at": "2026-06-14T23:12:07+00:00",
+  "pipeline_status": "transcribed",
+  "audio": {
+    "local_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2025-0178-in-the-matter-of-the-liquidation-of-the-home-insurance-company/audio/oral_argument_audio.mp3",
+    "source_info_json": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2025-0178-in-the-matter-of-the-liquidation-of-the-home-insurance-company/source/1158827236.info.json",
+    "duration_seconds": 1711.872,
+    "size_bytes": 31966272,
+    "downloaded_at": "2026-06-15T03:06:27+00:00",
+    "download_tool": "yt-dlp"
+  },
+  "transcript": {
+    "raw_json_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2025-0178-in-the-matter-of-the-liquidation-of-the-home-insurance-company/raw/transcript_raw.json",
+    "public_markdown_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2025-0178-in-the-matter-of-the-liquidation-of-the-home-insurance-company/public/transcript_public.md",
+    "segment_count": 481,
+    "language": "en",
+    "language_probability": 1,
+    "model": "small",
+    "compute_type": "int8",
+    "beam_size": 5,
+    "initial_prompt": "This is a New Hampshire Supreme Court oral argument. Preserve legal terminology, party names, docket numbers, and court names. Likely speakers include justices and counsel.",
+    "generated_at": "2026-06-15T03:09:51+00:00"
+  },
+  "granite_state_appeals_export": {
+    "repo_root": "/Volumes/Users/gmalb/Downloads/nh-supreme-court",
+    "export_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/2025-0178.json",
+    "export_text_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/text/2025-0178.txt",
+    "export_markdown_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/markdown/2025-0178.md",
+    "aggregate_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments.json",
+    "aggregate_csv_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments.csv",
+    "exported_at": "2026-06-15T03:09:51+00:00"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "discovery": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:12:07+00:00"
+  },
+  "download": {
+    "status": "complete",
+    "completed_at": "2026-06-15T00:03:15+00:00",
+    "audio_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-04-09/2025-0030-state-line-trailer-sales-llc-v-randall-l-bennett-trustee-of-the-april-may-realty-trust/audio/oral_argument_audio.mp3",
+    "duration_seconds": 1995.904,
+    "size_bytes": 39868368
+  },
+  "transcription": {
+    "status": "complete",
+    "completed_at": "2026-06-15T00:07:07+00:00",
+    "raw_json_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-04-09/2025-0030-state-line-trailer-sales-llc-v-randall-l-bennett-trustee-of-the-april-may-realty-trust/raw/transcript_raw.json",
+    "public_markdown_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-04-09/2025-0030-state-line-trailer-sales-llc-v-randall-l-bennett-trustee-of-the-april-may-realty-trust/public/transcript_public.md",
+    "segment_count": 421,
+    "model": "small"
+  },
+  "diarization": {
+    "status": "pending"
+  },
+  "public_render": {
+    "status": "complete",
+    "completed_at": "2026-06-15T00:07:08+00:00",
+    "repo_root": "/Volumes/Users/gmalb/Downloads/nh-supreme-court",
+    "export_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/2025-0030.json",
+    "export_text_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/text/2025-0030.txt",
+    "export_markdown_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/markdown/2025-0030.md"
+  }
+}

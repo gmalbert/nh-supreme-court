@@ -1,0 +1,32 @@
+{
+  "discovery": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:12:07+00:00"
+  },
+  "download": {
+    "status": "complete",
+    "completed_at": "2026-06-15T03:14:03+00:00",
+    "audio_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2025-0092-john-doe-533-v-new-hampshire-department-of-health-and-human-services-and-a/audio/oral_argument_audio.mp3",
+    "duration_seconds": 1887.210667,
+    "size_bytes": 35340672
+  },
+  "transcription": {
+    "status": "complete",
+    "completed_at": "2026-06-15T03:17:49+00:00",
+    "raw_json_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2025-0092-john-doe-533-v-new-hampshire-department-of-health-and-human-services-and-a/raw/transcript_raw.json",
+    "public_markdown_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-27/2025-0092-john-doe-533-v-new-hampshire-department-of-health-and-human-services-and-a/public/transcript_public.md",
+    "segment_count": 603,
+    "model": "small"
+  },
+  "diarization": {
+    "status": "pending"
+  },
+  "public_render": {
+    "status": "complete",
+    "completed_at": "2026-06-15T03:17:49+00:00",
+    "repo_root": "/Volumes/Users/gmalb/Downloads/nh-supreme-court",
+    "export_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/2025-0092.json",
+    "export_text_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/text/2025-0092.txt",
+    "export_markdown_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/markdown/2025-0092.md"
+  }
+}

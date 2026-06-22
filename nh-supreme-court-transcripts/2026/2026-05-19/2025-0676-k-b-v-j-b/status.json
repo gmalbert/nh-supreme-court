@@ -1,0 +1,32 @@
+{
+  "discovery": {
+    "status": "complete",
+    "completed_at": "2026-06-14T03:13:52+00:00"
+  },
+  "download": {
+    "status": "complete",
+    "completed_at": "2026-06-14T03:38:47+00:00",
+    "audio_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-05-19/2025-0676-k-b-v-j-b/audio/oral_argument_audio.mp3",
+    "duration_seconds": 1944.469333,
+    "size_bytes": 41315952
+  },
+  "transcription": {
+    "status": "complete",
+    "completed_at": "2026-06-14T03:42:13+00:00",
+    "raw_json_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-05-19/2025-0676-k-b-v-j-b/raw/transcript_raw.json",
+    "public_markdown_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-05-19/2025-0676-k-b-v-j-b/public/transcript_public.md",
+    "segment_count": 333,
+    "model": "small"
+  },
+  "diarization": {
+    "status": "pending"
+  },
+  "public_render": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:16:11+00:00",
+    "repo_root": "/Volumes/Users/gmalb/Downloads/nh-supreme-court",
+    "export_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/2025-0676.json",
+    "export_text_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/text/2025-0676.txt",
+    "export_markdown_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/markdown/2025-0676.md"
+  }
+}

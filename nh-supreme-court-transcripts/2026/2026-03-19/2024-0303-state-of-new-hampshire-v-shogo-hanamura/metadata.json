@@ -1,0 +1,41 @@
+{
+  "argument_date": "2026-03-19",
+  "docket_number": "2024-0303",
+  "case_name": "State of New Hampshire v. Shogo Hanamura",
+  "vimeo_url": "https://vimeo.com/1175175327",
+  "source_page_url": "https://www.courts.nh.gov/our-courts/supreme-court/oral-argument/live-stream#2026",
+  "source_label": "NH Supreme Court oral argument archive",
+  "archive_root": "/Volumes/AI-Storage/nh-supreme-court-transcripts",
+  "case_slug": "2024-0303-state-of-new-hampshire-v-shogo-hanamura",
+  "created_at": "2026-06-14T23:12:07+00:00",
+  "pipeline_status": "transcribed",
+  "audio": {
+    "local_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-03-19/2024-0303-state-of-new-hampshire-v-shogo-hanamura/audio/oral_argument_audio.mp3",
+    "source_info_json": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-03-19/2024-0303-state-of-new-hampshire-v-shogo-hanamura/source/1175175327.info.json",
+    "duration_seconds": 1629.12,
+    "size_bytes": 33594000,
+    "downloaded_at": "2026-06-15T01:17:18+00:00",
+    "download_tool": "yt-dlp"
+  },
+  "transcript": {
+    "raw_json_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-03-19/2024-0303-state-of-new-hampshire-v-shogo-hanamura/raw/transcript_raw.json",
+    "public_markdown_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-03-19/2024-0303-state-of-new-hampshire-v-shogo-hanamura/public/transcript_public.md",
+    "segment_count": 318,
+    "language": "en",
+    "language_probability": 1,
+    "model": "small",
+    "compute_type": "int8",
+    "beam_size": 5,
+    "initial_prompt": "This is a New Hampshire Supreme Court oral argument. Preserve legal terminology, party names, docket numbers, and court names. Likely speakers include justices and counsel.",
+    "generated_at": "2026-06-15T01:20:06+00:00"
+  },
+  "granite_state_appeals_export": {
+    "repo_root": "/Volumes/Users/gmalb/Downloads/nh-supreme-court",
+    "export_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/2024-0303.json",
+    "export_text_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/text/2024-0303.txt",
+    "export_markdown_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/markdown/2024-0303.md",
+    "aggregate_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments.json",
+    "aggregate_csv_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments.csv",
+    "exported_at": "2026-06-15T01:20:06+00:00"
+  }
+}

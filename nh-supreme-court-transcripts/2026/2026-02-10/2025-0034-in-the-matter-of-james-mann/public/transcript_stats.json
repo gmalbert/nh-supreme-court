@@ -1,0 +1,53 @@
+{
+  "case_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-02-10/2025-0034-in-the-matter-of-james-mann",
+  "case_name": "In the Matter of James Mann",
+  "docket_number": "2025-0034",
+  "argument_date": "2026-02-10",
+  "model": "small",
+  "operational_quality_score": 84,
+  "review_priority": "medium",
+  "recommendation": "review-opening",
+  "rerun_turbo_recommended": true,
+  "warnings": [
+    "Opening counsel phrase appears late in the transcript; the opening handoff may be muddled."
+  ],
+  "metrics": {
+    "segment_count": 527,
+    "word_count": 3671,
+    "character_count": 21516,
+    "duration_seconds": 1388.672,
+    "duration_minutes": 23.14,
+    "words_per_minute": 158.61,
+    "segments_per_minute": 22.77,
+    "questions_per_minute": 0.6,
+    "opening_counsel_index": 299,
+    "opening_counsel_start_seconds": 790.22,
+    "opening_counsel_start_minutes": 13.17,
+    "long_segment_count": 0,
+    "very_long_segment_count": 0,
+    "max_segment_words": 12,
+    "avg_words_per_segment": 6.97,
+    "median_words_per_segment": 7.0,
+    "p90_words_per_segment": 10,
+    "avg_chars_per_segment": 38.83,
+    "median_chars_per_segment": 39.0,
+    "long_segment_ratio": 0.0,
+    "duplicate_segment_instances": 9,
+    "repeated_segment_ratio": 0.0171,
+    "repeated_window_count": 25,
+    "repeated_window_density": 0.0068,
+    "question_segment_count": 14,
+    "question_mark_count": 14,
+    "exclamation_mark_count": 0,
+    "speaker_guess_counts": {
+      "Counsel": 222,
+      "Justice": 305
+    },
+    "justice_guess_ratio": 0.5787,
+    "counsel_guess_ratio": 0.4213,
+    "language": "en",
+    "language_probability": 1.0,
+    "beam_size": 5,
+    "compute_type": "int8"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "discovery": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:12:07+00:00"
+  },
+  "download": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:54:03+00:00",
+    "audio_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-04-09/2025-0330-susan-d-royce-v-state-farm-fire-and-casualty-company/audio/oral_argument_audio.mp3",
+    "duration_seconds": 1697.962667,
+    "size_bytes": 35309808
+  },
+  "transcription": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:57:44+00:00",
+    "raw_json_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-04-09/2025-0330-susan-d-royce-v-state-farm-fire-and-casualty-company/raw/transcript_raw.json",
+    "public_markdown_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-04-09/2025-0330-susan-d-royce-v-state-farm-fire-and-casualty-company/public/transcript_public.md",
+    "segment_count": 650,
+    "model": "small"
+  },
+  "diarization": {
+    "status": "pending"
+  },
+  "public_render": {
+    "status": "complete",
+    "completed_at": "2026-06-14T23:57:44+00:00",
+    "repo_root": "/Volumes/Users/gmalb/Downloads/nh-supreme-court",
+    "export_json_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/2025-0330.json",
+    "export_text_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/text/2025-0330.txt",
+    "export_markdown_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/processed/oral_arguments/markdown/2025-0330.md"
+  }
+}

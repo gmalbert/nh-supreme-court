@@ -1,0 +1,53 @@
+{
+  "case_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-01-08/2025-0019-appeal-of-christine-murray-new-hampshire-housing-appeals-board",
+  "case_name": "Appeal of Christine Murray (New Hampshire Housing Appeals Board)",
+  "docket_number": "2025-0019",
+  "argument_date": "2026-01-08",
+  "model": "small",
+  "operational_quality_score": 75,
+  "review_priority": "medium",
+  "recommendation": "review-opening",
+  "rerun_turbo_recommended": true,
+  "warnings": [
+    "Opening counsel phrase was not detected; review the beginning and consider rerunning with turbo."
+  ],
+  "metrics": {
+    "segment_count": 227,
+    "word_count": 3450,
+    "character_count": 19469,
+    "duration_seconds": 1913.024,
+    "duration_minutes": 31.88,
+    "words_per_minute": 108.21,
+    "segments_per_minute": 7.12,
+    "questions_per_minute": 1.13,
+    "opening_counsel_index": null,
+    "opening_counsel_start_seconds": null,
+    "opening_counsel_start_minutes": null,
+    "long_segment_count": 0,
+    "very_long_segment_count": 0,
+    "max_segment_words": 39,
+    "avg_words_per_segment": 15.2,
+    "median_words_per_segment": 15.0,
+    "p90_words_per_segment": 25,
+    "avg_chars_per_segment": 83.78,
+    "median_chars_per_segment": 84.0,
+    "long_segment_ratio": 0.0,
+    "duplicate_segment_instances": 0,
+    "repeated_segment_ratio": 0.0,
+    "repeated_window_count": 4,
+    "repeated_window_density": 0.0012,
+    "question_segment_count": 34,
+    "question_mark_count": 36,
+    "exclamation_mark_count": 0,
+    "speaker_guess_counts": {
+      "Counsel": 191,
+      "Justice": 36
+    },
+    "justice_guess_ratio": 0.1586,
+    "counsel_guess_ratio": 0.8414,
+    "language": "en",
+    "language_probability": 1.0,
+    "beam_size": 5,
+    "compute_type": "int8"
+  }
+}

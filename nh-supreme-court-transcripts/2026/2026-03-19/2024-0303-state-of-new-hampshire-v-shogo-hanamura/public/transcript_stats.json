@@ -1,0 +1,53 @@
+{
+  "case_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-03-19/2024-0303-state-of-new-hampshire-v-shogo-hanamura",
+  "case_name": "State of New Hampshire v. Shogo Hanamura",
+  "docket_number": "2024-0303",
+  "argument_date": "2026-03-19",
+  "model": "small",
+  "operational_quality_score": 90,
+  "review_priority": "medium",
+  "recommendation": "review-opening",
+  "rerun_turbo_recommended": true,
+  "warnings": [
+    "Opening counsel phrase appears late in the transcript; the opening handoff may be muddled."
+  ],
+  "metrics": {
+    "segment_count": 318,
+    "word_count": 4084,
+    "character_count": 23692,
+    "duration_seconds": 1629.12,
+    "duration_minutes": 27.15,
+    "words_per_minute": 150.41,
+    "segments_per_minute": 11.71,
+    "questions_per_minute": 0.92,
+    "opening_counsel_index": 135,
+    "opening_counsel_start_seconds": 702.3,
+    "opening_counsel_start_minutes": 11.71,
+    "long_segment_count": 0,
+    "very_long_segment_count": 0,
+    "max_segment_words": 29,
+    "avg_words_per_segment": 12.84,
+    "median_words_per_segment": 13.0,
+    "p90_words_per_segment": 22,
+    "avg_chars_per_segment": 72.51,
+    "median_chars_per_segment": 74.0,
+    "long_segment_ratio": 0.0,
+    "duplicate_segment_instances": 1,
+    "repeated_segment_ratio": 0.0031,
+    "repeated_window_count": 17,
+    "repeated_window_density": 0.0042,
+    "question_segment_count": 23,
+    "question_mark_count": 25,
+    "exclamation_mark_count": 0,
+    "speaker_guess_counts": {
+      "Counsel": 176,
+      "Justice": 142
+    },
+    "justice_guess_ratio": 0.4465,
+    "counsel_guess_ratio": 0.5535,
+    "language": "en",
+    "language_probability": 1.0,
+    "beam_size": 5,
+    "compute_type": "int8"
+  }
+}

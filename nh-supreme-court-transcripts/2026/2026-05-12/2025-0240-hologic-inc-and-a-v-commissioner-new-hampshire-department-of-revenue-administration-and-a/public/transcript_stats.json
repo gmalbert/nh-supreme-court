@@ -1,0 +1,53 @@
+{
+  "case_path": "/Volumes/AI-Storage/nh-supreme-court-transcripts/2026/2026-05-12/2025-0240-hologic-inc-and-a-v-commissioner-new-hampshire-department-of-revenue-administration-and-a",
+  "case_name": "Hologic, Inc. & a. v. Commissioner, New Hampshire Department of Revenue Administration & a.",
+  "docket_number": "2025-0240",
+  "argument_date": "2026-05-12",
+  "model": "small",
+  "operational_quality_score": 84,
+  "review_priority": "medium",
+  "recommendation": "review-opening",
+  "rerun_turbo_recommended": true,
+  "warnings": [
+    "Opening counsel phrase appears late in the transcript; the opening handoff may be muddled."
+  ],
+  "metrics": {
+    "segment_count": 215,
+    "word_count": 4272,
+    "character_count": 25348,
+    "duration_seconds": 1943.573333,
+    "duration_minutes": 32.39,
+    "words_per_minute": 131.88,
+    "segments_per_minute": 6.64,
+    "questions_per_minute": 0.86,
+    "opening_counsel_index": 90,
+    "opening_counsel_start_seconds": 925.04,
+    "opening_counsel_start_minutes": 15.42,
+    "long_segment_count": 2,
+    "very_long_segment_count": 0,
+    "max_segment_words": 67,
+    "avg_words_per_segment": 19.87,
+    "median_words_per_segment": 18.0,
+    "p90_words_per_segment": 36,
+    "avg_chars_per_segment": 115.91,
+    "median_chars_per_segment": 104.0,
+    "long_segment_ratio": 0.0093,
+    "duplicate_segment_instances": 6,
+    "repeated_segment_ratio": 0.0279,
+    "repeated_window_count": 4,
+    "repeated_window_density": 0.0009,
+    "question_segment_count": 26,
+    "question_mark_count": 28,
+    "exclamation_mark_count": 0,
+    "speaker_guess_counts": {
+      "Counsel": 116,
+      "Justice": 99
+    },
+    "justice_guess_ratio": 0.4605,
+    "counsel_guess_ratio": 0.5395,
+    "language": "en",
+    "language_probability": 1.0,
+    "beam_size": 5,
+    "compute_type": "int8"
+  }
+}
