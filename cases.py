@@ -13,6 +13,7 @@ from datetime import date
 from html import escape
 from pathlib import Path
 from urllib.parse import quote
+import json
 
 import pandas as pd
 import streamlit as st
@@ -25,6 +26,8 @@ try:
     from utils.data_loader import (
         data_last_updated,
         load_case_orders,
+        load_oral_argument,
+        load_oral_arguments,
         load_opinion_text,
         load_opinions,
         load_opinions_json,
@@ -35,10 +38,13 @@ except KeyError:
     _data_loader = importlib.import_module("utils.data_loader")
     data_last_updated = _data_loader.data_last_updated
     load_case_orders = _data_loader.load_case_orders
+    load_oral_argument = _data_loader.load_oral_argument
+    load_oral_arguments = _data_loader.load_oral_arguments
     load_opinion_text = _data_loader.load_opinion_text
     load_opinions = _data_loader.load_opinions
     load_opinions_json = _data_loader.load_opinions_json
 from utils.charts import bench_diagram
+from utils.opinion_search import search as fts_search, get_snippet
 from footer import add_gavel_glimpse_footer
 
 # Streamlit page config must be declared once in the entrypoint when using st.navigation.
@@ -264,7 +270,31 @@ def _search_blob(row: pd.Series) -> str:
 
 
 def _search_opinions(df: pd.DataFrame, query: str, limit: int) -> pd.DataFrame:
+    """Search opinions using FTS5 full-text search with fallback to simple search."""
     query = query.strip()
+    if not query:
+        return df.head(0).copy()
+    
+    # Try FTS5 search first
+    try:
+        fts_results = fts_search(query, limit=limit)
+        if fts_results:
+            # Convert FTS results to DataFrame
+            result_cases = [r["case_number"] for r in fts_results]
+            result_df = df[df["case_number"].isin(result_cases)].copy()
+            
+            # Add rank scores and snippets
+            rank_map = {r["case_number"]: r["rank"] for r in fts_results}
+            result_df["_score"] = result_df["case_number"].map(rank_map)
+            result_df["_issued_at"] = pd.to_datetime(result_df["date_issued"], errors="coerce")
+            
+            # Sort by rank (lower is better with BM25)
+            return result_df.sort_values(["_score", "_issued_at"], ascending=[True, False])
+    except Exception as e:
+        # Fall back to simple search if FTS5 fails
+        print(f"FTS5 search failed, using fallback: {e}")
+    
+    # Fallback: simple token-based search
     tokens = _search_tokens(query)
     if not tokens:
         return df.head(0).copy()
@@ -478,6 +508,7 @@ def render_dashboard() -> None:
 
     df = load_opinions()
     orders_df = load_case_orders()
+    oral_arguments = load_oral_arguments()
 
     if df.empty:
         st.warning(
@@ -571,13 +602,22 @@ def render_dashboard() -> None:
     r3c1, r3c2 = st.columns(2)
     with r3c1:
         _render_nav_card(
+            "Oral Arguments",
+            f"Search {len(oral_arguments):,} machine-generated transcripts and explore 2026 argument statistics.",
+            "oral-arguments",
+            "Open Oral Arguments",
+            "🎙️",
+        )
+    with r3c2:
+        _render_nav_card(
             "Trial Courts",
             "See lower-court sources, trial judges, appeal pathways, and which cases return for remand.",
             "trial-courts",
             "Open Trial Courts",
             "🏛️",
         )
-    with r3c2:
+    r4c1, r4c2 = st.columns(2)
+    with r4c1:
         _render_nav_card(
             "Case Explorer",
             "Use the focused single-opinion reader once you already know which case you want to inspect.",
@@ -585,6 +625,8 @@ def render_dashboard() -> None:
             "Open Case Explorer",
             "🔎",
         )
+    with r4c2:
+        st.empty()
 
     add_gavel_glimpse_footer()
 
@@ -651,6 +693,7 @@ def render_case_explorer() -> None:
     cn = case_row["case_number"]
     full_rec = json_map.get(cn, {})
     _full_text = load_opinion_text(cn)
+    oral_argument = load_oral_argument(cn)
 
     col1, col2 = st.columns([3, 2])
 
@@ -761,6 +804,69 @@ def render_case_explorer() -> None:
             for rsa in rsas[:8]:
                 st.markdown(f"- {rsa}")
 
+    if oral_argument:
+        st.divider()
+        with st.container(border=True):
+            st.markdown("**Oral Argument Transcript**")
+            st.caption(
+                "Machine-generated beta transcript. Speaker labels are inferred and may be inaccurate."
+            )
+            transcript_href = f"/oral-arguments?argument={quote(str(oral_argument['case_number']))}"
+            st.markdown(f"[Read the oral argument transcript]({transcript_href})")
+            if oral_argument.get("vimeo_url"):
+                st.markdown(f"[Watch the original argument on Vimeo]({oral_argument['vimeo_url']})")
+
+    # Load citations data
+    citations_data = None
+    cited_by_data = None
+    try:
+        citations_file = ROOT / "data" / "processed" / "citations.json"
+        cited_by_file = ROOT / "data" / "processed" / "cited_by.json"
+        if citations_file.exists():
+            with open(citations_file) as f:
+                citations_data = json.load(f)
+        if cited_by_file.exists():
+            with open(cited_by_file) as f:
+                cited_by_data = json.load(f)
+    except Exception:
+        pass
+    
+    # Display citations if available
+    if citations_data or cited_by_data:
+        st.divider()
+        
+        # Cases this opinion cites
+        if citations_data and cn in citations_data:
+            cites = citations_data[cn].get("cites", [])
+            if cites:
+                with st.expander(f"📑 Cases Cited ({len(cites)})", expanded=False):
+                    for cited_case in cites[:20]:  # Limit to first 20
+                        # Find case name if available
+                        cited_row = df[df["case_number"] == cited_case]
+                        if not cited_row.empty:
+                            cited_name = cited_row.iloc[0].get("case_name", cited_case)
+                            cited_citation = cited_row.iloc[0].get("citation", "")
+                            citation_text = f" · {cited_citation}" if cited_citation else ""
+                            st.markdown(f"- [{cited_name}](case-explorer?case={quote(cited_case)}){citation_text}")
+                        else:
+                            st.markdown(f"- {cited_case}")
+        
+        # Cases that cite this opinion
+        if cited_by_data and cn in cited_by_data:
+            citing_cases = cited_by_data[cn]
+            if citing_cases:
+                with st.expander(f"🔗 Cited By ({len(citing_cases)} cases)", expanded=False):
+                    for citing_case in citing_cases[:20]:  # Limit to first 20
+                        # Find case name if available
+                        citing_row = df[df["case_number"] == citing_case]
+                        if not citing_row.empty:
+                            citing_name = citing_row.iloc[0].get("case_name", citing_case)
+                            citing_citation = citing_row.iloc[0].get("citation", "")
+                            citation_text = f" · {citing_citation}" if citing_citation else ""
+                            st.markdown(f"- [{citing_name}](case-explorer?case={quote(citing_case)}){citation_text}")
+                        else:
+                            st.markdown(f"- {citing_case}")
+    
     intro_text = _extract_intro_text(_full_text)
     if intro_text:
         st.divider()
@@ -797,23 +903,40 @@ CASE_EXPLORER_PAGE = st.Page(render_case_explorer, title="Case Explorer", icon="
 OPINIONS_PAGE = st.Page("pages/01_Opinions.py", title="Opinions", icon="📜", url_path="opinions")
 JUSTICES_PAGE = st.Page("pages/02_Justices.py", title="Justices", icon="👩‍⚖️", url_path="justices")
 ANALYSIS_PAGE = st.Page("pages/03_Analysis.py", title="Analysis", icon="📊", url_path="analysis")
+ORAL_ARGUMENTS_PAGE = st.Page(
+    "pages/08_Oral_Arguments.py",
+    title="Oral Arguments",
+    icon="🎙️",
+    url_path="oral-arguments",
+)
 TOPICS_PAGE = st.Page("pages/04_Topics.py", title="Topics", icon="📚", url_path="topics")
 CASE_ORDERS_PAGE = st.Page("pages/05_Case_Orders.py", title="Case Orders/3JX", icon="📋", url_path="case-orders")
 TRIAL_COURTS_PAGE = st.Page("pages/07_Trial_Courts.py", title="Trial Courts", icon="🏛️", url_path="trial-courts")
 ABOUT_PAGE = st.Page("pages/06_About.py", title="About", icon="ℹ️", url_path="about")
 
+# Detail pages (accessed via links, not shown in main navigation)
+ATTORNEY_DETAIL_PAGE = st.Page("pages/09_Attorney_Detail.py", title="Attorney Profile", icon="⚖️", url_path="attorney-profile")
+FIRM_DETAIL_PAGE = st.Page("pages/10_Firm_Detail.py", title="Firm Profile", icon="🏢", url_path="firm-profile")
+
 navigation = st.navigation(
-    [
-        HOME_PAGE,
-        CASE_EXPLORER_PAGE,
-        OPINIONS_PAGE,
-        JUSTICES_PAGE,
-        ANALYSIS_PAGE,
-        TOPICS_PAGE,
-        CASE_ORDERS_PAGE,
-        TRIAL_COURTS_PAGE,
-        ABOUT_PAGE,
-    ],
+    {
+        "Main": [
+            HOME_PAGE,
+            CASE_EXPLORER_PAGE,
+            OPINIONS_PAGE,
+            JUSTICES_PAGE,
+            ANALYSIS_PAGE,
+            ORAL_ARGUMENTS_PAGE,
+            TOPICS_PAGE,
+            CASE_ORDERS_PAGE,
+            TRIAL_COURTS_PAGE,
+            ABOUT_PAGE,
+        ],
+        "Profiles": [
+            ATTORNEY_DETAIL_PAGE,
+            FIRM_DETAIL_PAGE,
+        ]
+    },
     position="sidebar",
 )
 

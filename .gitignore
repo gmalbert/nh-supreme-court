@@ -25,13 +25,23 @@ env/
 .env/
 .venv/
 ENV/
+venv_mac/
 
 # Streamlit
+.streamlit/
 .streamlit/secrets.toml
+streamlit-ui.err.log
+streamlit-ui.out.log
 
-# Data — raw PDFs (large; not for version control)
-data/raw/pdfs/
-data/processed/text/
+# Data — raw PDFs and generated artifacts (large; not for version control)
+data/raw/
+data/processed/opinions.csv
+data/processed/oral_arguments.csv
+data/processed/oral_arguments.json
+data/processed/opinions_fts.sqlite
+data/processed/citations.json
+data/processed/cited_by.json
+data/processed/oral_arguments/
 
 # IDE
 .vscode/
@@ -67,7 +77,16 @@ download_log.txt
 # Local collection helpers and notes
 scripts/*
 !scripts/build_dataset.py
+!scripts/refresh_oral_arguments.py
+!scripts/analyze_attorney_justice_interactions.py
+!scripts/extract_attorney_stats.py
+!scripts/extract_speaker_stats.py
+!scripts/generate_enhanced_stats.py
 update_pipeline.ps1
 
 *.code-workspace
 nh-supreme-court-transcripts/
+debug_2017_page.html
+
+# macOS network temp files
+.smbdelete*

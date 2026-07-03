@@ -17,6 +17,8 @@ NH_GOLD = "#C8960C"
 
 def outcome_bar(df: pd.DataFrame) -> go.Figure:
     """Bar chart of outcome distribution."""
+    if df.empty or "outcome" not in df.columns:
+        return go.Figure()
     counts = df["outcome"].value_counts().reset_index()
     counts.columns = ["outcome", "count"]
     counts["label"] = counts["outcome"].map(lambda x: OUTCOME_LABELS.get(x, x.title()))
@@ -273,7 +275,7 @@ def avg_word_count_by_justice(df: pd.DataFrame) -> go.Figure:
     return fig
 
 
-def bench_diagram(votes: dict) -> go.Figure:
+def bench_diagram(votes: dict | list[dict]) -> go.Figure:
     """
     5-seat NH Supreme Court bench diagram.
     Each seat is a colored dot/bar representing that justice's vote.
@@ -283,6 +285,15 @@ def bench_diagram(votes: dict) -> go.Figure:
         "macdonald", "donovan", "hantz_marconi", "countway", "gould", "will",
         "bassett", "hicks", "lynn",
     ]
+
+    if isinstance(votes, list):
+        votes = {
+            str(item.get("key") or item.get("name") or index): {
+                "display_name": item.get("name", f"Justice {index + 1}"),
+                "vote": item.get("vote", "not_participating"),
+            }
+            for index, item in enumerate(votes)
+        }
 
     shown_keys = [k for k in bench_order if k in votes][:5]
     if not shown_keys:

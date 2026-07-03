@@ -14,10 +14,25 @@ public, journalists, students, attorneys, researchers, and civic groups.
 ## What You Can Find
 
 ### Court Decisions
-Read the court's published decisions, see who wrote them, and view the vote breakdown when available.
+Read the court's published decisions, see who wrote them, and view the vote breakdown when available. The latest version also includes full-text search across the entire opinion archive, so you can find cases by lawyer, topic, outcome, or phrase.
 
 ### Court Orders
 Explore shorter orders that help show how the court manages its docket and handles everyday matters.
+
+### Oral Arguments
+Search machine-generated oral-argument transcripts from 2015 to present, read individual arguments, and explore neutral collection statistics such as duration and transcript word count. Each transcript links to the original Vimeo recording and is clearly labeled as beta material.
+
+### New Case Research Features (July 2026)
+- **Full-text opinion search**: Search across the full body of opinions, not just case names or summaries.
+- **Citation explorer**: See which cases a decision cites and which later decisions cite it, so precedent relationships are easier to follow.
+- **Data freshness status**: Each page can show when the underlying court data was last updated, giving users confidence in the currency of the information.
+- **Advanced search filters**: Narrow results by year, justice, disposition, topic area, and other key attributes.
+- **Enhanced navigation**: Easier movement between opinions, justices, topics, and related cases.
+- **Attorney & firm profiles**: Searchable profiles for 328 attorneys and 130 law firms with argument statistics, case lists, and activity timelines.
+- **Attorney-Justice interactions**: Analysis of which attorneys argued before which justices, with workload distribution and frequency heatmaps.
+- **Enhanced visualizations**: Interactive charts for temporal trends, complexity distributions, case type breakdowns, and firm-attorney networks.
+- **Export capabilities**: Download filtered argument data and attorney/firm statistics to CSV.
+- **Opinion links from arguments**: Direct links from oral argument records to written opinions.
 
 ### Justices
 Look up individual justices to see their role on the court, their writing history, and their voting patterns.
@@ -39,6 +54,7 @@ Start with the page that best matches what you want to know:
 
 - Use **Opinions** if you want to read a specific court decision.
 - Use **Case Orders** if you want shorter orders and docket activity.
+- Use **Oral Arguments** to search hearing transcripts or review argument statistics.
 - Use **Justices** if you want to focus on one justice's work.
 - Use **Analysis** if you want charts and broader trends.
 - Use **Topics** if you want to explore cases by subject.
@@ -58,7 +74,7 @@ It is useful for:
 
 ## A Few Things To Know
 
-- Court materials sometimes use formal legal language.
+- Court materials often use formal legal language.
 - Some cases are easier to classify than others.
 - Names, titles, and court membership can change over time.
 - If you are using the site for anything important, it is always a good idea to check the original court record.
@@ -66,4 +82,8 @@ It is useful for:
 ## Important Note
 
 Granite State Appeals is provided for general information and research.
+
 It is not legal advice and is not affiliated with the New Hampshire Judicial Branch or any government entity.
+
+
+For detailed documentation on the oral arguments enhancements, see [`docs/ORAL_ARGUMENTS_ENHANCEMENTS.md`](docs/ORAL_ARGUMENTS_ENHANCEMENTS.md).

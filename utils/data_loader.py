@@ -13,6 +13,8 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
+from utils.oral_arguments import find_argument_for_docket, normalize_docket_numbers
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data" / "processed"
 RAW_DIR = BASE_DIR / "data" / "raw"
@@ -165,8 +167,10 @@ def _load_case_orders_cached(case_orders_mtime: float | None, jx3_mtime: float |
 
     merged = pd.concat(frames, ignore_index=True, sort=False)
     # Hide transcript placeholders in both feeds.
-    merged = merged[merged["case_name"].fillna("").str.lower() != "request a transcript"]
-    merged = merged[merged["case_number"].fillna("").str.lower() != "transcript-instructions"]
+    if "case_name" in merged.columns:
+        merged = merged[merged["case_name"].fillna("").str.lower() != "request a transcript"]
+    if "case_number" in merged.columns:
+        merged = merged[merged["case_number"].fillna("").str.lower() != "transcript-instructions"]
     return merged
 
 
@@ -185,6 +189,150 @@ def load_case_orders() -> pd.DataFrame:
 def load_opinion_text(case_number: str) -> str:
     path = DATA_DIR / "text" / f"{case_number}.txt"
     return path.read_text(encoding="utf-8") if path.exists() else ""
+
+
+@st.cache_data(ttl=3600)
+def _load_oral_arguments_cached(
+    index_path_str: str,
+    stats_path_str: str,
+    index_mtime: float,
+    stats_mtime: float,
+    transcript_mtime: float,
+) -> list[dict]:
+    """Load oral-argument metadata, public statistics, and searchable text."""
+    _ = (index_mtime, stats_mtime, transcript_mtime)
+    index_path = Path(index_path_str)
+    stats_path = Path(stats_path_str)
+    with open(index_path, encoding="utf-8") as fh:
+        records = json.load(fh)
+    with open(stats_path, encoding="utf-8") as fh:
+        stats_by_case = {row["case_number"]: row for row in json.load(fh)}
+
+    oral_argument_dir = DATA_DIR / "oral_arguments"
+    prepared: list[dict] = []
+    for source in records:
+        case_number = str(source.get("case_number", "")).strip()
+        if not case_number:
+            continue
+        record = {
+            key: value
+            for key, value in source.items()
+            if not key.startswith("granite_export_")
+        }
+        source_date = source.get("argument_date")
+        record.update(stats_by_case.get(case_number, {}))
+        if source_date:
+            record["argument_date"] = source_date
+        record["docket_numbers"] = normalize_docket_numbers(case_number)
+        text_path = oral_argument_dir / "text" / f"{case_number}.txt"
+        record["transcript_text"] = (
+            text_path.read_text(encoding="utf-8") if text_path.exists() else ""
+        )
+        prepared.append(record)
+    return prepared
+
+
+def load_oral_arguments() -> list[dict]:
+    """Return the deployable oral-argument collection with public statistics."""
+    index_path = DATA_DIR / "oral_arguments.json"
+    stats_path = DATA_DIR / "oral_argument_stats.json"
+    if not index_path.exists() or not stats_path.exists():
+        return []
+    transcript_paths = list((DATA_DIR / "oral_arguments" / "text").glob("*.txt"))
+    transcript_mtime = _latest_mtime(transcript_paths) or 0
+    return _load_oral_arguments_cached(
+        str(index_path),
+        str(stats_path),
+        os.path.getmtime(index_path),
+        os.path.getmtime(stats_path),
+        transcript_mtime,
+    )
+
+
+@st.cache_data(ttl=3600)
+def load_speaker_statistics() -> list[dict]:
+    """Load speaker statistics (Justice vs Counsel speaking time, words, pace)."""
+    stats_path = DATA_DIR / "oral_arguments_speaker_stats.json"
+    if not stats_path.exists():
+        return []
+    with open(stats_path, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+@st.cache_data(ttl=3600)
+def load_attorney_statistics() -> dict:
+    """Load attorney and firm statistics."""
+    stats_path = DATA_DIR / "oral_arguments_attorney_stats.json"
+    if not stats_path.exists():
+        return {"case_attorneys": {}, "attorney_stats": [], "firm_stats": []}
+    with open(stats_path, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+@st.cache_data(ttl=3600)
+def load_attorney_justice_interactions() -> dict:
+    """Load attorney-justice interaction data."""
+    interactions_path = DATA_DIR / "attorney_justice_interactions.json"
+    if not interactions_path.exists():
+        return {"attorney_interactions": [], "justice_interactions": [], "summary": {}}
+    with open(interactions_path, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+@st.cache_data(ttl=3600)
+def load_enhanced_statistics() -> dict:
+    """Load enhanced oral arguments statistics (temporal, complexity, networks)."""
+    enhanced_path = DATA_DIR / "oral_arguments_enhanced_stats.json"
+    if not enhanced_path.exists():
+        return {
+            "temporal_trends": {},
+            "complexity_analysis": {},
+            "attorney_networks": {},
+            "case_parties": {}
+        }
+    with open(enhanced_path, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+@st.cache_data(ttl=3600)
+def load_firm_metadata() -> dict:
+    """Load firm metadata (full names, websites)."""
+    metadata_path = DATA_DIR.parent / "firm_metadata.json"
+    if not metadata_path.exists():
+        return {"firms": []}
+    with open(metadata_path, encoding="utf-8") as fh:
+        data = json.load(fh)
+        # Create lookup dict by short_name
+        firms_lookup = {firm["short_name"]: firm for firm in data.get("firms", [])}
+        return {"firms": data.get("firms", []), "lookup": firms_lookup}
+
+
+@st.cache_data(ttl=3600)
+def _load_oral_argument_artifact(path_str: str, source_mtime: float) -> str:
+    _ = source_mtime
+    return Path(path_str).read_text(encoding="utf-8")
+
+
+def _oral_argument_artifact(case_number: str, folder: str, suffix: str) -> str:
+    path = DATA_DIR / "oral_arguments" / folder / f"{case_number}{suffix}"
+    if not path.exists():
+        return ""
+    return _load_oral_argument_artifact(str(path), os.path.getmtime(path))
+
+
+def load_oral_argument_text(case_number: str) -> str:
+    """Load the plain-text transcript for one docket key."""
+    return _oral_argument_artifact(case_number, "text", ".txt")
+
+
+def load_oral_argument_markdown(case_number: str) -> str:
+    """Load the readable Markdown transcript for one docket key."""
+    return _oral_argument_artifact(case_number, "markdown", ".md")
+
+
+def load_oral_argument(case_number: str) -> dict | None:
+    """Find an oral argument by a primary or combined docket number."""
+    return find_argument_for_docket(load_oral_arguments(), case_number)
 
 
 def _empty_opinions_df() -> pd.DataFrame:
@@ -208,6 +356,6 @@ def data_last_updated() -> str:
     """Return a human-readable last-updated timestamp from the CSV mtime."""
     csv_path = DATA_DIR / "opinions.csv"
     if not csv_path.exists():
-        return "No data yet — run the pipeline"
+        return "Unknown"
     mtime = os.path.getmtime(csv_path)
     return pd.Timestamp(mtime, unit="s").strftime("%B %d, %Y %I:%M %p")

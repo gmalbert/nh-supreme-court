@@ -1,8 +1,10 @@
 # NH Supreme Court Transcripts Archive
 
-This directory is the local source-of-truth archive for the Casey transcription workflow.
+This directory is the local source-of-truth archive for the Casey transcription workflow, and this README should stay checked in as the map for future years.
 
 The archive is intentionally **local-first**: source metadata, downloaded audio, raw Whisper output, public markdown, quality statistics, and batch logs all live here before anything is copied into the Granite State Appeals app.
+
+This archive is excluded from version control and is not read by the deployed application. Granite State Appeals uses only the repo-relative `data/processed/oral_arguments*` payload and the public `data/processed/oral_argument_stats.json` index. Operational quality scores, warnings, and rerun recommendations remain archive-only diagnostics.
 
 ## Current State
 
@@ -439,9 +441,28 @@ Recommended end-to-end flow:
    - Avoid depending on the macOS archive path at runtime.
    - Include a visible machine-transcript disclaimer.
 
+## 2025 Intake Checklist
+
+Use this same workflow for the 2025 batch, but treat it as a clean intake rather than a one-off 2026 replay.
+
+1. Add or update the 2025 manifest under `manifests/`.
+2. Create one case folder per oral argument under `2025/<argument-date>/<case-folder>/`.
+3. Make sure each case folder contains the full archive contract:
+   - `metadata.json`
+   - `status.json`
+   - `source/*.info.json`
+   - `audio/oral_argument_audio.mp3`
+   - `raw/transcript_raw.json`
+   - `public/transcript_public.md`
+   - `public/transcript_stats.json`
+4. Check docket normalization early, especially for combined dockets like `2024-0722-2024-0723`.
+5. Run `python scripts/refresh_oral_arguments.py` to rebuild `data/processed/oral_argument_stats.json` and validate the deployable payload.
+6. Review validator output for missing artifacts, malformed records, duplicate dockets, empty transcripts, and any leftover temporary files.
+7. Keep the archive local-only and commit only the processed `data/processed/oral_arguments*` payload plus app code.
+
 ## Future Refresh Workflow
 
-When new oral arguments are added:
+When new oral arguments are added after 2025:
 
 1. Update/create a manifest under `manifests/`.
 2. Stage new cases.

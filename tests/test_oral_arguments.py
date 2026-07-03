@@ -1,0 +1,119 @@
+from __future__ import annotations
+
+import json
+import tempfile
+import unittest
+from pathlib import Path
+
+from scripts.refresh_oral_arguments import validate_payload
+from utils.data_loader import load_oral_arguments
+from utils.oral_arguments import (
+    collection_statistics,
+    find_argument_for_docket,
+    make_search_snippet,
+    normalize_docket_numbers,
+    search_oral_arguments,
+)
+
+
+class OralArgumentHelperTests(unittest.TestCase):
+    def test_normalizes_combined_docket(self):
+        self.assertEqual(
+            normalize_docket_numbers("2024-0722-2024-0723"),
+            ["2024-0722", "2024-0723"],
+        )
+
+    def test_search_prioritizes_exact_docket_and_searches_transcript(self):
+        records = [
+            {
+                "case_number": "2025-0001",
+                "case_name": "Alpha v. Beta",
+                "argument_date": "2026-01-01",
+                "transcript_text": "The court discussed zoning and municipal authority.",
+            },
+            {
+                "case_number": "2025-0002",
+                "case_name": "Gamma v. Delta",
+                "argument_date": "2026-02-01",
+                "transcript_text": "No related phrase appears here.",
+            },
+        ]
+        self.assertEqual(search_oral_arguments(records, "2025-0002")[0]["case_number"], "2025-0002")
+        self.assertEqual(search_oral_arguments(records, "zoning")[0]["case_number"], "2025-0001")
+
+    def test_snippet_centers_on_query(self):
+        snippet = make_search_snippet("Opening words " + ("filler " * 80) + "needle nearby words", "needle", 40)
+        self.assertIn("needle", snippet)
+        self.assertTrue(snippet.startswith("..."))
+
+    def test_find_argument_matches_secondary_combined_docket(self):
+        records = [{"case_number": "2024-0722-2024-0723", "docket_numbers": ["2024-0722", "2024-0723"]}]
+        match = find_argument_for_docket(records, "2024-0723")
+        self.assertIsNotNone(match)
+        self.assertEqual(match["case_number"], "2024-0722-2024-0723")
+
+    def test_collection_statistics(self):
+        stats = collection_statistics(
+            [
+                {"duration_seconds": 600, "word_count": 1000},
+                {"duration_seconds": 1200, "word_count": 2000},
+            ]
+        )
+        self.assertEqual(stats["argument_count"], 2)
+        self.assertEqual(stats["total_duration_seconds"], 1800)
+        self.assertEqual(stats["median_duration_seconds"], 900)
+        self.assertEqual(stats["total_word_count"], 3000)
+
+
+class OralArgumentPayloadTests(unittest.TestCase):
+    def _write_fixture(self, data_dir: Path, include_transcripts: bool = True) -> None:
+        case_number = "2025-0001"
+        record = {
+            "case_number": case_number,
+            "case_name": "Alpha v. Beta",
+            "argument_date": "2026-01-01",
+            "duration_seconds": 600,
+        }
+        (data_dir / "oral_arguments" / "markdown").mkdir(parents=True)
+        (data_dir / "oral_arguments" / "text").mkdir(parents=True)
+        (data_dir / "oral_arguments.json").write_text(json.dumps([record]), encoding="utf-8")
+        (data_dir / "oral_arguments" / f"{case_number}.json").write_text(
+            json.dumps({**record, "transcript_text": "A short transcript"}),
+            encoding="utf-8",
+        )
+        if include_transcripts:
+            (data_dir / "oral_arguments" / "markdown" / f"{case_number}.md").write_text(
+                "# Alpha v. Beta\n\nA short transcript", encoding="utf-8"
+            )
+            (data_dir / "oral_arguments" / "text" / f"{case_number}.txt").write_text(
+                "A short transcript", encoding="utf-8"
+            )
+
+    def test_validator_builds_public_stats_without_archive(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data_dir = Path(tmp)
+            self._write_fixture(data_dir)
+            report = validate_payload(data_dir=data_dir, archive_root=None)
+            self.assertEqual(report["errors"], [])
+            self.assertEqual(report["public_stats"][0]["word_count"], 3)
+            self.assertNotIn("operational_quality_score", report["public_stats"][0])
+
+    def test_validator_reports_missing_artifacts(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data_dir = Path(tmp)
+            self._write_fixture(data_dir, include_transcripts=False)
+            report = validate_payload(data_dir=data_dir, archive_root=None)
+            self.assertTrue(any("Missing artifact" in error for error in report["errors"]))
+
+    def test_repository_loader_returns_all_public_records(self):
+        records = load_oral_arguments()
+        index_path = Path(__file__).resolve().parents[1] / "data" / "processed" / "oral_arguments.json"
+        expected_records = json.loads(index_path.read_text(encoding="utf-8"))
+        self.assertEqual(len(records), len(expected_records))
+        self.assertTrue(all(row.get("word_count") for row in records))
+        self.assertTrue(all(row.get("docket_numbers") for row in records))
+        self.assertTrue(all(not any(key.startswith("granite_export_") for key in row) for row in records))
+
+
+if __name__ == "__main__":
+    unittest.main()

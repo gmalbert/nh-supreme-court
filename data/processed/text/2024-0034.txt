@@ -1,0 +1,475 @@
+THE SUPREME COURT OF NEW HAMPSHIRE
+___________________________
+Merrimack
+Case No. 2024-0034
+Citation: State v. Clegg, 2026 N.H. 11
+THE STATE OF NEW HAMPSHIRE
+v.
+LOGAN CLEGG
+Argued: November 12, 2025
+Opinion Issued: March 17, 2026
+John M. Formella, attorney general, and Anthony J. Galdieri, solicitor
+general (Audriana Mekula, assistant attorney general, on the brief and orally),
+for the State.
+Thomas Barnard, deputy chief appellate defender, of Concord, on the
+brief and orally, for the defendant.
+PER CURIAM
+[¶1] Following a jury trial in Superior Court (Kissinger, J.), the defendant,
+Logan Clegg, appeals his convictions on two counts of knowing second degree
+murder, see RSA 630:1-b, I(a) (2016), four counts of falsifying physical
+evidence, see RSA 641:6, I (2016), and one count of being a felon in possession
+of a firearm, see RSA 159:3, I (2023), arising out of the fatal shooting of the two
+victims. On appeal, he argues that the trial court erred when it: (1) relied upon
+the exigent circumstances exception to the warrant requirement to deny his
+motion to suppress evidence obtained as a result of the warrantless searches of
+data from his cell phone carrier; (2) admitted at trial lay opinion testimony
+about certain photographs; and (3) struck certain testimony about the
+certification testing performance of a police dog trained to detect gunpowder.
+Because we agree with the defendant that the trial court erred in relying upon
+exigency grounds to deny his motion to suppress, we vacate the suppression
+ruling and remand.
+I. Factual and Procedural Background
+[¶2] For the purposes of reviewing the trial court’s denial of the motion to
+suppress, we accept the trial court’s findings where supported by the
+suppression record. See State v. Ruiz, 170 N.H. 553, 555 (2018). On the
+afternoon of April 18, 2022, the victims were fatally shot while walking on a
+trail in the Broken Ground Trail System (trail system) in Concord. The victims,
+who were husband and wife, were reported missing on April 20 and the
+Concord Police Department (CPD) began investigating their disappearance.
+During a search of the trail system and surrounding area on April 20, officers
+located a tent site that was occupied by a man who identified himself as Arthur
+Kelly. On April 21, officers discovered the victims’ bodies hidden in a natural
+depression under leaves and other debris in a wooded area of the trail system.
+[¶3] The next day, officers returned to the Arthur Kelly tent site and
+found that it had been “completely cleared.” By reviewing surveillance footage
+from nearby businesses and through subsequent investigation, CPD concluded
+that the man who identified himself as Arthur Kelly was, in fact, the defendant.
+CPD also learned that the defendant had a criminal history, including an
+outstanding warrant for his arrest for absconding from probation in Utah, that
+he had been in possession of a firearm at the time of two prior arrests, and that
+he had previously traveled to Europe. After further investigation, CPD
+ultimately identified the defendant as the murder suspect based upon, among
+other things, his purchases at nearby businesses prior to and immediately
+following the victims’ deaths, his provision of the false Arthur Kelly identity to
+officers while at a tent site near the crime scene, and an eyewitness description
+of the shooter that was consistent with the defendant’s appearance.
+[¶4] On October 3, 2022, CPD discovered that, on May 15, an “Arthur
+Kelly” had traveled to Burlington, Vermont. Despite an investigation of that
+area, CPD found no evidence of a person using either the defendant’s name or
+his alias.
+2
+[¶5] As of October 11, CPD had not located the defendant. At
+approximately noon that day, a Utah police detective notified CPD that
+Homeland Security had informed him that the defendant had “booked a flight
+to Berlin, Germany from JFK airport in New York scheduled to depart on
+October 14, 2022 at 12:30 a.m.” Homeland Security then sent CPD the
+defendant’s flight booking information at 4:41 p.m. that afternoon. The
+booking information included an address of a Burlington post office and a
+phone number, which CPD confirmed belonged to a legitimate Verizon account.
+[¶6] Believing that the defendant intended to leave the country in
+approximately 56 hours, CPD attempted to ascertain his location by requesting
+from Verizon location data connected to his phone number. CPD was “under
+the impression that a request to Verizon made with a warrant could take days
+or weeks to process before cell phone location data would be produced.”
+(Emphasis added.) Consequently, CPD submitted three warrantless requests
+to Verizon through its exigency hotline over the next 17 hours.
+[¶7] Within thirty minutes of learning of the phone number, CPD
+submitted an exigency request to Verizon for “ping” data connected to the
+phone number. Ping data provides “the radius from the phone to the cell tower
+it most recently connected to.” Verizon approved the request and provided ping
+data showing that the phone was active in Burlington, Vermont in a wooded
+area near hiking trails. Verizon then sent CPD emails with updated ping data
+every fifteen minutes.
+[¶8] CPD made a second exigency request to Verizon around 7:00 p.m.,
+seeking “text messaging details” that would identify any phone numbers that
+texted, or received texts from, the defendant’s phone number (historical data).
+At around the same time, CPD dispatched two officers to Burlington. The
+officers arrived there at 11:00 p.m. and searched certain locations for the
+defendant, including the bus station. The officers did not search in the wooded
+area, however, as such a search was deemed unsafe at that time. The officers
+then slept for “a few hours at a hotel.” Also during the evening and late night
+hours of October 11, a detective applied for, and was granted, a search warrant
+to use a cell site simulator device belonging to federal law enforcement, which
+could help pinpoint the location of the defendant’s phone. CPD ultimately
+never used that device.
+[¶9] By the next morning, October 12, CPD had learned through the
+second exigency request that the defendant’s phone had received a text
+message from an employee at a Burlington grocery store. Officers located the
+defendant at the grocery store at approximately 9:30 a.m. and, after tracking
+him, arrested him for the Utah probation violation. Meanwhile, also on the
+morning of October 12, CPD made a third exigency request to Verizon, this
+time for “Range to Tower” (RTT) data, to determine a more precise location for
+the phone. CPD did not use the RTT data to locate the defendant.
+3
+[¶10] The defendant was later arrested for the victims’ murders and
+indicted on two counts of knowing second degree murder, two alternative
+counts of reckless second degree murder, four counts of falsifying physical
+evidence, and one count of being a felon in possession of a firearm. Prior to
+trial, the defendant moved to suppress all evidence obtained as a result of the
+warrantless ping, historical data, and RTT searches of data from his cell phone
+carrier. The trial court denied his motion following a three-day suppression
+hearing. It concluded that the searches were lawful pursuant to the exigent
+circumstances exception to the warrant requirement.
+[¶11] Specifically, the trial court found that the police had probable
+cause to believe that the defendant’s location “would be found from a search of
+cell phone location data of the phone number” and that the data would aid in
+the defendant’s apprehension. It further determined that the State had proved
+that an exigency existed based on the following circumstances: the defendant
+was a “strong suspect” for the victims’ murders; there was evidence that he
+would soon attempt to flee the country or otherwise continue to avoid
+apprehension; there was a substantial likelihood that the defendant would
+discard the murder weapon before fleeing; the defendant was likely armed;
+given the random nature of the murders, the defendant might “randomly
+endanger others”; the officers “acted reasonably leading up to the exigency
+requests” to Verizon; and the exigency was not foreseeable. Based upon these
+circumstances, the trial court ruled that “the police faced a compelling need for
+immediate action” and that “there was a grave risk that the delay of even a few
+hours caused by seeking a search warrant would create a substantial threat of
+imminent danger to life or public safety and a likelihood that evidence would be
+destroyed” or that the defendant would evade apprehension. Because the trial
+court relied upon exigency grounds to deny the motion, it did not address the
+State’s alternative argument that the contested evidence was admissible under
+the inevitable discovery doctrine.
+[¶12] At the subsequent jury trial, evidence obtained as a result of the
+defendant’s apprehension was admitted, including a firearm found in the
+defendant’s possession. The jury convicted the defendant of all charges. This
+appeal followed.
+II. Appellate Arguments and Standard of Review
+[¶13] The defendant argues that the trial court erred in denying his
+motion to suppress because no exigency existed to justify the warrantless
+searches of data from his cell phone carrier. Consequently, he contends that
+the searches violated his state and federal constitutional rights. See N.H.
+CONST. pt. I, arts. 2-b, 19; U.S. CONST. amend. IV. We first address the
+defendant’s claim under the State Constitution and rely upon federal law only
+to aid our analysis. State v. Ball, 124 N.H. 226, 231-33 (1983). The defendant
+cites Part I, Article 19 and Part I, Article 2-b of the State Constitution in
+4
+support of his argument. Because we conclude that the defendant prevails
+under Part I, Article 19, we need not address his claim under Part I, Article 2-b.
+[¶14] Part I, Article 19 provides that “[e]very subject hath a right to be
+secure from all unreasonable searches and seizures of his person, his houses,
+his papers, and all his possessions.” N.H. CONST. pt. I, art. 19. Under this
+provision, a warrantless search or seizure is per se unreasonable, and evidence
+derived from such a search or seizure is inadmissible, unless the search or
+seizure falls within the narrow confines of a judicially crafted exception to the
+warrant requirement. See State v. Robinson, 158 N.H. 792, 797 (2009); State
+v. Gay, 169 N.H. 232, 240 (2016). The State bears the burden of proving by a
+preponderance of the evidence that a warrantless search or seizure falls within
+one of these exceptions. See Gay, 169 N.H. at 240. “One such exception exists
+for exigent circumstances that make it impracticable to obtain a warrant.”
+State v. Graca, 142 N.H. 670, 673 (1998). This “exigent circumstances”
+exception has two elements: probable cause and exigent circumstances. Gay,
+169 N.H. at 240. The defendant does not challenge the trial court’s conclusion
+that the State satisfied the probable cause element. Accordingly, we need not
+address probable cause, and we instead focus upon whether exigent
+circumstances existed.1
+[¶15] “Exigent circumstances exist where the police face a compelling
+need for immediate official action and a risk that the delay caused by obtaining
+a search warrant would create a substantial threat of imminent danger to life
+or public safety or likelihood that evidence will be destroyed.” Id. at 241
+(quotation and emphasis omitted). “Whether a situation is sufficiently urgent
+to permit a warrantless search depends upon the totality of the circumstances .
+. . .” Id. Our totality of the circumstances review includes an examination of
+how the exigency came about and the overall reasonableness of the officers’
+conduct prior to the search. See Robinson, 158 N.H. at 798. Other
+circumstances that may be especially relevant where, as here, the police
+conduct a warrantless search to apprehend a suspect include: the danger of
+imminent destruction of evidence; the gravity of the offense; the likelihood the
+suspect is armed; the need to prevent a suspect’s escape; and the risk of
+danger to the police or other persons. See Gay, 169 N.H. at 241; see also
+Robinson, 158 N.H. at 799-801 (declining to adopt six-factor “fleeing suspect”
+exigency test but considering relevant factors as part of totality of the
+circumstances analysis). No single factor controls. See Gay, 169 N.H. at 241.
+[¶16] As a threshold matter, the parties disagree about the standard of
+review we should apply in reviewing the trial court’s ruling that exigent
+circumstances existed. The State contends that this court has long recognized
+1 It is worth noting that the State does not contest that, absent exigent circumstances, CPD was
+required to obtain a warrant to seek the defendant’s cell phone data from Verizon.
+5
+that “[w]hether exigent circumstances exist is largely a question of fact to be
+determined by the trial court” and that we therefore will not disturb that
+finding “unless clearly erroneous.” State v. MacDonald, 129 N.H. 13, 21
+(1986). The defendant concedes that exigency is “largely” a question of fact but
+points out that this phrase implies that there is a legal component to the
+analysis. He asserts that our general standard of review for suppression
+decisions applies equally here and, accordingly, we should review the trial
+court’s factual findings for clear error and its ultimate legal conclusion — that
+exigent circumstances existed — de novo.
+[¶17] We first stated that exigency “is largely a question of fact” and
+applied the “clearly erroneous” standard of review to exigency determinations
+in MacDonald, relying upon federal law. Id. We subsequently reiterated that
+exigency is “largely a question of fact” and characterized MacDonald as
+“implying that determinations of whether exigent circumstances exist also
+involve questions of law.” Graca, 142 N.H. at 673. We have since, however,
+never clarified whether and to what extent this determination involves a
+question of law, and we have, at times, inconsistently stated or applied the
+standard set forth in MacDonald. See, e.g., State v. Santana, 133 N.H. 798,
+804 (1991) (omitting the word “largely”); State v. Pseudae, 154 N.H. 196, 201
+(2006) (comparing “facts of this case” to “the level of urgency demonstrated in
+previous cases” in a manner akin to de novo review). We therefore take this
+opportunity to clarify our standard of review for exigency determinations.
+[¶18] Although highly fact-specific, a determination of exigency ultimately
+requires the application of an objective legal standard to historical facts. See
+State v. Theodosopoulos, 119 N.H. 573, 580 (1979) (stating that a warrantless
+entry may be sustained under the exigency exception if “the officers’ perception
+of the emergency was reasonably grounded in the facts known to them at the
+time” (emphasis added)); Morse v. Cloutier, 869 F.3d 16, 24 (1st Cir. 2017)
+(explaining that “bottom-line question” in exigency inquiry “is whether
+a reasonable officer would have thought, given the facts known to him, that the
+situation he encountered presented some meaningful exigency”). The exigency
+inquiry therefore presents a mixed question of fact and law. Cf. State v. Ford,
+144 N.H. 57, 62-63 (1999) (clarifying standard of review applicable to custody
+determinations on similar grounds). Similar to our analysis of whether a
+person is in custody for Miranda purposes, see Miranda v. Arizona, 384 U.S.
+436 (1966), whether exigent circumstances exist “is a law-dominated mixed
+question in which the crucial question entails an evaluation made after
+determination of the historical facts.” Ford, 144 N.H. at 62-63 (quotation and
+brackets omitted). Accordingly, we will accept the trial court’s factual findings
+unless they lack support in the record or are clearly erroneous, and we will
+now review de novo the trial court’s ultimate determination of whether, based
+upon the totality of the circumstances, exigent circumstances existed. See
+Robinson, 158 N.H. at 795; cf. Ford, 144 N.H. at 62-63.
+6
+III. Analysis
+[¶19] Having clarified the applicable standard of review, we turn to
+applying the legal standard of exigency to this case. The defendant argues that
+the totality of the circumstances does not support the trial court’s exigency
+ruling; the State argues to the contrary. Because the trial court and the
+parties focused upon whether exigent circumstances existed at the time of
+CPD’s initial exigency request to Verizon, we also examine the totality of the
+circumstances at that point in time. We agree with the defendant that the trial
+court erred in determining that the circumstances were exigent.
+[¶20] We first consider the trial court’s finding that CPD’s conduct
+leading up to the initial exigency request was reasonable and the court’s
+assessment of the delay that would have been caused by obtaining a warrant.
+The trial court explained that “[w]hile police could have applied for a warrant
+prior to making the exigency request, officers were under the impression that a
+request to Verizon made with a warrant could take days or weeks to process
+before cell phone location data would be produced.” (Emphasis added.)
+Although the defendant argued that the officers’ impression was mistaken
+because the officers “could have obtained a warrant and then made the same
+exigency requests,” the trial court rejected that argument by saying that “it was
+reasonable for the officers to rely on their personal experience in determining
+how long it would take to receive location data from Verizon.” The trial court
+thereby implicitly concluded that it was reasonable for CPD to believe that it
+could not make an exigency request while having a warrant and that the
+officers reasonably believed the delay caused by obtaining a warrant would
+have been days or weeks. The defendant argues that this reasoning was
+erroneous because there was no basis for CPD to believe that it could not
+utilize Verizon’s exigency hotline if it first obtained a warrant. The State
+counters that such belief was reasonable based on the officers’ personal
+experience. We agree with the defendant.
+[¶21] The record reflects that CPD was aware that Verizon has a team of
+employees designated to respond to law enforcement requests for cell phone
+information, including an exigency hotline that is “staffed 24/7” and a separate
+process for responding to search warrants and subpoenas. The record
+supports CPD’s belief that, if it had submitted a search warrant to Verizon
+through the ordinary search warrant process, Verizon would not have produced
+the ping data for days or weeks, whereas Verizon would respond to an exigency
+request almost immediately. Thus, it was reasonable for CPD to conclude that
+it was necessary under the circumstances presented to request data via the
+exigency hotline.
+[¶22] There is not, however, an objective basis in the record for CPD’s
+apparent belief that using the exigency hotline and obtaining a search warrant
+were mutually exclusive — that is, that officers could not request ping data via
+7
+the exigency hotline with a warrant in hand. The State has not demonstrated a
+reasonable basis for believing in the existence of a Verizon policy that would
+prioritize warrantless requests over those accompanied by a warrant.
+Furthermore, the CPD lieutenant who made the decision to forgo a warrant
+conceded that Verizon’s guidelines for law enforcement do not expressly
+prohibit police from using the exigency hotline if they have a warrant. He
+testified that he believed that this limitation is “implied” by the fact that the
+guidelines describe separate processes for exigency requests and search
+warrants. The State did not, however, offer into evidence Verizon’s guidelines
+for law enforcement and the version of the guidelines offered by the defendant
+and admitted as an exhibit, albeit outdated, neither states nor suggests that
+obtaining a warrant and then making an exigency request is prohibited. The
+CPD lieutenant also acknowledged that, although he had experience using
+Verizon’s exigency hotline, he had never attempted to use the hotline while also
+having a warrant. Additionally, a CPD detective conceded that the Verizon
+form that CPD used to submit its exigency requests does not prohibit law
+enforcement from utilizing the exigency process if officers have a warrant, and
+the detective observed that the form states that Verizon will not provide
+location data for more than 48 hours without a warrant. Based on this
+information, a reasonable officer would have inferred that nothing prevented
+CPD from requesting data via the exigency hotline while in possession of a
+warrant. Accordingly, we conclude that the trial court erred when it
+determined that CPD’s impression about Verizon’s policy was reasonable.
+[¶23] Moreover, the length of time it would take for Verizon, or any other
+cell phone carrier, to respond to a search warrant has no bearing upon our
+consideration of whether “the delay caused by obtaining a search
+warrant would” give rise to a substantial threat of imminent danger or a
+likelihood of destruction of evidence or a suspect’s flight. Gay, 169 N.H. at 241
+(emphasis added); cf. State v. Murphy, 292 A.3d 660, 675-76 (Vt. 2023)
+(observing that fact that it took cell phone carrier two weeks to respond to
+warrant for historical location data did not bear upon whether it would have
+been “impractical to obtain a warrant” for real-time location data police sought
+via exigency request). The exigency exception to the warrant requirement
+considers only the consequences of a delay in obtaining a warrant. See Gay,
+169 N.H. at 241. It is immaterial to the application of the exception that a
+third party’s response to the warrant may be delayed. Put another way, Part I,
+Article 19 protects against “unreasonable searches and seizures.” N.H.
+CONST. pt. 1, art. 19. It is unreasonable that any individual’s freedom from
+governmental intrusion might be curtailed by virtue of how long it may or may
+not take a third party to respond to a warrant.
+[¶24] Setting aside the delay of days or weeks inherent in Verizon’s
+ordinary search warrant process, the record reflects, as the trial court found,
+that the delay caused by obtaining a search warrant alone would have been “a
+few hours.” Indeed, in less than six hours, an officer drafted an application for
+8
+a warrant to search for the phone using cell site simulator technology,
+submitted the warrant application, and received a decision from a court
+granting the warrant after business hours. The record also demonstrates that
+Verizon responded to CPD’s request for ping data via the exigency hotline in
+less than thirty minutes.
+[¶25] Notwithstanding the above-discussed error, the trial court’s
+exigency analysis ultimately focused upon the delay of “a few hours” that would
+have been caused by obtaining a warrant. Because this timeframe was the
+focus of the court’s analysis and is supported by the record, we review the
+remainder of the trial court’s exigency reasoning with this timeframe in mind.
+[¶26] We next consider the trial court’s determination that there was a
+risk that the delay occasioned by obtaining a warrant would create a likelihood
+that the defendant would evade apprehension. The trial court reasoned that
+the defendant had a demonstrated history of evading apprehension, that he
+had booked an international flight leaving in approximately 56 hours, and that
+the delay of a few hours to obtain a warrant “could have permitted [the
+defendant] to escape [CPD’s] reach” because the defendant could have disabled
+his phone “at any moment . . . making real-time location information
+impossible to collect.” It also reasoned that, notwithstanding the defendant’s
+upcoming flight, he had previously abandoned prior planned international
+travel, and he might therefore skip the flight and travel elsewhere. The trial
+court consequently concluded that “the fact that police could have potentially
+apprehended [the defendant] at JFK airport does not weigh strongly against a
+finding of exigency.”
+[¶27] We disagree with the trial court’s reasoning and the weight it
+accorded these facts. From the perspective of a reasonable officer in CPD’s
+position, there were two likely scenarios: either the defendant would attempt to
+board the international flight in 56 hours; or he would not appear at the
+airport, instead remaining at his current unknown location or traveling to
+another unknown location. There was not, however, an objective basis to
+believe that under either scenario a delay of a few hours would risk the
+defendant’s evading apprehension. As to the first possibility, CPD had concrete
+information about the defendant’s upcoming flight, which provided it an
+opportunity to work with federal or local law enforcement to apprehend him in
+the highly regulated setting of an international airport. There is no indication
+in the record that CPD needed the defendant’s then-current whereabouts to
+facilitate his apprehension at the airport, so any delay to obtain a warrant for
+the cell phone data would not have frustrated the defendant’s apprehension in
+this scenario.
+[¶28] On the other hand, if the defendant did not appear for his flight,
+the critical urgency relied upon by the trial court and the State was the fact
+that the defendant could disable or discard his phone “at any moment.” We
+9
+acknowledge that an individual can “disable” any cell phone for the purposes of
+preventing the collection of ping location data by simply turning off the phone.
+See Commonwealth v. Reed, 647 S.W.3d 237, 246 (Ky. 2022). However, the
+mere possibility that a suspect could disable or discard his cell phone is not
+sufficient to give rise to exigency. Cf. State v. Morse, 125 N.H. 403, 409 (1984).
+[¶29] Moreover, the State has not identified any facts specific to this case
+that provided reasonable grounds to believe that the defendant would
+imminently disable or discard his phone. Although it was reasonable for CPD
+to believe that the defendant was on the run from Utah authorities on the
+probation violation, that he had presumably fled New Hampshire in relation to
+the murders, and that he was generally adept at evading apprehension, the
+State conceded at oral argument that the record contains no evidence that the
+defendant knew law enforcement had obtained his phone number.
+Accordingly, from a reasonable officer’s perspective, there was no reason to
+believe CPD would lose the ability to collect ping data from the phone within
+the few hours needed to obtain a warrant and, therefore, the possibility that
+the defendant might not board his flight did not heighten the urgency of the
+situation. In short, we disagree with the trial court’s conclusion that there was
+a risk that a few hours’ delay to obtain a warrant would likely have allowed the
+defendant to continue to evade apprehension because such delay would not
+have prevented CPD from intercepting him at the airport or meaningfully
+frustrated its efforts to locate him elsewhere. A theoretical risk untethered
+from any specific circumstances demonstrating that it is likely to be realized
+will not support a finding of exigency.
+[¶30] Also critical to the trial court’s exigency ruling and to the State’s
+argument is the trial court’s implicit finding that the defendant still possessed
+the murder weapon and the court’s determination that “there was a substantial
+likelihood” that the defendant would discard the gun prior to his scheduled
+flight. This reasoning gave insufficient weight to two important facts: the
+length of time that had elapsed between the murders and the initial exigency
+request; and how quickly the defendant had destroyed other evidence following
+the murders. Given that there was proof that the defendant destroyed other
+evidence shortly after the murders, the passage of five months made it
+objectively less likely that the defendant still had the gun at the time of the
+exigency request. Cf. Coolidge v. New Hampshire, 403 U.S. 443, 460, 464
+(1971) (holding exigent circumstances did not justify warrantless search of a
+vehicle in part because defendant was aware he was a murder suspect and had
+“already had ample opportunity to destroy any” incriminating evidence),
+overruled on other grounds by Horton v. California, 496 U.S. 128, 137-41,
+(1990). Additionally, other than the fact that CPD had not recovered the gun
+during those five months, there appears no objective basis in the record to
+believe that the defendant still possessed it. Cf. Commonwealth v. Almonor,
+120 N.E.3d 1183, 1188-89, 1198-1200 (Mass. 2019) (concluding warrantless
+ping of defendant’s cell phone was justified by exigent circumstances where
+10
+witness told police that defendant still possessed the murder weapon when
+witness helped defendant flee the scene and police requested warrantless ping
+of defendant’s phone approximately seven hours later). We thus determine
+that the trial court erred in concluding that, under these circumstances, there
+was a risk that a delay of a few hours would make it likely that the defendant
+would destroy or discard the murder weapon, even assuming he still had it.
+[¶31] Finally, we conclude that the trial court improperly determined that
+a delay of a few hours under these circumstances would have posed an
+imminent and substantial threat of danger to life or public safety. We
+acknowledge that there was considerable evidence before the trial court that
+the defendant posed a substantial threat of danger to the public. It
+supportably found that there was probable cause to believe the defendant
+committed the victims’ violent murders, that CPD reasonably believed the
+defendant might be armed, and that, because the murders appeared to have
+been a random act of violence, the defendant might engage in other
+unpredictable, violent behavior. Yet, the trial court did not address the fact
+that five months had elapsed between the murders and the initial exigency
+request and that there was no evidence that, during that time, the defendant,
+or a person using the alias Arthur Kelly, committed any crimes. This lapse of
+five months without any indication of further violent or dangerous behavior
+distinguishes this case from those involving a demonstrated immediate and
+ongoing threat to public safety. Compare Theodosopoulos, 119 N.H. at 577,
+580-82 (affirming ruling that exigent circumstances justified warrantless entry
+of apartment when police were attempting to apprehend unidentified sniper
+who fired shots into police station two hours earlier and who they believed was
+in the immediate vicinity and could continue shooting), with People v. White,
+512 N.E.2d 677, 686 (Ill. 1987) (concluding that in “this case, the lapse of
+nearly two weeks between the commission of the crime and the discovery of the
+suspect’s whereabouts rendered it extremely unlikely that an additional several
+hours of delay to obtain a warrant would have . . . permitted [the defendant] to
+commit another serious crime”).
+[¶32] In sum, applying our exigency standard to the totality of the
+circumstances, we disagree with the trial court that exigent circumstances
+existed at the time of the first exigency request. As explained above, the trial
+court erred in treating as reasonable CPD’s belief that the delay occasioned by
+obtaining a warrant would have been days or weeks due to Verizon’s internal
+policy. Moreover, even after limiting the relevant delay timeframe to “a few
+hours,” the trial court did not properly weigh the circumstances relevant to the
+risk of the defendant’s escape or the risk that the defendant would destroy
+evidence or imminently endanger life or public safety. In short, the
+circumstances did not “make it impracticable to obtain a warrant.” Graca, 142
+N.H. at 673. Courts must exercise particular caution when applying the
+exigent circumstances exception to the warrant requirement because “it is an
+exception which by its nature can very easily swallow the rule unless applied in
+11
+only restricted circumstances.” Santana, 133 N.H. at 804 (quotation omitted).
+For all these reasons, upon our de novo review of the trial court’s ultimate
+determination of exigency, we conclude that it erred when it ruled that the
+circumstances were sufficiently exigent to justify the warrantless searches. See
+Pseudae, 154 N.H. at 200-01. Because the searches were unlawful under the
+State Constitution, we need not reach the federal issue. See Ball, 124 N.H. at
+237.
+IV. Conclusion
+[¶33] We vacate the trial court’s denial of the motion to suppress and
+remand this case to the trial court for the limited purpose of deciding whether
+the defendant’s motion to suppress should have been denied on the basis of
+the inevitable discovery doctrine. See State v. Broadus, 167 N.H. 307, 313-15
+(2015). On or before June 15, 2026, the trial court shall hold any further
+proceedings it deems necessary to resolve this issue and report its findings and
+rulings to this court. All further processing of this appeal is stayed until the
+trial court completes its review in accordance with this opinion. Any issues the
+defendant raised in the notice of appeal but did not brief are deemed waived.
+See Gay, 169 N.H. at 252.
+So ordered.
+MACDONALD, C.J., and DONOVAN, COUNTWAY, and GOULD, JJ.,
+concurred.
+12
