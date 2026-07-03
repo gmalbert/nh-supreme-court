@@ -1,0 +1,176 @@
+# State of New Hampshire v. Timothy J. Hefferon
+
+- Docket: 2025-0167
+- Argument date: 2026-03-19
+- Vimeo: https://vimeo.com/1172252778
+- Transcript status: machine-generated draft
+
+## Transcript
+
+**Justice**: Good morning. Before we proceed with today's, this morning's argument, the court wishes to welcome students from South Hickin High School. And their teacher, Mr. Esterbrook, welcome. We're going to hear the argument and then afterwards, attorneys Gagne and Sir Zan will meet with the students and then we'll come out and have a chance to visit with them, okay? This is case 2025-0167, State of New Hampshire versus Timothy J. Hefferon. Tony Gagne, I understand you reserved two minutes for a rebuttal. That is correct, Your Honor. Thank you. Chief Justice, Associate Justice. Identify yourself. Good morning, Your Honors. My name is Sam Gagne. I
+
+**Counsel**: represent the State of New Hampshire. May it please the court. A faithful application for the totality of circumstances test coupled with the deference that is due to the expertise, training, and experience of police officers. Establishes that in this case, the Seabrook police had articulable, specific facts that led them to reasonably believe that the occupants of the Red Chevy crews possessed drugs. I plan to advance this argument in three phases, first explaining what the police knew heading into June 2nd, 2023, then explaining what the police observed on June 2nd, 2023, and finally explaining how that knowledge and those observations combined to create reasonable suspicion. But I welcome the court's questions at any time. Great. You referenced in your brief an investigation of the Danbury Drive Apartments that resulted in search warrants being issued and convictions of individuals and a significant amount of drugs and products that would be used to create drugs and distribute drugs were found there. When did that
+
+**Justice**: investigation occur? So the transcripts, Your Honor, at page eight
+
+**Counsel**: and nine, I believe the transcripts, Officer Couch explains that that investigation was going on in May 2023. I don't know the exact date of the execution of the warrant. It does appear that it took place after the stop, but the information from the Danbury Drive Apartments is being gathered in May 2023. So what specific information regarding those apartments did that officer
+
+**Justice**: had? So that officer had a specific information that that
+
+**Counsel**: apartment complex was a source of drugs for residents in Seabrook that came through a tip and then that tip was corroborated through controlled buys. First with confidential informants, the testimony at the hearing was that during the confidential informant buys, the police saw at least one car leave the Danbury Drive Apartments, go to Seabrook, complete the transaction and then drive directly back to the Danbury Drive Apartments. And there were three confidential informant
+
+**Justice**: buys. Is that right? Excuse me, Your Honor? There were three
+
+**Counsel**: confidential informant buys. I don't recall from the transcript exactly how many were done with the Danbury Drive Apartments, but in addition to the confidential informant buys, there were also buys performed by undercover officers with the same group from the Danbury Drive Apartments. So based on those facts, the police did have a reason to believe that the Danbury Drive Apartments were a source of drugs for residents in Seabrook. So there's 48 units. Was there anything specific about which
+
+**Justice**: unit was engaged in the sales? So first, Your Honor, I
+
+**Counsel**: don't, I recall from the Record Defense Council asserting that there were 48 units. I do not know that. I don't think the record clearly establishes that. But even assuming that there are, I don't think it matters how many units there are. There was no information about which unit specifically drugs may have been stored or being sold from. But there was specific information that the drug transactions at the Rockingham Village Apartment Complex took place in cars behind the buildings. As far as the Danbury Drive Apartment, I believe the record established that there were four buildings there. I don't think it was clear that there were 48 units. And I don't think the police needed to know exactly which unit might have been selling the drugs. The articulable specific fact that factored into reasonable suspicion here is that the police did know that that apartment complex was a source of drugs for residents in Seabrook. But wouldn't you agree that if you have a single family home and a purchase is occurring in a thing from a single family home, that's very different from a complex that has
+
+**Justice**: multiple units? I think that might be important if you
+
+**Counsel**: were trying to get say a warrant to get inside of the unit to look for drugs inside of the unit. I don't think you need that for reasonable suspicion in this case. To know that that was a source of drugs, the Danbury Drive Apartments that that needs to be looked at in totality. So the police also know that they're following a car that they know to be involved in drug transactions. It travels from the Walmart and Seabrook directly to the Danbury Drive Apartments with no stops in between. It stays there for five to 10 minutes, the about the amount of time that it takes to complete a drug transaction in Officer Couch's experience. And it then goes only a half mile before it makes a stop at the target parking lot for 20 minutes. As this court has recognized the case is escaping me and decided in our brief, it is not uncommon when people purchase drugs for them to make a quick stop at somewhere like a highway arrest area or a parking watch to use them, manipulate them or conceal them. So putting all of those together traveling from Seabrook. But those individual actions really are themselves
+
+**Justice**: not inherently criminal. They're not, right? And so
+
+**Counsel**: I know that you that you argue that there's evidence of drug sales for generally or drug sale activity at both apartment complexes. But then we have a trail of what are basically what is basically legal conduct. Whatever one might think about it in terms of whether it's odd or what have you. But it's legal conduct. And so, you know, in Blaisdell Moore, we've said that, you know, the the it's impossible for a combination of wholly innocent factors to combine into a suspicious conglomeration unless there are concrete reasons. So how do we tie the illegal conduct of, you know, what might have been going on at these drug at these apartment complexes, which seems to me to be kind of the bulk of the suspicious sort of conduct. How do we tie that down in a concrete way to the elements that pertain directly to the red crews and the
+
+**Justice**: occupants activities? Sure, your honor. So I
+
+**Counsel**: would begin by noting that this court has also recognized that innocuous conduct can be cast in a different light when there are facts. It can be,
+
+**Justice**: but it needs to sort of have a concrete link, right?
+
+**Counsel**: Right. So I think the concrete link here, what makes that seemingly innocuous behavior, if you didn't know the subject that was engaged in it, that casts it in a light of guilt here, is the police get information from confidential informants and from tips that these drug sales are going on behind Rockingham Village Apartments. Two cars are primarily involved and they meet regularly. A red Chevy Cruze, a Silver Honda Civic, they give them a model, the license plate number. And then another tip called in the name, Belinda DeTilio, she's selling the drugs at the apartment. The police run DMV records, they run a spots check, they find out that, yes, indeed Belinda DeTilio does own a red Chevy Cruze and she does live at the Rockingham Village Apartments. Those are concrete specific facts that when the police then observe the red Chevy Cruze on June 2nd, 2023, that's while this investigation is still ongoing, the police just begin tailing it. Where is my
+
+**Justice**: suspect going? But what are the specific,
+
+**Counsel**: to Justice Will's point, what are the specific facts anchoring whatever happened in the target
+
+**Justice**: parking lot? So I think that that's
+
+**Counsel**: stop in the target parking lot needs to be understood in light of what the police understood. This car that I suspect to be a drug dealer in Seabrook just went directly to a location known to be a source city for drugs
+
+**Justice**: in Seabrook. Isn't that just a hunch?
+
+**Counsel**: No, Your Honor, I don't think it is. The police knew that Belinda DeTilio was involved in drug sales. They knew that the Danbury Drive Apartments were a source of drugs in Seabrook through confidential informant buys and undercover buys. They knew that she was there for five to ten minutes because
+
+**Justice**: they stayed. But wasn't that in Belinda?
+
+**Counsel**: But the police reasonably believed that it was. The person driving the car was a female, matched the height and weight description that they received from the ENV records. And as this court has held, there's nothing to indicate to the police officer that the owner of the vehicle is not driving it, then it's reasonable for them to assume that they are. And in this case it was the Belinda DeTilio's daughter who was driving it. But they matched the description that the police had on the DMV record. And so they made that observation
+
+**Justice**: when they switched seats? Because otherwise
+
+**Counsel**: they didn't see who was inside the
+
+**Justice**: vehicle, right? I don't recall that
+
+**Counsel**: clearly from the record, Your Honor. But I think if the record supports that the police saw it and were not able to see who at all was driving the car, then I think it remains that it is reasonable for the police to begin with the premise that the owner of the car is driving the car. I would suspect that the police would have been able to at least see that a female was driving initially, and I do believe that's on the record that at the beginning a female was driving. Right, but witnessing somebody driving a vehicle doesn't allow an officer to determine what that person's height or weight is.
+
+**Justice**: Does it? I will, Your Honor, of course
+
+**Counsel**: the police cannot pull the person out of the vehicle and measure them. But in the case where this court has said that if there's no reason for the officer to believe the owner is not driving the car, then they can assume that it is. The officer didn't pull that person out either. I believe they looked at the person and they looked at the description on the DMV records and says, yeah, that looks about right. And from there it's reasonable for the officer to believe that the owner is driving the car. Would you agree that it significantly undermines reasonable suspicion if you, if the officers did not know that there was drug dealing at the Rockingham Village Apartments that the crews was involved in it and that Detilio was a
+
+**Justice**: participant? Yes, Your Honor, minus those
+
+**Counsel**: facts. Yes, that's significantly undermined. So, and as I understand it, all of those facts, all of that information came to the Seabird Police through confidential informants. Confidential informants and concerned residents, the record says. Okay, and I understand that you have contended that the reliability of those informants was not preserved. But setting that aside, can you tell me what evidence there was that those confidential informants or residents making complaints were, that
+
+**Justice**: those reports were reliable? So, I
+
+**Counsel**: would begin again noting we didn't get as much of a record as we could have on that because the reliability was not challenged below, but even on the record that we have, the tip that calls in the Red Chevy crews is a very specific tip. It gives the make model of the car, it gives a license plate number, and all of that checks out. And then when an individual gives this name Belinda Detilio, she's involved in drug transactions at the Rockingham Village Apartment Complex. When all this information gets run through spots in the DMV, the police are able to corroborate. Indeed, she does live there and she does own that car. I would also note that this court has stated, I believe it is in state versus SUSE, that because reasonable suspicion is a lesser standard than probable cause, it can be established on tips and information of lesser reliability than probable cause could. As to the Danbury Drive Apartments, the reliability of that is difficult to assess on this record because there is no challenge, excuse me, the reliability of the confidential informants. But these were not just tips that the police did not know with saying, hey, this apartment complex is a source of drugs, these are confidential informants for the police as well as undercover officers who then go make those buys. So that has corroborated as well and those tips were reliable on the record and we would also note that the superior court went out of its way to say that it was not discounting the reliability of those tips, it just did not move the needle for the superior court. But you just said that's Danbury, what about the tips regarding
+
+**Justice**: Rockingham Village? What
+
+**Counsel**: corroboration or confirmation of
+
+**Justice**: reliability is there on that? So that,
+
+**Counsel**: so those are also first confidential informants and residents of the apartment complex, but we would go back to one of the tipsters, gives a very specific tip. It's this red Chevy cruise, it has this license plate number, the police run that information and checks out and then when they get the name Blinda Ditilio, they run her through spots, she indeed does live at the Rockingham Village Apartments. Maybe that wouldn't get you up to probable cause, but that does get you enough reliability to build reasonable suspicion on. Thank you. Thank you Attorney Ganya, you reserved two
+
+**Justice**: minutes. Attorney Sirzan? May it please
+
+**Counsel**: the court, Chelsea Sirzan, on behalf of Timothy Hevron. The trial court correctly ruled that the police lacked reasonable suspicion to seize this vehicle and thus violated Mr Hevron's constitutional rights. The day of the surveillance, the police observed nothing rationally pointing to illegal drug activity. Just a, there was no attempts at concealment, no furtive movements, no meetings or exchanges. Just a relatively brief drive into Massachusetts with two brief stops during daylight hours. The complaints or tips at the regarding the Seabrook Apartments and the Methuen Apartments do not make that travel more suspicious. Well why
+
+**Justice**: not? I mean you have residents that are
+
+**Counsel**: complaining to the police that this red Chevy shows up every other day and meets with another vehicle and it's really suspicious because it seems to be a consistent sort of operation.
+
+**Justice**: Why isn't that suspicious? So the
+
+**Counsel**: police said that they had one specific report regarding those vehicles meeting. The tip didn't relay any specific observations, no highly detailed observations, just the sweeping allegation that there were drug sales occurring. They didn't reference seeing Ms. Dottilio involved in those meetings with the crews and the specific facts about the cars are things that anyone in the parking lot that Ms. Dottilio lived at could have reported to the police. So they don't as the case law suggest point to a tipster that has special access or information or has observed something highly detailed that they're able to relay to the police. Do we know whether Ms. Dottilio was a
+
+**Justice**: resident of them? The Rocky M complex? Ms. Belinda Dottilio?
+
+**Counsel**: Yep. I think that the record supports that she was a resident. Yes. So this could be a phone call from another neighbor that just was upset that she put her trash out on the street. Yes, and I think that that is why the police cannot rely on face value on reports that they receive without corroborating pieces of it before making a seizure or otherwise having some of the factors that this court is considered sufficient for. What's your response to the state's argument that that corroboration the liability
+
+**Justice**: argument was not has not been preserved?
+
+**Counsel**: Yes. So it was the state's burden at the suppression hearing to supply all information that they thought supported the officer's reasonable suspicion. Mr. Hevron challenged that stop and everything underlying it. So he does not have any obligation to preserve specific challenges to the things the state put on to support their seizure. The state attached the defense's motion to suppress. It does refer to the tips as unproborated. So I do think that the trial court considered this and I don't think this court has specifically addressed this but as persuasive authority the Fifth Circuit federal court has that's in USB Martinez addressed. Well certainly the trial court addressed the reliability of these tips in its order
+
+**Justice**: right? The trial court said that they
+
+**Counsel**: did not discount the validity of the tips. I think that the trial court did not consider them to have very much weight at all because there was nothing offered by the state to support how much weight the the court should give them. I'm sorry you always
+
+**Justice**: versus Martinez supports what? That
+
+**Counsel**: the defendant does not have an obligation to specifically preserve arguments about the tips when they've challenged the reasonable suspicion to stop to make a seizure.
+
+**Justice**: Because the government bears a burden?
+
+**Counsel**: Yes and then the government was already obligated to put on all evidence that it wanted to to establish the suspicion. As I read the motion to suppress well it says according to an unproborated tip and alleged drug supplier by the same by the name of Eric lived in Danbury court. So the argument on lack of corroboration related only to the Mthuin end of the transaction. So I would rely just that Mr. Heffron doesn't have an obligation to specifically preserve that and that detail didn't come out in the officers sworn testimony regarding that particular person in Danbury Drive. So what we were left with regarding both apartments was very minimal information. I did want to respond to some of the court's questions to the state. So I think it is very clear that the search warrant at the Mthuin apartments did not occur prior to this stop. The testimony was not clear on that point and the state's objection to the motion to suppress in the trial court which we attached clearly states that the search warrant was subsequent to the stop on June 2nd 2023. So that cannot be relied on whatsoever to corroborate or support the reliability of the tips the state seeks to rely on. I think Justice Gould, you had asked if it was three buys with vehicles coming from Mthuin up to Seabrook. All of the record supports is multiple buys. There was no specific number in the testimony. And the buys of undercover officers going to the Danbury Drive apartments, the officer testified that those were later on, she said. So I also don't think that the sales to undercover officers supported her reasonable suspicion on this date. So I I do think it is not fair to say that the police knew Belinda DeTilio was involved in the sale of drugs without having confirmed anything from the reports they were receiving. And I do not think it's fair to say that the Mthuin apartments were a known drug location. Based on the testimony, the police had not been able to confirm who in the vehicles traveled to Seabrook might have been connected to the apartments in Mthuin. They didn't, even if someone did live there, they didn't know if the person got those drugs from there or got them from somewhere else and brought them up to Seabrook. They didn't have any specific unit identified at the Mthuin apartments. So you can compare that to State v. Veniz, where both officers involved had conducted multiple drug arrests in the apartment complex that they considered a known drug location. That's not at all what we have here. Assume for purposes of this question that the tips about the Rockingham Village apartment were reliable. So you knew that drug deals were taking place, that a Chevy Cruze was involved, and that Ms. Detilio was also involved in those deals. That same car leaves Rockingham Village, goes to Mthuin where previous drug deals have taken place. They're there for 10 minutes to turn right around and go back to Mthuin. I'm sorry to Rockingham Village. Isn't that articulable, reasonable suspicion that a drug deal has taken
+
+**Justice**: place in Mthuin?
+
+**Counsel**: I don't think so, without the officers observing anything at the Mthuin apartment complex. So if they had known that a particular building contained the unit or units that they had reliable information on, and they had seen these occupants go into that building and come out, I think that then maybe you are there if they knew that Belinda Detilio was involved in drug sales. But without an observation, I think that the apartment complex is too large and the suspicion too weak for the court to find reasonable suspicion with no observations about whether they even went into a building at all, or if anyone came out and met with them, the officers don't know. So I think I would respond to the state's response to Justice Countway's question. The trial court found that there were approximately 48 units at this complex. That was based on the officer's estimate as to how many units she thought were in each of the four buildings, and that was a finding that the court made. I think that the guess was to the math that was involved, but that is a finding. So it was a significantly large complex and it is not reasonable to assume that if one or two units might involve people involved in drug activity that the visit to somewhere in the entirety of that complex is suspicious. I do, I want to comment on the totality of the circumstances and how it is a faithful application here, and the trial court did faithfully apply that standard because all of the observations that the police made that day were wholly innocent and they didn't have a concrete reason because of how weak the tips were and how much they relied on just hearsay and speculation from residents or confidential informants that the state did not put more detail on about. So there was no reason to jump to the conclusion that these officers did. The totality of the circumstances does not mean that some fact that has very low probative weight must take on more significance because some other information that is very minimal comes up. Unless those two things are logically tethered to each other just because there are a lot of potential speculations does not mean that they have to bolster each other and they didn't. So you're going to get into the weight of each piece in the totality analysis. What deference do we owe to the trial
+
+**Justice**: court in that analysis?
+
+**Counsel**: So I do think that this the court's president suggests that the weight to give evidence is in the province do deference to the trial court and specifically regarding the inferences that the officer articulated to the court and the way that the court weighed those as persuasive or not or credible or not. I don't think that this officer's explanations for why she thought certain things were suspicious was rational and she was not able to offer experience or training to explain the inferences that she made specifically at for example stopping a target for 20 minutes. She didn't say that like in the LeRose case that in her experience people stop frequently right after buying drugs to use drugs. She just said it was abnormal behavior. They thought they might have been concealing or consuming the drugs. She says we weren't sure it was just very odd behavior. So I don't think that that's the kind of inference that is. The trial court found the officer to
+
+**Justice**: be credible. Did he not?
+
+**Counsel**: I don't think that the trial court made a specific statement about that. The trial court for example regarding the excessive blinking on the way back did note in its order that the officer testified to that but had not included it in her report and I think that's an example of the time where the court was weighing credibility and weighing the inferences and the weight to give them from that officer's testimony. Do we also defer to the court's finding that the
+
+**Justice**: tips were credible? All that the court
+
+**Counsel**: said was that they were valid but even you know their validity did not convey fact. So it may be true that the police received these reports but what the officer testified to was not fact that the that the state can rely on in order to meet the reasonable standard. Well the tip is there are drug transactions happening at Rockingham Village.
+
+**Justice**: Isn't that a fact? If that's a reliable
+
+**Counsel**: tip, isn't that a fact the police can
+
+**Justice**: rely upon?
+
+**Counsel**: The the trial court referred to the tips as potential drug sales occurring at Rockingham Village. So I don't I don't think that the trial court did conclude even considering the tip valid that it was fair to conclude that the there were definitely drug sales occurring there and that Ms. Detilio was definitely involved in them. And it seems like those tips were separate that there was the observation of the vehicle's meeting and then oh we've heard that name before not that any anyone had linked the observations. So we have really no idea the basis for the people who said she is someone who's involved in selling drugs at this complex. There's zero information about who said that and what they knew about her and the police hadn't confirmed anything about that yet. Do you agree with the state that
+
+**Justice**: there's a de novo aspect to our review?
+
+**Counsel**: Yes absolutely. And how does that work given the deference we owe to the facts
+
+**Justice**: that are found? So I think that the
+
+**Counsel**: the court looks at what facts were on the record and that the trial court included in their order and can reassess them which is why I've emphasized that I don't think there was much at all behind the tips and complaints because if this court does take a different view than the trial court then you then one might interpret the trial court's order regarding the validity of the tips that this court can can look to the very low weight that or the very low facts that supported the tips in this case.
+
+**Justice**: Thank you very much. You write lights on?
+
+**Counsel**: Attorney Kanye. Thank you your honors. Just a couple of brief points. Justice Gould had asked defense counsel if the police knew that Blinda DeTilio was involved selling drugs at the Rockingham apartments and then traveled to a place where that is known to be a source of drugs for Seabrook and then traveled right back. To Seabrook would that be a reasonable suspicion and the answer was not unless the officer saw something like going into the building or money
+
+**Justice**: changing hands?
+
+**Counsel**: The state's answer to that question would be yes but if this would be yes that is enough for reasonable suspicion justice Gould's question to ask for something more like money changing hands if this police in this case saw money changing hands it's the state's position that we're talking about probable cause to arrest. It's reasonable suspicion is not probable cause. If the officers saw the people going into the Danbury Drive apartment complex it's lost on me how that would add to the analysis. You don't know where they're going which apartment they're going into.
+
+**Justice**: That's the whole point right?
+
+**Counsel**: It might not change if the officers saw them go into the complex but the officers didn't even see that and so you've got a large apartment complex into which two people go. Inherently is that suspicious because there might be drug
+
+**Justice**: activity somewhere in the complex?
+
+**Counsel**: Not on its own your honor. It has to be viewed completely in the totality and the pertinent fact of the stop is that it takes five to ten minutes in the officer's experience that's about how much time it takes to complete a drug transaction and knowing. That might be the time it takes to go pick up a stroller or a pack and play right from a name. I mean it just again I guess I'm coming back to this sort of totality of holy innocent factors and I'm trying to understand sort of what concretely connects them to drug activity that would give rise to reasonable suspicion. If I may quickly thank you.
+
+**Justice**: Sure, sure.
+
+**Counsel**: Because one thing I wanted to do is distinguish blood cell more because I was not able to do that. That truly was all combined completely innocuous activity. The two circumstances were nervousness and bloodshot eyes. Here we have a tip that somebody is involved in drug sales. That is that that casts everything else in a different light. It allows you to understand the five-minute stop at the Danbury Drive Apartments in a way that you couldn't if you didn't know that. I see my red light is on after court. Has no further questions.
+
+**Justice**: Thank you.
+
+**Counsel**: Very much counsel. Case submitted.
