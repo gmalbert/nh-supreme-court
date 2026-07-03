@@ -44,6 +44,11 @@ def _title_columns(frame: pd.DataFrame) -> pd.DataFrame:
 
 logo_path = ROOT / "data_files" / "logo.png"
 st.title("Analysis")
+st.page_link(
+    "pages/08_Oral_Arguments.py",
+    label="Explore 2026 oral-argument statistics",
+    icon="🎙️",
+)
 
 df = load_opinions()
 

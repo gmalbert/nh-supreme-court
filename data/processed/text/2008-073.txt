@@ -1,0 +1,558 @@
+THE SUPREME COURT OF NEW HAMPSHIRE
+___________________________
+Belknap
+No. 2008-073
+NEW HAMPSHIRE BALL BEARINGS, INC.
+v.
+W. SCOTT JACKSON & a.
+Argued: January 9, 2009
+Opinion Issued: March 18, 2009
+Orr & Reno, P.A., of Concord (Lisa Snow Wade on the brief and orally),
+for the plaintiff.
+Cook, Little, Rosenblatt & Manson P.L.L.C., of Manchester (Arnold
+Rosenblatt and Daphne Lessard on the brief, and Mr. Rosenblatt orally), for
+defendant W. Scott Jackson.
+Downs Rachlin Martin P.L.L.C., of Littleton (Kate Strickland on the brief),
+and Snell & Wilmer L.L.P, of Phoenix, Arizona (Sid Leach on the brief and
+orally), for defendant Sargent Controls and Aerospace.
+DUGGAN, J. The plaintiff, New Hampshire Ball Bearings, Inc. (NHBB),
+appeals decisions of the Superior Court (Smukler, J.) concerning discovery
+motions, evidentiary rulings, jury instructions and the denial of post-trial
+motions. We affirm.
+I. Pre-Trial Proceedings
+NHBB initiated this suit in early May 2006, alleging that W. Scott
+Jackson, a former NHBB employee, breached his confidentiality agreement by
+taking approximately fifty-three NHBB computer files when he left the
+company, and that Jackson and his current employer, Sargent Controls and
+Aerospace (Sargent), misappropriated NHBB trade secrets. The parties
+engaged in a lengthy and bitterly fought discovery process. At the start of the
+case, the trial court issued two orders requiring the defendants to preserve all
+evidence relevant to the case. After seven months of discovery, NHBB filed a
+motion to compel Sargent to grant NHBB access to its servers, server backup
+tapes and employee computers in all three of Sargent’s engineering divisions at
+its facility in Tucson, Arizona. The court denied the request, stating that the
+potential imaging of up to 250 hard drives was “too broad and burdensome,”
+but allowed NHBB to make a narrower request. NHBB renewed its request to
+include all Sargent backup tapes and servers, but only thirty-five employee
+computers. The thirty-five computers were those used in the Kahr Bearing
+Engineering Group, the Sargent division dedicated to manufacturing bearings.
+The trial court granted NHBB’s revised request in March 2007.
+The parties, however, disputed their obligations under the order.
+Sargent allowed NHBB access to the thirty-five hard drives in April, but refused
+access to its servers or backup tapes. In late May, the trial court clarified its
+order to include the backup tapes, but not Sargent’s servers; the trial court
+ordered Sargent to produce the backup tapes. In late August, one month
+before trial, Sargent filed a motion in limine requesting the exclusion of
+evidence concerning discovery disputes under New Hampshire Rules of
+Evidence 401, 402 and 403. Over NHBB’s objection, the trial court granted
+Sargent’s motion. On appeal, NHBB challenges the trial court’s rulings
+concerning discovery and the granting of the defendants’ motion in limine.
+II. Trial
+The jury could have found the following facts. Jackson worked for NHBB
+in various engineering capacities for over twenty years. During December 2005
+and January 2006, Harry Labbe, a former NHBB employee then working at
+Sargent, recruited Jackson and convinced him to apply for the position of
+northeast sales manager. On January 29, 2006, Jackson returned from an
+interview with Sargent in Tucson, Arizona, and accepted a position with
+Sargent on February 1. Jackson resigned from NHBB on February 1 and
+returned his NHBB-issued laptop (NHBB laptop).
+One month after he left, NHBB employees created a forensic image of
+Jackson’s NHBB laptop as part of a forensic training course. A forensic image
+is an exact replica, bit for bit, of the original storage device that allows
+2
+investigation of past use without altering the original evidence. Analysis of the
+forensic image with forensic software allows an investigator to determine what
+peripheral devices have been connected to the device, what a user accessed,
+what has been stored on the device, and when it was last accessed or modified.
+Because deleted files are not actually erased from storage media, analysts are
+able to determine both current and deleted files so long as the latter have not
+been completely overwritten with new data. When the NHBB laptop was
+imaged, however, the equipment operator failed to activate the write blocker on
+the imaging equipment, thereby changing the last access dates for certain
+system files.
+Analysis of the forensic image showed that after returning from Tucson
+on the night of January 29, Jackson twice remotely accessed NHBB’s virtual
+private network (VPN), and serially accessed a number of files on the NHBB
+laptop. Each logon to the VPN lasted only a few minutes, and Jackson testified
+that he had checked his NHBB email that night. Witnesses testified that his
+brief VPN access with limited data transmission was consistent with retrieving
+email and not downloading files. Serial access occurs when a user accesses
+multiple files at the same time, thereby creating the same last access date for
+each file. NHBB’s expert testified that the most probable cause of serial access
+is copying files; Sargent’s expert, however, discussed other possible causes,
+such as simply selecting or moving files. Of those files serially accessed, NHBB
+identified roughly fifty-three that it believed to contain trade secrets or
+confidential information. Those files contained employee performance reviews
+as well as a number of documents used in computer-aided engineering
+including: engineering formulas, NHBB part specifications, production
+specifications and information on customers’ products and requirements.
+There was nothing suspect about Jackson possessing such files during his
+employment, as they were either placed on the laptop by NHBB or created
+while working on NHBB projects. The other serially accessed files were
+Jackson’s personal files. The image also showed that a Lexar flash drive was
+connected to the NHBB laptop the night of January 29.
+Based largely upon recovered emails between Labbe and Jackson during
+his recruitment, Jackson’s remote VPN access, the serial access of files on the
+NHBB laptop, and the use of a peripheral flash drive, NHBB filed suit in May
+2006, alleging misappropriation of trade secrets. The trial court issued an
+order for all parties to preserve any evidence related to the case.
+In late 2006, NHBB requested that Jackson turn over for imaging his
+digital camera, the Lexar flash drive, his wife’s laptop (Jackson laptop), his PDA
+— personal digital assistant, containing his contacts and date planner — his
+wife’s mp3 player, and additional flash drives that were connected to the NHBB
+or Jackson laptops at various times. Jackson and his wife testified that the
+additional flash drives belonged to their children and had been lost or
+3
+destroyed. Jackson did, however, produce one additional flash drive during
+trial in September 2007, after his wife found it in her son’s room at her ex-
+husband’s house.
+Comparison of the NHBB laptop and Lexar flash drive images showed
+that some, but not all, of the serially accessed files were copied from the NHBB
+laptop to the flash drive. Jackson testified that after he decided to resign at
+NHBB, he took all of his personal files off the NHBB laptop using the flash
+drive and transferred them to the Jackson laptop. The images showed that the
+files copied on the night of January 29 were predominantly personal files, such
+as Jackson’s photographs, country club documents, and divorce and marriage
+records, though NHBB claimed other NHBB files were taken over a period of
+time.
+The image also showed that at least two NHBB documents were taken
+from the NHBB laptop and created and opened on the flash drive as Microsoft
+Excel spreadsheets. NHBB’s expert testified that subsequent activity on the
+flash drive made it difficult to determine which, if any, other NHBB files were
+copied. The two copied files contained engineering formulas and part
+specifications including part dimensions, materials, performance capacities
+and tooling specifications for manufacturing machines. Jackson and other
+witnesses testified that the contents of those files were engineering formulas
+and specifications generally known in the bearing industry and widely available
+from customers, engineering textbooks and NHBB’s internet catalog.
+Analysis of the Lexar flash drive image showed that a large amount of
+data was added to the drive, possibly overwriting any previous contents. It also
+showed that in February 2006, the drive had been connected to the laptop of
+Ryan Faust, a Sargent employee. Both Jackson and Faust testified that the
+drive was used to provide Jackson with Sargent’s sales data for recent years,
+and that nothing was transferred from the drive to the computer. Analysis of a
+later forensic image of Faust’s computer did not reveal evidence of any NHBB
+files, although it did show that a large amount of data had been added to the
+computer, which had been reassigned to a different employee for a period of
+time, potentially overwriting the remnants of deleted files.
+The forensic image of the Jackson laptop revealed the presence of the two
+NHBB files transferred to the Lexar flash drive on January 29, as well as an
+additional spreadsheet that was on the NHBB computer but not the Lexar flash
+drive. Jackson testified that after receiving a phone call about the suit on May
+5, 2006, he had difficulty sleeping and searched his computer at 4:00 a.m. for
+any NHBB files he may have accidentally copied, found three, and placed them
+in the recycling bin — where they remained — with instructions not to erase
+them. Sometime in June 2007, some of the files’ last access dates were
+changed, overwriting the prior last access date, which NHBB argued could have
+4
+been after Jackson left NHBB. Analysis of the Jackson laptop did not reveal
+any of the other NHBB files at issue.
+The image of the Jackson laptop also showed that numerous files had
+been deleted, large amounts of additional data had been added, and the disk
+defragmenter and disk cleanup functions were run before it was turned over to
+NHBB for imaging. Adding large amounts of data overwrites previously deleted
+data and makes it far more difficult for analysts to discover what was present
+beforehand. The functions that were run delete temporary files and rearrange
+the placement of fragmented files on the hard drive, which also make it more
+difficult to determine the content of deleted files. Jackson’s wife testified that
+she did not know how so many files were deleted, and that she regularly ran
+the disk functions to keep her computer running faster. The forensic image of
+the Jackson laptop showed that it was only the second time she had run those
+functions since buying the computer two years earlier.
+NHBB ran searches on thirty-five Sargent computers for data contained
+in the NHBB files as well as the presence of anti-forensic software activity that
+could have altered or erased data. NHBB was also permitted to copy the file
+registry for each computer, which analysts can use to determine what
+hardware and software have been installed or used on a computer. As a result
+of the searches, NHBB imaged seven or eight hard drives that produced hits
+against the search terms; the remaining computers revealed no indication of
+NHBB files or wiping software. Although no NHBB files were ever found, three
+of the hard drives produced for imaging had been reformatted or replaced,
+erasing all data. Additionally, the image of an information technology (IT)
+employee’s hard drive showed that disk-wiping software had been installed and
+that a user had run internet searches on erasing hard drives. The jury heard
+that the three computers were reformatted or replaced because of hardware
+problems or computer upgrades, and that it was normal practice for an IT
+technician at an information sensitive company to have file deletion software
+on his computer. NHBB also had access to Sargent’s backup tapes for its
+email server, but one tape was not produced. The jury heard that Sargent was
+unable to produce that tape because it was unreadable for unknown reasons,
+possibly overwriting or damage to the tape.
+The president of Sargent and the head of Kahr Bearing both testified that
+they had run searches of Sargent’s networks and were unable to find any
+NHBB files. In response, NHBB tried to introduce testimony that Sargent had
+restricted NHBB access to its computers during discovery and that NHBB was
+therefore denied access to all Sargent’s servers and the 250 computers it had
+originally desired. Despite the fact that the trial court sustained the
+defendants’ objection based upon its granting of their motion in limine, NHBB
+was later allowed to cross-examine Sargent’s expert witness concerning NHBB’s
+limited access to Sargent computers after the witness opened the door to that
+5
+subject. NHBB also attempted to introduce a copy of the trial court’s evidence
+preservation orders as jury exhibits. Although the trial court sustained the
+defendants’ objection, it did instruct the jury that it had issued an order at the
+beginning of the case requiring all parties to preserve any evidence relevant to
+the case.
+At the close of trial, NHBB requested the following jury instruction:
+At the beginning of this case, I issued an Order requiring the
+defendants to preserve relevant evidence. The evidence presented
+demonstrates that defendants Sargent and Jackson failed to
+comply with my Order. Therefore, if you find that a reasonable
+person in the position of Sargent and/or Jackson would have
+preserved the evidence, you may assume that the evidence that
+was not preserved would have helped the plaintiff, and you may
+decide the case as if the evidence was helpful to the plaintiff and
+presented by the plaintiff during the trial.
+The trial court denied NHBB’s request and gave the following instruction:
+I instruct you that all parties are under an obligation to preserve
+documents and records from the time that the party is reasonably
+on notice that a document or record may become evidence or be
+subject to discovery in a lawsuit. In this case, the Plaintiff
+maintains that the Defendants intentionally lost or destroyed
+certain records or documents subject to a preservation obligation.
+The Defendants deny this and to the extent that documents or
+records are missing, they suggest innocent explanations. Also, the
+Defendants, in turn, maintain that the Plaintiff destroyed certain
+records subject to a preservation obligation, a claim that the
+Plaintiff has denied. If, based on the evidence, you find that
+records or documents would have been relevant to this case and
+that a party intentionally lost or destroyed them to keep the
+information secret, you may draw an unfavorable inference on
+account of there having been missing documents or records. If you
+find, however, that there was an innocent explanation for the
+missing records or documents, or if you find that those records
+and documents would not have been relevant to this case, you may
+not draw such an inference.
+The jury returned a verdict in favor of the defendants on the
+misappropriation of trade secrets claim, but found in NHBB’s favor on its claim
+that Jackson breached his nondisclosure contract. NHBB moved for a
+judgment notwithstanding the verdict on the misappropriation claims, which
+was denied, and moved to set aside the verdict for a new trial on those claims,
+which was also denied. NHBB also moved for sanctions against the defendants
+6
+for intentional spoliation of evidence. The trial court denied NHBB’s request for
+sanctions, stating that it had no authority to issue sanctions for what it
+considered to be indirect criminal contempt under our decision in Mortgage
+Specialists v. Davey, 153 N.H. 764 (2006). Rather, the trial court referred the
+matter to the New Hampshire Attorney General, who, after review, declined to
+prosecute. NHBB then appealed to this court.
+NHBB makes a number of arguments on appeal. First, NHBB argues
+that the trial court erred in restricting NHBB’s access to Sargent’s computers
+and networks during discovery. Second, NHBB argues that the trial court
+made erroneous rulings on the admissibility of evidence by granting the
+defendants’ motion in limine barring NHBB from “explain[ing] to the jury in
+context how the denial of access and discovery abuse hampered its ability to
+directly establish misappropriation,” and later excluding copies of the trial
+court’s evidence preservation orders as exhibits. Third, NHBB argues that the
+trial court erred by not instructing the jury that the defendants had in fact
+violated the preservation orders, but giving a neutral instruction instead.
+Finally, NHBB argues that the trial court erred in denying its post-trial
+requests for a new trial and discovery sanctions against the defendants. We
+address each in turn.
+III. Discovery
+NHBB argues that the trial court should have granted it broader access
+to Sargent’s computers and servers during discovery because misappropriation
+of electronic trade secrets is difficult to establish and thus requires extensive
+examination of electronic data systems. Only broad access, NHBB argues,
+could assure the preservation and detection of evidence that is easily erased or
+manipulated — either intentionally or unintentionally. The defendants respond
+that the trial judge acted properly by blocking what would have been an “open-
+ended fishing expedition,” thus limiting access to relevant systems.
+Decisions concerning pretrial discovery are within the sound discretion of
+the trial judge. In the Matter of Maynard & Maynard, 155 N.H. 630, 636
+(2007). We review a trial court’s rulings on the management of discovery under
+an unsustainable exercise of discretion standard. Guyotte v. O’Neill, 157 N.H.
+616, 623 (2008). To establish that the trial court erred, NHBB must
+demonstrate that the trial court’s ruling was clearly untenable or unreasonable
+to the prejudice of its case. Blagbrough Family Realty Trust v. A & T Forest
+Prods., 155 N.H. 29, 40 (2007).
+Although discovery rules are to be given a broad and liberal
+interpretation, the trial court has discretion to determine the limits of
+discovery. Scarborough v. R.T.P. Enterprises, Inc., 120 N.H. 707, 711 (1980).
+A party’s request for information must appear relevant and “reasonably
+7
+calculated to lead to the discovery of admissible evidence.” Super. Ct. R. 35
+b(1); Scarborough, 120 N.H. at 711. The trial court, therefore, is permitted to
+keep discovery within reasonable limits and avoid “open-ended fishing
+expeditions” or harassment to ensure that discovery contributes to the orderly
+dispatch of judicial business. Robbins v. Kalwall Corp., 120 N.H. 451, 453
+(1980); Hartford Accident &c. Co. v. Cutter, 108 N.H. 112, 114 (1967); Riddle
+Spring Realty Co. v. State, 107 N.H. 271, 278 (1966).
+NHBB argues that the nature of electronic trade secrets requires
+particularly broad discovery. Because electronic discovery has been more
+predominant in federal courts, we look to those courts for guidance. We begin
+by recognizing that electronic data, including forensic imaging of hard drives, is
+within the scope of discoverable material. See In re Pharmatrak, Inc., 329 F.3d
+9, 17 (1st Cir. 2003); Antioch Co. v. Scrapbook Borders, Inc., 210 F.R.D. 645,
+652 (D. Minn. 2002). Because electronic discovery can easily become broad
+and intrusive, “[c]ourts have been cautious in requiring the mirror imaging of
+computers where the request is extremely broad in nature and the connection
+between the computers and the claims in the lawsuit are unduly vague or
+unsubstantiated in nature.” Balboa Threadworks, Inc. v. Stucky, No. 05-1157-
+JTM-DWB, 2006 WL 763668, at *3 (D. Kan. Mar. 24, 2006). Without a
+sufficient showing of relevance and need, courts disallow the “drastic discovery
+measure” of permitting a party to image all of an opponent’s electronic media.
+McCurdy Group v. American Biomedical Group, Inc., 9 Fed. Appx. 822, 831
+(10th Cir. 2001). Courts are more receptive, however, to circumscribed
+requests limited to specified individuals or computers expected to produce
+relevant information. See Rowe Entertainment v. William Morris Agency, 205
+F.R.D. 421, 427-28, 432-33 (S.D.N.Y. 2002) (granting revised and limited
+request for defendants’ backup tapes and emails and prescribing protocols for
+imaging); Simon Property Group L.P. v. mySimon, Inc., 194 F.R.D. 639, 641
+(S.D. Ind. 2000) (granting access to computers used by four named
+individuals); Playboy Enterprises, Inc. v. Welles, 60 F. Supp. 2d 1050, 1053
+(S.D. Cal. 1999) (granting access to defendant’s personal computer). We find
+the limitations imposed in federal courts to be both sensible and persuasive.
+Here, the trial court denied NHBB’s initial request to image all 250
+computers and every server used at Sargent’s Tucson facility. In doing so, it
+relied upon Sargent’s claim that the request was overbroad and burdensome,
+and found that examining every hard drive and server would be “unnecessarily
+disruptive to [Sargent’s] operations.” Given that NHBB’s claim encompassed
+trade secrets related only to bearings, that Sargent’s Kahr Bearing division
+comprised only a small portion of its operations in Tucson, and that Jackson
+only connected his flash drive to Faust’s laptop, it was within the trial court’s
+discretion to refuse NHBB access to Sargent’s entire electronic network.
+Indeed, once NHBB limited its request to the backup tapes and those
+computers relevant to its allegations, the trial court granted its motion to
+8
+compel. NHBB has not persuaded us that this ruling was clearly untenable or
+unreasonable to the prejudice of its case, and therefore the trial court did not
+unsustainably exercise its discretion.
+IV. Evidentiary Rulings
+NHBB argues that it should have been allowed to introduce the context
+in which it was required to review Sargent’s electronic data so that the jury
+could understand why NHBB had limited evidence of misappropriation.
+Specifically, NHBB argues that the trial court erred by granting the defendants’
+motion in limine to exclude discovery disputes and then compounded that
+error by allowing Sargent’s witnesses to testify that they had searched their
+electronic network and found no NHBB data.
+The admissibility of evidence is generally within the discretion of the trial
+court, and we will uphold its rulings unless the exercise of its discretion is
+unsustainable. Murray v. Developmental Servs. of Sullivan County, 149 N.H.
+264, 267 (2003). To meet this threshold, NHBB must demonstrate that the
+trial court’s ruling was clearly untenable or unreasonable to the prejudice of its
+case. Id.
+To be admissible, evidence must be relevant. Evidence is relevant if it
+has “any tendency to make the existence of any fact that is of consequence to
+the determination of the action more probable or less probable than it would be
+without the evidence.” N.H. R. Ev. 401.
+Although it is true that Sargent fought NHBB’s discovery requests, the
+trial court ultimately decided that NHBB’s initial request was overbroad.
+Introducing evidence that Sargent resisted discovery requests that the trial
+court ultimately denied, therefore, has no tendency to make the existence of
+misappropriation more probable than it would be without the evidence. See
+Empire Gas Corp. v. American Bakeries Co., 840 F.2d 1333, 1341 (7th Cir.
+1988) (trial court properly excluded evidence of discovery disputes because it
+was “at best cumulative and probably irrelevant”); Waters v. Genesis Health
+Ventures, Inc., 400 F. Supp. 2d 814, 818 (E.D. Pa. 2005) (stating evidence of
+contentious and hostile discovery disputes is “entirely irrelevant to the
+Plaintiff’s . . . claim”). Indeed, as discussed above, discovery is generally within
+the province and discretion of the trial judge, not the jury. See Maynard, 155
+N.H. at 636. Because the trial court was within its discretion to circumscribe
+discovery, its exclusion of discovery disputes was not clearly untenable or
+unreasonable to the prejudice of NHBB’s case. The trial court, therefore, did
+not unsustainably exercise its discretion.
+NHBB goes on to argue that in light of the exclusion of discovery
+disputes, it was prejudiced when Sargent’s president testified that he and
+9
+another employee searched the entire network for NHBB data and found none.
+Any prejudice NHBB may have suffered, however, was certainly cured during
+its cross-examination of Sargent’s expert witness. Despite the exclusion of
+discovery disputes, the trial court allowed NHBB to question Sargent’s expert
+witness about NHBB’s limited access to Sargent’s data after the witness
+expanded the scope of examination by giving non-responsive answers.
+In its cross-examination, NHBB was thus able to elicit that it was not
+permitted to examine computers unless they returned a hit on pre-agreed
+search terms, that it had originally wanted to image more than thirty-five
+computers, and that it was denied access to Sargent’s servers. Based upon the
+witness’s answers, it would have been clear to the jury that NHBB had less
+access to Sargent’s electronic data than it desired. For NHBB to argue on
+appeal that it was prejudiced because it was not allowed to inform the jury of
+the limited scope of discovery is therefore without merit.
+NHBB next argues that the trial court erred by not admitting copies of its
+preservation orders as exhibits, even after the jury requested them during
+deliberations. The defendants respond that the orders were rightfully excluded
+because it is the role of the judge to instruct the jury as to the law rather than
+allow the jury to distill the law from a court order.
+Interpretation of the orders required an interpretation of the parties’ legal
+obligations. The scope of a party’s legal obligations is a question of law, and
+therefore within the province of the trial court judge. See State v. Barnett, 147
+N.H. 334, 339 (2001). Furthermore, legalese, at times, can obfuscate the
+underlying substance and meaning of words. Trial judges, therefore, are
+charged with the duty to “state and explain to the jury ‘in clear and intelligible
+language the rules of law applicable to the issues of fact upon which their
+verdict is to be based.’” Rawson v. Bradshaw, 125 N.H. 94, 99 (1984) (quoting
+Poulin v. Provost, 114 N.H. 263, 264 (1974)). Here, it was the trial court’s role
+to interpret its orders and the parties’ obligations therein, and then relay those
+obligations to the jury in clear and intelligible language. It did just that.
+Furthermore, admitting copies of the orders would have been cumulative.
+Although the trial court questioned the relevance of providing the jury with the
+actual orders, it did allow witnesses to reference the orders and the fact that
+they required parties to preserve evidence in general. After witnesses
+mentioned the orders, the trial court gave the jury the following instruction:
+Members of the jury, you just heard reference to a Temporary
+Restraining Order, and you may hear further references during the
+course of this trial, and I just want to let you know that at the
+beginning of the case as well as the beginning of many cases such
+10
+as this, there often is a request by one or both of the parties for an
+Order of the Court basically preserving the status quo.
+After the close of evidence, the trial court further instructed the jury “that all
+parties are under an obligation to preserve documents and records from the
+time that the party is reasonably on notice that a document or record may
+become evidence or be subject to discovery in a lawsuit.”
+Review of the preservation orders reveals that the above instructions are
+an adequate summary of the parties’ duties in this case. Because the trial
+court’s refusal to allow copies of the orders into evidence was not clearly
+untenable or unreasonable to the prejudice of NHBB’s case, the trial court did
+not unsustainably exercise its discretion.
+Finally, NHBB argues that the trial court erred in not providing copies of
+the orders to the jury after they requested them during deliberation. Because
+there is no record of that decision or NHBB’s contemporaneous objection
+thereto, it has not been preserved and we decline to review it. See E. Derry Fire
+Precinct v. Nadeau, 155 N.H. 429, 430 (2007) (declining review without
+sufficient record); Berliner v. Clukay, 150 N.H. 80, 82-84 (2003) (off-record
+conferences inadequate to preserve an objection).
+V. Adverse Inference Instruction
+NHBB argues that the trial court erred by rejecting its requested
+instruction, which would have stated that the defendants had in fact violated
+the preservation orders. NHBB argues that the instruction was warranted as a
+sanction for discovery abuse, but that the trial court misinterpreted Mortgage
+Specialists, 153 N.H. 764, as constraining its authority to issue an adverse
+inference instruction as a sanction for spoliation of evidence. NHBB further
+argues that the trial court erred by referring only to the destruction of
+“documents or records,” and by giving a party-neutral instruction stating that
+both parties had alleged spoliation of evidence.
+The purpose of jury instructions is to identify issues of material fact, and
+to explain to the jury, in clear and intelligible language, the appropriate
+standards of law by which it is to resolve them. Nilsson v. Bierman, 150 N.H.
+393, 400 (2003); Rawson, 125 N.H. at 99. A trial court’s decision to give an
+instruction must be based upon “some evidence to support a rational finding in
+favor of that [instruction].” State v. Larose, 157 N.H. 28, 33 (2008) (quotation
+omitted). The scope and wording of jury instructions, however, are within the
+sound discretion of the trial judge and are evaluated as a reasonable juror
+would have interpreted them. State v. MacRae, 141 N.H. 106, 114 (1996). A
+jury charge is sufficient as a matter of law if it fairly presents the case to the
+jury such that no injustice is done to the legal rights of the parties. Carignan
+v. N.H. Int’l Speedway, 151 N.H. 409, 418 (2004). In a civil case, we review jury
+11
+instructions in context. Id. We will reverse if the charge, taken in its entirety,
+fails to explain adequately the law applicable to the case in such a way that the
+jury could have been misled. Id.
+In general, “the trial judge’s discretion to remove questions of fact from
+the jury is very limited.” St. Pierre v. Elgert, 145 N.H. 620, 621 (2000). As one
+court held, however, the trial court may grant a party’s request for an adverse
+inference instruction if the evidence establishes: “(1) that the party having
+control over the evidence had an obligation to preserve it at the time it was
+destroyed; (2) that the records were destroyed with a culpable state of mind;
+and (3) that the destroyed evidence was relevant to the party’s claim or defense
+such that a reasonable trier of fact could find that it would support that claim
+or defense.” Residential Funding Corp. v. DeGeorge Financial, 306 F.3d 99,
+107 (2d Cir. 2002) (quotations omitted). This standard accords with our own
+case law. See Murray, 149 N.H. at 271; see also Super. Ct. R. 35 g(2)(b) (court
+can designate certain facts be taken as established to sanction discovery
+abuse). If, however, there remains a question of fact as to any of the three
+factors, spoliation is a matter for the jury, not the judge. See Murray, 149 N.H.
+at 271 (affirming jury instruction substantially the same as the instruction
+given here); Rodriguez v. Webb, 141 N.H. 177, 179 (1996).
+Here, NHBB’s requested instruction would have instructed the jury that
+the defendants had in fact failed to comply with the trial court’s preservation
+orders, and, if the jury found a reasonable person would have preserved the
+evidence, that it could assume the destroyed evidence would have helped
+NHBB’s case. The trial court refused the instruction because it found that
+conflicting evidence concerning spoliation required the question to go to the
+jury. In fact, the trial court’s decision had nothing to do with its authority
+under Mortgage Specialists, to which it made only a passing reference in
+response to NHBB’s mention of post-trial sanction procedures. Rather, the
+trial court recognized that disputed facts are within the province of the jury. At
+the charge conference, the trial court stated that, were it up to the court, it
+would credit the plaintiff’s witnesses. However, it went on to say: “[T]he jury is
+also free to credit [defendants’] witnesses with respect to innocent explanations
+for the disappearance of certain files, certain documents, and so forth.
+Whether the jury should do that or shouldn’t, not my call . . . it’s up to the jury
+to make that determination.” Because there were conflicting explanations
+concerning the defendants’ state of mind and the relevance of missing
+evidence, the trial court properly allowed the jury to determine the weight and
+credibility to be given the testimony. See Transmedia Restaurant Co. v.
+Devereaux, 149 N.H. 454, 461 (2003) (stating weight and credibility of
+testimony is within the jury’s province).
+We now turn to NHBB’s argument that the wording of the instruction
+was erroneous because it referred to the destruction of “documents and
+12
+records” as opposed to the destruction of “evidence.” In the context of a thirty-
+day trial, during which the jury heard voluminous testimony concerning the
+destruction of evidence, a reasonable juror would have understood “documents
+or records” to encompass the electronic data at the heart of this case. The
+wording of the instruction did not give the jurors an erroneous conception of
+the law, and therefore reversal is not required. See Carignan, 151 N.H. at 418.
+Finally, NHBB’s argument that it was error to give a party-neutral
+instruction including reference to the defendants’ spoliation claim also fails.
+NHBB argues that, by equating the two allegations of spoliation, the trial court
+left “the jury with an unfair impression of the evidence given the circumstances
+of this case.” Although the trial court stated that, were it the fact finder, it
+would not credit the defendants’ allegation, it also recognized that the jury was
+free to credit the witnesses as it saw fit. The trial court stated:
+[I]f I go out on a limb and fully, fully credit the Defendant’s case
+and fully, fully discredit [NHBB’s] witnesses, there is a case that
+could be made that [NHBB], as a policy from the start, was
+attempting to choke competition and, in fact, an inference could be
+made that this hard drive was being used for that purpose from
+the start. Do I accept that if I were the fact finder? . . . No, I don’t
+accept that. But that’s not my call.
+Because there was some evidence concerning NHBB’s improper imaging of the
+NHBB laptop hard drive, the trial court did not unsustainably exercise its
+discretion in giving the party-neutral instruction. See Larose, 157 N.H. at 33.
+VI. Post-Trial Motions
+NHBB argues that the trial court erred by denying its motion to set aside
+the verdict and order a new trial “even though it refused to provide to the jury a
+copy of its Orders . . . after the jury requested this information.” As discussed
+above, NHBB has not preserved this issue and we decline to address it. NHBB
+also argues that the court erred by denying its motion for a new trial after the
+court “recognized that substantial evidence existed to support the conclusion
+that the Orders had been violated by Defendants.”
+A jury’s verdict may only be set aside if it is conclusively against the
+weight of the evidence or if it is the result of mistake, partiality, or corruption.
+PMC Corp. v. Houston Wire & Cable Co., 147 N.H. 685, 692 (2002).
+“Conclusively against the weight of the evidence” means that the verdict was
+one no reasonable jury could return. Id. We will not overturn the trial court’s
+denial of NHBB’s motion to set aside the verdict and order a new trial unless it
+was an unsustainable exercise of discretion. Anderson v. Smith, 150 N.H. 788,
+790 (2004).
+13
+Although the trial court gave more credit to NHBB’s allegations of
+spoliation, it acknowledged that the jury was free to find differently and
+submitted the case to the jury. That decision was not erroneous. After the
+jury apparently credited the defendants, it was not an unsustainable exercise
+of discretion for the trial court to uphold the verdict in light of conflicting
+testimony.
+Finally, NHBB argues that the trial court erred by denying its motion for
+sanctions and referring the spoliation issue to the New Hampshire Attorney
+General for criminal investigation. NHBB argues that the trial court
+misinterpreted our holding in Mortgage Specialists as constraining its inherent
+power to sanction discovery abuses. NHBB did not, however, present the issue
+in its notice of appeal. See Guyotte, 157 N.H. at 623 (we will not review any
+issue that was not raised in the notice of appeal). After thorough review of the
+record, we also conclude that the trial court’s decision was not plain error. See
+Sup. Ct. R. 16-A. Accordingly, we will not address it.
+We write briefly, however, to clarify any misunderstanding of our holding
+in Mortgage Specialists, 153 N.H. 764. The defendants in Mortgage Specialists
+destroyed evidence prior to trial, failed to produce certain documents and
+violated the trial court’s injunction forbidding them from originating mortgages
+using allegedly misappropriated trade secrets. Id. at 782. In response to the
+plaintiff’s motion for sanctions, the trial court required the defendants to pay
+fines “to vindicate the integrity of the court,” as well as reasonable attorney’s
+fees and costs. Id. at 785. We held that the imposition of punitive fines to
+protect the court’s integrity amounted to sanctions for criminal contempt as
+opposed to civil contempt. Id. at 791. Because the conduct the court was
+punishing occurred outside its presence, it had no authority to summarily
+impose punitive fines for the defendants’ indirect criminal contempt. Id.
+Rather, if the trial court wished to vindicate its integrity, it was required to
+refer the matter for prosecution by a disinterested party. Id. at 789. It was the
+nature of the sanction — punitive fines — not the character of the defendants’
+conduct, that required disinterested prosecution. In no way did our holding
+affect a trial court’s inherent authority to sanction discovery abuses by
+awarding reasonable attorney’s fees and costs, or by imposing any other
+appropriate sanction. See Super. Ct. R. 35 g(2).
+Affirmed.
+BRODERICK, C.J., and DALIANIS and HICKS, JJ., concurred.
+14

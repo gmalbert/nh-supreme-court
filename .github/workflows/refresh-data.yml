@@ -1,0 +1,280 @@
+name: Refresh Opinion and Order Data
+
+on:
+  schedule:
+    # Run every Monday at 6 AM EST (11 AM UTC)
+    - cron: '0 11 * * 1'
+  workflow_dispatch:
+    inputs:
+      years:
+        description: 'Years to refresh (space-separated, e.g. "2024 2025")'
+        required: false
+        default: ''
+      force_rebuild:
+        description: 'Force full rebuild of datasets'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  refresh-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          playwright install chromium
+      
+      - name: Run opinion scraper
+        id: scrape_opinions
+        continue-on-error: true
+        run: |
+          YEAR_ARGS="${{ github.event.inputs.years }}"
+          if [ -z "$YEAR_ARGS" ]; then
+            # Default: current year and previous 3 years
+            CURRENT_YEAR=$(date +%Y)
+            YEAR_ARGS="$((CURRENT_YEAR - 3)) $((CURRENT_YEAR - 2)) $((CURRENT_YEAR - 1)) $CURRENT_YEAR"
+          fi
+          
+          echo "Scraping years: $YEAR_ARGS"
+          python scripts/scrape_index.py --years $YEAR_ARGS
+          
+          # Check scraper exit code
+          if [ $? -ne 0 ]; then
+            echo "scrape_failed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Download new PDFs
+        id: download_pdfs
+        continue-on-error: true
+        run: |
+          python scripts/download_pdfs.py
+          
+          if [ $? -ne 0 ]; then
+            echo "download_failed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Parse opinions
+        id: parse_opinions
+        continue-on-error: true
+        run: |
+          YEAR_ARGS="${{ github.event.inputs.years }}"
+          if [ -z "$YEAR_ARGS" ]; then
+            CURRENT_YEAR=$(date +%Y)
+            YEAR_ARGS="$((CURRENT_YEAR - 3)) $((CURRENT_YEAR - 2)) $((CURRENT_YEAR - 1)) $CURRENT_YEAR"
+          fi
+          
+          python scripts/parse_opinions.py --years $YEAR_ARGS
+          
+          if [ $? -ne 0 ]; then
+            echo "parse_failed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Build master datasets
+        id: build_dataset
+        continue-on-error: true
+        run: |
+          python scripts/build_dataset.py
+          
+          if [ $? -ne 0 ]; then
+            echo "build_failed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Refresh oral argument statistics
+        id: refresh_oral_args
+        continue-on-error: true
+        run: |
+          # Check if oral argument data changed
+          if git diff --quiet HEAD -- data/processed/oral_arguments*.json; then
+            echo "No oral argument changes detected"
+          else
+            echo "Regenerating oral argument statistics..."
+            python scripts/extract_speaker_stats.py
+            python scripts/extract_attorney_stats.py
+            python scripts/generate_enhanced_stats.py
+            python scripts/analyze_attorney_justice_interactions.py
+          fi
+          
+          if [ $? -ne 0 ]; then
+            echo "oral_args_failed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Run validation tests
+        id: validate
+        continue-on-error: true
+        run: |
+          # Run pytest
+          pytest tests/ -v
+          PYTEST_EXIT=$?
+          
+          # Count processed files
+          OPINION_COUNT=$(find data/processed/opinions_*.json -type f 2>/dev/null | wc -l)
+          echo "Processed opinion files: $OPINION_COUNT"
+          
+          # Health threshold: expect at least 20 years of data
+          if [ $OPINION_COUNT -lt 20 ]; then
+            echo "validation_failed=true" >> $GITHUB_OUTPUT
+            echo "ERROR: Only $OPINION_COUNT opinion files found (expected >= 20)"
+            exit 1
+          fi
+          
+          # Check for master dataset
+          if [ ! -f "data/processed/opinions.csv" ]; then
+            echo "validation_failed=true" >> $GITHUB_OUTPUT
+            echo "ERROR: Master opinions.csv not found"
+            exit 1
+          fi
+          
+          exit $PYTEST_EXIT
+      
+      - name: Generate refresh manifest
+        id: manifest
+        run: |
+          cat > data/processed/refresh_manifest.json << EOF
+          {
+            "refresh_timestamp": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")",
+            "workflow_run_id": "${{ github.run_id }}",
+            "workflow_run_number": "${{ github.run_number }}",
+            "triggered_by": "${{ github.event_name }}",
+            "steps": {
+              "scrape_opinions": "${{ steps.scrape_opinions.outcome }}",
+              "download_pdfs": "${{ steps.download_pdfs.outcome }}",
+              "parse_opinions": "${{ steps.parse_opinions.outcome }}",
+              "build_dataset": "${{ steps.build_dataset.outcome }}",
+              "refresh_oral_args": "${{ steps.refresh_oral_args.outcome }}",
+              "validate": "${{ steps.validate.outcome }}"
+            },
+            "files_changed": []
+          }
+          EOF
+          
+          # Add changed files to manifest
+          git diff --name-only HEAD > /tmp/changed_files.txt
+          python -c "
+          import json
+          with open('/tmp/changed_files.txt') as f:
+              files = [line.strip() for line in f if line.strip()]
+          with open('data/processed/refresh_manifest.json') as f:
+              manifest = json.load(f)
+          manifest['files_changed'] = files
+          with open('data/processed/refresh_manifest.json', 'w') as f:
+              json.dump(manifest, f, indent=2)
+          "
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet HEAD -- data/processed/; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No data changes detected"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Data changes detected:"
+            git diff --stat HEAD -- data/processed/
+          fi
+      
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.has_changes == 'true' && steps.validate.outcome == 'success'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add data/processed/
+          git add download_log.txt
+          
+          COMMIT_MSG="Update opinion data - $(date +%Y-%m-%d)"
+          
+          # Add summary of changes
+          NEW_FILES=$(git diff --cached --name-only --diff-filter=A data/processed/ | wc -l)
+          MODIFIED_FILES=$(git diff --cached --name-only --diff-filter=M data/processed/ | wc -l)
+          
+          COMMIT_MSG="$COMMIT_MSG
+
+          - New files: $NEW_FILES
+          - Modified files: $MODIFIED_FILES
+          - Workflow: ${{ github.workflow }} #${{ github.run_number }}"
+          
+          git commit -m "$COMMIT_MSG"
+          git push
+      
+      - name: Create failure issue
+        if: |
+          failure() && (
+            steps.scrape_opinions.outputs.scrape_failed == 'true' ||
+            steps.parse_opinions.outputs.parse_failed == 'true' ||
+            steps.validate.outputs.validation_failed == 'true'
+          )
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `Data Refresh Failed - ${new Date().toISOString().split('T')[0]}`;
+            const body = `## Data refresh workflow failed
+            
+            **Workflow Run:** [#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            **Triggered by:** ${{ github.event_name }}
+            
+            ### Step Outcomes
+            - Scrape opinions: ${{ steps.scrape_opinions.outcome }}
+            - Download PDFs: ${{ steps.download_pdfs.outcome }}
+            - Parse opinions: ${{ steps.parse_opinions.outcome }}
+            - Build dataset: ${{ steps.build_dataset.outcome }}
+            - Validate: ${{ steps.validate.outcome }}
+            
+            ### Action Required
+            1. Check workflow logs for error details
+            2. Verify NH Supreme Court website is accessible
+            3. Check for parser regressions
+            4. Re-run workflow manually after fixes
+            
+            /cc @${context.repo.owner}`;
+            
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body,
+              labels: ['data-refresh', 'bug', 'automated']
+            });
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Data Refresh Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Triggered by:** ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Step Results" >> $GITHUB_STEP_SUMMARY
+          echo "- Scrape: ${{ steps.scrape_opinions.outcome }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Download: ${{ steps.download_pdfs.outcome }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Parse: ${{ steps.parse_opinions.outcome }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Build: ${{ steps.build_dataset.outcome }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Validate: ${{ steps.validate.outcome }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Data Changed:** ${{ steps.check_changes.outputs.has_changes }}" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.check_changes.outputs.has_changes }}" = "true" ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Changed Files" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            git diff --stat HEAD -- data/processed/ >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          fi
