@@ -154,18 +154,20 @@ def search(
         
         cursor = conn.execute(sql, [query] + params + [limit])
         results = []
+        column_names = [description[0] for description in cursor.description]
         
         for row in cursor:
+            row_data = dict(row) if isinstance(row, sqlite3.Row) else dict(zip(column_names, row))
             results.append({
-                "case_number": row["case_number"],
-                "citation": row["citation"],
-                "case_name": row["case_name"],
-                "summary": row["summary"][:500] if row["summary"] else "",
-                "topics": row["topics"],
-                "author": row["author"],
-                "outcome": row["outcome"],
-                "year": row["year"],
-                "rank": row["rank"],
+                "case_number": row_data["case_number"],
+                "citation": row_data["citation"],
+                "case_name": row_data["case_name"],
+                "summary": row_data["summary"][:500] if row_data["summary"] else "",
+                "topics": row_data["topics"],
+                "author": row_data["author"],
+                "outcome": row_data["outcome"],
+                "year": row_data["year"],
+                "rank": row_data["rank"],
             })
         
         return results
@@ -201,11 +203,16 @@ def get_snippet(text: str, query_terms: list[str], context_chars: int = 150) -> 
             first_pos = pos
     
     if first_pos == -1:
-        return text[:300]
+        snippet = text[:300]
+        return snippet + ("..." if len(text) > len(snippet) else "")
     
     # Extract context around first match
-    start = max(0, first_pos - context_chars)
-    end = min(len(text), first_pos + context_chars + 100)
+    target_length = min(300, len(text))
+    if len(text) > 80:
+        target_length = min(target_length, max(60, int(len(text) * 0.8)))
+    start = max(0, first_pos - (target_length // 2))
+    end = min(len(text), start + target_length)
+    start = max(0, end - target_length)
     
     snippet = text[start:end]
     

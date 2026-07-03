@@ -167,8 +167,10 @@ def _load_case_orders_cached(case_orders_mtime: float | None, jx3_mtime: float |
 
     merged = pd.concat(frames, ignore_index=True, sort=False)
     # Hide transcript placeholders in both feeds.
-    merged = merged[merged["case_name"].fillna("").str.lower() != "request a transcript"]
-    merged = merged[merged["case_number"].fillna("").str.lower() != "transcript-instructions"]
+    if "case_name" in merged.columns:
+        merged = merged[merged["case_name"].fillna("").str.lower() != "request a transcript"]
+    if "case_number" in merged.columns:
+        merged = merged[merged["case_number"].fillna("").str.lower() != "transcript-instructions"]
     return merged
 
 
@@ -354,6 +356,6 @@ def data_last_updated() -> str:
     """Return a human-readable last-updated timestamp from the CSV mtime."""
     csv_path = DATA_DIR / "opinions.csv"
     if not csv_path.exists():
-        return "No data yet — run the pipeline"
+        return "Unknown"
     mtime = os.path.getmtime(csv_path)
     return pd.Timestamp(mtime, unit="s").strftime("%B %d, %Y %I:%M %p")

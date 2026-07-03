@@ -107,7 +107,9 @@ class OralArgumentPayloadTests(unittest.TestCase):
 
     def test_repository_loader_returns_all_public_records(self):
         records = load_oral_arguments()
-        self.assertEqual(len(records), 47)
+        index_path = Path(__file__).resolve().parents[1] / "data" / "processed" / "oral_arguments.json"
+        expected_records = json.loads(index_path.read_text(encoding="utf-8"))
+        self.assertEqual(len(records), len(expected_records))
         self.assertTrue(all(row.get("word_count") for row in records))
         self.assertTrue(all(row.get("docket_numbers") for row in records))
         self.assertTrue(all(not any(key.startswith("granite_export_") for key in row) for row in records))

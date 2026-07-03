@@ -5,6 +5,7 @@ Unit tests for utils/charts.py
 from __future__ import annotations
 
 import pytest
+import pandas as pd
 import plotly.graph_objects as go
 
 from utils.charts import (
@@ -58,8 +59,7 @@ class TestOutcomeCharts:
             {"case_number": "2024-0123", "outcome": "Affirmed", "date_issued": None},
         ])
         
-        result = opinions_per_year
-        result = outcome_over_time_chart(df)
+        result = opinions_per_year(df)
         
         assert isinstance(result, go.Figure)
 
@@ -218,7 +218,7 @@ class TestChartInteractivity:
 
     def test_charts_have_hover_data(self, sample_opinions_df):
         """Test that charts include hover information."""
-        chart = outcome_bar_chart(sample_opinions_df)
+        chart = outcome_bar(sample_opinions_df)
         
         # Check that trace has hover properties
         if len(chart.data) > 0:

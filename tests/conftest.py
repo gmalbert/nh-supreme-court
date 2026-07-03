@@ -12,6 +12,22 @@ import pandas as pd
 import pytest
 
 
+@pytest.fixture(autouse=True)
+def clear_data_loader_caches():
+    """Keep Streamlit's process-wide caches from leaking across tests."""
+    from utils import data_loader
+
+    cached_loaders = (
+        data_loader._load_opinions_cached,
+        data_loader._load_case_orders_cached,
+    )
+    for loader in cached_loaders:
+        loader.clear()
+    yield
+    for loader in cached_loaders:
+        loader.clear()
+
+
 @pytest.fixture
 def sample_opinion() -> dict[str, Any]:
     """Sample opinion record for testing."""
