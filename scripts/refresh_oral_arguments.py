@@ -87,13 +87,15 @@ def validate_payload(
             errors.append(f"Invalid docket key: {case_number}")
         for docket in dockets:
             if docket in all_dockets:
-                errors.append(f"Docket appears in more than one record: {docket}")
+                warnings.append(f"Docket appears in more than one argument record: {docket}")
             all_dockets.add(docket)
 
         case_json_path = data_dir / "oral_arguments" / f"{case_number}.json"
         markdown_path = data_dir / "oral_arguments" / "markdown" / f"{case_number}.md"
         text_path = data_dir / "oral_arguments" / "text" / f"{case_number}.txt"
-        for path in (case_json_path, markdown_path, text_path):
+        # Per-case JSON is an internal export used to rebuild the compact index.
+        # It is intentionally gitignored, unlike the deployable transcript files.
+        for path in (markdown_path, text_path):
             if not path.exists():
                 errors.append(f"Missing artifact for {case_number}: {path.relative_to(data_dir)}")
 

@@ -66,7 +66,12 @@ class OralArgumentHelperTests(unittest.TestCase):
 
 
 class OralArgumentPayloadTests(unittest.TestCase):
-    def _write_fixture(self, data_dir: Path, include_transcripts: bool = True) -> None:
+    def _write_fixture(
+        self,
+        data_dir: Path,
+        include_transcripts: bool = True,
+        include_case_json: bool = True,
+    ) -> None:
         case_number = "2025-0001"
         record = {
             "case_number": case_number,
@@ -77,10 +82,11 @@ class OralArgumentPayloadTests(unittest.TestCase):
         (data_dir / "oral_arguments" / "markdown").mkdir(parents=True)
         (data_dir / "oral_arguments" / "text").mkdir(parents=True)
         (data_dir / "oral_arguments.json").write_text(json.dumps([record]), encoding="utf-8")
-        (data_dir / "oral_arguments" / f"{case_number}.json").write_text(
-            json.dumps({**record, "transcript_text": "A short transcript"}),
-            encoding="utf-8",
-        )
+        if include_case_json:
+            (data_dir / "oral_arguments" / f"{case_number}.json").write_text(
+                json.dumps({**record, "transcript_text": "A short transcript"}),
+                encoding="utf-8",
+            )
         if include_transcripts:
             (data_dir / "oral_arguments" / "markdown" / f"{case_number}.md").write_text(
                 "# Alpha v. Beta\n\nA short transcript", encoding="utf-8"
@@ -104,6 +110,32 @@ class OralArgumentPayloadTests(unittest.TestCase):
             self._write_fixture(data_dir, include_transcripts=False)
             report = validate_payload(data_dir=data_dir, archive_root=None)
             self.assertTrue(any("Missing artifact" in error for error in report["errors"]))
+
+    def test_validator_allows_gitignored_per_case_json(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data_dir = Path(tmp)
+            self._write_fixture(data_dir, include_case_json=False)
+            report = validate_payload(data_dir=data_dir, archive_root=None)
+            self.assertEqual(report["errors"], [])
+
+    def test_validator_warns_for_docket_shared_by_argument_records(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data_dir = Path(tmp)
+            self._write_fixture(data_dir)
+            records = json.loads((data_dir / "oral_arguments.json").read_text(encoding="utf-8"))
+            combined = {**records[0], "case_number": "2025-0001-2025-0002"}
+            records.append(combined)
+            (data_dir / "oral_arguments.json").write_text(json.dumps(records), encoding="utf-8")
+            for suffix in ("md", "txt"):
+                directory = "markdown" if suffix == "md" else "text"
+                (data_dir / "oral_arguments" / directory / f"{combined['case_number']}.{suffix}").write_text(
+                    "A short transcript", encoding="utf-8"
+                )
+
+            report = validate_payload(data_dir=data_dir, archive_root=None)
+
+            self.assertEqual(report["errors"], [])
+            self.assertTrue(any("more than one argument record" in warning for warning in report["warnings"]))
 
     def test_repository_loader_returns_all_public_records(self):
         records = load_oral_arguments()
