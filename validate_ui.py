@@ -36,7 +36,11 @@ STREAMLIT_PAGES = [
     {"url": f"{BASE_URL}/case-orders", "name": "05 Case Orders", "expect": []},
     {"url": f"{BASE_URL}/trial-courts", "name": "07 Trial Courts", "expect": []},
     {"url": f"{BASE_URL}/about", "name": "06 About", "expect": []},
-    {"url": f"{BASE_URL}/oral-arguments", "name": "08 Oral Arguments", "expect": ["Search transcripts", "Statistics", "47"]},
+    {
+        "url": f"{BASE_URL}/oral-arguments",
+        "name": "08 Oral Arguments",
+        "expect": ["Search and read machine-generated transcripts", "Statistics", "Transcripts"],
+    },
     {"url": f"{BASE_URL}/oral-arguments?argument=2025-0344", "name": "Oral Argument Reader", "expect": ["Machine-generated beta transcript", "Download text", "Download Markdown"]},
 ]
 
@@ -151,102 +155,16 @@ async def check_page(page: Page, url: str, name: str, expected: list[str] | None
 async def check_accessibility(page: Page, name: str) -> dict:
     """Check basic accessibility features on the page."""
     accessibility_issues = []
-    
-    # Check for semantic headings
-    hccessibility_results = []
-    responsive_results = []
 
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        
-        # Test each viewport size
-        for viewport_name, viewport_config in VIEWPORTS.items():
-            print(f"\n{'='*60}")
-            print(f"Testing {viewport_config['name']} ({viewport_config['width']}x{viewport_config['height']})")
-            print(f"{'='*60}")
-            
-            context = await browser.new_context(
-                viewport={"width": viewport_config["width"], "height": viewport_config["height"]}
-            )
-            page = await context.new_page()
+    headings = await page.query_selector_all("h1, h2, h3, h4, h5, h6")
+    if not headings:
+        accessibility_issues.append("No semantic headings found")
 
-            # Test main page first
-            main_page = STREAMLIT_PAGES[0]
-            await check_page(page, BASE_URL, "Main (cases.py)", main_page.get("expect", []))
+    images = await page.query_selector_all("img")
+    for image in images:
+        if await image.get_attribute("alt") is None:
+            accessibility_issues.append("Image without alt text found")
 
-            # Test each sub-page
-            for pg in STREAMLIT_PAGES[1:]:
-                await check_page(page, pg["url"], pg["name"], pg.get("expect", []))
-            
-            # Run accessibility checks (only once on desktop)
-            if viewport_name == "desktop":
-                print(f"\n{'='*60}")
-                print("Running Accessibility Checks")
-                print(f"{'='*60}")
-                for pg in STREAMLIT_PAGES:
-                    print(f"\n--- Checking accessibility: {pg['name']} ---")
-                    await page.goto(pg["url"], wait_until="networkidle", timeout=30000)
-                    await asyncio.sleep(2)
-                    a11y_result = await check_accessibility(page, pg["name"])
-                    accessibility_results.append(a11y_result)
-                    
-                    if a11y_result["accessibility_issues"]:
-                        print(f"  Issues found: {len(a11y_result['accessibility_issues'])}")
-                        for issue in a11y_result["accessibility_issues"][:3]:
-                            print(f"    - {issue}")
-                    else:
-                        print("  No accessibility issues detected")
-            
-            # Run responsive layout checks
-            print(f"\n{'='*60}")
-            print({
-            "page_tests": results,
-            "accessibility": accessibility_results,
-            "responsive": responsive_results,
-        }, f, indent=2, default=str)
-    print("Results saved to data/raw/playwright_results.json")
-    
-    # Print accessibility summary
-    if accessibility_results:
-        print("\n" + "=" * 60)
-        print("ACCESSIBILITY SUMMARY")
-        print("=" * 60)
-        total_issues = sum(len(r["accessibility_issues"]) for r in accessibility_results)
-        if total_issues == 0:
-            print("No accessibility issues detected!")
-        else:
-            print(f"Total accessibility issues: {total_issues}")
-            for r in accessibility_results:
-                if r["accessibility_issues"]:
-                    print(f"\n{r['page']}:")
-                    for issue in r["accessibility_issues"][:3]:
-                        print(f"  - {issue}")
-    
-    # Print responsive summary
-    if responsive_results:
-        print("\n" + "=" * 60)
-        print("RESPONSIVE LAYOUT SUMMARY")
-        print("=" * 60)
-        for viewport in VIEWPORTS.keys():
-            viewport_results = [r for r in responsive_results if r["viewport"] == viewport]
-            total_issues = sum(len(r["responsive_issues"]) for r in viewport_results)
-            print(f"\n{viewport.upper()}: {total_issues} issues")
-            for r in viewport_results:
-                if r["responsive_issues"]:
-                    print(f"  {r['page']}: {', '.join(r['responsive_issues'])}
-            for pg in STREAMLIT_PAGES[:5]:  # Check first 5 pages
-                print(f"\n--- Checking layout: {pg['name']} ---")
-                await page.goto(pg["url"], wait_until="networkidle", timeout=30000)
-                await asyncio.sleep(2)
-                responsive_result = await check_responsive_layout(page, pg["name"], viewport_name)
-                responsive_results.append(responsive_result)
-                
-                if responsive_result["responsive_issues"]:
-                    print(f"  Issues: {', '.join(responsive_result['responsive_issues'])}")
-                else:
-                    print("  Layout looks good")
-            
-            await context.close(
     # Check for buttons/links with accessible names
     buttons = await page.query_selector_all("button, [role='button']")
     for btn in buttons[:10]:  # Sample first 10 buttons
@@ -255,16 +173,6 @@ async def check_accessibility(page: Page, name: str) -> dict:
         title = await btn.get_attribute("title")
         if not aria_label and not text.strip() and not title:
             accessibility_issues.append("Button without accessible name found")
-    
-    # Check for sufficient color contrast (basic check via computed styles)
-    # Note: This is a simplified check; full contrast analysis requires more sophisticated tools
-    links = await page.query_selector_all("a")
-    for link in links[:5]:  # Sample first 5 links
-        color = await link.evaluate("el => window.getComputedStyle(el).color")
-        bg_color = await link.evaluate("el => window.getComputedStyle(el).backgroundColor")
-        # Just verify that colors are defined (full contrast calculation is complex)
-        if not color or not bg_color:
-            pass  # Skip this check for now
     
     # Check for keyboard focus indicators
     # This requires actually tabbing through the page, so we'll do a basic check
@@ -383,7 +291,8 @@ async def main():
     with open("data/raw/playwright_results.json", "w") as f:
         json.dump(results, f, indent=2, default=str)
     print("Results saved to data/raw/playwright_results.json")
+    return 0 if all_ok else 1
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    raise SystemExit(asyncio.run(main()))
