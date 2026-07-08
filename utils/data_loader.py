@@ -260,13 +260,19 @@ def load_speaker_statistics() -> list[dict]:
 
 
 @st.cache_data(ttl=3600)
+def _load_attorney_statistics_cached(path_str: str, source_mtime: float) -> dict:
+    """Load attorney statistics, keyed by source modification time."""
+    _ = source_mtime
+    with open(path_str, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
 def load_attorney_statistics() -> dict:
-    """Load attorney and firm statistics."""
+    """Load attorney and firm statistics, invalidating when the file changes."""
     stats_path = DATA_DIR / "oral_arguments_attorney_stats.json"
     if not stats_path.exists():
         return {"case_attorneys": {}, "attorney_stats": [], "firm_stats": []}
-    with open(stats_path, encoding="utf-8") as fh:
-        return json.load(fh)
+    return _load_attorney_statistics_cached(str(stats_path), stats_path.stat().st_mtime)
 
 
 @st.cache_data(ttl=3600)

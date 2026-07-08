@@ -22,6 +22,7 @@ OUTPUT_FILE = DATA_DIR / "oral_arguments_attorney_stats.json"
 ORAL_ARGUMENTS_FILE = DATA_DIR / "oral_arguments.json"
 ATTORNEY_NAME_MAP_FILE = ROOT / "data" / "attorney_name_map.json"
 FIRM_NAME_MAP_FILE = ROOT / "data" / "firm_name_map.json"
+CASE_ATTORNEY_OVERRIDES_FILE = ROOT / "data" / "case_attorney_overrides.json"
 EXCLUDED_ATTORNEY_NAMES = {
     "Union Academy",
     "View Video",
@@ -64,6 +65,19 @@ def load_firm_name_map() -> dict[str, str]:
     }
 
 
+def load_case_attorney_overrides() -> dict[str, list[dict[str, str]]]:
+    """Load reviewed case rosters that replace incomplete source metadata."""
+    if not CASE_ATTORNEY_OVERRIDES_FILE.exists():
+        return {}
+    with open(CASE_ATTORNEY_OVERRIDES_FILE, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return {
+        docket: attorneys
+        for docket, attorneys in data.items()
+        if docket != "comment" and isinstance(attorneys, list)
+    }
+
+
 def extract_attorney_data() -> dict[str, Any]:
     """Extract attorney data from all metadata files.
     
@@ -74,6 +88,7 @@ def extract_attorney_data() -> dict[str, Any]:
     oral_args = load_oral_arguments()
     attorney_name_map = load_attorney_name_map()
     firm_name_map = load_firm_name_map()
+    case_attorney_overrides = load_case_attorney_overrides()
     
     case_attorneys = {}  # case_number -> list of attorneys
     attorney_cases = defaultdict(list)  # attorney_name -> list of cases
@@ -93,7 +108,9 @@ def extract_attorney_data() -> dict[str, Any]:
                 metadata = json.load(f)
             
             case_number = metadata.get("docket_number")
-            attorneys = metadata.get("attorneys", [])
+            attorneys = case_attorney_overrides.get(
+                case_number, metadata.get("attorneys", [])
+            )
             
             if not case_number or not attorneys:
                 continue

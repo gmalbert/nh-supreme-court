@@ -15,6 +15,8 @@ import streamlit as st
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+ORAL_ARGUMENT_COLLECTION_START_YEAR = 2015
+
 from footer import add_gavel_glimpse_footer
 from utils.data_loader import (
     load_attorney_justice_interactions,
@@ -92,13 +94,19 @@ def _render_reader(case_number: str) -> None:
     record = load_oral_argument(case_number)
     if not record:
         st.error("That oral argument could not be found.")
-        st.markdown("[Back to all oral arguments](/oral-arguments)")
+        st.markdown(
+            '<a href="/oral-arguments" target="_self">Back to all oral arguments</a>',
+            unsafe_allow_html=True,
+        )
         return
 
     key = str(record["case_number"])
     transcript_text = load_oral_argument_text(key)
     transcript_markdown = load_oral_argument_markdown(key)
-    st.markdown("[Back to all oral arguments](/oral-arguments)")
+    st.markdown(
+        '<a href="/oral-arguments" target="_self">Back to all oral arguments</a>',
+        unsafe_allow_html=True,
+    )
     st.markdown('<div class="oa-kicker">Oral argument transcript</div>', unsafe_allow_html=True)
     st.title(str(record.get("case_name", "Oral Argument")))
     st.caption(f"Docket {key} | Argued {record.get('argument_date', 'Unknown date')}")
@@ -166,6 +174,7 @@ def _render_reader(case_number: str) -> None:
                 for attorney in attorneys:
                     name = attorney.get("name", "Unknown")
                     firm = attorney.get("firm", "")
+                    profile_url = f"/attorney-profile?attorney={quote(str(name), safe='')}"
                     
                     # Find this attorney's stats
                     attorney_stat = next(
@@ -174,9 +183,9 @@ def _render_reader(case_number: str) -> None:
                     )
                     
                     if firm:
-                        info_text = f"- **{name}** ({firm})"
+                        info_text = f"- [**{name}**]({profile_url}) ({firm})"
                     else:
-                        info_text = f"- **{name}**"
+                        info_text = f"- [**{name}**]({profile_url})"
                     
                     # Add career stats if available
                     if attorney_stat:
@@ -189,7 +198,7 @@ def _render_reader(case_number: str) -> None:
     actions = st.columns([1, 1, 1, 2])
     with actions[0]:
         if record.get("vimeo_url"):
-            st.link_button("Watch on Vimeo", str(record["vimeo_url"]))
+            st.link_button("Watch Video", str(record["vimeo_url"]))
     with actions[1]:
         st.download_button(
             "Download text",
@@ -392,7 +401,22 @@ def _render_attorney_statistics() -> None:
         st.plotly_chart(fig_firms, width="stretch")
         
     with st.expander("View all firms"):
-        st.dataframe(top_firms, width="stretch", hide_index=True)
+        all_firms = pd.DataFrame(filtered_firms)
+        if not all_firms.empty:
+            all_firms = all_firms[["firm_name", "total_arguments", "unique_attorneys"]]
+            all_firms.columns = ["Firm", "Arguments", "Attorneys"]
+            all_firms["Firm"] = all_firms["Firm"].map(_display_firm_name)
+            all_firms["Average # of Arguments"] = (
+                all_firms["Arguments"] / all_firms["Attorneys"]
+            ).round(2)
+        st.dataframe(
+            all_firms,
+            width="stretch",
+            hide_index=True,
+            column_config={
+                "Average # of Arguments": st.column_config.NumberColumn(format="%.2f")
+            },
+        )
         st.caption("To view firm profiles, use the 'Firm Profile' page in the sidebar.")
     
     # Distribution analysis
@@ -1075,7 +1099,12 @@ def _render_statistics(records: list[dict]) -> None:
     frame["duration_minutes"] = frame["duration_seconds"] / 60
     
     # Year-based chart
-    by_year = frame.groupby("argument_year", as_index=False).size().rename(columns={"size": "arguments"})
+    by_year = (
+        frame[frame["argument_year"] >= ORAL_ARGUMENT_COLLECTION_START_YEAR]
+        .groupby("argument_year", as_index=False)
+        .size()
+        .rename(columns={"size": "arguments"})
+    )
     fig_year = px.bar(
         by_year,
         x="argument_year",
@@ -1088,7 +1117,12 @@ def _render_statistics(records: list[dict]) -> None:
     st.plotly_chart(fig_year, width="stretch")
 
     # Month-based chart
-    by_month = frame.groupby("argument_month", as_index=False).size().rename(columns={"size": "arguments"})
+    by_month = (
+        frame[frame["argument_year"] >= ORAL_ARGUMENT_COLLECTION_START_YEAR]
+        .groupby("argument_month", as_index=False)
+        .size()
+        .rename(columns={"size": "arguments"})
+    )
     fig_month = px.line(
         by_month,
         x="argument_month",
@@ -1393,7 +1427,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 st.markdown(
-    '<div class="oa-disclosure"><strong>Beta collection:</strong> transcripts may contain errors, and speaker labels are inferred. Every record links to the original Vimeo argument.</div>',
+    '<div class="oa-disclosure"><strong>Beta collection:</strong> transcripts may contain errors, and speaker labels are inferred. Every record links to the original video.</div>',
     unsafe_allow_html=True,
 )
 
