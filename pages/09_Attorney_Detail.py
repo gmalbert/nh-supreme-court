@@ -121,7 +121,7 @@ def _render_attorney_profile(attorney_name: str) -> None:
                 "Argument Date": case.get("argument_date", ""),
                 "Duration": format_duration(case.get("duration_seconds")),
                 "Words": case.get("word_count", 0),
-                "Opinion": f"/opinions?docket={case_num}"
+                "Case": f"/case-explorer?case={case_num}"
             })
     
     if case_details:
@@ -138,7 +138,7 @@ def _render_attorney_profile(attorney_name: str) -> None:
                 "Argument Date": st.column_config.DateColumn("Date", format="YYYY-MM-DD"),
                 "Duration": st.column_config.TextColumn("Duration", width="small"),
                 "Words": st.column_config.NumberColumn("Words", format="%d"),
-                "Opinion": st.column_config.LinkColumn("Opinion", display_text="View")
+                "Case": st.column_config.LinkColumn("Case", display_text="View")
             }
         )
     else:

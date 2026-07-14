@@ -29,7 +29,12 @@ from utils.data_loader import (
     load_oral_arguments,
     load_speaker_statistics,
 )
-from utils.oral_arguments import collection_statistics, format_duration, search_oral_arguments
+from utils.oral_arguments import (
+    collection_statistics,
+    format_duration,
+    has_confirmed_argument_date,
+    search_oral_arguments,
+)
 
 
 def _style_page() -> None:
@@ -881,11 +886,11 @@ def _render_attorney_firm_comparison() -> None:
             st.plotly_chart(timeline_chart, width="stretch")
         return
 
-    firm_names = [f["firm_name"] for f in firm_stats]
+    firm_names = sorted((f["firm_name"] for f in firm_stats), key=str.casefold)
     selected_firms = st.multiselect(
         "Select firms to compare (2-5)",
         firm_names,
-        default=firm_names[:2] if len(firm_names) >= 2 else firm_names,
+        default=[],
     )
 
     if len(selected_firms) < 2:
@@ -911,7 +916,7 @@ def _render_attorney_firm_comparison() -> None:
             ),
         })
 
-    comparison_df = pd.DataFrame(comparison_rows)
+    comparison_df = pd.DataFrame(comparison_rows).sort_values("Firm", key=lambda column: column.str.casefold())
     st.dataframe(comparison_df, width="stretch", hide_index=True)
 
     left_chart, right_chart = st.columns(2)
@@ -1092,7 +1097,13 @@ def _render_transcript_search(records: list[dict]) -> None:
 
 def _render_statistics(records: list[dict]) -> None:
     """Render statistics charts."""
-    frame = pd.DataFrame(records)
+    # Term-start defaults (October 1) are not real argument dates.  Retain
+    # those records in the transcript collection, while excluding them from
+    # date-based charts so they cannot create artificial October spikes.
+    frame = pd.DataFrame([row for row in records if has_confirmed_argument_date(row)])
+    if frame.empty:
+        st.info("No oral arguments with confirmed dates are available for statistics.")
+        return
     frame["argument_date"] = pd.to_datetime(frame["argument_date"], errors="coerce")
     frame["argument_year"] = frame["argument_date"].dt.year
     frame["argument_month"] = frame["argument_date"].dt.to_period("M").astype(str)

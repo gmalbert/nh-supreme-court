@@ -1,15 +1,18 @@
 from __future__ import annotations
 
 import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
 
+from scripts.build_oral_argument_index import build_index
 from scripts.refresh_oral_arguments import validate_payload
 from utils.data_loader import load_oral_arguments
 from utils.oral_arguments import (
     collection_statistics,
     find_argument_for_docket,
+    has_confirmed_argument_date,
     make_search_snippet,
     normalize_docket_numbers,
     search_oral_arguments,
@@ -17,6 +20,29 @@ from utils.oral_arguments import (
 
 
 class OralArgumentHelperTests(unittest.TestCase):
+    def test_excludes_term_start_default_dates_from_statistics(self):
+        self.assertFalse(
+            has_confirmed_argument_date(
+                {"argument_date": "2015-10-01", "term_year": 2015}
+            )
+        )
+        self.assertTrue(
+            has_confirmed_argument_date(
+                {"argument_date": "2015-10-15", "term_year": 2015}
+            )
+        )
+
+    def test_repository_uses_confirmed_dates_and_normalized_state_titles(self):
+        data_dir = Path(__file__).resolve().parents[1] / "data" / "processed"
+        records = build_index(data_dir / "oral_arguments")
+        self.assertTrue(all(has_confirmed_argument_date(record) for record in records))
+        self.assertFalse(
+            any(
+                re.match(r"^New Hampshire\s+(?:Versus|v\.?)\s+", record["case_name"], re.IGNORECASE)
+                for record in records
+            )
+        )
+
     def test_normalizes_combined_docket(self):
         self.assertEqual(
             normalize_docket_numbers("2024-0722-2024-0723"),

@@ -5,7 +5,7 @@ Vote block parsing utilities for NH Supreme Court opinions.
 from __future__ import annotations
 
 import re
-from typing import Dict, Optional
+from typing import Dict
 
 from utils.constants import (
     JUSTICE_LAST_NAME_MAP,
@@ -15,9 +15,9 @@ from utils.constants import (
     VOTE_NOT_PARTICIPATING,
     VOTE_RECUSED,
     VOTE_DISQUALIFIED,
-    JUSTICE_DISPLAY,
     JUSTICE_KEYS,
 )
+from utils.justices import get_justice_keys_on_bench, justice_display, justice_role
 
 # ── Regex patterns ─────────────────────────────────────────────────────────────
 _NAME_FRAG = r"[A-Z][A-Z\-]+"
@@ -48,7 +48,11 @@ def _names_in_clause(clause: str) -> list[str]:
     return keys
 
 
-def parse_vote_block(text: str, author_key: str = "per_curiam") -> Dict[str, dict]:
+def parse_vote_block(
+    text: str,
+    author_key: str = "per_curiam",
+    bench_date: str | None = None,
+) -> Dict[str, dict]:
     """
     Parse the vote block from an NH Supreme Court opinion.
     Returns a dict mapping justice_key → vote record dict.
@@ -103,10 +107,16 @@ def parse_vote_block(text: str, author_key: str = "per_curiam") -> Dict[str, dic
     if author_key and author_key != "per_curiam" and author_key not in votes:
         votes[author_key] = VOTE_MAJORITY
 
+    bench_keys = get_justice_keys_on_bench(bench_date)
+    result_keys = list(bench_keys or JUSTICE_KEYS)
+    for key in votes:
+        if key not in result_keys:
+            result_keys.append(key)
+
     result = {}
-    for jkey in JUSTICE_KEYS:
-        display = JUSTICE_DISPLAY.get(jkey, jkey)
-        role = "chief_justice" if "C.J." in display else "associate_justice"
+    for jkey in result_keys:
+        display = justice_display(jkey)
+        role = justice_role(jkey)
         vote = votes.get(jkey, VOTE_NOT_PARTICIPATING)
         note_text = notes.get(jkey, None)
         result[jkey] = {

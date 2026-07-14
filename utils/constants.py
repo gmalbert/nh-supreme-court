@@ -39,6 +39,7 @@ JUSTICE_LAST_NAME_MAP = {
     "HICKS": "hicks",
     "LYNN": "lynn",
     "BASSETT": "bassett",
+    "NADEAU": "nadeau",
 }
 
 # ── Vote types ─────────────────────────────────────────────────────────────────

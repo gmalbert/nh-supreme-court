@@ -1,0 +1,21 @@
+{
+  "comment": "Approved corrections to annual-roster parsing. Original PDF evidence remains in the generated roster entries.",
+  "remove_attorney_raw": [
+    "American Institute", "Bureau of Securities Regulation", "Business Trust", "Christ Redeemer Church", "Community Services", "Condominium Association", "Consumer Advocate", "EnergyNorth Natural Gas", "Employment Security", "Environmental Services", "Farmington School District", "Hampshire Association", "Hampshire Commission", "Hampshire Division", "Hampshire Liquor Commission", "Hampshire Municipal Association", "Hampshire Retirement System", "Health Services Planning", "Human Services", "Human Services Administrative Appeals Unit", "Human Services, Administrative Appeals Unit", "Land Appeals", "Manchester School District", "Minority Leader", "New Hampshire", "New Hampshire Center", "New Hampshire Commission for Human Rights", "New Hampshire Democratic Party", "New Hampshire Governor’s Office", "New Hampshire Liquor Commission", "New Hampshire Lottery Commission", "New Hampshire Professional Conduct Committee", "New Hampshire Public Utilities Commission", "New Hampshire Retirement System", "New Hampshire Senate", "New Hampshire Senate President", "Police Supervisors’ Association", "Portsmouth Regional Hospital", "Public Protection Fund", "Public Protection Fund Committee", "Public Utilities Commission", "School District", "Site Evaluation Committee", "Wentworth-Douglass Hospital", "Western Asbestos Settlement Trust"
+  ],
+  "split_entries": {
+    "2020-0454": {"Aaron J. Curtis, Colin F. McGrath": [{"attorney_raw": "Aaron J. Curtis"}, {"attorney_raw": "Colin F. McGrath"}]},
+    "2019-0206": {"Cordell A. Johnston, Stephen C. Buckley": [{"attorney_raw": "Cordell A. Johnston"}, {"attorney_raw": "Stephen C. Buckley"}]},
+    "2025-0140": {"David Himelfarb, John M. Allen": [{"attorney_raw": "David Himelfarb"}, {"attorney_raw": "John M. Allen"}]},
+    "2019-0057": {"Gilles R. Bissonnette, Henry R. Klementowicz": [{"attorney_raw": "Gilles R. Bissonnette"}, {"attorney_raw": "Henry R. Klementowicz"}]},
+    "2019-0654": {"Jane E. Young, Daniel E. Will": [{"attorney_raw": "Jane E. Young"}, {"attorney_raw": "Daniel E. Will"}]},
+    "2016-0569": {"John Houlihan, Steven T. Whitmer": [{"attorney_raw": "John Houlihan"}, {"attorney_raw": "Steven T. Whitmer"}]},
+    "2022-0483": {"Richard Fisher Joshua L. Gordon": [{"attorney_raw": "Joshua L. Gordon"}]}
+  },
+  "add_entries": {
+    "2016-0558": [
+      {"attorney_raw": "Sean R. Cronin", "firm": "", "side": "unknown", "confidence": "high", "source_file": "2017.pdf", "source_page": "8", "source_sha256": "ad906ce4c83cd7f8e7b44555da5118f370888d58769d282d0f53fb06e02a7522", "source_locator": "docket row 2016-0558; reviewed addition", "evidence_text": "JL (Thomas M. Closson) for Nashua School District (15 min.) | Sean R. Cronin and Joseph L. DeLorey, pro hac vice, for American Federation of Teachers."},
+      {"attorney_raw": "Joseph L. DeLorey", "firm": "", "side": "unknown", "confidence": "high", "source_file": "2017.pdf", "source_page": "8", "source_sha256": "ad906ce4c83cd7f8e7b44555da5118f370888d58769d282d0f53fb06e02a7522", "source_locator": "docket row 2016-0558; reviewed addition", "evidence_text": "JL (Thomas M. Closson) for Nashua School District (15 min.) | Sean R. Cronin and Joseph L. DeLorey, pro hac vice, for American Federation of Teachers."}
+    ]
+  }
+}

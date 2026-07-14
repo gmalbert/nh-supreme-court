@@ -148,6 +148,18 @@ class TestBenchDiagram:
         # Should have annotations or markers for each justice
         assert len(result.data) > 0 or len(result.layout.annotations) > 0
 
+    def test_bench_diagram_uses_transparent_background(self):
+        """Bench diagram should inherit Streamlit's light/dark page background."""
+        justices = [
+            {"name": "MacDonald", "vote": "not_participating"},
+            {"name": "Hicks", "vote": "majority"},
+        ]
+
+        result = bench_diagram(justices)
+
+        assert result.layout.paper_bgcolor == "rgba(0,0,0,0)"
+        assert result.layout.plot_bgcolor == "rgba(0,0,0,0)"
+
 
 class TestChartConsistency:
     """Tests for chart styling consistency."""

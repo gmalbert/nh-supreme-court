@@ -10,6 +10,7 @@ import importlib
 import re
 import sys
 from datetime import date
+from functools import lru_cache
 from html import escape
 from pathlib import Path
 from urllib.parse import quote
@@ -20,12 +21,15 @@ import streamlit as st
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
+CITATION_OVERRIDES_PATH = ROOT / "data" / "citation_overrides.json"
 
 from utils.constants import APP_NAME, APP_TAGLINE, OUTCOME_COLORS, OUTCOME_LABELS, VOTE_COLORS
 try:
     from utils.data_loader import (
         data_last_updated,
         load_case_orders,
+        load_attorney_statistics,
+        load_brief_counsel,
         load_oral_argument,
         load_oral_arguments,
         load_opinion_text,
@@ -38,12 +42,15 @@ except KeyError:
     _data_loader = importlib.import_module("utils.data_loader")
     data_last_updated = _data_loader.data_last_updated
     load_case_orders = _data_loader.load_case_orders
+    load_attorney_statistics = _data_loader.load_attorney_statistics
+    load_brief_counsel = _data_loader.load_brief_counsel
     load_oral_argument = _data_loader.load_oral_argument
     load_oral_arguments = _data_loader.load_oral_arguments
     load_opinion_text = _data_loader.load_opinion_text
     load_opinions = _data_loader.load_opinions
     load_opinions_json = _data_loader.load_opinions_json
 from utils.charts import bench_diagram
+from utils.justices import normalize_votes_for_bench
 from utils.opinion_search import search as fts_search, get_snippet
 from footer import add_gavel_glimpse_footer
 
@@ -220,6 +227,104 @@ def _extract_intro_text(text: str) -> str:
     return intro[:4000]
 
 
+def _extract_appearance_block(text: str) -> str:
+    """Return counsel appearances from the opinion header."""
+    if not text:
+        return ""
+
+    lines = [line.strip() for line in text.splitlines()]
+    start_index = None
+    for index, line in enumerate(lines[:80]):
+        if line.startswith("Opinion Issued:"):
+            start_index = index + 1
+            break
+    if start_index is None:
+        return ""
+
+    block: list[str] = []
+    for line in lines[start_index:80]:
+        if not line:
+            if block:
+                block.append("")
+            continue
+        if _AUTHOR_LINE_RE.match(line):
+            break
+        if line.startswith(("I.", "II.")):
+            break
+        block.append(line)
+
+    paragraphs: list[str] = []
+    current: list[str] = []
+    for line in block:
+        if not line:
+            if current:
+                paragraphs.append(" ".join(current))
+                current = []
+            continue
+        current.append(line)
+        joined = " ".join(current).lower()
+        if re.search(r"\bfor\s+the\b.+\.$", joined):
+            paragraphs.append(" ".join(current))
+            current = []
+    if current:
+        paragraphs.append(" ".join(current))
+
+    return "\n\n".join(paragraphs)
+
+
+def _render_appearance_block(text: str) -> None:
+    appearance = _extract_appearance_block(text)
+    if not appearance:
+        return
+
+    attorney_data = load_attorney_statistics()
+    known_attorneys = {
+        attorney["attorney_name"]
+        for attorney in attorney_data.get("attorney_stats", [])
+        if attorney.get("attorney_name")
+    }
+
+    rows = []
+    for paragraph in appearance.split("\n\n"):
+        side_match = re.search(r",\s+for\s+(?:the\s+)?(.+?)\.$", paragraph, flags=re.IGNORECASE)
+        side = side_match.group(1).strip().capitalize() if side_match else "Other"
+        participants = []
+        for parenthetical in re.findall(r"\(([^)]+)\)", paragraph):
+            if not re.search(r"\b(on the brief|on the briefs|orally|on the memorandum)\b", parenthetical, re.IGNORECASE):
+                continue
+            participant = re.split(
+                r",?\s+(?:on the brief|on the briefs|orally|on the memorandum)\b",
+                parenthetical,
+                maxsplit=1,
+                flags=re.IGNORECASE,
+            )[0].strip()
+            participant = re.sub(
+                r",\s*(?:senior\s+)?(?:assistant\s+)?(?:attorney general|solicitor general|general counsel|attorney).*$",
+                "",
+                participant,
+                flags=re.IGNORECASE,
+            ).strip()
+            if participant:
+                participants.append(participant)
+        if participants:
+            rows.append({"side": side, "participants": participants})
+
+    st.markdown("**Counsel**")
+    if rows:
+        for row in rows:
+            for name in row["participants"]:
+                profile_url = f"/attorney-profile?attorney={quote(name, safe='')}"
+                if name in known_attorneys:
+                    rendered_name = f"[{escape(name)}]({profile_url})"
+                else:
+                    rendered_name = escape(name)
+                st.markdown(f"- **{escape(row['side'])}:** {rendered_name}")
+    else:
+        html = "<br><br>".join(escape(line) for line in appearance.split("\n\n"))
+        st.markdown(html, unsafe_allow_html=True)
+    st.markdown("")
+
+
 def _as_list(value) -> list[str]:
     try:
         parsed = ast.literal_eval(value) if isinstance(value, str) else value
@@ -235,6 +340,110 @@ def _format_date(value) -> str:
     if pd.isna(parsed):
         return "—"
     return parsed.strftime("%b %d, %Y")
+
+
+def _display_or_dash(value) -> str:
+    """Return a display-safe value for optional scalar metadata."""
+    if value is None:
+        return "—"
+    if pd.isna(value):
+        return "—"
+    text = str(value).strip()
+    return text if text and text.lower() != "nan" else "—"
+
+
+def _render_case_attorneys(case_number: str) -> None:
+    """Render reviewed attorney roster for a linked oral argument, if available."""
+    attorney_data = load_attorney_statistics()
+    case_attorneys = attorney_data.get("case_attorneys", {}).get(str(case_number), [])
+    if not case_attorneys:
+        return
+
+    st.markdown("**Oral-argument roster**")
+    sides: dict[str, list[dict]] = {}
+    for attorney in case_attorneys:
+        side = str(attorney.get("side") or "other").capitalize()
+        sides.setdefault(side, []).append(attorney)
+
+    for side, attorneys in sides.items():
+        st.markdown(f"_{side}_")
+        for attorney in attorneys:
+            name = str(attorney.get("name") or "Unknown")
+            firm = str(attorney.get("firm") or "").strip()
+            profile_url = f"/attorney-profile?attorney={quote(name, safe='')}"
+            label = f"[{escape(name)}]({profile_url})"
+            if firm:
+                label += f" ({escape(firm)})"
+            st.markdown(f"- {label}")
+
+
+def _render_case_brief_counsel(case_number: str) -> bool:
+    """Render separately generated brief counsel from official decisions."""
+    counsel = load_brief_counsel().get(str(case_number), [])
+    if not counsel:
+        return False
+    st.markdown("**Brief counsel**")
+    sides: dict[str, list[str]] = {}
+    for fact in counsel:
+        name = str(fact.get("attorney_raw") or "").strip()
+        if name:
+            sides.setdefault(str(fact.get("side") or "other").capitalize(), []).append(name)
+    for side, names in sides.items():
+        for name in dict.fromkeys(names):
+            profile_url = f"/attorney-profile?attorney={quote(name, safe='')}"
+            st.markdown(f"- **{escape(side)}:** [{escape(name)}]({profile_url})")
+    st.markdown("")
+    return True
+
+
+@lru_cache(maxsize=1)
+def _load_citation_overrides() -> dict:
+    if not CITATION_OVERRIDES_PATH.exists():
+        return {}
+    try:
+        with open(CITATION_OVERRIDES_PATH, encoding="utf-8") as fh:
+            data = json.load(fh)
+    except Exception:
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def _citation_sort_key(value: str) -> int:
+    """Rank citation forms for display: reporter, public-domain, case number."""
+    text = value.strip()
+    if re.fullmatch(r"\d{4}-\d{3,5}", text):
+        return 2
+    if re.fullmatch(r"20\d{2}\s+N\.H\.\s+\d+", text, flags=re.IGNORECASE):
+        return 1
+    if re.fullmatch(r"\d+\s+N\.H\.\s+\d+", text, flags=re.IGNORECASE):
+        return 0
+    return 1
+
+
+def _case_citation_display(row, full_rec: dict | None = None) -> str:
+    """Return the best available citation label for a case."""
+    candidates = []
+    sources = [row]
+    if full_rec:
+        sources.append(full_rec)
+
+    case_number = _display_or_dash(row.get("case_number") if hasattr(row, "get") else None)
+    override = _load_citation_overrides().get(case_number)
+    if isinstance(override, dict):
+        sources.insert(0, override)
+
+    for source in sources:
+        for key in ("reporter_citation", "official_citation", "citation"):
+            value = _display_or_dash(source.get(key) if hasattr(source, "get") else None)
+            if value != "—" and value not in candidates:
+                candidates.append(value)
+
+    if case_number != "—" and case_number not in candidates:
+        candidates.append(case_number)
+
+    if not candidates:
+        return "—"
+    return sorted(candidates, key=_citation_sort_key)[0]
 
 
 def _month_day_label(value) -> str:
@@ -274,7 +483,7 @@ def _search_opinions(df: pd.DataFrame, query: str, limit: int) -> pd.DataFrame:
     query = query.strip()
     if not query:
         return df.head(0).copy()
-    
+
     # Try FTS5 search first
     try:
         fts_results = fts_search(query, limit=limit)
@@ -282,18 +491,18 @@ def _search_opinions(df: pd.DataFrame, query: str, limit: int) -> pd.DataFrame:
             # Convert FTS results to DataFrame
             result_cases = [r["case_number"] for r in fts_results]
             result_df = df[df["case_number"].isin(result_cases)].copy()
-            
+
             # Add rank scores and snippets
             rank_map = {r["case_number"]: r["rank"] for r in fts_results}
             result_df["_score"] = result_df["case_number"].map(rank_map)
             result_df["_issued_at"] = pd.to_datetime(result_df["date_issued"], errors="coerce")
-            
+
             # Sort by rank (lower is better with BM25)
             return result_df.sort_values(["_score", "_issued_at"], ascending=[True, False])
     except Exception as e:
         # Fall back to simple search if FTS5 fails
         print(f"FTS5 search failed, using fallback: {e}")
-    
+
     # Fallback: simple token-based search
     tokens = _search_tokens(query)
     if not tokens:
@@ -338,8 +547,8 @@ def _render_search_result(row: pd.Series) -> None:
     case_number = str(row.get("case_number", "")).strip()
     case_href = f"case-explorer?case={quote(case_number)}" if case_number else "case-explorer"
     case_name = escape(str(row.get("case_name", "Unknown case")))
-    citation = row.get("citation")
-    citation_text = "" if pd.isna(citation) or not str(citation).strip() else f" · {escape(str(citation))}"
+    citation = _case_citation_display(row)
+    citation_text = "" if citation == "—" else f" · {escape(citation)}"
     outcome = row.get("outcome")
     outcome_label = OUTCOME_LABELS.get(outcome, str(outcome).replace("_", " ").title()) if pd.notna(outcome) else "—"
     summary = row.get("summary_paragraph", "")
@@ -419,8 +628,8 @@ def _render_on_this_day(df: pd.DataFrame) -> None:
         return
 
     case_name = escape(str(row.get("case_name", "Unknown case")))
-    citation = row.get("citation")
-    citation_text = "" if pd.isna(citation) or not str(citation).strip() else f" · {escape(str(citation))}"
+    citation = _case_citation_display(row)
+    citation_text = "" if citation == "—" else f" · {escape(citation)}"
     decided = _format_date(row.get("date_issued"))
     term = row.get("term_year", "")
     case_number = str(row.get("case_number", "")).strip()
@@ -459,10 +668,8 @@ def _render_on_this_day(df: pd.DataFrame) -> None:
                 match_cn = str(match_row.get("case_number", "")).strip()
                 match_name = escape(str(match_row.get("case_name", "Unknown case")))
                 match_term = match_row.get("term_year", "")
-                match_citation = match_row.get("citation")
-                match_citation_text = (
-                    "" if pd.isna(match_citation) or not str(match_citation).strip() else f" \u00b7 {escape(str(match_citation))}"
-                )
+                match_citation = _case_citation_display(match_row)
+                match_citation_text = "" if match_citation == "—" else f" \u00b7 {escape(match_citation)}"
                 match_href = f"case-explorer?case={quote(match_cn)}" if match_cn else "case-explorer"
                 st.markdown(
                     f"- [{match_name}]({match_href}) ({match_term}){match_citation_text}",
@@ -698,10 +905,10 @@ def render_case_explorer() -> None:
     col1, col2 = st.columns([3, 2])
 
     with col1:
-        citation = case_row.get("citation") or "—"
-        pdf_url = case_row.get("pdf_url", "")
+        citation = _case_citation_display(case_row, full_rec)
+        pdf_url = _display_or_dash(case_row.get("pdf_url"))
         st.subheader(str(case_row.get("case_name", "Unknown Case")))
-        if pdf_url and str(pdf_url) not in ("", "nan"):
+        if pdf_url != "—":
             st.markdown(f"**Citation:** {citation} \u00a0 [View PDF ↗]({pdf_url})")
         else:
             st.markdown(f"**Citation:** {citation}")
@@ -756,7 +963,14 @@ def render_case_explorer() -> None:
             st.markdown(tags_html, unsafe_allow_html=True)
             st.markdown("")
 
-        votes = full_rec.get("votes", {})
+        if not _render_case_brief_counsel(cn):
+            _render_appearance_block(_full_text)
+
+        votes = normalize_votes_for_bench(
+            full_rec.get("votes", {}),
+            date_argued=case_row.get("date_argued") or full_rec.get("date_argued"),
+            date_issued=case_row.get("date_issued") or full_rec.get("date_issued"),
+        )
         if votes:
             st.markdown("**Bench Vote**")
             fig = bench_diagram(votes)
@@ -815,6 +1029,7 @@ def render_case_explorer() -> None:
             st.markdown(f"[Read the oral argument transcript]({transcript_href})")
             if oral_argument.get("vimeo_url"):
                 st.markdown(f"[Watch the original argument on Vimeo]({oral_argument['vimeo_url']})")
+            _render_case_attorneys(str(oral_argument["case_number"]))
 
     # Load citations data
     citations_data = None
@@ -830,11 +1045,11 @@ def render_case_explorer() -> None:
                 cited_by_data = json.load(f)
     except Exception:
         pass
-    
+
     # Display citations if available
     if citations_data or cited_by_data:
         st.divider()
-        
+
         # Cases this opinion cites
         if citations_data and cn in citations_data:
             cites = citations_data[cn].get("cites", [])
@@ -845,12 +1060,12 @@ def render_case_explorer() -> None:
                         cited_row = df[df["case_number"] == cited_case]
                         if not cited_row.empty:
                             cited_name = cited_row.iloc[0].get("case_name", cited_case)
-                            cited_citation = cited_row.iloc[0].get("citation", "")
-                            citation_text = f" · {cited_citation}" if cited_citation else ""
+                            cited_citation = _case_citation_display(cited_row.iloc[0])
+                            citation_text = f" · {cited_citation}" if cited_citation != "—" else ""
                             st.markdown(f"- [{cited_name}](case-explorer?case={quote(cited_case)}){citation_text}")
                         else:
                             st.markdown(f"- {cited_case}")
-        
+
         # Cases that cite this opinion
         if cited_by_data and cn in cited_by_data:
             citing_cases = cited_by_data[cn]
@@ -861,12 +1076,12 @@ def render_case_explorer() -> None:
                         citing_row = df[df["case_number"] == citing_case]
                         if not citing_row.empty:
                             citing_name = citing_row.iloc[0].get("case_name", citing_case)
-                            citing_citation = citing_row.iloc[0].get("citation", "")
-                            citation_text = f" · {citing_citation}" if citing_citation else ""
+                            citing_citation = _case_citation_display(citing_row.iloc[0])
+                            citation_text = f" · {citing_citation}" if citing_citation != "—" else ""
                             st.markdown(f"- [{citing_name}](case-explorer?case={quote(citing_case)}){citation_text}")
                         else:
                             st.markdown(f"- {citing_case}")
-    
+
     intro_text = _extract_intro_text(_full_text)
     if intro_text:
         st.divider()

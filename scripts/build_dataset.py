@@ -317,12 +317,43 @@ _LC_STOP_RE = re.compile(
 # Matches a judge-name parenthetical like "(Smith, J.)", "(St. Hilaire, J.)", or "(Jones, C.J.)"
 _LC_JUDGE_PAREN_RE = re.compile(r"\([A-Za-z\s.'\u2018\u2019-]+,\s*(?:C\.J\.|JJ\.|J\.)\)")
 
+MODIFICATION_NOTICE_RE = re.compile(
+    r"^\s*\(?\s*(?:opinion\s+)?modified\b", re.IGNORECASE
+)
+DOCKET_PREFIX_RE = re.compile(
+    r"^\s*\d{4}-\d{3,4}"
+    r"(?:\s*(?:,|&|and)\s*(?:\d{4}-)?\d{3,4})*\s*[,.]\s*",
+    re.IGNORECASE,
+)
+MODIFICATION_CAPTION_RE = re.compile(
+    r"In\s+Case\s+Nos?\.?\s+\d{4}-\d{3,4}"
+    r"(?:\s*(?:,|&|and)\s*(?:\d{4}-)?\d{3,4})*\s*,\s*"
+    r"(.+?),\s*(?:the\s+court|the\s+clerk\s+of\s+court)\s+on\b",
+    re.IGNORECASE | re.DOTALL,
+)
+
+
 def normalize_case_name(name) -> str:
-    """Replace U+FFFD replacement chars (bad PDF decode) with apostrophes."""
+    """Clean display-only artifacts from a case caption."""
     if not name or not isinstance(name, str):
         return name
-    import re as _re
-    return _re.sub(r"(?<=\w)\ufffd(?=\w)", "'", name)
+    cleaned = re.sub(r"(?<=\w)\ufffd(?=\w)", "'", name)
+    cleaned = DOCKET_PREFIX_RE.sub("", cleaned)
+    return re.sub(r"\s+", " ", cleaned).strip()
+
+
+def caption_from_modification_order(case_number) -> str | None:
+    """Recover the caption from the heading of a slip-opinion amendment order."""
+    if not case_number:
+        return None
+    text_path = PROCESSED_DIR / "text" / f"{case_number}.txt"
+    try:
+        heading = text_path.read_text(encoding="utf-8")[:2000]
+    except OSError:
+        return None
+
+    match = MODIFICATION_CAPTION_RE.search(heading)
+    return normalize_case_name(match.group(1)) if match else None
 
 
 def normalize_lower_court(value) -> str | None:
@@ -366,7 +397,18 @@ def normalize_lower_court(value) -> str | None:
 
 def normalize_record(rec: dict) -> dict:
     out = dict(rec)
-    out["case_name"] = normalize_case_name(out.get("case_name"))
+    raw_case_name = out.get("case_name")
+    if isinstance(raw_case_name, str) and MODIFICATION_NOTICE_RE.match(raw_case_name):
+        # The index labels amendment orders with a notice rather than a caption.
+        # Their PDF heading carries the actual case name.
+        recovered_caption = caption_from_modification_order(out.get("case_number"))
+        if recovered_caption:
+            out["case_name"] = recovered_caption
+        else:
+            # Do not present an administrative notice as though it were a case.
+            out["_exclude_from_case_explorer"] = True
+    else:
+        out["case_name"] = normalize_case_name(raw_case_name)
     out["lower_court"] = normalize_lower_court(out.get("lower_court"))
     out["outcome"] = normalize_outcome(out.get("outcome"))
     out["summary_paragraph"] = normalize_summary(out.get("summary_paragraph"))
@@ -408,6 +450,10 @@ def load_year_jsons(pattern: str) -> list[dict]:
     for path in sorted(PROCESSED_DIR.glob(pattern)):
         with open(path, encoding="utf-8") as fh:
             year_records = [normalize_record(r) for r in json.load(fh)]
+            year_records = [
+                r for r in year_records
+                if not r.pop("_exclude_from_case_explorer", False)
+            ]
         print(f"  Loaded {len(year_records)} records from {path.name}")
         records.extend(year_records)
     return records
