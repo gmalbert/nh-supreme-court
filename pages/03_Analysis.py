@@ -37,6 +37,12 @@ def _format_outcome(value):
     return OUTCOME_LABELS.get(key, key.replace("_", " ").title())
 
 
+def _format_chart_label(value):
+    if pd.isna(value):
+        return "—"
+    return str(value).strip().replace("_", " ").title()
+
+
 def _title_columns(frame: pd.DataFrame) -> pd.DataFrame:
     out = frame.copy()
     out.columns = [c.replace("_", " ").title() for c in out.columns]
@@ -244,14 +250,26 @@ with tab3:
             .reset_index(name="count")
         )
         if not pivot.empty:
+            pivot["appeal_type_label"] = pivot["appeal_type"].map(
+                _format_chart_label
+            )
+            pivot["outcome_label"] = pivot["outcome"].map(_format_chart_label)
+            outcome_color_map = {
+                _format_chart_label(outcome): OUTCOME_COLORS.get(outcome, "#607D8B")
+                for outcome in pivot["outcome"].dropna().unique()
+            }
             fig_pivot = px.bar(
                 pivot,
-                x="appeal_type",
+                x="appeal_type_label",
                 y="count",
-                color="outcome",
-                color_discrete_map=OUTCOME_COLORS,
+                color="outcome_label",
+                color_discrete_map=outcome_color_map,
                 title="Outcome by Appeal Type",
-                labels={"appeal_type": "Appeal Type", "count": "# Opinions"},
+                labels={
+                    "appeal_type_label": "Appeal Type",
+                    "count": "# Opinions",
+                    "outcome_label": "Outcome",
+                },
                 barmode="stack",
             )
             fig_pivot.update_layout(plot_bgcolor="white")
@@ -266,13 +284,26 @@ with tab3:
             .reset_index(name="count")
         )
         if not lc_pivot.empty:
+            lc_pivot["lower_court_type_label"] = lc_pivot["lower_court_type"].map(
+                _format_chart_label
+            )
+            lc_pivot["outcome_label"] = lc_pivot["outcome"].map(_format_chart_label)
+            outcome_color_map = {
+                _format_chart_label(outcome): OUTCOME_COLORS.get(outcome, "#607D8B")
+                for outcome in lc_pivot["outcome"].dropna().unique()
+            }
             fig_lc = px.bar(
                 lc_pivot,
-                x="lower_court_type",
+                x="lower_court_type_label",
                 y="count",
-                color="outcome",
-                color_discrete_map=OUTCOME_COLORS,
+                color="outcome_label",
+                color_discrete_map=outcome_color_map,
                 title="Reversal Rate by Lower Court",
+                labels={
+                    "lower_court_type_label": "Lower Court Type",
+                    "count": "Count",
+                    "outcome_label": "Outcome",
+                },
                 barmode="stack",
             )
             fig_lc.update_layout(plot_bgcolor="white", xaxis_tickangle=-20)
@@ -285,14 +316,24 @@ with tab3:
             .size()
             .reset_index(name="count")
         )
+        yearly_out["outcome_label"] = yearly_out["outcome"].map(_format_chart_label)
+        outcome_color_map = {
+            _format_chart_label(outcome): OUTCOME_COLORS.get(outcome, "#607D8B")
+            for outcome in yearly_out["outcome"].dropna().unique()
+        }
         fig_time = px.line(
             yearly_out,
             x="term_year",
             y="count",
-            color="outcome",
-            color_discrete_map=OUTCOME_COLORS,
+            color="outcome_label",
+            color_discrete_map=outcome_color_map,
             markers=True,
             title="Outcome Trends Over Time",
+            labels={
+                "term_year": "Term Year",
+                "count": "Count",
+                "outcome_label": "Outcome",
+            },
         )
         fig_time.update_layout(plot_bgcolor="white")
         st.plotly_chart(fig_time, width="stretch")
@@ -318,12 +359,15 @@ with tab4:
             if all_topics:
                 t_counts = pd.Series(all_topics).value_counts().reset_index()
                 t_counts.columns = ["topic", "count"]
-                t_counts["topic"] = t_counts["topic"].str.replace("_", " ").str.title()
+                t_counts["topic_label"] = t_counts["topic"].map(_format_chart_label)
                 fig_td = px.bar(
                     t_counts.head(10),
-                    x="count", y="topic", orientation="h",
+                    x="count",
+                    y="topic_label",
+                    orientation="h",
                     color_discrete_sequence=["#C62828"],
                     title="Topics in Divided Cases",
+                    labels={"count": "Count", "topic_label": "Topic"},
                 )
                 fig_td.update_layout(plot_bgcolor="white", yaxis={"autorange": "reversed"})
                 st.plotly_chart(fig_td, width="stretch")
@@ -331,11 +375,16 @@ with tab4:
         with col_b:
             # Timeline of dissents
             dis_timeline = dissent_df.groupby("term_year").size().reset_index(name="dissents")
+            dis_timeline["term_year_label"] = dis_timeline["term_year"].map(
+                _format_chart_label
+            )
             fig_dt = px.bar(
                 dis_timeline,
-                x="term_year", y="dissents",
+                x="term_year_label",
+                y="dissents",
                 color_discrete_sequence=["#C62828"],
                 title="Divided Decisions Per Year",
+                labels={"term_year_label": "Term Year", "dissents": "Dissents"},
             )
             fig_dt.update_layout(plot_bgcolor="white")
             st.plotly_chart(fig_dt, width="stretch")

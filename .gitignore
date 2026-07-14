@@ -79,6 +79,8 @@ scripts/*
 !scripts/build_dataset.py
 !scripts/refresh_oral_arguments.py
 !scripts/analyze_attorney_justice_interactions.py
+!scripts/audit_attorney_rosters.py
+!scripts/build_pdf_attorney_roster_overrides.py
 !scripts/extract_attorney_stats.py
 !scripts/extract_speaker_stats.py
 !scripts/generate_enhanced_stats.py
@@ -87,6 +89,10 @@ update_pipeline.ps1
 *.code-workspace
 nh-supreme-court-transcripts/
 debug_2017_page.html
+outputs/
+.commandcode/
+data/processed/case_counsel_sample_100_review.csv
+data/processed/case_counsel_sample_100.json
 
 # macOS network temp files
 .smbdelete*

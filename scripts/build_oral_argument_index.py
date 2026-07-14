@@ -4,11 +4,13 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "processed"
+PDF_DATE_OVERRIDES_DIR = ROOT / "data" / "oral_argument_pdf_dates"
 PUBLIC_FIELDS = (
     "case_number",
     "case_name",
@@ -24,8 +26,24 @@ PUBLIC_FIELDS = (
 )
 
 
+def _load_pdf_date_overrides() -> dict[str, str]:
+    """Load court-PDF dates that must survive transcript-index rebuilds."""
+    overrides: dict[str, str] = {}
+    for path in sorted(PDF_DATE_OVERRIDES_DIR.glob("*.json")):
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(payload, dict):
+            raise ValueError(f"PDF date override file must be an object: {path}")
+        overrides.update({str(docket): str(date) for docket, date in payload.items()})
+    return overrides
+
+
+def _normalize_case_name(case_name: str) -> str:
+    return re.sub(r"^New Hampshire\s+(?:Versus|v\.?)\s+", "State v. ", case_name, flags=re.IGNORECASE)
+
+
 def build_index(source_dir: Path) -> list[dict]:
     """Return public metadata from the per-case transcript records."""
+    pdf_dates = _load_pdf_date_overrides()
     records: list[dict] = []
     for path in sorted(source_dir.glob("*.json")):
         record = json.loads(path.read_text(encoding="utf-8"))
@@ -36,6 +54,11 @@ def build_index(source_dir: Path) -> list[dict]:
         }
         if not public_record.get("case_number"):
             raise ValueError(f"Missing case_number in {path}")
+        docket = str(public_record["case_number"])
+        if docket in pdf_dates:
+            public_record["argument_date"] = pdf_dates[docket]
+        if public_record.get("case_name"):
+            public_record["case_name"] = _normalize_case_name(str(public_record["case_name"]))
         records.append(public_record)
 
     case_numbers = [record["case_number"] for record in records]

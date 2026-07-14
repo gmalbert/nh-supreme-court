@@ -5,7 +5,9 @@ Cached data loading utilities for Streamlit pages.
 from __future__ import annotations
 
 import json
+import csv
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -17,8 +19,10 @@ from utils.oral_arguments import find_argument_for_docket, normalize_docket_numb
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data" / "processed"
+PDF_DATE_OVERRIDES_DIR = BASE_DIR / "data" / "oral_argument_pdf_dates"
 RAW_DIR = BASE_DIR / "data" / "raw"
 _AUTO_BUILD_ATTEMPTED = False
+NON_FIRM_STATUS_PREFIX = "skipped —"
 
 
 def _latest_mtime(paths) -> float | None:
@@ -198,15 +202,19 @@ def _load_oral_arguments_cached(
     index_mtime: float,
     stats_mtime: float,
     transcript_mtime: float,
+    pdf_date_overrides_mtime: float,
 ) -> list[dict]:
     """Load oral-argument metadata, public statistics, and searchable text."""
-    _ = (index_mtime, stats_mtime, transcript_mtime)
+    _ = (index_mtime, stats_mtime, transcript_mtime, pdf_date_overrides_mtime)
     index_path = Path(index_path_str)
     stats_path = Path(stats_path_str)
     with open(index_path, encoding="utf-8") as fh:
         records = json.load(fh)
     with open(stats_path, encoding="utf-8") as fh:
         stats_by_case = {row["case_number"]: row for row in json.load(fh)}
+    pdf_dates: dict[str, str] = {}
+    for path in sorted(PDF_DATE_OVERRIDES_DIR.glob("*.json")):
+        pdf_dates.update(json.loads(path.read_text(encoding="utf-8")))
 
     oral_argument_dir = DATA_DIR / "oral_arguments"
     prepared: list[dict] = []
@@ -223,6 +231,14 @@ def _load_oral_arguments_cached(
         record.update(stats_by_case.get(case_number, {}))
         if source_date:
             record["argument_date"] = source_date
+        if case_number in pdf_dates:
+            record["argument_date"] = str(pdf_dates[case_number])
+        record["case_name"] = re.sub(
+            r"^New Hampshire\s+(?:Versus|v\.?)\s+",
+            "State v. ",
+            str(record.get("case_name", "")),
+            flags=re.IGNORECASE,
+        )
         record["docket_numbers"] = normalize_docket_numbers(case_number)
         text_path = oral_argument_dir / "text" / f"{case_number}.txt"
         record["transcript_text"] = (
@@ -240,12 +256,14 @@ def load_oral_arguments() -> list[dict]:
         return []
     transcript_paths = list((DATA_DIR / "oral_arguments" / "text").glob("*.txt"))
     transcript_mtime = _latest_mtime(transcript_paths) or 0
+    pdf_date_overrides_mtime = _latest_mtime(list(PDF_DATE_OVERRIDES_DIR.glob("*.json"))) or 0
     return _load_oral_arguments_cached(
         str(index_path),
         str(stats_path),
         os.path.getmtime(index_path),
         os.path.getmtime(stats_path),
         transcript_mtime,
+        pdf_date_overrides_mtime,
     )
 
 
@@ -276,6 +294,28 @@ def load_attorney_statistics() -> dict:
 
 
 @st.cache_data(ttl=3600)
+def _load_brief_counsel_cached(path_str: str, source_mtime: float) -> dict:
+    """Load published brief-counsel facts, keyed by source modification time."""
+    _ = source_mtime
+    with open(path_str, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def load_brief_counsel() -> dict[str, list[dict]]:
+    """Return brief counsel grouped by docket from official decisions."""
+    path = DATA_DIR / "brief_counsel.json"
+    if not path.exists():
+        return {}
+    payload = _load_brief_counsel_cached(str(path), path.stat().st_mtime)
+    grouped: dict[str, list[dict]] = {}
+    for fact in payload.get("facts", []):
+        docket = str(fact.get("docket") or "")
+        if docket:
+            grouped.setdefault(docket, []).append(fact)
+    return grouped
+
+
+@st.cache_data(ttl=3600)
 def load_attorney_justice_interactions() -> dict:
     """Load attorney-justice interaction data."""
     interactions_path = DATA_DIR / "attorney_justice_interactions.json"
@@ -302,15 +342,30 @@ def load_enhanced_statistics() -> dict:
 
 @st.cache_data(ttl=3600)
 def load_firm_metadata() -> dict:
-    """Load firm metadata (full names, websites)."""
-    metadata_path = DATA_DIR.parent / "firm_metadata.json"
-    if not metadata_path.exists():
+    """Load firm metadata from the canonical reviewed-firm CSV."""
+    source_path = DATA_DIR.parent / "nh_supreme_court_firms_enriched_v7.csv"
+    if not source_path.exists():
         return {"firms": []}
-    with open(metadata_path, encoding="utf-8") as fh:
-        data = json.load(fh)
-        # Create lookup dict by short_name
-        firms_lookup = {firm["short_name"]: firm for firm in data.get("firms", [])}
-        return {"firms": data.get("firms", []), "lookup": firms_lookup}
+    with open(source_path, newline="", encoding="utf-8") as fh:
+        rows = csv.DictReader(fh)
+        firms_lookup = {}
+        for row in rows:
+            short_name = row.get("short_name", "").strip()
+            full_name = row.get("full_name", "").strip()
+            review_status = row.get("review_status", "").strip().lower()
+            if (
+                not short_name
+                or not full_name
+                or review_status.startswith(NON_FIRM_STATUS_PREFIX)
+            ):
+                continue
+            firms_lookup.setdefault(short_name, {
+                "short_name": short_name,
+                "full_name": full_name,
+                "website": row.get("website", "").strip(),
+                "description": None,
+            })
+        return {"firms": list(firms_lookup.values()), "lookup": firms_lookup}
 
 
 @st.cache_data(ttl=3600)

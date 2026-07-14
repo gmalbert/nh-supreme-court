@@ -283,7 +283,7 @@ def bench_diagram(votes: dict | list[dict]) -> go.Figure:
     # Prefer current court order first, then legacy/retired seats as fallback.
     bench_order = [
         "macdonald", "donovan", "hantz_marconi", "countway", "gould", "will",
-        "bassett", "hicks", "lynn",
+        "bassett", "hicks", "lynn", "nadeau",
     ]
 
     if isinstance(votes, list):
@@ -295,15 +295,21 @@ def bench_diagram(votes: dict | list[dict]) -> go.Figure:
             for index, item in enumerate(votes)
         }
 
-    shown_keys = [k for k in bench_order if k in votes][:5]
+    # Only show justices who actually participated (exclude "not_participating")
+    active = {k: v for k, v in votes.items() if v.get("vote") != "not_participating"}
+    display_votes = active if active else votes
+
+    explicit_keys = list(display_votes.keys())
+    shown_keys = [k for k in bench_order if k in display_votes]
+    shown_keys.extend(k for k in explicit_keys if k not in shown_keys)
     if not shown_keys:
-        shown_keys = list(votes.keys())[:5]
+        shown_keys = explicit_keys
 
     x_positions = [1 + (i * 2.2) for i in range(len(shown_keys))]
     colors, labels, hover = [], [], []
 
     for key in shown_keys:
-        vote_rec = votes.get(key, {"vote": "not_participating", "display_name": key})
+        vote_rec = display_votes.get(key, {"vote": "not_participating", "display_name": key})
         vote_type = vote_rec.get("vote", "not_participating")
         colors.append(VOTE_COLORS.get(vote_type, "#9E9E9E"))
         display = vote_rec.get("display_name", key)
@@ -331,7 +337,8 @@ def bench_diagram(votes: dict | list[dict]) -> go.Figure:
         margin=dict(l=10, r=10, t=10, b=70),
         xaxis=dict(showticklabels=False, showgrid=False, zeroline=False, range=[0, (len(shown_keys) * 2.2) + 0.8]),
         yaxis=dict(showticklabels=False, showgrid=False, zeroline=False, range=[0.4, 1.5]),
-        plot_bgcolor="white",
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
         showlegend=False,
     )
     return fig

@@ -11,6 +11,22 @@ DOCKET_RE = re.compile(r"\d{4}-\d{4}")
 SEARCH_TOKEN_RE = re.compile(r"[a-z0-9][a-z0-9'-]{1,}")
 
 
+def has_confirmed_argument_date(record: Mapping[str, object]) -> bool:
+    """Return whether an argument date is usable for collection statistics.
+
+    Older imports used October 1 of the court term as a stand-in when the
+    actual argument date was unavailable.  Keep those records available for
+    search, but do not count a known stand-in as a real calendar date.
+    """
+    argument_date = str(record.get("argument_date") or "")
+    term_year = record.get("term_year")
+    try:
+        placeholder_date = f"{int(term_year)}-10-01"
+    except (TypeError, ValueError):
+        return bool(argument_date)
+    return bool(argument_date) and argument_date != placeholder_date
+
+
 def normalize_docket_numbers(value: object) -> list[str]:
     """Extract one or more canonical docket numbers from an export key."""
     return list(dict.fromkeys(DOCKET_RE.findall(str(value or ""))))

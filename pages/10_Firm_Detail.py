@@ -163,7 +163,7 @@ def _render_firm_profile(firm_name: str) -> None:
                 "Attorney": ", ".join(firm_attorneys_in_case),
                 "Duration": format_duration(case.get("duration_seconds")),
                 "Words": case.get("word_count", 0),
-                "Opinion": f"/opinions?docket={case_num}"
+                "Case": f"/case-explorer?case={case_num}"
             })
     
     if case_details:
@@ -181,7 +181,7 @@ def _render_firm_profile(firm_name: str) -> None:
                 "Attorney": st.column_config.TextColumn("Attorney", width="medium"),
                 "Duration": st.column_config.TextColumn("Duration", width="small"),
                 "Words": st.column_config.NumberColumn("Words", format="%d"),
-                "Opinion": st.column_config.LinkColumn("Opinion", display_text="View")
+                "Case": st.column_config.LinkColumn("Case", display_text="View")
             }
         )
     else:
