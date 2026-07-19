@@ -14,6 +14,10 @@ on:
         description: 'Force full rebuild of datasets'
         type: boolean
         default: false
+      historical_backfill:
+        description: 'Refresh the full opinion and case-order archive'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -22,16 +26,16 @@ permissions:
 jobs:
   refresh-data:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 240
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
       
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -47,7 +51,9 @@ jobs:
         continue-on-error: true
         run: |
           YEAR_ARGS="${{ github.event.inputs.years }}"
-          if [ -z "$YEAR_ARGS" ]; then
+          if [ "${{ github.event.inputs.historical_backfill }}" = "true" ]; then
+            YEAR_ARGS=$(seq 2002 $(date +%Y))
+          elif [ -z "$YEAR_ARGS" ]; then
             # Default: current year and previous 3 years
             CURRENT_YEAR=$(date +%Y)
             YEAR_ARGS="$((CURRENT_YEAR - 3)) $((CURRENT_YEAR - 2)) $((CURRENT_YEAR - 1)) $CURRENT_YEAR"
@@ -60,15 +66,54 @@ jobs:
           if [ $? -ne 0 ]; then
             echo "scrape_failed=true" >> $GITHUB_OUTPUT
           fi
+
+      - name: Run case-order scraper
+        id: scrape_orders
+        continue-on-error: true
+        run: |
+          YEAR_ARGS="${{ github.event.inputs.years }}"
+          if [ "${{ github.event.inputs.historical_backfill }}" = "true" ]; then
+            YEAR_ARGS=$(seq 2014 $(date +%Y))
+          elif [ -z "$YEAR_ARGS" ]; then
+            CURRENT_YEAR=$(date +%Y)
+            YEAR_ARGS="$((CURRENT_YEAR - 3)) $((CURRENT_YEAR - 2)) $((CURRENT_YEAR - 1)) $CURRENT_YEAR"
+          fi
+          python scripts/scrape_orders_index.py --years $YEAR_ARGS
+          if [ $? -ne 0 ]; then
+            echo "scrape_orders_failed=true" >> $GITHUB_OUTPUT
+          fi
       
       - name: Download new PDFs
         id: download_pdfs
         continue-on-error: true
         run: |
-          python scripts/download_pdfs.py
+          YEAR_ARGS="${{ github.event.inputs.years }}"
+          if [ "${{ github.event.inputs.historical_backfill }}" = "true" ]; then
+            YEAR_ARGS=$(seq 2002 $(date +%Y))
+          elif [ -z "$YEAR_ARGS" ]; then
+            CURRENT_YEAR=$(date +%Y)
+            YEAR_ARGS="$((CURRENT_YEAR - 3)) $((CURRENT_YEAR - 2)) $((CURRENT_YEAR - 1)) $CURRENT_YEAR"
+          fi
+          python scripts/download_pdfs.py --years $YEAR_ARGS
           
           if [ $? -ne 0 ]; then
             echo "download_failed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Download new case orders
+        id: download_orders
+        continue-on-error: true
+        run: |
+          YEAR_ARGS="${{ github.event.inputs.years }}"
+          if [ "${{ github.event.inputs.historical_backfill }}" = "true" ]; then
+            YEAR_ARGS=$(seq 2014 $(date +%Y))
+          elif [ -z "$YEAR_ARGS" ]; then
+            CURRENT_YEAR=$(date +%Y)
+            YEAR_ARGS="$((CURRENT_YEAR - 3)) $((CURRENT_YEAR - 2)) $((CURRENT_YEAR - 1)) $CURRENT_YEAR"
+          fi
+          python scripts/download_pdfs.py --years $YEAR_ARGS --source orders
+          if [ $? -ne 0 ]; then
+            echo "download_orders_failed=true" >> $GITHUB_OUTPUT
           fi
       
       - name: Parse opinions
@@ -76,7 +121,9 @@ jobs:
         continue-on-error: true
         run: |
           YEAR_ARGS="${{ github.event.inputs.years }}"
-          if [ -z "$YEAR_ARGS" ]; then
+          if [ "${{ github.event.inputs.historical_backfill }}" = "true" ]; then
+            YEAR_ARGS=$(seq 2002 $(date +%Y))
+          elif [ -z "$YEAR_ARGS" ]; then
             CURRENT_YEAR=$(date +%Y)
             YEAR_ARGS="$((CURRENT_YEAR - 3)) $((CURRENT_YEAR - 2)) $((CURRENT_YEAR - 1)) $CURRENT_YEAR"
           fi
@@ -86,6 +133,36 @@ jobs:
           if [ $? -ne 0 ]; then
             echo "parse_failed=true" >> $GITHUB_OUTPUT
           fi
+
+      - name: Parse case orders
+        id: parse_orders
+        continue-on-error: true
+        run: |
+          YEAR_ARGS="${{ github.event.inputs.years }}"
+          if [ "${{ github.event.inputs.historical_backfill }}" = "true" ]; then
+            YEAR_ARGS=$(seq 2014 $(date +%Y))
+          elif [ -z "$YEAR_ARGS" ]; then
+            CURRENT_YEAR=$(date +%Y)
+            YEAR_ARGS="$((CURRENT_YEAR - 3)) $((CURRENT_YEAR - 2)) $((CURRENT_YEAR - 1)) $CURRENT_YEAR"
+          fi
+          python scripts/parse_opinions.py --years $YEAR_ARGS --source orders
+          if [ $? -ne 0 ]; then
+            echo "parse_orders_failed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Ingest verified supplemental PDFs
+        id: ingest_supplements
+        run: python scripts/ingest_supplemental_pdfs.py
+
+      - name: Identify and ingest cached official-PDF gaps
+        id: ingest_manifest_gaps
+        run: |
+          python scripts/audit_official_pdf_manifest.py
+          python scripts/ingest_manifest_gaps.py
+
+      - name: Build docket crosswalk
+        id: build_docket_crosswalk
+        run: python scripts/build_docket_crosswalk.py
       
       - name: Build master datasets
         id: build_dataset
@@ -96,6 +173,12 @@ jobs:
           if [ $? -ne 0 ]; then
             echo "build_failed=true" >> $GITHUB_OUTPUT
           fi
+
+      - name: Audit official PDF manifest
+        id: audit_pdf_manifest
+        run: |
+          python scripts/audit_official_pdf_manifest.py
+          python scripts/build_unmatched_argument_review_queue.py
       
       - name: Refresh oral argument statistics
         id: refresh_oral_args

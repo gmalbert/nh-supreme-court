@@ -4,9 +4,10 @@ import json
 import re
 import tempfile
 import unittest
+from collections import Counter
 from pathlib import Path
 
-from scripts.build_oral_argument_index import build_index
+from scripts.build_oral_argument_index import build_index, validate_argument_dates
 from scripts.refresh_oral_arguments import validate_payload
 from utils.data_loader import load_oral_arguments
 from utils.oral_arguments import (
@@ -20,6 +21,12 @@ from utils.oral_arguments import (
 
 
 class OralArgumentHelperTests(unittest.TestCase):
+    def test_index_validation_rejects_term_start_placeholder_dates(self):
+        with self.assertRaisesRegex(ValueError, "placeholder dates: 2025-0001"):
+            validate_argument_dates(
+                [{"case_number": "2025-0001", "argument_date": "2025-10-01", "term_year": 2025}]
+            )
+
     def test_excludes_term_start_default_dates_from_statistics(self):
         self.assertFalse(
             has_confirmed_argument_date(
@@ -42,6 +49,12 @@ class OralArgumentHelperTests(unittest.TestCase):
                 for record in records
             )
         )
+
+    def test_reviewed_roster_captions_override_transcript_openings(self):
+        data_dir = Path(__file__).resolve().parents[1] / "data" / "processed"
+        records = {record["case_number"]: record for record in build_index(data_dir / "oral_arguments")}
+        self.assertEqual(records["2013-0670"]["case_name"], "State of New Hampshire v. Richard Cooley, III")
+        self.assertEqual(records["2020-0264"]["case_name"], "S.K. v. J.M.")
 
     def test_normalizes_combined_docket(self):
         self.assertEqual(
@@ -171,6 +184,20 @@ class OralArgumentPayloadTests(unittest.TestCase):
         self.assertTrue(all(row.get("word_count") for row in records))
         self.assertTrue(all(row.get("docket_numbers") for row in records))
         self.assertTrue(all(not any(key.startswith("granite_export_") for key in row) for row in records))
+
+    def test_enhanced_yearly_totals_match_the_argument_index(self):
+        """Prevent the Trends graph from using stale annual totals."""
+        data_dir = Path(__file__).resolve().parents[1] / "data" / "processed"
+        records = json.loads((data_dir / "oral_arguments.json").read_text(encoding="utf-8"))
+        enhanced = json.loads(
+            (data_dir / "oral_arguments_enhanced_stats.json").read_text(encoding="utf-8")
+        )
+        expected = Counter(str(record["argument_date"])[:4] for record in records)
+        actual = {
+            str(year): values["total_arguments"]
+            for year, values in enhanced["temporal_trends"]["yearly"].items()
+        }
+        self.assertEqual(actual, dict(expected))
 
 
 if __name__ == "__main__":
