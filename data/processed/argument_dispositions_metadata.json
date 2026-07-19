@@ -1,0 +1,93 @@
+{
+  "title": "Argument Dispositions Fact Table",
+  "description": "Canonical dataset joining oral arguments to published dispositions",
+  "grain": "One row per recorded oral argument",
+  "last_updated": "2026-07-19 00:20:21 UTC",
+  "record_count": 1173,
+  "date_range": {
+    "earliest_argument": "2015-01-07",
+    "latest_argument": "2026-05-19"
+  },
+  "resolution_summary": {
+    "opinion": 657,
+    "case_order": 343,
+    "3jx_order": 114,
+    "unmatched": 48,
+    "multiple": 11
+  },
+  "tables": {
+    "argument_dispositions.csv": {
+      "description": "Main fact table with one row per argument",
+      "rows": 1173,
+      "columns": [
+        "argument_id",
+        "matter_id",
+        "case_number",
+        "docket_numbers",
+        "is_combined_docket",
+        "case_name",
+        "argument_date",
+        "term_year",
+        "video_url",
+        "duration_seconds",
+        "has_transcript",
+        "word_count",
+        "segment_count",
+        "resolution_type",
+        "disposition_id",
+        "disposition_date",
+        "days_to_disposition",
+        "outcome",
+        "case_type",
+        "author",
+        "vote_string",
+        "is_unanimous",
+        "has_dissent",
+        "lower_court",
+        "lower_court_type",
+        "disposition_word_count",
+        "order_type",
+        "data_version"
+      ]
+    },
+    "argument_participants.csv": {
+      "description": "Bridge table: argument \u00d7 attorney \u00d7 role \u00d7 side",
+      "rows": 2528,
+      "columns": [
+        "argument_id",
+        "attorney_name",
+        "firm",
+        "side",
+        "role",
+        "source"
+      ]
+    },
+    "argument_topics.csv": {
+      "description": "Bridge table: argument \u00d7 topic",
+      "rows": 4076,
+      "columns": [
+        "argument_id",
+        "topic"
+      ]
+    },
+    "argument_disposition_links.csv": {
+      "description": "Bridge table: argument \u00d7 disposition with link metadata",
+      "rows": 1114,
+      "columns": [
+        "argument_id",
+        "disposition_id",
+        "disposition_type",
+        "link_method",
+        "link_confidence",
+        "is_final_disposition"
+      ]
+    }
+  },
+  "field_definitions": {
+    "argument_id": "Primary identifier (case_number from oral argument record)",
+    "matter_id": "Stable identifier for combined-docket matters",
+    "resolution_type": "opinion | case_order | 3jx_order | multiple | needs_review | unmatched",
+    "days_to_disposition": "Calendar days from argument to first disposition (null if unresolved)",
+    "link_confidence": "high | medium | review (indicates join quality)"
+  }
+}

@@ -11,6 +11,7 @@ import plotly.graph_objects as go
 from utils.charts import (
     outcome_bar,
     opinions_per_year,
+    avg_word_count_by_year,
     agreement_heatmap,
     bench_diagram,
     authorship_bar,
@@ -62,6 +63,22 @@ class TestOutcomeCharts:
         result = opinions_per_year(df)
         
         assert isinstance(result, go.Figure)
+
+    def test_written_decision_trends_exclude_pre_archive_years(self):
+        df = pd.DataFrame([
+            {"term_year": 1892, "word_count": 100},
+            {"term_year": 2002, "word_count": 200},
+            {"term_year": 2003, "word_count": 300},
+        ])
+
+        opinions = opinions_per_year(df)
+        words = avg_word_count_by_year(df)
+
+        assert list(opinions.data[0].x) == [2002, 2003]
+        assert list(words.data[0].x) == [2002, 2003]
+
+        # The dashboard title must make the written-decision scope explicit.
+        assert "Written Opinion" in words.layout.title.text
 
 
 class TestAgreementHeatmap:

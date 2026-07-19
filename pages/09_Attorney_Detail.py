@@ -19,6 +19,7 @@ import streamlit as st
 
 from footer import add_gavel_glimpse_footer
 from utils.data_loader import load_attorney_statistics, load_oral_arguments
+from utils.attorney_disposition_profile import render_attorney_disposition_profile
 
 
 def format_duration(seconds: int | None) -> str:
@@ -36,28 +37,28 @@ def format_duration(seconds: int | None) -> str:
 def _render_attorney_profile(attorney_name: str) -> None:
     """Render an individual attorney's profile page."""
     attorney_data = load_attorney_statistics()
-    
+
     if not attorney_data or not attorney_data.get("attorney_stats"):
         st.error("Attorney statistics are not available.")
         return
-    
+
     # Find the attorney
     attorney = next(
         (a for a in attorney_data["attorney_stats"] if a["attorney_name"] == attorney_name),
         None
     )
-    
+
     if not attorney:
         st.error(f"Attorney '{attorney_name}' not found.")
         st.markdown('<a href="oral-arguments" target="_self">← Back to Oral Arguments</a>', unsafe_allow_html=True)
         return
-    
+
     # Header
     st.markdown('<a href="oral-arguments" target="_self">← Back to Oral Arguments</a>', unsafe_allow_html=True)
     st.title(attorney_name)
     if attorney["firm"]:
         st.caption(attorney["firm"])
-    
+
     # Key metrics
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Total Arguments", attorney["total_arguments"])
@@ -67,14 +68,14 @@ def _render_attorney_profile(attorney_name: str) -> None:
         "Active Period",
         f"{attorney.get('first_argument_date', '')[:4]} - {attorney.get('last_argument_date', '')[:4]}"
     )
-    
+
     # Side representation breakdown
     st.subheader("Side Representation")
     sides_data = []
     for side, count in attorney["sides"].items():
         if count > 0:
             sides_data.append({"Side": side.capitalize(), "Cases": count})
-    
+
     if sides_data:
         sides_df = pd.DataFrame(sides_data)
         fig_sides = px.pie(
@@ -87,13 +88,13 @@ def _render_attorney_profile(attorney_name: str) -> None:
         st.plotly_chart(fig_sides, width="stretch")
     else:
         st.info("Side information not available.")
-    
+
     # Activity over time
     st.subheader("Arguments Over Time")
     if attorney.get("years_active"):
         year_data = [{"Year": year, "Arguments": count} for year, count in attorney["years_active"].items()]
         year_df = pd.DataFrame(year_data).sort_values("Year")
-        
+
         fig_timeline = px.bar(
             year_df,
             x="Year",
@@ -105,10 +106,16 @@ def _render_attorney_profile(attorney_name: str) -> None:
         st.plotly_chart(fig_timeline, width="stretch")
     else:
         st.info("Timeline data not available.")
-    
+
+    # Disposition outcomes profile (Phase 3)
+    st.divider()
+    render_attorney_disposition_profile(attorney_name)
+
+    st.divider()
+
     # Case list
     st.subheader(f"All {attorney['total_arguments']} Arguments")
-    
+
     # Load full oral arguments data to get case names and dates
     oral_args = load_oral_arguments()
     case_details = []
@@ -123,11 +130,11 @@ def _render_attorney_profile(attorney_name: str) -> None:
                 "Words": case.get("word_count", 0),
                 "Case": f"/case-explorer?case={case_num}"
             })
-    
+
     if case_details:
         cases_df = pd.DataFrame(case_details)
         cases_df = cases_df.sort_values("Argument Date", ascending=False)
-        
+
         st.dataframe(
             cases_df,
             width="stretch",
@@ -167,17 +174,17 @@ else:
         if len(parts) > 1 and parts[-1].rstrip('.') in ['Jr', 'Sr', 'II', 'III', 'IV', 'Esq']:
             return parts[-2] if len(parts) > 2 else parts[-1]
         return parts[-1] if parts else full_name
-    
+
     attorney_names = sorted(
         [a["attorney_name"] for a in attorney_data["attorney_stats"]],
         key=lambda name: (get_last_name(name), name)
     )
-    
+
     # Show landing page or profile
     if attorney_name and attorney_name in attorney_names:
         # Coming from a link - show profile directly
         _render_attorney_profile(attorney_name)
-        
+
         # Add selector at bottom to switch attorneys
         st.divider()
         st.markdown("### View Another Attorney")
@@ -195,13 +202,13 @@ else:
         # Landing page - show selector
         st.title("Attorney Profiles")
         st.markdown(f"Select from **{len(attorney_names):,}** attorneys who have argued before the NH Supreme Court.")
-        
+
         selected_attorney = st.selectbox(
             "Select an attorney to view their profile:",
             [""] + attorney_names,
             index=0
         )
-        
+
         if selected_attorney:
             _render_attorney_profile(selected_attorney)
 

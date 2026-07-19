@@ -13,6 +13,15 @@ from utils.constants import VOTE_COLORS, OUTCOME_COLORS, OUTCOME_LABELS, JUSTICE
 
 NH_BLUE = "#003057"
 NH_GOLD = "#C8960C"
+WRITTEN_DECISION_COVERAGE_START = 2002
+
+
+def _written_decision_coverage(frame: pd.DataFrame) -> pd.DataFrame:
+    """Exclude older decisions embedded in the post-2002 archive from trends."""
+    if "term_year" not in frame.columns:
+        return frame.iloc[0:0]
+    years = pd.to_numeric(frame["term_year"], errors="coerce")
+    return frame.loc[years >= WRITTEN_DECISION_COVERAGE_START].copy()
 
 
 def outcome_bar(df: pd.DataFrame) -> go.Figure:
@@ -21,7 +30,9 @@ def outcome_bar(df: pd.DataFrame) -> go.Figure:
         return go.Figure()
     counts = df["outcome"].value_counts().reset_index()
     counts.columns = ["outcome", "count"]
-    counts["label"] = counts["outcome"].map(lambda x: OUTCOME_LABELS.get(x, x.title()))
+    counts["label"] = counts["outcome"].map(
+        lambda x: OUTCOME_LABELS.get(x, str(x).replace("_", " ").title())
+    )
     counts["color"] = counts["outcome"].map(lambda x: OUTCOME_COLORS.get(x, "#607D8B"))
     fig = px.bar(
         counts,
@@ -40,14 +51,17 @@ def opinions_per_year(df: pd.DataFrame) -> go.Figure:
     """Line chart of opinions per term year."""
     if "term_year" not in df.columns or df.empty:
         return go.Figure()
-    by_year = df.groupby("term_year").size().reset_index(name="count")
+    covered = _written_decision_coverage(df)
+    if covered.empty:
+        return go.Figure()
+    by_year = covered.groupby("term_year").size().reset_index(name="count")
     fig = px.line(
         by_year,
         x="term_year",
         y="count",
         markers=True,
-        labels={"term_year": "Year", "count": "Opinions"},
-        title="Opinions Per Year",
+        labels={"term_year": "Year", "count": "Written Opinions"},
+        title="Written Opinions per Year",
         color_discrete_sequence=[NH_BLUE],
     )
     min_year = int(by_year["term_year"].min())
@@ -148,7 +162,8 @@ def avg_word_count_by_year(df: pd.DataFrame) -> go.Figure:
     if "term_year" not in df.columns or "word_count" not in df.columns or df.empty:
         return go.Figure()
 
-    valid = df[df["term_year"].notna() & df["word_count"].notna()].copy()
+    valid = _written_decision_coverage(df)
+    valid = valid[valid["term_year"].notna() & valid["word_count"].notna()].copy()
     if valid.empty:
         return go.Figure()
 
@@ -168,8 +183,8 @@ def avg_word_count_by_year(df: pd.DataFrame) -> go.Figure:
         x="term_year",
         y="avg_word_count",
         markers=True,
-        labels={"term_year": "Year", "avg_word_count": "Avg Word Count"},
-        title="Average Word Count by Year",
+        labels={"term_year": "Year", "avg_word_count": "Avg Words per Written Opinion"},
+        title="Average Word Count per Written Opinion by Year",
         color_discrete_sequence=[NH_GOLD],
     )
     min_year = int(avg_by_year["term_year"].min())
@@ -221,7 +236,7 @@ def avg_word_count_by_year_per_justice(df: pd.DataFrame) -> go.Figure:
             "avg_word_count": "Avg Word Count",
             "justice_display": "Justice",
         },
-        title="Average Word Count by Year (Each Justice)",
+        title="Average Word Count per Written Opinion by Year (Each Justice)",
     )
     min_year = int(avg_by_justice_year["term_year"].min())
     fig.update_layout(

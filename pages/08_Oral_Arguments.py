@@ -1362,11 +1362,21 @@ def _render_trends_analysis() -> None:
         
         with col6:
             # Duration range chart
-            duration_df = complexity_df[["min_duration", "avg_duration", "max_duration"]].reset_index()
+            duration_df = (
+                complexity_df[["min_duration", "avg_duration", "max_duration"]]
+                .rename(
+                    columns={
+                        "min_duration": "Minimum Duration",
+                        "avg_duration": "Average Duration",
+                        "max_duration": "Maximum Duration",
+                    }
+                )
+                .reset_index()
+            )
             fig_duration = px.bar(
                 duration_df,
                 x="index",
-                y=["min_duration", "avg_duration", "max_duration"],
+                y=["Minimum Duration", "Average Duration", "Maximum Duration"],
                 title="Duration Range by Complexity",
                 labels={"index": "Complexity", "value": "Minutes", "variable": "Duration"},
                 barmode="group"
