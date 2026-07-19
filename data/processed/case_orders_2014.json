@@ -1,12 +1,14 @@
 [
   {
     "case_number": "transcript-instructions",
+    "source_file_key": "transcript-instructions",
+    "docket_numbers": [],
     "citation": null,
     "citation_year": null,
     "citation_seq": null,
     "case_name": "Request a Transcript",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2021-04/transcript-instructions.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\orders\\2014\\transcript-instructions.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/orders/2014/transcript-instructions.pdf",
     "date_argued": null,
     "date_issued": null,
     "days_to_decision": null,
@@ -92,8 +94,84 @@
     "word_count": 455,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-06-13T20:39:46.995759",
+    "parse_timestamp": "2026-07-16T02:03:51.538227",
     "parse_confidence": 0.8,
     "manual_override": false
+  },
+  {
+    "case_number": "2014-0203",
+    "source_file_key": "2014-0203",
+    "docket_numbers": [
+      "2014-0203"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Bill McDonough & a. v. Town of Belmont",
+    "pdf_url": "https://www.nhmunicipal.org/sites/default/files/uploads/court_documents/mcdonough_v-belmont.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/legacy_mirrors/2014/mcdonough_v-belmont.pdf",
+    "date_argued": null,
+    "date_issued": "2015-04-03",
+    "days_to_decision": null,
+    "term_year": 2015,
+    "lower_court": "Superior Court",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "McNamara",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "hicks": {
+        "display_name": "Hicks, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "lynn": {
+        "display_name": "Lynn, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      }
+    },
+    "majority": 3,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 0,
+    "vote_string": "3-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "civil_procedure",
+      "statutory_interpretation",
+      "property",
+      "contract",
+      "tax"
+    ],
+    "rsa_citations": [
+      "RSA 231:49"
+    ],
+    "rsa_primary": "RSA 231:49",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 1252,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-07-17T00:49:23.734067",
+    "parse_confidence": 0.8,
+    "manual_override": false,
+    "source_provenance": "external_mirror_verified_caption",
+    "source_url": "https://www.nhmunicipal.org/court-update/mcdonough-v-town-belmont",
+    "source_notes": "Caption-verified Supreme Court order; court states a formal written opinion is unnecessary."
   }
 ]

@@ -7,15 +7,18 @@ from __future__ import annotations
 import ast
 import base64
 import importlib
+import os
 import re
 import sys
 from datetime import date
 from functools import lru_cache
 from html import escape
 from pathlib import Path
+from typing import Dict, List
 from urllib.parse import quote
 import json
 
+from dotenv import load_dotenv
 import pandas as pd
 import streamlit as st
 
@@ -23,15 +26,16 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 CITATION_OVERRIDES_PATH = ROOT / "data" / "citation_overrides.json"
 
+# Load environment variables for API keys
+load_dotenv(ROOT / ".env")
+
 from utils.constants import APP_NAME, APP_TAGLINE, OUTCOME_COLORS, OUTCOME_LABELS, VOTE_COLORS
 try:
     from utils.data_loader import (
         data_last_updated,
-        load_case_orders,
         load_attorney_statistics,
         load_brief_counsel,
         load_oral_argument,
-        load_oral_arguments,
         load_opinion_text,
         load_opinions,
         load_opinions_json,
@@ -41,11 +45,9 @@ except KeyError:
     sys.modules.pop("utils.data_loader", None)
     _data_loader = importlib.import_module("utils.data_loader")
     data_last_updated = _data_loader.data_last_updated
-    load_case_orders = _data_loader.load_case_orders
     load_attorney_statistics = _data_loader.load_attorney_statistics
     load_brief_counsel = _data_loader.load_brief_counsel
     load_oral_argument = _data_loader.load_oral_argument
-    load_oral_arguments = _data_loader.load_oral_arguments
     load_opinion_text = _data_loader.load_opinion_text
     load_opinions = _data_loader.load_opinions
     load_opinions_json = _data_loader.load_opinions_json
@@ -53,6 +55,17 @@ from utils.charts import bench_diagram
 from utils.justices import normalize_votes_for_bench
 from utils.opinion_search import search as fts_search, get_snippet
 from footer import add_gavel_glimpse_footer
+
+# Chat module imports
+from utils.chat_retriever import (
+    build_retrieval_query,
+    format_context,
+    is_referential_followup,
+    merge_retrieved_cases,
+    retrieve_cases,
+)
+from utils.chat_formatter import format_with_links, render_sources, render_follow_ups
+from utils.chat_provider import generate_chat_response
 
 # Streamlit page config must be declared once in the entrypoint when using st.navigation.
 st.set_page_config(
@@ -83,8 +96,13 @@ def _style_dashboard() -> None:
             padding: 1rem;
             min-height: 132px;
             background: #FFFFFF;
+            /* Streamlit sets headings to a light color in dark mode. These
+               cards intentionally retain a light surface, so reset their
+               inherited foreground color as well. */
+            color: #1F2937;
         }
         .gsa-card h3 {
+            color: #1F2937;
             margin: 0 0 0.35rem 0;
             font-size: 1.12rem;
         }
@@ -567,35 +585,338 @@ def _render_search_result(row: pd.Series) -> None:
     )
 
 
-def _render_description_search(df: pd.DataFrame) -> None:
-    with st.container(border=True):
-        st.subheader("🔍 Find Cases by Description")
-        st.caption("Describe a legal situation in plain language and find related NH Supreme Court opinions.")
-        with st.form("description_search_form"):
-            query = st.text_area(
-                "Case description",
-                placeholder=(
-                    "e.g. police searched a suspect's cell phone without a warrant\n"
-                    "e.g. an employee challenged termination after a personnel board ruling\n"
-                    "e.g. parents disputed alimony, property division, or parenting time"
-                ),
-                label_visibility="collapsed",
-                height=112,
-            )
-            c1, c2 = st.columns([1, 4])
-            with c1:
-                limit = st.slider("Results", min_value=3, max_value=20, value=8)
-            with c2:
-                submitted = st.form_submit_button("🔍 Find Cases")
+# ── Chat helper functions ──────────────────────────────────────────────────────
 
-        if submitted:
-            results = _search_opinions(df, query, limit)
-            if results.empty:
-                st.info("No matching opinions found. Try adding issue words, a statute, or a party type.")
+
+def _hybrid_retrieval_available() -> bool:
+    """Check if hybrid retrieval artifacts are available."""
+    try:
+        return (ROOT / "data" / "retrieval" / "case_documents.parquet").exists()
+    except Exception:
+        return False
+
+
+def _retrieve_via_hybrid(
+    query: str,
+    previous_cases: List[str],
+    num_cases: int,
+) -> tuple[List[Dict], Dict]:
+    """Call hybrid retrieval service and return legacy-shaped case dicts + diagnostics."""
+    try:
+        from utils.retrieval import build_context as _build_context, evidence_to_legacy
+        from utils.retrieval.service import _try_load_service
+    except Exception:
+        return [], {}
+
+    try:
+        service = _try_load_service()
+    except Exception:
+        return [], {}
+    if not service.is_ready():
+        return [], {}
+
+    try:
+        response = service.retrieve(query, previous_cases=tuple(previous_cases or ()), limit=num_cases)
+    except Exception:
+        return [], {}
+
+    cases = [evidence_to_legacy(case) for case in response.cases]
+    diagnostics = {
+        "plan": response.plan,
+        "missing_fields": list(response.missing_fields),
+        "sufficient": response.sufficient,
+        "context": _build_context(response),
+        "fused_trace": response.diagnostics.get("trace", {}),
+        "latency": response.diagnostics.get("latency", {}),
+    }
+    return cases, diagnostics
+
+
+def _try_hybrid_retrieval(query: str, num_cases: int, diagnostics: Dict) -> List[Dict]:
+    """Try hybrid RetrievalService; populate diagnostics dict as side effect. Returns cases or []."""
+    if not _hybrid_retrieval_available():
+        return []
+    cases, diag = _retrieve_via_hybrid(query, [], num_cases)
+    if cases:
+        diagnostics.update(diag)
+    return cases
+
+
+def _ask_generate_follow_ups(retrieved_cases: List[Dict]) -> List[str]:
+    """Generate local follow-up questions from retrieved case names."""
+    case_names = [c.get("name", "") for c in retrieved_cases if c.get("name") and c.get("name") != "Error"]
+    if not case_names:
+        return []
+    primary = case_names[0]
+    second = case_names[1] if len(case_names) > 1 else None
+    questions = [f"What were the key facts in {primary}?"]
+    if second:
+        questions.extend([
+            f"Compare the reasoning in {primary} and {second}.",
+            f"How do the holdings in {primary} and {second} differ?",
+        ])
+    else:
+        questions.extend([
+            f"What rule did {primary} establish?",
+            f"What did the dissent say in {primary}?",
+        ])
+    return questions
+
+
+def _render_description_search(df: pd.DataFrame) -> None:
+    """Render the Ask & Browse widget with AI-powered search."""
+    with st.container(border=True):
+        st.markdown("#### 💬 Ask & Browse")
+        st.caption(
+            "Describe a legal situation or ask a question — AI-powered search "
+            "across NH Supreme Court opinions."
+        )
+
+        # Handle follow-up question flow
+        _pending_followup = st.session_state.pop("_pending_followup_query", None)
+        if _pending_followup:
+            st.session_state["ask_query"] = _pending_followup
+            st.session_state["_auto_ask"] = True
+
+        ask_query = st.text_area(
+            "Ask a question or describe a legal situation",
+            label_visibility="collapsed",
+            placeholder=(
+                "e.g. police searched a suspect's cell phone without a warrant\n"
+                "e.g. What are the landmark cases on free speech in schools?\n"
+                "e.g. Compare specific NH Supreme Court decisions"
+            ),
+            height=120,
+            key="ask_query",
+        )
+
+        col_slider, col_search, col_ask = st.columns([2, 1, 1])
+        n_results = col_slider.slider("Results", 3, 20, 8, key="ask_n")
+        search_clicked = col_search.button("🔍 Search", key="ask_search_btn", use_container_width=True)
+        ask_clicked = col_ask.button("🚀 Ask AI", type="primary", key="ask_ask_btn", use_container_width=True)
+
+        _auto_ask = st.session_state.pop("_auto_ask", False)
+        if (search_clicked or ask_clicked or _auto_ask) and ask_query and len(ask_query.strip()) >= 3:
+            query_text = ask_query.strip()
+
+            referential = is_referential_followup(query_text)
+            retrieval_query = build_retrieval_query(
+                query_text,
+                st.session_state.get("ask_previous_query", ""),
+                st.session_state.get("ask_previous_cases", []),
+            )
+
+            with st.spinner("🔍 Searching cases..."):
+                if search_clicked:
+                    # Simple search - no LLM
+                    fresh_cases = retrieve_cases(
+                        retrieval_query,
+                        source="nh-supreme-court",
+                        top_k=n_results,
+                    )
+                    hybrid_diagnostics = {}
+                else:
+                    # Try hybrid retrieval for Ask AI
+                    hybrid_diagnostics = {}
+                    fresh_cases = _try_hybrid_retrieval(query_text, n_results, hybrid_diagnostics)
+                    if not fresh_cases:
+                        fresh_cases = retrieve_cases(
+                            retrieval_query,
+                            source="nh-supreme-court",
+                            top_k=n_results,
+                        )
+
+                retrieved = merge_retrieved_cases(
+                    fresh_cases,
+                    st.session_state.get("ask_previous_cases", []),
+                    include_previous=referential,
+                    max_cases=n_results * 2,
+                )
+
+            st.session_state["ask_results"] = retrieved
+            st.session_state["ask_selected_case"] = None
+            st.session_state["ask_previous_query"] = query_text
+            st.session_state["ask_previous_cases"] = retrieved
+
+            # Generate AI answer if Ask AI button was clicked
+            if ask_clicked or _auto_ask:
+                if hybrid_diagnostics and hybrid_diagnostics.get("context"):
+                    case_context = hybrid_diagnostics["context"]
+                else:
+                    case_context = format_context(retrieved)
+
+                try:
+                    conversation_history = []
+                    if st.session_state.get("ask_previous_answer"):
+                        conversation_history.append({
+                            "role": "assistant",
+                            "content": st.session_state["ask_previous_answer"]
+                        })
+
+                    response_stream = generate_chat_response(
+                        user_message=query_text,
+                        case_context=case_context,
+                        conversation_history=conversation_history,
+                        stream=True,
+                    )
+
+                    placeholder = st.empty()
+                    chunks = []
+                    if isinstance(response_stream, str):
+                        response_text = response_stream
+                    else:
+                        buf = []
+                        for chunk in response_stream:
+                            if chunk:
+                                buf.append(chunk)
+                                if len(buf) >= 8:
+                                    chunks.extend(buf)
+                                    buf = []
+                                    placeholder.markdown("".join(chunks) + " ▌")
+                        if buf:
+                            chunks.extend(buf)
+                        placeholder.markdown("".join(chunks))
+                        response_text = "".join(chunks)
+
+                    formatted = format_with_links(response_text, retrieved)
+                    st.session_state["ask_answer"] = formatted
+                    st.session_state["ask_previous_answer"] = formatted
+                    st.session_state["ask_follow_ups"] = _ask_generate_follow_ups(retrieved)
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"⚠️ AI error: {e}")
+                    st.session_state.pop("ask_answer", None)
+                    st.session_state.pop("ask_follow_ups", None)
             else:
-                st.markdown(f"**Top {len(results)} matches**")
-                for _, row in results.iterrows():
-                    _render_search_result(row)
+                # Clear answer when doing simple search
+                st.session_state.pop("ask_answer", None)
+                st.session_state.pop("ask_follow_ups", None)
+
+        # ── AI Answer block ──────────────────────────────────────────────
+        if st.session_state.get("ask_answer"):
+            st.markdown("---")
+            st.markdown("### 💬 AI Answer")
+            st.markdown(st.session_state["ask_answer"])
+
+            follow_ups = st.session_state.get("ask_follow_ups", [])
+            if follow_ups:
+                selected = render_follow_ups(follow_ups, key_suffix="ask_answer")
+                if selected:
+                    st.session_state["_pending_followup_query"] = selected
+                    st.rerun()
+
+            retrieved = st.session_state.get("ask_results", [])
+            with st.expander(f"📚 Sources ({len(retrieved)} cases)", expanded=False):
+                render_sources(retrieved, key_suffix="ask_answer")
+
+            st.markdown("---")
+
+        # ── Search results (always shown when ask_results exists) ─────────
+        results = st.session_state.get("ask_results")
+        if results is not None:
+            if not results:
+                st.warning("No matching cases found. Try rephrasing your question.")
+            else:
+                col_list, col_detail = st.columns([2, 3], gap="large")
+
+                with col_list:
+                    st.markdown(f"**{len(results)} result(s)** — click a case to read it")
+                    for rank, res in enumerate(results, 1):
+                        sel_case = st.session_state.get("ask_selected_case")
+                        case_id = res.get("href", "") or res.get("docket_number", "") or res.get("case_number", "") or f"case_{rank}"
+                        is_selected = sel_case == case_id
+
+                        with st.container(border=True):
+                            st.markdown(f"**{rank}. {res.get('name', 'Unknown case')}**")
+                            term = res.get("term", "")
+                            score = res.get("score", 0)
+                            st.caption(f"{term} term · score {score:.3f}")
+
+                            btn_label = "✅ Selected" if is_selected else "View →"
+                            btn_type = "primary" if is_selected else "secondary"
+                            col_btn1, col_btn2 = st.columns(2)
+
+                            with col_btn1:
+                                if st.button(btn_label, key=f"ask_view_{rank}", type=btn_type, use_container_width=True):
+                                    st.session_state["ask_selected_case"] = case_id
+                                    st.rerun()
+
+                            with col_btn2:
+                                case_num = res.get("docket_number", "") or res.get("case_number", "")
+                                if case_num and st.button("Open Case →", key=f"ask_open_{rank}", use_container_width=True):
+                                    st.session_state["_nav_case"] = case_num
+                                    st.switch_page(CASE_EXPLORER_PAGE)
+
+                with col_detail:
+                    sel_case = st.session_state.get("ask_selected_case")
+                    if not sel_case:
+                        st.markdown(
+                            "<div style='height:200px;display:flex;align-items:center;"
+                            "justify-content:center;border:2px dashed #ccc;border-radius:8px;"
+                            "color:#888;font-size:1.1em;'>← Select a case to read it</div>",
+                            unsafe_allow_html=True,
+                        )
+                    else:
+                        # Find the selected case in results, then look up full row
+                        selected_case = next(
+                            (r for r in results if (r.get("href") or r.get("case_number")) == sel_case),
+                            None
+                        )
+
+                        if not selected_case:
+                            st.warning("Could not load case details.")
+                        else:
+                            # Look up full row from dataframe for richer fields
+                            _cn = selected_case.get("docket_number", "") or selected_case.get("href", "")
+                            _full_row = df[df["case_number"].astype(str) == str(_cn)]
+                            _row = _full_row.iloc[0] if not _full_row.empty else None
+
+                            st.subheader(selected_case.get("name", "Unknown Case"))
+                            c1, c2 = st.columns([2, 1])
+                            with c1:
+                                if _row is not None:
+                                    st.markdown(f"**Citation:** {_row.get('citation', '—')}")
+                                    st.markdown(f"**Case Number:** {_row.get('case_number', '—')}")
+                                    _pdf = _row.get("pdf_url", "")
+                                    if _pdf and str(_pdf) not in ("", "nan"):
+                                        st.markdown(f"[View Full Opinion PDF ↗]({_pdf})")
+                                    date_argued = _row.get("date_argued")
+                                    date_issued = _row.get("date_issued")
+                                    if pd.notna(date_argued) and str(date_argued) != "nan":
+                                        st.markdown(f"**Argued:** {str(date_argued)[:10]}")
+                                    if pd.notna(date_issued) and str(date_issued) != "nan":
+                                        st.markdown(f"**Decided:** {str(date_issued)[:10]}")
+                                else:
+                                    st.markdown(f"**Docket:** {selected_case.get('docket_number', '—')}")
+                                    if selected_case.get("year"):
+                                        st.markdown(f"**Year:** {selected_case['year']}")
+
+                                outcome = selected_case.get("outcome", "")
+                                if outcome and outcome not in ("", "Not available"):
+                                    st.markdown(
+                                        f'<span style="background:#003057;color:white;'
+                                        f'padding:4px 12px;border-radius:4px;font-weight:bold;">'
+                                        f'{outcome}</span>',
+                                        unsafe_allow_html=True,
+                                    )
+
+                                if selected_case.get("snippet"):
+                                    st.markdown(f"\n{selected_case['snippet']}")
+                            with c2:
+                                if _row is not None:
+                                    st.markdown(f"**Author:** {_row.get('author_display', '—')}")
+                                    st.markdown(f"**Vote:** {_row.get('vote_string', '—')}")
+                                else:
+                                    st.markdown(f"**Author:** {selected_case.get('author', '—')}")
+
+                            st.divider()
+
+                            if selected_case.get("facts_of_the_case"):
+                                with st.expander("📋 Facts", expanded=True):
+                                    st.write(selected_case["facts_of_the_case"])
+                            if selected_case.get("conclusion"):
+                                with st.expander("⚖️ Holding"):
+                                    st.write(selected_case["conclusion"])
 
 
 def _on_this_day(df: pd.DataFrame, today: date | None = None) -> tuple[pd.Series, pd.DataFrame, bool, str]:
@@ -676,30 +997,12 @@ def _render_on_this_day(df: pd.DataFrame) -> None:
                     unsafe_allow_html=True,
                 )
 
-    st.page_link("pages/01_Opinions.py", label="Explore Opinions")
-
-
 def _render_stat(label: str, value: str) -> None:
     st.markdown(
         f"""
         <div class="gsa-stat">
             <div class="gsa-stat-label">{label}</div>
             <div class="gsa-stat-value">{value}</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-
-def _render_nav_card(title: str, body: str, href: str, label: str, icon: str) -> None:
-    st.markdown(
-        f"""
-        <div class="gsa-card gsa-nav-card">
-            <div>
-                <h3><span class="gsa-card-icon">{icon}</span>{title}</h3>
-                <p>{body}</p>
-            </div>
-            <a class="gsa-card-button" href="{href}" target="_self">{label} →</a>
         </div>
         """,
         unsafe_allow_html=True,
@@ -714,9 +1017,6 @@ def render_dashboard() -> None:
     st.divider()
 
     df = load_opinions()
-    orders_df = load_case_orders()
-    oral_arguments = load_oral_arguments()
-
     if df.empty:
         st.warning(
             "No data loaded yet. Run the data pipeline first:\n\n"
@@ -725,6 +1025,21 @@ def render_dashboard() -> None:
         st.stop()
 
     _render_on_this_day(df)
+
+    st.subheader("Top Issues")
+    all_topics: list[str] = []
+    for topics in df["topics"].dropna():
+        all_topics.extend(_as_list(topics))
+    topic_counts = pd.Series(all_topics).value_counts().head(10)
+    if topic_counts.empty:
+        st.info("Topic tags are not available yet.")
+    else:
+        chips = " ".join(
+            f'<a class="gsa-chip" href="topics?topic={quote(topic)}" target="_self">'
+            f'{topic.replace("_", " ").title()} · {count}</a>'
+            for topic, count in topic_counts.items()
+        )
+        st.markdown(chips, unsafe_allow_html=True)
     st.divider()
 
     _render_description_search(df)
@@ -747,93 +1062,6 @@ def render_dashboard() -> None:
         _render_stat("Unanimous Rate", f"{unanimous_rate}%")
 
     st.caption(f"Last updated: {data_last_updated()} · {divided_count:,} opinions include a dissent")
-
-    st.divider()
-
-    st.subheader("Top Issues")
-    all_topics: list[str] = []
-    for topics in df["topics"].dropna():
-        all_topics.extend(_as_list(topics))
-    topic_counts = pd.Series(all_topics).value_counts().head(10)
-    if topic_counts.empty:
-        st.info("Topic tags are not available yet.")
-    else:
-        chips = " ".join(
-            f'<a class="gsa-chip" href="topics?topic={quote(topic)}" target="_self">'
-            f'{topic.replace("_", " ").title()} · {count}</a>'
-            for topic, count in topic_counts.items()
-        )
-        st.markdown(chips, unsafe_allow_html=True)
-    st.page_link("pages/04_Topics.py", label="Explore issue areas")
-
-    st.divider()
-
-    st.subheader("Explore the Court")
-    r1c1, r1c2 = st.columns(2)
-    with r1c1:
-        _render_nav_card(
-            "Opinions",
-            "Search and filter published decisions by term, outcome, author, RSA citation, and case name.",
-            "opinions",
-            "Open Opinions",
-            "⚖️",
-        )
-    with r1c2:
-        _render_nav_card(
-            "Justices",
-            "Compare authorship, voting participation, unanimity, and dissent patterns across the bench.",
-            "justices",
-            "Open Justices",
-            "👥",
-        )
-
-    r2c1, r2c2 = st.columns(2)
-    with r2c1:
-        _render_nav_card(
-            "Analysis",
-            "Review term-by-term trends, outcome mix, reversal rates, voting patterns, and decision timing.",
-            "analysis",
-            "Open Analysis",
-            "📊",
-        )
-    with r2c2:
-        order_count = len(orders_df) if not orders_df.empty else 0
-        _render_nav_card(
-            "Case Orders and 3JX",
-            f"Browse {order_count:,} orders, sentence-review dispositions, and non-opinion court activity.",
-            "case-orders",
-            "Open Case Orders",
-            "📋",
-        )
-
-    r3c1, r3c2 = st.columns(2)
-    with r3c1:
-        _render_nav_card(
-            "Oral Arguments",
-            f"Search {len(oral_arguments):,} machine-generated transcripts and explore 2026 argument statistics.",
-            "oral-arguments",
-            "Open Oral Arguments",
-            "🎙️",
-        )
-    with r3c2:
-        _render_nav_card(
-            "Trial Courts",
-            "See lower-court sources, trial judges, appeal pathways, and which cases return for remand.",
-            "trial-courts",
-            "Open Trial Courts",
-            "🏛️",
-        )
-    r4c1, r4c2 = st.columns(2)
-    with r4c1:
-        _render_nav_card(
-            "Case Explorer",
-            "Use the focused single-opinion reader once you already know which case you want to inspect.",
-            "case-explorer",
-            "Open Case Explorer",
-            "🔎",
-        )
-    with r4c2:
-        st.empty()
 
     add_gavel_glimpse_footer()
 
@@ -859,7 +1087,7 @@ def render_case_explorer() -> None:
             )
             st.stop()
 
-        requested_case = st.query_params.get("case", "")
+        requested_case = st.session_state.pop("_nav_case", "") or st.query_params.get("case", "")
         requested_row = df[df["case_number"].astype(str) == str(requested_case)].head(1)
 
         available_years = sorted(df["term_year"].dropna().unique().astype(int), reverse=True)
@@ -1156,4 +1384,3 @@ navigation = st.navigation(
 )
 
 navigation.run()
-

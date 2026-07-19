@@ -112,6 +112,68 @@ def load_opinions() -> pd.DataFrame:
 
 
 @st.cache_data(ttl=3600)
+def _load_docket_crosswalk_cached(path_str: str, source_mtime: float) -> pd.DataFrame:
+    """Return generated and manually reviewed docket aliases by source file key."""
+    _ = source_mtime
+    return pd.read_csv(path_str, dtype=str).fillna("")
+
+
+def load_docket_crosswalk() -> pd.DataFrame:
+    path = DATA_DIR / "case_docket_crosswalk.csv"
+    if not path.exists():
+        return pd.DataFrame(columns=["source_file_key", "source_type", "docket_numbers", "source_url"])
+    return _load_docket_crosswalk_cached(str(path), os.path.getmtime(path))
+
+
+@st.cache_data(ttl=3600)
+def _load_csv_as_strings_cached(path_str: str, source_mtime: float) -> pd.DataFrame:
+    _ = source_mtime
+    return pd.read_csv(path_str, dtype=str).fillna("")
+
+
+def load_official_pdf_manifest_audit() -> pd.DataFrame:
+    """Return official PDFs that the court lists but the local corpus lacks."""
+    path = DATA_DIR / "official_pdf_manifest_audit.csv"
+    if not path.exists():
+        return pd.DataFrame(
+            columns=["source_type", "listed_case_number", "listed_case_name", "pdf_url", "audit_status"]
+        )
+    return _load_csv_as_strings_cached(str(path), os.path.getmtime(path))
+
+
+def load_unmatched_argument_review_queue() -> pd.DataFrame:
+    """Return historical oral arguments lacking a published PDF disposition."""
+    path = DATA_DIR / "unmatched_argument_review_queue.csv"
+    if not path.exists():
+        return pd.DataFrame()
+    return _load_csv_as_strings_cached(str(path), os.path.getmtime(path))
+
+
+def load_pending_oral_argument_cases() -> pd.DataFrame:
+    """Return docket-specific cases known to be awaiting disposition after argument."""
+    path = BASE_DIR / "data" / "pending_oral_argument_cases.csv"
+    if not path.exists():
+        return pd.DataFrame(columns=["case_number", "case_name", "argument_date", "notes"])
+    return _load_csv_as_strings_cached(str(path), os.path.getmtime(path))
+
+
+def load_unmatched_disposition_reconciliation() -> pd.DataFrame:
+    """Return exact-docket research evidence for unresolved arguments."""
+    path = DATA_DIR / "unmatched_disposition_reconciliation.csv"
+    if not path.exists():
+        return pd.DataFrame()
+    return _load_csv_as_strings_cached(str(path), os.path.getmtime(path))
+
+
+def load_orphan_official_pdf_recovery_candidates() -> pd.DataFrame:
+    """Return caption-verified checks of standard official PDF candidates."""
+    path = DATA_DIR / "orphan_official_pdf_recovery_candidates.csv"
+    if not path.exists():
+        return pd.DataFrame()
+    return _load_csv_as_strings_cached(str(path), os.path.getmtime(path))
+
+
+@st.cache_data(ttl=3600)
 def load_opinions_json() -> list[dict]:
     """Load all opinions as raw JSON (includes nested vote dicts)."""
     json_path = DATA_DIR / "all_opinions.json"
@@ -420,3 +482,63 @@ def data_last_updated() -> str:
         return "Unknown"
     mtime = os.path.getmtime(csv_path)
     return pd.Timestamp(mtime, unit="s").strftime("%B %d, %Y %I:%M %p")
+
+
+@st.cache_data(ttl=3600)
+def _load_argument_dispositions_cached(path_str: str, source_mtime: float) -> pd.DataFrame:
+    """Load argument dispositions fact table, keyed by source modification time."""
+    _ = source_mtime
+    return pd.read_csv(
+        path_str,
+        parse_dates=["argument_date", "disposition_date"],
+        low_memory=False,
+    )
+
+
+def load_argument_dispositions() -> pd.DataFrame:
+    """Load the canonical argument dispositions fact table."""
+    path = DATA_DIR / "argument_dispositions.csv"
+    if not path.exists():
+        return pd.DataFrame()
+    return _load_argument_dispositions_cached(str(path), os.path.getmtime(path))
+
+
+@st.cache_data(ttl=3600)
+def _load_simple_csv_cached(path_str: str, source_mtime: float) -> pd.DataFrame:
+    """Load a simple CSV file, keyed by source modification time."""
+    _ = source_mtime
+    return pd.read_csv(path_str)
+
+
+def load_argument_participants() -> pd.DataFrame:
+    """Load the argument participants bridge table."""
+    path = DATA_DIR / "argument_participants.csv"
+    if not path.exists():
+        return pd.DataFrame()
+    return _load_simple_csv_cached(str(path), os.path.getmtime(path))
+
+
+def load_argument_topics() -> pd.DataFrame:
+    """Load the argument topics bridge table."""
+    path = DATA_DIR / "argument_topics.csv"
+    if not path.exists():
+        return pd.DataFrame()
+    return _load_simple_csv_cached(str(path), os.path.getmtime(path))
+
+
+def load_argument_disposition_links() -> pd.DataFrame:
+    """Load the argument disposition links bridge table."""
+    path = DATA_DIR / "argument_disposition_links.csv"
+    if not path.exists():
+        return pd.DataFrame()
+    return _load_simple_csv_cached(str(path), os.path.getmtime(path))
+
+
+@st.cache_data(ttl=3600)
+def load_argument_dispositions_metadata() -> dict:
+    """Load the argument dispositions metadata and data dictionary."""
+    path = DATA_DIR / "argument_dispositions_metadata.json"
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8") as fh:
+        return json.load(fh)

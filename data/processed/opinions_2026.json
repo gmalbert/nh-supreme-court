@@ -1,12 +1,112 @@
 [
   {
+    "case_number": "2025-0019",
+    "source_file_key": "2026026murray",
+    "docket_numbers": [
+      "2025-0019"
+    ],
+    "citation": "2026 N.H. 26",
+    "citation_year": 2026,
+    "citation_seq": 26,
+    "case_name": "Appeal of Murray",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/2026026murray.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026026murray.pdf",
+    "date_argued": "2026-01-08",
+    "date_issued": "2026-07-15",
+    "days_to_decision": 188,
+    "term_year": 2026,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": null,
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "reversed_and_remanded",
+    "author": "gould",
+    "author_display": "Gould, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and DONOVAN and COUNTWAY, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and DONOVAN and COUNTWAY, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and DONOVAN and COUNTWAY, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "administrative_law",
+      "property"
+    ],
+    "rsa_citations": [
+      "RSA 676:3, I",
+      "RSA 679:9, II",
+      "RSA 677:6",
+      "RSA 679:9, I",
+      "RSA 677:4",
+      "RSA 677:16",
+      "RSA 541",
+      "RSA 679:15",
+      "RSA 541:13"
+    ],
+    "rsa_primary": "RSA 676:3, I",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "The petitioner, Christine Murray (the abutter), appeals an order of\nthe Housing Appeals Board (HAB) affirming a decision of the Town of\nHampstead Zoning Board of Adjustment (ZBA) granting a special exception to\nthe respondents, Beth and Scott Spicer (the applicants), permitting them to\nbuild a second-floor addition to their lakefront cottage across the road from the\nabutter’s home. We reverse and remand.",
+    "word_count": 1730,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-07-16T02:03:20.694453",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
     "case_number": "2025-0048",
+    "source_file_key": "2026025srebro",
+    "docket_numbers": [
+      "2025-0048"
+    ],
     "citation": "2026 N.H. 25",
     "citation_year": 2026,
     "citation_seq": 25,
     "case_name": "Moffat v. Srebro",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/2026025srebro.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026025srebro.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026025srebro.pdf",
     "date_argued": "2026-02-10",
     "date_issued": "2026-07-07",
     "days_to_decision": 147,
@@ -97,18 +197,22 @@
     "word_count": 3790,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:43.857947",
+    "parse_timestamp": "2026-07-16T02:03:21.280620",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0304",
+    "source_file_key": "2026024montgomery",
+    "docket_numbers": [
+      "2024-0304"
+    ],
     "citation": "2026 N.H. 24",
     "citation_year": 2026,
     "citation_seq": 24,
     "case_name": "State v. Montgomery",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/2026024montgomery.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026024montgomery.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026024montgomery.pdf",
     "date_argued": "2025-10-15",
     "date_issued": "2026-06-11",
     "days_to_decision": 239,
@@ -189,18 +293,22 @@
     "word_count": 6581,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:45.334409",
+    "parse_timestamp": "2026-07-16T02:03:22.938345",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2025-0527",
+    "source_file_key": "2026023-t-m",
+    "docket_numbers": [
+      "2025-0527"
+    ],
     "citation": "2026 N.H. 23",
     "citation_year": 2026,
     "citation_seq": 23,
     "case_name": "In re Guardianship of T.M.",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/2026023-t-m.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026023-t-m.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026023-t-m.pdf",
     "date_argued": null,
     "date_issued": "2026-06-10",
     "days_to_decision": null,
@@ -282,18 +390,22 @@
     "word_count": 2214,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:46.004003",
+    "parse_timestamp": "2026-07-16T02:03:23.559342",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0245",
+    "source_file_key": "2026022cherry",
+    "docket_numbers": [
+      "2024-0245"
+    ],
     "citation": "2026 N.H. 22",
     "citation_year": 2026,
     "citation_seq": 22,
     "case_name": "State v. Cherry",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/2026022cherry.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026022cherry.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026022cherry.pdf",
     "date_argued": "2025-11-06",
     "date_issued": "2026-06-03",
     "days_to_decision": 209,
@@ -371,18 +483,22 @@
     "word_count": 6839,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:47.721788",
+    "parse_timestamp": "2026-07-16T02:03:27.045535",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2025-0344",
+    "source_file_key": "2026021statepolice",
+    "docket_numbers": [
+      "2025-0344"
+    ],
     "citation": "2026 N.H. 21",
     "citation_year": 2026,
     "citation_seq": 21,
     "case_name": "Appeal of N.H. Div. of State Police",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-05/2026021statepolice.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026021statepolice.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026021statepolice.pdf",
     "date_argued": "2026-03-10",
     "date_issued": "2026-05-15",
     "days_to_decision": 66,
@@ -465,18 +581,22 @@
     "word_count": 2218,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:48.489687",
+    "parse_timestamp": "2026-07-16T02:03:27.419031",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2025-0064",
+    "source_file_key": "2026020metro",
+    "docket_numbers": [
+      "2025-0064"
+    ],
     "citation": "2026 N.H. 20",
     "citation_year": 2026,
     "citation_seq": 20,
     "case_name": "Petition of Metro Treatment of N.H.",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026020metro.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026020metro.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026020metro.pdf",
     "date_argued": "2026-02-10",
     "date_issued": "2026-04-29",
     "days_to_decision": 78,
@@ -554,18 +674,123 @@
     "word_count": 2445,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:49.145462",
+    "parse_timestamp": "2026-07-16T02:03:28.036418",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0028",
+    "source_file_key": "2026018freese",
+    "docket_numbers": [
+      "2025-0028"
+    ],
+    "citation": "2026 N.H. 18",
+    "citation_year": 2026,
+    "citation_seq": 18,
+    "case_name": "State v. Freese",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026018freese.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026018freese.pdf",
+    "date_argued": "2026-03-10",
+    "date_issued": "2026-04-24",
+    "days_to_decision": 45,
+    "term_year": 2026,
+    "lower_court": "Superior Court (Delker, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Delker",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "reversed_and_remanded",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": "MACDONALD, C.J., sat for oral argument but subsequently disqualified himself and did not participate in further review of the case."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "competency",
+      "family_law",
+      "statutory_interpretation",
+      "constitutional"
+    ],
+    "rsa_citations": [
+      "RSA 135:17-a",
+      "RSA 135:17-a, IV",
+      "RSA 135:17-",
+      "RSA 135:17-a, V",
+      "RSA 135-C:34",
+      "RSA 135:17-a, I",
+      "RSA 135:17-a, III",
+      "RSA 171-B:2",
+      "RSA 135:17-a, VI"
+    ],
+    "rsa_primary": "RSA 135:17-a",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "Through this interlocutory appeal, the defendant, Donald Freese,\nchallenges the order of the Superior Court (Delker, J.) reinstating indictments\nagainst him that had been dismissed after the court found the defendant not\ncompetent to stand trial and subsequently found that he had not regained\ncompetency after twelve months. See RSA 135:17-a (2021). We reverse and\nremand.\nI. Background",
+    "word_count": 1526,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-07-16T02:03:31.091319",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2025-0178",
+    "source_file_key": "2026019home",
+    "docket_numbers": [
+      "2025-0178"
+    ],
     "citation": "2026 N.H. 19",
     "citation_year": 2026,
     "citation_seq": 19,
     "case_name": "In the Matter of Liquidation of Home Ins. Co.",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026019home.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026019home.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026019home.pdf",
     "date_argued": "2026-01-27",
     "date_issued": "2026-04-24",
     "days_to_decision": 87,
@@ -654,115 +879,22 @@
     "word_count": 3006,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:49.922441",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0028",
-    "citation": "2026 N.H. 18",
-    "citation_year": 2026,
-    "citation_seq": 18,
-    "case_name": "State v. Freese",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026018freese.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026018freese.pdf",
-    "date_argued": "2026-03-10",
-    "date_issued": "2026-04-24",
-    "days_to_decision": 45,
-    "term_year": 2026,
-    "lower_court": "Superior Court (Delker, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Delker",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "reversed_and_remanded",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": "MACDONALD, C.J., sat for oral argument but subsequently disqualified himself and did not participate in further review of the case."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "competency",
-      "family_law",
-      "statutory_interpretation",
-      "constitutional"
-    ],
-    "rsa_citations": [
-      "RSA 135:17-a",
-      "RSA 135:17-a, IV",
-      "RSA 135:17-",
-      "RSA 135:17-a, V",
-      "RSA 135-C:34",
-      "RSA 135:17-a, I",
-      "RSA 135:17-a, III",
-      "RSA 171-B:2",
-      "RSA 135:17-a, VI"
-    ],
-    "rsa_primary": "RSA 135:17-a",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "Through this interlocutory appeal, the defendant, Donald Freese,\nchallenges the order of the Superior Court (Delker, J.) reinstating indictments\nagainst him that had been dismissed after the court found the defendant not\ncompetent to stand trial and subsequently found that he had not regained\ncompetency after twelve months. See RSA 135:17-a (2021). We reverse and\nremand.\nI. Background",
-    "word_count": 1526,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:50.371411",
+    "parse_timestamp": "2026-07-16T02:03:31.693487",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0715",
+    "source_file_key": "2026017stansfield",
+    "docket_numbers": [
+      "2024-0715"
+    ],
     "citation": "2026 N.H. 17",
     "citation_year": 2026,
     "citation_seq": 17,
     "case_name": "In the Matter of Stansfield & Patti",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026017stansfield.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026017stansfield.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026017stansfield.pdf",
     "date_argued": null,
     "date_issued": "2026-04-23",
     "days_to_decision": null,
@@ -849,18 +981,22 @@
     "word_count": 1903,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:50.989695",
+    "parse_timestamp": "2026-07-16T02:03:32.207383",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0648",
+    "source_file_key": "2026016hanover",
+    "docket_numbers": [
+      "2024-0648"
+    ],
     "citation": "2026 N.H. 16",
     "citation_year": 2026,
     "citation_seq": 16,
     "case_name": "Town of Hanover v. Valley News",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026016hanover.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026016hanover.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026016hanover.pdf",
     "date_argued": "2025-11-20",
     "date_issued": "2026-04-15",
     "days_to_decision": 146,
@@ -937,18 +1073,22 @@
     "word_count": 3012,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:51.807847",
+    "parse_timestamp": "2026-07-16T02:03:34.650744",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0509",
+    "source_file_key": "2026015rosen",
+    "docket_numbers": [
+      "2024-0509"
+    ],
     "citation": "2026 N.H. 15",
     "citation_year": 2026,
     "citation_seq": 15,
     "case_name": "State v. Rosen",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026015rosen.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026015rosen.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026015rosen.pdf",
     "date_argued": "2025-12-18",
     "date_issued": "2026-04-09",
     "days_to_decision": 112,
@@ -1021,18 +1161,22 @@
     "word_count": 432,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:53.112606",
+    "parse_timestamp": "2026-07-16T02:03:35.872241",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2023-0664",
+    "source_file_key": "2026014stewart",
+    "docket_numbers": [
+      "2023-0664"
+    ],
     "citation": "2026 N.H. 14",
     "citation_year": 2026,
     "citation_seq": 14,
     "case_name": "State v. Stewart",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026014stewart.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026014stewart.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026014stewart.pdf",
     "date_argued": "2025-09-30",
     "date_issued": "2026-04-07",
     "days_to_decision": 189,
@@ -1081,13 +1225,19 @@
         "role": "associate_justice",
         "vote": "not_participating",
         "note": null
+      },
+      "nadeau": {
+        "display_name": "Nadeau, C.J.",
+        "role": "specially_assigned",
+        "vote": "majority",
+        "note": "COUNTWAY, J., and NADEAU, J., retired superior court chief justice, specially assigned under RSA 490:3, II, concurred"
       }
     },
-    "majority": 2,
+    "majority": 3,
     "dissent": 0,
     "concur_separate": 2,
     "not_participating": 2,
-    "vote_string": "2-0",
+    "vote_string": "3-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": true,
@@ -1121,18 +1271,22 @@
     "word_count": 6103,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:54.640129",
+    "parse_timestamp": "2026-07-16T02:03:36.526869",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0560",
+    "source_file_key": "2026012rayster",
+    "docket_numbers": [
+      "2024-0560"
+    ],
     "citation": "2026 N.H. 12",
     "citation_year": 2026,
     "citation_seq": 12,
     "case_name": "J&C Properties v. Rayster Realty",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026012rayster.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026012rayster.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026012rayster.pdf",
     "date_argued": "2025-11-12",
     "date_issued": "2026-04-02",
     "days_to_decision": 141,
@@ -1210,18 +1364,22 @@
     "word_count": 4504,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:55.726672",
+    "parse_timestamp": "2026-07-16T02:03:37.072119",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0155",
+    "source_file_key": "2026013whitehead",
+    "docket_numbers": [
+      "2024-0155"
+    ],
     "citation": "2026 N.H. 13",
     "citation_year": 2026,
     "citation_seq": 13,
     "case_name": "In the Matter of Whitehead & Whitehead",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026013whitehead.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026013whitehead.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026013whitehead.pdf",
     "date_argued": "2025-09-30",
     "date_issued": "2026-04-02",
     "days_to_decision": 184,
@@ -1307,18 +1465,22 @@
     "word_count": 4159,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:56.970972",
+    "parse_timestamp": "2026-07-16T02:03:37.625450",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0034",
+    "source_file_key": "2026011clegg",
+    "docket_numbers": [
+      "2024-0034"
+    ],
     "citation": "2026 N.H. 11",
     "citation_year": 2026,
     "citation_seq": 11,
     "case_name": "State v. Clegg",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-03/2026011clegg.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026011clegg.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026011clegg.pdf",
     "date_argued": "2025-11-12",
     "date_issued": "2026-03-17",
     "days_to_decision": 125,
@@ -1398,18 +1560,22 @@
     "word_count": 5355,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:58.317584",
+    "parse_timestamp": "2026-07-16T02:03:40.365954",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0625",
+    "source_file_key": "2026010brousseau",
+    "docket_numbers": [
+      "2024-0625"
+    ],
     "citation": "2026 N.H. 10",
     "citation_year": 2026,
     "citation_seq": 10,
     "case_name": "State v. Brousseau",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-03/2026010brousseau.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026010brousseau.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026010brousseau.pdf",
     "date_argued": "2026-02-12",
     "date_issued": "2026-03-13",
     "days_to_decision": 29,
@@ -1493,106 +1659,22 @@
     "word_count": 3255,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:59.147236",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2023-0562",
-    "citation": "2026 N.H. 8",
-    "citation_year": 2026,
-    "citation_seq": 8,
-    "case_name": "State v. Wells",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-03/2026008wells.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026008wells.pdf",
-    "date_argued": "2025-09-16",
-    "date_issued": "2026-03-03",
-    "days_to_decision": 168,
-    "term_year": 2026,
-    "lower_court": "Superior Court (St. Hilaire, J.) on one misdemeanor count of simple",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "St. Hilaire",
-    "case_type": "criminal",
-    "appeal_type": "standard",
-    "outcome": "dismissed",
-    "author": "countway",
-    "author_display": "Countway, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and DONOVAN and GOULD, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and DONOVAN and GOULD, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and DONOVAN and GOULD, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "evidence"
-    ],
-    "rsa_citations": [
-      "RSA 631:2-a, I",
-      "RSA 642:2"
-    ],
-    "rsa_primary": "RSA 631:2-a, I",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [
-      "de_novo",
-      "plain_error"
-    ],
-    "summary_paragraph": "The defendant, Joshua Wells, appeals his convictions following a\njury trial in Superior Court (St. Hilaire, J.) on one misdemeanor count of simple\nassault, see RSA 631:2-a, I(a) (2016), and one misdemeanor count of resisting\narrest, see RSA 642:2 (2016). The defendant argues that the evidence was\ninsufficient to support his convictions. We affirm.",
-    "word_count": 3018,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:03:59.911623",
+    "parse_timestamp": "2026-07-16T02:03:41.590311",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2025-0077",
+    "source_file_key": "2026009martin",
+    "docket_numbers": [
+      "2025-0077"
+    ],
     "citation": "2026 N.H. 9",
     "citation_year": 2026,
     "citation_seq": 9,
     "case_name": "Martin v. Far Echo Harbor Club",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-03/2026009martin.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026009martin.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026009martin.pdf",
     "date_argued": null,
     "date_issued": "2026-03-03",
     "days_to_decision": null,
@@ -1669,18 +1751,115 @@
     "word_count": 4454,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:04:01.029821",
+    "parse_timestamp": "2026-07-16T02:03:42.132825",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2023-0562",
+    "source_file_key": "2026008wells",
+    "docket_numbers": [
+      "2023-0562"
+    ],
+    "citation": "2026 N.H. 8",
+    "citation_year": 2026,
+    "citation_seq": 8,
+    "case_name": "State v. Wells",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-03/2026008wells.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026008wells.pdf",
+    "date_argued": "2025-09-16",
+    "date_issued": "2026-03-03",
+    "days_to_decision": 168,
+    "term_year": 2026,
+    "lower_court": "Superior Court (St. Hilaire, J.) on one misdemeanor count of simple",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "St. Hilaire",
+    "case_type": "criminal",
+    "appeal_type": "standard",
+    "outcome": "dismissed",
+    "author": "countway",
+    "author_display": "Countway, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and DONOVAN and GOULD, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and DONOVAN and GOULD, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and DONOVAN and GOULD, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "evidence"
+    ],
+    "rsa_citations": [
+      "RSA 631:2-a, I",
+      "RSA 642:2"
+    ],
+    "rsa_primary": "RSA 631:2-a, I",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [
+      "de_novo",
+      "plain_error"
+    ],
+    "summary_paragraph": "The defendant, Joshua Wells, appeals his convictions following a\njury trial in Superior Court (St. Hilaire, J.) on one misdemeanor count of simple\nassault, see RSA 631:2-a, I(a) (2016), and one misdemeanor count of resisting\narrest, see RSA 642:2 (2016). The defendant argues that the evidence was\ninsufficient to support his convictions. We affirm.",
+    "word_count": 3018,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-07-16T02:03:44.606405",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2026007levier",
+    "source_file_key": "2026007levier",
+    "docket_numbers": [
+      "2023-0690",
+      "2024-0183"
+    ],
     "citation": "2026 N.H. 7",
     "citation_year": 2026,
     "citation_seq": 7,
     "case_name": "State v. Levier",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-02/2026007levier.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026007levier.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026007levier.pdf",
     "date_argued": "2025-10-09",
     "date_issued": "2026-02-13",
     "days_to_decision": 127,
@@ -1762,18 +1941,22 @@
     "word_count": 4187,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:04:02.091307",
+    "parse_timestamp": "2026-07-16T02:03:45.093349",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0294",
+    "source_file_key": "2026006hodgdon",
+    "docket_numbers": [
+      "2024-0294"
+    ],
     "citation": "2026 N.H. 6",
     "citation_year": 2026,
     "citation_seq": 6,
     "case_name": "State v. Hodgdon",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-02/2026006hodgdon.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026006hodgdon.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026006hodgdon.pdf",
     "date_argued": "2025-10-09",
     "date_issued": "2026-02-10",
     "days_to_decision": 124,
@@ -1848,18 +2031,22 @@
     "word_count": 3609,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:04:03.033002",
+    "parse_timestamp": "2026-07-16T02:03:45.711823",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2023-0498",
+    "source_file_key": "2026005owen",
+    "docket_numbers": [
+      "2023-0498"
+    ],
     "citation": "2026 N.H. 5",
     "citation_year": 2026,
     "citation_seq": 5,
     "case_name": "State v. Owen",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-02/2026005owen.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026005owen.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026005owen.pdf",
     "date_argued": "2025-11-06",
     "date_issued": "2026-02-10",
     "days_to_decision": 96,
@@ -1938,18 +2125,22 @@
     "word_count": 5401,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:04:04.527839",
+    "parse_timestamp": "2026-07-16T02:03:48.402104",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2025-0140",
+    "source_file_key": "2026004collision",
+    "docket_numbers": [
+      "2025-0140"
+    ],
     "citation": "2026 N.H. 4",
     "citation_year": 2026,
     "citation_seq": 4,
     "case_name": "Collision Commc’ns v. Nokia Solutions and Networks OY",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-02/2026004collision.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026004collision.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026004collision.pdf",
     "date_argued": "2025-11-06",
     "date_issued": "2026-02-05",
     "days_to_decision": 91,
@@ -2025,18 +2216,22 @@
     "word_count": 2809,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:04:05.248227",
+    "parse_timestamp": "2026-07-16T02:03:48.812754",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0321",
+    "source_file_key": "2026003price",
+    "docket_numbers": [
+      "2024-0321"
+    ],
     "citation": "2026 N.H. 3",
     "citation_year": 2026,
     "citation_seq": 3,
     "case_name": "State v. Price",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-01/2026003price.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026003price.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026003price.pdf",
     "date_argued": "2025-11-12",
     "date_issued": "2026-01-30",
     "days_to_decision": 79,
@@ -2120,18 +2315,22 @@
     "word_count": 2858,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:04:06.069737",
+    "parse_timestamp": "2026-07-16T02:03:49.339767",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0429",
+    "source_file_key": "2026002rivas",
+    "docket_numbers": [
+      "2024-0429"
+    ],
     "citation": "2026 N.H. 2",
     "citation_year": 2026,
     "citation_seq": 2,
     "case_name": "Rivas v. Ciecko",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-01/2026002rivas.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026002rivas.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026002rivas.pdf",
     "date_argued": "2025-10-09",
     "date_issued": "2026-01-27",
     "days_to_decision": 110,
@@ -2208,18 +2407,22 @@
     "word_count": 4834,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:04:07.334994",
+    "parse_timestamp": "2026-07-16T02:03:49.913662",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
     "case_number": "2024-0636",
+    "source_file_key": "2026001martell",
+    "docket_numbers": [
+      "2024-0636"
+    ],
     "citation": "2024 N.H. 5",
     "citation_year": 2024,
     "citation_seq": 5,
     "case_name": "Martell v. Gold Bess Shooting Club, LLC",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-01/2026001martell.pdf",
-    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2026\\2026001martell.pdf",
+    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2026/2026001martell.pdf",
     "date_argued": "2025-11-12",
     "date_issued": "2026-01-23",
     "days_to_decision": 72,
@@ -2307,7 +2510,7 @@
     "word_count": 3003,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-11T01:04:08.252225",
+    "parse_timestamp": "2026-07-16T02:03:50.596527",
     "parse_confidence": 0.8,
     "manual_override": false
   }

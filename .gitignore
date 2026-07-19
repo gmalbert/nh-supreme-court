@@ -84,6 +84,19 @@ scripts/*
 !scripts/extract_attorney_stats.py
 !scripts/extract_speaker_stats.py
 !scripts/generate_enhanced_stats.py
+!scripts/build_docket_crosswalk.py
+!scripts/audit_official_pdf_manifest.py
+!scripts/ingest_supplemental_pdfs.py
+!scripts/ingest_manifest_gaps.py
+!scripts/build_unmatched_argument_review_queue.py
+!scripts/reconcile_unmatched_dispositions.py
+!scripts/ingest_legacy_opinion_mirrors.py
+!scripts/recover_orphan_official_pdfs.py
+!scripts/build_dense_index.py
+!scripts/build_nh_retrieval_corpus.py
+!scripts/build_retrieval_corpus.py
+!scripts/build_transcript_index.py
+!scripts/evaluate_retrieval.py
 update_pipeline.ps1
 
 *.code-workspace
@@ -93,6 +106,12 @@ outputs/
 .commandcode/
 data/processed/case_counsel_sample_100_review.csv
 data/processed/case_counsel_sample_100.json
+
+# One-off implementation handoff bundles; the maintained source lives at root.
+chat-implementation-files/
+chat-implementation-files.zip
+docs/chat-documentation-transfer/
+docs/chat-documentation-transfer.zip
 
 # macOS network temp files
 .smbdelete*

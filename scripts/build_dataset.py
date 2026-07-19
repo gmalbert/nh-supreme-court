@@ -23,10 +23,12 @@ sys.path.insert(0, str(ROOT))
 PROCESSED_DIR = ROOT / "data" / "processed"
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 CASE_TYPE_OVERRIDES_PATH = ROOT / "data" / "case_type_manual_overrides.csv"
+VERIFIED_3JX_ORDERS_PATH = ROOT / "data" / "verified_3jx_orders.csv"
+VERIFIED_CASE_ORDERS_PATH = ROOT / "data" / "verified_case_orders.csv"
 
 # Columns to flatten from nested dicts for the CSV export
 FLAT_COLUMNS = [
-    "case_number", "citation", "citation_year", "citation_seq",
+    "case_number", "source_file_key", "docket_numbers", "citation", "citation_year", "citation_seq",
     "case_name", "pdf_url", "date_argued", "date_issued",
     "days_to_decision", "term_year", "lower_court", "lower_court_type", "lower_court_judge",
     "case_type", "appeal_type", "outcome", "author", "author_display",
@@ -494,6 +496,13 @@ def main():
 
     # ── Case orders ───────────────────────────────────────────────────────────
     orders = load_year_jsons("case_orders_*.json")
+    # External repositories occasionally retain official Supreme Court orders
+    # that are missing from the current court archive.  Keep reviewed records
+    # in a durable source file so a later archive scrape cannot erase them.
+    if VERIFIED_CASE_ORDERS_PATH.exists():
+        verified_orders = pd.read_csv(VERIFIED_CASE_ORDERS_PATH, dtype=str).fillna("").to_dict("records")
+        orders.extend(verified_orders)
+        print(f"  Loaded {len(verified_orders)} verified case-order recoveries")
     if orders:
         # Drop known non-case placeholders from case orders.
         excluded_case_numbers = {
@@ -508,6 +517,12 @@ def main():
         removed = before - len(orders)
         if removed:
             print(f"  Removed {removed} non-case order rows")
+
+        deduped_orders = {}
+        for order in orders:
+            key = (str(order.get("case_number", "")).strip(), str(order.get("pdf_url", "")).strip())
+            deduped_orders[key] = order
+        orders = list(deduped_orders.values())
 
         override_map = sync_case_type_overrides(orders)
         overridden = 0
@@ -558,8 +573,17 @@ def main():
         if year_recs:
             print(f"  Loaded {len(year_recs)} 3JX records from {jx_path.name}")
             jx3_records.extend(year_recs)
+    # The current court year pages are not a complete historical 3JX archive.
+    # Keep exact-docket, official-PDF recoveries in a reviewed source file so
+    # a later scrape cannot erase them.
+    if VERIFIED_3JX_ORDERS_PATH.exists():
+        verified = pd.read_csv(VERIFIED_3JX_ORDERS_PATH, dtype=str).fillna("")
+        verified_records = verified.to_dict("records")
+        print(f"  Loaded {len(verified_records)} verified 3JX recoveries")
+        jx3_records.extend(verified_records)
     if jx3_records:
         jx_df = pd.DataFrame(jx3_records)
+        jx_df = jx_df.drop_duplicates(["case_number", "pdf_url"], keep="last")
         # Normalize 3JX records so key display fields are populated.
         if "case_name" in jx_df.columns:
             name_series = jx_df["case_name"].fillna("").astype(str)

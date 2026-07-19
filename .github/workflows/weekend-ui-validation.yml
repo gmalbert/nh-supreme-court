@@ -17,10 +17,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.13"
 
@@ -32,8 +32,31 @@ jobs:
       - name: Install Playwright browser
         run: python -m playwright install --with-deps chromium
 
-      - name: Validate oral-argument data
-        run: python scripts/refresh_oral_arguments.py --check --archive-root .archive-not-present
+      - name: Validate committed oral-argument data
+        run: |
+          # The complete transcript archive is generated locally and is not part
+          # of the Git checkout.  Validate the two committed, deployable indexes
+          # here; full artifact validation runs where that archive is available.
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data_dir = Path("data/processed")
+          arguments = json.loads((data_dir / "oral_arguments.json").read_text(encoding="utf-8"))
+          stats = json.loads((data_dir / "oral_argument_stats.json").read_text(encoding="utf-8"))
+          required = {
+              "case_number", "argument_date", "duration_seconds", "word_count", "words_per_minute"
+          }
+
+          assert isinstance(arguments, list) and arguments, "oral_arguments.json must be a non-empty array"
+          assert isinstance(stats, list), "oral_argument_stats.json must be an array"
+          assert all(isinstance(row, dict) and set(row) == required for row in stats), (
+              "oral_argument_stats.json has an invalid public schema"
+          )
+          assert {str(row.get("case_number", "")) for row in stats} == {
+              str(row.get("case_number", "")) for row in arguments
+          }, "oral_argument_stats.json docket coverage is stale"
+          PY
 
       - name: Run unit tests
         run: python -m unittest discover -s tests -v

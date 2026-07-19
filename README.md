@@ -33,6 +33,7 @@ Search machine-generated oral-argument transcripts from 2015 to present, read in
 - **Enhanced visualizations**: Interactive charts for temporal trends, complexity distributions, case type breakdowns, and firm-attorney networks.
 - **Export capabilities**: Download filtered argument data and attorney/firm statistics to CSV.
 - **Opinion links from arguments**: Direct links from oral argument records to written opinions.
+- **Ask & Browse**: Search New Hampshire Supreme Court opinions in plain language, with an optional AI answer grounded in the retrieved case records. See [`docs/CHAT_PROVIDERS.md`](docs/CHAT_PROVIDERS.md) for local provider and key configuration.
 
 ### Justices
 Look up individual justices to see their role on the court, their writing history, and their voting patterns.

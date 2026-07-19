@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT))
 
 from utils.constants import APP_NAME, OUTCOME_COLORS, OUTCOME_LABELS
 from utils.data_loader import load_opinions, load_topic_taxonomy, data_last_updated
+from utils.topic_disposition_profile import render_topic_disposition_profile
 from footer import add_gavel_glimpse_footer
 
 
@@ -178,6 +179,13 @@ with tab1:
                 )
                 fig_trend.update_layout(plot_bgcolor="white")
                 st.plotly_chart(fig_trend, width="stretch")
+            
+            # Disposition profile for single topic (Phase 3)
+            if len(selected_topics) == 1:
+                st.divider()
+                topic_key = selected_topics[0]
+                topic_label = taxonomy.get(topic_key, {}).get("label", topic_key.replace("_", " ").title())
+                render_topic_disposition_profile(topic_label)
 
 # ── Tab 2: RSA Tracker ─────────────────────────────────────────────────────────
 with tab2:
