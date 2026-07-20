@@ -45,6 +45,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           playwright install chromium
+
+      - name: Install R2 sync client
+        run: python -m pip install awscli
       
       - name: Run opinion scraper
         id: scrape_opinions
@@ -82,6 +85,23 @@ jobs:
           if [ $? -ne 0 ]; then
             echo "scrape_orders_failed=true" >> $GITHUB_OUTPUT
           fi
+
+      - name: Restore raw PDFs from Cloudflare R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+        run: |
+          set -euo pipefail
+          R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          mkdir -p data/raw/pdfs
+          aws s3 sync \
+            "s3://${R2_BUCKET}/pdfs" \
+            data/raw/pdfs \
+            --endpoint-url "${R2_ENDPOINT}" \
+            --no-progress
       
       - name: Download new PDFs
         id: download_pdfs
@@ -115,6 +135,23 @@ jobs:
           if [ $? -ne 0 ]; then
             echo "download_orders_failed=true" >> $GITHUB_OUTPUT
           fi
+
+      - name: Persist raw PDFs to Cloudflare R2
+        if: always()
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+        run: |
+          set -euo pipefail
+          R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          aws s3 sync \
+            data/raw/pdfs \
+            "s3://${R2_BUCKET}/pdfs" \
+            --endpoint-url "${R2_ENDPOINT}" \
+            --no-progress
       
       - name: Parse opinions
         id: parse_opinions
