@@ -51,8 +51,25 @@ class OralArgumentHelperTests(unittest.TestCase):
         )
 
     def test_reviewed_roster_captions_override_transcript_openings(self):
-        data_dir = Path(__file__).resolve().parents[1] / "data" / "processed"
-        records = {record["case_number"]: record for record in build_index(data_dir / "oral_arguments")}
+        # The per-case transcript archive is intentionally gitignored, so this
+        # regression test must not depend on the developer-only local copy.
+        with tempfile.TemporaryDirectory() as tmp:
+            source_dir = Path(tmp)
+            for case_number, case_name in (
+                ("2013-0670", "Good Morning"),
+                ("2020-0264", "The Matter Before The Court Is SK Versus JM"),
+            ):
+                (source_dir / f"{case_number}.json").write_text(
+                    json.dumps(
+                        {
+                            "case_number": case_number,
+                            "case_name": case_name,
+                            "argument_date": "2020-01-15",
+                        }
+                    ),
+                    encoding="utf-8",
+                )
+            records = {record["case_number"]: record for record in build_index(source_dir)}
         self.assertEqual(records["2013-0670"]["case_name"], "State of New Hampshire v. Richard Cooley, III")
         self.assertEqual(records["2020-0264"]["case_name"], "S.K. v. J.M.")
 
