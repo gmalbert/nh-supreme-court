@@ -92,6 +92,9 @@ scripts/*
 !scripts/reconcile_unmatched_dispositions.py
 !scripts/ingest_legacy_opinion_mirrors.py
 !scripts/parse_opinions.py
+!scripts/scrape_index.py
+!scripts/scrape_orders_index.py
+!scripts/download_pdfs.py
 !scripts/recover_orphan_official_pdfs.py
 !scripts/build_dense_index.py
 !scripts/build_nh_retrieval_corpus.py
