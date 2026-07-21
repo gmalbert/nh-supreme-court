@@ -1,0 +1,27 @@
+{
+  "refresh_timestamp": "2026-07-21T01:07:24Z",
+  "workflow_run_id": "29792054915",
+  "workflow_run_number": "11",
+  "triggered_by": "workflow_dispatch",
+  "steps": {
+    "scrape_opinions": "success",
+    "download_pdfs": "success",
+    "parse_opinions": "success",
+    "build_dataset": "success",
+    "refresh_oral_args": "success",
+    "validate": "success"
+  },
+  "files_changed": [
+    "data/processed/3jx_orders.csv",
+    "data/processed/all_opinions.json",
+    "data/processed/case_docket_crosswalk.csv",
+    "data/processed/case_orders.csv",
+    "data/processed/case_orders_2026.json",
+    "data/processed/official_pdf_manifest_audit.csv",
+    "data/processed/opinions_2014.json",
+    "data/processed/opinions_2017.json",
+    "data/processed/opinions_2018.json",
+    "data/processed/opinions_2026.json",
+    "data/processed/unmatched_argument_review_queue.csv"
+  ]
+}

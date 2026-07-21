@@ -8940,5 +8940,69 @@
     "source_provenance": "external_mirror_verified_caption",
     "source_url": "https://law.justia.com/cases/new-hampshire/supreme-court/2016/2014-0662.html",
     "source_notes": "Legacy court URL absent from current inventory; docket-specific mirror PDF requires caption verification."
+  },
+  {
+    "case_number": "2014-0504",
+    "source_file_key": "2014-0504",
+    "docket_numbers": [
+      "2014-0504"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Douglas Gibson v. Granite State Electric Company, Inc.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2021-08/20140504.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/supplemental/2014/20140504.pdf",
+    "date_argued": null,
+    "date_issued": "2015-05-13",
+    "days_to_decision": null,
+    "term_year": 2015,
+    "lower_court": "Superior Court",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Vaughan",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": null,
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "hicks": {
+        "display_name": "Hicks, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "lynn": {
+        "display_name": "Lynn, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 0,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "N/A",
+    "is_unanimous": false,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "civil_procedure",
+      "evidence"
+    ],
+    "rsa_citations": [
+      "RSA 516:29-b"
+    ],
+    "rsa_primary": "RSA 516:29-b",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 923,
+    "opinion_type": "3jx_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-07-21T01:07:13.527044",
+    "parse_confidence": 0.8,
+    "manual_override": false
   }
 ]
