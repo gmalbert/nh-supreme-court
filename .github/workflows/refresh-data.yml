@@ -19,6 +19,10 @@ on:
         type: boolean
         default: false
 
+concurrency:
+  group: refresh-data-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
   issues: write
@@ -352,7 +356,20 @@ jobs:
           - Workflow: ${{ github.workflow }} #${{ github.run_number }}"
           
           git commit -m "$COMMIT_MSG"
-          git push
+
+          for attempt in 1 2 3; do
+            if git pull --rebase origin "$GITHUB_REF_NAME" && \
+              git push origin "HEAD:$GITHUB_REF_NAME"; then
+              exit 0
+            fi
+
+            git rebase --abort || true
+            echo "Push attempt $attempt failed; retrying after a short delay..."
+            sleep 5
+          done
+
+          echo "Unable to push generated data after three attempts."
+          exit 1
       
       - name: Create failure issue
         if: |
