@@ -317,7 +317,9 @@ jobs:
           git config --local user.name "github-actions[bot]"
           
           git add data/processed/
-          git add download_log.txt
+          if [ -f download_log.txt ]; then
+            git add download_log.txt
+          fi
           
           COMMIT_MSG="Update opinion data - $(date +%Y-%m-%d)"
           
