@@ -96,12 +96,30 @@ jobs:
         run: |
           set -euo pipefail
           R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
-          mkdir -p data/raw/pdfs
-          aws s3 sync \
-            "s3://${R2_BUCKET}/pdfs" \
-            data/raw/pdfs \
-            --endpoint-url "${R2_ENDPOINT}" \
-            --no-progress
+          YEAR_ARGS="${{ github.event.inputs.years }}"
+          if [ "${{ github.event.inputs.historical_backfill }}" = "true" ]; then
+            YEAR_ARGS=$(seq 2002 $(date +%Y))
+          elif [ -z "$YEAR_ARGS" ]; then
+            CURRENT_YEAR=$(date +%Y)
+            YEAR_ARGS="$((CURRENT_YEAR - 3)) $((CURRENT_YEAR - 2)) $((CURRENT_YEAR - 1)) $CURRENT_YEAR"
+          fi
+
+          echo "Restoring PDF archive years: $YEAR_ARGS"
+          for YEAR in $YEAR_ARGS; do
+            aws s3 sync \
+              "s3://${R2_BUCKET}/pdfs/${YEAR}" \
+              "data/raw/pdfs/${YEAR}" \
+              --endpoint-url "${R2_ENDPOINT}" \
+              --no-progress
+
+            if [ "$YEAR" -ge 2014 ]; then
+              aws s3 sync \
+                "s3://${R2_BUCKET}/pdfs/orders/${YEAR}" \
+                "data/raw/pdfs/orders/${YEAR}" \
+                --endpoint-url "${R2_ENDPOINT}" \
+                --no-progress
+            fi
+          done
       
       - name: Download new PDFs
         id: download_pdfs

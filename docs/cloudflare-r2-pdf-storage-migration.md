@@ -15,7 +15,7 @@ GitHub repository
   - indexes and processed datasets
 
 GitHub Actions runner
-  - restores PDFs from R2
+  - restores only the PDFs needed for the selected refresh years from R2
   - scrapes current indexes
   - downloads only PDFs missing locally
   - parses PDFs
@@ -174,7 +174,7 @@ After the existing dependency installation step, add:
         run: python -m pip install awscli
 ```
 
-### Restore the persistent PDF archive
+### Restore PDFs for the selected refresh years
 
 Add this step after the scraper steps and before `Download new PDFs`:
 
@@ -189,15 +189,33 @@ Add this step after the scraper steps and before `Download new PDFs`:
         run: |
           set -euo pipefail
           R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
-          mkdir -p data/raw/pdfs
-          aws s3 sync \
-            "s3://${R2_BUCKET}/pdfs" \
-            data/raw/pdfs \
-            --endpoint-url "${R2_ENDPOINT}" \
-            --no-progress
+          YEAR_ARGS="${{ github.event.inputs.years }}"
+          if [ "${{ github.event.inputs.historical_backfill }}" = "true" ]; then
+            YEAR_ARGS=$(seq 2002 $(date +%Y))
+          elif [ -z "$YEAR_ARGS" ]; then
+            CURRENT_YEAR=$(date +%Y)
+            YEAR_ARGS="$((CURRENT_YEAR - 3)) $((CURRENT_YEAR - 2)) $((CURRENT_YEAR - 1)) $CURRENT_YEAR"
+          fi
+
+          echo "Restoring PDF archive years: $YEAR_ARGS"
+          for YEAR in $YEAR_ARGS; do
+            aws s3 sync \
+              "s3://${R2_BUCKET}/pdfs/${YEAR}" \
+              "data/raw/pdfs/${YEAR}" \
+              --endpoint-url "${R2_ENDPOINT}" \
+              --no-progress
+
+            if [ "$YEAR" -ge 2014 ]; then
+              aws s3 sync \
+                "s3://${R2_BUCKET}/pdfs/orders/${YEAR}" \
+                "data/raw/pdfs/orders/${YEAR}" \
+                --endpoint-url "${R2_ENDPOINT}" \
+                --no-progress
+            fi
+          done
 ```
 
-After this step, the existing downloader will naturally skip PDFs restored from R2 because its current local-file check is already idempotent.
+The default run restores the current year plus the prior three years. A manually supplied `years` value restores only those years; `historical_backfill=true` restores the full archive. The existing downloader will naturally skip PDFs restored from R2 because its current local-file check is already idempotent.
 
 ### Upload new PDFs after downloading
 
@@ -266,4 +284,3 @@ If the R2 integration fails:
 3. Keep the official `pdf_url` links and processed datasets unchanged.
 
 The application will continue to function because it does not depend on local PDFs at runtime.
-
