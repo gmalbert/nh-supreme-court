@@ -35,6 +35,21 @@ CHAT_PROVIDER = "opencode"
 OPENCODE_API_KEY = "..."
 ```
 
+## Retained backup: OpenRouter
+
+The OpenRouter adapter in `utils/openrouter_chat.py` provides access to any
+model available through OpenRouter's OpenAI-compatible API. To use it:
+
+```toml
+CHAT_PROVIDER = "openrouter"
+OPENROUTER_API_KEY = "sk-or-v1-..."
+
+# Optional: override the default model (google/gemini-2.5-flash)
+OPENROUTER_MODEL = "anthropic/claude-3.5-haiku"
+```
+
+The adapter sends `HTTP-Referer` and `X-Title` headers for OpenRouter ranking.
+
 Restart Streamlit after changing providers. Switching providers does not alter
 retrieval, source cards, navigation, conversation state, or response formatting.
 
@@ -43,6 +58,7 @@ retrieval, source cards, navigation, conversation state, or response formatting.
 - `utils/chat_provider.py` — explicit provider router
 - `utils/gemini_chat.py` — native Gemini adapter
 - `utils/opencode_chat.py` — retained OpenCode Go adapter
+- `utils/openrouter_chat.py` — OpenRouter adapter (any model via OpenAI-compatible API)
 - `cases.py` — home-page Ask & Browse UI, retrieval orchestration, and streaming UI
 
 ## Changing the Gemini model

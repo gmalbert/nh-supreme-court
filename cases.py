@@ -604,12 +604,12 @@ def _retrieve_via_hybrid(
     """Call hybrid retrieval service and return legacy-shaped case dicts + diagnostics."""
     try:
         from utils.retrieval import build_context as _build_context, evidence_to_legacy
-        from utils.retrieval.service import _try_load_service
+        from utils.retrieval.service import get_service_for_session
     except Exception:
         return [], {}
 
     try:
-        service = _try_load_service()
+        service = get_service_for_session()
     except Exception:
         return [], {}
     if not service.is_ready():
@@ -905,7 +905,7 @@ def _render_description_search(df: pd.DataFrame) -> None:
                             with c2:
                                 if _row is not None:
                                     st.markdown(f"**Author:** {_row.get('author_display', '—')}")
-                                    st.markdown(f"**Vote:** {_row.get('vote_string', '—')}")
+                                    st.markdown(f"**Vote:** {_display_or_dash(_row.get('vote_string'))}")
                                 else:
                                     st.markdown(f"**Author:** {selected_case.get('author', '—')}")
 
@@ -1215,14 +1215,14 @@ def render_case_explorer() -> None:
 
     with col2:
         author_display = case_row.get("author_display", "")
-        vote_str = case_row.get("vote_string", "")
+        vote_str = _display_or_dash(case_row.get("vote_string"))
         if author_display and str(author_display) != "nan":
             st.markdown("**Opinion Author**")
             st.markdown(
                 f"<div style='font-size:2rem;font-weight:700;line-height:1.2;margin-bottom:0.6rem;'>{author_display}</div>",
                 unsafe_allow_html=True,
             )
-        if vote_str and str(vote_str) != "nan":
+        if vote_str and vote_str != "—":
             st.markdown("**Vote**")
             st.markdown(
                 f"<div style='font-size:2rem;font-weight:700;line-height:1.2;margin-bottom:0.8rem;'>{vote_str}</div>",
@@ -1360,6 +1360,15 @@ ABOUT_PAGE = st.Page("pages/06_About.py", title="About", icon="ℹ️", url_path
 # Detail pages (accessed via links, not shown in main navigation)
 ATTORNEY_DETAIL_PAGE = st.Page("pages/09_Attorney_Detail.py", title="Attorney Profile", icon="⚖️", url_path="attorney-profile")
 FIRM_DETAIL_PAGE = st.Page("pages/10_Firm_Detail.py", title="Firm Profile", icon="🏢", url_path="firm-profile")
+
+# Pre-warm the hybrid retrieval service so the TF-IDF index is built
+# once at startup instead of blocking the first "Ask AI" click.
+if _hybrid_retrieval_available():
+    try:
+        from utils.retrieval.service import get_service_for_session
+        get_service_for_session()
+    except Exception:
+        pass
 
 navigation = st.navigation(
     {

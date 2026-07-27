@@ -475,7 +475,7 @@ def to_flat_csv(records: list[dict], out_path: Path):
         rows.append(row)
     df = pd.DataFrame(rows, columns=FLAT_COLUMNS)
     df.to_csv(out_path, index=False, encoding="utf-8-sig")
-    print(f"  Saved CSV → {out_path} ({len(df)} rows)")
+    print(f"  Saved CSV -> {out_path} ({len(df)} rows)")
     return df
 
 
@@ -558,7 +558,7 @@ def main():
         ]
         review_path = PROCESSED_DIR / "case_type_inference_review.csv"
         pd.DataFrame(review_rows).to_csv(review_path, index=False, encoding="utf-8-sig")
-        print(f"  Saved review CSV → {review_path} ({len(review_rows)} rows)")
+        print(f"  Saved review CSV -> {review_path} ({len(review_rows)} rows)")
 
         to_flat_csv(orders, PROCESSED_DIR / "case_orders.csv")
     else:
@@ -600,7 +600,7 @@ def main():
 
         jx_out = PROCESSED_DIR / "3jx_orders.csv"
         jx_df.to_csv(jx_out, index=False, encoding="utf-8-sig")
-        print(f"  Saved CSV → {jx_out} ({len(jx_df)} rows)")
+        print(f"  Saved CSV -> {jx_out} ({len(jx_df)} rows)")
     else:
         print("  No 3JX records found — run scrape_3jx.py first")
 

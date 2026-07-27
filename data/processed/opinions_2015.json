@@ -23,8 +23,8 @@
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "vacated",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -37,13 +37,25 @@
         "role": "chief_justice",
         "vote": "majority",
         "note": "HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, and LYNN, JJ., concurred."
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "2-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -124,18 +136,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -212,8 +236,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -227,6 +251,12 @@
         "vote": "majority",
         "note": "HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -234,11 +264,11 @@
         "note": "HICKS, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -289,8 +319,8 @@
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -304,18 +334,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -376,13 +418,25 @@
         "role": "chief_justice",
         "vote": "majority",
         "note": null
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and CONBOY, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and CONBOY, JJ., concurred."
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "2-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -441,8 +495,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -456,18 +510,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -529,13 +595,25 @@
         "role": "chief_justice",
         "vote": "not_participating",
         "note": null
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "CONBOY, J., and VAUGHAN, J., retired superior court justice, specially assigned under RSA 490:3, concurred."
       }
     },
-    "majority": 1,
+    "majority": 2,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "1-0",
+    "not_participating": 2,
+    "vote_string": "2-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -602,6 +680,12 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -609,11 +693,11 @@
         "note": "DALIANIS, C.J., and HICKS and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -660,8 +744,8 @@
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "dismissed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -675,18 +759,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and LYNN and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and LYNN and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and LYNN and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 1,
-    "vote_string": "2-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -754,20 +850,32 @@
         "display_name": "Hicks, J.",
         "role": "associate_justice",
         "vote": "majority",
-        "note": null
+        "note": "DALIANIS, C.J., and HICKS and CONBOY, JJ., concurred."
       },
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
         "vote": "not_participating",
         "note": null
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and CONBOY, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and CONBOY, JJ., concurred."
       }
     },
-    "majority": 1,
+    "majority": 3,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 1,
-    "vote_string": "1-0",
+    "vote_string": "3-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -916,8 +1024,8 @@
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -931,18 +1039,30 @@
         "vote": "majority",
         "note": "CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 1,
-    "vote_string": "2-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -994,8 +1114,8 @@
     "case_type": null,
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -1009,18 +1129,30 @@
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -1061,8 +1193,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -1075,13 +1207,25 @@
         "role": "chief_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS and LYNN, JJ., concurred."
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and LYNN, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "2-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -1142,8 +1286,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "vacated",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -1156,14 +1300,20 @@
         "role": "chief_justice",
         "vote": "not_participating",
         "note": null
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 0,
+    "majority": 1,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 2,
-    "vote_string": "N/A",
-    "is_unanimous": false,
+    "vote_string": "1-0",
+    "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -1297,18 +1447,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -1384,6 +1546,18 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -1391,11 +1565,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -1459,6 +1633,18 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -1466,11 +1652,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -1550,6 +1736,18 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -1557,11 +1755,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -1623,6 +1821,18 @@
         "vote": "dissent",
         "note": "LYNN, J., concurred in part, and dissented in part."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, and CONBOY, JJ., concurred"
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, and CONBOY, JJ., concurred"
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -1630,11 +1840,11 @@
         "note": null
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 1,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "2-1",
+    "vote_string": "4-1",
     "is_unanimous": false,
     "has_dissent": true,
     "has_separate_concurrence": false,
@@ -1684,8 +1894,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "reversed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -1698,13 +1908,19 @@
         "role": "chief_justice",
         "vote": "not_participating",
         "note": null
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 1,
+    "majority": 2,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 1,
-    "vote_string": "1-0",
+    "vote_string": "2-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -1797,18 +2013,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -1863,8 +2091,8 @@
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -1878,18 +2106,30 @@
         "vote": "not_participating",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 1,
-    "vote_string": "2-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -1946,8 +2186,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "reversed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -1961,18 +2201,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -2027,8 +2279,8 @@
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -2042,18 +2294,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -2116,6 +2380,18 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -2123,11 +2399,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -2191,18 +2467,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -2280,18 +2568,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -2350,8 +2650,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "remanded",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -2365,18 +2665,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and LYNN and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and LYNN and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and LYNN and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 1,
-    "vote_string": "2-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -2437,18 +2749,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -2506,8 +2830,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "reversed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -2521,18 +2845,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -2594,8 +2930,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": null,
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -2609,18 +2945,30 @@
         "vote": "dissent",
         "note": "LYNN, J., with whom BASSETT, J., joined, dissented."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, J., concurred"
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "dissent",
         "note": "BASSETT, J., joined, dissented."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 1,
+    "majority": 3,
     "dissent": 2,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "1-2",
+    "vote_string": "3-2",
     "is_unanimous": false,
     "has_dissent": true,
     "has_separate_concurrence": false,
@@ -2689,18 +3037,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -2775,6 +3135,18 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -2782,11 +3154,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -2842,8 +3214,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "reversed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -2857,18 +3229,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -2939,18 +3323,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -3013,18 +3409,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -3093,6 +3501,18 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -3100,11 +3520,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -3238,18 +3658,36 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -3300,8 +3738,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": null,
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -3314,14 +3752,20 @@
         "role": "chief_justice",
         "vote": "not_participating",
         "note": null
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 0,
+    "majority": 1,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 2,
-    "vote_string": "N/A",
-    "is_unanimous": false,
+    "vote_string": "1-0",
+    "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -3364,8 +3808,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -3379,18 +3823,30 @@
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -3441,8 +3897,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -3456,18 +3912,30 @@
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -3533,18 +4001,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -3617,13 +4097,25 @@
         "role": "chief_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY and LYNN, JJ., concurred."
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY and LYNN, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY and LYNN, JJ., concurred."
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "2-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -3680,8 +4172,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "dismissed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -3695,18 +4187,30 @@
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -3757,8 +4261,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "vacated",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -3772,18 +4276,30 @@
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -3853,18 +4369,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -3933,6 +4461,18 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -3940,11 +4480,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -4011,18 +4551,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -4076,8 +4628,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -4091,18 +4643,30 @@
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -4161,8 +4725,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -4176,18 +4740,30 @@
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -4238,8 +4814,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "reversed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -4253,18 +4829,30 @@
         "vote": "majority",
         "note": "CONBOY, LYNN, and BASSETT, JJ., concurred"
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "CONBOY, LYNN, and BASSETT, JJ., concurred"
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "CONBOY, LYNN, and BASSETT, JJ., concurred"
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 1,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "2-1",
+    "vote_string": "4-1",
     "is_unanimous": false,
     "has_dissent": true,
     "has_separate_concurrence": false,
@@ -4380,13 +4968,55 @@
         "role": "chief_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "broderick": {
+        "display_name": "Broderick, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "duggan": {
+        "display_name": "Duggan, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "brock": {
+        "display_name": "Brock, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "nadeau": {
+        "display_name": "Nadeau, C.J.",
+        "role": "specially_assigned",
+        "vote": "not_participating",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "3-0",
+    "not_participating": 11,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -4453,18 +5083,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -4515,8 +5157,8 @@
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -4530,18 +5172,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -4605,6 +5259,24 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY and LYNN, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -4612,11 +5284,11 @@
         "note": null
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "2-0",
+    "not_participating": 2,
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -4688,18 +5360,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -4751,8 +5435,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -4766,18 +5450,30 @@
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -4846,18 +5542,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -4928,18 +5636,36 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -5002,20 +5728,32 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and BASSETT, JJ., concurred"
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS and BASSETT, JJ., concurred"
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "dissent",
+        "note": "CONBOY, J., dissented."
       }
     },
-    "majority": 3,
-    "dissent": 0,
+    "majority": 4,
+    "dissent": 1,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
-    "is_unanimous": true,
-    "has_dissent": false,
+    "vote_string": "4-1",
+    "is_unanimous": false,
+    "has_dissent": true,
     "has_separate_concurrence": false,
     "topics": [
       "criminal",
@@ -5161,13 +5899,31 @@
         "role": "chief_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY and LYNN, JJ., concurred."
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY and LYNN, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY and LYNN, JJ., concurred."
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "2-0",
+    "not_participating": 1,
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -5220,8 +5976,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -5235,18 +5991,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -5298,8 +6066,8 @@
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -5313,18 +6081,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -5388,6 +6168,24 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -5395,11 +6193,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -5470,6 +6268,24 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -5477,11 +6293,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -5546,18 +6362,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -5628,6 +6456,24 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -5635,11 +6481,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -5795,18 +6641,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -5855,8 +6713,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -5870,18 +6728,30 @@
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -5931,8 +6801,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": null,
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -5946,18 +6816,36 @@
         "vote": "dissent",
         "note": "LYNN, J., with whom DALIANIS, C.J., joined, dissented."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "dissent",
+        "note": "LYNN, J., with whom DALIANIS, C.J., joined, dissented."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "BASSETT, J., and ARNOLD, J., retired superior court justice, specially assigned under RSA 490:3, concurred"
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 1,
-    "dissent": 1,
+    "majority": 2,
+    "dissent": 2,
     "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "1-1",
+    "not_participating": 2,
+    "vote_string": "2-2",
     "is_unanimous": false,
     "has_dissent": true,
     "has_separate_concurrence": false,
@@ -6127,18 +7015,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -6186,8 +7086,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -6201,18 +7101,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -6261,8 +7173,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "reversed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -6276,18 +7188,30 @@
         "vote": "majority",
         "note": "CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 1,
-    "vote_string": "2-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -6338,8 +7262,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -6353,18 +7277,30 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -6425,18 +7361,30 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 0,
-    "vote_string": "3-0",
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -6500,6 +7448,24 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -6507,11 +7473,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -6576,6 +7542,24 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -6583,11 +7567,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -6724,6 +7708,24 @@
         "vote": "dissent",
         "note": "LYNN, J., with whom CONBOY, J., joined, concurred in part and dissented in part."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, J., concurred"
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "dissent",
+        "note": "CONBOY, J., joined, concurred in part and dissented in part."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -6731,11 +7733,11 @@
         "note": null
       }
     },
-    "majority": 2,
-    "dissent": 1,
+    "majority": 3,
+    "dissent": 2,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "2-1",
+    "not_participating": 1,
+    "vote_string": "3-2",
     "is_unanimous": false,
     "has_dissent": true,
     "has_separate_concurrence": false,
@@ -6804,18 +7806,36 @@
         "vote": "majority",
         "note": null
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -6869,8 +7889,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -6884,18 +7904,36 @@
         "vote": "majority",
         "note": "CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "2-0",
+    "not_participating": 2,
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -6961,18 +7999,36 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -7045,18 +8101,30 @@
         "vote": "concur_separate",
         "note": "LYNN, J., concurred specially."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY and BASSETT, JJ., concurred"
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY and BASSETT, JJ., concurred"
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY and BASSETT, JJ., concurred"
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 1,
     "not_participating": 0,
-    "vote_string": "2-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": true,
@@ -7117,13 +8185,31 @@
         "role": "chief_justice",
         "vote": "majority",
         "note": null
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and CONBOY, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and CONBOY, JJ., concurred."
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "2-0",
+    "not_participating": 1,
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -7208,8 +8294,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -7223,18 +8309,30 @@
         "vote": "majority",
         "note": "CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
     "not_participating": 1,
-    "vote_string": "2-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -7303,6 +8401,24 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -7310,11 +8426,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -7394,6 +8510,24 @@
         "vote": "dissent",
         "note": "LYNN, J., dissented."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and CONBOY, JJ., concurred"
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and CONBOY, JJ., concurred"
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -7401,11 +8535,11 @@
         "note": null
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 1,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "2-1",
+    "not_participating": 1,
+    "vote_string": "4-1",
     "is_unanimous": false,
     "has_dissent": true,
     "has_separate_concurrence": false,
@@ -7468,18 +8602,36 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -7548,18 +8700,36 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -7619,8 +8789,8 @@
     "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "remanded",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -7634,18 +8804,36 @@
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -7691,8 +8879,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "dalianis",
+    "author_display": "Dalianis, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -7706,18 +8894,36 @@
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -7793,26 +8999,44 @@
         "display_name": "Hicks, J.",
         "role": "associate_justice",
         "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
       },
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
         "vote": "majority",
-        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
       },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
-        "note": null
+        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Dalianis, C.J., and Hicks, Conboy, Lynn, and Bassett, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -7954,6 +9178,24 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY and LYNN, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -7961,11 +9203,11 @@
         "note": null
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "2-0",
+    "not_participating": 2,
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -8015,8 +9257,8 @@
     "case_type": "family/domestic",
     "appeal_type": "standard",
     "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -8030,18 +9272,36 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -8101,6 +9361,24 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
@@ -8108,11 +9386,11 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -8185,18 +9463,36 @@
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "galway": {
+        "display_name": "Galway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and CONBOY, LYNN, and BASSETT, JJ., concurred."
       }
     },
-    "majority": 3,
+    "majority": 5,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 0,
-    "vote_string": "3-0",
+    "not_participating": 1,
+    "vote_string": "5-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
@@ -8250,8 +9546,8 @@
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": null,
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
+    "author": "conboy",
+    "author_display": "Conboy, J.",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
@@ -8270,13 +9566,25 @@
         "role": "associate_justice",
         "vote": "majority",
         "note": "DALIANIS, C.J., and HICKS and BASSETT, JJ., concurred"
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DALIANIS, C.J., and HICKS and BASSETT, JJ., concurred"
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
       }
     },
-    "majority": 2,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 1,
     "not_participating": 0,
-    "vote_string": "2-0",
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": true,

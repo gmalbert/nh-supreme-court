@@ -15,6 +15,10 @@ class ChatProviderTests(unittest.TestCase):
         with patch.dict(os.environ, {"CHAT_PROVIDER": "opencode"}):
             self.assertEqual(provider_name(), "opencode")
 
+    def test_openrouter_is_selectable(self):
+        with patch.dict(os.environ, {"CHAT_PROVIDER": "openrouter"}):
+            self.assertEqual(provider_name(), "openrouter")
+
     def test_unknown_provider_is_rejected(self):
         with patch.dict(os.environ, {"CHAT_PROVIDER": "surprise-provider"}):
             with self.assertRaises(ValueError):

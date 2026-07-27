@@ -13,6 +13,19 @@ JUSTICE_KEYS = [
     "gould",
     "will",
     "lynn",
+    "broderick",
+    "dalianis",
+    "duggan",
+    "galway",
+    "conboy",
+    "brock",
+    "hollman",
+    "fitzgerald",
+    "manias",
+    "bean",
+    "fauver",
+    "arnold",
+    "nadeau",
 ]
 
 JUSTICE_DISPLAY = {
@@ -25,6 +38,19 @@ JUSTICE_DISPLAY = {
     "gould": "Gould, J.",
     "will": "Will, J.",
     "lynn": "Lynn, C.J.",
+    "broderick": "Broderick, C.J.",
+    "dalianis": "Dalianis, J.",
+    "duggan": "Duggan, J.",
+    "galway": "Galway, J.",
+    "conboy": "Conboy, J.",
+    "brock": "Brock, C.J.",
+    "hollman": "Hollman, J.",
+    "fitzgerald": "Fitzgerald, J.",
+    "manias": "Manias, J.",
+    "bean": "Bean, J.",
+    "fauver": "Fauver, J.",
+    "arnold": "Arnold, J.",
+    "nadeau": "Nadeau, C.J.",
     "per_curiam": "Per Curiam",
 }
 
@@ -40,6 +66,18 @@ JUSTICE_LAST_NAME_MAP = {
     "LYNN": "lynn",
     "BASSETT": "bassett",
     "NADEAU": "nadeau",
+    "BRODERICK": "broderick",
+    "DALIANIS": "dalianis",
+    "DUGGAN": "duggan",
+    "GALWAY": "galway",
+    "CONBOY": "conboy",
+    "BROCK": "brock",
+    "HOLLMAN": "hollman",
+    "FITZGERALD": "fitzgerald",
+    "MANIAS": "manias",
+    "BEAN": "bean",
+    "FAUVER": "fauver",
+    "ARNOLD": "arnold",
 }
 
 # ── Vote types ─────────────────────────────────────────────────────────────────
