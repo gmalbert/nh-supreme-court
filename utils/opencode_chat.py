@@ -116,15 +116,12 @@ Answer the question directly from these cases. Cite specific case names."""
             if isinstance(response, str):
                 return f"⚠️ API returned string instead of completion object: {response[:200]}"
 
-            if not hasattr(response, 'choices'):
-                return f"⚠️ Unexpected API response format. Type: {type(response).__name__}, Content: {str(response)[:200]}"
-
             if stream:
                 return self._stream_response(response)
-            else:
-                if not response.choices:
-                    return "⚠️ API returned empty response."
-                return response.choices[0].message.content
+
+            if not hasattr(response, "choices") or not response.choices:
+                return "⚠️ API returned empty response."
+            return response.choices[0].message.content
 
         except Exception as e:
             error_msg = f"OpenCode.ai API error: {str(e)}"

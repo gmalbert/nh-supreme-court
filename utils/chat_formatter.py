@@ -81,7 +81,9 @@ class ResponseFormatter:
         """Return a visible narrative even when the provider returns no prose."""
         text = (response_text or "").strip()
         provider_error = text.startswith("⚠️")
-        if text and not provider_error:
+        if provider_error:
+            return text
+        if text:
             return text
 
         usable = [case for case in retrieved_cases if case.get("name") and case.get("name") != "Error"]

@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env"))
 
 
-SUPPORTED_PROVIDERS = {"gemini", "opencode"}
+SUPPORTED_PROVIDERS = {"gemini", "opencode", "openrouter"}
 
 
 def provider_name() -> str:
@@ -26,7 +26,7 @@ def provider_name() -> str:
             configured = None
     name = (configured or "gemini").strip().lower()
     if name not in SUPPORTED_PROVIDERS:
-        raise ValueError(f"Unsupported CHAT_PROVIDER '{name}'. Use: gemini or opencode.")
+        raise ValueError(f"Unsupported CHAT_PROVIDER '{name}'. Use: gemini, opencode, or openrouter.")
     return name
 
 
@@ -35,6 +35,8 @@ def generate_chat_response(*args, **kwargs):
     name = provider_name()
     if name == "gemini":
         from utils.gemini_chat import generate_chat_response as generate
-    else:
+    elif name == "opencode":
         from utils.opencode_chat import generate_chat_response as generate
+    else:
+        from utils.openrouter_chat import generate_chat_response as generate
     return generate(*args, **kwargs)

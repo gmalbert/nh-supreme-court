@@ -28,7 +28,7 @@ except ImportError:
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from utils.constants import JUSTICE_LAST_NAME_MAP
+from utils.constants import JUSTICE_LAST_NAME_MAP, JUSTICE_DISPLAY
 from utils.vote_parser import parse_vote_block, vote_summary
 from utils.dockets import extract_docket_numbers
 
@@ -84,7 +84,7 @@ RSA_RE = re.compile(
     r"RSA\s+(?:chapter\s+)?\d+[A-Z]?(?:-[A-Z0-9]+)*(?::\d+[A-Z0-9\-]*)?(?:,\s*[IVX]+)?",
     re.IGNORECASE,
 )
-NOTICE_RE = re.compile(r"NOTICE[:.].*?(?=THE SUPREME COURT|\Z)", re.DOTALL | re.IGNORECASE)
+NOTICE_RE = re.compile(r"^\s*NOTICE[:.].*?(?=\nTHE SUPREME COURT|\Z)", re.DOTALL | re.IGNORECASE)
 PARAGRAPH_RE = re.compile(r"¶\s*\d+\.?\s*(.+?)(?=¶\s*\d+|$)", re.DOTALL)
 LOWER_COURT_JUDGE_RE = re.compile(
     r"(?:Superior Court|Circuit Court|District Court|Family Court|"
@@ -476,8 +476,8 @@ def parse_pdf(pdf_path: Path, meta: dict) -> dict:
         "appeal_type": "standard",
         "outcome": outcome,
         "author": author_key,
-        "author_display": "Per Curiam" if author_key == "per_curiam"
-            else f"{author_key.replace('_', ' ').title()}, J.",
+        "author_display": JUSTICE_DISPLAY.get(author_key, "Per Curiam" if author_key == "per_curiam"
+            else f"{author_key.replace('_', ' ').title()}, J."),
         "votes": votes,
         **{k: vsummary[k] for k in vsummary},
         "topics": topics,
@@ -574,18 +574,18 @@ def main():
             all_order_recs = order_records + opinion_records  # opinion_type field handles labeling
             with open(ord_path, "w", encoding="utf-8") as fh:
                 json.dump(all_order_recs, fh, indent=2, ensure_ascii=False)
-            print(f"  Saved {len(all_order_recs)} case orders → {ord_path}")
+            print(f"  Saved {len(all_order_recs)} case orders -> {ord_path}")
         else:
             op_path = PROCESSED_DIR / f"opinions_{year}.json"
             with open(op_path, "w", encoding="utf-8") as fh:
                 json.dump(opinion_records, fh, indent=2, ensure_ascii=False)
-            print(f"  Saved {len(opinion_records)} opinions → {op_path}")
+            print(f"  Saved {len(opinion_records)} opinions -> {op_path}")
 
             if order_records:
                 ord_path = PROCESSED_DIR / f"case_orders_{year}.json"
                 with open(ord_path, "w", encoding="utf-8") as fh:
                     json.dump(order_records, fh, indent=2, ensure_ascii=False)
-                print(f"  Saved {len(order_records)} case orders → {ord_path}")
+                print(f"  Saved {len(order_records)} case orders -> {ord_path}")
 
 
 if __name__ == "__main__":

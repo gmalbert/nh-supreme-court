@@ -947,105 +947,6 @@
     "manual_override": false
   },
   {
-    "case_number": "2020-cv-00133-superior-court-order",
-    "source_file_key": "2020-cv-00133-superior-court-order",
-    "docket_numbers": [],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Ortolano v. City of Nashua, No. 2020-CV-00133 (N.H. Super. Ct., Hills Cnty.-S Dist. Jan. 12, 2021) (Temple, J.)",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2022-10/2020-cv-00133-superior-court-order.pdf",
-    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2022/2020-cv-00133-superior-court-order.pdf",
-    "date_argued": null,
-    "date_issued": null,
-    "days_to_decision": null,
-    "term_year": 2022,
-    "lower_court": null,
-    "lower_court_type": null,
-    "lower_court_judge": null,
-    "case_type": null,
-    "appeal_type": "standard",
-    "outcome": null,
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "hicks": {
-        "display_name": "Hicks, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "lynn": {
-        "display_name": "Lynn, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 0,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 9,
-    "vote_string": "N/A",
-    "is_unanimous": false,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [],
-    "rsa_citations": [],
-    "rsa_primary": null,
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 0,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-16T01:59:53.140787",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
     "case_number": "2022-0140",
     "source_file_key": "2022-0140",
     "docket_numbers": [
@@ -2293,14 +2194,14 @@
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -2311,8 +2212,8 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "not_participating",
+        "note": null
       },
       "hicks": {
         "display_name": "Hicks, J.",
@@ -2321,11 +2222,11 @@
         "note": null
       }
     },
-    "majority": 4,
+    "majority": 1,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
+    "not_participating": 5,
+    "vote_string": "1-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,

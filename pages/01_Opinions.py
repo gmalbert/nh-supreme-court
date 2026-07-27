@@ -17,6 +17,7 @@ sys.path.insert(0, str(ROOT))
 
 from utils.constants import APP_NAME, OUTCOME_COLORS, OUTCOME_LABELS, JUSTICE_DISPLAY
 from utils.data_loader import load_opinions, load_opinion_text, data_last_updated
+from cases import _display_or_dash
 from footer import add_gavel_glimpse_footer
 
 
@@ -169,7 +170,8 @@ if selected_rows and selected_rows.selection.rows:
 
     with c2:
         st.markdown(f"**Author:** {row.get('author_display', '—')}")
-        st.markdown(f"**Vote:** {row.get('vote_string', '—')}")
+        vote_val = row.get("vote_string", "—")
+        st.markdown(f"**Vote:** {_display_or_dash(vote_val)}")
 
     # Download single case
     case_text = load_opinion_text(cn)

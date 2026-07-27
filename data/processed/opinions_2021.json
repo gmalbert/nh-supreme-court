@@ -3942,7 +3942,7 @@
     "citation_seq": null,
     "case_name": "New Hampshire Alpha of SAE Trust v. Town of Hanover",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2021-07/2021024nhalphaofsaetrust.pdf",
-    "pdf_local_path": "/Volumes/Users/gmalb/Downloads/nh-supreme-court/data/raw/pdfs/2021/2021024nhalphaofsaetrust.pdf",
+    "pdf_local_path": "C:\\Users\\gmalb\\Downloads\\nh-supreme-court\\data\\raw\\pdfs\\2021\\2021024nhalphaofsaetrust.pdf",
     "date_argued": "2020-11-17",
     "date_issued": "2021-05-25",
     "days_to_decision": 189,
@@ -3950,7 +3950,7 @@
     "lower_court": "Superior Court (MacLeod, J.)",
     "lower_court_type": "superior_court",
     "lower_court_judge": "MacLeod",
-    "case_type": "civil",
+    "case_type": "criminal",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "hantz_marconi",
@@ -3965,8 +3965,8 @@
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
+        "vote": "majority",
+        "note": "HICKS and DONOVAN, JJ., concurred."
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
@@ -3977,8 +3977,8 @@
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
+        "vote": "majority",
+        "note": "HICKS and DONOVAN, JJ., concurred."
       },
       "bassett": {
         "display_name": "Bassett, J.",
@@ -3993,29 +3993,50 @@
         "note": null
       }
     },
-    "majority": 1,
+    "majority": 3,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 5,
-    "vote_string": "1-0",
+    "not_participating": 3,
+    "vote_string": "3-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
+      "criminal",
       "administrative_law",
-      "property"
+      "statutory_interpretation",
+      "constitutional",
+      "property",
+      "evidence"
     ],
     "rsa_citations": [
-      "RSA 676:17"
+      "RSA 676:17",
+      "RSA 676:5, II",
+      "RSA 674:33, I",
+      "RSA 676:5, I",
+      "RSA 676:5",
+      "RSA 502-A:11-a, I",
+      "RSA 674:33",
+      "RSA 674:16",
+      "RSA 676:17-b",
+      "RSA 31:39-c",
+      "RSA 676:17, I",
+      "RSA 676:17-b, I",
+      "RSA 674:33-a",
+      "RSA 676:6",
+      "RSA 676:17, V",
+      "RSA 677:6",
+      "RSA 490-F:18",
+      "RSA 676:15"
     ],
     "rsa_primary": "RSA 676:17",
-    "involves_statutory_interpretation": false,
+    "involves_statutory_interpretation": true,
     "standard_of_review": [],
     "summary_paragraph": "The plaintiff, New Hampshire Alpha of SAE Trust (SAE), appeals an order of the Superior Court (MacLeod, J.) ruling that the Town of Hanover Zoning Board of Adjustment (ZBA) has subject matter jurisdiction to hear SAE’s administrative appeal in the related case of New",
-    "word_count": 439,
+    "word_count": 4411,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-16T01:59:25.664874",
+    "parse_timestamp": "2026-07-25T21:21:58.811558",
     "parse_confidence": 0.8,
     "manual_override": false
   },

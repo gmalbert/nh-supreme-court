@@ -144,6 +144,7 @@ def render_attorney_disposition_profile(attorney_name: str, min_cohort_size: int
         case_type_dist = attorney_disp["case_type"].value_counts().reset_index()
         case_type_dist.columns = ["Case Type", "Count"]
         case_type_dist = case_type_dist[case_type_dist["Case Type"].notna()]
+        case_type_dist["Case Type"] = case_type_dist["Case Type"].str.replace("_", " ").str.title()
 
         if not case_type_dist.empty:
             fig_ct = px.bar(
@@ -168,6 +169,7 @@ def render_attorney_disposition_profile(attorney_name: str, min_cohort_size: int
             topic_dist = attorney_topics["topic"].value_counts().reset_index()
             topic_dist.columns = ["Topic", "Arguments"]
             topic_dist = topic_dist.head(15)  # Top 15 topics
+            topic_dist["Topic"] = topic_dist["Topic"].str.replace("_", " ").str.title()
 
             fig_topics = px.bar(
                 topic_dist,
@@ -188,6 +190,16 @@ def render_attorney_disposition_profile(attorney_name: str, min_cohort_size: int
         lower_court_dist = attorney_disp["lower_court"].value_counts().reset_index()
         lower_court_dist.columns = ["Lower Court", "Count"]
         lower_court_dist = lower_court_dist[lower_court_dist["Lower Court"].notna()]
+        lower_court_dist["Lower Court"] = (
+            lower_court_dist["Lower Court"]
+            .str.replace(r"\s*\(.*\)", "", regex=True)
+            .str.strip()
+        )
+        # Merge duplicate entries after stripping judge names
+        lower_court_dist = (
+            lower_court_dist.groupby("Lower Court", as_index=False)["Count"].sum()
+            .sort_values("Count", ascending=True)
+        )
 
         if not lower_court_dist.empty:
             fig_lc = px.bar(
@@ -217,6 +229,7 @@ def render_attorney_disposition_profile(attorney_name: str, min_cohort_size: int
 
             outcome_dist = outcome_data["outcome"].value_counts().reset_index()
             outcome_dist.columns = ["Outcome", "Count"]
+            outcome_dist["Outcome"] = outcome_dist["Outcome"].str.replace("_", " ").str.title()
 
             fig_outcome = px.bar(
                 outcome_dist,
@@ -235,6 +248,10 @@ def render_attorney_disposition_profile(attorney_name: str, min_cohort_size: int
 
     # Comparable cohort analysis
     st.markdown("#### Comparable Cohort Comparison")
+    st.caption(
+        "A “cohort” is a group of attorneys used as a comparison baseline. "
+        "It shows how this attorney's outcomes compare to peers with a similar practice."
+    )
 
     # Define cohort filter
     cohort_filter = st.selectbox(

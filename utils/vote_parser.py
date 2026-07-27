@@ -149,7 +149,7 @@ def vote_summary(votes: Dict[str, dict]) -> dict:
             counts["not_participating"] += 1
 
     participating = counts["majority"] + counts["dissent"] + counts["concur_separate"]
-    vote_str = f"{counts['majority']}-{counts['dissent']}" if participating else "N/A"
+    vote_str = f"{counts['majority']}-{counts['dissent']}" if participating else "Unavailable"
     return {
         **counts,
         "vote_string": vote_str,
