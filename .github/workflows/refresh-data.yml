@@ -358,12 +358,17 @@ jobs:
           git commit -m "$COMMIT_MSG"
 
           for attempt in 1 2 3; do
-            if git pull --rebase origin "$GITHUB_REF_NAME" && \
+            # Other refresh steps can leave generated files in the worktree
+            # (for example, files outside data/processed). Autostash them so
+            # the rebase can proceed, then restore them after the pull.
+            if git pull --rebase --autostash origin "$GITHUB_REF_NAME" && \
               git push origin "HEAD:$GITHUB_REF_NAME"; then
               exit 0
             fi
 
-            git rebase --abort || true
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then
+              git rebase --abort || true
+            fi
             echo "Push attempt $attempt failed; retrying after a short delay..."
             sleep 5
           done
