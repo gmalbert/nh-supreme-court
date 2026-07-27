@@ -10870,29 +10870,77 @@
     "lower_court_judge": "Vaughan",
     "case_type": "civil",
     "appeal_type": "standard",
-    "outcome": null,
+    "outcome": "reversed_and_remanded",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
+        "vote": "majority",
+        "note": "HICKS, CONBOY, and LYNN, JJ., concurred."
       },
       "lynn": {
         "display_name": "Lynn, C.J.",
         "role": "chief_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, and LYNN, JJ., concurred."
+      },
+      "dalianis": {
+        "display_name": "Dalianis, J.",
+        "role": "associate_justice",
         "vote": "not_participating",
         "note": null
+      },
+      "hollman": {
+        "display_name": "Hollman, J.",
+        "role": "specially_assigned",
+        "vote": "not_participating",
+        "note": null
+      },
+      "fitzgerald": {
+        "display_name": "Fitzgerald, J.",
+        "role": "specially_assigned",
+        "vote": "not_participating",
+        "note": null
+      },
+      "manias": {
+        "display_name": "Manias, J.",
+        "role": "specially_assigned",
+        "vote": "not_participating",
+        "note": null
+      },
+      "bean": {
+        "display_name": "Bean, J.",
+        "role": "specially_assigned",
+        "vote": "not_participating",
+        "note": null
+      },
+      "fauver": {
+        "display_name": "Fauver, J.",
+        "role": "specially_assigned",
+        "vote": "not_participating",
+        "note": null
+      },
+      "arnold": {
+        "display_name": "Arnold, J.",
+        "role": "specially_assigned",
+        "vote": "not_participating",
+        "note": null
+      },
+      "conboy": {
+        "display_name": "Conboy, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, CONBOY, and LYNN, JJ., concurred."
       }
     },
-    "majority": 0,
+    "majority": 3,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "N/A",
-    "is_unanimous": false,
+    "not_participating": 7,
+    "vote_string": "3-0",
+    "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
@@ -10900,16 +10948,17 @@
       "evidence"
     ],
     "rsa_citations": [
-      "RSA 516:29-b"
+      "RSA 516:29-b",
+      "RSA 516:29-b, III"
     ],
     "rsa_primary": "RSA 516:29-b",
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 923,
+    "word_count": 2151,
     "opinion_type": "3jx_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-21T01:07:13.527044",
+    "parse_timestamp": "2026-07-27T20:37:16.643795",
     "parse_confidence": 0.8,
     "manual_override": false
   }
