@@ -124,7 +124,6 @@ selected_rows = st.dataframe(
     hide_index=True,
     on_select="rerun",
     selection_mode="single-row",
-    key="opinions_table",
     column_config={
         "PDF": st.column_config.LinkColumn("PDF", display_text="View ↗"),
     },
