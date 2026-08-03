@@ -97,7 +97,7 @@
     "word_count": 2541,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:32:55.469776",
+    "parse_timestamp": "2026-08-03T12:12:36.519948",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -195,7 +195,7 @@
     "word_count": 3704,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:32:56.443088",
+    "parse_timestamp": "2026-08-03T12:12:37.463172",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -289,7 +289,7 @@
     "word_count": 4300,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:32:57.611985",
+    "parse_timestamp": "2026-08-03T12:12:38.601792",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -388,7 +388,7 @@
     "word_count": 2015,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:32:58.108406",
+    "parse_timestamp": "2026-08-03T12:12:39.091818",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -482,7 +482,7 @@
     "word_count": 1731,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:32:58.628822",
+    "parse_timestamp": "2026-08-03T12:12:39.597512",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -582,7 +582,7 @@
     "word_count": 3351,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:32:59.582884",
+    "parse_timestamp": "2026-08-03T12:12:40.532271",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -686,7 +686,7 @@
     "word_count": 3300,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:00.452174",
+    "parse_timestamp": "2026-08-03T12:12:41.379369",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -790,7 +790,7 @@
     "word_count": 1684,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:00.945520",
+    "parse_timestamp": "2026-08-03T12:12:41.856729",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -898,7 +898,7 @@
     "word_count": 2254,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:01.557356",
+    "parse_timestamp": "2026-08-03T12:12:42.508805",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -993,99 +993,7 @@
     "word_count": 4052,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:02.785115",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2024-0283",
-    "source_file_key": "2025044dean",
-    "docket_numbers": [
-      "2024-0283"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Petition of Dean",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-09/2025044dean.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025044dean.pdf",
-    "date_argued": null,
-    "date_issued": "2025-09-19",
-    "days_to_decision": null,
-    "term_year": 2025,
-    "lower_court": null,
-    "lower_court_type": null,
-    "lower_court_judge": null,
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "vacated",
-    "author": "macdonald",
-    "author_display": "MacDonald, C.J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN and COUNTWAY, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN and COUNTWAY, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 3,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 3,
-    "vote_string": "3-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "administrative_law",
-      "constitutional"
-    ],
-    "rsa_citations": [
-      "RSA 644:13",
-      "RSA 541:6",
-      "RSA 541",
-      "RSA 541:2",
-      "RSA 214:23-c"
-    ],
-    "rsa_primary": "RSA 644:13",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "The petitioner, Penny S. Dean, challenges a decision of the\nrespondent, the New Hampshire Fish and Game Department (department),\nrevoking her hunter education volunteer instructor certification. Because we\nconclude that the presiding officer in the adjudicatory proceeding erred by\ndeclining to recuse himself, we vacate and remand.\nI. Background",
-    "word_count": 1411,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:03.187598",
+    "parse_timestamp": "2026-08-03T12:12:43.698988",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1181,7 +1089,99 @@
     "word_count": 3146,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:04.039666",
+    "parse_timestamp": "2026-08-03T12:12:44.617741",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2024-0283",
+    "source_file_key": "2025044dean",
+    "docket_numbers": [
+      "2024-0283"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Petition of Dean",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-09/2025044dean.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025044dean.pdf",
+    "date_argued": null,
+    "date_issued": "2025-09-19",
+    "days_to_decision": null,
+    "term_year": 2025,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": null,
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "vacated",
+    "author": "macdonald",
+    "author_display": "MacDonald, C.J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN and COUNTWAY, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN and COUNTWAY, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 3,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 3,
+    "vote_string": "3-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "administrative_law",
+      "constitutional"
+    ],
+    "rsa_citations": [
+      "RSA 644:13",
+      "RSA 541:6",
+      "RSA 541",
+      "RSA 541:2",
+      "RSA 214:23-c"
+    ],
+    "rsa_primary": "RSA 644:13",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "The petitioner, Penny S. Dean, challenges a decision of the\nrespondent, the New Hampshire Fish and Game Department (department),\nrevoking her hunter education volunteer instructor certification. Because we\nconclude that the presiding officer in the adjudicatory proceeding erred by\ndeclining to recuse himself, we vacate and remand.\nI. Background",
+    "word_count": 1411,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-03T12:12:45.012390",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1262,7 +1262,7 @@
     "word_count": 6238,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:05.884614",
+    "parse_timestamp": "2026-08-03T12:12:46.810793",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1357,7 +1357,7 @@
     "word_count": 2941,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:06.691446",
+    "parse_timestamp": "2026-08-03T12:12:47.652670",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1445,7 +1445,7 @@
     "word_count": 1519,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:07.116456",
+    "parse_timestamp": "2026-08-03T12:12:48.093490",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1539,7 +1539,7 @@
     "word_count": 4174,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:08.171135",
+    "parse_timestamp": "2026-08-03T12:12:49.122097",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1633,7 +1633,7 @@
     "word_count": 3011,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:09.027273",
+    "parse_timestamp": "2026-08-03T12:12:49.979431",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1745,7 +1745,7 @@
     "word_count": 4412,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:10.165862",
+    "parse_timestamp": "2026-08-03T12:12:51.124404",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1839,7 +1839,7 @@
     "word_count": 4141,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:11.290521",
+    "parse_timestamp": "2026-08-03T12:12:52.282150",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1947,7 +1947,7 @@
     "word_count": 7018,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:13.122830",
+    "parse_timestamp": "2026-08-03T12:12:54.182757",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2036,7 +2036,7 @@
     "word_count": 3072,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:14.027466",
+    "parse_timestamp": "2026-08-03T12:12:55.095429",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2139,7 +2139,7 @@
     "word_count": 3065,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:14.919757",
+    "parse_timestamp": "2026-08-03T12:12:55.953679",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2231,7 +2231,7 @@
     "word_count": 5160,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:16.213085",
+    "parse_timestamp": "2026-08-03T12:12:57.262494",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2326,7 +2326,7 @@
     "word_count": 1972,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:16.779795",
+    "parse_timestamp": "2026-08-03T12:12:57.844152",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2417,7 +2417,7 @@
     "word_count": 2930,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:17.606375",
+    "parse_timestamp": "2026-08-03T12:12:58.676428",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2539,7 +2539,7 @@
     "word_count": 21819,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:22.897623",
+    "parse_timestamp": "2026-08-03T12:13:03.935727",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2631,7 +2631,7 @@
     "word_count": 2464,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:23.807126",
+    "parse_timestamp": "2026-08-03T12:13:04.886154",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2737,7 +2737,7 @@
     "word_count": 6304,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:25.428221",
+    "parse_timestamp": "2026-08-03T12:13:06.520140",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2842,7 +2842,7 @@
     "word_count": 3131,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:26.252685",
+    "parse_timestamp": "2026-08-03T12:13:07.334008",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2929,108 +2929,7 @@
     "word_count": 1399,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:26.690780",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2024-0181",
-    "source_file_key": "2025023ortolano",
-    "docket_numbers": [
-      "2024-0181"
-    ],
-    "citation": "2025 N.H. 23",
-    "citation_year": 2025,
-    "citation_seq": 23,
-    "case_name": "Ortolano v. City of Nashua",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-05/2025023ortolano.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025023ortolano.pdf",
-    "date_argued": null,
-    "date_issued": "2025-05-29",
-    "days_to_decision": null,
-    "term_year": 2025,
-    "lower_court": null,
-    "lower_court_type": null,
-    "lower_court_judge": "Temple",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "countway",
-    "author_display": "Countway, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "administrative_law",
-      "family_law",
-      "civil_procedure",
-      "statutory_interpretation",
-      "constitutional",
-      "tax"
-    ],
-    "rsa_citations": [
-      "RSA 91-A",
-      "RSA 91-A:1-a, VI",
-      "RSA 91-A:1-a",
-      "RSA 91-A:4, I",
-      "RSA 91-A:1",
-      "RSA 91-A:1-a, V",
-      "RSA 91",
-      "RSA 91-A:1-"
-    ],
-    "rsa_primary": "RSA 91-A",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "The plaintiff, Laurie Ortolano, appeals orders of the Superior Court\n(Temple, J.) dismissing her complaint under the Right-to-Know Law, RSA\nchapter 91-A, that sought to compel the defendants, the City of Nashua (the\nCity) and NPAC Corp. (NPAC), to produce certain records, and denying her\nmotion to amend her complaint. We affirm in part, vacate in part, and remand.",
-    "word_count": 2128,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:27.270708",
+    "parse_timestamp": "2026-08-03T12:13:07.770595",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3125,7 +3024,7 @@
     "word_count": 2230,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:27.877072",
+    "parse_timestamp": "2026-08-03T12:13:08.413357",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3228,7 +3127,108 @@
     "word_count": 1934,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:28.384590",
+    "parse_timestamp": "2026-08-03T12:13:08.917607",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2024-0181",
+    "source_file_key": "2025023ortolano",
+    "docket_numbers": [
+      "2024-0181"
+    ],
+    "citation": "2025 N.H. 23",
+    "citation_year": 2025,
+    "citation_seq": 23,
+    "case_name": "Ortolano v. City of Nashua",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-05/2025023ortolano.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025023ortolano.pdf",
+    "date_argued": null,
+    "date_issued": "2025-05-29",
+    "days_to_decision": null,
+    "term_year": 2025,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": "Temple",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "countway",
+    "author_display": "Countway, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "administrative_law",
+      "family_law",
+      "civil_procedure",
+      "statutory_interpretation",
+      "constitutional",
+      "tax"
+    ],
+    "rsa_citations": [
+      "RSA 91-A",
+      "RSA 91-A:1-a, VI",
+      "RSA 91-A:1-a",
+      "RSA 91-A:4, I",
+      "RSA 91-A:1",
+      "RSA 91-A:1-a, V",
+      "RSA 91",
+      "RSA 91-A:1-"
+    ],
+    "rsa_primary": "RSA 91-A",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "The plaintiff, Laurie Ortolano, appeals orders of the Superior Court\n(Temple, J.) dismissing her complaint under the Right-to-Know Law, RSA\nchapter 91-A, that sought to compel the defendants, the City of Nashua (the\nCity) and NPAC Corp. (NPAC), to produce certain records, and denying her\nmotion to amend her complaint. We affirm in part, vacate in part, and remand.",
+    "word_count": 2128,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-03T12:13:09.465111",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3334,7 +3334,7 @@
     "word_count": 3549,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:29.348463",
+    "parse_timestamp": "2026-08-03T12:13:10.438495",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3440,7 +3440,87 @@
     "word_count": 5296,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:30.809521",
+    "parse_timestamp": "2026-08-03T12:13:11.896542",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025018hoppock",
+    "source_file_key": "2025018hoppock",
+    "docket_numbers": [
+      "2024-0005"
+    ],
+    "citation": "2025 N.H. 18",
+    "citation_year": 2025,
+    "citation_seq": 18,
+    "case_name": "Appeal of Hoppock",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-04/2025018hoppock.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025018hoppock.pdf",
+    "date_argued": "2024-11-13",
+    "date_issued": "2025-04-24",
+    "days_to_decision": 162,
+    "term_year": 2025,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": null,
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "countway",
+    "author_display": "Countway, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "insurance",
+      "contract"
+    ],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "The respondent, Joseph S. Hoppock, appeals orders of the Supreme\nCourt Professional Conduct Committee (PCC) ruling that: (1) Hoppock violated\nRule 4.4(a) of the New Hampshire Rules of Professional Conduct; and (2) the\nappropriate sanction is “a six-month suspension from the practice of law, two\nmonths of which are imposed and four months of which are stayed . . . for two\nyears on [specified] conditions.” We affirm.",
+    "word_count": 3358,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-03T12:13:12.831590",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3530,174 +3610,7 @@
     "word_count": 1501,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:31.302073",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025018hoppock",
-    "source_file_key": "2025018hoppock",
-    "docket_numbers": [
-      "2024-0005"
-    ],
-    "citation": "2025 N.H. 18",
-    "citation_year": 2025,
-    "citation_seq": 18,
-    "case_name": "Appeal of Hoppock",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-04/2025018hoppock.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025018hoppock.pdf",
-    "date_argued": "2024-11-13",
-    "date_issued": "2025-04-24",
-    "days_to_decision": 162,
-    "term_year": 2025,
-    "lower_court": null,
-    "lower_court_type": null,
-    "lower_court_judge": null,
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "countway",
-    "author_display": "Countway, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "insurance",
-      "contract"
-    ],
-    "rsa_citations": [],
-    "rsa_primary": null,
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "The respondent, Joseph S. Hoppock, appeals orders of the Supreme\nCourt Professional Conduct Committee (PCC) ruling that: (1) Hoppock violated\nRule 4.4(a) of the New Hampshire Rules of Professional Conduct; and (2) the\nappropriate sanction is “a six-month suspension from the practice of law, two\nmonths of which are imposed and four months of which are stayed . . . for two\nyears on [specified] conditions.” We affirm.",
-    "word_count": 3358,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:32.188576",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2024-0054",
-    "source_file_key": "2025017bradley",
-    "docket_numbers": [
-      "2024-0054"
-    ],
-    "citation": "2025 N.H. 17",
-    "citation_year": 2025,
-    "citation_seq": 17,
-    "case_name": "State v. Bradley",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-04/2025017bradley.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025017bradley.pdf",
-    "date_argued": "2025-02-13",
-    "date_issued": "2025-04-16",
-    "days_to_decision": 62,
-    "term_year": 2025,
-    "lower_court": "Superior Court (Ignatius, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Ignatius",
-    "case_type": "criminal",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "donovan",
-    "author_display": "Donovan, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "statutory_interpretation",
-      "evidence"
-    ],
-    "rsa_citations": [
-      "RSA 641:6, I",
-      "RSA 626:8, III",
-      "RSA 641:5"
-    ],
-    "rsa_primary": "RSA 641:6, I",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "In this interlocutory appeal, the defendant, Deborah Ann Bradley,\nchallenges an order of the Superior Court (Ignatius, J.) denying her motion to\nexclude an audio recording of a conversation between her and her husband,\nKenneth Bradley. She argues that the trial court erred by concluding that New\nHampshire Rule of Evidence 504 does not bar the audio recording from being\nintroduced at trial. We conclude that the spousal privilege, N.H. R. Ev. 504,\nprecludes a spouse’s testimony about confidential marital communications,\nbut it does not mandate that the communications themselves be excluded.\nAc",
-    "word_count": 2218,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:32.823438",
+    "parse_timestamp": "2026-08-03T12:13:13.295746",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3802,7 +3715,94 @@
     "word_count": 3044,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:33.676575",
+    "parse_timestamp": "2026-08-03T12:13:14.161816",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2024-0054",
+    "source_file_key": "2025017bradley",
+    "docket_numbers": [
+      "2024-0054"
+    ],
+    "citation": "2025 N.H. 17",
+    "citation_year": 2025,
+    "citation_seq": 17,
+    "case_name": "State v. Bradley",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-04/2025017bradley.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025017bradley.pdf",
+    "date_argued": "2025-02-13",
+    "date_issued": "2025-04-16",
+    "days_to_decision": 62,
+    "term_year": 2025,
+    "lower_court": "Superior Court (Ignatius, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Ignatius",
+    "case_type": "criminal",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "donovan",
+    "author_display": "Donovan, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "statutory_interpretation",
+      "evidence"
+    ],
+    "rsa_citations": [
+      "RSA 641:6, I",
+      "RSA 626:8, III",
+      "RSA 641:5"
+    ],
+    "rsa_primary": "RSA 641:6, I",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "In this interlocutory appeal, the defendant, Deborah Ann Bradley,\nchallenges an order of the Superior Court (Ignatius, J.) denying her motion to\nexclude an audio recording of a conversation between her and her husband,\nKenneth Bradley. She argues that the trial court erred by concluding that New\nHampshire Rule of Evidence 504 does not bar the audio recording from being\nintroduced at trial. We conclude that the spousal privilege, N.H. R. Ev. 504,\nprecludes a spouse’s testimony about confidential marital communications,\nbut it does not mandate that the communications themselves be excluded.\nAc",
+    "word_count": 2218,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-03T12:13:14.789889",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3891,7 +3891,7 @@
     "word_count": 2837,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:34.480496",
+    "parse_timestamp": "2026-08-03T12:13:15.592389",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3976,7 +3976,7 @@
     "word_count": 2322,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:35.169310",
+    "parse_timestamp": "2026-08-03T12:13:16.311642",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4078,7 +4078,7 @@
     "word_count": 3700,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:36.020850",
+    "parse_timestamp": "2026-08-03T12:13:17.177106",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4167,105 +4167,7 @@
     "word_count": 3732,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:37.115789",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2023-0323",
-    "source_file_key": "2025010menke",
-    "docket_numbers": [
-      "2023-0323"
-    ],
-    "citation": "2025 N.H. 10",
-    "citation_year": 2025,
-    "citation_seq": 10,
-    "case_name": "Appeal of Estate of Menke",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-02/2025010menke.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025010menke.pdf",
-    "date_argued": "2024-04-04",
-    "date_issued": "2025-02-19",
-    "days_to_decision": 321,
-    "term_year": 2025,
-    "lower_court": null,
-    "lower_court_type": null,
-    "lower_court_judge": null,
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "reversed",
-    "author": "bassett",
-    "author_display": "Bassett, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and DONOVAN and COUNTWAY, JJ., concurred"
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and DONOVAN and COUNTWAY, JJ., concurred"
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": "HANTZ MARCONI, J., sat for oral argument but did not participate in the final vote."
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and DONOVAN and COUNTWAY, JJ., concurred"
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "insurance",
-      "administrative_law",
-      "statutory_interpretation",
-      "employment",
-      "tort"
-    ],
-    "rsa_citations": [
-      "RSA 281-A:26",
-      "RSA 281-A:2, XI",
-      "RSA 281-A:21-a",
-      "RSA 457:39",
-      "RSA 281",
-      "RSA 541:13",
-      "RSA 281-A:21-a, II",
-      "RSA 281-A:21-",
-      "RSA 281-A:28",
-      "RSA 281-A:26, II",
-      "RSA 281-A:23, I",
-      "RSA 281-A:48, I"
-    ],
-    "rsa_primary": "RSA 281-A:26",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "This is an appeal from an order of the New Hampshire\nCompensation Appeals Board (CAB) denying the request of Maia Beh, the\nwidow of Gilbert Menke (decedent), to be added to the list of dependents for the\nallocation of workers’ compensation death benefits. See RSA 281-A:26 (2023);\nsee also RSA 281-A:2, XI (2023). The CAB denied Beh’s request based on its\ndetermination that her request to be added to the list of dependents\nconstituted a separate and additional claim for death benefits that was barred\nby the statute of limitations in RSA 281-A:21-a. See RSA 281-A:21-a (2023).\nBecause we conclud",
-    "word_count": 2886,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:37.948409",
+    "parse_timestamp": "2026-08-03T12:13:18.295057",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4369,7 +4271,105 @@
     "word_count": 5426,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:39.374010",
+    "parse_timestamp": "2026-08-03T12:13:19.751827",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2023-0323",
+    "source_file_key": "2025010menke",
+    "docket_numbers": [
+      "2023-0323"
+    ],
+    "citation": "2025 N.H. 10",
+    "citation_year": 2025,
+    "citation_seq": 10,
+    "case_name": "Appeal of Estate of Menke",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-02/2025010menke.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025010menke.pdf",
+    "date_argued": "2024-04-04",
+    "date_issued": "2025-02-19",
+    "days_to_decision": 321,
+    "term_year": 2025,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": null,
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "reversed",
+    "author": "bassett",
+    "author_display": "Bassett, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and DONOVAN and COUNTWAY, JJ., concurred"
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and DONOVAN and COUNTWAY, JJ., concurred"
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": "HANTZ MARCONI, J., sat for oral argument but did not participate in the final vote."
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and DONOVAN and COUNTWAY, JJ., concurred"
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "insurance",
+      "administrative_law",
+      "statutory_interpretation",
+      "employment",
+      "tort"
+    ],
+    "rsa_citations": [
+      "RSA 281-A:26",
+      "RSA 281-A:2, XI",
+      "RSA 281-A:21-a",
+      "RSA 457:39",
+      "RSA 281",
+      "RSA 541:13",
+      "RSA 281-A:21-a, II",
+      "RSA 281-A:21-",
+      "RSA 281-A:28",
+      "RSA 281-A:26, II",
+      "RSA 281-A:23, I",
+      "RSA 281-A:48, I"
+    ],
+    "rsa_primary": "RSA 281-A:26",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "This is an appeal from an order of the New Hampshire\nCompensation Appeals Board (CAB) denying the request of Maia Beh, the\nwidow of Gilbert Menke (decedent), to be added to the list of dependents for the\nallocation of workers’ compensation death benefits. See RSA 281-A:26 (2023);\nsee also RSA 281-A:2, XI (2023). The CAB denied Beh’s request based on its\ndetermination that her request to be added to the list of dependents\nconstituted a separate and additional claim for death benefits that was barred\nby the statute of limitations in RSA 281-A:21-a. See RSA 281-A:21-a (2023).\nBecause we conclud",
+    "word_count": 2886,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-03T12:13:20.599984",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4457,93 +4457,7 @@
     "word_count": 1303,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:39.781589",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2023-0118",
-    "source_file_key": "2025007roy",
-    "docket_numbers": [
-      "2023-0118"
-    ],
-    "citation": "2025 N.H. 7",
-    "citation_year": 2025,
-    "citation_seq": 7,
-    "case_name": "State v. Roy",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-02/2025007roy.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025007roy.pdf",
-    "date_argued": "2024-10-10",
-    "date_issued": "2025-02-07",
-    "days_to_decision": 120,
-    "term_year": 2025,
-    "lower_court": "Superior Court’s (Nicolosi, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": null,
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "reversed",
-    "author": "countway",
-    "author_display": "Countway, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT and DONOVAN, JJ., concurred."
-      }
-    },
-    "majority": 3,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "3-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "constitutional",
-      "domestic_violence",
-      "tax"
-    ],
-    "rsa_citations": [
-      "RSA 631:2-b, I"
-    ],
-    "rsa_primary": "RSA 631:2-b, I",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "The defendant, Roger Roy, appeals the Superior Court’s (Nicolosi, J.)\ndenial of his motion to set aside guilty verdicts, in which he argued that the\nState knowingly used false evidence that resulted in his convictions. We\nreverse and remand.",
-    "word_count": 2311,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:40.453083",
+    "parse_timestamp": "2026-08-03T12:13:20.976360",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4635,7 +4549,7 @@
     "word_count": 3648,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:41.614656",
+    "parse_timestamp": "2026-08-03T12:13:22.112363",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4727,7 +4641,93 @@
     "word_count": 3341,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:42.431177",
+    "parse_timestamp": "2026-08-03T12:13:22.958613",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2023-0118",
+    "source_file_key": "2025007roy",
+    "docket_numbers": [
+      "2023-0118"
+    ],
+    "citation": "2025 N.H. 7",
+    "citation_year": 2025,
+    "citation_seq": 7,
+    "case_name": "State v. Roy",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-02/2025007roy.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025007roy.pdf",
+    "date_argued": "2024-10-10",
+    "date_issued": "2025-02-07",
+    "days_to_decision": 120,
+    "term_year": 2025,
+    "lower_court": "Superior Court’s (Nicolosi, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": null,
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "reversed",
+    "author": "countway",
+    "author_display": "Countway, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 3,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "3-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "constitutional",
+      "domestic_violence",
+      "tax"
+    ],
+    "rsa_citations": [
+      "RSA 631:2-b, I"
+    ],
+    "rsa_primary": "RSA 631:2-b, I",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "The defendant, Roger Roy, appeals the Superior Court’s (Nicolosi, J.)\ndenial of his motion to set aside guilty verdicts, in which he argued that the\nState knowingly used false evidence that resulted in his convictions. We\nreverse and remand.",
+    "word_count": 2311,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-03T12:13:23.633699",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4819,7 +4819,7 @@
     "word_count": 2468,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:43.159271",
+    "parse_timestamp": "2026-08-03T12:13:24.364211",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4911,99 +4911,7 @@
     "word_count": 5706,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:44.643627",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2023-0329",
-    "source_file_key": "2025002brown",
-    "docket_numbers": [
-      "2023-0329"
-    ],
-    "citation": "2025 N.H. 2",
-    "citation_year": 2025,
-    "citation_seq": 2,
-    "case_name": "Brown v. Grafton Cnty. Dep’t of Corr.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-01/2025002brown.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025002brown.pdf",
-    "date_argued": "2024-11-07",
-    "date_issued": "2025-01-10",
-    "days_to_decision": 64,
-    "term_year": 2025,
-    "lower_court": null,
-    "lower_court_type": null,
-    "lower_court_judge": null,
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "vacated",
-    "author": "donovan",
-    "author_display": "Donovan, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "administrative_law",
-      "civil_procedure",
-      "statutory_interpretation",
-      "constitutional"
-    ],
-    "rsa_citations": [
-      "RSA 91-A",
-      "RSA 91-A:4",
-      "RSA 91-A:5, IV",
-      "RSA 91-A:4, I",
-      "RSA 91-A:5",
-      "RSA 91",
-      "RSA 91-A:8"
-    ],
-    "rsa_primary": "RSA 91-A",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "The plaintiff, Joseph A. Brown, appeals an order of the Superior\nCourt (Bornstein, J.) granting judgment in favor of the defendant, the Grafton\nCounty Department of Corrections, in the plaintiff’s action seeking declaratory\njudgment and injunctive relief pursuant to RSA chapter 91-A (2023 & Supp.\n2023), New Hampshire’s Right-to-Know Law, to compel disclosure of\nvideo footage from the Grafton County House of Corrections depicting meal\npreparations and mealtime, among other things. We vacate and remand.1\nI. Facts",
-    "word_count": 2312,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:45.317861",
+    "parse_timestamp": "2026-08-03T12:13:25.875176",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5104,7 +5012,99 @@
     "word_count": 4799,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:46.529198",
+    "parse_timestamp": "2026-08-03T12:13:27.142005",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2023-0329",
+    "source_file_key": "2025002brown",
+    "docket_numbers": [
+      "2023-0329"
+    ],
+    "citation": "2025 N.H. 2",
+    "citation_year": 2025,
+    "citation_seq": 2,
+    "case_name": "Brown v. Grafton Cnty. Dep’t of Corr.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-01/2025002brown.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025002brown.pdf",
+    "date_argued": "2024-11-07",
+    "date_issued": "2025-01-10",
+    "days_to_decision": 64,
+    "term_year": 2025,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": null,
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "vacated",
+    "author": "donovan",
+    "author_display": "Donovan, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "administrative_law",
+      "civil_procedure",
+      "statutory_interpretation",
+      "constitutional"
+    ],
+    "rsa_citations": [
+      "RSA 91-A",
+      "RSA 91-A:4",
+      "RSA 91-A:5, IV",
+      "RSA 91-A:4, I",
+      "RSA 91-A:5",
+      "RSA 91",
+      "RSA 91-A:8"
+    ],
+    "rsa_primary": "RSA 91-A",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "The plaintiff, Joseph A. Brown, appeals an order of the Superior\nCourt (Bornstein, J.) granting judgment in favor of the defendant, the Grafton\nCounty Department of Corrections, in the plaintiff’s action seeking declaratory\njudgment and injunctive relief pursuant to RSA chapter 91-A (2023 & Supp.\n2023), New Hampshire’s Right-to-Know Law, to compel disclosure of\nvideo footage from the Grafton County House of Corrections depicting meal\npreparations and mealtime, among other things. We vacate and remand.1\nI. Facts",
+    "word_count": 2312,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-03T12:13:27.810212",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5194,7 +5194,7 @@
     "word_count": 3412,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-07-27T20:33:47.502716",
+    "parse_timestamp": "2026-08-03T12:13:28.762174",
     "parse_confidence": 0.8,
     "manual_override": false
   }

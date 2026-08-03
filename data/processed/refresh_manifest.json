@@ -1,8 +1,8 @@
 {
-  "refresh_timestamp": "2026-07-27T20:37:27Z",
-  "workflow_run_id": "30302427004",
-  "workflow_run_number": "13",
-  "triggered_by": "workflow_dispatch",
+  "refresh_timestamp": "2026-08-03T12:17:17Z",
+  "workflow_run_id": "30812055400",
+  "workflow_run_number": "14",
+  "triggered_by": "schedule",
   "steps": {
     "scrape_opinions": "success",
     "download_pdfs": "success",
@@ -12,7 +12,6 @@
     "validate": "success"
   },
   "files_changed": [
-    "data/processed/3jx_orders.csv",
     "data/processed/all_opinions.json",
     "data/processed/case_docket_crosswalk.csv",
     "data/processed/case_orders.csv",
@@ -29,27 +28,6 @@
     "data/processed/opinions_2025.json",
     "data/processed/opinions_2026.json",
     "data/processed/refresh_manifest.json",
-    "data/processed/text/2014-0504.txt",
-    "data/processed/text/2021-0213.txt",
-    "data/processed/text/2021-0569.txt",
-    "data/processed/text/2022-0142.txt",
-    "data/processed/text/2022-0214.txt",
-    "data/processed/text/2022-0234.txt",
-    "data/processed/text/2022-0259.txt",
-    "data/processed/text/2022-0631.txt",
-    "data/processed/text/2022-0648.txt",
-    "data/processed/text/2023-0023.txt",
-    "data/processed/text/2023-0076.txt",
-    "data/processed/text/2023-0252.txt",
-    "data/processed/text/2023-0566.txt",
-    "data/processed/text/2023-0608.txt",
-    "data/processed/text/2023-0729.txt",
-    "data/processed/text/2023-0755.txt",
-    "data/processed/text/2024-0111.txt",
-    "data/processed/text/2024-0306.txt",
-    "data/processed/text/2024-0509.txt",
-    "data/processed/text/2024-0601.txt",
-    "data/processed/text/2025-0249.txt",
     "data/processed/unmatched_argument_review_queue.csv"
   ]
 }
