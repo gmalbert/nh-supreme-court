@@ -101,7 +101,7 @@
     "word_count": 4018,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:33.949439",
+    "parse_timestamp": "2026-08-10T11:29:53.388564",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -194,7 +194,188 @@
     "word_count": 2313,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:34.636875",
+    "parse_timestamp": "2026-08-10T11:29:54.063526",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2023-0297",
+    "source_file_key": "2024068nadeau",
+    "docket_numbers": [
+      "2023-0297"
+    ],
+    "citation": "2024 N.H. 68",
+    "citation_year": 2024,
+    "citation_seq": 68,
+    "case_name": "In the Matter of Nadeau & Nadeau",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-12/2024068nadeau.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024068nadeau.pdf",
+    "date_argued": null,
+    "date_issued": "2024-12-19",
+    "days_to_decision": null,
+    "term_year": 2024,
+    "lower_court": "Circuit Court-Portsmouth Family Division",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Pendleton",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "countway",
+    "author_display": "Countway, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "family_law",
+      "statutory_interpretation",
+      "constitutional",
+      "property",
+      "contract",
+      "tort"
+    ],
+    "rsa_citations": [
+      "RSA 458:16-a",
+      "RSA 458:16-a, I",
+      "RSA 458:16-a, II",
+      "RSA 457:3",
+      "RSA 457:36"
+    ],
+    "rsa_primary": "RSA 458:16-a",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "The respondent, Justin Nadeau (husband), appeals the final decree\nentered by the Circuit Court (Pendleton, J.) in his divorce from the petitioner,\nMichelle Nadeau (wife). The husband’s parents, James P. Nadeau, Jr. and Gail\nNadeau (husband’s parents), co-appeal. The husband argues that the trial\ncourt erred in its division of the marital estate and when it denied his request\nfor alimony. In addition, both the husband and his parents argue that the trial\ncourt erred when it added the husband’s parents to the action as parties for\ndiscovery purposes only. We affirm.\nI. Facts",
+    "word_count": 4556,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-10T11:29:55.149815",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2023-0606",
+    "source_file_key": "2024069pelton",
+    "docket_numbers": [
+      "2023-0606"
+    ],
+    "citation": "2024 N.H. 69",
+    "citation_year": 2024,
+    "citation_seq": 69,
+    "case_name": "In re Estate of Pelton",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-12/2024069pelton.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024069pelton.pdf",
+    "date_argued": null,
+    "date_issued": "2024-12-19",
+    "days_to_decision": null,
+    "term_year": 2024,
+    "lower_court": "Circuit Court-Newport Probate Division",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Hersh",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "vacated",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "family_law",
+      "statutory_interpretation"
+    ],
+    "rsa_citations": [
+      "RSA 560",
+      "RSA 560:18",
+      "RSA 560:19",
+      "RSA 561:1, I",
+      "RSA 567-A:4",
+      "RSA 21:3",
+      "RSA 458:7"
+    ],
+    "rsa_primary": "RSA 560",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [],
+    "summary_paragraph": "Roger Lee Pelton died intestate. The respondent, Tina Burnham,\nentered the estate case claiming to be a surviving spouse. The respondent was\nmarried to the decedent, and they never divorced. She later purportedly\nmarried Lincoln Burnham (Lincoln). Pointing to the respondent’s subsequent\npurported marriage, the administrator of the Pelton estate, Tracy Shepherd,\nargued that the surviving spouse statute, RSA chapter 560, barred the\nrespondent’s claim. Specifically, the administrator argued that the respondent\n“abandoned” the decedent, see RSA 560:18 (2019), and that the decedent was\njustifiabl",
+    "word_count": 1473,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-10T11:29:55.596896",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -302,188 +483,7 @@
     "word_count": 5416,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:36.278351",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2023-0297",
-    "source_file_key": "2024068nadeau",
-    "docket_numbers": [
-      "2023-0297"
-    ],
-    "citation": "2024 N.H. 68",
-    "citation_year": 2024,
-    "citation_seq": 68,
-    "case_name": "In the Matter of Nadeau & Nadeau",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-12/2024068nadeau.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024068nadeau.pdf",
-    "date_argued": null,
-    "date_issued": "2024-12-19",
-    "days_to_decision": null,
-    "term_year": 2024,
-    "lower_court": "Circuit Court-Portsmouth Family Division",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Pendleton",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "countway",
-    "author_display": "Countway, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "family_law",
-      "statutory_interpretation",
-      "constitutional",
-      "property",
-      "contract",
-      "tort"
-    ],
-    "rsa_citations": [
-      "RSA 458:16-a",
-      "RSA 458:16-a, I",
-      "RSA 458:16-a, II",
-      "RSA 457:3",
-      "RSA 457:36"
-    ],
-    "rsa_primary": "RSA 458:16-a",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "The respondent, Justin Nadeau (husband), appeals the final decree\nentered by the Circuit Court (Pendleton, J.) in his divorce from the petitioner,\nMichelle Nadeau (wife). The husband’s parents, James P. Nadeau, Jr. and Gail\nNadeau (husband’s parents), co-appeal. The husband argues that the trial\ncourt erred in its division of the marital estate and when it denied his request\nfor alimony. In addition, both the husband and his parents argue that the trial\ncourt erred when it added the husband’s parents to the action as parties for\ndiscovery purposes only. We affirm.\nI. Facts",
-    "word_count": 4556,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:37.465654",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2023-0606",
-    "source_file_key": "2024069pelton",
-    "docket_numbers": [
-      "2023-0606"
-    ],
-    "citation": "2024 N.H. 69",
-    "citation_year": 2024,
-    "citation_seq": 69,
-    "case_name": "In re Estate of Pelton",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-12/2024069pelton.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024069pelton.pdf",
-    "date_argued": null,
-    "date_issued": "2024-12-19",
-    "days_to_decision": null,
-    "term_year": 2024,
-    "lower_court": "Circuit Court-Newport Probate Division",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Hersh",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "vacated",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "family_law",
-      "statutory_interpretation"
-    ],
-    "rsa_citations": [
-      "RSA 560",
-      "RSA 560:18",
-      "RSA 560:19",
-      "RSA 561:1, I",
-      "RSA 567-A:4",
-      "RSA 21:3",
-      "RSA 458:7"
-    ],
-    "rsa_primary": "RSA 560",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [],
-    "summary_paragraph": "Roger Lee Pelton died intestate. The respondent, Tina Burnham,\nentered the estate case claiming to be a surviving spouse. The respondent was\nmarried to the decedent, and they never divorced. She later purportedly\nmarried Lincoln Burnham (Lincoln). Pointing to the respondent’s subsequent\npurported marriage, the administrator of the Pelton estate, Tracy Shepherd,\nargued that the surviving spouse statute, RSA chapter 560, barred the\nrespondent’s claim. Specifically, the administrator argued that the respondent\n“abandoned” the decedent, see RSA 560:18 (2019), and that the decedent was\njustifiabl",
-    "word_count": 1473,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:37.957594",
+    "parse_timestamp": "2026-08-10T11:29:57.042027",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -567,7 +567,7 @@
     "word_count": 1893,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:38.497469",
+    "parse_timestamp": "2026-08-10T11:29:57.640875",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -653,7 +653,7 @@
     "word_count": 1752,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:38.996720",
+    "parse_timestamp": "2026-08-10T11:29:58.088554",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -745,7 +745,99 @@
     "word_count": 1850,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:39.591653",
+    "parse_timestamp": "2026-08-10T11:29:58.618625",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2024-0229",
+    "source_file_key": "2024063-j-b",
+    "docket_numbers": [
+      "2024-0229"
+    ],
+    "citation": "2024 N.H. 63",
+    "citation_year": 2024,
+    "citation_seq": 63,
+    "case_name": "In re J.B.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-11/2024063-j-b.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024063-j-b.pdf",
+    "date_argued": "2024-09-25",
+    "date_issued": "2024-11-08",
+    "days_to_decision": 44,
+    "term_year": 2024,
+    "lower_court": "Circuit Court-Newport Family Division",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Swegart",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "macdonald",
+    "author_display": "MacDonald, C.J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "administrative_law",
+      "family_law",
+      "civil_procedure",
+      "domestic_violence"
+    ],
+    "rsa_citations": [
+      "RSA 170-C:5, III",
+      "RSA 169-C:23",
+      "RSA 169-C:24-b, IV",
+      "RSA 169-C",
+      "RSA 170",
+      "RSA 169-C:18, V",
+      "RSA 169-C:28",
+      "RSA 169-C:24-a, III"
+    ],
+    "rsa_primary": "RSA 170-C:5, III",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "The respondent, the mother of J.B. and L.B., appeals an order of the\nCircuit Court (Swegart, J.) issued following a hearing terminating her parental\nrights over her children for failing to correct the conditions that led to findings\nof child neglect within twelve months. See RSA 170-C:5, III (2022). The\nrespondent argues that the trial court erred in terminating her parental rights\nbecause: (1) she was provided less than twelve months to correct the conditions\nthat led to the finding of neglect; (2) no social study was completed; and (3) the\nNew Hampshire Division for Children, Youth and Fam",
+    "word_count": 2130,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-10T11:29:59.114231",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -841,99 +933,7 @@
     "word_count": 4388,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:40.701165",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2024-0229",
-    "source_file_key": "2024063-j-b",
-    "docket_numbers": [
-      "2024-0229"
-    ],
-    "citation": "2024 N.H. 63",
-    "citation_year": 2024,
-    "citation_seq": 63,
-    "case_name": "In re J.B.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-11/2024063-j-b.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024063-j-b.pdf",
-    "date_argued": "2024-09-25",
-    "date_issued": "2024-11-08",
-    "days_to_decision": 44,
-    "term_year": 2024,
-    "lower_court": "Circuit Court-Newport Family Division",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Swegart",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "macdonald",
-    "author_display": "MacDonald, C.J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "administrative_law",
-      "family_law",
-      "civil_procedure",
-      "domestic_violence"
-    ],
-    "rsa_citations": [
-      "RSA 170-C:5, III",
-      "RSA 169-C:23",
-      "RSA 169-C:24-b, IV",
-      "RSA 169-C",
-      "RSA 170",
-      "RSA 169-C:18, V",
-      "RSA 169-C:28",
-      "RSA 169-C:24-a, III"
-    ],
-    "rsa_primary": "RSA 170-C:5, III",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "The respondent, the mother of J.B. and L.B., appeals an order of the\nCircuit Court (Swegart, J.) issued following a hearing terminating her parental\nrights over her children for failing to correct the conditions that led to findings\nof child neglect within twelve months. See RSA 170-C:5, III (2022). The\nrespondent argues that the trial court erred in terminating her parental rights\nbecause: (1) she was provided less than twelve months to correct the conditions\nthat led to the finding of neglect; (2) no social study was completed; and (3) the\nNew Hampshire Division for Children, Youth and Fam",
-    "word_count": 2130,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:41.269342",
+    "parse_timestamp": "2026-08-10T11:30:00.134373",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1029,7 +1029,7 @@
     "word_count": 2687,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:42.041155",
+    "parse_timestamp": "2026-08-10T11:30:00.865769",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1129,7 +1129,7 @@
     "word_count": 3197,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:42.924915",
+    "parse_timestamp": "2026-08-10T11:30:01.667896",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1215,97 +1215,7 @@
     "word_count": 1449,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:43.373009",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2022-0025",
-    "source_file_key": "2024057rogers",
-    "docket_numbers": [
-      "2022-0025"
-    ],
-    "citation": "2024 N.H. 57",
-    "citation_year": 2024,
-    "citation_seq": 57,
-    "case_name": "State v. Rogers",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-10/2024057rogers.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024057rogers.pdf",
-    "date_argued": "2024-05-14",
-    "date_issued": "2024-10-11",
-    "days_to_decision": 150,
-    "term_year": 2024,
-    "lower_court": "Circuit Court-Milford District Division",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Derby",
-    "case_type": "criminal",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "countway",
-    "author_display": "Countway, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "administrative_law",
-      "statutory_interpretation",
-      "contract",
-      "DWI"
-    ],
-    "rsa_citations": [
-      "RSA 265-A:2, I",
-      "RSA 642:2",
-      "RSA 263:64",
-      "RSA 265:79-b"
-    ],
-    "rsa_primary": "RSA 265-A:2, I",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "The defendant, Roy Rogers, appeals his convictions, following a trial\nin Circuit Court (Derby, J.), on one count of driving under the influence, see\nRSA 265-A:2, I(a) (2024), and five counts of resisting arrest, see RSA 642:2\n(2016). The defendant does not appeal his conviction for driving after\nsuspension of his license, see RSA 263:64 (2024). We affirm in part, vacate in\npart, and remand.",
-    "word_count": 3016,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:44.211902",
+    "parse_timestamp": "2026-08-10T11:30:02.083241",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1393,7 +1303,93 @@
     "word_count": 1520,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:44.681500",
+    "parse_timestamp": "2026-08-10T11:30:02.496860",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2022-0562",
+    "source_file_key": "2024056wescott",
+    "docket_numbers": [
+      "2022-0562"
+    ],
+    "citation": "2024 N.H. 56",
+    "citation_year": 2024,
+    "citation_seq": 56,
+    "case_name": "Wescott v. Warden, N.H. State Prison",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-10/2024056wescott.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024056wescott.pdf",
+    "date_argued": null,
+    "date_issued": "2024-10-11",
+    "days_to_decision": null,
+    "term_year": 2024,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": null,
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "countway",
+    "author_display": "Countway, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT and DONOVAN, JJ., concurred"
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": "HANTZ MARCONI, J., did not participate in the final vote."
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT and DONOVAN, JJ., concurred"
+      }
+    },
+    "majority": 3,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "3-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "administrative_law",
+      "family_law",
+      "civil_procedure",
+      "statutory_interpretation",
+      "constitutional",
+      "contract"
+    ],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "The plaintiff, Richard R. Wescott, appeals a decision of the Superior\nCourt (Kissinger, J.) dismissing his complaint for breach of contract against the\ndefendant, Warden, New Hampshire State Prison. The plaintiff’s complaint\nalleged that the defendant breached the terms of the Laaman Settlement\nAgreement (Agreement). The Agreement had resolved a federal class action\nlawsuit that sought to remedy conditions at the New Hampshire State Prison\nfor Men (prison). See generally Laaman v. Helgemoe, 437 F. Supp. 269 (D.N.H.\n1977); Laaman v. Warden, New Hampshire State Prison, 238 F.3d 14 (1st Cir.\n20",
+    "word_count": 3025,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-10T11:30:03.265051",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1484,7 +1480,7 @@
     "word_count": 3923,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:45.735024",
+    "parse_timestamp": "2026-08-10T11:30:04.281185",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1581,7 +1577,7 @@
     "word_count": 3211,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:46.722135",
+    "parse_timestamp": "2026-08-10T11:30:05.144452",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1674,7 +1670,7 @@
     "word_count": 3451,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:47.617660",
+    "parse_timestamp": "2026-08-10T11:30:06.007461",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1768,7 +1764,7 @@
     "word_count": 2180,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:48.261670",
+    "parse_timestamp": "2026-08-10T11:30:06.594445",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1855,7 +1851,7 @@
     "word_count": 1237,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:48.645795",
+    "parse_timestamp": "2026-08-10T11:30:06.949134",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1956,7 +1952,7 @@
     "word_count": 5035,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:49.985450",
+    "parse_timestamp": "2026-08-10T11:30:08.158731",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2045,7 +2041,7 @@
     "word_count": 6210,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:53.442558",
+    "parse_timestamp": "2026-08-10T11:30:11.168748",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2136,93 +2132,7 @@
     "word_count": 3322,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:54.394991",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2023-0523",
-    "source_file_key": "2024045c-m",
-    "docket_numbers": [
-      "2023-0523"
-    ],
-    "citation": "2024 N.H. 45",
-    "citation_year": 2024,
-    "citation_seq": 45,
-    "case_name": "2024 N.H. 45 In re C.M.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-08/2024045c-m.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024045c-m.pdf",
-    "date_argued": null,
-    "date_issued": "2024-08-29",
-    "days_to_decision": null,
-    "term_year": 2024,
-    "lower_court": "Circuit Court-Manchester Family Division",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Joseph",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "family_law",
-      "constitutional"
-    ],
-    "rsa_citations": [
-      "RSA 170-C:5, III",
-      "RSA 170-C:10",
-      "RSA 169-C:2, I",
-      "RSA 169-C"
-    ],
-    "rsa_primary": "RSA 170-C:5, III",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "The respondent, the mother of C.M., D.M., and S.M. (the children),\nappeals a final order of the Circuit Court (Joseph, J.), issued following a\nhearing, that terminated her parental rights over the children for failing to\ncorrect within twelve months conditions that led to findings of child neglect.\nSee RSA 170-C:5, III (2022). The respondent argues that: (1) she was denied\neffective assistance of counsel; (2) the petitioner, the New Hampshire Division\nfor Children, Youth and Families (DCYF), did not make reasonable efforts to\nreunify her with the children; and (3) termination of her parental",
-    "word_count": 2060,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:54.959566",
+    "parse_timestamp": "2026-08-10T11:30:12.061116",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2307,7 +2217,7 @@
     "word_count": 3487,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:55.929787",
+    "parse_timestamp": "2026-08-10T11:30:12.943051",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2397,7 +2307,93 @@
     "word_count": 2934,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:57.629703",
+    "parse_timestamp": "2026-08-10T11:30:14.361071",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2023-0523",
+    "source_file_key": "2024045c-m",
+    "docket_numbers": [
+      "2023-0523"
+    ],
+    "citation": "2024 N.H. 45",
+    "citation_year": 2024,
+    "citation_seq": 45,
+    "case_name": "2024 N.H. 45 In re C.M.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-08/2024045c-m.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024045c-m.pdf",
+    "date_argued": null,
+    "date_issued": "2024-08-29",
+    "days_to_decision": null,
+    "term_year": 2024,
+    "lower_court": "Circuit Court-Manchester Family Division",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Joseph",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "family_law",
+      "constitutional"
+    ],
+    "rsa_citations": [
+      "RSA 170-C:5, III",
+      "RSA 170-C:10",
+      "RSA 169-C:2, I",
+      "RSA 169-C"
+    ],
+    "rsa_primary": "RSA 170-C:5, III",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "The respondent, the mother of C.M., D.M., and S.M. (the children),\nappeals a final order of the Circuit Court (Joseph, J.), issued following a\nhearing, that terminated her parental rights over the children for failing to\ncorrect within twelve months conditions that led to findings of child neglect.\nSee RSA 170-C:5, III (2022). The respondent argues that: (1) she was denied\neffective assistance of counsel; (2) the petitioner, the New Hampshire Division\nfor Children, Youth and Families (DCYF), did not make reasonable efforts to\nreunify her with the children; and (3) termination of her parental",
+    "word_count": 2060,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-10T11:30:14.864281",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2488,7 +2484,89 @@
     "word_count": 2257,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:58.271421",
+    "parse_timestamp": "2026-08-10T11:30:15.457004",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2023-0389",
+    "source_file_key": "2024043colanton",
+    "docket_numbers": [
+      "2023-0389"
+    ],
+    "citation": "2024 N.H. 43",
+    "citation_year": 2024,
+    "citation_seq": 43,
+    "case_name": "In re Estate of Colanton",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-08/2024043colanton.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024043colanton.pdf",
+    "date_argued": "2024-04-23",
+    "date_issued": "2024-08-14",
+    "days_to_decision": 113,
+    "term_year": 2024,
+    "lower_court": "Circuit Court-Brentwood Probate Division",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Weaver",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "countway",
+    "author_display": "Countway, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred"
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred"
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": "HANTZ MARCONI, J., sat for oral argument but did not participate in the final vote."
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred"
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "property"
+    ],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [
+      "de_novo",
+      "substantial_evidence"
+    ],
+    "summary_paragraph": "The petitioner, Gail Andersen, appeals a decision of the Circuit Court\n(Weaver, J.) rejecting her challenges to a will and trust executed by her mother,\nBarbara Colanton. The respondent, Brenda Grant, is also a daughter of\nColanton and is the executrix of Colanton’s will. We affirm.",
+    "word_count": 2735,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-10T11:30:16.133051",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2582,89 +2660,7 @@
     "word_count": 4820,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:11:59.738698",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2023-0389",
-    "source_file_key": "2024043colanton",
-    "docket_numbers": [
-      "2023-0389"
-    ],
-    "citation": "2024 N.H. 43",
-    "citation_year": 2024,
-    "citation_seq": 43,
-    "case_name": "In re Estate of Colanton",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-08/2024043colanton.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024043colanton.pdf",
-    "date_argued": "2024-04-23",
-    "date_issued": "2024-08-14",
-    "days_to_decision": 113,
-    "term_year": 2024,
-    "lower_court": "Circuit Court-Brentwood Probate Division",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Weaver",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "countway",
-    "author_display": "Countway, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred"
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred"
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": "HANTZ MARCONI, J., sat for oral argument but did not participate in the final vote."
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred"
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "property"
-    ],
-    "rsa_citations": [],
-    "rsa_primary": null,
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [
-      "de_novo",
-      "substantial_evidence"
-    ],
-    "summary_paragraph": "The petitioner, Gail Andersen, appeals a decision of the Circuit Court\n(Weaver, J.) rejecting her challenges to a will and trust executed by her mother,\nBarbara Colanton. The respondent, Brenda Grant, is also a daughter of\nColanton and is the executrix of Colanton’s will. We affirm.",
-    "word_count": 2735,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:00.453619",
+    "parse_timestamp": "2026-08-10T11:30:17.426836",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2758,7 +2754,7 @@
     "word_count": 2032,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:01.006813",
+    "parse_timestamp": "2026-08-10T11:30:17.927515",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2851,7 +2847,7 @@
     "word_count": 4300,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:02.212480",
+    "parse_timestamp": "2026-08-10T11:30:19.003340",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2939,7 +2935,7 @@
     "word_count": 1519,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:02.661594",
+    "parse_timestamp": "2026-08-10T11:30:19.420803",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3017,7 +3013,7 @@
     "word_count": 2626,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:03.357213",
+    "parse_timestamp": "2026-08-10T11:30:20.097809",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3112,7 +3108,7 @@
     "word_count": 1739,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:03.898134",
+    "parse_timestamp": "2026-08-10T11:30:20.571019",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3207,7 +3203,7 @@
     "word_count": 6656,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:05.746645",
+    "parse_timestamp": "2026-08-10T11:30:22.272766",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3304,7 +3300,7 @@
     "word_count": 2607,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:06.521163",
+    "parse_timestamp": "2026-08-10T11:30:23.002188",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3394,7 +3390,7 @@
     "word_count": 1830,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:07.021853",
+    "parse_timestamp": "2026-08-10T11:30:23.471485",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3485,7 +3481,7 @@
     "word_count": 4597,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:08.265113",
+    "parse_timestamp": "2026-08-10T11:30:24.677234",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3580,7 +3576,7 @@
     "word_count": 1053,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:08.908552",
+    "parse_timestamp": "2026-08-10T11:30:25.150209",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3684,7 +3680,7 @@
     "word_count": 4267,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:09.985494",
+    "parse_timestamp": "2026-08-10T11:30:26.237506",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3778,7 +3774,7 @@
     "word_count": 1630,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:10.525442",
+    "parse_timestamp": "2026-08-10T11:30:26.713531",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3862,7 +3858,7 @@
     "word_count": 2225,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:11.147165",
+    "parse_timestamp": "2026-08-10T11:30:27.320335",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3953,7 +3949,7 @@
     "word_count": 7930,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:13.469325",
+    "parse_timestamp": "2026-08-10T11:30:29.499982",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4039,90 +4035,7 @@
     "word_count": 1016,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:13.855740",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2022-0638",
-    "source_file_key": "2024026farrell",
-    "docket_numbers": [
-      "2022-0638"
-    ],
-    "citation": "2024 N.H. 26",
-    "citation_year": 2024,
-    "citation_seq": 26,
-    "case_name": "2024 N.H. 26 State v. Farrell",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-05/2024026farrell.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024026farrell.pdf",
-    "date_argued": "2024-03-28",
-    "date_issued": "2024-05-14",
-    "days_to_decision": 47,
-    "term_year": 2024,
-    "lower_court": "Superior Court (Ignatius, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Ignatius",
-    "case_type": "criminal",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "macdonald",
-    "author_display": "MacDonald, C.J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred"
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": "HANTZ MARCONI, J., sat for oral argument but subsequently disqualified herself and"
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred"
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred"
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal"
-    ],
-    "rsa_citations": [
-      "RSA 632-A:2, II",
-      "RSA 632",
-      "RSA 632-A:3, III"
-    ],
-    "rsa_primary": "RSA 632-A:2, II",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "The defendant, Jacob M. Farrell, appeals his convictions following a\njury trial in Superior Court (Ignatius, J.) of aggravated felonious sexual assault\n(AFSA), see RSA 632-A:2, II (2016 & Supp. 2023), pattern AFSA, see RSA 632-\nA:2, III (2016 & Supp. 2023), and felonious sexual assault, see RSA 632-A:3, III\n(2016 & Supp. 2023). The sole issue on appeal is whether the trial court erred\nin denying the defendant’s request for a mistrial based on testimony from the\nvictim’s mother. Because we conclude that the testimony did not\nunambiguously convey to the jury that the defendant had committed an",
-    "word_count": 1982,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:14.406256",
+    "parse_timestamp": "2026-08-10T11:30:29.871864",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4212,7 +4125,7 @@
     "word_count": 5917,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:15.933130",
+    "parse_timestamp": "2026-08-10T11:30:31.315838",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4300,7 +4213,7 @@
     "word_count": 1906,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:16.495848",
+    "parse_timestamp": "2026-08-10T11:30:31.799155",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4396,7 +4309,7 @@
     "word_count": 1893,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:17.026598",
+    "parse_timestamp": "2026-08-10T11:30:32.283699",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4482,7 +4395,90 @@
     "word_count": 1222,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:17.390889",
+    "parse_timestamp": "2026-08-10T11:30:32.624492",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2022-0638",
+    "source_file_key": "2024026farrell",
+    "docket_numbers": [
+      "2022-0638"
+    ],
+    "citation": "2024 N.H. 26",
+    "citation_year": 2024,
+    "citation_seq": 26,
+    "case_name": "2024 N.H. 26 State v. Farrell",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-05/2024026farrell.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024026farrell.pdf",
+    "date_argued": "2024-03-28",
+    "date_issued": "2024-05-14",
+    "days_to_decision": 47,
+    "term_year": 2024,
+    "lower_court": "Superior Court (Ignatius, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Ignatius",
+    "case_type": "criminal",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "macdonald",
+    "author_display": "MacDonald, C.J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred"
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": "HANTZ MARCONI, J., sat for oral argument but subsequently disqualified herself and"
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred"
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred"
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal"
+    ],
+    "rsa_citations": [
+      "RSA 632-A:2, II",
+      "RSA 632",
+      "RSA 632-A:3, III"
+    ],
+    "rsa_primary": "RSA 632-A:2, II",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "The defendant, Jacob M. Farrell, appeals his convictions following a\njury trial in Superior Court (Ignatius, J.) of aggravated felonious sexual assault\n(AFSA), see RSA 632-A:2, II (2016 & Supp. 2023), pattern AFSA, see RSA 632-\nA:2, III (2016 & Supp. 2023), and felonious sexual assault, see RSA 632-A:3, III\n(2016 & Supp. 2023). The sole issue on appeal is whether the trial court erred\nin denying the defendant’s request for a mistrial based on testimony from the\nvictim’s mother. Because we conclude that the testimony did not\nunambiguously convey to the jury that the defendant had committed an",
+    "word_count": 1982,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-10T11:30:33.137616",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4586,7 +4582,7 @@
     "word_count": 3827,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:18.364729",
+    "parse_timestamp": "2026-08-10T11:30:34.095931",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4666,7 +4662,7 @@
     "word_count": 2218,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:18.997578",
+    "parse_timestamp": "2026-08-10T11:30:34.665596",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4771,7 +4767,7 @@
     "word_count": 4364,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:20.139078",
+    "parse_timestamp": "2026-08-10T11:30:35.713424",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4861,7 +4857,7 @@
     "word_count": 1453,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:20.549851",
+    "parse_timestamp": "2026-08-10T11:30:36.107936",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4955,7 +4951,7 @@
     "word_count": 2665,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:21.320558",
+    "parse_timestamp": "2026-08-10T11:30:36.819347",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5052,92 +5048,7 @@
     "word_count": 4686,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:22.595614",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2023-0153",
-    "source_file_key": "2024013newfound",
-    "docket_numbers": [
-      "2023-0153"
-    ],
-    "citation": "2024 N.H. 13",
-    "citation_year": 2024,
-    "citation_seq": 13,
-    "case_name": "Newfound Serenity, LLC v. Town of Hebron",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-04/2024013newfound.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024013newfound.pdf",
-    "date_argued": null,
-    "date_issued": "2024-04-03",
-    "days_to_decision": null,
-    "term_year": 2024,
-    "lower_court": null,
-    "lower_court_type": null,
-    "lower_court_judge": "Bornstein",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "dismissed",
-    "author": "macdonald",
-    "author_display": "MacDonald, C.J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "HANTZ MARCONI and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "HANTZ MARCONI and DONOVAN, JJ., concurred."
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 3,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "3-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "statutory_interpretation",
-      "property"
-    ],
-    "rsa_citations": [
-      "RSA 677:15, I",
-      "RSA 679:9, I",
-      "RSA 677:4",
-      "RSA 677:16",
-      "RSA 679:15",
-      "RSA 679:7",
-      "RSA 676:5, III",
-      "RSA 677:3"
-    ],
-    "rsa_primary": "RSA 677:15, I",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "The plaintiff, Newfound Serenity, LLC, sought review of an adverse\nTown of Hebron Planning Board decision. It appealed the Planning Board’s\ndecision to both the Housing Appeals Board (HAB) and the Town’s Zoning\nBoard of Adjustment (ZBA). The HAB dismissed the appeal as untimely. When\nthe ZBA concluded its review, the plaintiff filed a complaint in superior court,\nseeking review of both the Planning Board and ZBA decisions. Based on the\nHAB’s initial dismissal, the Superior Court (Bornstein, J.) dismissed the\nplaintiff’s complaint in its entirety.",
-    "word_count": 1468,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:23.009211",
+    "parse_timestamp": "2026-08-10T11:30:38.008620",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5231,7 +5142,7 @@
     "word_count": 5758,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:24.569444",
+    "parse_timestamp": "2026-08-10T11:30:39.487796",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5316,7 +5227,92 @@
     "word_count": 1211,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:24.889151",
+    "parse_timestamp": "2026-08-10T11:30:39.885163",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2023-0153",
+    "source_file_key": "2024013newfound",
+    "docket_numbers": [
+      "2023-0153"
+    ],
+    "citation": "2024 N.H. 13",
+    "citation_year": 2024,
+    "citation_seq": 13,
+    "case_name": "Newfound Serenity, LLC v. Town of Hebron",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-04/2024013newfound.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024013newfound.pdf",
+    "date_argued": null,
+    "date_issued": "2024-04-03",
+    "days_to_decision": null,
+    "term_year": 2024,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": "Bornstein",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "dismissed",
+    "author": "macdonald",
+    "author_display": "MacDonald, C.J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HANTZ MARCONI and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HANTZ MARCONI and DONOVAN, JJ., concurred."
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 3,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "3-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "statutory_interpretation",
+      "property"
+    ],
+    "rsa_citations": [
+      "RSA 677:15, I",
+      "RSA 679:9, I",
+      "RSA 677:4",
+      "RSA 677:16",
+      "RSA 679:15",
+      "RSA 679:7",
+      "RSA 676:5, III",
+      "RSA 677:3"
+    ],
+    "rsa_primary": "RSA 677:15, I",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "The plaintiff, Newfound Serenity, LLC, sought review of an adverse\nTown of Hebron Planning Board decision. It appealed the Planning Board’s\ndecision to both the Housing Appeals Board (HAB) and the Town’s Zoning\nBoard of Adjustment (ZBA). The HAB dismissed the appeal as untimely. When\nthe ZBA concluded its review, the plaintiff filed a complaint in superior court,\nseeking review of both the Planning Board and ZBA decisions. Based on the\nHAB’s initial dismissal, the Superior Court (Bornstein, J.) dismissed the\nplaintiff’s complaint in its entirety.",
+    "word_count": 1468,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-10T11:30:40.242449",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5409,7 +5405,7 @@
     "word_count": 2938,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:25.771187",
+    "parse_timestamp": "2026-08-10T11:30:41.004742",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5503,7 +5499,7 @@
     "word_count": 3909,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:26.851402",
+    "parse_timestamp": "2026-08-10T11:30:41.967474",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5594,7 +5590,7 @@
     "word_count": 2081,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:27.530109",
+    "parse_timestamp": "2026-08-10T11:30:42.645273",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5683,7 +5679,7 @@
     "word_count": 2767,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:28.284192",
+    "parse_timestamp": "2026-08-10T11:30:43.315122",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5772,7 +5768,7 @@
     "word_count": 3221,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:29.167654",
+    "parse_timestamp": "2026-08-10T11:30:44.197646",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5860,7 +5856,95 @@
     "word_count": 4067,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:30.250773",
+    "parse_timestamp": "2026-08-10T11:30:45.165747",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2023-0022",
+    "source_file_key": "2024006bald",
+    "docket_numbers": [
+      "2023-0022"
+    ],
+    "citation": "2024 N.H. 6",
+    "citation_year": 2024,
+    "citation_seq": 6,
+    "case_name": "Tremblay v. Bald",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-01/2024006bald.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024006bald.pdf",
+    "date_argued": "2023-06-22",
+    "date_issued": "2024-01-30",
+    "days_to_decision": 222,
+    "term_year": 2024,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": "Bornstein",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "remanded",
+    "author": "macdonald",
+    "author_display": "MacDonald, C.J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "family_law",
+      "civil_procedure",
+      "statutory_interpretation",
+      "property",
+      "employment",
+      "contract"
+    ],
+    "rsa_citations": [
+      "RSA 491:8-a, III"
+    ],
+    "rsa_primary": "RSA 491:8-a, III",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "This interlocutory appeal involves the enforceability of agreements\nexecuted by the plaintiff, Gail C. Tremblay, and the decedent, Donald D. Bald,\nover the course of their long-term relationship. See Sup. Ct. R. 8. They shared\nthe same household but were not married. The agreements provide for the\nplaintiff to receive certain property if she and the decedent were living together\nin the same household at the time of his death. The primary legal issue is\nwhether the agreements are supported by consideration. The plaintiff argues\nthat cohabitation constitutes consideration. The defendants, the",
+    "word_count": 2057,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-10T11:30:45.761173",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5966,95 +6050,7 @@
     "word_count": 6488,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:32.102714",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2023-0022",
-    "source_file_key": "2024006bald",
-    "docket_numbers": [
-      "2023-0022"
-    ],
-    "citation": "2024 N.H. 6",
-    "citation_year": 2024,
-    "citation_seq": 6,
-    "case_name": "Tremblay v. Bald",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-01/2024006bald.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024006bald.pdf",
-    "date_argued": "2023-06-22",
-    "date_issued": "2024-01-30",
-    "days_to_decision": 222,
-    "term_year": 2024,
-    "lower_court": null,
-    "lower_court_type": null,
-    "lower_court_judge": "Bornstein",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "remanded",
-    "author": "macdonald",
-    "author_display": "MacDonald, C.J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "family_law",
-      "civil_procedure",
-      "statutory_interpretation",
-      "property",
-      "employment",
-      "contract"
-    ],
-    "rsa_citations": [
-      "RSA 491:8-a, III"
-    ],
-    "rsa_primary": "RSA 491:8-a, III",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "This interlocutory appeal involves the enforceability of agreements\nexecuted by the plaintiff, Gail C. Tremblay, and the decedent, Donald D. Bald,\nover the course of their long-term relationship. See Sup. Ct. R. 8. They shared\nthe same household but were not married. The agreements provide for the\nplaintiff to receive certain property if she and the decedent were living together\nin the same household at the time of his death. The primary legal issue is\nwhether the agreements are supported by consideration. The plaintiff argues\nthat cohabitation constitutes consideration. The defendants, the",
-    "word_count": 2057,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:32.726481",
+    "parse_timestamp": "2026-08-10T11:30:47.448798",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6152,7 +6148,7 @@
     "word_count": 2097,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:33.255097",
+    "parse_timestamp": "2026-08-10T11:30:47.983963",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6241,94 +6237,7 @@
     "word_count": 1728,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:33.737910",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2021-0310",
-    "source_file_key": "2024002rouleau",
-    "docket_numbers": [
-      "2021-0310"
-    ],
-    "citation": "2024 N.H. 2",
-    "citation_year": 2024,
-    "citation_seq": 2,
-    "case_name": "State v. Rouleau",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-01/2024002rouleau.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024002rouleau.pdf",
-    "date_argued": "2023-09-14",
-    "date_issued": "2024-01-19",
-    "days_to_decision": 127,
-    "term_year": 2024,
-    "lower_court": "Superior Court (Howard, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Howard",
-    "case_type": "criminal",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "macdonald",
-    "author_display": "MacDonald, C.J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "evidence"
-    ],
-    "rsa_citations": [
-      "RSA 632-A:1, I",
-      "RSA 632-A:2, I",
-      "RSA 629:1",
-      "RSA 632-A:3, III",
-      "RSA 632-A:4, I",
-      "RSA 632-A:6, I"
-    ],
-    "rsa_primary": "RSA 632-A:1, I",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "The defendant, Timmy J. Rouleau, appeals his convictions, following\na jury trial in Superior Court (Howard, J.), on two counts of pattern aggravated\nfelonious sexual assault (AFSA), see RSA 632-A:1, I-c (2016), one count of\nAFSA, see RSA 632-A:2, I(j)(1) (2016 & Supp. 2022), one count of attempted\nAFSA, see RSA 632-A:2, I(j)(1); RSA 629:1 (2016), two counts of felonious\nsexual assault, see RSA 632-A:3, III(a)(1) (2016 & Supp. 2022), and two counts\nof sexual assault, see RSA 632-A:4, I(b) (2016 & Supp. 2022). The charges\nallege that the defendant sexually assaulted the victim several times wh",
-    "word_count": 3834,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:34.773364",
+    "parse_timestamp": "2026-08-10T11:30:48.477222",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6420,7 +6329,94 @@
     "word_count": 1907,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-03T12:12:35.864854",
+    "parse_timestamp": "2026-08-10T11:30:49.405482",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2021-0310",
+    "source_file_key": "2024002rouleau",
+    "docket_numbers": [
+      "2021-0310"
+    ],
+    "citation": "2024 N.H. 2",
+    "citation_year": 2024,
+    "citation_seq": 2,
+    "case_name": "State v. Rouleau",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-01/2024002rouleau.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024002rouleau.pdf",
+    "date_argued": "2023-09-14",
+    "date_issued": "2024-01-19",
+    "days_to_decision": 127,
+    "term_year": 2024,
+    "lower_court": "Superior Court (Howard, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Howard",
+    "case_type": "criminal",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "macdonald",
+    "author_display": "MacDonald, C.J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "evidence"
+    ],
+    "rsa_citations": [
+      "RSA 632-A:1, I",
+      "RSA 632-A:2, I",
+      "RSA 629:1",
+      "RSA 632-A:3, III",
+      "RSA 632-A:4, I",
+      "RSA 632-A:6, I"
+    ],
+    "rsa_primary": "RSA 632-A:1, I",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "The defendant, Timmy J. Rouleau, appeals his convictions, following\na jury trial in Superior Court (Howard, J.), on two counts of pattern aggravated\nfelonious sexual assault (AFSA), see RSA 632-A:1, I-c (2016), one count of\nAFSA, see RSA 632-A:2, I(j)(1) (2016 & Supp. 2022), one count of attempted\nAFSA, see RSA 632-A:2, I(j)(1); RSA 629:1 (2016), two counts of felonious\nsexual assault, see RSA 632-A:3, III(a)(1) (2016 & Supp. 2022), and two counts\nof sexual assault, see RSA 632-A:4, I(b) (2016 & Supp. 2022). The charges\nallege that the defendant sexually assaulted the victim several times wh",
+    "word_count": 3834,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-10T11:30:50.337725",
     "parse_confidence": 0.8,
     "manual_override": false
   }
