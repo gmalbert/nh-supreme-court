@@ -1,7 +1,7 @@
 {
-  "refresh_timestamp": "2026-08-17T11:18:10Z",
-  "workflow_run_id": "32023331813",
-  "workflow_run_number": "16",
+  "refresh_timestamp": "2026-08-24T11:20:47Z",
+  "workflow_run_id": "32720321109",
+  "workflow_run_number": "17",
   "triggered_by": "schedule",
   "steps": {
     "scrape_opinions": "success",
@@ -12,6 +12,7 @@
     "validate": "success"
   },
   "files_changed": [
+    "data/case_type_manual_overrides.csv",
     "data/processed/all_opinions.json",
     "data/processed/case_docket_crosswalk.csv",
     "data/processed/case_orders.csv",
@@ -19,6 +20,7 @@
     "data/processed/case_orders_2024.json",
     "data/processed/case_orders_2025.json",
     "data/processed/case_orders_2026.json",
+    "data/processed/case_type_inference_review.csv",
     "data/processed/official_pdf_manifest_audit.csv",
     "data/processed/opinions_2014.json",
     "data/processed/opinions_2017.json",
