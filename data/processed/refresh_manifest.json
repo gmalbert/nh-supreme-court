@@ -1,7 +1,7 @@
 {
-  "refresh_timestamp": "2026-08-24T11:20:47Z",
-  "workflow_run_id": "32720321109",
-  "workflow_run_number": "17",
+  "refresh_timestamp": "2026-08-31T11:20:05Z",
+  "workflow_run_id": "33385457124",
+  "workflow_run_number": "18",
   "triggered_by": "schedule",
   "steps": {
     "scrape_opinions": "success",
@@ -20,7 +20,6 @@
     "data/processed/case_orders_2024.json",
     "data/processed/case_orders_2025.json",
     "data/processed/case_orders_2026.json",
-    "data/processed/case_type_inference_review.csv",
     "data/processed/official_pdf_manifest_audit.csv",
     "data/processed/opinions_2014.json",
     "data/processed/opinions_2017.json",
@@ -30,6 +29,7 @@
     "data/processed/opinions_2025.json",
     "data/processed/opinions_2026.json",
     "data/processed/refresh_manifest.json",
+    "data/processed/text/2025-0030.txt",
     "data/processed/unmatched_argument_review_queue.csv"
   ]
 }

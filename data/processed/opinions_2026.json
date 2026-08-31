@@ -1,14 +1,129 @@
 [
   {
+    "case_number": "2025-0240",
+    "source_file_key": "2026032hologic",
+    "docket_numbers": [
+      "2025-0240"
+    ],
+    "citation": "2026 N.H. 32",
+    "citation_year": 2026,
+    "citation_seq": 32,
+    "case_name": "Hologic, Inc. v. Comm’r, N.H. Dep’t of Revenue Admin.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-08/2026032hologic.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026032hologic.pdf",
+    "date_argued": "2026-05-12",
+    "date_issued": "2026-08-26",
+    "days_to_decision": 106,
+    "term_year": 2026,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": "Kissinger",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "reversed",
+    "author": "donovan",
+    "author_display": "Donovan, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": "MACDONALD, C.J., sat for oral argument but did not participate in the final vote."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "COUNTWAY, GOULD, and WILL, JJ., concurred"
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "administrative_law",
+      "statutory_interpretation",
+      "constitutional",
+      "property",
+      "tort",
+      "tax"
+    ],
+    "rsa_citations": [
+      "RSA 77-A",
+      "RSA 21-J:28-b, IV",
+      "RSA 77-A:1, XV",
+      "RSA 77-A:1, XIV",
+      "RSA 77-A:1, XIII",
+      "RSA 77-A:2-b",
+      "RSA 77",
+      "RSA 77-A:3",
+      "RSA 77-A:1, XVI",
+      "RSA 77-A:4",
+      "RSA 77-A:1, IV",
+      "RSA 77-A:2",
+      "RSA 77-A:6, IV",
+      "RSA 77-A:1",
+      "RSA 77-A:2-b, I",
+      "RSA 77-A:3, III",
+      "RSA 77-A:1, III",
+      "RSA 21:3",
+      "RSA 77-A:26, IV",
+      "RSA 77-A:5, XIII",
+      "RSA 77-A:6",
+      "RSA 77-A:3, II"
+    ],
+    "rsa_primary": "RSA 77-A",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "The defendants, the Commissioner of the New Hampshire\nDepartment of Revenue Administration (DRA) and the DRA, appeal an order of\nthe Superior Court (Kissinger, J.) ruling in favor of Hologic, Inc. and its\nsubsidiaries (collectively, the plaintiff). The trial court determined that RSA\nchapter 77-A (2012 & Supp. 2025) permitted the plaintiff, a water’s edge\ncombined group under New Hampshire’s business profits tax law, to reduce its\ntax liability by carrying back a capital loss incurred by one group member to\noffset another member’s capital gain. We disagree and therefore reverse and\nremand.\nI",
+    "word_count": 4541,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-31T11:16:22.989129",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
     "case_number": "2024-0257",
-    "source_file_key": "2024-0257",
+    "source_file_key": "2026031keville",
     "docket_numbers": [
       "2024-0257"
     ],
     "citation": "2026 N.H. 31",
     "citation_year": 2026,
     "citation_seq": 31,
-    "case_name": "State of New Hampshire v. Craig Keville",
+    "case_name": "State v. Keville",
     "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-08/2026031keville.pdf",
     "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026031keville.pdf",
     "date_argued": "2026-04-09",
@@ -87,7 +202,7 @@
     "word_count": 4297,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:07.207898",
+    "parse_timestamp": "2026-08-31T11:16:24.147311",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -208,7 +323,7 @@
     "word_count": 7167,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:09.461399",
+    "parse_timestamp": "2026-08-31T11:16:26.382580",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -311,7 +426,7 @@
     "word_count": 3839,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:10.440648",
+    "parse_timestamp": "2026-08-31T11:16:27.359105",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -410,7 +525,7 @@
     "word_count": 2919,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:11.401087",
+    "parse_timestamp": "2026-08-31T11:16:28.286940",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -508,7 +623,7 @@
     "word_count": 3025,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:12.151758",
+    "parse_timestamp": "2026-08-31T11:16:29.007440",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -604,7 +719,7 @@
     "word_count": 1730,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:12.663875",
+    "parse_timestamp": "2026-08-31T11:16:29.522049",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -710,7 +825,7 @@
     "word_count": 3790,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:13.589013",
+    "parse_timestamp": "2026-08-31T11:16:30.437001",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -806,7 +921,7 @@
     "word_count": 6581,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:15.181534",
+    "parse_timestamp": "2026-08-31T11:16:32.030874",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -903,7 +1018,7 @@
     "word_count": 2214,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:15.819492",
+    "parse_timestamp": "2026-08-31T11:16:32.679807",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -996,7 +1111,7 @@
     "word_count": 6839,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:17.702487",
+    "parse_timestamp": "2026-08-31T11:16:34.558371",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1094,7 +1209,7 @@
     "word_count": 2218,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:18.421499",
+    "parse_timestamp": "2026-08-31T11:16:35.266244",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1187,7 +1302,108 @@
     "word_count": 2445,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:19.123652",
+    "parse_timestamp": "2026-08-31T11:16:35.963865",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0028",
+    "source_file_key": "2026018freese",
+    "docket_numbers": [
+      "2025-0028"
+    ],
+    "citation": "2026 N.H. 18",
+    "citation_year": 2026,
+    "citation_seq": 18,
+    "case_name": "State v. Freese",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026018freese.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026018freese.pdf",
+    "date_argued": "2026-03-10",
+    "date_issued": "2026-04-24",
+    "days_to_decision": 45,
+    "term_year": 2026,
+    "lower_court": "Superior Court (Delker, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Delker",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "reversed_and_remanded",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": "MACDONALD, C.J., sat for oral argument but subsequently disqualified himself and did not participate in further review of the case."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "competency",
+      "family_law",
+      "statutory_interpretation",
+      "constitutional"
+    ],
+    "rsa_citations": [
+      "RSA 135:17-a",
+      "RSA 135:17-a, IV",
+      "RSA 135:17-",
+      "RSA 135:17-a, V",
+      "RSA 135-C:34",
+      "RSA 135:17-a, I",
+      "RSA 135:17-a, III",
+      "RSA 171-B:2",
+      "RSA 135:17-a, VI"
+    ],
+    "rsa_primary": "RSA 135:17-a",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "Through this interlocutory appeal, the defendant, Donald Freese,\nchallenges the order of the Superior Court (Delker, J.) reinstating indictments\nagainst him that had been dismissed after the court found the defendant not\ncompetent to stand trial and subsequently found that he had not regained\ncompetency after twelve months. See RSA 135:17-a (2021). We reverse and\nremand.\nI. Background",
+    "word_count": 1526,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-31T11:16:36.434508",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1291,108 +1507,7 @@
     "word_count": 3006,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:19.918369",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0028",
-    "source_file_key": "2026018freese",
-    "docket_numbers": [
-      "2025-0028"
-    ],
-    "citation": "2026 N.H. 18",
-    "citation_year": 2026,
-    "citation_seq": 18,
-    "case_name": "State v. Freese",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026018freese.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026018freese.pdf",
-    "date_argued": "2026-03-10",
-    "date_issued": "2026-04-24",
-    "days_to_decision": 45,
-    "term_year": 2026,
-    "lower_court": "Superior Court (Delker, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Delker",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "reversed_and_remanded",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": "MACDONALD, C.J., sat for oral argument but subsequently disqualified himself and did not participate in further review of the case."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "competency",
-      "family_law",
-      "statutory_interpretation",
-      "constitutional"
-    ],
-    "rsa_citations": [
-      "RSA 135:17-a",
-      "RSA 135:17-a, IV",
-      "RSA 135:17-",
-      "RSA 135:17-a, V",
-      "RSA 135-C:34",
-      "RSA 135:17-a, I",
-      "RSA 135:17-a, III",
-      "RSA 171-B:2",
-      "RSA 135:17-a, VI"
-    ],
-    "rsa_primary": "RSA 135:17-a",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "Through this interlocutory appeal, the defendant, Donald Freese,\nchallenges the order of the Superior Court (Delker, J.) reinstating indictments\nagainst him that had been dismissed after the court found the defendant not\ncompetent to stand trial and subsequently found that he had not regained\ncompetency after twelve months. See RSA 135:17-a (2021). We reverse and\nremand.\nI. Background",
-    "word_count": 1526,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:20.393492",
+    "parse_timestamp": "2026-08-31T11:16:37.206636",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1494,7 +1609,7 @@
     "word_count": 1903,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:20.923773",
+    "parse_timestamp": "2026-08-31T11:16:37.748173",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1586,7 +1701,7 @@
     "word_count": 3012,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:21.725159",
+    "parse_timestamp": "2026-08-31T11:16:38.529190",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1681,7 +1796,7 @@
     "word_count": 5268,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:23.104642",
+    "parse_timestamp": "2026-08-31T11:16:39.941163",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1791,7 +1906,7 @@
     "word_count": 6103,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:24.698283",
+    "parse_timestamp": "2026-08-31T11:16:41.518458",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1884,7 +1999,7 @@
     "word_count": 4504,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:25.795451",
+    "parse_timestamp": "2026-08-31T11:16:42.673661",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1985,7 +2100,7 @@
     "word_count": 4159,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:27.047938",
+    "parse_timestamp": "2026-08-31T11:16:43.948190",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2080,7 +2195,7 @@
     "word_count": 5355,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:28.465916",
+    "parse_timestamp": "2026-08-31T11:16:45.342359",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2179,99 +2294,7 @@
     "word_count": 3255,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:29.292893",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2023-0562",
-    "source_file_key": "2026008wells",
-    "docket_numbers": [
-      "2023-0562"
-    ],
-    "citation": "2026 N.H. 8",
-    "citation_year": 2026,
-    "citation_seq": 8,
-    "case_name": "State v. Wells",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-03/2026008wells.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026008wells.pdf",
-    "date_argued": "2025-09-16",
-    "date_issued": "2026-03-03",
-    "days_to_decision": 168,
-    "term_year": 2026,
-    "lower_court": "Superior Court (St. Hilaire, J.) on one misdemeanor count of simple",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "St. Hilaire",
-    "case_type": "criminal",
-    "appeal_type": "standard",
-    "outcome": "dismissed",
-    "author": "countway",
-    "author_display": "Countway, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and DONOVAN and GOULD, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and DONOVAN and GOULD, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and DONOVAN and GOULD, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "evidence"
-    ],
-    "rsa_citations": [
-      "RSA 631:2-a, I",
-      "RSA 642:2"
-    ],
-    "rsa_primary": "RSA 631:2-a, I",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [
-      "de_novo",
-      "plain_error"
-    ],
-    "summary_paragraph": "The defendant, Joshua Wells, appeals his convictions following a\njury trial in Superior Court (St. Hilaire, J.) on one misdemeanor count of simple\nassault, see RSA 631:2-a, I(a) (2016), and one misdemeanor count of resisting\narrest, see RSA 642:2 (2016). The defendant argues that the evidence was\ninsufficient to support his convictions. We affirm.",
-    "word_count": 3018,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:30.063633",
+    "parse_timestamp": "2026-08-31T11:16:46.162562",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2363,7 +2386,99 @@
     "word_count": 4454,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:31.222013",
+    "parse_timestamp": "2026-08-31T11:16:47.303802",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2023-0562",
+    "source_file_key": "2026008wells",
+    "docket_numbers": [
+      "2023-0562"
+    ],
+    "citation": "2026 N.H. 8",
+    "citation_year": 2026,
+    "citation_seq": 8,
+    "case_name": "State v. Wells",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-03/2026008wells.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026008wells.pdf",
+    "date_argued": "2025-09-16",
+    "date_issued": "2026-03-03",
+    "days_to_decision": 168,
+    "term_year": 2026,
+    "lower_court": "Superior Court (St. Hilaire, J.) on one misdemeanor count of simple",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "St. Hilaire",
+    "case_type": "criminal",
+    "appeal_type": "standard",
+    "outcome": "dismissed",
+    "author": "countway",
+    "author_display": "Countway, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and DONOVAN and GOULD, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and DONOVAN and GOULD, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and DONOVAN and GOULD, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "evidence"
+    ],
+    "rsa_citations": [
+      "RSA 631:2-a, I",
+      "RSA 642:2"
+    ],
+    "rsa_primary": "RSA 631:2-a, I",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [
+      "de_novo",
+      "plain_error"
+    ],
+    "summary_paragraph": "The defendant, Joshua Wells, appeals his convictions following a\njury trial in Superior Court (St. Hilaire, J.) on one misdemeanor count of simple\nassault, see RSA 631:2-a, I(a) (2016), and one misdemeanor count of resisting\narrest, see RSA 642:2 (2016). The defendant argues that the evidence was\ninsufficient to support his convictions. We affirm.",
+    "word_count": 3018,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-31T11:16:48.074333",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2461,97 +2576,7 @@
     "word_count": 4187,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:32.302356",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2024-0294",
-    "source_file_key": "2026006hodgdon",
-    "docket_numbers": [
-      "2024-0294"
-    ],
-    "citation": "2026 N.H. 6",
-    "citation_year": 2026,
-    "citation_seq": 6,
-    "case_name": "State v. Hodgdon",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-02/2026006hodgdon.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026006hodgdon.pdf",
-    "date_argued": "2025-10-09",
-    "date_issued": "2026-02-10",
-    "days_to_decision": 124,
-    "term_year": 2026,
-    "lower_court": "Superior Court (Attorri, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Attorri",
-    "case_type": "criminal",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "macdonald",
-    "author_display": "MacDonald, C.J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, and GOULD, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, and GOULD, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, and GOULD, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "evidence"
-    ],
-    "rsa_citations": [
-      "RSA 632-A:4",
-      "RSA 631:2-a",
-      "RSA 631:2-"
-    ],
-    "rsa_primary": "RSA 632-A:4",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "The defendant, Daniel A. Hodgdon, appeals his convictions following\na jury trial in Superior Court (Attorri, J.) on two counts of sexual assault, see\nRSA 632-A:4 (Supp. 2024), and one count of simple assault, see RSA 631:2-a\n(2016). On appeal, the defendant challenges the trial court’s ruling\nprohibiting him from cross-examining the victim about a false allegation of\nphysical abuse against her father (Father). He also asserts that the court\nerred in its answer to a jury question and by admitting evidence of his alcohol\nconsumption. We affirm.\nI. Background",
-    "word_count": 3609,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:33.342218",
+    "parse_timestamp": "2026-08-31T11:16:49.167562",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2645,7 +2670,97 @@
     "word_count": 5401,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:34.782227",
+    "parse_timestamp": "2026-08-31T11:16:50.660268",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2024-0294",
+    "source_file_key": "2026006hodgdon",
+    "docket_numbers": [
+      "2024-0294"
+    ],
+    "citation": "2026 N.H. 6",
+    "citation_year": 2026,
+    "citation_seq": 6,
+    "case_name": "State v. Hodgdon",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-02/2026006hodgdon.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026006hodgdon.pdf",
+    "date_argued": "2025-10-09",
+    "date_issued": "2026-02-10",
+    "days_to_decision": 124,
+    "term_year": 2026,
+    "lower_court": "Superior Court (Attorri, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Attorri",
+    "case_type": "criminal",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "macdonald",
+    "author_display": "MacDonald, C.J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, and GOULD, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, and GOULD, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, and GOULD, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "evidence"
+    ],
+    "rsa_citations": [
+      "RSA 632-A:4",
+      "RSA 631:2-a",
+      "RSA 631:2-"
+    ],
+    "rsa_primary": "RSA 632-A:4",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "The defendant, Daniel A. Hodgdon, appeals his convictions following\na jury trial in Superior Court (Attorri, J.) on two counts of sexual assault, see\nRSA 632-A:4 (Supp. 2024), and one count of simple assault, see RSA 631:2-a\n(2016). On appeal, the defendant challenges the trial court’s ruling\nprohibiting him from cross-examining the victim about a false allegation of\nphysical abuse against her father (Father). He also asserts that the court\nerred in its answer to a jury question and by admitting evidence of his alcohol\nconsumption. We affirm.\nI. Background",
+    "word_count": 3609,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-08-31T11:16:51.687435",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2736,7 +2851,7 @@
     "word_count": 2809,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:35.614807",
+    "parse_timestamp": "2026-08-31T11:16:52.522620",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2835,7 +2950,7 @@
     "word_count": 2858,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:36.384634",
+    "parse_timestamp": "2026-08-31T11:16:53.295291",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2927,7 +3042,7 @@
     "word_count": 4834,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:37.689075",
+    "parse_timestamp": "2026-08-31T11:16:54.599098",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3030,7 +3145,7 @@
     "word_count": 3003,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-08-24T11:17:38.606621",
+    "parse_timestamp": "2026-08-31T11:16:55.524151",
     "parse_confidence": 0.8,
     "manual_override": false
   }
