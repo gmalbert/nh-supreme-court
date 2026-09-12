@@ -9,6 +9,7 @@ import re
 import sys
 from pathlib import Path
 
+from datetime import datetime
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -57,7 +58,8 @@ if df.empty:
 with st.sidebar:
     st.header("Topics")
     years = sorted(df["term_year"].dropna().unique().astype(int))
-    year_range = st.slider("Year Range", min(years), max(years), (min(years), max(years)))
+    current_year = datetime.now().year
+    year_range = st.slider("Year Range", 2000, current_year, (2000, current_year))
     if logo_path.exists():
         st.image(str(logo_path), width=150)
     st.caption(f"Last updated: {data_last_updated()}")

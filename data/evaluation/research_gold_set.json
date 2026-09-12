@@ -1,0 +1,56 @@
+[
+  {
+    "id": "pinpoint-001",
+    "category": "pinpoint",
+    "question": "What exact passage states the disposition?",
+    "expected_behavior": "Return a quoted span with character offsets and a case ID."
+  },
+  {
+    "id": "negative-001",
+    "category": "negative_premise",
+    "question": "Why did the court overrule a case when the corpus does not say it did?",
+    "expected_behavior": "Reject the premise or abstain."
+  },
+  {
+    "id": "conflict-001",
+    "category": "conflicting_authorities",
+    "question": "How did later cases narrow an earlier rule?",
+    "expected_behavior": "Show dated treatments and both supporting passages."
+  },
+  {
+    "id": "no-answer-001",
+    "category": "no_answer_in_corpus",
+    "question": "What did an absent trial exhibit show?",
+    "expected_behavior": "Abstain without filling the gap."
+  },
+  {
+    "id": "temporal-001",
+    "category": "temporal",
+    "question": "What was the governing authority as of 2018-01-01?",
+    "expected_behavior": "Exclude all decisions after the research date."
+  },
+  {
+    "id": "treatment-001",
+    "category": "treatment",
+    "question": "Was the cited authority followed or distinguished?",
+    "expected_behavior": "Apply the class threshold and preserve evidence."
+  },
+  {
+    "id": "holding-001",
+    "category": "holding_span",
+    "question": "Identify the narrow holding.",
+    "expected_behavior": "Return a source-aligned proposition rather than a topic summary."
+  },
+  {
+    "id": "speaker-001",
+    "category": "speaker_attribution",
+    "question": "Who spoke at this transcript moment?",
+    "expected_behavior": "Expose speaker confidence and avoid certified attribution claims."
+  },
+  {
+    "id": "counsel-001",
+    "category": "counsel_identity",
+    "question": "Which normalized attorney is linked to this docket?",
+    "expected_behavior": "Return source provenance and review status."
+  }
+]

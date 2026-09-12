@@ -164,7 +164,7 @@ def test_home_page_chat():
         print(f"  ❌ Home page not found: {cases_py}")
         return False
 
-    content = cases_py.read_text()
+    content = cases_py.read_text(encoding="utf-8")
 
     if "ask_query" in content and "Ask AI" in content:
         print("  ✅ Home page has Ask & Browse AI chat widget")

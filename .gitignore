@@ -41,6 +41,7 @@ data/processed/oral_arguments.json
 data/processed/opinions_fts.sqlite
 data/processed/citations.json
 data/processed/cited_by.json
+data/processed/field_observations.sqlite
 data/processed/oral_arguments/
 
 # IDE
@@ -101,6 +102,10 @@ scripts/*
 !scripts/build_retrieval_corpus.py
 !scripts/build_transcript_index.py
 !scripts/evaluate_retrieval.py
+!scripts/build_frontier_assets.py
+!scripts/build_opinion_embeddings.py
+!scripts/weekly_digest.py
+!scripts/courtlistener_integrate.py
 update_pipeline.ps1
 
 *.code-workspace
@@ -125,3 +130,4 @@ chat-implementation-files.zip
 *.code-workspace
 docs/chat-documentation-transfer.zip
 docs/chat-documentation-transfer/
+docs/judge-prep

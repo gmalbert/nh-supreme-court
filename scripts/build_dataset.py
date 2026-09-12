@@ -421,6 +421,20 @@ def normalize_record(rec: dict) -> dict:
         out["rsa_primary"] = rsa_citations[0]
 
     topics = parse_listlike(out.get("topics"))
+    if not topics:
+        from utils.topic_labeler import auto_label_topic
+
+        label_text = " ".join(
+            str(out.get(field) or "")
+            for field in ("case_name", "summary_paragraph", "case_type")
+        )
+        topics = [
+            label.lower().replace("/", "_").replace("-", "_").replace(" ", "_")
+            for label in auto_label_topic(label_text)
+        ]
+        if topics:
+            out["topics"] = topics
+            out["topic_label_method"] = "nh-keyword-rules-v1"
     if topics:
         out["case_type"] = derive_case_type(topics, fallback=out.get("case_type"))
 

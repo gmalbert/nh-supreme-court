@@ -159,5 +159,5 @@ SCRAPE_DELAY_SECONDS = 1.0
 # ── App settings ───────────────────────────────────────────────────────────────
 APP_NAME = "Granite State Appeals"
 APP_TAGLINE = "NH Supreme Court Analytics"
-DATA_YEARS = list(range(2020, 2027))   # 2020 – 2026
+DATA_YEARS = list(range(2000, 2027))   # 2000 – 2026
 PRIMARY_YEARS = [2024, 2025, 2026]

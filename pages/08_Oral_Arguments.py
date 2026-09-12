@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from datetime import datetime
 import html
 import re
 import sys
@@ -980,12 +981,13 @@ def _render_transcript_search(records: list[dict]) -> None:
             
             # Year range filter
             years = sorted({pd.to_datetime(row.get("argument_date")).year for row in records if row.get("argument_date")})
+            current_year = datetime.now().year
             if years:
                 year_range = st.slider(
                     "Year range",
-                    min_value=min(years),
-                    max_value=max(years),
-                    value=(min(years), max(years))
+                    min_value=2000,
+                    max_value=current_year,
+                    value=(2000, current_year)
                 )
         
         with filter_col2:

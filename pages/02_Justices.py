@@ -5,7 +5,7 @@ pages/02_Justices.py — Justice profiles, voting records, agreement matrix
 from __future__ import annotations
 
 import ast
-from datetime import date
+from datetime import date, datetime
 import sys
 from pathlib import Path
 
@@ -56,7 +56,8 @@ with st.sidebar:
 
     st.divider()
     years = sorted(df["term_year"].dropna().unique().astype(int))
-    year_range = st.slider("Year Range", min(years), max(years), (min(years), max(years)))
+    current_year = datetime.now().year
+    year_range = st.slider("Year Range", 2000, current_year, (2000, current_year))
     if logo_path.exists():
         st.image(str(logo_path), width=150)
     st.caption(f"Last updated: {data_last_updated()}")

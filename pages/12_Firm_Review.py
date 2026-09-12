@@ -31,7 +31,7 @@ def load_review_rows() -> pd.DataFrame:
     if not firm_stats:
         return pd.DataFrame()
 
-    source = pd.read_csv(FIRM_SOURCE_FILE, keep_default_na=False)
+    source = pd.read_csv(FIRM_SOURCE_FILE, keep_default_na=False, encoding="utf-8")
     source = source[
         ~source["review_status"].str.lower().str.startswith("skipped —")
         & source["full_name"].str.strip().ne("")

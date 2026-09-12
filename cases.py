@@ -66,6 +66,9 @@ from utils.chat_retriever import (
 )
 from utils.chat_formatter import format_with_links, render_sources, render_follow_ups
 from utils.chat_provider import generate_chat_response
+from utils.claim_verifier import verified_claim_to_dict, verify_answer
+from utils.privacy_telemetry import record_event
+from utils.temporal_research import filter_as_of, parse_as_of_date
 
 # Streamlit page config must be declared once in the entrypoint when using st.navigation.
 st.set_page_config(
@@ -84,6 +87,12 @@ def _render_brand_header(subtitle: str | None = None) -> None:
     with col_title:
         st.title(APP_NAME)
         st.caption(subtitle or APP_TAGLINE)
+
+
+def _record_research_event(event: str, properties: dict | None = None) -> None:
+    """Store privacy-safe research signals without retaining query text."""
+    payload = record_event(event, properties)
+    st.session_state.setdefault("privacy_safe_telemetry", []).append(payload)
 
 
 def _style_dashboard() -> None:
@@ -732,11 +741,17 @@ def _render_description_search(df: pd.DataFrame) -> None:
                     include_previous=referential,
                     max_cases=n_results * 2,
                 )
+                as_of_date = parse_as_of_date(query_text)
+                retrieved = filter_as_of(retrieved, as_of_date)
 
             st.session_state["ask_results"] = retrieved
             st.session_state["ask_selected_case"] = None
             st.session_state["ask_previous_query"] = query_text
             st.session_state["ask_previous_cases"] = retrieved
+            if not retrieved:
+                _record_research_event(
+                    "zero_result_search", {"surface": "case_explorer"}
+                )
 
             # Generate AI answer if Ask AI button was clicked
             if ask_clicked or _auto_ask:
@@ -778,25 +793,88 @@ def _render_description_search(df: pd.DataFrame) -> None:
                         placeholder.markdown("".join(chunks))
                         response_text = "".join(chunks)
 
-                    formatted = format_with_links(response_text, retrieved)
+                    verification = verify_answer(response_text, retrieved)
+                    if verification.verified_claims:
+                        _record_research_event(
+                            "verified_research_task",
+                            {
+                                "surface": "case_explorer_ai",
+                                "verified_claim_count": len(
+                                    verification.verified_claims
+                                ),
+                            },
+                        )
+                    else:
+                        _record_research_event(
+                            "answer_abstention",
+                            {"surface": "case_explorer_ai"},
+                        )
+                    formatted = format_with_links(
+                        verification.publishable_text, retrieved
+                    )
                     st.session_state["ask_answer"] = formatted
                     st.session_state["ask_previous_answer"] = formatted
+                    st.session_state["ask_verified_claims"] = [
+                        verified_claim_to_dict(claim)
+                        for claim in verification.verified_claims
+                    ]
+                    st.session_state["ask_verification_metrics"] = {
+                        "answer_coverage": verification.answer_coverage,
+                        "unsupported_claim_rate": verification.unsupported_claim_rate,
+                        "unsupported_claims_removed": len(
+                            verification.unsupported_claims
+                        ),
+                        "as_of_date": (
+                            as_of_date.isoformat() if as_of_date else None
+                        ),
+                    }
                     st.session_state["ask_follow_ups"] = _ask_generate_follow_ups(retrieved)
                     st.rerun()
                 except Exception as e:
                     st.error(f"⚠️ AI error: {e}")
                     st.session_state.pop("ask_answer", None)
                     st.session_state.pop("ask_follow_ups", None)
+                    st.session_state.pop("ask_verified_claims", None)
+                    st.session_state.pop("ask_verification_metrics", None)
             else:
                 # Clear answer when doing simple search
                 st.session_state.pop("ask_answer", None)
                 st.session_state.pop("ask_follow_ups", None)
+                st.session_state.pop("ask_verified_claims", None)
+                st.session_state.pop("ask_verification_metrics", None)
 
         # ── AI Answer block ──────────────────────────────────────────────
         if st.session_state.get("ask_answer"):
             st.markdown("---")
             st.markdown("### 💬 AI Answer")
             st.markdown(st.session_state["ask_answer"])
+
+            verification_metrics = st.session_state.get(
+                "ask_verification_metrics", {}
+            )
+            if verification_metrics:
+                as_of_label = verification_metrics.get("as_of_date")
+                st.caption(
+                    "Claim-level verification · "
+                    f"{verification_metrics.get('answer_coverage', 0):.0%} answer coverage · "
+                    f"{verification_metrics.get('unsupported_claims_removed', 0)} unsupported "
+                    "claim(s) removed"
+                    + (f" · authority as of {as_of_label}" if as_of_label else "")
+                )
+            verified_claims = st.session_state.get("ask_verified_claims", [])
+            if verified_claims:
+                with st.expander(
+                    f"Verified claim evidence ({len(verified_claims)})",
+                    expanded=False,
+                ):
+                    for claim in verified_claims:
+                        st.markdown(f"**{claim['claim']}**")
+                        st.caption(
+                            f"{claim['case_id']} · entailment "
+                            f"{claim['entailment_score']:.0%} · characters "
+                            f"{claim['start_char']}–{claim['end_char']}"
+                        )
+                        st.info(claim["source_span"])
 
             follow_ups = st.session_state.get("ask_follow_ups", [])
             if follow_ups:
@@ -1266,10 +1344,10 @@ def render_case_explorer() -> None:
         citations_file = ROOT / "data" / "processed" / "citations.json"
         cited_by_file = ROOT / "data" / "processed" / "cited_by.json"
         if citations_file.exists():
-            with open(citations_file) as f:
+            with open(citations_file, encoding="utf-8") as f:
                 citations_data = json.load(f)
         if cited_by_file.exists():
-            with open(cited_by_file) as f:
+            with open(cited_by_file, encoding="utf-8") as f:
                 cited_by_data = json.load(f)
     except Exception:
         pass
@@ -1356,6 +1434,12 @@ TOPICS_PAGE = st.Page("pages/04_Topics.py", title="Topics", icon="📚", url_pat
 CASE_ORDERS_PAGE = st.Page("pages/05_Case_Orders.py", title="Case Orders/3JX", icon="📋", url_path="case-orders")
 TRIAL_COURTS_PAGE = st.Page("pages/07_Trial_Courts.py", title="Trial Courts", icon="🏛️", url_path="trial-courts")
 ABOUT_PAGE = st.Page("pages/06_About.py", title="About", icon="ℹ️", url_path="about")
+LEGAL_INTELLIGENCE_PAGE = st.Page(
+    "pages/13_Legal_Intelligence.py",
+    title="Legal Intelligence",
+    icon="🔎",
+    url_path="legal-intelligence",
+)
 
 # Detail pages (accessed via links, not shown in main navigation)
 ATTORNEY_DETAIL_PAGE = st.Page("pages/09_Attorney_Detail.py", title="Attorney Profile", icon="⚖️", url_path="attorney-profile")
@@ -1382,6 +1466,7 @@ navigation = st.navigation(
             TOPICS_PAGE,
             CASE_ORDERS_PAGE,
             TRIAL_COURTS_PAGE,
+            LEGAL_INTELLIGENCE_PAGE,
             ABOUT_PAGE,
         ],
         "Profiles": [

@@ -5,8 +5,11 @@ mobile responsiveness, and accessibility.
 """
 import asyncio
 import json
+import os
+import shutil
 from pathlib import Path
-from playwright.async_api import async_playwright, Page
+from playwright.async_api import Error as PlaywrightError
+from playwright.async_api import Page, async_playwright
 
 BASE_URL = "http://localhost:8504"
 
@@ -35,6 +38,15 @@ STREAMLIT_PAGES = [
     {"url": f"{BASE_URL}/topics", "name": "04 Topics", "expect": []},
     {"url": f"{BASE_URL}/case-orders", "name": "05 Case Orders", "expect": []},
     {"url": f"{BASE_URL}/trial-courts", "name": "07 Trial Courts", "expect": []},
+    {
+        "url": f"{BASE_URL}/legal-intelligence",
+        "name": "13 Legal Intelligence",
+        "expect": [
+            "Legal Intelligence Lab",
+            "Research & Authority",
+            "Open Data & Quality",
+        ],
+    },
     {"url": f"{BASE_URL}/about", "name": "06 About", "expect": []},
     {
         "url": f"{BASE_URL}/oral-arguments",
@@ -47,6 +59,50 @@ STREAMLIT_PAGES = [
 results = []
 
 
+def _printable(value: str) -> str:
+    """Keep Windows CI consoles from choking on page emoji or smart punctuation."""
+    return str(value).encode("ascii", "backslashreplace").decode("ascii")
+
+
+def _installed_browser_candidates() -> list[str]:
+    """Return explicit local browser paths for developer machines.
+
+    CI installs Playwright's pinned Chromium.  A source checkout can still run
+    the same validator with an already-installed Chrome or Edge when that
+    optional browser download has not happened yet.
+    """
+    configured = os.environ.get("PLAYWRIGHT_EXECUTABLE_PATH", "").strip()
+    candidates = [configured] if configured else []
+    for command in ("chrome", "google-chrome", "chromium", "msedge"):
+        discovered = shutil.which(command)
+        if discovered:
+            candidates.append(discovered)
+    if os.name == "nt":
+        candidates.extend(
+            [
+                r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+                r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+                r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
+                r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+            ]
+        )
+    return list(dict.fromkeys(path for path in candidates if path and Path(path).is_file()))
+
+
+async def launch_validation_browser(playwright):
+    """Launch pinned Chromium, with a deterministic system-browser fallback."""
+    try:
+        return await playwright.chromium.launch(headless=True)
+    except PlaywrightError as original_error:
+        for executable in _installed_browser_candidates():
+            try:
+                print(f"Bundled Chromium unavailable; using {executable}")
+                return await playwright.chromium.launch(
+                    headless=True, executable_path=executable
+                )
+            except PlaywrightError:
+                continue
+        raise original_error
 async def check_page(page: Page, url: str, name: str, expected: list[str] | None = None) -> dict:
     """Navigate to a page and collect errors/warnings."""
     console_errors = []
@@ -64,12 +120,24 @@ async def check_page(page: Page, url: str, name: str, expected: list[str] | None
 
     print(f"\n--- Testing: {name} ---")
     try:
-        response = await page.goto(url, wait_until="networkidle", timeout=30000)
+        response = await page.goto(url, wait_until="domcontentloaded", timeout=30000)
         status = response.status if response else "no response"
         print(f"  HTTP Status: {status}")
     except Exception as e:
         print(f"  Navigation error: {e}")
-        return {"page": name, "url": url, "status": "ERROR", "error": str(e), "console_errors": [], "js_errors": []}
+        result = {
+            "page": name,
+            "url": url,
+            "status": "ERROR",
+            "error": str(e),
+            "streamlit_errors": [],
+            "console_errors": [],
+            "js_errors": [],
+            "missing_expected": list(expected or []),
+            "has_data": False,
+        }
+        results.append(result)
+        return result
 
     # Wait for Streamlit to finish rendering
     try:
@@ -78,7 +146,19 @@ async def check_page(page: Page, url: str, name: str, expected: list[str] | None
         pass
 
     # Extra wait for charts and dynamic content
-    await asyncio.sleep(3)
+    try:
+        await page.wait_for_function(
+            "document.body && document.body.innerText.length > 100",
+            timeout=30000,
+        )
+        for expected_text in expected or []:
+            await page.get_by_text(expected_text, exact=False).first.wait_for(
+                state="visible", timeout=30000
+            )
+    except Exception:
+        # Missing content is reported below with the full set of diagnostics.
+        pass
+    await asyncio.sleep(1)
 
     # Check for Streamlit error elements
     error_elements = await page.query_selector_all('[data-testid="stException"], .stException')
@@ -86,7 +166,7 @@ async def check_page(page: Page, url: str, name: str, expected: list[str] | None
     for el in error_elements:
         text = await el.inner_text()
         streamlit_errors.append(text[:200])
-        print(f"  Streamlit ERROR: {text[:150]}")
+        print(f"  Streamlit ERROR: {_printable(text[:150])}")
 
     # Get page title
     title = await page.title()
@@ -102,7 +182,7 @@ async def check_page(page: Page, url: str, name: str, expected: list[str] | None
     try:
         body_text = await page.inner_text("body")
         visible = body_text[:300].replace("\n", " ").strip()
-        print(f"  Content preview: {visible[:150]}")
+        print(f"  Content preview: {_printable(visible[:150])}")
     except Exception:
         visible = ""
 
@@ -150,6 +230,61 @@ async def check_page(page: Page, url: str, name: str, expected: list[str] | None
         print(f"  JS errors: {js_errors[:2]}")
 
     return result
+
+
+async def check_legal_intelligence_interactions(page: Page) -> list[str]:
+    """Exercise every top-level Legal Intelligence section with Playwright."""
+    errors: list[str] = []
+    steps = [
+        ("Issue Lifecycles", "Doctrinal issue lifecycle"),
+        ("Predictive Analytics", "Explainable case outcome estimate"),
+        ("Dockets & Media", "Keyword or exact phrase"),
+        ("Research Workspace", "Local auditable research workspace"),
+        ("Open Data & Quality", "Open-access historical dataset"),
+        ("Research & Authority", "Semantic case search"),
+    ]
+    for section, expected_text in steps:
+        try:
+            await page.get_by_role("radio", name=section).click()
+            await page.get_by_text(expected_text, exact=False).first.wait_for(
+                state="visible", timeout=30000
+            )
+        except Exception as error:
+            errors.append(f"{section}: {error}")
+
+    try:
+        await page.get_by_role("radio", name="Predictive Analytics").click()
+        await page.get_by_role("button", name="Estimate outcome").click()
+        await page.get_by_text("Estimated P(affirmed)", exact=False).first.wait_for(
+            state="visible", timeout=30000
+        )
+    except Exception as error:
+        errors.append(f"Outcome predictor interaction: {error}")
+
+    try:
+        await page.get_by_role("radio", name="Dockets & Media").click()
+        await page.get_by_role("tab", name="PDF & readability").click()
+        await page.get_by_text("Flesch ease", exact=False).first.wait_for(
+            state="visible", timeout=30000
+        )
+    except Exception as error:
+        errors.append(f"PDF/readability interaction: {error}")
+
+    try:
+        await page.get_by_role("radio", name="Open Data & Quality").click()
+        await page.get_by_role("tab", name="Quality review").click()
+        await page.get_by_text(
+            "Impact-ranked extraction review", exact=False
+        ).first.wait_for(state="visible", timeout=30000)
+    except Exception as error:
+        errors.append(f"Quality review interaction: {error}")
+
+    streamlit_errors = await page.query_selector_all(
+        '[data-testid="stException"], .stException'
+    )
+    for element in streamlit_errors:
+        errors.append("Streamlit exception: " + (await element.inner_text())[:200])
+    return errors
 
 
 async def check_accessibility(page: Page, name: str) -> dict:
@@ -242,19 +377,20 @@ async def main():
     print("Starting Playwright UI validation for Granite State Appeals")
     print(f"Target: {BASE_URL}")
     print("=" * 60)
-
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
+        browser = await launch_validation_browser(p)
         context = await browser.new_context(viewport={"width": 1280, "height": 900})
-        page = await context.new_page()
-
-        # Test main page first
-        main_page = STREAMLIT_PAGES[0]
-        await check_page(page, BASE_URL, "Main (cases.py)", main_page.get("expect", []))
-
-        # Test each sub-page
-        for pg in STREAMLIT_PAGES[1:]:
-            await check_page(page, pg["url"], pg["name"], pg.get("expect", []))
+        for pg in STREAMLIT_PAGES:
+            page = await context.new_page()
+            result = await check_page(
+                page, pg["url"], pg["name"], pg.get("expect", [])
+            )
+            if pg["name"] == "13 Legal Intelligence" and result["status"] == "OK":
+                interaction_errors = await check_legal_intelligence_interactions(page)
+                result["interaction_errors"] = interaction_errors
+                if interaction_errors:
+                    result["status"] = "ERRORS"
+            await page.close()
 
         await browser.close()
 
@@ -267,6 +403,10 @@ async def main():
         status_label = "PASS" if r["status"] == "OK" else "FAIL"
         data_label = "DATA" if r.get("has_data") else "NO DATA"
         print(f"[{status_label}] [{data_label}] {r['page']}")
+        if r["status"] != "OK":
+            all_ok = False
+        if r.get("error"):
+            print(f"     NAVIGATION ERROR: {r['error'][:100]}")
         if r.get("streamlit_errors"):
             all_ok = False
             for e in r["streamlit_errors"]:
@@ -279,6 +419,10 @@ async def main():
         if r.get("missing_expected"):
             all_ok = False
             print(f"     MISSING: {', '.join(r['missing_expected'])}")
+        if r.get("interaction_errors"):
+            all_ok = False
+            for error in r["interaction_errors"]:
+                print(f"     INTERACTION ERROR: {_printable(error[:150])}")
 
     print()
     if all_ok:
