@@ -28,7 +28,7 @@ def render_data_status(manifest_path: Optional[Path] = None) -> None:
     manifest = {}
     if manifest_path.exists():
         try:
-            with open(manifest_path) as f:
+            with open(manifest_path, encoding="utf-8") as f:
                 manifest = json.load(f)
         except Exception:
             pass

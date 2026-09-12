@@ -8,6 +8,7 @@ import ast
 import sys
 from pathlib import Path
 
+from datetime import datetime
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -57,7 +58,7 @@ from footer import add_gavel_glimpse_footer
 
 # The published written-opinion archive begins in 2002.  A few older decisions
 # are embedded in later archive PDFs, but they are not annual-trend coverage.
-WRITTEN_DECISION_COVERAGE_START = 2002
+WRITTEN_DECISION_COVERAGE_START = 2000
 SHOW_UNMATCHED_ARGUMENT_ASSESSMENT = False
 
 
@@ -100,7 +101,8 @@ if df.empty:
 with st.sidebar:
     st.header("Filters")
     years = sorted(df["term_year"].dropna().unique().astype(int))
-    year_range = st.slider("Year Range", min(years), max(years), (min(years), max(years)))
+    current_year = datetime.now().year
+    year_range = st.slider("Year Range", 2000, current_year, (2000, current_year))
     if logo_path.exists():
         st.image(str(logo_path), width=150)
     st.caption(f"Last updated: {data_last_updated()}")

@@ -93,6 +93,7 @@ def _load_opinions_cached(csv_path_str: str, source_mtime: float) -> pd.DataFram
         csv_path_str,
         parse_dates=["date_argued", "date_issued"],
         low_memory=False,
+        encoding="utf-8",
     )
     # Ensure list-like columns are strings (CSV flattens them)
     for col in ("topics", "rsa_citations"):
@@ -115,7 +116,7 @@ def load_opinions() -> pd.DataFrame:
 def _load_docket_crosswalk_cached(path_str: str, source_mtime: float) -> pd.DataFrame:
     """Return generated and manually reviewed docket aliases by source file key."""
     _ = source_mtime
-    return pd.read_csv(path_str, dtype=str).fillna("")
+    return pd.read_csv(path_str, dtype=str, encoding="utf-8").fillna("")
 
 
 def load_docket_crosswalk() -> pd.DataFrame:
@@ -128,7 +129,7 @@ def load_docket_crosswalk() -> pd.DataFrame:
 @st.cache_data(ttl=3600)
 def _load_csv_as_strings_cached(path_str: str, source_mtime: float) -> pd.DataFrame:
     _ = source_mtime
-    return pd.read_csv(path_str, dtype=str).fillna("")
+    return pd.read_csv(path_str, dtype=str, encoding="utf-8").fillna("")
 
 
 def load_official_pdf_manifest_audit() -> pd.DataFrame:
@@ -212,12 +213,12 @@ def _load_case_orders_cached(case_orders_mtime: float | None, jx3_mtime: float |
     frames: list[pd.DataFrame] = []
 
     if case_orders_path.exists():
-        case_df = pd.read_csv(case_orders_path, parse_dates=["date_issued"], low_memory=False)
+        case_df = pd.read_csv(case_orders_path, parse_dates=["date_issued"], low_memory=False, encoding="utf-8")
         case_df["order_source"] = "case_order"
         frames.append(case_df)
 
     if jx3_path.exists():
-        jx_df = pd.read_csv(jx3_path, low_memory=False)
+        jx_df = pd.read_csv(jx3_path, low_memory=False, encoding="utf-8")
         # Normalize 3JX schema to align with case orders.
         if "year" in jx_df.columns and "term_year" not in jx_df.columns:
             jx_df["term_year"] = jx_df["year"]
@@ -492,6 +493,7 @@ def _load_argument_dispositions_cached(path_str: str, source_mtime: float) -> pd
         path_str,
         parse_dates=["argument_date", "disposition_date"],
         low_memory=False,
+        encoding="utf-8",
     )
 
 
@@ -507,7 +509,7 @@ def load_argument_dispositions() -> pd.DataFrame:
 def _load_simple_csv_cached(path_str: str, source_mtime: float) -> pd.DataFrame:
     """Load a simple CSV file, keyed by source modification time."""
     _ = source_mtime
-    return pd.read_csv(path_str)
+    return pd.read_csv(path_str, encoding="utf-8")
 
 
 def load_argument_participants() -> pd.DataFrame:

@@ -48,7 +48,7 @@ class DenseCaseIndex:
             return None
         docs = pd.read_parquet(docs_path)
         embeddings = np.load(embeddings_path, mmap_mode="r")
-        meta = json.loads(meta_path.read_text())
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
         model_id = meta.get("model") or "BAAI/bge-small-en-v1.5"
         return cls(docs, np.asarray(embeddings), model_id)
 
@@ -110,7 +110,7 @@ class DenseTranscriptIndex:
             return None
         chunks = pd.read_parquet(chunks_path)
         embeddings = np.load(embeddings_path, mmap_mode="r")
-        meta = json.loads(meta_path.read_text())
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
         return cls(chunks, np.asarray(embeddings), meta.get("model", "BAAI/bge-small-en-v1.5"))
 
     def search(self, query: str, limit: int = 12) -> list[RetrievalHit]:

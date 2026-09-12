@@ -12,7 +12,6 @@ from utils.case_resolution import RESOLUTION_LABELS
 from utils.data_loader import (
     load_argument_dispositions,
     load_argument_dispositions_metadata,
-    load_argument_topics,
 )
 
 
@@ -79,26 +78,13 @@ def render_enhanced_tab5(year_range: tuple[int, int]):
             case_type_filter = st.selectbox("Case Type", case_types)
 
         with col3:
-            # Get unique topics for multi-select
-            arg_topics_df = load_argument_topics()
-            if not arg_topics_df.empty:
-                # Join to get topics for filtered arguments
-                filtered_arg_ids = set(arg_disp_filtered["argument_id"])
-                available_topics = sorted(
-                    arg_topics_df[arg_topics_df["argument_id"].isin(filtered_arg_ids)]["topic"].dropna().unique().tolist()
-                )
-                topic_filter = st.multiselect("Topics (multi-select)", available_topics)
-            else:
-                topic_filter = []
-
-        col4, col5 = st.columns(2)
-
-        with col4:
             age_buckets = ["All", "0-90 days", "91-180 days", "181-365 days", "365+ days", "Pending/Unmatched"]
             age_filter = st.selectbox("Time to Disposition", age_buckets)
 
+        col4, col5 = st.columns(2)
+
         with col5:
-            outcome_options = ["All"] + sorted([o for o in arg_disp_filtered["outcome"].dropna().unique().tolist() if o])
+            outcome_options = ["All"] + sorted([o for o in arg_disp_filtered["outcome"].dropna().unique().tolist() if o and o != "issued"])
             outcome_filter = st.selectbox("Outcome", outcome_options)
 
     # Apply advanced filters
@@ -107,13 +93,6 @@ def render_enhanced_tab5(year_range: tuple[int, int]):
 
     if case_type_filter != "All":
         arg_disp_filtered = arg_disp_filtered[arg_disp_filtered["case_type"] == case_type_filter]
-
-    if topic_filter:
-        # Filter to arguments that have at least one of the selected topics
-        arg_topics_df = load_argument_topics()
-        if not arg_topics_df.empty:
-            matching_arg_ids = arg_topics_df[arg_topics_df["topic"].isin(topic_filter)]["argument_id"].unique()
-            arg_disp_filtered = arg_disp_filtered[arg_disp_filtered["argument_id"].isin(matching_arg_ids)]
 
     if outcome_filter != "All":
         arg_disp_filtered = arg_disp_filtered[arg_disp_filtered["outcome"] == outcome_filter]

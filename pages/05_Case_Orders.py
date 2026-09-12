@@ -7,6 +7,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+from datetime import datetime
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -40,7 +41,9 @@ SOURCE_LABELS = {
 with st.sidebar:
     st.header("Filters")
     years = sorted(df["term_year"].dropna().unique().astype(int))
-    selected_years = st.multiselect("Year(s)", years, default=years)
+    current_year = datetime.now().year
+    all_years = list(range(2000, current_year + 1))
+    selected_years = st.multiselect("Year(s)", all_years, default=all_years)
 
     type_map = {}
     if "case_type" in df.columns:

@@ -233,6 +233,25 @@ jobs:
             echo "build_failed=true" >> $GITHUB_OUTPUT
           fi
 
+      - name: Build semantic and research-integrity assets
+        id: build_frontier_assets
+        run: |
+          python scripts/build_opinion_embeddings.py
+          python scripts/build_frontier_assets.py \
+            --release-id "$(date -u +%Y-%m-%dT%H%M%SZ)-${{ github.run_id }}"
+
+      - name: Build and optionally deliver weekly digest
+        env:
+          DIGEST_RECIPIENTS: ${{ secrets.DIGEST_RECIPIENTS }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+        run: |
+          python scripts/weekly_digest.py \
+            --output data/processed/weekly_digest.html \
+            --send-configured
+
       - name: Audit official PDF manifest
         id: audit_pdf_manifest
         run: |
@@ -262,6 +281,9 @@ jobs:
         id: validate
         continue-on-error: true
         run: |
+          # Compile every maintained Python module before running tests.
+          python -m compileall -q cases.py footer.py pages utils scripts api tests validate_ui.py
+
           # Run pytest
           pytest tests/ -v
           PYTEST_EXIT=$?
@@ -285,6 +307,23 @@ jobs:
           fi
           
           exit $PYTEST_EXIT
+
+      - name: Run Playwright application validation
+        id: playwright
+        run: |
+          python -m streamlit run cases.py \
+            --server.headless true \
+            --server.port 8504 \
+            --browser.gatherUsageStats false > streamlit-ui.out.log 2> streamlit-ui.err.log &
+          APP_PID=$!
+          trap 'kill $APP_PID || true' EXIT
+          for attempt in $(seq 1 45); do
+            if curl --fail --silent http://localhost:8504/_stcore/health > /dev/null; then
+              break
+            fi
+            sleep 1
+          done
+          python validate_ui.py
       
       - name: Generate refresh manifest
         id: manifest

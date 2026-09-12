@@ -236,7 +236,7 @@ class CaseRetriever:
                 # Try relative path if workspace structure is different
                 return
 
-            df = pd.read_csv(nh_opinions_path)
+            df = pd.read_csv(nh_opinions_path, encoding="utf-8")
 
             # Pre-load full opinion texts
             text_dir = nh_opinions_path.parent / "text"

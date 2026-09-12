@@ -99,7 +99,7 @@ def load_watch_rules(rules_file: Path) -> list[WatchRule]:
         return []
     
     try:
-        with open(rules_file) as f:
+        with open(rules_file, encoding="utf-8") as f:
             data = json.load(f)
             return [WatchRule.from_dict(r) for r in data]
     except Exception as e:
@@ -179,7 +179,7 @@ def deduplicate_matches(
     seen = set()
     if seen_file.exists():
         try:
-            with open(seen_file) as f:
+            with open(seen_file, encoding="utf-8") as f:
                 seen_data = json.load(f)
                 seen = set(seen_data)
         except Exception:

@@ -9,6 +9,7 @@ import re
 import sys
 from pathlib import Path
 
+from datetime import datetime
 import pandas as pd
 import streamlit as st
 
@@ -17,7 +18,6 @@ sys.path.insert(0, str(ROOT))
 
 from utils.constants import APP_NAME, OUTCOME_COLORS, OUTCOME_LABELS, JUSTICE_DISPLAY
 from utils.data_loader import load_opinions, load_opinion_text, data_last_updated
-from cases import _display_or_dash
 from footer import add_gavel_glimpse_footer
 
 
@@ -26,6 +26,14 @@ def _clean_summary_text(value: str) -> str:
     cleaned = re.sub(r"^\s*[][(){}\"'“”‘’`]+\s*", "", cleaned)
     cleaned = re.sub(r"\s*[][(){}\"'“”‘’`]+\s*$", "", cleaned)
     return cleaned.strip()
+
+
+def _display_or_dash(value) -> str:
+    """Return a display-safe value without importing the app entrypoint."""
+    if value is None or pd.isna(value):
+        return "—"
+    text = str(value).strip()
+    return text if text and text.lower() != "nan" else "—"
 
 logo_path = ROOT / "data_files" / "logo.png"
 st.title("Opinions Browser")
@@ -41,7 +49,13 @@ with st.sidebar:
     st.header("Filters")
 
     years = sorted(df["term_year"].dropna().unique().astype(int))
-    selected_years = st.multiselect("Year(s)", years, default=years[-3:] if len(years) >= 3 else years)
+    current_year = datetime.now().year
+    all_years = list(range(2000, current_year + 1))
+    selected_years = st.multiselect(
+        "Year(s)",
+        all_years,
+        default=[current_year - 2, current_year - 1, current_year],
+    )
 
     outcomes = sorted(df["outcome"].dropna().astype(str).unique())
     outcome_labels = [OUTCOME_LABELS.get(o, o.replace("_", " ").title()) for o in outcomes]

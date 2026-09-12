@@ -1,7 +1,6 @@
 """
 Citation extraction and resolution for NH Supreme Court opinions.
-Supports both reported citations (e.g., "124 N.H. 226") and 
-neutral citations (e.g., "2020 NH 012").
+Supports NH, federal, and other state court citations.
 """
 
 from __future__ import annotations
@@ -20,6 +19,28 @@ NH_REPORTER_RE = re.compile(
 # Neutral citation pattern: "2020 NH 012" or "2020-NH-012"
 NH_NEUTRAL_RE = re.compile(
     r"\b(20\d{2})[\s\-]NH[\s\-](\d+)\b",
+    re.IGNORECASE
+)
+
+# Federal citations
+US_SUPREME_COURT_RE = re.compile(
+    r"\b(\d+)\s+U\.?S\.?\s+(\d+)",
+    re.IGNORECASE
+)
+
+FEDERAL_CIRCUIT_RE = re.compile(
+    r"\b(\d+)\s+F\.?(?:3d|2d|App'?\.?\s*(?:\(?2d?\)?|3d?)?)\s+(\d+)",
+    re.IGNORECASE
+)
+
+FEDERAL_DISTRICT_RE = re.compile(
+    r"\b(\d+)\s+F\.?Supp\.?(?:\s*(?:2d|3d))?\s+(\d+)",
+    re.IGNORECASE
+)
+
+# Other state reporter patterns
+STATE_REPORTER_RE = re.compile(
+    r"\b(\d+)\s+(?:A\.?3d?|So\.?(?:2d|3d)?|N\.?E\.?2?d?|N\.?W\.?2?d?|P\.?2?3?d?|S\.?E\.?2?d?|S\.?W\.?2?d?|N\.?Y\.?S\.?2?d?|Cal\.?Rptr\.?2?d?|Pac\.?2?d?|Atl\.?2?d?|So\.?2?d?|N\.?E\.?2?d?|N\.?W\.?2?d?)\s+(\d+)\b",
     re.IGNORECASE
 )
 
@@ -73,13 +94,13 @@ class Citation:
 
 def extract_citations(text: str) -> list[Citation]:
     """
-    Extract all NH case citations from opinion text.
+    Extract all case citations from opinion text.
     
     Returns list of Citation objects with position information.
     """
     citations = []
     
-    # Extract reported citations
+    # Extract NH Reporter citations
     for match in NH_REPORTER_RE.finditer(text):
         volume = match.group(1)
         page = match.group(2)
@@ -95,7 +116,7 @@ def extract_citations(text: str) -> list[Citation]:
         
         citation = Citation(
             text=match.group(0),
-            citation_type="reporter",
+            citation_type="nh_reporter",
             volume=volume,
             page=page,
             year=year,
@@ -104,24 +125,120 @@ def extract_citations(text: str) -> list[Citation]:
         )
         citations.append(citation)
     
-    # Extract neutral citations
+    # Extract NH neutral citations
     for match in NH_NEUTRAL_RE.finditer(text):
         year = int(match.group(1))
         sequence = int(match.group(2))
-        
+
         citation = Citation(
             text=match.group(0),
-            citation_type="neutral",
+            citation_type="nh_neutral",
             year=year,
             sequence=sequence,
             start_pos=match.start(),
             end_pos=match.end(),
         )
         citations.append(citation)
-    
+
+    # Extract US Supreme Court citations
+    for match in US_SUPREME_COURT_RE.finditer(text):
+        volume = match.group(1)
+        page = match.group(2)
+
+        year = None
+        context_start = max(0, match.start() - 50)
+        context_end = min(len(text), match.end() + 20)
+        context = text[context_start:context_end]
+        year_match = YEAR_PAREN_RE.search(context)
+        if year_match:
+            year = int(year_match.group(1))
+
+        citation = Citation(
+            text=match.group(0),
+            citation_type="us_supreme",
+            volume=volume,
+            page=page,
+            year=year,
+            start_pos=match.start(),
+            end_pos=match.end(),
+        )
+        citations.append(citation)
+
+    # Extract Federal Circuit citations
+    for match in FEDERAL_CIRCUIT_RE.finditer(text):
+        volume = match.group(1)
+        page = match.group(2)
+
+        year = None
+        context_start = max(0, match.start() - 50)
+        context_end = min(len(text), match.end() + 20)
+        context = text[context_start:context_end]
+        year_match = YEAR_PAREN_RE.search(context)
+        if year_match:
+            year = int(year_match.group(1))
+
+        citation = Citation(
+            text=match.group(0),
+            citation_type="federal_circuit",
+            volume=volume,
+            page=page,
+            year=year,
+            start_pos=match.start(),
+            end_pos=match.end(),
+        )
+        citations.append(citation)
+
+    # Extract Federal District citations
+    for match in FEDERAL_DISTRICT_RE.finditer(text):
+        volume = match.group(1)
+        page = match.group(2)
+
+        year = None
+        context_start = max(0, match.start() - 50)
+        context_end = min(len(text), match.end() + 20)
+        context = text[context_start:context_end]
+        year_match = YEAR_PAREN_RE.search(context)
+        if year_match:
+            year = int(year_match.group(1))
+
+        citation = Citation(
+            text=match.group(0),
+            citation_type="federal_district",
+            volume=volume,
+            page=page,
+            year=year,
+            start_pos=match.start(),
+            end_pos=match.end(),
+        )
+        citations.append(citation)
+
+    # Extract Other State Reporter citations
+    for match in STATE_REPORTER_RE.finditer(text):
+        volume = match.group(1)
+        page = match.group(2)
+
+        year = None
+        context_start = max(0, match.start() - 50)
+        context_end = min(len(text), match.end() + 20)
+        context = text[context_start:context_end]
+        year_match = YEAR_PAREN_RE.search(context)
+        if year_match:
+            year = int(year_match.group(1))
+
+        citation = Citation(
+            text=match.group(0),
+            citation_type="other_state",
+            volume=volume,
+            page=page,
+            year=year,
+            start_pos=match.start(),
+            end_pos=match.end(),
+        )
+        citations.append(citation)
+
     # Sort by position and deduplicate overlapping citations
     citations.sort(key=lambda c: c.start_pos)
-    
+
     return citations
 
 
@@ -136,7 +253,7 @@ def resolve_citation(citation: Citation, opinions_index: dict) -> bool:
     Returns:
         True if resolved, False otherwise. Updates citation.resolved_case_number and confidence.
     """
-    if citation.citation_type == "neutral":
+    if citation.citation_type in {"nh_neutral", "neutral"}:
         # Try neutral format: year + sequence
         if citation.year and citation.sequence:
             # Format: YYYY-SSSS (zero-padded sequence)
@@ -154,7 +271,7 @@ def resolve_citation(citation: Citation, opinions_index: dict) -> bool:
                 citation.confidence = "high"
                 return True
     
-    elif citation.citation_type == "reporter":
+    elif citation.citation_type in {"nh_reporter", "reporter"}:
         # Try reporter citation lookup: volume + page
         reporter_key = f"{citation.volume} N.H. {citation.page}"
         
@@ -171,6 +288,8 @@ def resolve_citation(citation: Citation, opinions_index: dict) -> bool:
                 citation.confidence = "high"
                 return True
     
+    # Federal and other state citations are extracted but not resolved to NH case numbers
+    # They remain as external citations
     citation.confidence = "unresolved"
     return False
 
