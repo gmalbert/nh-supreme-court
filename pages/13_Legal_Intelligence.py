@@ -104,6 +104,10 @@ def _case_label(row: pd.Series) -> str:
     return f"{row.get('case_number', '')} · {row.get('case_name', 'Unknown case')}"
 
 
+def _title_case_label(value: object) -> str:
+    return str(value).replace("_", " ").title()
+
+
 @st.cache_data(ttl=3600)
 def _counsel_facts() -> list[dict]:
     path = ROOT / "data" / "processed" / "case_counsel.json"
@@ -541,7 +545,10 @@ if section == "Predictive Analytics":
         topics = _topic_options(df)
         predictor_col1, predictor_col2 = st.columns(2)
         topic = predictor_col1.selectbox(
-            "Legal topic", topics or ["unknown"], key="predict_topic"
+            "Legal topic",
+            topics or ["unknown"],
+            format_func=_title_case_label,
+            key="predict_topic",
         )
         appellant_type = predictor_col1.selectbox(
             "Appellant type",
@@ -554,6 +561,7 @@ if section == "Predictive Analytics":
                 df["lower_court_type"].dropna().astype(str).unique().tolist()
             )
             or ["unknown"],
+            format_func=_title_case_label,
             key="predict_court",
         )
         year = predictor_col2.number_input(
@@ -607,6 +615,9 @@ if section == "Predictive Analytics":
                     prediction.feature_contributions,
                     columns=["Feature", "Contribution"],
                 )
+                contribution_frame["Feature"] = contribution_frame[
+                    "Feature"
+                ].map(_title_case_label)
                 st.plotly_chart(
                     px.bar(
                         contribution_frame,
