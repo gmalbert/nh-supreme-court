@@ -1,7 +1,7 @@
 {
-  "refresh_timestamp": "2026-09-07T11:20:25Z",
-  "workflow_run_id": "34114936164",
-  "workflow_run_number": "19",
+  "refresh_timestamp": "2026-09-14T11:21:39Z",
+  "workflow_run_id": "34836599497",
+  "workflow_run_number": "20",
   "triggered_by": "schedule",
   "steps": {
     "scrape_opinions": "success",
@@ -29,7 +29,6 @@
     "data/processed/opinions_2025.json",
     "data/processed/opinions_2026.json",
     "data/processed/refresh_manifest.json",
-    "data/processed/text/2024-0094.txt",
     "data/processed/unmatched_argument_review_queue.csv"
   ]
 }
