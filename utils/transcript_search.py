@@ -6,11 +6,13 @@ import json
 import re
 from pathlib import Path
 
+from utils.runtime_paths import data_root
+
 import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parent.parent
-TRANSCRIPTS_DIR = ROOT / "data" / "processed" / "oral_arguments"
+TRANSCRIPTS_DIR = data_root() / "processed" / "oral_arguments"
 INDEX_COLUMNS = [
     "docket",
     "case_name",

@@ -7,6 +7,8 @@ from __future__ import annotations
 import json
 from datetime import datetime
 from pathlib import Path
+
+from utils.runtime_paths import data_root
 from typing import Optional
 
 import streamlit as st
@@ -22,7 +24,7 @@ def render_data_status(manifest_path: Optional[Path] = None) -> None:
         manifest_path: Path to refresh_manifest.json (defaults to standard location)
     """
     if manifest_path is None:
-        manifest_path = ROOT / "data" / "processed" / "refresh_manifest.json"
+        manifest_path = data_root() / "processed" / "refresh_manifest.json"
     
     # Load manifest if available
     manifest = {}
@@ -60,7 +62,7 @@ def render_data_status(manifest_path: Optional[Path] = None) -> None:
                     st.warning(f"⚠️ {len(failed_steps)} step(s) had issues", icon="⚠️")
         else:
             # No manifest - use fallback
-            opinions_csv = ROOT / "data" / "processed" / "opinions.csv"
+            opinions_csv = data_root() / "processed" / "opinions.csv"
             if opinions_csv.exists():
                 mtime = datetime.fromtimestamp(opinions_csv.stat().st_mtime)
                 st.caption(f"**Data from:** {mtime.strftime('%B %d, %Y')}")

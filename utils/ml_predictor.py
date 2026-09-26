@@ -10,6 +10,8 @@ from __future__ import annotations
 
 from dataclasses import asdict, dataclass
 from pathlib import Path
+
+from utils.runtime_paths import data_root
 from typing import Any
 
 import numpy as np
@@ -17,7 +19,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_MODEL_PATH = ROOT / "data" / "processed" / "outcome_model.joblib"
+DEFAULT_MODEL_PATH = data_root() / "processed" / "outcome_model.joblib"
 AFFIRMED_OUTCOMES = {"affirmed", "affirmed_in_part"}
 REVERSAL_OUTCOMES = {
     "reversed",

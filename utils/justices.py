@@ -8,12 +8,14 @@ import json
 from datetime import datetime
 from functools import lru_cache
 from pathlib import Path
+
+from utils.runtime_paths import data_root
 from typing import Any
 
 from utils.constants import JUSTICE_DISPLAY, VOTE_NOT_PARTICIPATING
 
 ROOT = Path(__file__).resolve().parent.parent
-JUSTICES_FILE = ROOT / "data" / "justices.json"
+JUSTICES_FILE = data_root() / "justices.json"
 
 
 def _parse_date(value: Any) -> datetime | None:

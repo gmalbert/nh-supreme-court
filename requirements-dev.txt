@@ -1,0 +1,4 @@
+# Developer/test environment; this remains the backwards-compatible default.
+-r requirements-build.txt
+pytest>=7.4.0
+pytest-mock>=3.11.0

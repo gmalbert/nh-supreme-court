@@ -6,6 +6,7 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
+from utils.runtime_paths import data_root
 
 from footer import add_gavel_glimpse_footer
 from utils.data_loader import load_attorney_statistics
@@ -14,7 +15,7 @@ from utils.data_loader import load_attorney_statistics
 st.set_page_config(page_title="Review Law Firms", layout="wide")
 
 ROOT = Path(__file__).resolve().parent.parent
-FIRM_SOURCE_FILE = ROOT / "data" / "nh_supreme_court_firms_enriched_v7.csv"
+FIRM_SOURCE_FILE = data_root() / "nh_supreme_court_firms_enriched_v7.csv"
 REVIEW_ACTIONS = [
     "Keep",
     "Merge into existing firm",

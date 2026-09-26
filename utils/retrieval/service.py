@@ -15,6 +15,7 @@ import pandas as pd
 import streamlit as st
 
 from .context_builder import build_context as _build_context
+from utils.runtime_paths import data_root
 
 INDEX_SCHEMA_VERSION = "2"
 from .diagnostics import LatencyRecorder, render_diagnostics
@@ -29,7 +30,7 @@ from .transcript_index import TranscriptIndex
 
 
 _REPO_ROOT = Path(__file__).resolve().parents[2]
-_DATA = _REPO_ROOT / "data" / "retrieval"
+_DATA = data_root() / "retrieval"
 
 _service_singleton: RetrievalService | None = None
 
