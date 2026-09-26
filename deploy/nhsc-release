@@ -5,7 +5,11 @@ set -euo pipefail
 CONFIG=/etc/nhsc-release.env
 [[ -r "$CONFIG" ]] || { echo "Missing $CONFIG" >&2; exit 2; }
 # shellcheck disable=SC1090
+# The protected file deliberately contains plain KEY=value assignments.  Export
+# them while sourcing so the child `aws` process receives the R2 credentials.
+set -a
 source "$CONFIG"
+set +a
 
 : "${NHSC_R2_BUCKET:?}" "${NHSC_R2_ACCOUNT_ID:?}" "${NHSC_RELEASE_ROOT:?}" \
   "${NHSC_SERVICE:?}" "${NHSC_HEALTH_URL:?}"
