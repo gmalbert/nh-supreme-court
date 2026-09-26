@@ -77,10 +77,12 @@ from utils.semantic_search import semantic_search
 from utils.topic_labeler import label_with_confidence
 from utils.transcript_search import search_transcript_corpus, timestamp_url
 from utils.weekly_digest import build_weekly_digest_html
+from utils.runtime_paths import data_root
 
 
-TREATMENTS_PATH = ROOT / "data" / "processed" / "authority_treatments.json"
-RELEASES_PATH = ROOT / "data" / "releases"
+DATA_ROOT = data_root()
+TREATMENTS_PATH = DATA_ROOT / "processed" / "authority_treatments.json"
+RELEASES_PATH = DATA_ROOT.parent / "releases"
 
 
 def _as_list(value) -> list[str]:
@@ -110,7 +112,7 @@ def _title_case_label(value: object) -> str:
 
 @st.cache_data(ttl=3600)
 def _counsel_facts() -> list[dict]:
-    path = ROOT / "data" / "processed" / "case_counsel.json"
+    path = DATA_ROOT / "processed" / "case_counsel.json"
     if not path.exists():
         return []
     payload = json.loads(path.read_text(encoding="utf-8"))
@@ -119,7 +121,7 @@ def _counsel_facts() -> list[dict]:
 
 @st.cache_data(ttl=3600)
 def _citation_records() -> dict:
-    path = ROOT / "data" / "processed" / "citations.json"
+    path = DATA_ROOT / "processed" / "citations.json"
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))
@@ -127,7 +129,7 @@ def _citation_records() -> dict:
 
 @st.cache_data(ttl=3600)
 def _oral_argument_metadata() -> list[dict]:
-    path = ROOT / "data" / "processed" / "oral_arguments.json"
+    path = DATA_ROOT / "processed" / "oral_arguments.json"
     if not path.exists():
         return []
     return json.loads(path.read_text(encoding="utf-8"))
@@ -176,7 +178,7 @@ def _oral_question_examples(
 ) -> pd.DataFrame:
     """Return auditable court-question excerpts without guessing a justice name."""
     rows = []
-    transcript_root = ROOT / "data" / "processed" / "oral_arguments"
+    transcript_root = DATA_ROOT / "processed" / "oral_arguments"
     interrogatives = re.compile(
         r"^(?:what|why|how|when|where|who|which|could|would|do|does|did|is|are|can)\b",
         re.IGNORECASE,
@@ -1147,7 +1149,7 @@ if section == "Open Data & Quality":
     with open_tabs[3]:
         st.subheader("Impact-ranked extraction review")
         observation_frame = load_observations(
-            ROOT / "data" / "processed" / "field_observations.sqlite"
+            DATA_ROOT / "processed" / "field_observations.sqlite"
         )
         if observation_frame.empty:
             observations = []
@@ -1211,7 +1213,7 @@ if section == "Open Data & Quality":
                     except json.JSONDecodeError:
                         parsed_value = reviewed_value.strip()
                     record_review(
-                        ROOT / "data" / "processed" / "field_observations.sqlite",
+                        DATA_ROOT / "processed" / "field_observations.sqlite",
                         record_id=str(selected["record_id"]),
                         field_name=str(selected["field_name"]),
                         source_sha256=str(selected["source_sha256"]),

@@ -24,7 +24,9 @@ import streamlit as st
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
-CITATION_OVERRIDES_PATH = ROOT / "data" / "citation_overrides.json"
+from utils.runtime_paths import data_root
+
+CITATION_OVERRIDES_PATH = data_root() / "citation_overrides.json"
 
 # Load environment variables for API keys
 load_dotenv(ROOT / ".env")
@@ -600,7 +602,7 @@ def _render_search_result(row: pd.Series) -> None:
 def _hybrid_retrieval_available() -> bool:
     """Check if hybrid retrieval artifacts are available."""
     try:
-        return (ROOT / "data" / "retrieval" / "case_documents.parquet").exists()
+        return (data_root() / "retrieval" / "case_documents.parquet").exists()
     except Exception:
         return False
 
@@ -1341,8 +1343,8 @@ def render_case_explorer() -> None:
     citations_data = None
     cited_by_data = None
     try:
-        citations_file = ROOT / "data" / "processed" / "citations.json"
-        cited_by_file = ROOT / "data" / "processed" / "cited_by.json"
+        citations_file = data_root() / "processed" / "citations.json"
+        cited_by_file = data_root() / "processed" / "cited_by.json"
         if citations_file.exists():
             with open(citations_file, encoding="utf-8") as f:
                 citations_data = json.load(f)

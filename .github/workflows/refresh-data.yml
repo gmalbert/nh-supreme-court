@@ -29,6 +29,8 @@ permissions:
 
 jobs:
   refresh-data:
+    outputs:
+      runtime_release_id: ${{ steps.runtime_release.outputs.release_id }}
     runs-on: ubuntu-latest
     timeout-minutes: 240
     
@@ -174,6 +176,27 @@ jobs:
             "s3://${R2_BUCKET}/pdfs" \
             --endpoint-url "${R2_ENDPOINT}" \
             --no-progress
+
+      - name: Restore persisted runtime seed
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+        run: |
+          set -euo pipefail
+          R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          SEED_PREFIX="releases/nh-supreme-court/runtime-seed/data/processed"
+          aws s3 ls "s3://${R2_BUCKET}/${SEED_PREFIX}/" \
+            --endpoint-url "${R2_ENDPOINT}" --no-progress > /dev/null
+          aws s3 sync "s3://${R2_BUCKET}/${SEED_PREFIX}" data/processed \
+            --endpoint-url "${R2_ENDPOINT}" --no-progress
+          ORAL_ARTIFACTS=$(find data/processed/oral_arguments -type f | wc -l)
+          if [ "$ORAL_ARTIFACTS" -lt 3000 ]; then
+            echo "Runtime seed is incomplete: expected at least 3,000 oral-argument artifacts, found $ORAL_ARTIFACTS." >&2
+            exit 1
+          fi
       
       - name: Parse opinions
         id: parse_opinions
@@ -358,7 +381,54 @@ jobs:
           with open('data/processed/refresh_manifest.json', 'w') as f:
               json.dump(manifest, f, indent=2)
           "
-      
+
+      - name: Build verified runtime release
+        id: runtime_release
+        if: steps.validate.outcome == 'success' && steps.playwright.outcome == 'success'
+        run: |
+          RELEASE_ID="$(date -u +%Y-%m-%dT%H%M%SZ)-${{ github.run_id }}"
+          python scripts/build_runtime_release.py \
+            --output-root dist/releases \
+            --release-id "$RELEASE_ID"
+          python scripts/verify_runtime_release.py "dist/releases/$RELEASE_ID"
+          echo "release_id=$RELEASE_ID" >> "$GITHUB_OUTPUT"
+
+      - name: Publish immutable runtime release to R2
+        if: steps.runtime_release.outcome == 'success'
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          RELEASE_ID: ${{ steps.runtime_release.outputs.release_id }}
+        run: |
+          set -euo pipefail
+          R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          PREFIX="releases/nh-supreme-court/${RELEASE_ID}"
+          aws s3 cp "dist/releases/${RELEASE_ID}/manifest.json" \
+            "s3://${R2_BUCKET}/${PREFIX}/manifest.json" \
+            --endpoint-url "$R2_ENDPOINT" --no-progress
+          aws s3 cp "dist/releases/${RELEASE_ID}.tar.gz" \
+            "s3://${R2_BUCKET}/${PREFIX}/runtime.tar.gz" \
+            --endpoint-url "$R2_ENDPOINT" --no-progress
+          python - <<'PY' > dist/current.json
+          import json
+          import os
+
+          release_id = os.environ["RELEASE_ID"]
+          prefix = f"releases/nh-supreme-court/{release_id}"
+          print(json.dumps({
+              "application": "nh-supreme-court",
+              "release_id": release_id,
+              "archive": f"{prefix}/runtime.tar.gz",
+              "manifest": f"{prefix}/manifest.json",
+              "archive_sha256": __import__("hashlib").sha256(open(f"dist/releases/{release_id}.tar.gz", "rb").read()).hexdigest(),
+          }))
+          PY
+          aws s3 cp dist/current.json "s3://${R2_BUCKET}/releases/nh-supreme-court/current.json" \
+            --endpoint-url "$R2_ENDPOINT" --no-progress
+
       - name: Check for changes
         id: check_changes
         run: |
@@ -479,3 +549,28 @@ jobs:
             git diff --stat HEAD -- data/processed/ >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
           fi
+
+  deploy-runtime-release:
+    needs: refresh-data
+    if: needs.refresh-data.result == 'success' && needs.refresh-data.outputs.runtime_release_id != '' && vars.NHSC_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Configure deployment SSH key
+        env:
+          DEPLOY_KEY: ${{ secrets.NHSC_DEPLOY_SSH_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.NHSC_DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+      - name: Install and health-check the published release
+        env:
+          DEPLOY_HOST: ${{ vars.NHSC_DEPLOY_HOST }}
+          DEPLOY_USER: ${{ vars.NHSC_DEPLOY_USER }}
+          RELEASE_ID: ${{ needs.refresh-data.outputs.runtime_release_id }}
+        run: |
+          test -n "$DEPLOY_HOST" && test -n "$DEPLOY_USER"
+          ssh -i ~/.ssh/id_ed25519 "$DEPLOY_USER@$DEPLOY_HOST" \
+            "sudo /usr/local/sbin/nhsc-release install '$RELEASE_ID'"

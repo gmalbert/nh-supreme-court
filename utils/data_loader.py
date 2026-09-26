@@ -16,11 +16,13 @@ import pandas as pd
 import streamlit as st
 
 from utils.oral_arguments import find_argument_for_docket, normalize_docket_numbers
+from utils.runtime_paths import data_root, production_runtime
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_DIR = BASE_DIR / "data" / "processed"
-PDF_DATE_OVERRIDES_DIR = BASE_DIR / "data" / "oral_argument_pdf_dates"
-RAW_DIR = BASE_DIR / "data" / "raw"
+DATA_ROOT = data_root()
+DATA_DIR = DATA_ROOT / "processed"
+PDF_DATE_OVERRIDES_DIR = DATA_ROOT / "oral_argument_pdf_dates"
+RAW_DIR = DATA_ROOT / "raw"
 _AUTO_BUILD_ATTEMPTED = False
 NON_FIRM_STATUS_PREFIX = "skipped —"
 
@@ -61,7 +63,7 @@ def _needs_master_rebuild() -> bool:
 def _ensure_master_dataset_fresh() -> None:
     global _AUTO_BUILD_ATTEMPTED
 
-    if _AUTO_BUILD_ATTEMPTED:
+    if production_runtime() or _AUTO_BUILD_ATTEMPTED:
         return
 
     if not _needs_master_rebuild():
@@ -152,7 +154,7 @@ def load_unmatched_argument_review_queue() -> pd.DataFrame:
 
 def load_pending_oral_argument_cases() -> pd.DataFrame:
     """Return docket-specific cases known to be awaiting disposition after argument."""
-    path = BASE_DIR / "data" / "pending_oral_argument_cases.csv"
+    path = DATA_ROOT / "pending_oral_argument_cases.csv"
     if not path.exists():
         return pd.DataFrame(columns=["case_number", "case_name", "argument_date", "notes"])
     return _load_csv_as_strings_cached(str(path), os.path.getmtime(path))
@@ -187,7 +189,7 @@ def load_opinions_json() -> list[dict]:
 @st.cache_data
 def load_justices() -> dict:
     """Return justice metadata keyed by justice key."""
-    path = BASE_DIR / "data" / "justices.json"
+    path = DATA_ROOT / "justices.json"
     if not path.exists():
         return {}
     with open(path, encoding="utf-8") as fh:
@@ -197,7 +199,7 @@ def load_justices() -> dict:
 
 @st.cache_data
 def load_topic_taxonomy() -> dict:
-    path = BASE_DIR / "data" / "topic_taxonomy.json"
+    path = DATA_ROOT / "topic_taxonomy.json"
     if not path.exists():
         return {}
     with open(path, encoding="utf-8") as fh:
@@ -406,7 +408,7 @@ def load_enhanced_statistics() -> dict:
 @st.cache_data(ttl=3600)
 def load_firm_metadata() -> dict:
     """Load firm metadata from the canonical reviewed-firm CSV."""
-    source_path = DATA_DIR.parent / "nh_supreme_court_firms_enriched_v7.csv"
+    source_path = DATA_ROOT / "nh_supreme_court_firms_enriched_v7.csv"
     if not source_path.exists():
         return {"firms": []}
     with open(source_path, newline="", encoding="utf-8") as fh:

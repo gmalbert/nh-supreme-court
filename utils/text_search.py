@@ -11,9 +11,10 @@ import re
 import pandas as pd
 import numpy as np
 import streamlit as st
+from utils.runtime_paths import data_root
 
 _REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-_CORPUS_PARQUET = os.path.join(_REPO_ROOT, "data", "retrieval", "case_documents.parquet")
+_CORPUS_PARQUET = str(data_root() / "retrieval" / "case_documents.parquet")
 
 
 # Case summaries—especially older ones—often use period-specific language

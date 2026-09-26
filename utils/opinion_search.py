@@ -11,9 +11,10 @@ from pathlib import Path
 from typing import Any, Optional
 
 import pandas as pd
+from utils.runtime_paths import data_root
 
 ROOT = Path(__file__).resolve().parent.parent
-SEARCH_INDEX_PATH = ROOT / "data" / "processed" / "opinions_fts.sqlite"
+SEARCH_INDEX_PATH = data_root() / "processed" / "opinions_fts.sqlite"
 
 
 def open_index() -> sqlite3.Connection:

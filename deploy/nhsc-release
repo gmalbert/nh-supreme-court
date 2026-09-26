@@ -1,0 +1,87 @@
+#!/usr/bin/env bash
+# Privileged, droplet-local installer for verified NHSC runtime releases.
+set -euo pipefail
+
+CONFIG=/etc/nhsc-release.env
+[[ -r "$CONFIG" ]] || { echo "Missing $CONFIG" >&2; exit 2; }
+# shellcheck disable=SC1090
+source "$CONFIG"
+
+: "${NHSC_R2_BUCKET:?}" "${NHSC_R2_ACCOUNT_ID:?}" "${NHSC_RELEASE_ROOT:?}" \
+  "${NHSC_SERVICE:?}" "${NHSC_HEALTH_URL:?}"
+ENDPOINT="https://${NHSC_R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
+POINTER="releases/nh-supreme-court/current.json"
+CURRENT="${NHSC_RELEASE_ROOT}/current"
+
+usage() { echo "Usage: $0 verify [release-id] | install [release-id] | rollback" >&2; exit 2; }
+fetch() { aws s3 cp "s3://${NHSC_R2_BUCKET}/$1" "$2" --endpoint-url "$ENDPOINT" --no-progress >&2; }
+
+verify_directory() {
+  local release_dir=$1
+  python3 - "$release_dir" <<'PY'
+import hashlib, json, pathlib, sys
+root = pathlib.Path(sys.argv[1]).resolve()
+manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+if manifest.get("application") != "nh-supreme-court" or manifest.get("manifest_schema_version") != 1:
+    raise SystemExit("incompatible release manifest")
+listed = {row["path"]: row for row in manifest["files"]}
+for relative, row in listed.items():
+    path = root / relative
+    if not path.is_file() or path.stat().st_size != row["bytes"]:
+        raise SystemExit(f"missing or truncated file: {relative}")
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    if digest != row["sha256"]:
+        raise SystemExit(f"checksum mismatch: {relative}")
+for relative in manifest["required_files"]:
+    if relative not in listed:
+        raise SystemExit(f"required file missing from manifest: {relative}")
+print(manifest["release_id"])
+PY
+}
+
+download_release() {
+  local requested=${1:-}
+  local work
+  work=$(mktemp -d)
+  fetch "$POINTER" "$work/current.json"
+  local release_id archive manifest archive_sha
+  readarray -t values < <(python3 - "$work/current.json" "$requested" <<'PY'
+import json, sys
+p = json.load(open(sys.argv[1], encoding="utf-8"))
+requested = sys.argv[2]
+if p.get("application") != "nh-supreme-court": raise SystemExit("wrong application pointer")
+if requested and requested != p["release_id"]: raise SystemExit("only current release may be installed automatically")
+print(p["release_id"]); print(p["archive"]); print(p["manifest"]); print(p["archive_sha256"])
+PY
+)
+  release_id=${values[0]}; archive=${values[1]}; manifest=${values[2]}; archive_sha=${values[3]}
+  fetch "$archive" "$work/runtime.tar.gz"
+  fetch "$manifest" "$work/manifest.json"
+  [[ $(sha256sum "$work/runtime.tar.gz" | awk '{print $1}') == "$archive_sha" ]] || { echo "archive checksum mismatch" >&2; exit 1; }
+  mkdir -p "$NHSC_RELEASE_ROOT/releases"
+  tar -xzf "$work/runtime.tar.gz" -C "$NHSC_RELEASE_ROOT/releases"
+  local release_dir="$NHSC_RELEASE_ROOT/releases/$release_id"
+  cmp -s "$work/manifest.json" "$release_dir/manifest.json" || { echo "manifest mismatch" >&2; exit 1; }
+  verify_directory "$release_dir" >/dev/null
+  rm -rf "$work"
+  printf '%s\n' "$release_dir"
+}
+
+case "${1:-}" in
+  verify) download_release "${2:-}" >/dev/null ;;
+  install)
+    new=$(download_release "${2:-}")
+    old=$(readlink -f "$CURRENT" || true)
+    ln -s "$new" "${CURRENT}.next"
+    mv -Tf "${CURRENT}.next" "$CURRENT"
+    if ! systemctl restart "$NHSC_SERVICE" || ! curl --fail --silent --show-error "$NHSC_HEALTH_URL" >/dev/null; then
+      [[ -n "$old" ]] && ln -sfn "$old" "$CURRENT"
+      systemctl restart "$NHSC_SERVICE" || true
+      echo "Activation failed; restored prior release" >&2
+      exit 1
+    fi
+    ;;
+  rollback)
+    echo "Rollback requires selecting the prior release explicitly; use the retained release symlink." >&2; exit 2 ;;
+  *) usage ;;
+esac

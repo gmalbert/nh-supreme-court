@@ -14,10 +14,11 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
+from utils.runtime_paths import data_root
 
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_EMBEDDINGS_FILE = ROOT / "data" / "retrieval" / "opinion_embeddings.npz"
+DEFAULT_EMBEDDINGS_FILE = data_root() / "retrieval" / "opinion_embeddings.npz"
 DEFAULT_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 
