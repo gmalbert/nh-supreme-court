@@ -20,6 +20,19 @@ CURRENT="${NHSC_RELEASE_ROOT}/current"
 usage() { echo "Usage: $0 verify [release-id] | install [release-id] | rollback" >&2; exit 2; }
 fetch() { aws s3 cp "s3://${NHSC_R2_BUCKET}/$1" "$2" --endpoint-url "$ENDPOINT" --no-progress >&2; }
 
+wait_for_health() {
+  local attempt
+  # Streamlit's process can be running before Uvicorn has bound its socket.
+  # Give it a short, bounded readiness window before considering activation bad.
+  for attempt in {1..30}; do
+    if curl --fail --silent --show-error "$NHSC_HEALTH_URL" >/dev/null; then
+      return 0
+    fi
+    sleep 1
+  done
+  return 1
+}
+
 verify_directory() {
   local release_dir=$1
   python3 - "$release_dir" <<'PY'
@@ -78,7 +91,7 @@ case "${1:-}" in
     old=$(readlink -f "$CURRENT" || true)
     ln -s "$new" "${CURRENT}.next"
     mv -Tf "${CURRENT}.next" "$CURRENT"
-    if ! systemctl restart "$NHSC_SERVICE" || ! curl --fail --silent --show-error "$NHSC_HEALTH_URL" >/dev/null; then
+    if ! systemctl restart "$NHSC_SERVICE" || ! wait_for_health; then
       [[ -n "$old" ]] && ln -sfn "$old" "$CURRENT"
       systemctl restart "$NHSC_SERVICE" || true
       echo "Activation failed; restored prior release" >&2
