@@ -176,6 +176,27 @@ jobs:
             "s3://${R2_BUCKET}/pdfs" \
             --endpoint-url "${R2_ENDPOINT}" \
             --no-progress
+
+      - name: Restore persisted runtime seed
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+        run: |
+          set -euo pipefail
+          R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          SEED_PREFIX="releases/nh-supreme-court/runtime-seed/data/processed"
+          aws s3 ls "s3://${R2_BUCKET}/${SEED_PREFIX}/" \
+            --endpoint-url "${R2_ENDPOINT}" --no-progress > /dev/null
+          aws s3 sync "s3://${R2_BUCKET}/${SEED_PREFIX}" data/processed \
+            --endpoint-url "${R2_ENDPOINT}" --no-progress
+          ORAL_ARTIFACTS=$(find data/processed/oral_arguments -type f | wc -l)
+          if [ "$ORAL_ARTIFACTS" -lt 3000 ]; then
+            echo "Runtime seed is incomplete: expected at least 3,000 oral-argument artifacts, found $ORAL_ARTIFACTS." >&2
+            exit 1
+          fi
       
       - name: Parse opinions
         id: parse_opinions

@@ -23,6 +23,32 @@ Sentence Transformers to turn a live query into a vector. The application
 automatically uses its shipped TF-IDF retrieval fallback instead, so the
 public service stays lightweight without silently downloading a model.
 
+## One-time runtime seed
+
+Some complete oral-argument artifacts are intentionally ignored by Git. Before
+the first Actions release, upload the complete local `data/processed/` tree to
+the existing private R2 bucket at:
+
+```text
+releases/nh-supreme-court/runtime-seed/data/processed/
+```
+
+Use a temporary or existing **write-capable** R2 credential locally; never put
+it on the droplet. With the R2 environment variables already set in the local
+shell, run:
+
+```powershell
+$r2Endpoint = "https://$env:CLOUDFLARE_ACCOUNT_ID.r2.cloudflarestorage.com"
+aws s3 sync data\processed `
+  "s3://$env:R2_BUCKET/releases/nh-supreme-court/runtime-seed/data/processed" `
+  --endpoint-url $r2Endpoint `
+  --no-progress
+```
+
+The refresh workflow restores this seed before rebuilding current data. It
+then publishes the immutable release separately. The seed is a private build
+input, not the droplet's serving source.
+
 Build and inspect a local release:
 
 ```powershell
