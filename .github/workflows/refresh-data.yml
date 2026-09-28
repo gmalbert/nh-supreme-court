@@ -189,7 +189,7 @@ jobs:
           R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
           SEED_PREFIX="releases/nh-supreme-court/runtime-seed/data/processed"
           aws s3 ls "s3://${R2_BUCKET}/${SEED_PREFIX}/" \
-            --endpoint-url "${R2_ENDPOINT}" --no-progress > /dev/null
+            --endpoint-url "${R2_ENDPOINT}" > /dev/null
           aws s3 sync "s3://${R2_BUCKET}/${SEED_PREFIX}" data/processed \
             --endpoint-url "${R2_ENDPOINT}" --no-progress
           ORAL_ARTIFACTS=$(find data/processed/oral_arguments -type f | wc -l)
