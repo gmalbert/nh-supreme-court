@@ -565,6 +565,8 @@ jobs:
           printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          echo "Deployment SSH key fingerprint:"
+          ssh-keygen -lf ~/.ssh/id_ed25519
       - name: Install and health-check the published release
         env:
           DEPLOY_HOST: ${{ vars.NHSC_DEPLOY_HOST }}
@@ -572,5 +574,5 @@ jobs:
           RELEASE_ID: ${{ needs.refresh-data.outputs.runtime_release_id }}
         run: |
           test -n "$DEPLOY_HOST" && test -n "$DEPLOY_USER"
-          ssh -i ~/.ssh/id_ed25519 "$DEPLOY_USER@$DEPLOY_HOST" \
+          ssh -vv -i ~/.ssh/id_ed25519 "$DEPLOY_USER@$DEPLOY_HOST" \
             "sudo /usr/local/sbin/nhsc-release install '$RELEASE_ID'"
