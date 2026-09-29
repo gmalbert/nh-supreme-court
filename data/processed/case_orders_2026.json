@@ -172,7 +172,7 @@
     "word_count": 455,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:43.220369",
+    "parse_timestamp": "2026-09-29T20:47:33.998666",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -264,7 +264,7 @@
     "word_count": 1396,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:43.524096",
+    "parse_timestamp": "2026-09-29T20:47:34.293624",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -362,7 +362,7 @@
     "word_count": 1375,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:43.825661",
+    "parse_timestamp": "2026-09-29T20:47:34.569505",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -548,7 +548,7 @@
     "word_count": 1250,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:44.143976",
+    "parse_timestamp": "2026-09-29T20:47:34.871020",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -634,7 +634,7 @@
     "word_count": 1401,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:44.459634",
+    "parse_timestamp": "2026-09-29T20:47:35.181177",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -727,7 +727,7 @@
     "word_count": 1367,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:44.790536",
+    "parse_timestamp": "2026-09-29T20:47:35.507454",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -815,7 +815,7 @@
     "word_count": 1475,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:45.133557",
+    "parse_timestamp": "2026-09-29T20:47:35.836964",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -902,7 +902,7 @@
     "word_count": 1346,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:45.438336",
+    "parse_timestamp": "2026-09-29T20:47:36.135130",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -993,7 +993,7 @@
     "word_count": 1397,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:45.745764",
+    "parse_timestamp": "2026-09-29T20:47:36.436721",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1084,7 +1084,454 @@
     "word_count": 1501,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:46.091793",
+    "parse_timestamp": "2026-09-29T20:47:36.773958",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2026-0216",
+    "source_file_key": "2026-0216",
+    "docket_numbers": [
+      "2026-0216"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "K.V. v. C.B.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-09/20260216.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20260216.pdf",
+    "date_argued": null,
+    "date_issued": "2026-08-17",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court (Cabrera, J.)",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Cabrera",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "reversed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "domestic_violence"
+    ],
+    "rsa_citations": [
+      "RSA 173-B:5",
+      "RSA 173-B:3, VI",
+      "RSA 173-B",
+      "RSA 173-B:5, I",
+      "RSA 173-B:1, I",
+      "RSA 633:3-a, I"
+    ],
+    "rsa_primary": "RSA 173-B:5",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "",
+    "word_count": 1213,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:37.054323",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0605",
+    "source_file_key": "2025-0605",
+    "docket_numbers": [
+      "2025-0605"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Lefebvre's Towing, LLC v. Catherine Henry",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-09/20250605.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250605.pdf",
+    "date_argued": null,
+    "date_issued": "2026-08-17",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Steckowych",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "property"
+    ],
+    "rsa_citations": [
+      "RSA 262:40-a, I",
+      "RSA 262:34",
+      "RSA 262:40-a, IV",
+      "RSA 503:7"
+    ],
+    "rsa_primary": "RSA 262:40-a, I",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 1233,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:37.393631",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2026-0098",
+    "source_file_key": "2026-0098",
+    "docket_numbers": [
+      "2026-0098"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "A.H. v. F.A.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-09/20260098.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20260098.pdf",
+    "date_argued": null,
+    "date_issued": "2026-08-14",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": null,
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "domestic_violence"
+    ],
+    "rsa_citations": [
+      "RSA 173-B:5"
+    ],
+    "rsa_primary": "RSA 173-B:5",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 166,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:37.445546",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2026-0049",
+    "source_file_key": "2026-0049",
+    "docket_numbers": [
+      "2026-0049"
+    ],
+    "citation": "2024 N.H. 70",
+    "citation_year": 2024,
+    "citation_seq": 70,
+    "case_name": "V.C. v. W.C.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-09/20260049.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20260049.pdf",
+    "date_argued": null,
+    "date_issued": "2026-08-14",
+    "days_to_decision": null,
+    "term_year": 2024,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": "Paine",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 3,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 3,
+    "vote_string": "3-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "statutory_interpretation",
+      "domestic_violence"
+    ],
+    "rsa_citations": [
+      "RSA 173-B:5, VI",
+      "RSA 633:3-a, II"
+    ],
+    "rsa_primary": "RSA 173-B:5, VI",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [],
+    "summary_paragraph": "defendant waives jurisdictional\nchallenge by proceeding on the merits), the defendant has failed to provide a\nrecord to demonstrate that he raised this issue in the trial court.\nTo the extent that the defendant’s brief may be construed to raise\nadditional issues, we conclude that they are not sufficiently developed, see\nState v. Blackmer, 149 N.H. 47, 48 (2003), or otherwise do not warrant further\ndiscussion, see Vogel v. Vogel, 137 N.H. 321, 322 (1993).\nAffirmed.\nDonovan, Gould, and Will, JJ., concurred.\nTimothy A. Gudas,\nClerk\n2",
+    "word_count": 442,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:37.589325",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2026-0250",
+    "source_file_key": "2026-0250",
+    "docket_numbers": [
+      "2026-0250"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "State of New Hampshire v. Grace Woodham",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-09/20260250.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20260250.pdf",
+    "date_argued": null,
+    "date_issued": "2026-08-14",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Superior Court (Frizzell, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Frizzell",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "property"
+    ],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 137,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:37.629266",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1170,7 +1617,275 @@
     "word_count": 733,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:46.243948",
+    "parse_timestamp": "2026-09-29T20:47:37.773308",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2026-0141",
+    "source_file_key": "2026-0141",
+    "docket_numbers": [
+      "2026-0141"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "G.B. v. J.J.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-09/20260141.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20260141.pdf",
+    "date_argued": null,
+    "date_issued": "2026-08-14",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Boyle, R., approved by Lombardi",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "constitutional",
+      "domestic_violence"
+    ],
+    "rsa_citations": [
+      "RSA 633:3-a",
+      "RSA 633:3-a, I",
+      "RSA 633:3-a, II"
+    ],
+    "rsa_primary": "RSA 633:3-a",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 505,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:37.879872",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2026-0266",
+    "source_file_key": "2026-0266",
+    "docket_numbers": [
+      "2026-0266"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Zac Correia v. Kimberly Brandolini",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-09/20260266.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20260266.pdf",
+    "date_argued": null,
+    "date_issued": "2026-08-14",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court (Lyons, R., approved by Spony, J.), following a",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Lyons, R., approved by Spony",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "statutory_interpretation",
+      "contract"
+    ],
+    "rsa_citations": [
+      "RSA 540-A:3, V",
+      "RSA 540-A:4, IX",
+      "RSA 540-A:4, V",
+      "RSA 540-A:3",
+      "RSA 358-A:10"
+    ],
+    "rsa_primary": "RSA 540-A:3, V",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 826,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:38.095753",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2026-0201",
+    "source_file_key": "2026-0201",
+    "docket_numbers": [
+      "2026-0201"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Caidan Berube v. David Chestnut",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-09/20260201.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20260201.pdf",
+    "date_argued": null,
+    "date_issued": "2026-08-14",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Bedrick",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "contract"
+    ],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 310,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:38.173832",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1261,7 +1976,183 @@
     "word_count": 1437,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:46.592352",
+    "parse_timestamp": "2026-09-29T20:47:38.500668",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0630",
+    "source_file_key": "2025-0630",
+    "docket_numbers": [
+      "2025-0630"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Sy Tebbetts v. Hudson School District",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-09/20250630.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250630.pdf",
+    "date_argued": null,
+    "date_issued": "2026-08-14",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court (Lyons",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Lyons,\nR., approved by Manchester",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "administrative_law",
+      "civil_procedure",
+      "statutory_interpretation",
+      "employment"
+    ],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 538,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:38.634725",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0082",
+    "source_file_key": "2025-0082",
+    "docket_numbers": [
+      "2025-0082"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "State of New Hampshire v. Anthony Jerrier",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-09/20250082.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250082.pdf",
+    "date_argued": null,
+    "date_issued": "2026-08-13",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Superior Court (Leonard, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Leonard",
+    "case_type": "criminal",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal"
+    ],
+    "rsa_citations": [
+      "RSA 632-A:2",
+      "RSA 629:1"
+    ],
+    "rsa_primary": "RSA 632-A:2",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 853,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:38.853791",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1359,7 +2250,7 @@
     "word_count": 1510,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:46.938232",
+    "parse_timestamp": "2026-09-29T20:47:39.182198",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1449,7 +2340,7 @@
     "word_count": 1129,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:47.224177",
+    "parse_timestamp": "2026-09-29T20:47:39.460833",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1534,7 +2425,7 @@
     "word_count": 148,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:47.270682",
+    "parse_timestamp": "2026-09-29T20:47:39.503198",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1623,7 +2514,7 @@
     "word_count": 782,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:47.432162",
+    "parse_timestamp": "2026-09-29T20:47:39.654976",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1710,7 +2601,7 @@
     "word_count": 464,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:47.587368",
+    "parse_timestamp": "2026-09-29T20:47:39.812097",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1798,7 +2689,7 @@
     "word_count": 166,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:47.637597",
+    "parse_timestamp": "2026-09-29T20:47:39.858686",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1889,7 +2780,7 @@
     "word_count": 793,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:47.807708",
+    "parse_timestamp": "2026-09-29T20:47:40.018510",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1972,7 +2863,7 @@
     "word_count": 191,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:47.868722",
+    "parse_timestamp": "2026-09-29T20:47:40.075377",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2061,7 +2952,92 @@
     "word_count": 484,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:48.020040",
+    "parse_timestamp": "2026-09-29T20:47:40.228801",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0133",
+    "source_file_key": "2025-0133",
+    "docket_numbers": [
+      "2025-0133"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "In the Matter of Tara Dickison and Thomas Sileo",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20250133.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250133.pdf",
+    "date_argued": null,
+    "date_issued": "2026-07-17",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Joseph",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": null,
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 0,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 6,
+    "vote_string": "Unavailable",
+    "is_unanimous": false,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "family_law"
+    ],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 1333,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:40.484093",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2149,46 +3125,46 @@
     "word_count": 262,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:48.096208",
+    "parse_timestamp": "2026-09-29T20:47:40.603675",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
-    "case_number": "2025-0133",
-    "source_file_key": "2025-0133",
+    "case_number": "2025-0562",
+    "source_file_key": "2025-0562",
     "docket_numbers": [
-      "2025-0133"
+      "2025-0562"
     ],
     "citation": null,
     "citation_year": null,
     "citation_seq": null,
-    "case_name": "In the Matter of Tara Dickison and Thomas Sileo",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20250133.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250133.pdf",
+    "case_name": "Cody M. Belanger v. Trivantus, Inc.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-08/20250562.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250562.pdf",
     "date_argued": null,
-    "date_issued": "2026-07-17",
+    "date_issued": "2026-07-15",
     "days_to_decision": null,
     "term_year": 2026,
-    "lower_court": "Circuit Court",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Joseph",
-    "case_type": "family/domestic",
+    "lower_court": "Superior Court (Ruoff, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Ruoff",
+    "case_type": null,
     "appeal_type": "standard",
-    "outcome": null,
+    "outcome": "affirmed",
     "author": "per_curiam",
     "author_display": "Per Curiam",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
@@ -2199,14 +3175,14 @@
       "countway": {
         "display_name": "Countway, J.",
         "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
       },
       "gould": {
         "display_name": "Gould, J.",
         "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
       },
       "will": {
         "display_name": "Will, J.",
@@ -2215,26 +3191,24 @@
         "note": null
       }
     },
-    "majority": 0,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "Unavailable",
-    "is_unanimous": false,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
-    "topics": [
-      "family_law"
-    ],
+    "topics": [],
     "rsa_citations": [],
     "rsa_primary": null,
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1333,
+    "word_count": 431,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:48.400514",
+    "parse_timestamp": "2026-09-29T20:47:40.698796",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2319,90 +3293,7 @@
     "word_count": 222,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:48.461790",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0562",
-    "source_file_key": "2025-0562",
-    "docket_numbers": [
-      "2025-0562"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Cody M. Belanger v. Trivantus, Inc.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-08/20250562.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250562.pdf",
-    "date_argued": null,
-    "date_issued": "2026-07-15",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Superior Court (Ruoff, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Ruoff",
-    "case_type": null,
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [],
-    "rsa_citations": [],
-    "rsa_primary": null,
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 431,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:48.562932",
+    "parse_timestamp": "2026-09-29T20:47:40.756029",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2490,7 +3381,92 @@
     "word_count": 331,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:48.652384",
+    "parse_timestamp": "2026-09-29T20:47:40.840301",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0446",
+    "source_file_key": "2025-0446",
+    "docket_numbers": [
+      "2025-0446"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "State of New Hampshire v. Grace Woodham",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-08/20250446.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250446.pdf",
+    "date_argued": null,
+    "date_issued": "2026-07-10",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Superior Court (Frizzell, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Frizzell",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "property"
+    ],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 316,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:40.914111",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2584,92 +3560,7 @@
     "word_count": 1127,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:48.940085",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0446",
-    "source_file_key": "2025-0446",
-    "docket_numbers": [
-      "2025-0446"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "State of New Hampshire v. Grace Woodham",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-08/20250446.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250446.pdf",
-    "date_argued": null,
-    "date_issued": "2026-07-10",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Superior Court (Frizzell, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Frizzell",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "property"
-    ],
-    "rsa_citations": [],
-    "rsa_primary": null,
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 316,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:49.021278",
+    "parse_timestamp": "2026-09-29T20:47:41.180820",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2759,7 +3650,7 @@
     "word_count": 1216,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:49.325464",
+    "parse_timestamp": "2026-09-29T20:47:41.473293",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2845,263 +3736,7 @@
     "word_count": 485,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:49.460062",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0299",
-    "source_file_key": "2025-0299",
-    "docket_numbers": [
-      "2025-0299"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Laurie Ortolano v. City of Nashua & a.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20250299.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250299.pdf",
-    "date_argued": null,
-    "date_issued": "2026-06-17",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Superior Court",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Smith",
-    "case_type": null,
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      }
-    },
-    "majority": 5,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [],
-    "rsa_citations": [
-      "RSA 91-A"
-    ],
-    "rsa_primary": "RSA 91-A",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 205,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:49.524195",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2026-0116",
-    "source_file_key": "2026-0116",
-    "docket_numbers": [
-      "2026-0116"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Naseef Bryan v. James Gleason",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20260116.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20260116.pdf",
-    "date_argued": null,
-    "date_issued": "2026-06-17",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Superior Court (Messer, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Messer",
-    "case_type": null,
-    "appeal_type": "standard",
-    "outcome": "dismissed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "Donovan, Countway, and Gould, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "Donovan, Countway, and Gould, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "Donovan, Countway, and Gould, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 3,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 3,
-    "vote_string": "3-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [],
-    "rsa_citations": [],
-    "rsa_primary": null,
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 198,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:49.633484",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0242",
-    "source_file_key": "2025-0242",
-    "docket_numbers": [
-      "2025-0242"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Robert Auger v. Jeremy L. Pickering",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20250242.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250242.pdf",
-    "date_argued": null,
-    "date_issued": "2026-06-17",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Superior Court (Leonard",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Leonard",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": null,
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 0,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "Unavailable",
-    "is_unanimous": false,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "contract",
-      "evidence"
-    ],
-    "rsa_citations": [
-      "RSA 516:29-c"
-    ],
-    "rsa_primary": "RSA 516:29-c",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 1329,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:49.953706",
+    "parse_timestamp": "2026-09-29T20:47:41.598190",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3195,7 +3830,7 @@
     "word_count": 1150,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:50.265078",
+    "parse_timestamp": "2026-09-29T20:47:41.908503",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3291,7 +3926,263 @@
     "word_count": 1351,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:50.563650",
+    "parse_timestamp": "2026-09-29T20:47:42.207988",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0299",
+    "source_file_key": "2025-0299",
+    "docket_numbers": [
+      "2025-0299"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Laurie Ortolano v. City of Nashua & a.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20250299.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250299.pdf",
+    "date_argued": null,
+    "date_issued": "2026-06-17",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Superior Court",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Smith",
+    "case_type": null,
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 5,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "5-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [],
+    "rsa_citations": [
+      "RSA 91-A"
+    ],
+    "rsa_primary": "RSA 91-A",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 205,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:42.268219",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2026-0116",
+    "source_file_key": "2026-0116",
+    "docket_numbers": [
+      "2026-0116"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Naseef Bryan v. James Gleason",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20260116.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20260116.pdf",
+    "date_argued": null,
+    "date_issued": "2026-06-17",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Superior Court (Messer, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Messer",
+    "case_type": null,
+    "appeal_type": "standard",
+    "outcome": "dismissed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, and Gould, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, and Gould, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, and Gould, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 3,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 3,
+    "vote_string": "3-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 198,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:42.328550",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0242",
+    "source_file_key": "2025-0242",
+    "docket_numbers": [
+      "2025-0242"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Robert Auger v. Jeremy L. Pickering",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20250242.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250242.pdf",
+    "date_argued": null,
+    "date_issued": "2026-06-17",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Superior Court (Leonard",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Leonard",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": null,
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 0,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 6,
+    "vote_string": "Unavailable",
+    "is_unanimous": false,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "contract",
+      "evidence"
+    ],
+    "rsa_citations": [
+      "RSA 516:29-c"
+    ],
+    "rsa_primary": "RSA 516:29-c",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 1329,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:42.683207",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3376,7 +4267,7 @@
     "word_count": 236,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:50.628339",
+    "parse_timestamp": "2026-09-29T20:47:42.742752",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3465,7 +4356,7 @@
     "word_count": 595,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:50.807774",
+    "parse_timestamp": "2026-09-29T20:47:42.919582",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3557,7 +4448,7 @@
     "word_count": 998,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:51.056888",
+    "parse_timestamp": "2026-09-29T20:47:43.155214",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3643,93 +4534,7 @@
     "word_count": 703,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:51.250475",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0507",
-    "source_file_key": "2025-0507",
-    "docket_numbers": [
-      "2025-0507"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Alma Ruth Beckwith v. Kimberly McCormick",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20250507.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250507.pdf",
-    "date_argued": null,
-    "date_issued": "2026-06-05",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Superior Court (Attorri, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Attorri",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Gould, and Will, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Gould, and Will, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Gould, and Will, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Gould, and Will, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "property",
-      "contract"
-    ],
-    "rsa_citations": [],
-    "rsa_primary": null,
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 554,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:51.372965",
+    "parse_timestamp": "2026-09-29T20:47:43.345780",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3816,7 +4621,183 @@
     "word_count": 797,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:51.538936",
+    "parse_timestamp": "2026-09-29T20:47:43.504227",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0507",
+    "source_file_key": "2025-0507",
+    "docket_numbers": [
+      "2025-0507"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Alma Ruth Beckwith v. Kimberly McCormick",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20250507.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250507.pdf",
+    "date_argued": null,
+    "date_issued": "2026-06-05",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Superior Court (Attorri, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Attorri",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Gould, and Will, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "property",
+      "contract"
+    ],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 554,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:43.619462",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0750",
+    "source_file_key": "2025-0750",
+    "docket_numbers": [
+      "2025-0750"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "S.N. v. N.N.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20250750.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250750.pdf",
+    "date_argued": null,
+    "date_issued": "2026-06-03",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Steckowych",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "remanded",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 5,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "5-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "family_law",
+      "domestic_violence",
+      "tax"
+    ],
+    "rsa_citations": [
+      "RSA 173-B:5, VI",
+      "RSA 173-B:1"
+    ],
+    "rsa_primary": "RSA 173-B:5, VI",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 717,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:43.819384",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3915,180 +4896,7 @@
     "word_count": 1473,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:51.875081",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0750",
-    "source_file_key": "2025-0750",
-    "docket_numbers": [
-      "2025-0750"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "S.N. v. N.N.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20250750.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250750.pdf",
-    "date_argued": null,
-    "date_issued": "2026-06-03",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Circuit Court",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Steckowych",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "remanded",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      }
-    },
-    "majority": 5,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "family_law",
-      "domestic_violence",
-      "tax"
-    ],
-    "rsa_citations": [
-      "RSA 173-B:5, VI",
-      "RSA 173-B:1"
-    ],
-    "rsa_primary": "RSA 173-B:5, VI",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 717,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:52.066580",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0777",
-    "source_file_key": "2025-0777",
-    "docket_numbers": [
-      "2025-0777"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Tony Olivolo v. Nicole McNeal",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20250777.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250777.pdf",
-    "date_argued": null,
-    "date_issued": "2026-06-02",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Circuit Court (Ryan",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Ryan",
-    "case_type": null,
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      }
-    },
-    "majority": 5,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [],
-    "rsa_citations": [],
-    "rsa_primary": null,
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 292,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:52.147569",
+    "parse_timestamp": "2026-09-29T20:47:44.150550",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4173,7 +4981,90 @@
     "word_count": 1404,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:52.464173",
+    "parse_timestamp": "2026-09-29T20:47:44.482878",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0777",
+    "source_file_key": "2025-0777",
+    "docket_numbers": [
+      "2025-0777"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Tony Olivolo v. Nicole McNeal",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-07/20250777.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250777.pdf",
+    "date_argued": null,
+    "date_issued": "2026-06-02",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court (Ryan",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Ryan",
+    "case_type": null,
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 5,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "5-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 292,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:44.559425",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4261,7 +5152,7 @@
     "word_count": 372,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:52.558879",
+    "parse_timestamp": "2026-09-29T20:47:44.646967",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4349,7 +5240,7 @@
     "word_count": 264,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:52.636891",
+    "parse_timestamp": "2026-09-29T20:47:44.718827",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4444,7 +5335,7 @@
     "word_count": 1485,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:52.982416",
+    "parse_timestamp": "2026-09-29T20:47:45.069590",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4538,7 +5429,7 @@
     "word_count": 661,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:53.168300",
+    "parse_timestamp": "2026-09-29T20:47:45.253942",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4629,97 +5520,7 @@
     "word_count": 550,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:53.296598",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0135",
-    "source_file_key": "2025-0135",
-    "docket_numbers": [
-      "2025-0135"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Phyllis Kennedy & a. v. Richard Miller d/b/a Seacoast Braces/Miller Orthodontics",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/20250135.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250135.pdf",
-    "date_argued": null,
-    "date_issued": "2026-05-15",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Superior Court (Schulman, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Schulman",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      }
-    },
-    "majority": 5,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "tort",
-      "evidence"
-    ],
-    "rsa_citations": [
-      "RSA 516:29-a",
-      "RSA 516:29-b",
-      "RSA 516:29-b, II"
-    ],
-    "rsa_primary": "RSA 516:29-a",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 998,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:53.875091",
+    "parse_timestamp": "2026-09-29T20:47:45.376377",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4812,118 +5613,29 @@
     "word_count": 1366,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:54.177187",
+    "parse_timestamp": "2026-09-29T20:47:45.674792",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
-    "case_number": "2025-0154",
-    "source_file_key": "2025-0154",
+    "case_number": "2025-0135",
+    "source_file_key": "2025-0135",
     "docket_numbers": [
-      "2025-0154"
+      "2025-0135"
     ],
     "citation": null,
     "citation_year": null,
     "citation_seq": null,
-    "case_name": "City of Portsmouth, New Hampshire Police Commission/Police Department v. Portsmouth Ranking Officers Association, NEPBA, Local 220",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/20250154.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250154.pdf",
+    "case_name": "Phyllis Kennedy & a. v. Richard Miller d/b/a Seacoast Braces/Miller Orthodontics",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/20250135.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250135.pdf",
     "date_argued": null,
-    "date_issued": "2026-05-14",
+    "date_issued": "2026-05-15",
     "days_to_decision": null,
     "term_year": 2026,
-    "lower_court": "Superior Court",
+    "lower_court": "Superior Court (Schulman, J.)",
     "lower_court_type": "superior_court",
-    "lower_court_judge": "Ruoff",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "remanded",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 0,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "Unavailable",
-    "is_unanimous": false,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "constitutional",
-      "employment",
-      "contract"
-    ],
-    "rsa_citations": [
-      "RSA 542:8"
-    ],
-    "rsa_primary": "RSA 542:8",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 1342,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:54.448927",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2026-0096",
-    "source_file_key": "2026-0096",
-    "docket_numbers": [
-      "2026-0096"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Eastman Community Association v. Noah Gabriel",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/20260096.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20260096.pdf",
-    "date_argued": null,
-    "date_issued": "2026-05-14",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Circuit Court",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Christo",
+    "lower_court_judge": "Schulman",
     "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
@@ -4976,17 +5688,22 @@
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
-      "constitutional"
+      "tort",
+      "evidence"
     ],
-    "rsa_citations": [],
-    "rsa_primary": null,
+    "rsa_citations": [
+      "RSA 516:29-a",
+      "RSA 516:29-b",
+      "RSA 516:29-b, II"
+    ],
+    "rsa_primary": "RSA 516:29-a",
     "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 370,
+    "word_count": 998,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:54.595706",
+    "parse_timestamp": "2026-09-29T20:47:46.183377",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5079,7 +5796,264 @@
     "word_count": 1434,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:54.936772",
+    "parse_timestamp": "2026-09-29T20:47:46.537168",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0154",
+    "source_file_key": "2025-0154",
+    "docket_numbers": [
+      "2025-0154"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "City of Portsmouth, New Hampshire Police Commission/Police Department v. Portsmouth Ranking Officers Association, NEPBA, Local 220",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/20250154.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250154.pdf",
+    "date_argued": null,
+    "date_issued": "2026-05-14",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Superior Court",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Ruoff",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "remanded",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 0,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 6,
+    "vote_string": "Unavailable",
+    "is_unanimous": false,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "constitutional",
+      "employment",
+      "contract"
+    ],
+    "rsa_citations": [
+      "RSA 542:8"
+    ],
+    "rsa_primary": "RSA 542:8",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 1342,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:46.794183",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2026-0096",
+    "source_file_key": "2026-0096",
+    "docket_numbers": [
+      "2026-0096"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Eastman Community Association v. Noah Gabriel",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/20260096.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20260096.pdf",
+    "date_argued": null,
+    "date_issued": "2026-05-14",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Christo",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 5,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "5-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "constitutional"
+    ],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 370,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:46.957452",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0224",
+    "source_file_key": "2025-0224",
+    "docket_numbers": [
+      "2025-0224"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Esruandy Salcedo Ozoria v. Dubai Night Club and Grill, LLC & a.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/20250224.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250224.pdf",
+    "date_argued": null,
+    "date_issued": "2026-05-13",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court (Bernazzani, J.)",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Bernazzani",
+    "case_type": null,
+    "appeal_type": "standard",
+    "outcome": "vacated",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 5,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "5-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 837,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:47.128443",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5166,179 +6140,7 @@
     "word_count": 228,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:55.007147",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0224",
-    "source_file_key": "2025-0224",
-    "docket_numbers": [
-      "2025-0224"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Esruandy Salcedo Ozoria v. Dubai Night Club and Grill, LLC & a.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/20250224.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250224.pdf",
-    "date_argued": null,
-    "date_issued": "2026-05-13",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Circuit Court (Bernazzani, J.)",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Bernazzani",
-    "case_type": null,
-    "appeal_type": "standard",
-    "outcome": "vacated",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      }
-    },
-    "majority": 5,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [],
-    "rsa_citations": [],
-    "rsa_primary": null,
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 837,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:55.182554",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0774",
-    "source_file_key": "2025-0774",
-    "docket_numbers": [
-      "2025-0774"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "G.B. v. T.F.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/20250774.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250774.pdf",
-    "date_argued": null,
-    "date_issued": "2026-05-12",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Circuit Court (Alfano, J.)",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Alfano",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "vacated",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      }
-    },
-    "majority": 5,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "domestic_violence"
-    ],
-    "rsa_citations": [
-      "RSA 633:3-a, III",
-      "RSA 173-B:5, VI"
-    ],
-    "rsa_primary": "RSA 633:3-a, III",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 529,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:55.356665",
+    "parse_timestamp": "2026-09-29T20:47:47.194479",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5423,7 +6225,7 @@
     "word_count": 179,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:55.418045",
+    "parse_timestamp": "2026-09-29T20:47:47.250927",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5514,7 +6316,96 @@
     "word_count": 1139,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:55.652232",
+    "parse_timestamp": "2026-09-29T20:47:47.521748",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0774",
+    "source_file_key": "2025-0774",
+    "docket_numbers": [
+      "2025-0774"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "G.B. v. T.F.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-06/20250774.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250774.pdf",
+    "date_argued": null,
+    "date_issued": "2026-05-12",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court (Alfano, J.)",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Alfano",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "vacated",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 5,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "5-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "domestic_violence"
+    ],
+    "rsa_citations": [
+      "RSA 633:3-a, III",
+      "RSA 173-B:5, VI"
+    ],
+    "rsa_primary": "RSA 633:3-a, III",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 529,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:47.629772",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5604,99 +6495,7 @@
     "word_count": 973,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:55.902646",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0579",
-    "source_file_key": "2025-0579",
-    "docket_numbers": [
-      "2025-0579"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "C.A. v. D.N.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/20250579.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250579.pdf",
-    "date_argued": null,
-    "date_issued": "2026-04-28",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Circuit Court (Lombardi, J.)",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Lombardi",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": null,
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 0,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "Unavailable",
-    "is_unanimous": false,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "constitutional",
-      "property",
-      "domestic_violence"
-    ],
-    "rsa_citations": [
-      "RSA 633:3-a",
-      "RSA 633:3-a, I",
-      "RSA 633:3-a, II"
-    ],
-    "rsa_primary": "RSA 633:3-a",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 1434,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:56.233255",
+    "parse_timestamp": "2026-09-29T20:47:47.875710",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5788,7 +6587,99 @@
     "word_count": 1434,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:56.566096",
+    "parse_timestamp": "2026-09-29T20:47:48.194332",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0579",
+    "source_file_key": "2025-0579",
+    "docket_numbers": [
+      "2025-0579"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "C.A. v. D.N.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/20250579.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250579.pdf",
+    "date_argued": null,
+    "date_issued": "2026-04-28",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court (Lombardi, J.)",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Lombardi",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": null,
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 0,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 6,
+    "vote_string": "Unavailable",
+    "is_unanimous": false,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "constitutional",
+      "property",
+      "domestic_violence"
+    ],
+    "rsa_citations": [
+      "RSA 633:3-a",
+      "RSA 633:3-a, I",
+      "RSA 633:3-a, II"
+    ],
+    "rsa_primary": "RSA 633:3-a",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 1434,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:48.529177",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5879,7 +6770,7 @@
     "word_count": 1401,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:56.888249",
+    "parse_timestamp": "2026-09-29T20:47:48.851654",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5969,93 +6860,7 @@
     "word_count": 546,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:57.015215",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0421",
-    "source_file_key": "2025-0421",
-    "docket_numbers": [
-      "2025-0421"
-    ],
-    "citation": "2025 N.H. 13",
-    "citation_year": 2025,
-    "citation_seq": 13,
-    "case_name": "Farres Alkhayer v. City of Nashua & a.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-05/20250421.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250421.pdf",
-    "date_argued": null,
-    "date_issued": "2026-04-22",
-    "days_to_decision": null,
-    "term_year": 2025,
-    "lower_court": "Circuit Court (Major, J.)",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Major",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      }
-    },
-    "majority": 5,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "statutory_interpretation",
-      "constitutional"
-    ],
-    "rsa_citations": [],
-    "rsa_primary": null,
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [],
-    "summary_paragraph": "-15 (setting\nforth standard to determine whether due process requires a pre-deprivation\nhearing).\nAs the appealing party, the plaintiff has the burden of demonstrating\nreversible error. Gallo v. Traina, 166 N.H. 737, 740 (2014). Based upon our\nreview of the trial court’s well-reasoned order, the plaintiff’s challenges to it, the\nrelevant law, and the record submitted on appeal, we conclude that the plaintiff\nhas not demonstrated reversible error. See id.\nAffirmed.\nMacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ.,\nconcurred.\nTimothy A. Gudas,\nClerk\n2",
-    "word_count": 412,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:57.120750",
+    "parse_timestamp": "2026-09-29T20:47:48.970468",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6151,7 +6956,93 @@
     "word_count": 937,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:57.357780",
+    "parse_timestamp": "2026-09-29T20:47:49.204159",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0421",
+    "source_file_key": "2025-0421",
+    "docket_numbers": [
+      "2025-0421"
+    ],
+    "citation": "2025 N.H. 13",
+    "citation_year": 2025,
+    "citation_seq": 13,
+    "case_name": "Farres Alkhayer v. City of Nashua & a.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-05/20250421.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250421.pdf",
+    "date_argued": null,
+    "date_issued": "2026-04-22",
+    "days_to_decision": null,
+    "term_year": 2025,
+    "lower_court": "Circuit Court (Major, J.)",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Major",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 5,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "5-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "statutory_interpretation",
+      "constitutional"
+    ],
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [],
+    "summary_paragraph": "-15 (setting\nforth standard to determine whether due process requires a pre-deprivation\nhearing).\nAs the appealing party, the plaintiff has the burden of demonstrating\nreversible error. Gallo v. Traina, 166 N.H. 737, 740 (2014). Based upon our\nreview of the trial court’s well-reasoned order, the plaintiff’s challenges to it, the\nrelevant law, and the record submitted on appeal, we conclude that the plaintiff\nhas not demonstrated reversible error. See id.\nAffirmed.\nMacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ.,\nconcurred.\nTimothy A. Gudas,\nClerk\n2",
+    "word_count": 412,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:49.303277",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6245,7 +7136,7 @@
     "word_count": 1210,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:57.644897",
+    "parse_timestamp": "2026-09-29T20:47:49.593177",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6333,7 +7224,7 @@
     "word_count": 769,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:57.831287",
+    "parse_timestamp": "2026-09-29T20:47:49.773048",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6423,7 +7314,7 @@
     "word_count": 1278,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:58.141935",
+    "parse_timestamp": "2026-09-29T20:47:50.088943",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6516,7 +7407,7 @@
     "word_count": 1177,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:58.464625",
+    "parse_timestamp": "2026-09-29T20:47:50.419337",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6609,197 +7500,7 @@
     "word_count": 1411,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:58.798886",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0126",
-    "source_file_key": "2025-0126",
-    "docket_numbers": [
-      "2025-0126"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "State of New Hampshire v. David Joseph Spinney",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-05/20250126.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250126.pdf",
-    "date_argued": null,
-    "date_issued": "2026-04-08",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "superior court, see RSA",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Stephen",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": null,
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 0,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "Unavailable",
-    "is_unanimous": false,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "property",
-      "evidence",
-      "domestic_violence"
-    ],
-    "rsa_citations": [
-      "RSA 631:2-b",
-      "RSA 651:2",
-      "RSA 631:2-b, I",
-      "RSA 651:2, I"
-    ],
-    "rsa_primary": "RSA 631:2-b",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "",
-    "word_count": 1461,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:59.114462",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0256",
-    "source_file_key": "2025-0256",
-    "docket_numbers": [
-      "2025-0256"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Jessica Woodman v. Derry & Webster, LLC & a.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-05/20250256.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250256.pdf",
-    "date_argued": null,
-    "date_issued": "2026-04-08",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Circuit Court (Lyons, R., approved by Manchester, J.), awarding statutory",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Lyons, R., approved by Manchester",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "vacated",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
-      }
-    },
-    "majority": 5,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "civil_procedure",
-      "contract"
-    ],
-    "rsa_citations": [
-      "RSA 540-A:3, V",
-      "RSA 540-A:4, IX",
-      "RSA 540-A:4, II",
-      "RSA 540-A",
-      "RSA 540-A:4, V",
-      "RSA 540-A:2",
-      "RSA 540-A:3",
-      "RSA 358-A:10"
-    ],
-    "rsa_primary": "RSA 540-A:3, V",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 1005,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:59.328220",
+    "parse_timestamp": "2026-09-29T20:47:50.751030",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6892,7 +7593,7 @@
     "word_count": 879,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:59.549663",
+    "parse_timestamp": "2026-09-29T20:47:50.932338",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6988,7 +7689,7 @@
     "word_count": 661,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:59.724371",
+    "parse_timestamp": "2026-09-29T20:47:51.210309",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7076,7 +7777,197 @@
     "word_count": 271,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:17:59.805230",
+    "parse_timestamp": "2026-09-29T20:47:51.286719",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0126",
+    "source_file_key": "2025-0126",
+    "docket_numbers": [
+      "2025-0126"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "State of New Hampshire v. David Joseph Spinney",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-05/20250126.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250126.pdf",
+    "date_argued": null,
+    "date_issued": "2026-04-08",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "superior court, see RSA",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Stephen",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": null,
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 0,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 6,
+    "vote_string": "Unavailable",
+    "is_unanimous": false,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "property",
+      "evidence",
+      "domestic_violence"
+    ],
+    "rsa_citations": [
+      "RSA 631:2-b",
+      "RSA 651:2",
+      "RSA 631:2-b, I",
+      "RSA 651:2, I"
+    ],
+    "rsa_primary": "RSA 631:2-b",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "",
+    "word_count": 1461,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:51.604612",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0256",
+    "source_file_key": "2025-0256",
+    "docket_numbers": [
+      "2025-0256"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Jessica Woodman v. Derry & Webster, LLC & a.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-05/20250256.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250256.pdf",
+    "date_argued": null,
+    "date_issued": "2026-04-08",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court (Lyons, R., approved by Manchester, J.), awarding statutory",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Lyons, R., approved by Manchester",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "vacated",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 5,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "5-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "civil_procedure",
+      "contract"
+    ],
+    "rsa_citations": [
+      "RSA 540-A:3, V",
+      "RSA 540-A:4, IX",
+      "RSA 540-A:4, II",
+      "RSA 540-A",
+      "RSA 540-A:4, V",
+      "RSA 540-A:2",
+      "RSA 540-A:3",
+      "RSA 358-A:10"
+    ],
+    "rsa_primary": "RSA 540-A:3, V",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 1005,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:51.804101",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7166,7 +8057,7 @@
     "word_count": 1050,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:00.075309",
+    "parse_timestamp": "2026-09-29T20:47:52.078063",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7260,98 +8151,7 @@
     "word_count": 692,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:00.254959",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0112",
-    "source_file_key": "2025-0112",
-    "docket_numbers": [
-      "2025-0112"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "In the Matter of State of New Hampshire and Scott Austin",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/20250112.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250112.pdf",
-    "date_argued": null,
-    "date_issued": "2026-03-24",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "circuit court’s rulings regarding child support",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": null,
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "family_law",
-      "property",
-      "employment",
-      "tax"
-    ],
-    "rsa_citations": [
-      "RSA 458-C:2, IV",
-      "RSA 458-C:4, II"
-    ],
-    "rsa_primary": "RSA 458-C:2, IV",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 1192,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:00.539648",
+    "parse_timestamp": "2026-09-29T20:47:52.260193",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7440,7 +8240,7 @@
     "word_count": 636,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:00.726410",
+    "parse_timestamp": "2026-09-29T20:47:52.400086",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7533,7 +8333,98 @@
     "word_count": 270,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:00.807406",
+    "parse_timestamp": "2026-09-29T20:47:52.478705",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0112",
+    "source_file_key": "2025-0112",
+    "docket_numbers": [
+      "2025-0112"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "In the Matter of State of New Hampshire and Scott Austin",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/20250112.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250112.pdf",
+    "date_argued": null,
+    "date_issued": "2026-03-24",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "circuit court’s rulings regarding child support",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": null,
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "Donovan, Countway, Gould, and Will, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "family_law",
+      "property",
+      "employment",
+      "tax"
+    ],
+    "rsa_citations": [
+      "RSA 458-C:2, IV",
+      "RSA 458-C:4, II"
+    ],
+    "rsa_primary": "RSA 458-C:2, IV",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 1192,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:52.802467",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7624,7 +8515,7 @@
     "word_count": 1329,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:01.106279",
+    "parse_timestamp": "2026-09-29T20:47:53.103312",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7725,7 +8616,7 @@
     "word_count": 1358,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:01.474713",
+    "parse_timestamp": "2026-09-29T20:47:53.450593",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7827,7 +8718,7 @@
     "word_count": 1428,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:01.815654",
+    "parse_timestamp": "2026-09-29T20:47:53.781507",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -7920,7 +8811,7 @@
     "word_count": 1344,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:02.087125",
+    "parse_timestamp": "2026-09-29T20:47:54.038134",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8101,7 +8992,7 @@
     "word_count": 1032,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:02.338059",
+    "parse_timestamp": "2026-09-29T20:47:54.292951",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8196,7 +9087,7 @@
     "word_count": 1427,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:02.669892",
+    "parse_timestamp": "2026-09-29T20:47:54.613574",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8285,7 +9176,7 @@
     "word_count": 1483,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:03.001245",
+    "parse_timestamp": "2026-09-29T20:47:54.937961",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8377,7 +9268,7 @@
     "word_count": 1493,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:03.337456",
+    "parse_timestamp": "2026-09-29T20:47:55.266707",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8474,7 +9365,7 @@
     "word_count": 1302,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:03.634947",
+    "parse_timestamp": "2026-09-29T20:47:55.565230",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8566,7 +9457,7 @@
     "word_count": 1435,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:04.015228",
+    "parse_timestamp": "2026-09-29T20:47:55.939694",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8653,7 +9544,7 @@
     "word_count": 1273,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:04.267773",
+    "parse_timestamp": "2026-09-29T20:47:56.182279",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8736,7 +9627,7 @@
     "word_count": 296,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:04.399960",
+    "parse_timestamp": "2026-09-29T20:47:56.328130",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8825,7 +9716,7 @@
     "word_count": 1312,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:04.658287",
+    "parse_timestamp": "2026-09-29T20:47:56.573823",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -8913,7 +9804,7 @@
     "word_count": 1305,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:04.952535",
+    "parse_timestamp": "2026-09-29T20:47:56.871352",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9001,7 +9892,7 @@
     "word_count": 1236,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:05.235988",
+    "parse_timestamp": "2026-09-29T20:47:57.148255",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9089,98 +9980,7 @@
     "word_count": 1406,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:05.582647",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0095",
-    "source_file_key": "2025-0095",
-    "docket_numbers": [
-      "2025-0095"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "In the Matter of Robert Moulton and Rebecca Moulton",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-03/20250095.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250095.pdf",
-    "date_argued": null,
-    "date_issued": "2026-02-09",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Circuit Court (Carroll, R., approved by Cabrera, J.), following a final",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Carroll, R., approved by Cabrera",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": null,
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 0,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 6,
-    "vote_string": "Unavailable",
-    "is_unanimous": false,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "family_law",
-      "property",
-      "employment",
-      "tax"
-    ],
-    "rsa_citations": [
-      "RSA 458:16-a, II",
-      "RSA 458:16-"
-    ],
-    "rsa_primary": "RSA 458:16-a, II",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 1478,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:05.901376",
+    "parse_timestamp": "2026-09-29T20:47:57.482822",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9271,7 +10071,98 @@
     "word_count": 974,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:06.184460",
+    "parse_timestamp": "2026-09-29T20:47:57.761275",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0095",
+    "source_file_key": "2025-0095",
+    "docket_numbers": [
+      "2025-0095"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "In the Matter of Robert Moulton and Rebecca Moulton",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-03/20250095.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250095.pdf",
+    "date_argued": null,
+    "date_issued": "2026-02-09",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court (Carroll, R., approved by Cabrera, J.), following a final",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Carroll, R., approved by Cabrera",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": null,
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 0,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 6,
+    "vote_string": "Unavailable",
+    "is_unanimous": false,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "family_law",
+      "property",
+      "employment",
+      "tax"
+    ],
+    "rsa_citations": [
+      "RSA 458:16-a, II",
+      "RSA 458:16-"
+    ],
+    "rsa_primary": "RSA 458:16-a, II",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 1478,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:47:58.076531",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9360,7 +10251,7 @@
     "word_count": 912,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:06.381287",
+    "parse_timestamp": "2026-09-29T20:47:58.262493",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9450,7 +10341,7 @@
     "word_count": 929,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:06.613418",
+    "parse_timestamp": "2026-09-29T20:47:58.497440",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9540,7 +10431,7 @@
     "word_count": 1007,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:06.829601",
+    "parse_timestamp": "2026-09-29T20:47:58.692079",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9630,7 +10521,7 @@
     "word_count": 1418,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:07.137889",
+    "parse_timestamp": "2026-09-29T20:47:58.995791",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9722,7 +10613,7 @@
     "word_count": 1321,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:07.432008",
+    "parse_timestamp": "2026-09-29T20:47:59.283699",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9810,7 +10701,7 @@
     "word_count": 1377,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:07.734473",
+    "parse_timestamp": "2026-09-29T20:47:59.579200",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -9903,92 +10794,7 @@
     "word_count": 638,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:07.904702",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0268",
-    "source_file_key": "2025-0268",
-    "docket_numbers": [
-      "2025-0268"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Farres Alkhayer v. Nashua Police Department",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-02/20250268.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250268.pdf",
-    "date_argued": null,
-    "date_issued": "2026-01-13",
-    "days_to_decision": null,
-    "term_year": 2026,
-    "lower_court": "Circuit Court (Major, J.)",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Major",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "constitutional"
-    ],
-    "rsa_citations": [],
-    "rsa_primary": null,
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "",
-    "word_count": 618,
-    "opinion_type": "case_order",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:08.089487",
+    "parse_timestamp": "2026-09-29T20:47:59.739398",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10076,30 +10882,30 @@
     "word_count": 1168,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:08.351880",
+    "parse_timestamp": "2026-09-29T20:48:00.033970",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
-    "case_number": "2025-0099",
-    "source_file_key": "2025-0099",
+    "case_number": "2025-0268",
+    "source_file_key": "2025-0268",
     "docket_numbers": [
-      "2025-0099"
+      "2025-0268"
     ],
     "citation": null,
     "citation_year": null,
     "citation_seq": null,
-    "case_name": "In the Matter of Jean Paul LaTour and Jennifer LaTour",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-02/20250099.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250099.pdf",
+    "case_name": "Farres Alkhayer v. Nashua Police Department",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-02/20250268.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250268.pdf",
     "date_argued": null,
-    "date_issued": "2026-01-12",
+    "date_issued": "2026-01-13",
     "days_to_decision": null,
     "term_year": 2026,
-    "lower_court": "Circuit Court (Walch, J.)",
+    "lower_court": "Circuit Court (Major, J.)",
     "lower_court_type": "circuit_court",
-    "lower_court_judge": "Walch",
-    "case_type": "family/domestic",
+    "lower_court_judge": "Major",
+    "case_type": "civil",
     "appeal_type": "standard",
     "outcome": "affirmed",
     "author": "per_curiam",
@@ -10109,13 +10915,13 @@
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
         "vote": "majority",
-        "note": "MacDonald, C.J., and Countway, and Gould, JJ., concurred."
+        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
@@ -10127,13 +10933,13 @@
         "display_name": "Countway, J.",
         "role": "associate_justice",
         "vote": "majority",
-        "note": "MacDonald, C.J., and Countway, and Gould, JJ., concurred."
+        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
       },
       "gould": {
         "display_name": "Gould, J.",
         "role": "associate_justice",
         "vote": "majority",
-        "note": "MacDonald, C.J., and Countway, and Gould, JJ., concurred."
+        "note": "MacDonald, C.J., and Donovan, Countway, and Gould, JJ., concurred."
       },
       "will": {
         "display_name": "Will, J.",
@@ -10142,33 +10948,26 @@
         "note": null
       }
     },
-    "majority": 3,
+    "majority": 4,
     "dissent": 0,
     "concur_separate": 0,
-    "not_participating": 3,
-    "vote_string": "3-0",
+    "not_participating": 2,
+    "vote_string": "4-0",
     "is_unanimous": true,
     "has_dissent": false,
     "has_separate_concurrence": false,
     "topics": [
-      "insurance",
-      "family_law",
-      "statutory_interpretation",
-      "property"
+      "constitutional"
     ],
-    "rsa_citations": [
-      "RSA 458:16-a, I",
-      "RSA 458:16-a, II",
-      "RSA 458:19-a, III"
-    ],
-    "rsa_primary": "RSA 458:16-a, I",
-    "involves_statutory_interpretation": true,
+    "rsa_citations": [],
+    "rsa_primary": null,
+    "involves_statutory_interpretation": false,
     "standard_of_review": [],
     "summary_paragraph": "",
-    "word_count": 1153,
+    "word_count": 618,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:08.626591",
+    "parse_timestamp": "2026-09-29T20:48:00.166080",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10266,7 +11065,7 @@
     "word_count": 1279,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:08.921730",
+    "parse_timestamp": "2026-09-29T20:48:00.457822",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10359,7 +11158,7 @@
     "word_count": 854,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:09.097185",
+    "parse_timestamp": "2026-09-29T20:48:00.668334",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10445,7 +11244,99 @@
     "word_count": 386,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:09.235931",
+    "parse_timestamp": "2026-09-29T20:48:00.758497",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0099",
+    "source_file_key": "2025-0099",
+    "docket_numbers": [
+      "2025-0099"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "In the Matter of Jean Paul LaTour and Jennifer LaTour",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-02/20250099.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/orders/2026/20250099.pdf",
+    "date_argued": null,
+    "date_issued": "2026-01-12",
+    "days_to_decision": null,
+    "term_year": 2026,
+    "lower_court": "Circuit Court (Walch, J.)",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Walch",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Countway, and Gould, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Countway, and Gould, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MacDonald, C.J., and Countway, and Gould, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 3,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 3,
+    "vote_string": "3-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "insurance",
+      "family_law",
+      "statutory_interpretation",
+      "property"
+    ],
+    "rsa_citations": [
+      "RSA 458:16-a, I",
+      "RSA 458:16-a, II",
+      "RSA 458:19-a, III"
+    ],
+    "rsa_primary": "RSA 458:16-a, I",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [],
+    "summary_paragraph": "",
+    "word_count": 1153,
+    "opinion_type": "case_order",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-29T20:48:01.026747",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10539,7 +11430,7 @@
     "word_count": 1424,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:09.545199",
+    "parse_timestamp": "2026-09-29T20:48:01.334434",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -10629,7 +11520,7 @@
     "word_count": 1020,
     "opinion_type": "case_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-28T12:18:09.759832",
+    "parse_timestamp": "2026-09-29T20:48:01.535253",
     "parse_confidence": 0.8,
     "manual_override": false
   }
