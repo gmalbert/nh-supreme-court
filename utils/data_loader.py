@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import json
 import csv
+from datetime import datetime
 import os
 import re
 import subprocess
@@ -484,7 +485,7 @@ def data_last_updated() -> str:
     if not csv_path.exists():
         return "Unknown"
     mtime = os.path.getmtime(csv_path)
-    return pd.Timestamp(mtime, unit="s").strftime("%B %d, %Y %I:%M %p")
+    return datetime.fromtimestamp(mtime).strftime("%B %d, %Y %I:%M %p")
 
 
 @st.cache_data(ttl=3600)
