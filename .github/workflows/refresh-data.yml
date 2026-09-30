@@ -570,7 +570,22 @@ jobs:
           DEPLOY_HOST: ${{ vars.NHSC_DEPLOY_HOST }}
           DEPLOY_USER: ${{ vars.NHSC_DEPLOY_USER }}
           RELEASE_ID: ${{ needs.refresh-data.outputs.runtime_release_id }}
+          DEPLOY_KEY_PASSPHRASE: ${{ secrets.NHSC_DEPLOY_SSH_PASSPHRASE }}
         run: |
+          set -euo pipefail
           test -n "$DEPLOY_HOST" && test -n "$DEPLOY_USER"
-          ssh -i ~/.ssh/id_ed25519 "$DEPLOY_USER@$DEPLOY_HOST" \
+          if [ -z "$DEPLOY_KEY_PASSPHRASE" ]; then
+            echo "Missing production environment secret NHSC_DEPLOY_SSH_PASSPHRASE." >&2
+            exit 1
+          fi
+          cat > "$RUNNER_TEMP/ssh-askpass" <<'EOF'
+          #!/bin/sh
+          printf '%s\n' "$DEPLOY_KEY_PASSPHRASE"
+          EOF
+          chmod 700 "$RUNNER_TEMP/ssh-askpass"
+          eval "$(ssh-agent -s)"
+          trap 'ssh-agent -k >/dev/null' EXIT
+          DISPLAY=:0 SSH_ASKPASS="$RUNNER_TEMP/ssh-askpass" SSH_ASKPASS_REQUIRE=force \
+            ssh-add ~/.ssh/id_ed25519
+          ssh -o BatchMode=yes -o IdentitiesOnly=yes -i ~/.ssh/id_ed25519 "$DEPLOY_USER@$DEPLOY_HOST" \
             "sudo /usr/local/sbin/nhsc-release install '$RELEASE_ID'"
