@@ -1,7 +1,7 @@
 {
-  "refresh_timestamp": "2026-09-29T20:50:18Z",
-  "workflow_run_id": "36626841218",
-  "workflow_run_number": "28",
+  "refresh_timestamp": "2026-09-30T01:12:15Z",
+  "workflow_run_id": "36652754414",
+  "workflow_run_number": "29",
   "triggered_by": "workflow_dispatch",
   "steps": {
     "scrape_opinions": "success",
@@ -30,7 +30,11 @@
     "data/processed/oral_arguments_enhanced_stats.json",
     "data/processed/outcome_model.joblib",
     "data/processed/refresh_manifest.json",
-    "data/processed/text/2025-0082.txt",
+    "data/processed/text/2021-0547.txt",
+    "data/processed/text/2022-0234.txt",
+    "data/processed/text/2023-0615.txt",
+    "data/processed/text/2023-0714.txt",
+    "data/processed/unmatched_argument_review_queue.csv",
     "data/processed/weekly_digest.html"
   ]
 }

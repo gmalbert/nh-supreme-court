@@ -181011,7 +181011,7 @@
     "word_count": 2151,
     "opinion_type": "3jx_order",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:48:05.320413",
+    "parse_timestamp": "2026-09-30T01:10:29.795656",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -205822,7 +205822,7 @@
     "word_count": 5001,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:48:06.696084",
+    "parse_timestamp": "2026-09-30T01:10:30.938297",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -213585,7 +213585,7 @@
     "word_count": 2357,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:48:04.631763",
+    "parse_timestamp": "2026-09-30T01:10:29.158103",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -242395,7 +242395,7 @@
     "word_count": 5878,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:41:39.725237",
+    "parse_timestamp": "2026-09-30T01:04:21.540708",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -242481,7 +242481,7 @@
     "word_count": 4514,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:41:40.889139",
+    "parse_timestamp": "2026-09-30T01:04:22.683342",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -242587,7 +242587,7 @@
     "word_count": 6564,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:41:43.394068",
+    "parse_timestamp": "2026-09-30T01:04:25.205335",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -242679,7 +242679,7 @@
     "word_count": 19579,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:41:48.395011",
+    "parse_timestamp": "2026-09-30T01:04:30.010989",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -242817,99 +242817,7 @@
     "word_count": 7552,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:41:51.511538",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2022-0500",
-    "source_file_key": "2022-0500",
-    "docket_numbers": [
-      "2022-0500"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Jason Boucher v. Town of Moultonborough",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-11/2023055boucher.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023055boucher.pdf",
-    "date_argued": "2023-06-15",
-    "date_issued": "2023-11-15",
-    "days_to_decision": 153,
-    "term_year": 2023,
-    "lower_court": "Superior Court (Ignatius, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Ignatius",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "dismissed",
-    "author": "macdonald",
-    "author_display": "MacDonald, C.J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "administrative_law",
-      "civil_procedure",
-      "statutory_interpretation",
-      "constitutional",
-      "employment",
-      "contract"
-    ],
-    "rsa_citations": [
-      "RSA 41:48",
-      "RSA 41:47",
-      "RSA 105:1",
-      "RSA 106-L:6",
-      "RSA 103"
-    ],
-    "rsa_primary": "RSA 41:48",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "The plaintiff, Jason Boucher, appeals an order of the Superior Court (Ignatius, J.) granting the motion to dismiss of the defendant, the Town of Moultonborough (Town). He contends that: (1) the court erred in finding that he failed to exhaust administrative remedies under RSA 41:48",
-    "word_count": 1937,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:41:52.023276",
+    "parse_timestamp": "2026-09-30T01:04:33.103322",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -243009,7 +242917,99 @@
     "word_count": 2902,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:41:52.789040",
+    "parse_timestamp": "2026-09-30T01:04:33.887881",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2022-0500",
+    "source_file_key": "2022-0500",
+    "docket_numbers": [
+      "2022-0500"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Jason Boucher v. Town of Moultonborough",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-11/2023055boucher.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023055boucher.pdf",
+    "date_argued": "2023-06-15",
+    "date_issued": "2023-11-15",
+    "days_to_decision": 153,
+    "term_year": 2023,
+    "lower_court": "Superior Court (Ignatius, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Ignatius",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "dismissed",
+    "author": "macdonald",
+    "author_display": "MacDonald, C.J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "administrative_law",
+      "civil_procedure",
+      "statutory_interpretation",
+      "constitutional",
+      "employment",
+      "contract"
+    ],
+    "rsa_citations": [
+      "RSA 41:48",
+      "RSA 41:47",
+      "RSA 105:1",
+      "RSA 106-L:6",
+      "RSA 103"
+    ],
+    "rsa_primary": "RSA 41:48",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "The plaintiff, Jason Boucher, appeals an order of the Superior Court (Ignatius, J.) granting the motion to dismiss of the defendant, the Town of Moultonborough (Town). He contends that: (1) the court erred in finding that he failed to exhaust administrative remedies under RSA 41:48",
+    "word_count": 1937,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-30T01:04:34.338325",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -243097,7 +243097,7 @@
     "word_count": 3175,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:41:53.556503",
+    "parse_timestamp": "2026-09-30T01:04:35.073276",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -243209,7 +243209,7 @@
     "word_count": 3773,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:41:54.404417",
+    "parse_timestamp": "2026-09-30T01:04:35.897766",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -243324,7 +243324,7 @@
     "word_count": 5030,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:41:56.862589",
+    "parse_timestamp": "2026-09-30T01:04:38.373008",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -243414,7 +243414,7 @@
     "word_count": 1342,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:41:57.593040",
+    "parse_timestamp": "2026-09-30T01:04:39.097672",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -243511,7 +243511,7 @@
     "word_count": 6711,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:41:59.139824",
+    "parse_timestamp": "2026-09-30T01:04:40.604004",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -243610,7 +243610,7 @@
     "word_count": 4283,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:00.212006",
+    "parse_timestamp": "2026-09-30T01:04:41.644937",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -243702,97 +243702,7 @@
     "word_count": 1827,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:00.721167",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2022-0234",
-    "source_file_key": "2022-0234",
-    "docket_numbers": [
-      "2022-0234"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Todd H. Maddock & a. v. Michael J. Higgins",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-08/2023046maddock.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023046maddock.pdf",
-    "date_argued": "2023-05-11",
-    "date_issued": "2023-08-23",
-    "days_to_decision": 104,
-    "term_year": 2023,
-    "lower_court": "Superior Court (O’Neill, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "O’Neill",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "reversed",
-    "author": "donovan",
-    "author_display": "Donovan, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and HANTZ MARCONI, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and HANTZ MARCONI, JJ., concurred."
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and HANTZ MARCONI, JJ., concurred."
-      },
-      "hicks": {
-        "display_name": "Hicks, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and HANTZ MARCONI, JJ., concurred."
-      }
-    },
-    "majority": 5,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "family_law",
-      "statutory_interpretation",
-      "property",
-      "evidence"
-    ],
-    "rsa_citations": [],
-    "rsa_primary": null,
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "The plaintiffs, Todd and Margaret Maddock, appeal an order of the Superior Court (O’Neill, J.) ruling in favor of the defendant, Michael Higgins, on the plaintiffs’ petition to quiet title and their request for declaratory judgment, equitable relief, and a temporary injunction. The plaintiffs argue",
-    "word_count": 5211,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:02.036599",
+    "parse_timestamp": "2026-09-30T01:04:42.140452",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -243884,7 +243794,7 @@
     "word_count": 1593,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:02.387237",
+    "parse_timestamp": "2026-09-30T01:04:42.523358",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -243982,7 +243892,7 @@
     "word_count": 2559,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:03.042864",
+    "parse_timestamp": "2026-09-30T01:04:43.108105",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -244084,102 +243994,7 @@
     "word_count": 3830,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:04.013199",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2021-0153",
-    "source_file_key": "2021-0153",
-    "docket_numbers": [
-      "2021-0153"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Appeal of Fran Rancourt",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-08/2023042rancourt.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023042rancourt.pdf",
-    "date_argued": "2022-12-13",
-    "date_issued": "2023-08-16",
-    "days_to_decision": 246,
-    "term_year": 2023,
-    "lower_court": null,
-    "lower_court_type": null,
-    "lower_court_judge": null,
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "hantz_marconi",
-    "author_display": "Hantz Marconi, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred."
-      },
-      "hicks": {
-        "display_name": "Hicks, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred."
-      }
-    },
-    "majority": 5,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "administrative_law",
-      "statutory_interpretation",
-      "employment",
-      "DWI",
-      "tax"
-    ],
-    "rsa_citations": [
-      "RSA 281-A:48",
-      "RSA 541:13",
-      "RSA 281-A:2, X"
-    ],
-    "rsa_primary": "RSA 281-A:48",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "The claimant, Fran Rancourt, appeals a decision of the Compensation Appeals Board (CAB) granting the request of the carrier, AIM Mutual — NH Employers Ins. Co., for a reduction of the claimant’s benefits from the Temporary Total Disability (TTD) rate to the Diminished Earning",
-    "word_count": 3109,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:04.825096",
+    "parse_timestamp": "2026-09-30T01:04:44.015893",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -244284,7 +244099,102 @@
     "word_count": 6957,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:06.469358",
+    "parse_timestamp": "2026-09-30T01:04:45.643662",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2021-0153",
+    "source_file_key": "2021-0153",
+    "docket_numbers": [
+      "2021-0153"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "Appeal of Fran Rancourt",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-08/2023042rancourt.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023042rancourt.pdf",
+    "date_argued": "2022-12-13",
+    "date_issued": "2023-08-16",
+    "days_to_decision": 246,
+    "term_year": 2023,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": null,
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "hantz_marconi",
+    "author_display": "Hantz Marconi, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred."
+      },
+      "hicks": {
+        "display_name": "Hicks, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and HICKS, BASSETT, and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 5,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "5-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "administrative_law",
+      "statutory_interpretation",
+      "employment",
+      "DWI",
+      "tax"
+    ],
+    "rsa_citations": [
+      "RSA 281-A:48",
+      "RSA 541:13",
+      "RSA 281-A:2, X"
+    ],
+    "rsa_primary": "RSA 281-A:48",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "The claimant, Fran Rancourt, appeals a decision of the Compensation Appeals Board (CAB) granting the request of the carrier, AIM Mutual — NH Employers Ins. Co., for a reduction of the claimant’s benefits from the Temporary Total Disability (TTD) rate to the Diminished Earning",
+    "word_count": 3109,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-30T01:04:46.461576",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -244381,7 +244291,7 @@
     "word_count": 3275,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:07.274622",
+    "parse_timestamp": "2026-09-30T01:04:47.199434",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -244488,7 +244398,7 @@
     "word_count": 4397,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:08.315497",
+    "parse_timestamp": "2026-09-30T01:04:48.208940",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -244580,7 +244490,7 @@
     "word_count": 2851,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:09.071701",
+    "parse_timestamp": "2026-09-30T01:04:48.945697",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -244672,7 +244582,7 @@
     "word_count": 1840,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:09.543837",
+    "parse_timestamp": "2026-09-30T01:04:49.365084",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -244768,7 +244678,200 @@
     "word_count": 3635,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:10.394104",
+    "parse_timestamp": "2026-09-30T01:04:50.225541",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2021-0560",
+    "source_file_key": "2021-0560",
+    "docket_numbers": [
+      "2021-0560"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "In re D.J.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-07/2023035d-j.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023035d-j.pdf",
+    "date_argued": "2022-09-20",
+    "date_issued": "2023-07-13",
+    "days_to_decision": 296,
+    "term_year": 2023,
+    "lower_court": "Circuit Court-Franklin Family Division",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Luneau",
+    "case_type": "criminal",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "bassett",
+    "author_display": "Bassett, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "hicks": {
+        "display_name": "Hicks, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 5,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "5-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "statutory_interpretation",
+      "constitutional",
+      "evidence"
+    ],
+    "rsa_citations": [
+      "RSA 644:4, I",
+      "RSA 633:4",
+      "RSA 644:4",
+      "RSA 644:4, II"
+    ],
+    "rsa_primary": "RSA 644:4, I",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [],
+    "summary_paragraph": "The juvenile, D.J., appeals a finding of delinquency made by the Circuit Court (Luneau, J.) based upon a petition alleging that he committed harassment under RSA 644:4, I(b) (Supp. 2021). He argues that there was insufficient evidence to support the trial court’s finding, and that",
+    "word_count": 3021,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-30T01:04:51.211371",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2022-0145",
+    "source_file_key": "2022-0145",
+    "docket_numbers": [
+      "2022-0145"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "In re Robert T. Keeler Maintenance Fund for the Hanover Country Club at Dartmouth College",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-07/2023036keeler.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023036keeler.pdf",
+    "date_argued": "2023-03-30",
+    "date_issued": "2023-07-13",
+    "days_to_decision": 105,
+    "term_year": 2023,
+    "lower_court": "Circuit Court-Haverhill Probate Division",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Rappa",
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "hicks",
+    "author_display": "Hicks, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, J., concurred"
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "concur_separate",
+        "note": "HANTZ MARCONI, J., concurred specially."
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "hicks": {
+        "display_name": "Hicks, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      }
+    },
+    "majority": 2,
+    "dissent": 0,
+    "concur_separate": 1,
+    "not_participating": 3,
+    "vote_string": "2-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": true,
+    "topics": [
+      "administrative_law",
+      "statutory_interpretation",
+      "property",
+      "contract",
+      "evidence"
+    ],
+    "rsa_citations": [
+      "RSA 292-B:6",
+      "RSA 7:20",
+      "RSA 292-B:6, III",
+      "RSA 567-A:4",
+      "RSA 292",
+      "RSA 564-B:4-413",
+      "RSA 564"
+    ],
+    "rsa_primary": "RSA 292-B:6",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo",
+      "plain_error"
+    ],
+    "summary_paragraph": "The putative intervenors, the Robert T. Keeler Foundation (the Foundation) and Peter P. Mithoefer, the fiduciary for the Estate of Robert T. Keeler (the Estate), appeal orders of the Circuit Court (Rappa, J.), which: (1) denied their motion to intervene in proceedings brought under the Uniform",
+    "word_count": 3547,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-30T01:04:52.004966",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -244881,200 +244984,7 @@
     "word_count": 5009,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:11.692842",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2021-0560",
-    "source_file_key": "2021-0560",
-    "docket_numbers": [
-      "2021-0560"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "In re D.J.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-07/2023035d-j.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023035d-j.pdf",
-    "date_argued": "2022-09-20",
-    "date_issued": "2023-07-13",
-    "days_to_decision": 296,
-    "term_year": 2023,
-    "lower_court": "Circuit Court-Franklin Family Division",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Luneau",
-    "case_type": "criminal",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "bassett",
-    "author_display": "Bassett, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "hicks": {
-        "display_name": "Hicks, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      }
-    },
-    "majority": 5,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "statutory_interpretation",
-      "constitutional",
-      "evidence"
-    ],
-    "rsa_citations": [
-      "RSA 644:4, I",
-      "RSA 633:4",
-      "RSA 644:4",
-      "RSA 644:4, II"
-    ],
-    "rsa_primary": "RSA 644:4, I",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [],
-    "summary_paragraph": "The juvenile, D.J., appeals a finding of delinquency made by the Circuit Court (Luneau, J.) based upon a petition alleging that he committed harassment under RSA 644:4, I(b) (Supp. 2021). He argues that there was insufficient evidence to support the trial court’s finding, and that",
-    "word_count": 3021,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:12.712274",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2022-0145",
-    "source_file_key": "2022-0145",
-    "docket_numbers": [
-      "2022-0145"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "In re Robert T. Keeler Maintenance Fund for the Hanover Country Club at Dartmouth College",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-07/2023036keeler.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023036keeler.pdf",
-    "date_argued": "2023-03-30",
-    "date_issued": "2023-07-13",
-    "days_to_decision": 105,
-    "term_year": 2023,
-    "lower_court": "Circuit Court-Haverhill Probate Division",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Rappa",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "hicks",
-    "author_display": "Hicks, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, J., concurred"
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "concur_separate",
-        "note": "HANTZ MARCONI, J., concurred specially."
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "hicks": {
-        "display_name": "Hicks, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      }
-    },
-    "majority": 2,
-    "dissent": 0,
-    "concur_separate": 1,
-    "not_participating": 3,
-    "vote_string": "2-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": true,
-    "topics": [
-      "administrative_law",
-      "statutory_interpretation",
-      "property",
-      "contract",
-      "evidence"
-    ],
-    "rsa_citations": [
-      "RSA 292-B:6",
-      "RSA 7:20",
-      "RSA 292-B:6, III",
-      "RSA 567-A:4",
-      "RSA 292",
-      "RSA 564-B:4-413",
-      "RSA 564"
-    ],
-    "rsa_primary": "RSA 292-B:6",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo",
-      "plain_error"
-    ],
-    "summary_paragraph": "The putative intervenors, the Robert T. Keeler Foundation (the Foundation) and Peter P. Mithoefer, the fiduciary for the Estate of Robert T. Keeler (the Estate), appeal orders of the Circuit Court (Rappa, J.), which: (1) denied their motion to intervene in proceedings brought under the Uniform",
-    "word_count": 3547,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:13.542824",
+    "parse_timestamp": "2026-09-30T01:04:53.259797",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -245176,7 +245086,7 @@
     "word_count": 3925,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:14.581779",
+    "parse_timestamp": "2026-09-30T01:04:54.234063",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -245277,7 +245187,7 @@
     "word_count": 3462,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:15.462541",
+    "parse_timestamp": "2026-09-30T01:04:55.077041",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -245372,100 +245282,7 @@
     "word_count": 3420,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:16.345328",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2021-0511",
-    "source_file_key": "2021-0511",
-    "docket_numbers": [
-      "2021-0511"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "City of Portsmouth, New Hampshire Police Commission/Police Department v. Portsmouth Ranking Officers Association, NEPBA, Local 220",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-06/2023029portsmouth.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023029portsmouth.pdf",
-    "date_argued": "2022-10-04",
-    "date_issued": "2023-06-07",
-    "days_to_decision": 246,
-    "term_year": 2023,
-    "lower_court": null,
-    "lower_court_type": null,
-    "lower_court_judge": null,
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "vacated",
-    "author": "bassett",
-    "author_display": "Bassett, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "hicks": {
-        "display_name": "Hicks, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      }
-    },
-    "majority": 5,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "constitutional",
-      "property",
-      "employment",
-      "contract",
-      "evidence",
-      "DWI"
-    ],
-    "rsa_citations": [
-      "RSA 542:8",
-      "RSA 542:10"
-    ],
-    "rsa_primary": "RSA 542:8",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "The plaintiff, City of Portsmouth, New Hampshire Police Commission/Police Department (the City), appeals the decision of the Superior Court (Honigberg, J.) denying the City’s request to modify, correct, or vacate an arbitrator’s award of backpay to Aaron Goodwin, a police officer who was",
-    "word_count": 2888,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:17.133614",
+    "parse_timestamp": "2026-09-30T01:04:55.947184",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -245580,7 +245397,7 @@
     "word_count": 4503,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:18.297684",
+    "parse_timestamp": "2026-09-30T01:04:57.090499",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -245672,7 +245489,100 @@
     "word_count": 5149,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:19.679184",
+    "parse_timestamp": "2026-09-30T01:04:58.394591",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2021-0511",
+    "source_file_key": "2021-0511",
+    "docket_numbers": [
+      "2021-0511"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "City of Portsmouth, New Hampshire Police Commission/Police Department v. Portsmouth Ranking Officers Association, NEPBA, Local 220",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-06/2023029portsmouth.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023029portsmouth.pdf",
+    "date_argued": "2022-10-04",
+    "date_issued": "2023-06-07",
+    "days_to_decision": 246,
+    "term_year": 2023,
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": null,
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "vacated",
+    "author": "bassett",
+    "author_display": "Bassett, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "hicks": {
+        "display_name": "Hicks, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and HICKS, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 5,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "5-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "constitutional",
+      "property",
+      "employment",
+      "contract",
+      "evidence",
+      "DWI"
+    ],
+    "rsa_citations": [
+      "RSA 542:8",
+      "RSA 542:10"
+    ],
+    "rsa_primary": "RSA 542:8",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "The plaintiff, City of Portsmouth, New Hampshire Police Commission/Police Department (the City), appeals the decision of the Superior Court (Honigberg, J.) denying the City’s request to modify, correct, or vacate an arbitrator’s award of backpay to Aaron Goodwin, a police officer who was",
+    "word_count": 2888,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-30T01:04:59.173278",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -245778,7 +245688,7 @@
     "word_count": 10273,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:22.326993",
+    "parse_timestamp": "2026-09-30T01:05:01.688220",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -245881,7 +245791,7 @@
     "word_count": 3129,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:23.230817",
+    "parse_timestamp": "2026-09-30T01:05:02.584554",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -245980,7 +245890,7 @@
     "word_count": 3654,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:24.202491",
+    "parse_timestamp": "2026-09-30T01:05:03.521987",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -246074,7 +245984,7 @@
     "word_count": 7355,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:26.095237",
+    "parse_timestamp": "2026-09-30T01:05:05.359936",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -246165,7 +246075,7 @@
     "word_count": 5247,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:27.479067",
+    "parse_timestamp": "2026-09-30T01:05:06.649495",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -246262,99 +246172,7 @@
     "word_count": 1273,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:27.867855",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2022-0098",
-    "source_file_key": "2022-0098",
-    "docket_numbers": [
-      "2022-0098"
-    ],
-    "citation": null,
-    "citation_year": null,
-    "citation_seq": null,
-    "case_name": "Town of Conway v. Scott Kudrick",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-05/2023021townofconway.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023021townofconway.pdf",
-    "date_argued": "2022-11-15",
-    "date_issued": "2023-05-02",
-    "days_to_decision": 168,
-    "term_year": 2023,
-    "lower_court": null,
-    "lower_court_type": null,
-    "lower_court_judge": "Ignatius",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": null,
-    "author": "donovan",
-    "author_display": "Donovan, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "HANTZ MARCONI, J., with whom MACDONALD, C.J., joined, specially concurred"
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "HANTZ MARCONI, J., with whom MACDONALD, C.J., joined, specially concurred"
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "dissent",
-        "note": "BASSETT, J., dissented."
-      },
-      "hicks": {
-        "display_name": "Hicks, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, J., concurred"
-      }
-    },
-    "majority": 4,
-    "dissent": 1,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-1",
-    "is_unanimous": false,
-    "has_dissent": true,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "family_law",
-      "statutory_interpretation",
-      "constitutional",
-      "property",
-      "DWI"
-    ],
-    "rsa_citations": [
-      "RSA 676:17"
-    ],
-    "rsa_primary": "RSA 676:17",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [],
-    "summary_paragraph": "The plaintiff, the Town of Conway (Town), appeals a decision of the Superior Court (Ignatius, J.) granting the motion of the defendant, Scott Kudrick, for judgment on the pleadings. The court ruled that the Conway Zoning Ordinance (2013) (hereinafter, “CZO”) permits a non-",
-    "word_count": 4723,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:29.050426",
+    "parse_timestamp": "2026-09-30T01:05:07.020376",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -246452,52 +246270,52 @@
     "word_count": 2033,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:29.618387",
+    "parse_timestamp": "2026-09-30T01:05:07.533106",
     "parse_confidence": 0.8,
     "manual_override": false
   },
   {
-    "case_number": "2021-0464",
-    "source_file_key": "2021-0464",
+    "case_number": "2022-0098",
+    "source_file_key": "2022-0098",
     "docket_numbers": [
-      "2021-0464"
+      "2022-0098"
     ],
     "citation": null,
     "citation_year": null,
     "citation_seq": null,
-    "case_name": "State of New Hampshire v. Justin M. Lamontagne",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-04/2023018lamontagne.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023018lamontagne.pdf",
-    "date_argued": "2023-01-25",
-    "date_issued": "2023-04-26",
-    "days_to_decision": 91,
+    "case_name": "Town of Conway v. Scott Kudrick",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-05/2023021townofconway.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023021townofconway.pdf",
+    "date_argued": "2022-11-15",
+    "date_issued": "2023-05-02",
+    "days_to_decision": 168,
     "term_year": 2023,
-    "lower_court": "Superior Court (Tucker, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Tucker",
-    "case_type": "criminal",
+    "lower_court": null,
+    "lower_court_type": null,
+    "lower_court_judge": "Ignatius",
+    "case_type": "family/domestic",
     "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "macdonald",
-    "author_display": "MacDonald, C.J.",
+    "outcome": null,
+    "author": "donovan",
+    "author_display": "Donovan, J.",
     "votes": {
       "macdonald": {
         "display_name": "MacDonald, C.J.",
         "role": "chief_justice",
         "vote": "majority",
-        "note": null
+        "note": "HANTZ MARCONI, J., with whom MACDONALD, C.J., joined, specially concurred"
       },
       "donovan": {
         "display_name": "Donovan, J.",
         "role": "associate_justice",
         "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "note": null
       },
       "hantz_marconi": {
         "display_name": "Hantz Marconi, J.",
         "role": "associate_justice",
         "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "note": "HANTZ MARCONI, J., with whom MACDONALD, C.J., joined, specially concurred"
       },
       "countway": {
         "display_name": "Countway, J.",
@@ -246508,43 +246326,43 @@
       "bassett": {
         "display_name": "Bassett, J.",
         "role": "associate_justice",
-        "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "vote": "dissent",
+        "note": "BASSETT, J., dissented."
       },
       "hicks": {
         "display_name": "Hicks, J.",
         "role": "associate_justice",
         "vote": "majority",
-        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+        "note": "HICKS, J., concurred"
       }
     },
-    "majority": 5,
-    "dissent": 0,
+    "majority": 4,
+    "dissent": 1,
     "concur_separate": 0,
     "not_participating": 1,
-    "vote_string": "5-0",
-    "is_unanimous": true,
-    "has_dissent": false,
+    "vote_string": "4-1",
+    "is_unanimous": false,
+    "has_dissent": true,
     "has_separate_concurrence": false,
     "topics": [
       "criminal",
+      "family_law",
       "statutory_interpretation",
-      "contract"
+      "constitutional",
+      "property",
+      "DWI"
     ],
     "rsa_citations": [
-      "RSA 644:9-a",
-      "RSA 644:9-a, II",
-      "RSA 632-A:2, I",
-      "RSA 644:9-"
+      "RSA 676:17"
     ],
-    "rsa_primary": "RSA 644:9-a",
+    "rsa_primary": "RSA 676:17",
     "involves_statutory_interpretation": true,
     "standard_of_review": [],
-    "summary_paragraph": "The defendant, Justin M. Lamontagne, appeals his conviction, following a jury trial in Superior Court (Tucker, J.), on four counts of nonconsensual dissemination of private sexual images. See RSA 644:9-a (Supp. 2022). We affirm.",
-    "word_count": 2750,
+    "summary_paragraph": "The plaintiff, the Town of Conway (Town), appeals a decision of the Superior Court (Ignatius, J.) granting the motion of the defendant, Scott Kudrick, for judgment on the pleadings. The court ruled that the Conway Zoning Ordinance (2013) (hereinafter, “CZO”) permits a non-",
+    "word_count": 4723,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:30.305424",
+    "parse_timestamp": "2026-09-30T01:05:08.688089",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -246639,7 +246457,99 @@
     "word_count": 4249,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:31.369549",
+    "parse_timestamp": "2026-09-30T01:05:09.736764",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2021-0464",
+    "source_file_key": "2021-0464",
+    "docket_numbers": [
+      "2021-0464"
+    ],
+    "citation": null,
+    "citation_year": null,
+    "citation_seq": null,
+    "case_name": "State of New Hampshire v. Justin M. Lamontagne",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2023-04/2023018lamontagne.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2023/2023018lamontagne.pdf",
+    "date_argued": "2023-01-25",
+    "date_issued": "2023-04-26",
+    "days_to_decision": 91,
+    "term_year": 2023,
+    "lower_court": "Superior Court (Tucker, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Tucker",
+    "case_type": "criminal",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "macdonald",
+    "author_display": "MacDonald, C.J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "hicks": {
+        "display_name": "Hicks, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "HICKS, BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 5,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "5-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "statutory_interpretation",
+      "contract"
+    ],
+    "rsa_citations": [
+      "RSA 644:9-a",
+      "RSA 644:9-a, II",
+      "RSA 632-A:2, I",
+      "RSA 644:9-"
+    ],
+    "rsa_primary": "RSA 644:9-a",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [],
+    "summary_paragraph": "The defendant, Justin M. Lamontagne, appeals his conviction, following a jury trial in Superior Court (Tucker, J.), on four counts of nonconsensual dissemination of private sexual images. See RSA 644:9-a (Supp. 2022). We affirm.",
+    "word_count": 2750,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-30T01:05:10.425343",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -246749,7 +246659,7 @@
     "word_count": 4858,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:32.645411",
+    "parse_timestamp": "2026-09-30T01:05:11.649532",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -246846,7 +246756,7 @@
     "word_count": 1749,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:33.157487",
+    "parse_timestamp": "2026-09-30T01:05:12.146418",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -246939,7 +246849,7 @@
     "word_count": 3416,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:33.969398",
+    "parse_timestamp": "2026-09-30T01:05:12.932226",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -247028,7 +246938,7 @@
     "word_count": 1718,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:34.447552",
+    "parse_timestamp": "2026-09-30T01:05:13.388842",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -247120,7 +247030,7 @@
     "word_count": 3976,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:35.469301",
+    "parse_timestamp": "2026-09-30T01:05:14.336115",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -247209,7 +247119,7 @@
     "word_count": 1725,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:35.981216",
+    "parse_timestamp": "2026-09-30T01:05:14.857652",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -247304,7 +247214,7 @@
     "word_count": 2843,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:37.078095",
+    "parse_timestamp": "2026-09-30T01:05:15.948148",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -247400,7 +247310,7 @@
     "word_count": 1846,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:37.549931",
+    "parse_timestamp": "2026-09-30T01:05:16.382526",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -247499,7 +247409,7 @@
     "word_count": 2693,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:38.243348",
+    "parse_timestamp": "2026-09-30T01:05:17.047518",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -247589,7 +247499,7 @@
     "word_count": 1839,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:38.742139",
+    "parse_timestamp": "2026-09-30T01:05:17.519433",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -247678,7 +247588,7 @@
     "word_count": 5832,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:40.150201",
+    "parse_timestamp": "2026-09-30T01:05:18.875212",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -247779,7 +247689,7 @@
     "word_count": 2390,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:40.810457",
+    "parse_timestamp": "2026-09-30T01:05:19.507405",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -247870,7 +247780,7 @@
     "word_count": 1451,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:41.165130",
+    "parse_timestamp": "2026-09-30T01:05:19.847135",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -247974,7 +247884,7 @@
     "word_count": 1922,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:41.728207",
+    "parse_timestamp": "2026-09-30T01:05:20.394641",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -248069,7 +247979,7 @@
     "word_count": 1409,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:42.141015",
+    "parse_timestamp": "2026-09-30T01:05:20.788133",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -248166,7 +248076,7 @@
     "word_count": 3135,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:42.912212",
+    "parse_timestamp": "2026-09-30T01:05:21.533251",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -248267,7 +248177,7 @@
     "word_count": 3678,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:43.848034",
+    "parse_timestamp": "2026-09-30T01:05:22.442267",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -248373,7 +248283,7 @@
     "word_count": 4018,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:44.897784",
+    "parse_timestamp": "2026-09-30T01:05:23.479959",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -248466,7 +248376,7 @@
     "word_count": 2313,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:45.523334",
+    "parse_timestamp": "2026-09-30T01:05:24.085151",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -248554,7 +248464,7 @@
     "word_count": 1473,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:45.946959",
+    "parse_timestamp": "2026-09-30T01:05:24.493202",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -248662,7 +248572,7 @@
     "word_count": 5416,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:47.410630",
+    "parse_timestamp": "2026-09-30T01:05:25.931262",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -248755,7 +248665,7 @@
     "word_count": 4556,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:48.522820",
+    "parse_timestamp": "2026-09-30T01:05:26.985834",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -248839,7 +248749,7 @@
     "word_count": 1893,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:49.046805",
+    "parse_timestamp": "2026-09-30T01:05:27.486152",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -248925,7 +248835,7 @@
     "word_count": 1752,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:49.528817",
+    "parse_timestamp": "2026-09-30T01:05:27.949087",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -249017,99 +248927,7 @@
     "word_count": 1850,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:50.067507",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2024-0229",
-    "source_file_key": "2024063-j-b",
-    "docket_numbers": [
-      "2024-0229"
-    ],
-    "citation": "2024 N.H. 63",
-    "citation_year": 2024,
-    "citation_seq": 63,
-    "case_name": "In re J.B.",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-11/2024063-j-b.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024063-j-b.pdf",
-    "date_argued": "2024-09-25",
-    "date_issued": "2024-11-08",
-    "days_to_decision": 44,
-    "term_year": 2024,
-    "lower_court": "Circuit Court-Newport Family Division",
-    "lower_court_type": "circuit_court",
-    "lower_court_judge": "Swegart",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "macdonald",
-    "author_display": "MacDonald, C.J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "administrative_law",
-      "family_law",
-      "civil_procedure",
-      "domestic_violence"
-    ],
-    "rsa_citations": [
-      "RSA 170-C:5, III",
-      "RSA 169-C:23",
-      "RSA 169-C:24-b, IV",
-      "RSA 169-C",
-      "RSA 170",
-      "RSA 169-C:18, V",
-      "RSA 169-C:28",
-      "RSA 169-C:24-a, III"
-    ],
-    "rsa_primary": "RSA 170-C:5, III",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "The respondent, the mother of J.B. and L.B., appeals an order of the\nCircuit Court (Swegart, J.) issued following a hearing terminating her parental\nrights over her children for failing to correct the conditions that led to findings\nof child neglect within twelve months. See RSA 170-C:5, III (2022). The\nrespondent argues that the trial court erred in terminating her parental rights\nbecause: (1) she was provided less than twelve months to correct the conditions\nthat led to the finding of neglect; (2) no social study was completed; and (3) the\nNew Hampshire Division for Children, Youth and Fam",
-    "word_count": 2130,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:50.557069",
+    "parse_timestamp": "2026-09-30T01:05:28.462984",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -249205,7 +249023,99 @@
     "word_count": 4388,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:51.607424",
+    "parse_timestamp": "2026-09-30T01:05:29.445422",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2024-0229",
+    "source_file_key": "2024063-j-b",
+    "docket_numbers": [
+      "2024-0229"
+    ],
+    "citation": "2024 N.H. 63",
+    "citation_year": 2024,
+    "citation_seq": 63,
+    "case_name": "In re J.B.",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-11/2024063-j-b.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024063-j-b.pdf",
+    "date_argued": "2024-09-25",
+    "date_issued": "2024-11-08",
+    "days_to_decision": 44,
+    "term_year": 2024,
+    "lower_court": "Circuit Court-Newport Family Division",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Swegart",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "macdonald",
+    "author_display": "MacDonald, C.J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "administrative_law",
+      "family_law",
+      "civil_procedure",
+      "domestic_violence"
+    ],
+    "rsa_citations": [
+      "RSA 170-C:5, III",
+      "RSA 169-C:23",
+      "RSA 169-C:24-b, IV",
+      "RSA 169-C",
+      "RSA 170",
+      "RSA 169-C:18, V",
+      "RSA 169-C:28",
+      "RSA 169-C:24-a, III"
+    ],
+    "rsa_primary": "RSA 170-C:5, III",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "The respondent, the mother of J.B. and L.B., appeals an order of the\nCircuit Court (Swegart, J.) issued following a hearing terminating her parental\nrights over her children for failing to correct the conditions that led to findings\nof child neglect within twelve months. See RSA 170-C:5, III (2022). The\nrespondent argues that the trial court erred in terminating her parental rights\nbecause: (1) she was provided less than twelve months to correct the conditions\nthat led to the finding of neglect; (2) no social study was completed; and (3) the\nNew Hampshire Division for Children, Youth and Fam",
+    "word_count": 2130,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-30T01:05:29.925857",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -249305,7 +249215,7 @@
     "word_count": 3197,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:52.437222",
+    "parse_timestamp": "2026-09-30T01:05:30.680203",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -249401,7 +249311,7 @@
     "word_count": 2687,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:53.155253",
+    "parse_timestamp": "2026-09-30T01:05:31.350771",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -249487,95 +249397,7 @@
     "word_count": 1449,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:53.570529",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2023-0615",
-    "source_file_key": "2024058adams",
-    "docket_numbers": [
-      "2023-0615"
-    ],
-    "citation": "2024 N.H. 58",
-    "citation_year": 2024,
-    "citation_seq": 58,
-    "case_name": "Adams v. Moose Hill Orchards, LLC",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-10/2024058adams.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024058adams.pdf",
-    "date_argued": "2024-04-30",
-    "date_issued": "2024-10-11",
-    "days_to_decision": 164,
-    "term_year": 2024,
-    "lower_court": null,
-    "lower_court_type": null,
-    "lower_court_judge": "Ruoff",
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "dismissed",
-    "author": "macdonald",
-    "author_display": "MacDonald, C.J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred"
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": "HANTZ MARCONI, J., sat for oral argument but did not participate in the final vote."
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred"
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, DONOVAN, and COUNTWAY, JJ., concurred"
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "civil_procedure",
-      "statutory_interpretation",
-      "property",
-      "contract",
-      "tort"
-    ],
-    "rsa_citations": [
-      "RSA 508:14, I",
-      "RSA 508:14"
-    ],
-    "rsa_primary": "RSA 508:14, I",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "Plaintiff Caroline Adams suffered an injury to her spinal cord while\nsledding on property owned by the defendant, Moose Hill Orchards, LLC d/b/a\nMack’s Apples (Moose Hill). Adams and her husband, Christopher Estrella,\nsued the defendant for negligence and loss of consortium. The plaintiffs appeal\nan order of the Superior Court (Ruoff, J.) granting the defendant’s motion to\ndismiss based on recreational use immunity under RSA 508:14, I (2010 &\nSupp. 2023). We affirm.\nI. Background",
-    "word_count": 1520,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:53.988437",
+    "parse_timestamp": "2026-09-30T01:05:31.738848",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -249661,7 +249483,7 @@
     "word_count": 3025,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:54.765627",
+    "parse_timestamp": "2026-09-30T01:05:32.466784",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -249751,7 +249573,7 @@
     "word_count": 3016,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:55.526421",
+    "parse_timestamp": "2026-09-30T01:05:33.183968",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -249842,7 +249664,7 @@
     "word_count": 3923,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:56.557896",
+    "parse_timestamp": "2026-09-30T01:05:34.154127",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -249939,7 +249761,7 @@
     "word_count": 3211,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:57.437825",
+    "parse_timestamp": "2026-09-30T01:05:34.988602",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -250032,7 +249854,7 @@
     "word_count": 3451,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:58.272220",
+    "parse_timestamp": "2026-09-30T01:05:35.768391",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -250126,7 +249948,7 @@
     "word_count": 2180,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:58.903369",
+    "parse_timestamp": "2026-09-30T01:05:36.350700",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -250213,7 +250035,7 @@
     "word_count": 1237,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:42:59.264980",
+    "parse_timestamp": "2026-09-30T01:05:36.685310",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -250314,7 +250136,7 @@
     "word_count": 5035,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:00.515274",
+    "parse_timestamp": "2026-09-30T01:05:37.829001",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -250403,7 +250225,7 @@
     "word_count": 6210,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:03.555569",
+    "parse_timestamp": "2026-09-30T01:05:40.800001",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -250494,7 +250316,7 @@
     "word_count": 3322,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:04.507190",
+    "parse_timestamp": "2026-09-30T01:05:41.680130",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -250580,7 +250402,7 @@
     "word_count": 2060,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:05.030701",
+    "parse_timestamp": "2026-09-30T01:05:42.160651",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -250665,7 +250487,7 @@
     "word_count": 3487,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:05.893769",
+    "parse_timestamp": "2026-09-30T01:05:42.987241",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -250755,7 +250577,7 @@
     "word_count": 2934,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:07.318743",
+    "parse_timestamp": "2026-09-30T01:05:44.397458",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -250846,7 +250668,7 @@
     "word_count": 2257,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:07.921139",
+    "parse_timestamp": "2026-09-30T01:05:44.968698",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -250940,7 +250762,7 @@
     "word_count": 4820,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:09.222351",
+    "parse_timestamp": "2026-09-30T01:05:46.207545",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -251022,7 +250844,7 @@
     "word_count": 2735,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:09.926384",
+    "parse_timestamp": "2026-09-30T01:05:46.868207",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -251116,7 +250938,7 @@
     "word_count": 2032,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:10.415621",
+    "parse_timestamp": "2026-09-30T01:05:47.326373",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -251209,7 +251031,7 @@
     "word_count": 4300,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:11.503081",
+    "parse_timestamp": "2026-09-30T01:05:48.348588",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -251297,7 +251119,7 @@
     "word_count": 1519,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:11.919183",
+    "parse_timestamp": "2026-09-30T01:05:48.745052",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -251375,7 +251197,7 @@
     "word_count": 2626,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:12.595897",
+    "parse_timestamp": "2026-09-30T01:05:49.389656",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -251470,7 +251292,7 @@
     "word_count": 1739,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:13.075876",
+    "parse_timestamp": "2026-09-30T01:05:49.842869",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -251565,7 +251387,7 @@
     "word_count": 6656,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:14.851605",
+    "parse_timestamp": "2026-09-30T01:05:51.467749",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -251662,7 +251484,7 @@
     "word_count": 2607,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:15.554604",
+    "parse_timestamp": "2026-09-30T01:05:52.171943",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -251752,7 +251574,7 @@
     "word_count": 1830,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:16.059221",
+    "parse_timestamp": "2026-09-30T01:05:52.615187",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -251843,7 +251665,7 @@
     "word_count": 4597,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:17.245947",
+    "parse_timestamp": "2026-09-30T01:05:53.744465",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -251938,7 +251760,7 @@
     "word_count": 1053,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:17.726155",
+    "parse_timestamp": "2026-09-30T01:05:54.226954",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -252042,7 +251864,7 @@
     "word_count": 4267,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:18.829961",
+    "parse_timestamp": "2026-09-30T01:05:55.260278",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -252136,7 +251958,7 @@
     "word_count": 1630,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:19.330873",
+    "parse_timestamp": "2026-09-30T01:05:55.710832",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -252220,7 +252042,7 @@
     "word_count": 2225,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:19.937140",
+    "parse_timestamp": "2026-09-30T01:05:56.287994",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -252311,7 +252133,7 @@
     "word_count": 7930,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:22.122525",
+    "parse_timestamp": "2026-09-30T01:05:58.361398",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -252397,7 +252219,7 @@
     "word_count": 1016,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:22.498371",
+    "parse_timestamp": "2026-09-30T01:05:58.592949",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -252480,7 +252302,7 @@
     "word_count": 1982,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:23.005356",
+    "parse_timestamp": "2026-09-30T01:05:59.206383",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -252570,7 +252392,7 @@
     "word_count": 5917,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:24.466599",
+    "parse_timestamp": "2026-09-30T01:06:00.591516",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -252658,7 +252480,7 @@
     "word_count": 1906,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:24.972925",
+    "parse_timestamp": "2026-09-30T01:06:01.058847",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -252754,7 +252576,7 @@
     "word_count": 1893,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:25.491315",
+    "parse_timestamp": "2026-09-30T01:06:01.526012",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -252840,7 +252662,7 @@
     "word_count": 1222,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:25.840749",
+    "parse_timestamp": "2026-09-30T01:06:01.847241",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -252944,7 +252766,7 @@
     "word_count": 3827,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:26.759487",
+    "parse_timestamp": "2026-09-30T01:06:02.753738",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -253024,7 +252846,7 @@
     "word_count": 2218,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:27.371353",
+    "parse_timestamp": "2026-09-30T01:06:03.288221",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -253129,7 +252951,7 @@
     "word_count": 4364,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:28.460961",
+    "parse_timestamp": "2026-09-30T01:06:04.302700",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -253219,7 +253041,7 @@
     "word_count": 1453,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:28.863837",
+    "parse_timestamp": "2026-09-30T01:06:04.674574",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -253313,7 +253135,7 @@
     "word_count": 2665,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:29.555480",
+    "parse_timestamp": "2026-09-30T01:06:05.361483",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -253410,7 +253232,7 @@
     "word_count": 4686,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:30.749046",
+    "parse_timestamp": "2026-09-30T01:06:06.500593",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -253495,7 +253317,7 @@
     "word_count": 1468,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:31.150004",
+    "parse_timestamp": "2026-09-30T01:06:06.867953",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -253589,7 +253411,7 @@
     "word_count": 5758,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:32.603758",
+    "parse_timestamp": "2026-09-30T01:06:08.250799",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -253674,7 +253496,7 @@
     "word_count": 1211,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:33.007486",
+    "parse_timestamp": "2026-09-30T01:06:08.626904",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -253767,7 +253589,7 @@
     "word_count": 2938,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:33.741292",
+    "parse_timestamp": "2026-09-30T01:06:09.336972",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -253861,7 +253683,7 @@
     "word_count": 3909,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:34.757825",
+    "parse_timestamp": "2026-09-30T01:06:10.255980",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -253952,7 +253774,7 @@
     "word_count": 2081,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:35.392440",
+    "parse_timestamp": "2026-09-30T01:06:10.888090",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -254041,7 +253863,7 @@
     "word_count": 2767,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:36.096966",
+    "parse_timestamp": "2026-09-30T01:06:11.570037",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -254130,7 +253952,7 @@
     "word_count": 3221,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:36.918061",
+    "parse_timestamp": "2026-09-30T01:06:12.350282",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -254218,7 +254040,7 @@
     "word_count": 4067,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:37.917701",
+    "parse_timestamp": "2026-09-30T01:06:13.253236",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -254324,7 +254146,7 @@
     "word_count": 6488,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:39.617353",
+    "parse_timestamp": "2026-09-30T01:06:14.917224",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -254412,7 +254234,7 @@
     "word_count": 2057,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:40.215123",
+    "parse_timestamp": "2026-09-30T01:06:15.469748",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -254510,7 +254332,7 @@
     "word_count": 2097,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:40.721325",
+    "parse_timestamp": "2026-09-30T01:06:15.923116",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -254599,7 +254421,7 @@
     "word_count": 1728,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:41.173283",
+    "parse_timestamp": "2026-09-30T01:06:16.346150",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -254686,7 +254508,7 @@
     "word_count": 3834,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:42.106608",
+    "parse_timestamp": "2026-09-30T01:06:17.259093",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -254778,7 +254600,7 @@
     "word_count": 1907,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:43.116504",
+    "parse_timestamp": "2026-09-30T01:06:18.212426",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -254880,7 +254702,7 @@
     "word_count": 2541,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:43.836701",
+    "parse_timestamp": "2026-09-30T01:06:18.809398",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -254978,7 +254800,7 @@
     "word_count": 3704,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:44.747919",
+    "parse_timestamp": "2026-09-30T01:06:19.651842",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -255072,7 +254894,7 @@
     "word_count": 4300,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:45.837439",
+    "parse_timestamp": "2026-09-30T01:06:20.668851",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -255171,7 +254993,7 @@
     "word_count": 2015,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:46.320058",
+    "parse_timestamp": "2026-09-30T01:06:21.141624",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -255265,7 +255087,7 @@
     "word_count": 1731,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:46.789766",
+    "parse_timestamp": "2026-09-30T01:06:21.599215",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -255365,7 +255187,7 @@
     "word_count": 3351,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:47.668608",
+    "parse_timestamp": "2026-09-30T01:06:22.410092",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -255469,7 +255291,7 @@
     "word_count": 3300,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:48.475795",
+    "parse_timestamp": "2026-09-30T01:06:23.163494",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -255573,7 +255395,7 @@
     "word_count": 1684,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:48.929173",
+    "parse_timestamp": "2026-09-30T01:06:23.625167",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -255681,7 +255503,7 @@
     "word_count": 2254,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:49.533281",
+    "parse_timestamp": "2026-09-30T01:06:24.159645",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -255776,7 +255598,7 @@
     "word_count": 4052,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:50.641518",
+    "parse_timestamp": "2026-09-30T01:06:25.244964",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -255872,7 +255694,7 @@
     "word_count": 3146,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:51.521266",
+    "parse_timestamp": "2026-09-30T01:06:26.031334",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -255964,7 +255786,7 @@
     "word_count": 1411,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:51.904074",
+    "parse_timestamp": "2026-09-30T01:06:26.381710",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -256045,7 +255867,7 @@
     "word_count": 6238,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:53.590273",
+    "parse_timestamp": "2026-09-30T01:06:27.973581",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -256140,7 +255962,7 @@
     "word_count": 2941,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:54.402931",
+    "parse_timestamp": "2026-09-30T01:06:28.725570",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -256228,7 +256050,7 @@
     "word_count": 1519,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:54.815974",
+    "parse_timestamp": "2026-09-30T01:06:29.110713",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -256322,7 +256144,7 @@
     "word_count": 4174,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:55.792817",
+    "parse_timestamp": "2026-09-30T01:06:30.058553",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -256416,7 +256238,7 @@
     "word_count": 3011,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:56.599281",
+    "parse_timestamp": "2026-09-30T01:06:30.815868",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -256528,7 +256350,7 @@
     "word_count": 4412,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:57.675624",
+    "parse_timestamp": "2026-09-30T01:06:31.840457",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -256622,7 +256444,7 @@
     "word_count": 4141,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:43:58.752666",
+    "parse_timestamp": "2026-09-30T01:06:32.842605",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -256730,7 +256552,7 @@
     "word_count": 7018,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:00.550761",
+    "parse_timestamp": "2026-09-30T01:06:34.457712",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -256819,7 +256641,7 @@
     "word_count": 3072,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:01.403953",
+    "parse_timestamp": "2026-09-30T01:06:35.262763",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -256922,7 +256744,7 @@
     "word_count": 3065,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:02.208815",
+    "parse_timestamp": "2026-09-30T01:06:36.005997",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -257014,7 +256836,7 @@
     "word_count": 5160,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:03.437705",
+    "parse_timestamp": "2026-09-30T01:06:37.186554",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -257109,7 +256931,7 @@
     "word_count": 1972,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:03.982974",
+    "parse_timestamp": "2026-09-30T01:06:37.687962",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -257200,7 +257022,7 @@
     "word_count": 2930,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:04.756326",
+    "parse_timestamp": "2026-09-30T01:06:38.421856",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -257322,7 +257144,7 @@
     "word_count": 21819,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:09.812394",
+    "parse_timestamp": "2026-09-30T01:06:43.131299",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -257414,7 +257236,7 @@
     "word_count": 2464,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:10.686714",
+    "parse_timestamp": "2026-09-30T01:06:43.939320",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -257520,7 +257342,7 @@
     "word_count": 6304,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:12.190615",
+    "parse_timestamp": "2026-09-30T01:06:45.374097",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -257625,7 +257447,7 @@
     "word_count": 3131,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:12.963212",
+    "parse_timestamp": "2026-09-30T01:06:46.104004",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -257712,7 +257534,7 @@
     "word_count": 1399,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:13.368736",
+    "parse_timestamp": "2026-09-30T01:06:46.486710",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -257813,7 +257635,7 @@
     "word_count": 2128,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:13.905292",
+    "parse_timestamp": "2026-09-30T01:06:46.966872",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -257908,7 +257730,7 @@
     "word_count": 2230,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:14.477040",
+    "parse_timestamp": "2026-09-30T01:06:47.534752",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -258011,7 +257833,7 @@
     "word_count": 1934,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:14.951710",
+    "parse_timestamp": "2026-09-30T01:06:47.981311",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -258117,7 +257939,7 @@
     "word_count": 3549,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:15.857362",
+    "parse_timestamp": "2026-09-30T01:06:48.832382",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -258223,7 +258045,7 @@
     "word_count": 5296,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:17.247734",
+    "parse_timestamp": "2026-09-30T01:06:50.112341",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -258313,7 +258135,7 @@
     "word_count": 1501,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:17.714534",
+    "parse_timestamp": "2026-09-30T01:06:50.550140",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -258393,7 +258215,94 @@
     "word_count": 3358,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:18.564869",
+    "parse_timestamp": "2026-09-30T01:06:51.343041",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2024-0054",
+    "source_file_key": "2025017bradley",
+    "docket_numbers": [
+      "2024-0054"
+    ],
+    "citation": "2025 N.H. 17",
+    "citation_year": 2025,
+    "citation_seq": 17,
+    "case_name": "State v. Bradley",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-04/2025017bradley.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025017bradley.pdf",
+    "date_argued": "2025-02-13",
+    "date_issued": "2025-04-16",
+    "days_to_decision": 62,
+    "term_year": 2025,
+    "lower_court": "Superior Court (Ignatius, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Ignatius",
+    "case_type": "criminal",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "donovan",
+    "author_display": "Donovan, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "statutory_interpretation",
+      "evidence"
+    ],
+    "rsa_citations": [
+      "RSA 641:6, I",
+      "RSA 626:8, III",
+      "RSA 641:5"
+    ],
+    "rsa_primary": "RSA 641:6, I",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "In this interlocutory appeal, the defendant, Deborah Ann Bradley,\nchallenges an order of the Superior Court (Ignatius, J.) denying her motion to\nexclude an audio recording of a conversation between her and her husband,\nKenneth Bradley. She argues that the trial court erred by concluding that New\nHampshire Rule of Evidence 504 does not bar the audio recording from being\nintroduced at trial. We conclude that the spousal privilege, N.H. R. Ev. 504,\nprecludes a spouse’s testimony about confidential marital communications,\nbut it does not mandate that the communications themselves be excluded.\nAc",
+    "word_count": 2218,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-30T01:06:51.896982",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -258498,94 +258407,7 @@
     "word_count": 3044,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:19.397707",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2024-0054",
-    "source_file_key": "2025017bradley",
-    "docket_numbers": [
-      "2024-0054"
-    ],
-    "citation": "2025 N.H. 17",
-    "citation_year": 2025,
-    "citation_seq": 17,
-    "case_name": "State v. Bradley",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2025-04/2025017bradley.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2025/2025017bradley.pdf",
-    "date_argued": "2025-02-13",
-    "date_issued": "2025-04-16",
-    "days_to_decision": 62,
-    "term_year": 2025,
-    "lower_court": "Superior Court (Ignatius, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Ignatius",
-    "case_type": "criminal",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "donovan",
-    "author_display": "Donovan, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "MACDONALD, C.J., and BASSETT and COUNTWAY, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "statutory_interpretation",
-      "evidence"
-    ],
-    "rsa_citations": [
-      "RSA 641:6, I",
-      "RSA 626:8, III",
-      "RSA 641:5"
-    ],
-    "rsa_primary": "RSA 641:6, I",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "In this interlocutory appeal, the defendant, Deborah Ann Bradley,\nchallenges an order of the Superior Court (Ignatius, J.) denying her motion to\nexclude an audio recording of a conversation between her and her husband,\nKenneth Bradley. She argues that the trial court erred by concluding that New\nHampshire Rule of Evidence 504 does not bar the audio recording from being\nintroduced at trial. We conclude that the spousal privilege, N.H. R. Ev. 504,\nprecludes a spouse’s testimony about confidential marital communications,\nbut it does not mandate that the communications themselves be excluded.\nAc",
-    "word_count": 2218,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:19.998296",
+    "parse_timestamp": "2026-09-30T01:06:52.648635",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -258674,7 +258496,7 @@
     "word_count": 2837,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:20.752057",
+    "parse_timestamp": "2026-09-30T01:06:53.364038",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -258759,7 +258581,7 @@
     "word_count": 2322,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:21.416443",
+    "parse_timestamp": "2026-09-30T01:06:53.972274",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -258861,7 +258683,7 @@
     "word_count": 3700,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:22.227444",
+    "parse_timestamp": "2026-09-30T01:06:54.734550",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -258950,7 +258772,7 @@
     "word_count": 3732,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:23.256838",
+    "parse_timestamp": "2026-09-30T01:06:55.698480",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -259048,7 +258870,7 @@
     "word_count": 2886,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:24.035577",
+    "parse_timestamp": "2026-09-30T01:06:56.435250",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -259152,7 +258974,7 @@
     "word_count": 5426,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:25.378844",
+    "parse_timestamp": "2026-09-30T01:06:57.683895",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -259240,7 +259062,7 @@
     "word_count": 1303,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:25.773552",
+    "parse_timestamp": "2026-09-30T01:06:58.053609",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -259326,7 +259148,7 @@
     "word_count": 2311,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:26.406445",
+    "parse_timestamp": "2026-09-30T01:06:58.652771",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -259418,7 +259240,7 @@
     "word_count": 3648,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:27.489545",
+    "parse_timestamp": "2026-09-30T01:06:59.669337",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -259510,7 +259332,7 @@
     "word_count": 3341,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:28.271670",
+    "parse_timestamp": "2026-09-30T01:07:00.390237",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -259602,7 +259424,7 @@
     "word_count": 2468,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:28.961206",
+    "parse_timestamp": "2026-09-30T01:07:01.037149",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -259694,7 +259516,7 @@
     "word_count": 5706,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:30.348388",
+    "parse_timestamp": "2026-09-30T01:07:02.354165",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -259786,7 +259608,7 @@
     "word_count": 2312,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:30.976968",
+    "parse_timestamp": "2026-09-30T01:07:02.949097",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -259887,7 +259709,7 @@
     "word_count": 4799,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:32.111293",
+    "parse_timestamp": "2026-09-30T01:07:04.028219",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -259977,7 +259799,7 @@
     "word_count": 3412,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:33.041766",
+    "parse_timestamp": "2026-09-30T01:07:04.890123",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -260069,7 +259891,7 @@
     "word_count": 4466,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:34.144155",
+    "parse_timestamp": "2026-09-30T01:07:05.918959",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -260168,7 +259990,7 @@
     "word_count": 2597,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:34.839834",
+    "parse_timestamp": "2026-09-30T01:07:06.579366",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -260265,7 +260087,7 @@
     "word_count": 1533,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:35.325661",
+    "parse_timestamp": "2026-09-30T01:07:07.009957",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -260380,7 +260202,7 @@
     "word_count": 4541,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:36.556521",
+    "parse_timestamp": "2026-09-30T01:07:08.223127",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -260472,7 +260294,7 @@
     "word_count": 4297,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:37.588367",
+    "parse_timestamp": "2026-09-30T01:07:09.220880",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -260593,7 +260415,7 @@
     "word_count": 7167,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:39.640749",
+    "parse_timestamp": "2026-09-30T01:07:11.205272",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -260696,7 +260518,7 @@
     "word_count": 3839,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:40.615037",
+    "parse_timestamp": "2026-09-30T01:07:12.130457",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -260795,7 +260617,7 @@
     "word_count": 2919,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:41.485268",
+    "parse_timestamp": "2026-09-30T01:07:12.969674",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -260893,7 +260715,7 @@
     "word_count": 3025,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:42.190775",
+    "parse_timestamp": "2026-09-30T01:07:13.638544",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -260989,7 +260811,7 @@
     "word_count": 1730,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:42.678817",
+    "parse_timestamp": "2026-09-30T01:07:14.095656",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -261095,7 +260917,7 @@
     "word_count": 3790,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:43.526761",
+    "parse_timestamp": "2026-09-30T01:07:14.896919",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -261191,7 +261013,7 @@
     "word_count": 6581,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:45.129464",
+    "parse_timestamp": "2026-09-30T01:07:16.465357",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -261288,7 +261110,7 @@
     "word_count": 2214,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:45.748981",
+    "parse_timestamp": "2026-09-30T01:07:17.034746",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -261381,7 +261203,7 @@
     "word_count": 6839,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:47.470545",
+    "parse_timestamp": "2026-09-30T01:07:18.672583",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -261479,7 +261301,7 @@
     "word_count": 2218,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:48.196010",
+    "parse_timestamp": "2026-09-30T01:07:19.349456",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -261572,108 +261394,7 @@
     "word_count": 2445,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:48.831524",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0028",
-    "source_file_key": "2026018freese",
-    "docket_numbers": [
-      "2025-0028"
-    ],
-    "citation": "2026 N.H. 18",
-    "citation_year": 2026,
-    "citation_seq": 18,
-    "case_name": "State v. Freese",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026018freese.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026018freese.pdf",
-    "date_argued": "2026-03-10",
-    "date_issued": "2026-04-24",
-    "days_to_decision": 45,
-    "term_year": 2026,
-    "lower_court": "Superior Court (Delker, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Delker",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "reversed_and_remanded",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": "MACDONALD, C.J., sat for oral argument but subsequently disqualified himself and did not participate in further review of the case."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "competency",
-      "family_law",
-      "statutory_interpretation",
-      "constitutional"
-    ],
-    "rsa_citations": [
-      "RSA 135:17-a",
-      "RSA 135:17-a, IV",
-      "RSA 135:17-",
-      "RSA 135:17-a, V",
-      "RSA 135-C:34",
-      "RSA 135:17-a, I",
-      "RSA 135:17-a, III",
-      "RSA 171-B:2",
-      "RSA 135:17-a, VI"
-    ],
-    "rsa_primary": "RSA 135:17-a",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "Through this interlocutory appeal, the defendant, Donald Freese,\nchallenges the order of the Superior Court (Delker, J.) reinstating indictments\nagainst him that had been dismissed after the court found the defendant not\ncompetent to stand trial and subsequently found that he had not regained\ncompetency after twelve months. See RSA 135:17-a (2021). We reverse and\nremand.\nI. Background",
-    "word_count": 1526,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:49.274152",
+    "parse_timestamp": "2026-09-30T01:07:19.951356",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -261777,7 +261498,108 @@
     "word_count": 3006,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:50.068780",
+    "parse_timestamp": "2026-09-30T01:07:20.659105",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0028",
+    "source_file_key": "2026018freese",
+    "docket_numbers": [
+      "2025-0028"
+    ],
+    "citation": "2026 N.H. 18",
+    "citation_year": 2026,
+    "citation_seq": 18,
+    "case_name": "State v. Freese",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026018freese.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026018freese.pdf",
+    "date_argued": "2026-03-10",
+    "date_issued": "2026-04-24",
+    "days_to_decision": 45,
+    "term_year": 2026,
+    "lower_court": "Superior Court (Delker, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Delker",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "reversed_and_remanded",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": "MACDONALD, C.J., sat for oral argument but subsequently disqualified himself and did not participate in further review of the case."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "competency",
+      "family_law",
+      "statutory_interpretation",
+      "constitutional"
+    ],
+    "rsa_citations": [
+      "RSA 135:17-a",
+      "RSA 135:17-a, IV",
+      "RSA 135:17-",
+      "RSA 135:17-a, V",
+      "RSA 135-C:34",
+      "RSA 135:17-a, I",
+      "RSA 135:17-a, III",
+      "RSA 171-B:2",
+      "RSA 135:17-a, VI"
+    ],
+    "rsa_primary": "RSA 135:17-a",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "Through this interlocutory appeal, the defendant, Donald Freese,\nchallenges the order of the Superior Court (Delker, J.) reinstating indictments\nagainst him that had been dismissed after the court found the defendant not\ncompetent to stand trial and subsequently found that he had not regained\ncompetency after twelve months. See RSA 135:17-a (2021). We reverse and\nremand.\nI. Background",
+    "word_count": 1526,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-09-30T01:07:21.111199",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -261879,7 +261701,7 @@
     "word_count": 1903,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:50.590836",
+    "parse_timestamp": "2026-09-30T01:07:21.590742",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -261971,7 +261793,7 @@
     "word_count": 3012,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:51.350069",
+    "parse_timestamp": "2026-09-30T01:07:22.309940",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -262066,7 +261888,7 @@
     "word_count": 5268,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:52.662786",
+    "parse_timestamp": "2026-09-30T01:07:23.537107",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -262176,7 +261998,7 @@
     "word_count": 6103,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:54.234980",
+    "parse_timestamp": "2026-09-30T01:07:24.946493",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -262269,7 +262091,7 @@
     "word_count": 4504,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:55.296198",
+    "parse_timestamp": "2026-09-30T01:07:25.961693",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -262370,7 +262192,7 @@
     "word_count": 4159,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:56.499512",
+    "parse_timestamp": "2026-09-30T01:07:27.084414",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -262465,7 +262287,7 @@
     "word_count": 5355,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:57.881240",
+    "parse_timestamp": "2026-09-30T01:07:28.364768",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -262564,7 +262386,7 @@
     "word_count": 3255,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:58.685116",
+    "parse_timestamp": "2026-09-30T01:07:29.116147",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -262656,7 +262478,7 @@
     "word_count": 3018,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:44:59.440045",
+    "parse_timestamp": "2026-09-30T01:07:29.807689",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -262748,7 +262570,7 @@
     "word_count": 4454,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:45:00.555432",
+    "parse_timestamp": "2026-09-30T01:07:30.841114",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -262846,7 +262668,7 @@
     "word_count": 4187,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:45:01.599172",
+    "parse_timestamp": "2026-09-30T01:07:31.850595",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -262940,7 +262762,7 @@
     "word_count": 5401,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:45:03.027931",
+    "parse_timestamp": "2026-09-30T01:07:33.141703",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -263030,7 +262852,7 @@
     "word_count": 3609,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:45:03.998219",
+    "parse_timestamp": "2026-09-30T01:07:34.096227",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -263121,7 +262943,7 @@
     "word_count": 2809,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:45:04.781446",
+    "parse_timestamp": "2026-09-30T01:07:34.805959",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -263220,7 +263042,7 @@
     "word_count": 2858,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:45:05.533785",
+    "parse_timestamp": "2026-09-30T01:07:35.494435",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -263312,7 +263134,7 @@
     "word_count": 4834,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:45:06.793511",
+    "parse_timestamp": "2026-09-30T01:07:36.703957",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -263415,7 +263237,7 @@
     "word_count": 3003,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-09-29T20:45:07.663542",
+    "parse_timestamp": "2026-09-30T01:07:37.542822",
     "parse_confidence": 0.8,
     "manual_override": false
   }
