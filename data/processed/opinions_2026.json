@@ -110,7 +110,7 @@
     "word_count": 4437,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:18:52.050228",
+    "parse_timestamp": "2026-10-19T17:31:55.734199",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -208,7 +208,7 @@
     "word_count": 2380,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:18:52.644499",
+    "parse_timestamp": "2026-10-19T17:31:56.353271",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -300,7 +300,104 @@
     "word_count": 4466,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:18:53.682137",
+    "parse_timestamp": "2026-10-19T17:31:57.434635",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0416",
+    "source_file_key": "2026034comm-rlabor",
+    "docket_numbers": [
+      "2025-0416"
+    ],
+    "citation": "2026 N.H. 34",
+    "citation_year": 2026,
+    "citation_seq": 34,
+    "case_name": "Appeal of Comm’r of N.H. Dep’t of Labor",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-09/2026034comm-rlabor.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026034comm-rlabor.pdf",
+    "date_argued": "2026-04-07",
+    "date_issued": "2026-09-03",
+    "days_to_decision": 149,
+    "term_year": 2026,
+    "lower_court": null,
+    "lower_court_type": "administrative",
+    "lower_court_judge": null,
+    "case_type": "civil",
+    "appeal_type": "standard",
+    "outcome": "reversed_and_remanded",
+    "author": "gould",
+    "author_display": "Gould, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": "MACDONALD, C.J., sat for oral argument but did not participate in the final vote."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, and WILL, JJ., concurred"
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, and WILL, JJ., concurred"
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, and WILL, JJ., concurred"
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "insurance",
+      "administrative_law",
+      "employment"
+    ],
+    "rsa_citations": [
+      "RSA 281-A:55",
+      "RSA 281-A:55-a, II",
+      "RSA 281-A:15, III",
+      "RSA 281-A:40",
+      "RSA 281-A:55-a, I",
+      "RSA 281-A:43, I",
+      "RSA 541",
+      "RSA 3",
+      "RSA 281-A"
+    ],
+    "rsa_primary": "RSA 281-A:55",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "The petitioner, the Commissioner of the New Hampshire Department\nof Labor (the Commissioner), appeals an order of the New Hampshire\nCompensation Appeals Board (CAB) granting the claim of the respondent,\nESIS, Inc. (the Insurer), the former insurer of BAE Systems, Inc. (BAE),1 for\nreimbursement from the Special Fund for Second Injuries (the Fund). See RSA\n281-A:55 (2023). The sole issue on appeal is whether the Insurer provided the\nCommissioner with notice of its possible claim against the Fund within 100\nweeks after the injury as required by RSA 281-A:55-a, II (2023). We hold that\nthe Insure",
+    "word_count": 1533,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-10-19T17:31:57.938963",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -399,104 +496,7 @@
     "word_count": 2597,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:18:54.404348",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0416",
-    "source_file_key": "2026034comm-rlabor",
-    "docket_numbers": [
-      "2025-0416"
-    ],
-    "citation": "2026 N.H. 34",
-    "citation_year": 2026,
-    "citation_seq": 34,
-    "case_name": "Appeal of Comm’r of N.H. Dep’t of Labor",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-09/2026034comm-rlabor.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026034comm-rlabor.pdf",
-    "date_argued": "2026-04-07",
-    "date_issued": "2026-09-03",
-    "days_to_decision": 149,
-    "term_year": 2026,
-    "lower_court": null,
-    "lower_court_type": "administrative",
-    "lower_court_judge": null,
-    "case_type": "civil",
-    "appeal_type": "standard",
-    "outcome": "reversed_and_remanded",
-    "author": "gould",
-    "author_display": "Gould, J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": "MACDONALD, C.J., sat for oral argument but did not participate in the final vote."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, and WILL, JJ., concurred"
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, and WILL, JJ., concurred"
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, and WILL, JJ., concurred"
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "insurance",
-      "administrative_law",
-      "employment"
-    ],
-    "rsa_citations": [
-      "RSA 281-A:55",
-      "RSA 281-A:55-a, II",
-      "RSA 281-A:15, III",
-      "RSA 281-A:40",
-      "RSA 281-A:55-a, I",
-      "RSA 281-A:43, I",
-      "RSA 541",
-      "RSA 3",
-      "RSA 281-A"
-    ],
-    "rsa_primary": "RSA 281-A:55",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "The petitioner, the Commissioner of the New Hampshire Department\nof Labor (the Commissioner), appeals an order of the New Hampshire\nCompensation Appeals Board (CAB) granting the claim of the respondent,\nESIS, Inc. (the Insurer), the former insurer of BAE Systems, Inc. (BAE),1 for\nreimbursement from the Special Fund for Second Injuries (the Fund). See RSA\n281-A:55 (2023). The sole issue on appeal is whether the Insurer provided the\nCommissioner with notice of its possible claim against the Fund within 100\nweeks after the injury as required by RSA 281-A:55-a, II (2023). We hold that\nthe Insure",
-    "word_count": 1533,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:18:54.858849",
+    "parse_timestamp": "2026-10-19T17:31:58.663954",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -611,7 +611,7 @@
     "word_count": 4541,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:18:56.067195",
+    "parse_timestamp": "2026-10-19T17:31:59.975756",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -703,7 +703,7 @@
     "word_count": 4297,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:18:57.133293",
+    "parse_timestamp": "2026-10-19T17:32:01.098891",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -824,7 +824,7 @@
     "word_count": 7167,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:18:59.193698",
+    "parse_timestamp": "2026-10-19T17:32:03.321873",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -927,7 +927,7 @@
     "word_count": 3839,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:00.127430",
+    "parse_timestamp": "2026-10-19T17:32:04.307969",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1026,7 +1026,7 @@
     "word_count": 2919,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:00.988646",
+    "parse_timestamp": "2026-10-19T17:32:05.244879",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1124,7 +1124,7 @@
     "word_count": 3025,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:01.686636",
+    "parse_timestamp": "2026-10-19T17:32:05.980500",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1220,7 +1220,7 @@
     "word_count": 1730,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:02.178633",
+    "parse_timestamp": "2026-10-19T17:32:06.498016",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1326,7 +1326,7 @@
     "word_count": 3790,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:03.056475",
+    "parse_timestamp": "2026-10-19T17:32:07.431009",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1422,7 +1422,7 @@
     "word_count": 6581,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:04.564664",
+    "parse_timestamp": "2026-10-19T17:32:09.039593",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1519,7 +1519,7 @@
     "word_count": 2214,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:05.196906",
+    "parse_timestamp": "2026-10-19T17:32:09.679792",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1612,7 +1612,7 @@
     "word_count": 6839,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:06.913985",
+    "parse_timestamp": "2026-10-19T17:32:11.565761",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1710,7 +1710,7 @@
     "word_count": 2218,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:07.577888",
+    "parse_timestamp": "2026-10-19T17:32:12.301733",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1803,7 +1803,108 @@
     "word_count": 2445,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:08.230104",
+    "parse_timestamp": "2026-10-19T17:32:13.011133",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2025-0028",
+    "source_file_key": "2026018freese",
+    "docket_numbers": [
+      "2025-0028"
+    ],
+    "citation": "2026 N.H. 18",
+    "citation_year": 2026,
+    "citation_seq": 18,
+    "case_name": "State v. Freese",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026018freese.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026018freese.pdf",
+    "date_argued": "2026-03-10",
+    "date_issued": "2026-04-24",
+    "days_to_decision": 45,
+    "term_year": 2026,
+    "lower_court": "Superior Court (Delker, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Delker",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "reversed_and_remanded",
+    "author": "per_curiam",
+    "author_display": "Per Curiam",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "not_participating",
+        "note": "MACDONALD, C.J., sat for oral argument but subsequently disqualified himself and did not participate in further review of the case."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "competency",
+      "family_law",
+      "statutory_interpretation",
+      "constitutional"
+    ],
+    "rsa_citations": [
+      "RSA 135:17-a",
+      "RSA 135:17-a, IV",
+      "RSA 135:17-",
+      "RSA 135:17-a, V",
+      "RSA 135-C:34",
+      "RSA 135:17-a, I",
+      "RSA 135:17-a, III",
+      "RSA 171-B:2",
+      "RSA 135:17-a, VI"
+    ],
+    "rsa_primary": "RSA 135:17-a",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "Through this interlocutory appeal, the defendant, Donald Freese,\nchallenges the order of the Superior Court (Delker, J.) reinstating indictments\nagainst him that had been dismissed after the court found the defendant not\ncompetent to stand trial and subsequently found that he had not regained\ncompetency after twelve months. See RSA 135:17-a (2021). We reverse and\nremand.\nI. Background",
+    "word_count": 1526,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-10-19T17:32:13.477257",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1907,108 +2008,7 @@
     "word_count": 3006,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:08.977006",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2025-0028",
-    "source_file_key": "2026018freese",
-    "docket_numbers": [
-      "2025-0028"
-    ],
-    "citation": "2026 N.H. 18",
-    "citation_year": 2026,
-    "citation_seq": 18,
-    "case_name": "State v. Freese",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026018freese.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026018freese.pdf",
-    "date_argued": "2026-03-10",
-    "date_issued": "2026-04-24",
-    "days_to_decision": 45,
-    "term_year": 2026,
-    "lower_court": "Superior Court (Delker, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Delker",
-    "case_type": "family/domestic",
-    "appeal_type": "standard",
-    "outcome": "reversed_and_remanded",
-    "author": "per_curiam",
-    "author_display": "Per Curiam",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "not_participating",
-        "note": "MACDONALD, C.J., sat for oral argument but subsequently disqualified himself and did not participate in further review of the case."
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      },
-      "gould": {
-        "display_name": "Gould, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      },
-      "will": {
-        "display_name": "Will, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "DONOVAN, COUNTWAY, GOULD, and WILL, JJ., concurred"
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 2,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "competency",
-      "family_law",
-      "statutory_interpretation",
-      "constitutional"
-    ],
-    "rsa_citations": [
-      "RSA 135:17-a",
-      "RSA 135:17-a, IV",
-      "RSA 135:17-",
-      "RSA 135:17-a, V",
-      "RSA 135-C:34",
-      "RSA 135:17-a, I",
-      "RSA 135:17-a, III",
-      "RSA 171-B:2",
-      "RSA 135:17-a, VI"
-    ],
-    "rsa_primary": "RSA 135:17-a",
-    "involves_statutory_interpretation": true,
-    "standard_of_review": [
-      "de_novo"
-    ],
-    "summary_paragraph": "Through this interlocutory appeal, the defendant, Donald Freese,\nchallenges the order of the Superior Court (Delker, J.) reinstating indictments\nagainst him that had been dismissed after the court found the defendant not\ncompetent to stand trial and subsequently found that he had not regained\ncompetency after twelve months. See RSA 135:17-a (2021). We reverse and\nremand.\nI. Background",
-    "word_count": 1526,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:09.419194",
+    "parse_timestamp": "2026-10-19T17:32:14.248935",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2110,7 +2110,7 @@
     "word_count": 1903,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:09.940004",
+    "parse_timestamp": "2026-10-19T17:32:14.792036",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2202,7 +2202,7 @@
     "word_count": 3012,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:10.703391",
+    "parse_timestamp": "2026-10-19T17:32:15.579513",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2297,7 +2297,7 @@
     "word_count": 5268,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:12.019127",
+    "parse_timestamp": "2026-10-19T17:32:16.995917",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2407,7 +2407,7 @@
     "word_count": 6103,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:13.510392",
+    "parse_timestamp": "2026-10-19T17:32:18.573798",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2500,7 +2500,108 @@
     "word_count": 4504,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:14.590730",
+    "parse_timestamp": "2026-10-19T17:32:19.711596",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2024-0155",
+    "source_file_key": "2026013whitehead",
+    "docket_numbers": [
+      "2024-0155"
+    ],
+    "citation": "2026 N.H. 13",
+    "citation_year": 2026,
+    "citation_seq": 13,
+    "case_name": "In the Matter of Whitehead & Whitehead",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2026-04/2026013whitehead.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2026/2026013whitehead.pdf",
+    "date_argued": "2025-09-30",
+    "date_issued": "2026-04-02",
+    "days_to_decision": 184,
+    "term_year": 2026,
+    "lower_court": "Circuit Court-Nashua Family Division",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Curran",
+    "case_type": "family/domestic",
+    "appeal_type": "standard",
+    "outcome": "remanded",
+    "author": "donovan",
+    "author_display": "Donovan, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and COUNTWAY and GOULD, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and COUNTWAY and GOULD, JJ., concurred."
+      },
+      "gould": {
+        "display_name": "Gould, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and COUNTWAY and GOULD, JJ., concurred."
+      },
+      "will": {
+        "display_name": "Will, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 2,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "insurance",
+      "family_law",
+      "property",
+      "employment",
+      "contract",
+      "tort",
+      "tax"
+    ],
+    "rsa_citations": [
+      "RSA 458:16-a, I",
+      "RSA 458:16-a, II",
+      "RSA 458:19-a, VI",
+      "RSA 458:16-",
+      "RSA 458:19-a, I",
+      "RSA 458:19-aa",
+      "RSA 458:19-aa, I"
+    ],
+    "rsa_primary": "RSA 458:16-a, I",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "The respondent, Michael Whitehead (Husband), appeals a final\ndivorce decree issued by the Circuit Court (Curran, J.). Husband challenges\nthe trial court’s award of a portion of his Canadian structured settlement\nannuity payments to the petitioner, Kerri Whitehead (Wife), and its denial of his\nrequest for alimony.",
+    "word_count": 4159,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-10-19T17:32:20.998869",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2595,7 +2696,7 @@
     "word_count": 5355,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:15.937845",
+    "parse_timestamp": "2026-10-19T17:32:22.396157",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2694,7 +2795,7 @@
     "word_count": 3255,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:16.726697",
+    "parse_timestamp": "2026-10-19T17:32:23.233788",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2786,7 +2887,7 @@
     "word_count": 3018,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:17.458369",
+    "parse_timestamp": "2026-10-19T17:32:24.001117",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2878,7 +2979,7 @@
     "word_count": 4454,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:18.498041",
+    "parse_timestamp": "2026-10-19T17:32:25.152193",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2976,7 +3077,7 @@
     "word_count": 4187,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:19.541208",
+    "parse_timestamp": "2026-10-19T17:32:26.269269",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3070,7 +3171,7 @@
     "word_count": 5401,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:20.931033",
+    "parse_timestamp": "2026-10-19T17:32:27.717495",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3160,7 +3261,7 @@
     "word_count": 3609,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:21.886725",
+    "parse_timestamp": "2026-10-19T17:32:28.777646",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3251,7 +3352,7 @@
     "word_count": 2809,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:22.654208",
+    "parse_timestamp": "2026-10-19T17:32:29.600682",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3350,7 +3451,7 @@
     "word_count": 2858,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:23.379168",
+    "parse_timestamp": "2026-10-19T17:32:30.374537",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3442,7 +3543,7 @@
     "word_count": 4834,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:24.596706",
+    "parse_timestamp": "2026-10-19T17:32:31.680415",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3545,7 +3646,7 @@
     "word_count": 3003,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:19:25.453327",
+    "parse_timestamp": "2026-10-19T17:32:32.602019",
     "parse_confidence": 0.8,
     "manual_override": false
   }

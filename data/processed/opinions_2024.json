@@ -101,7 +101,7 @@
     "word_count": 4018,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:05.468985",
+    "parse_timestamp": "2026-10-19T17:30:02.517813",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -194,7 +194,7 @@
     "word_count": 2313,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:06.097066",
+    "parse_timestamp": "2026-10-19T17:30:03.174805",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -287,7 +287,7 @@
     "word_count": 4556,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:07.146595",
+    "parse_timestamp": "2026-10-19T17:30:04.274697",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -375,7 +375,7 @@
     "word_count": 1473,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:07.592689",
+    "parse_timestamp": "2026-10-19T17:30:04.747685",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -483,7 +483,7 @@
     "word_count": 5416,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:09.053881",
+    "parse_timestamp": "2026-10-19T17:30:06.319453",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -567,7 +567,7 @@
     "word_count": 1893,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:09.587416",
+    "parse_timestamp": "2026-10-19T17:30:06.883825",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -653,7 +653,7 @@
     "word_count": 1752,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:10.030725",
+    "parse_timestamp": "2026-10-19T17:30:07.382376",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -745,7 +745,7 @@
     "word_count": 1850,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:10.594337",
+    "parse_timestamp": "2026-10-19T17:30:07.957569",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -837,7 +837,7 @@
     "word_count": 2130,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:11.071536",
+    "parse_timestamp": "2026-10-19T17:30:08.456222",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -933,7 +933,7 @@
     "word_count": 4388,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:12.104738",
+    "parse_timestamp": "2026-10-19T17:30:09.518418",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1029,7 +1029,7 @@
     "word_count": 2687,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:12.825966",
+    "parse_timestamp": "2026-10-19T17:30:10.277058",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1129,7 +1129,7 @@
     "word_count": 3197,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:13.629102",
+    "parse_timestamp": "2026-10-19T17:30:11.118305",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1215,7 +1215,97 @@
     "word_count": 1449,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:14.040987",
+    "parse_timestamp": "2026-10-19T17:30:11.550476",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2022-0025",
+    "source_file_key": "2024057rogers",
+    "docket_numbers": [
+      "2022-0025"
+    ],
+    "citation": "2024 N.H. 57",
+    "citation_year": 2024,
+    "citation_seq": 57,
+    "case_name": "State v. Rogers",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-10/2024057rogers.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024057rogers.pdf",
+    "date_argued": "2024-05-14",
+    "date_issued": "2024-10-11",
+    "days_to_decision": 150,
+    "term_year": 2024,
+    "lower_court": "Circuit Court-Milford District Division",
+    "lower_court_type": "circuit_court",
+    "lower_court_judge": "Derby",
+    "case_type": "criminal",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "countway",
+    "author_display": "Countway, J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "MACDONALD, C.J., and BASSETT and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "administrative_law",
+      "statutory_interpretation",
+      "contract",
+      "DWI"
+    ],
+    "rsa_citations": [
+      "RSA 265-A:2, I",
+      "RSA 642:2",
+      "RSA 263:64",
+      "RSA 265:79-b"
+    ],
+    "rsa_primary": "RSA 265-A:2, I",
+    "involves_statutory_interpretation": true,
+    "standard_of_review": [
+      "de_novo"
+    ],
+    "summary_paragraph": "The defendant, Roy Rogers, appeals his convictions, following a trial\nin Circuit Court (Derby, J.), on one count of driving under the influence, see\nRSA 265-A:2, I(a) (2024), and five counts of resisting arrest, see RSA 642:2\n(2016). The defendant does not appeal his conviction for driving after\nsuspension of his license, see RSA 263:64 (2024). We affirm in part, vacate in\npart, and remand.",
+    "word_count": 3016,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-10-19T17:30:12.329001",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1303,7 +1393,7 @@
     "word_count": 1520,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:14.449811",
+    "parse_timestamp": "2026-10-19T17:30:12.776617",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1389,7 +1479,7 @@
     "word_count": 3025,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:15.212318",
+    "parse_timestamp": "2026-10-19T17:30:13.572790",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1480,7 +1570,7 @@
     "word_count": 3923,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:16.219882",
+    "parse_timestamp": "2026-10-19T17:30:14.638601",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1577,7 +1667,7 @@
     "word_count": 3211,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:17.082897",
+    "parse_timestamp": "2026-10-19T17:30:15.558034",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1670,7 +1760,7 @@
     "word_count": 3451,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:17.904983",
+    "parse_timestamp": "2026-10-19T17:30:16.409876",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1757,7 +1847,7 @@
     "word_count": 1237,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:18.272568",
+    "parse_timestamp": "2026-10-19T17:30:16.789494",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1851,7 +1941,7 @@
     "word_count": 2180,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:18.831415",
+    "parse_timestamp": "2026-10-19T17:30:17.412116",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -1952,7 +2042,7 @@
     "word_count": 5035,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:20.066118",
+    "parse_timestamp": "2026-10-19T17:30:18.678792",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2041,7 +2131,7 @@
     "word_count": 6210,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:23.039843",
+    "parse_timestamp": "2026-10-19T17:30:22.086624",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2132,7 +2222,7 @@
     "word_count": 3322,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:23.916063",
+    "parse_timestamp": "2026-10-19T17:30:23.045814",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2222,7 +2312,7 @@
     "word_count": 2934,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:25.320068",
+    "parse_timestamp": "2026-10-19T17:30:24.676275",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2308,7 +2398,7 @@
     "word_count": 2060,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:25.851765",
+    "parse_timestamp": "2026-10-19T17:30:25.197594",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2393,7 +2483,7 @@
     "word_count": 3487,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:26.712705",
+    "parse_timestamp": "2026-10-19T17:30:26.095187",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2484,7 +2574,7 @@
     "word_count": 2257,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:27.311559",
+    "parse_timestamp": "2026-10-19T17:30:26.721524",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2578,7 +2668,7 @@
     "word_count": 4820,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:28.599499",
+    "parse_timestamp": "2026-10-19T17:30:28.087448",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2660,7 +2750,7 @@
     "word_count": 2735,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:29.289940",
+    "parse_timestamp": "2026-10-19T17:30:28.806017",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2754,7 +2844,7 @@
     "word_count": 2032,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:29.774399",
+    "parse_timestamp": "2026-10-19T17:30:29.298941",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2847,7 +2937,7 @@
     "word_count": 4300,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:30.840088",
+    "parse_timestamp": "2026-10-19T17:30:30.417100",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -2935,7 +3025,7 @@
     "word_count": 1519,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:31.253345",
+    "parse_timestamp": "2026-10-19T17:30:30.840373",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3013,7 +3103,7 @@
     "word_count": 2626,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:31.926198",
+    "parse_timestamp": "2026-10-19T17:30:31.534872",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3108,7 +3198,7 @@
     "word_count": 1739,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:32.400399",
+    "parse_timestamp": "2026-10-19T17:30:32.025477",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3203,7 +3293,7 @@
     "word_count": 6656,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:34.087096",
+    "parse_timestamp": "2026-10-19T17:30:33.863875",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3300,7 +3390,7 @@
     "word_count": 2607,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:34.807481",
+    "parse_timestamp": "2026-10-19T17:30:34.598615",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3390,7 +3480,7 @@
     "word_count": 1830,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:35.275010",
+    "parse_timestamp": "2026-10-19T17:30:35.087383",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3481,7 +3571,7 @@
     "word_count": 4597,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:36.409023",
+    "parse_timestamp": "2026-10-19T17:30:36.274118",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3576,7 +3666,7 @@
     "word_count": 1053,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:36.970752",
+    "parse_timestamp": "2026-10-19T17:30:36.905959",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3680,7 +3770,7 @@
     "word_count": 4267,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:37.999682",
+    "parse_timestamp": "2026-10-19T17:30:37.975231",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3774,7 +3864,7 @@
     "word_count": 1630,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:38.477280",
+    "parse_timestamp": "2026-10-19T17:30:38.465230",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3858,7 +3948,7 @@
     "word_count": 2225,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:39.041050",
+    "parse_timestamp": "2026-10-19T17:30:39.090479",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -3949,7 +4039,7 @@
     "word_count": 7930,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:41.203807",
+    "parse_timestamp": "2026-10-19T17:30:41.342202",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4035,7 +4125,7 @@
     "word_count": 1016,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:41.445030",
+    "parse_timestamp": "2026-10-19T17:30:41.594665",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4131,7 +4221,7 @@
     "word_count": 1893,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:42.024412",
+    "parse_timestamp": "2026-10-19T17:30:42.222749",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4217,7 +4307,7 @@
     "word_count": 1222,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:42.349864",
+    "parse_timestamp": "2026-10-19T17:30:42.573253",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4300,7 +4390,7 @@
     "word_count": 1982,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:42.890939",
+    "parse_timestamp": "2026-10-19T17:30:43.119069",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4390,7 +4480,7 @@
     "word_count": 5917,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:44.329767",
+    "parse_timestamp": "2026-10-19T17:30:44.613888",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4478,7 +4568,7 @@
     "word_count": 1906,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:44.817951",
+    "parse_timestamp": "2026-10-19T17:30:45.114805",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4582,7 +4672,7 @@
     "word_count": 3827,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:45.721587",
+    "parse_timestamp": "2026-10-19T17:30:46.096768",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4662,7 +4752,7 @@
     "word_count": 2218,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:46.316406",
+    "parse_timestamp": "2026-10-19T17:30:46.680793",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4767,7 +4857,7 @@
     "word_count": 4364,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:47.382540",
+    "parse_timestamp": "2026-10-19T17:30:47.775234",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4857,7 +4947,7 @@
     "word_count": 1453,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:47.773081",
+    "parse_timestamp": "2026-10-19T17:30:48.172427",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -4951,7 +5041,7 @@
     "word_count": 2665,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:48.446284",
+    "parse_timestamp": "2026-10-19T17:30:48.915029",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5048,7 +5138,7 @@
     "word_count": 4686,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:49.658969",
+    "parse_timestamp": "2026-10-19T17:30:50.153108",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5133,7 +5223,7 @@
     "word_count": 1211,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:49.947741",
+    "parse_timestamp": "2026-10-19T17:30:50.544485",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5218,7 +5308,7 @@
     "word_count": 1468,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:50.358835",
+    "parse_timestamp": "2026-10-19T17:30:50.903941",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5312,7 +5402,7 @@
     "word_count": 5758,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:51.777370",
+    "parse_timestamp": "2026-10-19T17:30:52.418232",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5405,7 +5495,7 @@
     "word_count": 2938,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:52.561626",
+    "parse_timestamp": "2026-10-19T17:30:53.212417",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5499,7 +5589,7 @@
     "word_count": 3909,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:53.559087",
+    "parse_timestamp": "2026-10-19T17:30:54.227025",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5590,7 +5680,7 @@
     "word_count": 2081,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:54.190192",
+    "parse_timestamp": "2026-10-19T17:30:54.883479",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5679,7 +5769,7 @@
     "word_count": 2767,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:54.883508",
+    "parse_timestamp": "2026-10-19T17:30:55.607699",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5768,7 +5858,7 @@
     "word_count": 3221,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:55.695844",
+    "parse_timestamp": "2026-10-19T17:30:56.452736",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5856,7 +5946,7 @@
     "word_count": 4067,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:56.681473",
+    "parse_timestamp": "2026-10-19T17:30:57.464620",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -5962,7 +6052,7 @@
     "word_count": 6488,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:58.364477",
+    "parse_timestamp": "2026-10-19T17:30:59.235679",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6050,7 +6140,7 @@
     "word_count": 2057,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:58.982711",
+    "parse_timestamp": "2026-10-19T17:30:59.878485",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6139,7 +6229,7 @@
     "word_count": 1728,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:59.431589",
+    "parse_timestamp": "2026-10-19T17:31:00.346001",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6237,94 +6327,7 @@
     "word_count": 2097,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:17:59.912421",
-    "parse_confidence": 0.8,
-    "manual_override": false
-  },
-  {
-    "case_number": "2021-0310",
-    "source_file_key": "2024002rouleau",
-    "docket_numbers": [
-      "2021-0310"
-    ],
-    "citation": "2024 N.H. 2",
-    "citation_year": 2024,
-    "citation_seq": 2,
-    "case_name": "State v. Rouleau",
-    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-01/2024002rouleau.pdf",
-    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024002rouleau.pdf",
-    "date_argued": "2023-09-14",
-    "date_issued": "2024-01-19",
-    "days_to_decision": 127,
-    "term_year": 2024,
-    "lower_court": "Superior Court (Howard, J.)",
-    "lower_court_type": "superior_court",
-    "lower_court_judge": "Howard",
-    "case_type": "criminal",
-    "appeal_type": "standard",
-    "outcome": "affirmed",
-    "author": "macdonald",
-    "author_display": "MacDonald, C.J.",
-    "votes": {
-      "macdonald": {
-        "display_name": "MacDonald, C.J.",
-        "role": "chief_justice",
-        "vote": "majority",
-        "note": null
-      },
-      "donovan": {
-        "display_name": "Donovan, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "hantz_marconi": {
-        "display_name": "Hantz Marconi, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      },
-      "countway": {
-        "display_name": "Countway, J.",
-        "role": "associate_justice",
-        "vote": "not_participating",
-        "note": null
-      },
-      "bassett": {
-        "display_name": "Bassett, J.",
-        "role": "associate_justice",
-        "vote": "majority",
-        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
-      }
-    },
-    "majority": 4,
-    "dissent": 0,
-    "concur_separate": 0,
-    "not_participating": 1,
-    "vote_string": "4-0",
-    "is_unanimous": true,
-    "has_dissent": false,
-    "has_separate_concurrence": false,
-    "topics": [
-      "criminal",
-      "evidence"
-    ],
-    "rsa_citations": [
-      "RSA 632-A:1, I",
-      "RSA 632-A:2, I",
-      "RSA 629:1",
-      "RSA 632-A:3, III",
-      "RSA 632-A:4, I",
-      "RSA 632-A:6, I"
-    ],
-    "rsa_primary": "RSA 632-A:1, I",
-    "involves_statutory_interpretation": false,
-    "standard_of_review": [],
-    "summary_paragraph": "The defendant, Timmy J. Rouleau, appeals his convictions, following\na jury trial in Superior Court (Howard, J.), on two counts of pattern aggravated\nfelonious sexual assault (AFSA), see RSA 632-A:1, I-c (2016), one count of\nAFSA, see RSA 632-A:2, I(j)(1) (2016 & Supp. 2022), one count of attempted\nAFSA, see RSA 632-A:2, I(j)(1); RSA 629:1 (2016), two counts of felonious\nsexual assault, see RSA 632-A:3, III(a)(1) (2016 & Supp. 2022), and two counts\nof sexual assault, see RSA 632-A:4, I(b) (2016 & Supp. 2022). The charges\nallege that the defendant sexually assaulted the victim several times wh",
-    "word_count": 3834,
-    "opinion_type": "opinion",
-    "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:18:00.875069",
+    "parse_timestamp": "2026-10-19T17:31:00.831507",
     "parse_confidence": 0.8,
     "manual_override": false
   },
@@ -6416,7 +6419,94 @@
     "word_count": 1907,
     "opinion_type": "opinion",
     "parse_version": "1.0.0",
-    "parse_timestamp": "2026-10-12T20:18:01.827510",
+    "parse_timestamp": "2026-10-19T17:31:01.916215",
+    "parse_confidence": 0.8,
+    "manual_override": false
+  },
+  {
+    "case_number": "2021-0310",
+    "source_file_key": "2024002rouleau",
+    "docket_numbers": [
+      "2021-0310"
+    ],
+    "citation": "2024 N.H. 2",
+    "citation_year": 2024,
+    "citation_seq": 2,
+    "case_name": "State v. Rouleau",
+    "pdf_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2024-01/2024002rouleau.pdf",
+    "pdf_local_path": "/home/runner/work/nh-supreme-court/nh-supreme-court/data/raw/pdfs/2024/2024002rouleau.pdf",
+    "date_argued": "2023-09-14",
+    "date_issued": "2024-01-19",
+    "days_to_decision": 127,
+    "term_year": 2024,
+    "lower_court": "Superior Court (Howard, J.)",
+    "lower_court_type": "superior_court",
+    "lower_court_judge": "Howard",
+    "case_type": "criminal",
+    "appeal_type": "standard",
+    "outcome": "affirmed",
+    "author": "macdonald",
+    "author_display": "MacDonald, C.J.",
+    "votes": {
+      "macdonald": {
+        "display_name": "MacDonald, C.J.",
+        "role": "chief_justice",
+        "vote": "majority",
+        "note": null
+      },
+      "donovan": {
+        "display_name": "Donovan, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "hantz_marconi": {
+        "display_name": "Hantz Marconi, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      },
+      "countway": {
+        "display_name": "Countway, J.",
+        "role": "associate_justice",
+        "vote": "not_participating",
+        "note": null
+      },
+      "bassett": {
+        "display_name": "Bassett, J.",
+        "role": "associate_justice",
+        "vote": "majority",
+        "note": "BASSETT, HANTZ MARCONI, and DONOVAN, JJ., concurred."
+      }
+    },
+    "majority": 4,
+    "dissent": 0,
+    "concur_separate": 0,
+    "not_participating": 1,
+    "vote_string": "4-0",
+    "is_unanimous": true,
+    "has_dissent": false,
+    "has_separate_concurrence": false,
+    "topics": [
+      "criminal",
+      "evidence"
+    ],
+    "rsa_citations": [
+      "RSA 632-A:1, I",
+      "RSA 632-A:2, I",
+      "RSA 629:1",
+      "RSA 632-A:3, III",
+      "RSA 632-A:4, I",
+      "RSA 632-A:6, I"
+    ],
+    "rsa_primary": "RSA 632-A:1, I",
+    "involves_statutory_interpretation": false,
+    "standard_of_review": [],
+    "summary_paragraph": "The defendant, Timmy J. Rouleau, appeals his convictions, following\na jury trial in Superior Court (Howard, J.), on two counts of pattern aggravated\nfelonious sexual assault (AFSA), see RSA 632-A:1, I-c (2016), one count of\nAFSA, see RSA 632-A:2, I(j)(1) (2016 & Supp. 2022), one count of attempted\nAFSA, see RSA 632-A:2, I(j)(1); RSA 629:1 (2016), two counts of felonious\nsexual assault, see RSA 632-A:3, III(a)(1) (2016 & Supp. 2022), and two counts\nof sexual assault, see RSA 632-A:4, I(b) (2016 & Supp. 2022). The charges\nallege that the defendant sexually assaulted the victim several times wh",
+    "word_count": 3834,
+    "opinion_type": "opinion",
+    "parse_version": "1.0.0",
+    "parse_timestamp": "2026-10-19T17:31:02.891094",
     "parse_confidence": 0.8,
     "manual_override": false
   }
