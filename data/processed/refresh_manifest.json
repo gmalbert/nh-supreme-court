@@ -1,7 +1,7 @@
 {
-  "refresh_timestamp": "2026-10-19T17:37:43Z",
-  "workflow_run_id": "39292879037",
-  "workflow_run_number": "32",
+  "refresh_timestamp": "2026-10-26T17:21:09Z",
+  "workflow_run_id": "40365367315",
+  "workflow_run_number": "33",
   "triggered_by": "schedule",
   "steps": {
     "scrape_opinions": "success",
@@ -19,6 +19,7 @@
     "data/processed/case_orders_2024.json",
     "data/processed/case_orders_2025.json",
     "data/processed/case_orders_2026.json",
+    "data/processed/case_type_inference_review.csv",
     "data/processed/official_pdf_manifest_audit.csv",
     "data/processed/opinions_2014.json",
     "data/processed/opinions_2017.json",
@@ -30,13 +31,13 @@
     "data/processed/oral_arguments_enhanced_stats.json",
     "data/processed/outcome_model.joblib",
     "data/processed/refresh_manifest.json",
+    "data/processed/text/2021-0547.txt",
     "data/processed/text/2022-0025.txt",
-    "data/processed/text/2022-0238.txt",
     "data/processed/text/2022-0309.txt",
-    "data/processed/text/2023-0559.txt",
-    "data/processed/text/2024-0069.txt",
-    "data/processed/text/2024-0155.txt",
-    "data/processed/text/2024-0202.txt",
+    "data/processed/text/2023-0714.txt",
+    "data/processed/text/2024-0676.txt",
+    "data/processed/text/2025-0087.txt",
+    "data/processed/text/2025-0230.txt",
     "data/processed/unmatched_argument_review_queue.csv",
     "data/processed/weekly_digest.html"
   ]
