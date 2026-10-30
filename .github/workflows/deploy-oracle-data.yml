@@ -89,6 +89,19 @@ jobs:
             ssh-add ~/.ssh/id_ed25519 </dev/null
           fi
 
+      - name: Ensure AWS CLI is installed on the staging VM
+        if: env.TARGET_ENVIRONMENT == 'staging' && env.TARGET_OPERATION == 'install'
+        run: |
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" 'bash -s' <<'REMOTE'
+          set -Eeuo pipefail
+          if ! command -v aws >/dev/null 2>&1; then
+            command -v curl >/dev/null 2>&1 || { echo 'curl is required to install AWS CLI.' >&2; exit 1; }
+            curl --fail --silent --show-error --location \
+              https://awscli.amazonaws.com/v2/install.sh | sudo bash -s -- --system
+          fi
+          aws --version
+          REMOTE
+
       - name: Install protected staging release configuration
         if: env.TARGET_ENVIRONMENT == 'staging' && env.TARGET_OPERATION == 'install'
         env:

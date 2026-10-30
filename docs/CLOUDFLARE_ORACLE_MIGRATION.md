@@ -55,7 +55,9 @@ See Cloudflare's [Git integration guide](https://developers.cloudflare.com/pages
 
 - Prepare an Oracle Linux or Ubuntu Compute instance with systemd, Python 3.11+
   and its `venv` support, `curl`, `tar`, and outbound HTTPS access for package
-  installation. Install the verified R2 data release first; on a fresh host,
+  installation. The staging data workflow installs AWS CLI v2 from AWS's
+  verified install script if it is absent. Install the verified R2 data release
+  first; on a fresh host,
   `nhsc-release install` activates the verified data without attempting an API
   restart until the API service unit exists. `/api/health` requires
   `/srv/nhsc/current/data/processed/opinions.csv` before code activation.
