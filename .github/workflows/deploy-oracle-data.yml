@@ -5,6 +5,7 @@ on:
     branches: [codex/local-time-court-snapshot]
     paths:
       - .github/workflows/deploy-oracle-data.yml
+      - .github/workflows/deploy-oracle-api.yml
       - deploy/nhsc-release
   workflow_dispatch:
     inputs:
@@ -154,6 +155,28 @@ jobs:
           scp -o BatchMode=yes -o StrictHostKeyChecking=yes deploy/nhsc-release "$DEPLOY_USER@$DEPLOY_HOST:$remote_installer"
           ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
             "sudo install -o root -g root -m 0755 '$remote_installer' /usr/local/sbin/nhsc-release && rm -f '$remote_installer' && sudo env NHSC_RELEASE_CONFIG='$release_config' /usr/local/sbin/nhsc-release install"
+
+      - name: Package staging FastAPI runtime
+        if: github.event_name == 'push' && env.TARGET_ENVIRONMENT == 'staging' && env.TARGET_OPERATION == 'install'
+        run: |
+          tar -czf "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.tar.gz" \
+            --exclude='__pycache__' --exclude='*.pyc' \
+            webapp/backend utils requirements-runtime.txt \
+            deploy/nhsc-api.service deploy/nhsc-api-staging.service
+          sha256sum "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.tar.gz" | awk '{print $1}' > "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.sha256"
+
+      - name: Install staging FastAPI code release
+        if: github.event_name == 'push' && env.TARGET_ENVIRONMENT == 'staging' && env.TARGET_OPERATION == 'install'
+        run: |
+          archive="$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.tar.gz"
+          archive_sha=$(cat "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.sha256")
+          remote_archive="/tmp/nhsc-api-$GITHUB_SHA.tar.gz"
+          scp -o BatchMode=yes -o StrictHostKeyChecking=yes "$archive" "$DEPLOY_USER@$DEPLOY_HOST:$remote_archive"
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "sudo bash -s -- install '$GITHUB_SHA' '$remote_archive' '$archive_sha' staging" \
+            < deploy/nhsc-api-release
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "rm -f '$remote_archive'"
 
       - name: Roll back data release
         if: env.TARGET_OPERATION == 'rollback'
