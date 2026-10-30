@@ -38,7 +38,10 @@ Set the Pages project root directory to `webapp/frontend`, the build command to
 repository's default branch as the production branch. Cloudflare's native Git
 integration builds and deploys pushes to that branch and creates preview
 deployments for other branches. Do not enable a second Wrangler deployment
-workflow for this project.
+workflow for this project. If the migration branch was pushed before the Pages
+GitHub integration was connected, push a new commit to that branch to trigger
+its preview build. Keep the repository's existing production branch configured
+as the Pages production branch until the preview has been reviewed.
 
 Before the first deployment, set the `NHSC_API_ORIGIN` Pages Function variable
 and the encrypted `NHSC_ACCESS_CLIENT_ID` and `NHSC_ACCESS_CLIENT_SECRET`
