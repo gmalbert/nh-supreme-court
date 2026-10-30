@@ -9,7 +9,7 @@ requires feature and visual parity checks and a staging deployment.
 1. Cloudflare Pages serves the React build. Its Pages Function proxies `/api/*`
    and the API documentation routes to an Access-protected API hostname.
 2. A Cloudflare Tunnel on the Oracle Compute instance forwards staging to
-   FastAPI on `127.0.0.1:8001` and production to `127.0.0.1:8000`. Both API
+   FastAPI on `127.0.0.1:8104` and production to `127.0.0.1:8000`. Both API
    services bind only to loopback and are not directly exposed to the internet.
 3. The existing release installer pulls and verifies runtime data from R2,
    switches `/srv/nhsc/current`, and restarts the service. The API reads
@@ -65,7 +65,7 @@ See Cloudflare's [Git integration guide](https://developers.cloudflare.com/pages
   `/opt/nhsc/app/releases/<git-sha>` for production or
   `/opt/nhsc/staging-api/releases/<git-sha>` for staging. Each environment has
   its own current/previous pointers, systemd unit, health check, and data root.
-  The staging API uses `nhsc-staging-api.service`, port 8001, and
+  The staging API uses `nhsc-staging-api.service`, port 8104, and
   `/srv/nhsc-staging`; production uses `nhsc-api.service`, port 8000, and
   `/srv/nhsc`. This lets the staging API share the existing `streamlit-server`
   VM without replacing the Streamlit service. The runtime-data workflow remains
@@ -104,7 +104,7 @@ See Cloudflare's [Git integration guide](https://developers.cloudflare.com/pages
   separate root-readable `/etc/nhsc-release-staging.env` with
   `NHSC_RELEASE_ROOT=/srv/nhsc-staging`,
   `NHSC_SERVICE=nhsc-staging-api.service`, and
-  `NHSC_HEALTH_URL=http://127.0.0.1:8001/api/health`. Both configs need the R2
+  `NHSC_HEALTH_URL=http://127.0.0.1:8104/api/health`. Both configs need the R2
   read credentials (`AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`),
   `NHSC_R2_BUCKET`, and `NHSC_R2_ACCOUNT_ID`. Keep R2 credentials in these
   installer configs, not in either API environment file. Create

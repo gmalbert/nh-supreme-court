@@ -32,7 +32,7 @@ case "$TARGET" in
     APP_ROOT=/opt/nhsc/staging-api
     SERVICE=nhsc-staging-api.service
     SERVICE_SOURCE=deploy/nhsc-api-staging.service
-    HEALTH_URL=http://127.0.0.1:8001/api/health
+    HEALTH_URL=http://127.0.0.1:8104/api/health
     ;;
   *) echo "Target must be staging or production" >&2; exit 2 ;;
 esac

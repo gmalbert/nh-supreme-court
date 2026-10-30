@@ -1,6 +1,10 @@
 name: Deploy verified data to Oracle Cloud
 
 on:
+  push:
+    branches: [codex/local-time-court-snapshot]
+    paths:
+      - .github/workflows/deploy-oracle-data.yml
   workflow_dispatch:
     inputs:
       operation:
@@ -22,14 +26,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     concurrency:
-      group: oracle-data-${{ inputs.target_environment }}
+      group: oracle-data-${{ inputs.target_environment || 'staging' }}
       cancel-in-progress: false
-    environment: ${{ inputs.target_environment }}
+    environment: ${{ inputs.target_environment || 'staging' }}
     env:
       DEPLOY_ENABLED: ${{ secrets.NHSC_DEPLOY_ENABLED || vars.NHSC_DEPLOY_ENABLED }}
       DEPLOY_HOST: ${{ secrets.NHSC_DEPLOY_HOST || vars.NHSC_DEPLOY_HOST }}
       DEPLOY_USER: ${{ secrets.NHSC_DEPLOY_USER || vars.NHSC_DEPLOY_USER }}
-      TARGET_ENVIRONMENT: ${{ inputs.target_environment }}
+      TARGET_ENVIRONMENT: ${{ inputs.target_environment || 'staging' }}
+      TARGET_OPERATION: ${{ inputs.operation || 'install' }}
     steps:
       - uses: actions/checkout@v6
 
@@ -67,8 +72,34 @@ jobs:
             ssh-add ~/.ssh/id_ed25519 </dev/null
           fi
 
+      - name: Install protected staging release configuration
+        if: env.TARGET_ENVIRONMENT == 'staging' && env.TARGET_OPERATION == 'install'
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          NHSC_R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          NHSC_R2_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          test -n "$AWS_ACCESS_KEY_ID" && test -n "$AWS_SECRET_ACCESS_KEY"
+          test -n "$NHSC_R2_BUCKET" && test -n "$NHSC_R2_ACCOUNT_ID"
+          config="$RUNNER_TEMP/nhsc-release-staging.env"
+          umask 077
+          {
+            printf 'NHSC_RELEASE_ROOT=%q\n' '/srv/nhsc-staging'
+            printf 'NHSC_SERVICE=%q\n' 'nhsc-staging-api.service'
+            printf 'NHSC_HEALTH_URL=%q\n' 'http://127.0.0.1:8104/api/health'
+            printf 'AWS_ACCESS_KEY_ID=%q\n' "$AWS_ACCESS_KEY_ID"
+            printf 'AWS_SECRET_ACCESS_KEY=%q\n' "$AWS_SECRET_ACCESS_KEY"
+            printf 'NHSC_R2_BUCKET=%q\n' "$NHSC_R2_BUCKET"
+            printf 'NHSC_R2_ACCOUNT_ID=%q\n' "$NHSC_R2_ACCOUNT_ID"
+          } > "$config"
+          scp -o BatchMode=yes -o StrictHostKeyChecking=yes "$config" \
+            "$DEPLOY_USER@$DEPLOY_HOST:/tmp/nhsc-release-staging-$GITHUB_SHA.env"
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "sudo install -o root -g root -m 0600 '/tmp/nhsc-release-staging-$GITHUB_SHA.env' /etc/nhsc-release-staging.env && rm -f '/tmp/nhsc-release-staging-$GITHUB_SHA.env'"
+
       - name: Install current verified R2 data release
-        if: inputs.operation == 'install'
+        if: env.TARGET_OPERATION == 'install'
         run: |
           remote_installer="/tmp/nhsc-release-$GITHUB_SHA"
           if [[ "$TARGET_ENVIRONMENT" == staging ]]; then
@@ -81,7 +112,7 @@ jobs:
             "sudo install -o root -g root -m 0755 '$remote_installer' /usr/local/sbin/nhsc-release && rm -f '$remote_installer' && sudo env NHSC_RELEASE_CONFIG='$release_config' /usr/local/sbin/nhsc-release install"
 
       - name: Roll back data release
-        if: inputs.operation == 'rollback'
+        if: env.TARGET_OPERATION == 'rollback'
         run: |
           if [[ "$TARGET_ENVIRONMENT" == staging ]]; then
             release_config=/etc/nhsc-release-staging.env

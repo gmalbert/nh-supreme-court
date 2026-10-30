@@ -11,7 +11,7 @@ WorkingDirectory=/opt/nhsc/staging-api/current
 Environment=NHSC_RUNTIME_MODE=production
 Environment=NHSC_DATA_ROOT=/srv/nhsc-staging/current/data
 EnvironmentFile=-/etc/nhsc-api-staging.env
-ExecStart=/opt/nhsc/staging-api/current/.venv/bin/uvicorn webapp.backend.main:app --host 127.0.0.1 --port 8001
+ExecStart=/opt/nhsc/staging-api/current/.venv/bin/uvicorn webapp.backend.main:app --host 127.0.0.1 --port 8104
 Restart=on-failure
 RestartSec=5
 NoNewPrivileges=true
