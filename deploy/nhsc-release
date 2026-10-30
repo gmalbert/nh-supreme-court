@@ -121,14 +121,14 @@ case "${1:-}" in
   install)
     new=$(download_release "${2:-}")
     old=$(readlink -f "$CURRENT" || true)
-    # On a new instance the first verified data release must be activated
-    # before the API code can pass its data-dependent health check. Leave that
-    # data in place when the API unit has not been installed yet; subsequent
-    # refreshes use the normal restart and health-check path below.
-    if [[ -z "$old" ]] && ! systemctl cat "$NHSC_SERVICE" >/dev/null 2>&1; then
+    # Install the data before the API service on a new staging host. systemctl
+    # cat can succeed for a missing unit on some systemd versions, so check its
+    # explicit LoadState before attempting a restart.
+    unit_state=$(systemctl show --property=LoadState --value "$NHSC_SERVICE" 2>/dev/null || true)
+    if [[ "$unit_state" != loaded ]]; then
       ln -s "$new" "${CURRENT}.next"
       mv -Tf "${CURRENT}.next" "$CURRENT"
-      echo "Installed initial data release; API service is not installed yet"
+      echo "Installed data release; API service is not installed yet"
       exit 0
     fi
     ln -s "$new" "${CURRENT}.next"

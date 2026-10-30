@@ -5,6 +5,7 @@ on:
     branches: [codex/local-time-court-snapshot]
     paths:
       - .github/workflows/deploy-oracle-data.yml
+      - deploy/nhsc-release
   workflow_dispatch:
     inputs:
       operation:
