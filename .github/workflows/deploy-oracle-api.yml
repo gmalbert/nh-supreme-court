@@ -1,6 +1,10 @@
 name: Deploy FastAPI to Oracle Cloud
 
 on:
+  push:
+    branches: [codex/local-time-court-snapshot]
+    paths:
+      - .github/workflows/deploy-oracle-api.yml
   workflow_dispatch:
     inputs:
       operation:
@@ -22,14 +26,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     concurrency:
-      group: oracle-api-${{ inputs.target_environment }}
+      group: oracle-api-${{ inputs.target_environment || 'staging' }}
       cancel-in-progress: false
-    environment: ${{ inputs.target_environment }}
+    environment: ${{ inputs.target_environment || 'staging' }}
     env:
       DEPLOY_ENABLED: ${{ secrets.NHSC_DEPLOY_ENABLED || vars.NHSC_DEPLOY_ENABLED }}
       DEPLOY_HOST: ${{ secrets.NHSC_DEPLOY_HOST || vars.NHSC_DEPLOY_HOST }}
       DEPLOY_USER: ${{ secrets.NHSC_DEPLOY_USER || vars.NHSC_DEPLOY_USER }}
-      TARGET_ENVIRONMENT: ${{ inputs.target_environment }}
+      TARGET_ENVIRONMENT: ${{ inputs.target_environment || 'staging' }}
+      TARGET_OPERATION: ${{ inputs.operation || 'install' }}
     steps:
       - uses: actions/checkout@v6
 
@@ -39,7 +44,7 @@ jobs:
           test -n "$DEPLOY_HOST" && test -n "$DEPLOY_USER" || { echo "Set NHSC_DEPLOY_HOST and NHSC_DEPLOY_USER." >&2; exit 1; }
 
       - name: Package FastAPI runtime
-        if: inputs.operation == 'install'
+        if: env.TARGET_OPERATION == 'install'
         run: |
           tar -czf "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.tar.gz" \
             --exclude='__pycache__' --exclude='*.pyc' \
@@ -94,14 +99,14 @@ jobs:
           fi
 
       - name: Verify a runtime data release is installed
-        if: inputs.operation == 'install'
+        if: env.TARGET_OPERATION == 'install'
         run: |
           if [[ "$TARGET_ENVIRONMENT" == staging ]]; then data_root=/srv/nhsc-staging; else data_root=/srv/nhsc; fi
           ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
             "test -s '$data_root/current/data/processed/opinions.csv' || { echo 'Install the verified runtime data release before deploying the API.' >&2; exit 1; }"
 
       - name: Upload and activate code release
-        if: inputs.operation == 'install'
+        if: env.TARGET_OPERATION == 'install'
         run: |
           archive="$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.tar.gz"
           archive_sha=$(cat "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.sha256")
@@ -114,7 +119,7 @@ jobs:
             "rm -f '$remote_archive'"
 
       - name: Roll back API code release
-        if: inputs.operation == 'rollback'
+        if: env.TARGET_OPERATION == 'rollback'
         run: |
           ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
             "sudo bash -s -- rollback '$TARGET_ENVIRONMENT'" < deploy/nhsc-api-release
