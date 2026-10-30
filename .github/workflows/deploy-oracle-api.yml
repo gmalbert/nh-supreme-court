@@ -58,6 +58,23 @@ jobs:
           printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          if grep -q '^PuTTY-User-Key-File-' ~/.ssh/id_ed25519; then
+            sudo apt-get update -qq
+            sudo apt-get install -y putty-tools
+            converted="$RUNNER_TEMP/nhsc-deploy-key-openssh"
+            if [[ -n "$DEPLOY_KEY_PASSPHRASE" ]]; then
+              passphrase_file="$RUNNER_TEMP/nhsc-deploy-key-passphrase"
+              printf '%s' "$DEPLOY_KEY_PASSPHRASE" > "$passphrase_file"
+              chmod 600 "$passphrase_file"
+              puttygen ~/.ssh/id_ed25519 -O private-openssh -o "$converted" \
+                --old-passphrase "$passphrase_file" --new-passphrase "$passphrase_file"
+              rm -f "$passphrase_file"
+            else
+              puttygen ~/.ssh/id_ed25519 -O private-openssh -o "$converted"
+            fi
+            mv "$converted" ~/.ssh/id_ed25519
+            chmod 600 ~/.ssh/id_ed25519
+          fi
           eval "$(ssh-agent -s)"
           printf 'SSH_AUTH_SOCK=%s\n' "$SSH_AUTH_SOCK" >> "$GITHUB_ENV"
           printf 'SSH_AGENT_PID=%s\n' "$SSH_AGENT_PID" >> "$GITHUB_ENV"

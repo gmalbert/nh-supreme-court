@@ -77,7 +77,9 @@ See Cloudflare's [Git integration guide](https://developers.cloudflare.com/pages
   environment, configure `NHSC_DEPLOY_ENABLED=true`, `NHSC_DEPLOY_HOST`, and
   `NHSC_DEPLOY_USER` as environment secrets or variables, and secrets
   `NHSC_DEPLOY_SSH_KEY` and `NHSC_DEPLOY_KNOWN_HOSTS` for that environment's
-  host. For cohosted staging, use the same host, SSH user, key, and known-host
+  host. `NHSC_DEPLOY_SSH_KEY` may contain an OpenSSH private key or a PuTTY
+  `.ppk` key; the workflow converts `.ppk` keys on its temporary runner. For
+  cohosted staging, use the same host, SSH user, key, and known-host
   entry as production. If the private
   key is encrypted, also set the optional `NHSC_DEPLOY_SSH_PASSPHRASE` secret;
   both Oracle deployment workflows load it through a temporary SSH agent.
