@@ -1,0 +1,195 @@
+#!/usr/bin/env bash
+# Install an immutable FastAPI code release and atomically activate it.
+set -Eeuo pipefail
+umask 022
+
+usage() {
+  echo "Usage: nhsc-api-release install <40-char-git-sha> <archive> <sha256> [staging|production] | rollback [staging|production]" >&2
+  exit 2
+}
+
+operation=${1:-}
+case "$operation" in
+  install)
+    [[ $# == 4 || $# == 5 ]] || usage
+    TARGET=${5:-production}
+    ;;
+  rollback)
+    [[ $# == 1 || $# == 2 ]] || usage
+    TARGET=${2:-production}
+    ;;
+  *) usage ;;
+esac
+
+case "$TARGET" in
+  production)
+    APP_ROOT=/opt/nhsc/app
+    SERVICE=nhsc-api.service
+    SERVICE_SOURCE=deploy/nhsc-api.service
+    HEALTH_URL=http://127.0.0.1:8000/api/health
+    ;;
+  staging)
+    APP_ROOT=/opt/nhsc/staging-api
+    SERVICE=nhsc-staging-api.service
+    SERVICE_SOURCE=deploy/nhsc-api-staging.service
+    HEALTH_URL=http://127.0.0.1:8001/api/health
+    ;;
+  *) echo "Target must be staging or production" >&2; exit 2 ;;
+esac
+
+RELEASES="$APP_ROOT/releases"
+CURRENT="$APP_ROOT/current"
+PREVIOUS="$APP_ROOT/previous"
+
+wait_for_health() {
+  local attempt
+  for attempt in {1..30}; do
+    if curl --fail --silent --show-error "$HEALTH_URL" >/dev/null; then return 0; fi
+    sleep 1
+  done
+  return 1
+}
+
+if [[ $operation == rollback ]]; then
+  target=$(readlink -f "$PREVIOUS" 2>/dev/null || true)
+  old=$(readlink -f "$CURRENT" 2>/dev/null || true)
+  [[ -n $target && $target == "$RELEASES/"* && -d $target && -n $old && $target != "$old" ]] || {
+    echo "No distinct previous API code release is available" >&2; exit 1;
+  }
+  rm -f "$APP_ROOT/current.next"
+  ln -s "$target" "$APP_ROOT/current.next"
+  mv -Tf "$APP_ROOT/current.next" "$CURRENT"
+  if ! systemctl restart "$SERVICE" || ! wait_for_health; then
+    rm -f "$APP_ROOT/current.next"
+    ln -s "$old" "$APP_ROOT/current.next"
+    mv -Tf "$APP_ROOT/current.next" "$CURRENT"
+    systemctl restart "$SERVICE" || true
+    echo "API code rollback failed; restored the original release" >&2
+    exit 1
+  fi
+  rm -f "$APP_ROOT/previous.next"
+  ln -s "$old" "$APP_ROOT/previous.next"
+  mv -Tf "$APP_ROOT/previous.next" "$PREVIOUS"
+  echo "Rolled back API code to $(basename "$target")"
+  exit 0
+fi
+
+release_id=$2
+archive=$3
+expected_sha=$4
+[[ $release_id =~ ^[0-9a-f]{40}$ ]] || { echo "Invalid code release ID" >&2; exit 2; }
+[[ $expected_sha =~ ^[0-9a-f]{64}$ ]] || { echo "Invalid archive checksum" >&2; exit 2; }
+[[ -f $archive ]] || { echo "Code archive not found" >&2; exit 1; }
+actual_sha=$(sha256sum -- "$archive" | awk '{print $1}')
+[[ $actual_sha == "$expected_sha" ]] || { echo "Code archive checksum mismatch" >&2; exit 1; }
+release_dir="$RELEASES/$release_id"
+
+if ! getent group nhsc >/dev/null; then
+  groupadd --system nhsc
+fi
+if ! id -u nhsc >/dev/null 2>&1; then
+  useradd --system --gid nhsc --home-dir /var/lib/nhsc --shell /usr/sbin/nologin nhsc
+else
+  usermod --gid nhsc nhsc
+fi
+install -d -o root -g nhsc -m 0750 /opt/nhsc "$APP_ROOT" "$RELEASES"
+install -d -o nhsc -g nhsc -m 0750 /var/lib/nhsc
+if [[ $TARGET == staging ]]; then
+  install -d -o nhsc -g nhsc -m 0750 /var/lib/nhsc-staging
+fi
+
+staging=""
+cleanup() {
+  if [[ -n $staging && -d $staging ]]; then rm -rf -- "$staging"; fi
+}
+trap cleanup EXIT
+
+if [[ ! -d $release_dir ]]; then
+  staging=$(mktemp -d "$RELEASES/.incoming.${release_id}.XXXXXXXX")
+  python3 - "$archive" "$staging" <<'PY'
+import pathlib, sys, tarfile
+
+archive, destination = sys.argv[1:]
+required = {
+    "webapp/backend/main.py",
+    "utils/runtime_paths.py",
+    "requirements-runtime.txt",
+    "deploy/nhsc-api.service",
+    "deploy/nhsc-api-staging.service",
+}
+seen = set()
+with tarfile.open(archive, "r:gz") as bundle:
+    members = bundle.getmembers()
+    for member in members:
+        path = pathlib.PurePosixPath(member.name)
+        if path.is_absolute() or ".." in path.parts or not path.parts:
+            raise SystemExit(f"unsafe archive path: {member.name}")
+        if path.parts[0] not in {"webapp", "utils", "requirements-runtime.txt", "deploy"}:
+            raise SystemExit(f"unexpected archive path: {member.name}")
+        if not (member.isfile() or member.isdir()):
+            raise SystemExit(f"unsupported archive entry: {member.name}")
+        if member.isfile():
+            seen.add(path.as_posix())
+    missing = required - seen
+    if missing:
+        raise SystemExit(f"required archive files missing: {', '.join(sorted(missing))}")
+    bundle.extractall(destination)
+PY
+  printf '%s\n' "$expected_sha" > "$staging/.source-archive-sha256"
+  mv -T -- "$staging" "$release_dir"
+  staging=""
+else
+  [[ -f "$release_dir/.source-archive-sha256" ]] || { echo "Existing release is incomplete" >&2; exit 1; }
+  [[ $(<"$release_dir/.source-archive-sha256") == "$expected_sha" ]] || {
+    echo "Release ID already exists with different contents" >&2; exit 1;
+  }
+fi
+
+if [[ ! -f "$release_dir/.venv/.install-complete" ]]; then
+  rm -rf -- "$release_dir/.venv"
+  python3 -m venv "$release_dir/.venv"
+  "$release_dir/.venv/bin/python" -m pip install --disable-pip-version-check --no-input \
+    -r "$release_dir/requirements-runtime.txt"
+  touch "$release_dir/.venv/.install-complete"
+  chmod 0755 "$release_dir/.venv/.install-complete"
+fi
+[[ -x "$release_dir/.venv/bin/uvicorn" ]] || { echo "API virtual environment is incomplete" >&2; exit 1; }
+
+chown -R root:nhsc "$release_dir"
+chmod 0750 "$release_dir"
+install -o root -g root -m 0644 "$release_dir/$SERVICE_SOURCE" \
+  /etc/systemd/system/"$SERVICE"
+systemctl daemon-reload
+systemctl enable "$SERVICE"
+
+old=$(readlink -f "$CURRENT" 2>/dev/null || true)
+rm -f "$APP_ROOT/current.next"
+ln -s "$release_dir" "$APP_ROOT/current.next"
+mv -Tf "$APP_ROOT/current.next" "$CURRENT"
+
+if ! systemctl restart "$SERVICE" || ! wait_for_health; then
+  if [[ -n $old && -d $old ]]; then
+    rm -f "$APP_ROOT/current.next"
+    ln -s "$old" "$APP_ROOT/current.next"
+    mv -Tf "$APP_ROOT/current.next" "$CURRENT"
+  else
+    rm -f "$CURRENT"
+  fi
+  systemctl restart "$SERVICE" || true
+  echo "API activation failed; restored the prior code release" >&2
+  exit 1
+fi
+
+if [[ -n $old && $old != "$release_dir" && -d $old ]]; then
+  rm -f "$APP_ROOT/previous.next"
+  ln -s "$old" "$APP_ROOT/previous.next"
+  mv -Tf "$APP_ROOT/previous.next" "$PREVIOUS"
+fi
+for candidate in "$RELEASES"/*; do
+  [[ -d $candidate ]] || continue
+  candidate_id=${candidate##*/}
+  [[ $candidate_id =~ ^[0-9a-f]{40}$ ]] || continue
+  [[ $candidate == "$release_dir" || ( -n $old && $candidate == "$old" ) ]] && continue
+  rm -rf -- "$candidate"
+done
+echo "Activated API code release $release_id"

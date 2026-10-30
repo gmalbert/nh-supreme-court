@@ -1,0 +1,92 @@
+name: Deploy verified data to Oracle Cloud
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Install the current verified R2 release or roll back the data release.
+        type: choice
+        options: [install, rollback]
+        default: install
+      target_environment:
+        description: GitHub deployment environment and Oracle host to target.
+        type: choice
+        options: [staging, production]
+        default: staging
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: oracle-data-${{ inputs.target_environment }}
+      cancel-in-progress: false
+    environment: ${{ inputs.target_environment }}
+    env:
+      DEPLOY_ENABLED: ${{ secrets.NHSC_DEPLOY_ENABLED || vars.NHSC_DEPLOY_ENABLED }}
+      DEPLOY_HOST: ${{ secrets.NHSC_DEPLOY_HOST || vars.NHSC_DEPLOY_HOST }}
+      DEPLOY_USER: ${{ secrets.NHSC_DEPLOY_USER || vars.NHSC_DEPLOY_USER }}
+      TARGET_ENVIRONMENT: ${{ inputs.target_environment }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Check Oracle deployment configuration
+        run: |
+          test "$DEPLOY_ENABLED" = "true" || { echo "Set NHSC_DEPLOY_ENABLED=true to enable Oracle deployments." >&2; exit 1; }
+          test -n "$DEPLOY_HOST" && test -n "$DEPLOY_USER" || { echo "Set NHSC_DEPLOY_HOST and NHSC_DEPLOY_USER." >&2; exit 1; }
+
+      - name: Configure deployment SSH key
+        env:
+          DEPLOY_KEY: ${{ secrets.NHSC_DEPLOY_SSH_KEY }}
+          DEPLOY_KEY_PASSPHRASE: ${{ secrets.NHSC_DEPLOY_SSH_PASSPHRASE }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.NHSC_DEPLOY_KNOWN_HOSTS }}
+        run: |
+          test -n "$DEPLOY_KEY" && test -n "$DEPLOY_KNOWN_HOSTS"
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          eval "$(ssh-agent -s)"
+          printf 'SSH_AUTH_SOCK=%s\n' "$SSH_AUTH_SOCK" >> "$GITHUB_ENV"
+          printf 'SSH_AGENT_PID=%s\n' "$SSH_AGENT_PID" >> "$GITHUB_ENV"
+          if [[ -n "$DEPLOY_KEY_PASSPHRASE" ]]; then
+            askpass="$RUNNER_TEMP/nhsc-ssh-askpass"
+            cat > "$askpass" <<'ASKPASS'
+          #!/bin/sh
+          printf '%s\n' "$NHSC_DEPLOY_SSH_PASSPHRASE"
+          ASKPASS
+            chmod 700 "$askpass"
+            DISPLAY=:0 SSH_ASKPASS="$askpass" SSH_ASKPASS_REQUIRE=force \
+              NHSC_DEPLOY_SSH_PASSPHRASE="$DEPLOY_KEY_PASSPHRASE" \
+              ssh-add ~/.ssh/id_ed25519 </dev/null
+            rm -f "$askpass"
+          else
+            ssh-add ~/.ssh/id_ed25519 </dev/null
+          fi
+
+      - name: Install current verified R2 data release
+        if: inputs.operation == 'install'
+        run: |
+          remote_installer="/tmp/nhsc-release-$GITHUB_SHA"
+          if [[ "$TARGET_ENVIRONMENT" == staging ]]; then
+            release_config=/etc/nhsc-release-staging.env
+          else
+            release_config=/etc/nhsc-release.env
+          fi
+          scp -o BatchMode=yes -o StrictHostKeyChecking=yes deploy/nhsc-release "$DEPLOY_USER@$DEPLOY_HOST:$remote_installer"
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "sudo install -o root -g root -m 0755 '$remote_installer' /usr/local/sbin/nhsc-release && rm -f '$remote_installer' && sudo env NHSC_RELEASE_CONFIG='$release_config' /usr/local/sbin/nhsc-release install"
+
+      - name: Roll back data release
+        if: inputs.operation == 'rollback'
+        run: |
+          if [[ "$TARGET_ENVIRONMENT" == staging ]]; then
+            release_config=/etc/nhsc-release-staging.env
+          else
+            release_config=/etc/nhsc-release.env
+          fi
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "sudo env NHSC_RELEASE_CONFIG='$release_config' /usr/local/sbin/nhsc-release rollback"

@@ -1,6 +1,4 @@
-"""
-Cached data loading utilities for Streamlit pages.
-"""
+"""Cached data loading utilities shared by the web UI and API service."""
 
 from __future__ import annotations
 
@@ -14,7 +12,7 @@ import sys
 from pathlib import Path
 
 import pandas as pd
-import streamlit as st
+from utils.runtime_cache import cache_data
 
 from utils.oral_arguments import find_argument_for_docket, normalize_docket_numbers
 from utils.runtime_paths import data_root, production_runtime
@@ -88,7 +86,7 @@ def _ensure_master_dataset_fresh() -> None:
         pass
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def _load_opinions_cached(csv_path_str: str, source_mtime: float) -> pd.DataFrame:
     """Load all opinions as a flat DataFrame (cache keyed by source mtime)."""
     _ = source_mtime
@@ -115,7 +113,7 @@ def load_opinions() -> pd.DataFrame:
     return _load_opinions_cached(str(csv_path), source_mtime)
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def _load_docket_crosswalk_cached(path_str: str, source_mtime: float) -> pd.DataFrame:
     """Return generated and manually reviewed docket aliases by source file key."""
     _ = source_mtime
@@ -129,7 +127,7 @@ def load_docket_crosswalk() -> pd.DataFrame:
     return _load_docket_crosswalk_cached(str(path), os.path.getmtime(path))
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def _load_csv_as_strings_cached(path_str: str, source_mtime: float) -> pd.DataFrame:
     _ = source_mtime
     return pd.read_csv(path_str, dtype=str, encoding="utf-8").fillna("")
@@ -177,7 +175,7 @@ def load_orphan_official_pdf_recovery_candidates() -> pd.DataFrame:
     return _load_csv_as_strings_cached(str(path), os.path.getmtime(path))
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def load_opinions_json() -> list[dict]:
     """Load all opinions as raw JSON (includes nested vote dicts)."""
     json_path = DATA_DIR / "all_opinions.json"
@@ -187,7 +185,7 @@ def load_opinions_json() -> list[dict]:
         return json.load(fh)
 
 
-@st.cache_data
+@cache_data
 def load_justices() -> dict:
     """Return justice metadata keyed by justice key."""
     path = DATA_ROOT / "justices.json"
@@ -198,7 +196,7 @@ def load_justices() -> dict:
     return {j["key"]: j for j in items}
 
 
-@st.cache_data
+@cache_data
 def load_topic_taxonomy() -> dict:
     path = DATA_ROOT / "topic_taxonomy.json"
     if not path.exists():
@@ -207,7 +205,7 @@ def load_topic_taxonomy() -> dict:
         return json.load(fh)
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def _load_case_orders_cached(case_orders_mtime: float | None, jx3_mtime: float | None) -> pd.DataFrame:
     _ = (case_orders_mtime, jx3_mtime)
     case_orders_path = DATA_DIR / "case_orders.csv"
@@ -255,13 +253,13 @@ def load_case_orders() -> pd.DataFrame:
     return _load_case_orders_cached(case_orders_mtime, jx3_mtime)
 
 
-@st.cache_data
+@cache_data
 def load_opinion_text(case_number: str) -> str:
     path = DATA_DIR / "text" / f"{case_number}.txt"
     return path.read_text(encoding="utf-8") if path.exists() else ""
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def _load_oral_arguments_cached(
     index_path_str: str,
     stats_path_str: str,
@@ -333,7 +331,7 @@ def load_oral_arguments() -> list[dict]:
     )
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def load_speaker_statistics() -> list[dict]:
     """Load speaker statistics (Justice vs Counsel speaking time, words, pace)."""
     stats_path = DATA_DIR / "oral_arguments_speaker_stats.json"
@@ -343,7 +341,7 @@ def load_speaker_statistics() -> list[dict]:
         return json.load(fh)
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def _load_attorney_statistics_cached(path_str: str, source_mtime: float) -> dict:
     """Load attorney statistics, keyed by source modification time."""
     _ = source_mtime
@@ -359,7 +357,7 @@ def load_attorney_statistics() -> dict:
     return _load_attorney_statistics_cached(str(stats_path), stats_path.stat().st_mtime)
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def _load_brief_counsel_cached(path_str: str, source_mtime: float) -> dict:
     """Load published brief-counsel facts, keyed by source modification time."""
     _ = source_mtime
@@ -381,7 +379,7 @@ def load_brief_counsel() -> dict[str, list[dict]]:
     return grouped
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def load_attorney_justice_interactions() -> dict:
     """Load attorney-justice interaction data."""
     interactions_path = DATA_DIR / "attorney_justice_interactions.json"
@@ -391,7 +389,7 @@ def load_attorney_justice_interactions() -> dict:
         return json.load(fh)
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def load_enhanced_statistics() -> dict:
     """Load enhanced oral arguments statistics (temporal, complexity, networks)."""
     enhanced_path = DATA_DIR / "oral_arguments_enhanced_stats.json"
@@ -406,7 +404,7 @@ def load_enhanced_statistics() -> dict:
         return json.load(fh)
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def load_firm_metadata() -> dict:
     """Load firm metadata from the canonical reviewed-firm CSV."""
     source_path = DATA_ROOT / "nh_supreme_court_firms_enriched_v7.csv"
@@ -434,7 +432,7 @@ def load_firm_metadata() -> dict:
         return {"firms": list(firms_lookup.values()), "lookup": firms_lookup}
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def _load_oral_argument_artifact(path_str: str, source_mtime: float) -> str:
     _ = source_mtime
     return Path(path_str).read_text(encoding="utf-8")
@@ -488,7 +486,7 @@ def data_last_updated() -> str:
     return datetime.fromtimestamp(mtime).strftime("%B %d, %Y %I:%M %p")
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def _load_argument_dispositions_cached(path_str: str, source_mtime: float) -> pd.DataFrame:
     """Load argument dispositions fact table, keyed by source modification time."""
     _ = source_mtime
@@ -508,7 +506,7 @@ def load_argument_dispositions() -> pd.DataFrame:
     return _load_argument_dispositions_cached(str(path), os.path.getmtime(path))
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def _load_simple_csv_cached(path_str: str, source_mtime: float) -> pd.DataFrame:
     """Load a simple CSV file, keyed by source modification time."""
     _ = source_mtime
@@ -539,7 +537,7 @@ def load_argument_disposition_links() -> pd.DataFrame:
     return _load_simple_csv_cached(str(path), os.path.getmtime(path))
 
 
-@st.cache_data(ttl=3600)
+@cache_data(ttl=3600)
 def load_argument_dispositions_metadata() -> dict:
     """Load the argument dispositions metadata and data dictionary."""
     path = DATA_DIR / "argument_dispositions_metadata.json"

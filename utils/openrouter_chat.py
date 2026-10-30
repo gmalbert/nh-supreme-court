@@ -8,8 +8,8 @@ from __future__ import annotations
 import os
 from typing import List, Dict, Optional, Generator
 
-import streamlit as st
 from dotenv import load_dotenv
+from utils.runtime_cache import streamlit_secret
 
 load_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env"))
 
@@ -53,10 +53,7 @@ class OpenRouterClient:
         if os.environ.get("OPENROUTER_API_KEY"):
             return os.environ.get("OPENROUTER_API_KEY")
 
-        try:
-            return st.secrets.get("OPENROUTER_API_KEY")
-        except Exception:
-            return None
+        return streamlit_secret("OPENROUTER_API_KEY")
 
     def generate_response(
         self,

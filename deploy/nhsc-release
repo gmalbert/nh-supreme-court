@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 # Privileged, droplet-local installer for verified NHSC runtime releases.
 set -euo pipefail
+# Commands inside download_release run in command substitution. Preserve
+# errexit there so a failed download or validation cannot fall through and
+# return a release path that the caller might activate.
+shopt -s inherit_errexit
 
-CONFIG=/etc/nhsc-release.env
+CONFIG=${NHSC_RELEASE_CONFIG:-/etc/nhsc-release.env}
 [[ -r "$CONFIG" ]] || { echo "Missing $CONFIG" >&2; exit 2; }
 # shellcheck disable=SC1090
 # The protected file deliberately contains plain KEY=value assignments.  Export
@@ -16,14 +20,14 @@ set +a
 ENDPOINT="https://${NHSC_R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
 POINTER="releases/nh-supreme-court/current.json"
 CURRENT="${NHSC_RELEASE_ROOT}/current"
+PREVIOUS="${NHSC_RELEASE_ROOT}/previous"
 
 usage() { echo "Usage: $0 verify [release-id] | install [release-id] | rollback" >&2; exit 2; }
 fetch() { aws s3 cp "s3://${NHSC_R2_BUCKET}/$1" "$2" --endpoint-url "$ENDPOINT" --no-progress >&2; }
 
 wait_for_health() {
   local attempt
-  # Streamlit's process can be running before Uvicorn has bound its socket.
-  # Give it a short, bounded readiness window before considering activation bad.
+  # Give the API a short, bounded readiness window before considering activation bad.
   for attempt in {1..30}; do
     if curl --fail --silent --show-error "$NHSC_HEALTH_URL" >/dev/null; then
       return 0
@@ -43,7 +47,10 @@ if manifest.get("application") != "nh-supreme-court" or manifest.get("manifest_s
     raise SystemExit("incompatible release manifest")
 listed = {row["path"]: row for row in manifest["files"]}
 for relative, row in listed.items():
-    path = root / relative
+    relative_path = pathlib.PurePosixPath(relative)
+    if relative_path.is_absolute() or ".." in relative_path.parts or not relative_path.parts:
+        raise SystemExit(f"unsafe manifest path: {relative}")
+    path = root.joinpath(*relative_path.parts)
     if not path.is_file() or path.stat().st_size != row["bytes"]:
         raise SystemExit(f"missing or truncated file: {relative}")
     digest = hashlib.sha256(path.read_bytes()).hexdigest()
@@ -62,24 +69,49 @@ download_release() {
   work=$(mktemp -d)
   fetch "$POINTER" "$work/current.json"
   local release_id archive manifest archive_sha
-  readarray -t values < <(python3 - "$work/current.json" "$requested" <<'PY'
-import json, sys
+  python3 - "$work/current.json" "$requested" > "$work/pointer-values" <<'PY'
+import json, re, sys
 p = json.load(open(sys.argv[1], encoding="utf-8"))
 requested = sys.argv[2]
 if p.get("application") != "nh-supreme-court": raise SystemExit("wrong application pointer")
+if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*", p.get("release_id", "")) or p["release_id"] in (".", ".."):
+    raise SystemExit("invalid release ID")
 if requested and requested != p["release_id"]: raise SystemExit("only current release may be installed automatically")
 print(p["release_id"]); print(p["archive"]); print(p["manifest"]); print(p["archive_sha256"])
 PY
-)
+  readarray -t values < "$work/pointer-values"
   release_id=${values[0]}; archive=${values[1]}; manifest=${values[2]}; archive_sha=${values[3]}
   fetch "$archive" "$work/runtime.tar.gz"
   fetch "$manifest" "$work/manifest.json"
   [[ $(sha256sum "$work/runtime.tar.gz" | awk '{print $1}') == "$archive_sha" ]] || { echo "archive checksum mismatch" >&2; exit 1; }
   mkdir -p "$NHSC_RELEASE_ROOT/releases"
-  tar -xzf "$work/runtime.tar.gz" -C "$NHSC_RELEASE_ROOT/releases"
+  # Extract away from installed releases, so checking or reinstalling a release
+  # cannot overwrite files currently being served.
+  local staging
+  staging=$(mktemp -d "$NHSC_RELEASE_ROOT/releases/.incoming.XXXXXXXX")
+  python3 - "$work/runtime.tar.gz" "$staging" "$release_id" <<'PY'
+import pathlib, sys, tarfile
+archive, staging, release_id = sys.argv[1:]
+with tarfile.open(archive, "r:gz") as bundle:
+    for member in bundle.getmembers():
+        path = pathlib.PurePosixPath(member.name)
+        if path.is_absolute() or ".." in path.parts or not path.parts or path.parts[0] != release_id:
+            raise SystemExit("unsafe archive path")
+        if not (member.isfile() or member.isdir()):
+            raise SystemExit("unsupported archive entry")
+    bundle.extractall(staging)
+PY
   local release_dir="$NHSC_RELEASE_ROOT/releases/$release_id"
-  cmp -s "$work/manifest.json" "$release_dir/manifest.json" || { echo "manifest mismatch" >&2; exit 1; }
-  verify_directory "$release_dir" >/dev/null
+  cmp -s "$work/manifest.json" "$staging/$release_id/manifest.json" || { echo "manifest mismatch" >&2; exit 1; }
+  verify_directory "$staging/$release_id" >/dev/null
+  if [[ -e "$release_dir" ]]; then
+    cmp -s "$work/manifest.json" "$release_dir/manifest.json" || { echo "installed release has a different manifest" >&2; exit 1; }
+    verify_directory "$release_dir" >/dev/null
+    rm -rf "$staging"
+  else
+    mv -T "$staging/$release_id" "$release_dir"
+    rmdir "$staging"
+  fi
   rm -rf "$work"
   printf '%s\n' "$release_dir"
 }
@@ -89,16 +121,52 @@ case "${1:-}" in
   install)
     new=$(download_release "${2:-}")
     old=$(readlink -f "$CURRENT" || true)
+    # On a new instance the first verified data release must be activated
+    # before the API code can pass its data-dependent health check. Leave that
+    # data in place when the API unit has not been installed yet; subsequent
+    # refreshes use the normal restart and health-check path below.
+    if [[ -z "$old" ]] && ! systemctl cat "$NHSC_SERVICE" >/dev/null 2>&1; then
+      ln -s "$new" "${CURRENT}.next"
+      mv -Tf "${CURRENT}.next" "$CURRENT"
+      echo "Installed initial data release; API service is not installed yet"
+      exit 0
+    fi
     ln -s "$new" "${CURRENT}.next"
     mv -Tf "${CURRENT}.next" "$CURRENT"
     if ! systemctl restart "$NHSC_SERVICE" || ! wait_for_health; then
-      [[ -n "$old" ]] && ln -sfn "$old" "$CURRENT"
+      if [[ -n "$old" && -d "$old" ]]; then
+        ln -sfn "$old" "${CURRENT}.next"
+        mv -Tf "${CURRENT}.next" "$CURRENT"
+      else
+        rm -f "$CURRENT"
+      fi
       systemctl restart "$NHSC_SERVICE" || true
       echo "Activation failed; restored prior release" >&2
       exit 1
     fi
+    if [[ -n "$old" && "$old" != "$new" && -d "$old" ]]; then
+      ln -sfn "$old" "${PREVIOUS}.next"
+      mv -Tf "${PREVIOUS}.next" "$PREVIOUS"
+    fi
     ;;
   rollback)
-    echo "Rollback requires selecting the prior release explicitly; use the retained release symlink." >&2; exit 2 ;;
+    target=$(readlink -f "$PREVIOUS" || true)
+    old=$(readlink -f "$CURRENT" || true)
+    [[ -n "$target" && -d "$target" && -n "$old" && "$target" != "$old" ]] || {
+      echo "No distinct previous release is available for rollback" >&2; exit 1;
+    }
+    verify_directory "$target" >/dev/null
+    ln -sfn "$target" "${CURRENT}.next"
+    mv -Tf "${CURRENT}.next" "$CURRENT"
+    if ! systemctl restart "$NHSC_SERVICE" || ! wait_for_health; then
+      ln -sfn "$old" "${CURRENT}.next"
+      mv -Tf "${CURRENT}.next" "$CURRENT"
+      systemctl restart "$NHSC_SERVICE" || true
+      echo "Rollback failed; restored the original release" >&2
+      exit 1
+    fi
+    ln -sfn "$old" "${PREVIOUS}.next"
+    mv -Tf "${PREVIOUS}.next" "$PREVIOUS"
+    ;;
   *) usage ;;
 esac

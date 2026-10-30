@@ -1,0 +1,24 @@
+[Unit]
+Description=Granite State Appeals FastAPI Staging
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=nhsc
+Group=nhsc
+WorkingDirectory=/opt/nhsc/staging-api/current
+Environment=NHSC_RUNTIME_MODE=production
+Environment=NHSC_DATA_ROOT=/srv/nhsc-staging/current/data
+EnvironmentFile=-/etc/nhsc-api-staging.env
+ExecStart=/opt/nhsc/staging-api/current/.venv/bin/uvicorn webapp.backend.main:app --host 127.0.0.1 --port 8001
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=-/var/lib/nhsc-staging
+
+[Install]
+WantedBy=multi-user.target

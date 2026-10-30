@@ -8,7 +8,6 @@ import re
 from pathlib import Path
 from urllib.parse import quote
 
-import streamlit as st
 
 
 SENTENCE_RE = re.compile(r"(?<=[.!?])\s+|\n+")
@@ -104,6 +103,8 @@ def render_opinion_pdf(
     height: int = 760,
 ) -> None:
     """Render a PDF with native-search highlighting and exact passage cards."""
+    import streamlit as st
+
     local = Path(pdf_path) if pdf_path else None
     source = ""
     if local and local.exists():

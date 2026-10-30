@@ -204,13 +204,21 @@ def extract_attorney_data() -> dict[str, Any]:
     metadata_files = list(TRANSCRIPTS_DIR.glob("*/*/*/metadata.json"))
     print(f"Found {len(metadata_files)} metadata files")
     
-    for i, metadata_path in enumerate(metadata_files, 1):
+    # The annual PDF roster is self-contained and remains available on hosts
+    # without the external transcript volume. Process its recorded dockets
+    # directly; transcript metadata is only needed for the legacy fallback.
+    roster_metadata = [(None, {"docket_number": docket}) for docket in pdf_oral_rosters] if full_pdf_roster_available else []
+    inputs = roster_metadata if full_pdf_roster_available else [(path, None) for path in metadata_files]
+    for i, (metadata_path, roster_record) in enumerate(inputs, 1):
         if i % 100 == 0:
-            print(f"  Processed {i}/{len(metadata_files)}...")
+            print(f"  Processed {i}/{len(inputs)}...")
         
         try:
-            with open(metadata_path, 'r', encoding='utf-8') as f:
-                metadata = json.load(f)
+            if roster_record is not None:
+                metadata = roster_record
+            else:
+                with open(metadata_path, 'r', encoding='utf-8') as f:
+                    metadata = json.load(f)
             
             case_number = metadata.get("docket_number")
             if full_pdf_roster_available:
@@ -386,6 +394,8 @@ def main():
     print("Extracting attorney data from metadata files...")
     
     data = extract_attorney_data()
+    if PDF_ORAL_ROSTER_FILE.exists() and not data["case_attorneys"]:
+        raise SystemExit("Annual roster produced no attorney records; refusing to overwrite existing statistics")
     
     print(f"\nExtracted data:")
     print(f"  Cases with attorney data: {len(data['case_attorneys'])}")

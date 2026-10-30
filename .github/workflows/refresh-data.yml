@@ -285,19 +285,22 @@ jobs:
         id: refresh_oral_args
         continue-on-error: true
         run: |
+          set -e
+          # The roster is self-contained. Rebuild even when argument metadata
+          # is unchanged so an empty or stale seed cannot erase the directory.
+          if [ -f data/processed/oral_argument_roster.json ]; then
+            python scripts/extract_attorney_stats.py
+            python scripts/generate_enhanced_stats.py
+            python scripts/analyze_attorney_justice_interactions.py
+          else
+            echo "Annual oral-argument roster is unavailable; preserving existing attorney statistics."
+          fi
           # Check if oral argument data changed
           if git diff --quiet HEAD -- data/processed/oral_arguments*.json; then
             echo "No oral argument changes detected"
           else
             echo "Regenerating oral argument statistics..."
             python scripts/extract_speaker_stats.py
-            python scripts/extract_attorney_stats.py
-            python scripts/generate_enhanced_stats.py
-            python scripts/analyze_attorney_justice_interactions.py
-          fi
-          
-          if [ $? -ne 0 ]; then
-            echo "oral_args_failed=true" >> $GITHUB_OUTPUT
           fi
       
       - name: Run validation tests
@@ -384,7 +387,7 @@ jobs:
 
       - name: Build verified runtime release
         id: runtime_release
-        if: steps.validate.outcome == 'success' && steps.playwright.outcome == 'success'
+        if: steps.validate.outcome == 'success' && steps.playwright.outcome == 'success' && steps.refresh_oral_args.outcome == 'success'
         run: |
           RELEASE_ID="$(date -u +%Y-%m-%dT%H%M%SZ)-${{ github.run_id }}"
           python scripts/build_runtime_release.py \
@@ -552,25 +555,52 @@ jobs:
 
   deploy-runtime-release:
     needs: refresh-data
-    if: needs.refresh-data.result == 'success' && needs.refresh-data.outputs.runtime_release_id != '' && vars.NHSC_DEPLOY_ENABLED == 'true'
+    if: needs.refresh-data.result == 'success' && needs.refresh-data.outputs.runtime_release_id != ''
     runs-on: ubuntu-latest
     environment: production
+    env:
+      DEPLOY_ENABLED: ${{ secrets.NHSC_DEPLOY_ENABLED || vars.NHSC_DEPLOY_ENABLED }}
+      DEPLOY_HOST: ${{ secrets.NHSC_DEPLOY_HOST || vars.NHSC_DEPLOY_HOST }}
+      DEPLOY_USER: ${{ secrets.NHSC_DEPLOY_USER || vars.NHSC_DEPLOY_USER }}
     steps:
+      - name: Skip Oracle install when deployment is disabled
+        if: env.DEPLOY_ENABLED != 'true'
+        run: echo "Oracle data deployment is disabled; the verified release remains published to R2."
+
       - name: Configure deployment SSH key
+        if: env.DEPLOY_ENABLED == 'true'
         env:
           DEPLOY_KEY: ${{ secrets.NHSC_DEPLOY_SSH_KEY }}
+          DEPLOY_KEY_PASSPHRASE: ${{ secrets.NHSC_DEPLOY_SSH_PASSPHRASE }}
           DEPLOY_KNOWN_HOSTS: ${{ secrets.NHSC_DEPLOY_KNOWN_HOSTS }}
         run: |
+          test -n "$DEPLOY_KEY" && test -n "$DEPLOY_KNOWN_HOSTS"
           install -m 700 -d ~/.ssh
           printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          eval "$(ssh-agent -s)"
+          if [[ -n "$DEPLOY_KEY_PASSPHRASE" ]]; then
+            askpass="$RUNNER_TEMP/nhsc-ssh-askpass"
+            cat > "$askpass" <<'ASKPASS'
+          #!/bin/sh
+          printf '%s\n' "$NHSC_DEPLOY_SSH_PASSPHRASE"
+          ASKPASS
+            chmod 700 "$askpass"
+            DISPLAY=:0 SSH_ASKPASS="$askpass" SSH_ASKPASS_REQUIRE=force \
+              NHSC_DEPLOY_SSH_PASSPHRASE="$DEPLOY_KEY_PASSPHRASE" \
+              ssh-add ~/.ssh/id_ed25519 </dev/null
+            rm -f "$askpass"
+          else
+            ssh-add ~/.ssh/id_ed25519 </dev/null
+          fi
+          printf 'SSH_AUTH_SOCK=%s\n' "$SSH_AUTH_SOCK" >> "$GITHUB_ENV"
+          printf 'SSH_AGENT_PID=%s\n' "$SSH_AGENT_PID" >> "$GITHUB_ENV"
       - name: Install and health-check the published release
+        if: env.DEPLOY_ENABLED == 'true'
         env:
-          DEPLOY_HOST: ${{ vars.NHSC_DEPLOY_HOST }}
-          DEPLOY_USER: ${{ vars.NHSC_DEPLOY_USER }}
           RELEASE_ID: ${{ needs.refresh-data.outputs.runtime_release_id }}
         run: |
           test -n "$DEPLOY_HOST" && test -n "$DEPLOY_USER"
-          ssh -i ~/.ssh/id_ed25519 "$DEPLOY_USER@$DEPLOY_HOST" \
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
             "sudo /usr/local/sbin/nhsc-release install '$RELEASE_ID'"
