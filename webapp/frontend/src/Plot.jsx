@@ -87,7 +87,7 @@ function streamlitLayout(figure, horizontal) {
   return layout;
 }
 
-export default function Plot({figure}) {
+export default function Plot({figure, height, className = ''}) {
   const element = useRef(null);
   const [error, setError] = useState('');
 
@@ -97,6 +97,7 @@ export default function Plot({figure}) {
     const target = element.current;
     const horizontal = figure.data?.some(trace => trace.orientation === 'h');
     const layout = streamlitLayout(figure, horizontal);
+    if (height) layout.height = height;
 
     loadPlotly()
       .then(plotly => {
@@ -110,7 +111,7 @@ export default function Plot({figure}) {
       active = false;
       if (window.Plotly && target) window.Plotly.purge(target);
     };
-  }, [figure]);
+  }, [figure, height]);
 
-  return figure ? <div>{error && <p role="alert">{error}</p>}<div ref={element} className="plot"/></div> : null;
+  return figure ? <div className={className}>{error && <p role="alert">{error}</p>}<div ref={element} className="plot"/></div> : null;
 }
