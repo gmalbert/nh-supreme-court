@@ -45,7 +45,7 @@ def test_install_and_rollback_use_verified_releases(tmp_path):
     script.write_text(source.read_text(encoding='utf-8'), encoding='utf-8')
     bin_dir = tmp_path / 'bin'
     bin_dir.mkdir()
-    for name, body in {'aws':'cp "$MOCK_BUCKET/${3#s3://test/}" "$4"', 'systemctl':'exit 0', 'curl':'exit 0'}.items():
+    for name, body in {'aws':'cp "$MOCK_BUCKET/${3#s3://test/}" "$4"', 'systemctl':'if [ "$1" = show ]; then echo loaded; fi; exit 0', 'curl':'exit 0'}.items():
         command = bin_dir / name
         command.write_text(f'#!/bin/sh\n{body}\n', encoding='utf-8')
         command.chmod(0o755)
