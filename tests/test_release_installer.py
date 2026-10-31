@@ -15,13 +15,13 @@ def test_install_stops_if_download_fails(tmp_path):
     root.mkdir()
     config.write_text(f'NHSC_R2_BUCKET=test\nNHSC_R2_ACCOUNT_ID=test\nNHSC_RELEASE_ROOT={root}\nNHSC_SERVICE=test\nNHSC_HEALTH_URL=http://localhost/health\n', encoding='utf-8')
     copy = tmp_path / 'installer'
-    copy.write_text(script.read_text(encoding='utf-8').replace('CONFIG=/etc/nhsc-release.env', f'CONFIG={config}'), encoding='utf-8')
+    copy.write_text(script.read_text(encoding='utf-8'), encoding='utf-8')
     bin_dir = tmp_path / 'bin'
     bin_dir.mkdir()
     aws = bin_dir / 'aws'
     aws.write_text('#!/bin/sh\nexit 42\n', encoding='utf-8')
     aws.chmod(0o755)
-    env = {**os.environ, 'PATH': f'{bin_dir}{os.pathsep}{os.environ["PATH"]}'}
+    env = {**os.environ, 'NHSC_RELEASE_CONFIG': str(config), 'PATH': f'{bin_dir}{os.pathsep}{os.environ["PATH"]}'}
     result = subprocess.run(['bash', str(copy), 'install'], env=env, capture_output=True, text=True)
     assert result.returncode != 0
     assert not (root / 'current').exists() and not (root / 'current').is_symlink()
@@ -42,14 +42,14 @@ def test_install_and_rollback_use_verified_releases(tmp_path):
     config.write_text(f'NHSC_R2_BUCKET=test\nNHSC_R2_ACCOUNT_ID=test\nNHSC_RELEASE_ROOT={root}\nNHSC_SERVICE=test\nNHSC_HEALTH_URL=http://localhost/health\n', encoding='utf-8')
     source = Path(__file__).resolve().parents[1] / 'deploy' / 'nhsc-release'
     script = tmp_path / 'installer'
-    script.write_text(source.read_text(encoding='utf-8').replace('CONFIG=/etc/nhsc-release.env', f'CONFIG={config}'), encoding='utf-8')
+    script.write_text(source.read_text(encoding='utf-8'), encoding='utf-8')
     bin_dir = tmp_path / 'bin'
     bin_dir.mkdir()
     for name, body in {'aws':'cp "$MOCK_BUCKET/${3#s3://test/}" "$4"', 'systemctl':'exit 0', 'curl':'exit 0'}.items():
         command = bin_dir / name
         command.write_text(f'#!/bin/sh\n{body}\n', encoding='utf-8')
         command.chmod(0o755)
-    env = {**os.environ, 'MOCK_BUCKET':str(bucket), 'PATH':f'{bin_dir}{os.pathsep}{os.environ["PATH"]}'}
+    env = {**os.environ, 'MOCK_BUCKET':str(bucket), 'NHSC_RELEASE_CONFIG': str(config), 'PATH':f'{bin_dir}{os.pathsep}{os.environ["PATH"]}'}
 
     def publish(release_id, payload):
         contents = tmp_path / 'bundle' / release_id

@@ -107,7 +107,7 @@ def test_opinion_filters_and_literal_search(monkeypatch):
     ])
     monkeypatch.setattr(main, "opinions", lambda: df)
     def search(**overrides):
-        params = dict(year=[], outcome=[], author=[], decision="all", q="", sort_by="date_issued", sort_direction="desc", offset=0, limit=100)
+        params = dict(year=[], outcome=[], author=[], decision="all", q="", table_q="", sort_by="date_issued", sort_direction="desc", offset=0, limit=100)
         params.update(overrides)
         return main.list_opinions(**params)
 
