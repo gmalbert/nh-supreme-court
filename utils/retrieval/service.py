@@ -1,4 +1,4 @@
-"""Stable RetrievalService facade consumed by Streamlit and tests.
+"""Stable RetrievalService facade consumed by the Streamlit UI and FastAPI.
 
 The service orchestrates query analysis, exact lookup, lexical and (optional)
 dense retrieval, rank fusion, metadata hydration, transcript attachment,
@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
-import streamlit as st
+from utils.runtime_cache import cache_resource
 
 from .context_builder import build_context as _build_context
 from utils.runtime_paths import data_root
@@ -239,7 +239,7 @@ def _try_load_service() -> RetrievalService:
     return service
 
 
-@st.cache_resource(show_spinner="Building hybrid retrieval indexes...")
+@cache_resource(show_spinner="Building hybrid retrieval indexes...")
 def get_retrieval_service(
     schema_version: str = INDEX_SCHEMA_VERSION,
     corpus_mtime_ns: int | None = None,
@@ -254,9 +254,9 @@ def get_retrieval_service(
     try:
         return _try_load_service()
     except Exception as exc:  # pragma: no cover - defensive
-        import streamlit as st
+        import logging
 
-        st.warning(f"Retrieval service unavailable: {exc}")
+        logging.getLogger(__name__).warning("Retrieval service unavailable: %s", exc)
         return RetrievalService(None, None, None)
 
 

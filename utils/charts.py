@@ -77,7 +77,9 @@ def avg_decision_time_per_year(df: pd.DataFrame) -> go.Figure:
     if "term_year" not in df.columns or "days_to_decision" not in df.columns or df.empty:
         return go.Figure()
 
-    valid = df[df["days_to_decision"].notna()].copy()
+    decision_days = pd.to_numeric(df["days_to_decision"], errors="coerce")
+    valid = df[decision_days.ge(0)].copy()
+    valid["days_to_decision"] = decision_days.loc[valid.index]
     if valid.empty:
         return go.Figure()
 

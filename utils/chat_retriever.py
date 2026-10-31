@@ -9,8 +9,11 @@ import re
 from typing import List, Dict, Optional
 from pathlib import Path
 import pandas as pd
-import streamlit as st
+import logging
 from urllib.parse import quote_plus
+from utils.runtime_paths import data_root
+
+logger = logging.getLogger(__name__)
 
 # Import existing search for Supreme Court
 try:
@@ -116,7 +119,7 @@ class CaseRetriever:
             return enhanced
 
         except Exception as e:
-            st.warning(f"Supreme Court search error: {e}")
+            logger.warning("Supreme Court search error: %s", e)
             return []
 
     def _search_nh_court(self, query: str, top_k: int) -> List[Dict]:
@@ -188,7 +191,7 @@ class CaseRetriever:
                 outcome = outcome_raw.replace("_", " ").title() if outcome_raw and outcome_raw != "nan" else ""
 
                 # Load full opinion text and combine with summary
-                full_text_path = self.repo_root.parent / "nh-supreme-court" / "data" / "processed" / "text" / f"{case_number}.txt"
+                full_text_path = data_root() / "processed" / "text" / f"{case_number}.txt"
                 full_text = ""
                 if full_text_path.exists():
                     full_text = full_text_path.read_text(encoding="utf-8", errors="replace")[:2000]
@@ -219,7 +222,7 @@ class CaseRetriever:
             return results
 
         except Exception as e:
-            st.warning(f"NH Court search error: {e}")
+            logger.warning("NH Court search error: %s", e)
             return []
 
     def _build_nh_index(self):
@@ -227,10 +230,8 @@ class CaseRetriever:
         try:
             from sklearn.feature_extraction.text import TfidfVectorizer
 
-            # Try to load opinions data from NH repo (if accessible)
-            # This will only work if both repos are in the workspace
-            parent_dir = self.repo_root.parent
-            nh_opinions_path = parent_dir / "nh-supreme-court" / "data" / "processed" / "opinions.csv"
+            # Use the active runtime release, including NHSC_DATA_ROOT in production.
+            nh_opinions_path = data_root() / "processed" / "opinions.csv"
 
             if not nh_opinions_path.exists():
                 # Try relative path if workspace structure is different
@@ -242,8 +243,9 @@ class CaseRetriever:
             text_dir = nh_opinions_path.parent / "text"
             full_texts: dict[str, str] = {}
             if text_dir.exists():
+                needed_cases = set(df["case_number"].astype(str))
                 for fp in text_dir.iterdir():
-                    if fp.suffix == ".txt":
+                    if fp.suffix == ".txt" and fp.stem in needed_cases:
                         full_texts[fp.stem] = fp.read_text(encoding="utf-8", errors="replace")
 
             # Combine text fields for search

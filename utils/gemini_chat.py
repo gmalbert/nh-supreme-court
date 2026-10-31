@@ -7,8 +7,8 @@ import json
 from typing import Generator, Optional
 
 import requests
-import streamlit as st
 from dotenv import load_dotenv
+from utils.runtime_cache import streamlit_secret
 
 load_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env"))
 
@@ -22,10 +22,7 @@ def _api_key() -> Optional[str]:
     key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
     if key:
         return key
-    try:
-        return st.secrets.get("GEMINI_API_KEY") or st.secrets.get("GOOGLE_API_KEY")
-    except Exception:
-        return None
+    return streamlit_secret("GEMINI_API_KEY") or streamlit_secret("GOOGLE_API_KEY")
 
 
 def _system_prompt() -> str:

@@ -4,7 +4,6 @@ Format LLM responses with clickable case links and styled components.
 
 import re
 from typing import List, Dict, Optional
-import streamlit as st
 
 
 class ResponseFormatter:
@@ -143,6 +142,8 @@ class ResponseFormatter:
             case: Case dict from retriever
             key_suffix: Unique suffix for Streamlit widgets
         """
+        import streamlit as st
+
         source_emoji = "🏛️" if case["source"] == "supreme-court" else "⚖️"
         source_label = "U.S. Supreme Court" if case["source"] == "supreme-court" else "NH Supreme Court"
 
@@ -202,6 +203,8 @@ class ResponseFormatter:
             cases: List of retrieved cases
             key_suffix: Unique key suffix
         """
+        import streamlit as st
+
         with st.expander(f"📚 Sources ({len(cases)} cases)", expanded=False):
             for i, case in enumerate(cases):
                 self.render_case_card(case, key_suffix=f"{key_suffix}_{i}")
@@ -225,6 +228,8 @@ class ResponseFormatter:
         """
         if not questions:
             return None
+
+        import streamlit as st
 
         st.markdown("#### 💡 Follow-up Questions")
 

@@ -1,0 +1,219 @@
+name: Deploy verified data to Oracle Cloud
+
+on:
+  push:
+    branches: [codex/local-time-court-snapshot]
+    paths:
+      - .github/workflows/deploy-oracle-data.yml
+      - .github/workflows/deploy-oracle-api.yml
+      - deploy/nhsc-release
+      - data/processed/oral_arguments_attorney_stats.json
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Install the current verified R2 release or roll back the data release.
+        type: choice
+        options: [install, rollback]
+        default: install
+      target_environment:
+        description: GitHub deployment environment and Oracle host to target.
+        type: choice
+        options: [staging, production]
+        default: staging
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: oracle-data-${{ inputs.target_environment || 'staging' }}
+      cancel-in-progress: false
+    environment: ${{ inputs.target_environment || 'staging' }}
+    env:
+      DEPLOY_ENABLED: ${{ secrets.NHSC_DEPLOY_ENABLED || vars.NHSC_DEPLOY_ENABLED }}
+      DEPLOY_HOST: ${{ secrets.NHSC_DEPLOY_HOST || vars.NHSC_DEPLOY_HOST }}
+      DEPLOY_USER: ${{ secrets.NHSC_DEPLOY_USER || vars.NHSC_DEPLOY_USER }}
+      TARGET_ENVIRONMENT: ${{ inputs.target_environment || 'staging' }}
+      TARGET_OPERATION: ${{ inputs.operation || 'install' }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install runtime-release packaging dependency
+        run: python -m pip install --upgrade pip pandas
+
+      - name: Check Oracle deployment configuration
+        run: |
+          test "$DEPLOY_ENABLED" = "true" || { echo "Set NHSC_DEPLOY_ENABLED=true to enable Oracle deployments." >&2; exit 1; }
+          test -n "$DEPLOY_HOST" && test -n "$DEPLOY_USER" || { echo "Set NHSC_DEPLOY_HOST and NHSC_DEPLOY_USER." >&2; exit 1; }
+
+      - name: Build and publish staging-only runtime data release
+        if: env.TARGET_ENVIRONMENT == 'staging' && env.TARGET_OPERATION == 'install'
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+        run: |
+          set -euo pipefail
+          test -n "$AWS_ACCESS_KEY_ID" && test -n "$AWS_SECRET_ACCESS_KEY"
+          test -n "$CLOUDFLARE_ACCOUNT_ID" && test -n "$R2_BUCKET"
+          RELEASE_ID="staging-${GITHUB_SHA}"
+          python scripts/build_staging_runtime_release.py --output-root dist/releases --release-id "$RELEASE_ID" --source-commit "$GITHUB_SHA"
+          R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          PREFIX="releases/nh-supreme-court/staging/${RELEASE_ID}"
+          aws s3 cp "dist/releases/${RELEASE_ID}/manifest.json" "s3://${R2_BUCKET}/${PREFIX}/manifest.json" --endpoint-url "$R2_ENDPOINT" --no-progress
+          aws s3 cp "dist/releases/${RELEASE_ID}.tar.gz" "s3://${R2_BUCKET}/${PREFIX}/runtime.tar.gz" --endpoint-url "$R2_ENDPOINT" --no-progress
+          aws s3 cp dist/staging-current.json "s3://${R2_BUCKET}/releases/nh-supreme-court/staging/current.json" --endpoint-url "$R2_ENDPOINT" --no-progress
+
+      - name: Configure deployment SSH key
+        env:
+          DEPLOY_KEY: ${{ secrets.NHSC_DEPLOY_SSH_KEY }}
+          DEPLOY_KEY_PASSPHRASE: ${{ secrets.NHSC_DEPLOY_SSH_PASSPHRASE }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.NHSC_DEPLOY_KNOWN_HOSTS }}
+        run: |
+          test -n "$DEPLOY_KEY" && test -n "$DEPLOY_KNOWN_HOSTS"
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          if grep -q '^PuTTY-User-Key-File-' ~/.ssh/id_ed25519; then
+            sudo apt-get update -qq
+            sudo apt-get install -y putty-tools
+            converted="$RUNNER_TEMP/nhsc-deploy-key-openssh"
+            if [[ -n "$DEPLOY_KEY_PASSPHRASE" ]]; then
+              passphrase_file="$RUNNER_TEMP/nhsc-deploy-key-passphrase"
+              printf '%s' "$DEPLOY_KEY_PASSPHRASE" > "$passphrase_file"
+              chmod 600 "$passphrase_file"
+              puttygen ~/.ssh/id_ed25519 -O private-openssh -o "$converted" \
+                --old-passphrase "$passphrase_file" --new-passphrase "$passphrase_file"
+              rm -f "$passphrase_file"
+            else
+              puttygen ~/.ssh/id_ed25519 -O private-openssh -o "$converted"
+            fi
+            mv "$converted" ~/.ssh/id_ed25519
+            chmod 600 ~/.ssh/id_ed25519
+          fi
+          eval "$(ssh-agent -s)"
+          printf 'SSH_AUTH_SOCK=%s\n' "$SSH_AUTH_SOCK" >> "$GITHUB_ENV"
+          printf 'SSH_AGENT_PID=%s\n' "$SSH_AGENT_PID" >> "$GITHUB_ENV"
+          if [[ -n "$DEPLOY_KEY_PASSPHRASE" ]]; then
+            askpass="$RUNNER_TEMP/nhsc-ssh-askpass"
+            cat > "$askpass" <<'ASKPASS'
+          #!/bin/sh
+          printf '%s\n' "$NHSC_DEPLOY_SSH_PASSPHRASE"
+          ASKPASS
+            chmod 700 "$askpass"
+            DISPLAY=:0 SSH_ASKPASS="$askpass" SSH_ASKPASS_REQUIRE=force \
+              NHSC_DEPLOY_SSH_PASSPHRASE="$DEPLOY_KEY_PASSPHRASE" \
+              ssh-add ~/.ssh/id_ed25519 </dev/null
+            rm -f "$askpass"
+          else
+            ssh-add ~/.ssh/id_ed25519 </dev/null
+          fi
+
+      - name: Ensure AWS CLI is installed on the staging VM
+        if: env.TARGET_ENVIRONMENT == 'staging' && env.TARGET_OPERATION == 'install'
+        run: |
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" 'bash -s' <<'REMOTE'
+          set -Eeuo pipefail
+          if ! command -v aws >/dev/null 2>&1; then
+            command -v curl >/dev/null 2>&1 || { echo 'curl is required to install AWS CLI.' >&2; exit 1; }
+            if ! command -v unzip >/dev/null 2>&1; then
+              if command -v dnf >/dev/null 2>&1; then
+                sudo dnf install -y unzip
+              elif command -v yum >/dev/null 2>&1; then
+                sudo yum install -y unzip
+              elif command -v apt-get >/dev/null 2>&1; then
+                sudo apt-get update -qq
+                sudo apt-get install -y unzip
+              else
+                echo 'Install unzip with the VM package manager before deploying staging.' >&2
+                exit 1
+              fi
+            fi
+            curl --fail --silent --show-error --location \
+              https://awscli.amazonaws.com/v2/install.sh | sudo bash -s -- --system
+          fi
+          aws --version
+          REMOTE
+
+      - name: Install protected staging release configuration
+        if: env.TARGET_ENVIRONMENT == 'staging' && env.TARGET_OPERATION == 'install'
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          NHSC_R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          NHSC_R2_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          test -n "$AWS_ACCESS_KEY_ID" && test -n "$AWS_SECRET_ACCESS_KEY"
+          test -n "$NHSC_R2_BUCKET" && test -n "$NHSC_R2_ACCOUNT_ID"
+          config="$RUNNER_TEMP/nhsc-release-staging.env"
+          umask 077
+          {
+            printf 'NHSC_RELEASE_ROOT=%q\n' '/srv/nhsc-staging'
+            printf 'NHSC_SERVICE=%q\n' 'nhsc-staging-api.service'
+            printf 'NHSC_HEALTH_URL=%q\n' 'http://127.0.0.1:8104/api/health'
+            printf 'NHSC_R2_POINTER=%q\n' 'releases/nh-supreme-court/staging/current.json'
+            printf 'AWS_ACCESS_KEY_ID=%q\n' "$AWS_ACCESS_KEY_ID"
+            printf 'AWS_SECRET_ACCESS_KEY=%q\n' "$AWS_SECRET_ACCESS_KEY"
+            printf 'NHSC_R2_BUCKET=%q\n' "$NHSC_R2_BUCKET"
+            printf 'NHSC_R2_ACCOUNT_ID=%q\n' "$NHSC_R2_ACCOUNT_ID"
+          } > "$config"
+          scp -o BatchMode=yes -o StrictHostKeyChecking=yes "$config" \
+            "$DEPLOY_USER@$DEPLOY_HOST:/tmp/nhsc-release-staging-$GITHUB_SHA.env"
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "sudo install -o root -g root -m 0600 '/tmp/nhsc-release-staging-$GITHUB_SHA.env' /etc/nhsc-release-staging.env && rm -f '/tmp/nhsc-release-staging-$GITHUB_SHA.env'"
+
+      - name: Install current verified R2 data release
+        if: env.TARGET_OPERATION == 'install'
+        run: |
+          remote_installer="/tmp/nhsc-release-$GITHUB_SHA"
+          if [[ "$TARGET_ENVIRONMENT" == staging ]]; then
+            release_config=/etc/nhsc-release-staging.env
+          else
+            release_config=/etc/nhsc-release.env
+          fi
+          scp -o BatchMode=yes -o StrictHostKeyChecking=yes deploy/nhsc-release "$DEPLOY_USER@$DEPLOY_HOST:$remote_installer"
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "sudo install -o root -g root -m 0755 '$remote_installer' /usr/local/sbin/nhsc-release && rm -f '$remote_installer' && sudo env NHSC_RELEASE_CONFIG='$release_config' /usr/local/sbin/nhsc-release install"
+
+      - name: Package staging FastAPI runtime
+        if: github.event_name == 'push' && env.TARGET_ENVIRONMENT == 'staging' && env.TARGET_OPERATION == 'install'
+        run: |
+          tar -czf "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.tar.gz" \
+            --exclude='__pycache__' --exclude='*.pyc' \
+            webapp/backend utils requirements-runtime.txt \
+            deploy/nhsc-api.service deploy/nhsc-api-staging.service
+          sha256sum "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.tar.gz" | awk '{print $1}' > "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.sha256"
+
+      - name: Install staging FastAPI code release
+        if: github.event_name == 'push' && env.TARGET_ENVIRONMENT == 'staging' && env.TARGET_OPERATION == 'install'
+        run: |
+          archive="$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.tar.gz"
+          archive_sha=$(cat "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.sha256")
+          remote_archive="/tmp/nhsc-api-$GITHUB_SHA.tar.gz"
+          scp -o BatchMode=yes -o StrictHostKeyChecking=yes "$archive" "$DEPLOY_USER@$DEPLOY_HOST:$remote_archive"
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "sudo bash -s -- install '$GITHUB_SHA' '$remote_archive' '$archive_sha' staging" \
+            < deploy/nhsc-api-release
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "rm -f '$remote_archive'"
+
+      - name: Roll back data release
+        if: env.TARGET_OPERATION == 'rollback'
+        run: |
+          if [[ "$TARGET_ENVIRONMENT" == staging ]]; then
+            release_config=/etc/nhsc-release-staging.env
+          else
+            release_config=/etc/nhsc-release.env
+          fi
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "sudo env NHSC_RELEASE_CONFIG='$release_config' /usr/local/sbin/nhsc-release rollback"

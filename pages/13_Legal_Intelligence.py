@@ -82,7 +82,7 @@ from utils.runtime_paths import data_root
 
 DATA_ROOT = data_root()
 TREATMENTS_PATH = DATA_ROOT / "processed" / "authority_treatments.json"
-RELEASES_PATH = DATA_ROOT.parent / "releases"
+RELEASES_PATH = DATA_ROOT / "releases"
 
 
 def _as_list(value) -> list[str]:

@@ -1,0 +1,125 @@
+name: Deploy FastAPI to Oracle Cloud
+
+on:
+  push:
+    branches: [codex/local-time-court-snapshot]
+    paths:
+      - .github/workflows/deploy-oracle-api.yml
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Install the checked-out code release or roll back the API code.
+        type: choice
+        options: [install, rollback]
+        default: install
+      target_environment:
+        description: GitHub deployment environment and Oracle host to target.
+        type: choice
+        options: [staging, production]
+        default: staging
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-api:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    concurrency:
+      group: oracle-api-${{ inputs.target_environment || 'staging' }}
+      cancel-in-progress: false
+    environment: ${{ inputs.target_environment || 'staging' }}
+    env:
+      DEPLOY_ENABLED: ${{ secrets.NHSC_DEPLOY_ENABLED || vars.NHSC_DEPLOY_ENABLED }}
+      DEPLOY_HOST: ${{ secrets.NHSC_DEPLOY_HOST || vars.NHSC_DEPLOY_HOST }}
+      DEPLOY_USER: ${{ secrets.NHSC_DEPLOY_USER || vars.NHSC_DEPLOY_USER }}
+      TARGET_ENVIRONMENT: ${{ inputs.target_environment || 'staging' }}
+      TARGET_OPERATION: ${{ inputs.operation || 'install' }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Check Oracle deployment configuration
+        run: |
+          test "$DEPLOY_ENABLED" = "true" || { echo "Set NHSC_DEPLOY_ENABLED=true to enable Oracle deployments." >&2; exit 1; }
+          test -n "$DEPLOY_HOST" && test -n "$DEPLOY_USER" || { echo "Set NHSC_DEPLOY_HOST and NHSC_DEPLOY_USER." >&2; exit 1; }
+
+      - name: Package FastAPI runtime
+        if: env.TARGET_OPERATION == 'install'
+        run: |
+          tar -czf "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.tar.gz" \
+            --exclude='__pycache__' --exclude='*.pyc' \
+            webapp/backend utils requirements-runtime.txt \
+            deploy/nhsc-api.service deploy/nhsc-api-staging.service
+          sha256sum "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.tar.gz" | awk '{print $1}' > "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.sha256"
+
+      - name: Configure deployment SSH key
+        env:
+          DEPLOY_KEY: ${{ secrets.NHSC_DEPLOY_SSH_KEY }}
+          DEPLOY_KEY_PASSPHRASE: ${{ secrets.NHSC_DEPLOY_SSH_PASSPHRASE }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.NHSC_DEPLOY_KNOWN_HOSTS }}
+        run: |
+          test -n "$DEPLOY_KEY" && test -n "$DEPLOY_KNOWN_HOSTS"
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          if grep -q '^PuTTY-User-Key-File-' ~/.ssh/id_ed25519; then
+            sudo apt-get update -qq
+            sudo apt-get install -y putty-tools
+            converted="$RUNNER_TEMP/nhsc-deploy-key-openssh"
+            if [[ -n "$DEPLOY_KEY_PASSPHRASE" ]]; then
+              passphrase_file="$RUNNER_TEMP/nhsc-deploy-key-passphrase"
+              printf '%s' "$DEPLOY_KEY_PASSPHRASE" > "$passphrase_file"
+              chmod 600 "$passphrase_file"
+              puttygen ~/.ssh/id_ed25519 -O private-openssh -o "$converted" \
+                --old-passphrase "$passphrase_file" --new-passphrase "$passphrase_file"
+              rm -f "$passphrase_file"
+            else
+              puttygen ~/.ssh/id_ed25519 -O private-openssh -o "$converted"
+            fi
+            mv "$converted" ~/.ssh/id_ed25519
+            chmod 600 ~/.ssh/id_ed25519
+          fi
+          eval "$(ssh-agent -s)"
+          printf 'SSH_AUTH_SOCK=%s\n' "$SSH_AUTH_SOCK" >> "$GITHUB_ENV"
+          printf 'SSH_AGENT_PID=%s\n' "$SSH_AGENT_PID" >> "$GITHUB_ENV"
+          if [[ -n "$DEPLOY_KEY_PASSPHRASE" ]]; then
+            askpass="$RUNNER_TEMP/nhsc-ssh-askpass"
+            cat > "$askpass" <<'ASKPASS'
+          #!/bin/sh
+          printf '%s\n' "$NHSC_DEPLOY_SSH_PASSPHRASE"
+          ASKPASS
+            chmod 700 "$askpass"
+            DISPLAY=:0 SSH_ASKPASS="$askpass" SSH_ASKPASS_REQUIRE=force \
+              NHSC_DEPLOY_SSH_PASSPHRASE="$DEPLOY_KEY_PASSPHRASE" \
+              ssh-add ~/.ssh/id_ed25519 </dev/null
+            rm -f "$askpass"
+          else
+            ssh-add ~/.ssh/id_ed25519 </dev/null
+          fi
+
+      - name: Verify a runtime data release is installed
+        if: env.TARGET_OPERATION == 'install'
+        run: |
+          if [[ "$TARGET_ENVIRONMENT" == staging ]]; then data_root=/srv/nhsc-staging; else data_root=/srv/nhsc; fi
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "test -s '$data_root/current/data/processed/opinions.csv' || { echo 'Install the verified runtime data release before deploying the API.' >&2; exit 1; }"
+
+      - name: Upload and activate code release
+        if: env.TARGET_OPERATION == 'install'
+        run: |
+          archive="$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.tar.gz"
+          archive_sha=$(cat "$RUNNER_TEMP/nhsc-api-$GITHUB_SHA.sha256")
+          remote_archive="/tmp/nhsc-api-$GITHUB_SHA.tar.gz"
+          scp -o BatchMode=yes -o StrictHostKeyChecking=yes "$archive" "$DEPLOY_USER@$DEPLOY_HOST:$remote_archive"
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "sudo bash -s -- install '$GITHUB_SHA' '$remote_archive' '$archive_sha' '$TARGET_ENVIRONMENT'" \
+            < deploy/nhsc-api-release
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "rm -f '$remote_archive'"
+
+      - name: Roll back API code release
+        if: env.TARGET_OPERATION == 'rollback'
+        run: |
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
+            "sudo bash -s -- rollback '$TARGET_ENVIRONMENT'" < deploy/nhsc-api-release

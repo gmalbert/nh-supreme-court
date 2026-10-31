@@ -6,7 +6,7 @@ Supports DeepSeek Flash model via OpenAI-compatible API.
 import os
 import json
 from typing import List, Dict, Optional, Generator
-import streamlit as st
+from utils.runtime_cache import streamlit_secret
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -61,10 +61,7 @@ class OpenCodeClient:
             return os.environ.get("OPENCODE_API_KEY")
 
         # Then try Streamlit secrets
-        if hasattr(st, "secrets") and "OPENCODE_API_KEY" in st.secrets:
-            return st.secrets["OPENCODE_API_KEY"]
-
-        return None
+        return streamlit_secret("OPENCODE_API_KEY")
 
     def generate_response(
         self,

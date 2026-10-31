@@ -10,8 +10,8 @@ import os
 import re
 import pandas as pd
 import numpy as np
-import streamlit as st
 from utils.runtime_paths import data_root
+from utils.runtime_cache import cache_resource
 
 _REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 _CORPUS_PARQUET = str(data_root() / "retrieval" / "case_documents.parquet")
@@ -73,11 +73,11 @@ def _name_query_tokens(query: str) -> set[str]:
     return tokens
 
 
-@st.cache_resource(show_spinner="Building search index...")
+@cache_resource(show_spinner="Building search index...")
 def get_index() -> tuple:
     """
     Build and cache the TF-IDF vectorizer, matrix, and index dataframe.
-    Using @st.cache_resource to ensure this expensive operation runs only once.
+    The shared cache keeps this expensive operation in memory across requests.
     """
     from sklearn.feature_extraction.text import TfidfVectorizer
 

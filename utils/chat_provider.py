@@ -8,8 +8,8 @@ from __future__ import annotations
 
 import os
 
-import streamlit as st
 from dotenv import load_dotenv
+from utils.runtime_cache import streamlit_secret
 
 load_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env"))
 
@@ -20,10 +20,7 @@ SUPPORTED_PROVIDERS = {"gemini", "opencode", "openrouter"}
 def provider_name() -> str:
     configured = os.environ.get("CHAT_PROVIDER")
     if not configured:
-        try:
-            configured = st.secrets.get("CHAT_PROVIDER")
-        except Exception:
-            configured = None
+        configured = streamlit_secret("CHAT_PROVIDER")
     name = (configured or "gemini").strip().lower()
     if name not in SUPPORTED_PROVIDERS:
         raise ValueError(f"Unsupported CHAT_PROVIDER '{name}'. Use: gemini, opencode, or openrouter.")

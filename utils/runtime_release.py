@@ -11,6 +11,8 @@ from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
 from typing import Any, Iterable
 
+from utils.data_releases import load_latest_manifest
+
 
 APPLICATION = "nh-supreme-court"
 MANIFEST_SCHEMA_VERSION = 1
@@ -98,6 +100,14 @@ def _file_entries(release_dir: Path) -> list[dict[str, Any]]:
     return entries
 
 
+def _public_data_manifest(root: Path) -> dict[str, Any]:
+    """Embed the small public snapshot manifest without bundling duplicate exports."""
+    try:
+        return load_latest_manifest(root / "data" / "releases") or {}
+    except (OSError, ValueError, RuntimeError, json.JSONDecodeError):
+        return {}
+
+
 def build_runtime_release(
     repository_root: str | Path,
     output_root: str | Path,
@@ -126,6 +136,7 @@ def build_runtime_release(
         "source_commit": source_commit or _git_commit(root),
         "built_at": datetime.now(timezone.utc).isoformat(),
         "runtime_allowlist": {"trees": list(RUNTIME_TREES), "files": list(RUNTIME_FILES)},
+        "public_data_manifest": _public_data_manifest(root),
         "required_files": list(REQUIRED_FILES),
         "files": files,
     }

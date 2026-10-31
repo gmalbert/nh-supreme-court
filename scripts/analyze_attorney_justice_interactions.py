@@ -88,6 +88,7 @@ def analyze_interactions() -> dict[str, Any]:
     attorney_justice_counts = defaultdict(lambda: defaultdict(int))
     justice_attorney_counts = defaultdict(lambda: defaultdict(int))
     justice_argument_counts = defaultdict(int)
+    analyzed_arguments = 0
     
     # Process each argument
     for i, arg in enumerate(oral_arguments, 1):
@@ -109,6 +110,7 @@ def analyze_interactions() -> dict[str, Any]:
         attorneys = case_attorneys.get(case_number, [])
         if not attorneys:
             continue
+        analyzed_arguments += 1
         
         # Record interactions
         for attorney in attorneys:
@@ -168,7 +170,7 @@ def analyze_interactions() -> dict[str, Any]:
         "attorney_interactions": attorney_interactions,
         "justice_interactions": justice_interactions,
         "summary": {
-            "total_arguments_analyzed": len([a for a in oral_arguments if a.get("argument_date")]),
+            "total_arguments_analyzed": analyzed_arguments,
             "unique_attorneys": len(attorney_justice_counts),
             "unique_justices": len(justice_attorney_counts)
         }

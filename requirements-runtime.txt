@@ -1,5 +1,4 @@
-# Only packages required by the public Streamlit process.
-streamlit>=1.57.0
+# Runtime packages shared by the FastAPI service and its framework-neutral data helpers.
 pandas>=2.0.0
 plotly>=5.18.0
 pdfplumber>=0.10.0

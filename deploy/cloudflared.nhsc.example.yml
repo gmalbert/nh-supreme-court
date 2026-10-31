@@ -1,0 +1,9 @@
+# Replace the placeholders with the locally managed tunnel's ID and hostname.
+tunnel: REPLACE_WITH_TUNNEL_UUID
+credentials-file: /etc/cloudflared/REPLACE_WITH_TUNNEL_UUID.json
+ingress:
+  - hostname: REPLACE_WITH_STAGING_API_HOSTNAME
+    service: http://127.0.0.1:8104
+  - hostname: REPLACE_WITH_PRODUCTION_API_HOSTNAME
+    service: http://127.0.0.1:8000
+  - service: http_status:404
