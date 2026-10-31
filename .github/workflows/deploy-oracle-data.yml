@@ -172,6 +172,33 @@ jobs:
           ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
             "sudo install -o root -g root -m 0600 '/tmp/nhsc-release-staging-$GITHUB_SHA.env' /etc/nhsc-release-staging.env && rm -f '/tmp/nhsc-release-staging-$GITHUB_SHA.env'"
 
+      - name: Install production read-only R2 release configuration
+        if: env.TARGET_ENVIRONMENT == 'production' && env.TARGET_OPERATION == 'install'
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.NHSC_R2_READ_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.NHSC_R2_READ_SECRET_ACCESS_KEY }}
+          NHSC_R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          NHSC_R2_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          test -n "$AWS_ACCESS_KEY_ID" && test -n "$AWS_SECRET_ACCESS_KEY"
+          test -n "$NHSC_R2_BUCKET" && test -n "$NHSC_R2_ACCOUNT_ID"
+          config="$RUNNER_TEMP/nhsc-release-production.env"
+          umask 077
+          {
+            printf 'NHSC_RELEASE_ROOT=%q\n' '/srv/nhsc'
+            printf 'NHSC_SERVICE=%q\n' 'nhsc-api.service'
+            printf 'NHSC_HEALTH_URL=%q\n' 'http://127.0.0.1:8000/api/health'
+            printf 'NHSC_R2_POINTER=%q\n' 'releases/nh-supreme-court/current.json'
+            printf 'AWS_ACCESS_KEY_ID=%q\n' "$AWS_ACCESS_KEY_ID"
+            printf 'AWS_SECRET_ACCESS_KEY=%q\n' "$AWS_SECRET_ACCESS_KEY"
+            printf 'NHSC_R2_BUCKET=%q\n' "$NHSC_R2_BUCKET"
+            printf 'NHSC_R2_ACCOUNT_ID=%q\n' "$NHSC_R2_ACCOUNT_ID"
+          } > "$config"
+          scp -o BatchMode=yes -o StrictHostKeyChecking=yes "$config" "$DEPLOY_USER@$DEPLOY_HOST:/tmp/nhsc-release-production-$GITHUB_SHA.env"
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" "sudo install -o root -g root -m 0600 '/tmp/nhsc-release-production-$GITHUB_SHA.env' /etc/nhsc-release.env && rm -f '/tmp/nhsc-release-production-$GITHUB_SHA.env'"
+          rm -f "$config"
+
       - name: Install current verified R2 data release
         if: env.TARGET_OPERATION == 'install'
         run: |
