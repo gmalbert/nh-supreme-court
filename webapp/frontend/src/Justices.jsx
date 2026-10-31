@@ -3,7 +3,7 @@ import React,{useEffect,useState} from 'react';
 import Plot from './Plot.jsx';
 import RangeSlider from './RangeSlider.jsx';
 const title=s=>String(s || '').replaceAll('_',' ').replace(/\b\w/g,c=>c.toUpperCase());
-const FIRST_OPINION_YEAR = 1994;
+const FIRST_OPINION_YEAR = 2002;
 function Votes({rows}){return <div className="table-wrap"><table><thead><tr>{['Case Name','Citation','Date Issued','Vote','Outcome'].map(x=><th key={x}>{x}</th>)}</tr></thead><tbody>{rows.map((r,i)=><tr key={`${r.case_number}-${i}`}><td><a href={`/case-explorer?case=${encodeURIComponent(r.case_number)}`}>{r.case_name}</a></td><td>{r.citation}</td><td>{r.date_issued?.slice(0,10)}</td><td>{title(r.vote)}</td><td>{title(r.outcome)}</td></tr>)}</tbody></table></div>;}
 export default function Justices(){
  const [filters,setFilters]=useState(null),[justice,setJustice]=useState(''),[start,setStart]=useState(FIRST_OPINION_YEAR),[end,setEnd]=useState(new Date().getFullYear()),[tab,setTab]=useState('Justice Profile'),[data,setData]=useState(null),[error,setError]=useState('');
