@@ -66,21 +66,11 @@ jobs:
           test -n "$AWS_ACCESS_KEY_ID" && test -n "$AWS_SECRET_ACCESS_KEY"
           test -n "$CLOUDFLARE_ACCOUNT_ID" && test -n "$R2_BUCKET"
           RELEASE_ID="staging-${GITHUB_SHA}"
-          python scripts/build_staging_runtime_release.py --output-root dist/releases --release-id "$RELEASE_ID" --source-commit "$GITHUB_SHA" > "$RUNNER_TEMP/staging-release-files"
-          mapfile -t RELEASE_FILES < "$RUNNER_TEMP/staging-release-files"
+          python scripts/build_staging_runtime_release.py --output-root dist/releases --release-id "$RELEASE_ID" --source-commit "$GITHUB_SHA"
           R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
           PREFIX="releases/nh-supreme-court/staging/${RELEASE_ID}"
-          aws s3 cp "${RELEASE_FILES[2]}" "s3://${R2_BUCKET}/${PREFIX}/manifest.json" --endpoint-url "$R2_ENDPOINT" --no-progress
-          aws s3 cp "${RELEASE_FILES[1]}" "s3://${R2_BUCKET}/${PREFIX}/runtime.tar.gz" --endpoint-url "$R2_ENDPOINT" --no-progress
-          export ARCHIVE_SHA256="${RELEASE_FILES[3]}"
-          python - <<'PY' > dist/staging-current.json
-          import json, os
-          release_id = "staging-" + os.environ["GITHUB_SHA"]
-          prefix = f"releases/nh-supreme-court/staging/{release_id}"
-          print(json.dumps({"application":"nh-supreme-court", "release_id":release_id,
-              "archive":f"{prefix}/runtime.tar.gz", "manifest":f"{prefix}/manifest.json",
-              "archive_sha256":os.environ["ARCHIVE_SHA256"]}))
-          PY
+          aws s3 cp "dist/releases/${RELEASE_ID}/manifest.json" "s3://${R2_BUCKET}/${PREFIX}/manifest.json" --endpoint-url "$R2_ENDPOINT" --no-progress
+          aws s3 cp "dist/releases/${RELEASE_ID}.tar.gz" "s3://${R2_BUCKET}/${PREFIX}/runtime.tar.gz" --endpoint-url "$R2_ENDPOINT" --no-progress
           aws s3 cp dist/staging-current.json "s3://${R2_BUCKET}/releases/nh-supreme-court/staging/current.json" --endpoint-url "$R2_ENDPOINT" --no-progress
 
       - name: Configure deployment SSH key

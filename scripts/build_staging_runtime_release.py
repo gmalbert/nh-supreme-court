@@ -9,10 +9,14 @@ import os
 import re
 import shutil
 import subprocess
+import sys
 import tarfile
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
 
 from utils.runtime_release import sha256_file, verify_runtime_release
 
@@ -116,11 +120,17 @@ def main() -> int:
             pointer_path, archive_path, manifest_path, args.stats_file,
             args.output_root, args.release_id, args.source_commit,
         )
-        manifest_out = release_dir / "manifest.json"
-        print(release_dir)
-        print(archive_out)
-        print(manifest_out)
-        print(sha256_file(archive_out))
+        prefix = f"releases/nh-supreme-court/staging/{args.release_id}"
+        pointer_out = {
+            "application": APPLICATION,
+            "release_id": args.release_id,
+            "archive": f"{prefix}/runtime.tar.gz",
+            "manifest": f"{prefix}/manifest.json",
+            "archive_sha256": sha256_file(archive_out),
+        }
+        (args.output_root.parent / "staging-current.json").write_text(
+            json.dumps(pointer_out, sort_keys=True) + "\n", encoding="utf-8"
+        )
     return 0
 
 
