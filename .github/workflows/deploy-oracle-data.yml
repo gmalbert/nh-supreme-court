@@ -172,6 +172,44 @@ jobs:
           ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
             "sudo install -o root -g root -m 0600 '/tmp/nhsc-release-staging-$GITHUB_SHA.env' /etc/nhsc-release-staging.env && rm -f '/tmp/nhsc-release-staging-$GITHUB_SHA.env'"
 
+      - name: Install AWS CLI for production release publication
+        if: env.TARGET_ENVIRONMENT == 'production' && env.TARGET_OPERATION == 'install'
+        run: python -m pip install --upgrade awscli
+
+      - name: Build and publish production runtime release from main data
+        if: env.TARGET_ENVIRONMENT == 'production' && env.TARGET_OPERATION == 'install'
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+        run: |
+          set -euo pipefail
+          test -n "$AWS_ACCESS_KEY_ID" && test -n "$AWS_SECRET_ACCESS_KEY"
+          test -n "$CLOUDFLARE_ACCOUNT_ID" && test -n "$R2_BUCKET"
+          export RELEASE_ID="production-${GITHUB_RUN_ID}-${GITHUB_SHA:0:12}"
+          python scripts/build_runtime_release.py --output-root dist/releases --release-id "$RELEASE_ID"
+          python scripts/verify_runtime_release.py "dist/releases/$RELEASE_ID"
+          R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          PREFIX="releases/nh-supreme-court/$RELEASE_ID"
+          aws s3 cp "dist/releases/$RELEASE_ID/manifest.json" "s3://${R2_BUCKET}/${PREFIX}/manifest.json" --endpoint-url "$R2_ENDPOINT" --no-progress
+          aws s3 cp "dist/releases/$RELEASE_ID.tar.gz" "s3://${R2_BUCKET}/${PREFIX}/runtime.tar.gz" --endpoint-url "$R2_ENDPOINT" --no-progress
+          python - <<'PY' > dist/current.json
+          import hashlib, json, os
+          release_id = os.environ["RELEASE_ID"]
+          prefix = f"releases/nh-supreme-court/{release_id}"
+          archive = f"dist/releases/{release_id}.tar.gz"
+          print(json.dumps({
+              "application": "nh-supreme-court",
+              "release_id": release_id,
+              "archive": f"{prefix}/runtime.tar.gz",
+              "manifest": f"{prefix}/manifest.json",
+              "archive_sha256": hashlib.sha256(open(archive, "rb").read()).hexdigest(),
+          }))
+          PY
+          aws s3 cp dist/current.json "s3://${R2_BUCKET}/releases/nh-supreme-court/current.json" --endpoint-url "$R2_ENDPOINT" --no-progress
+
       - name: Install production read-only R2 release configuration
         if: env.TARGET_ENVIRONMENT == 'production' && env.TARGET_OPERATION == 'install'
         env:
