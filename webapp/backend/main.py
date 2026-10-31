@@ -318,7 +318,7 @@ def health() -> dict:
     path = data_root() / "processed" / "opinions.csv"
     if not path.is_file():
         raise HTTPException(status_code=503, detail="Opinion data is unavailable")
-    return {"status": "ok"}
+    return {"status": "ok", "application": "granite-state-appeals-api"}
 
 
 @app.get("/api/opinions/filters")

@@ -227,7 +227,7 @@ jobs:
           {
             printf 'NHSC_RELEASE_ROOT=%q\n' '/srv/nhsc'
             printf 'NHSC_SERVICE=%q\n' 'nhsc-api.service'
-            printf 'NHSC_HEALTH_URL=%q\n' 'http://127.0.0.1:8000/api/health'
+            printf 'NHSC_HEALTH_URL=%q\n' 'http://127.0.0.1:8105/api/health'
             printf 'NHSC_R2_POINTER=%q\n' 'releases/nh-supreme-court/current.json'
             printf 'AWS_ACCESS_KEY_ID=%q\n' "$AWS_ACCESS_KEY_ID"
             printf 'AWS_SECRET_ACCESS_KEY=%q\n' "$AWS_SECRET_ACCESS_KEY"
