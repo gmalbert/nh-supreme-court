@@ -26,7 +26,7 @@ case "$TARGET" in
     APP_ROOT=/opt/nhsc/app
     SERVICE=nhsc-api.service
     SERVICE_SOURCE=deploy/nhsc-api.service
-    HEALTH_URL=http://127.0.0.1:8000/api/health
+    HEALTH_URL=http://127.0.0.1:8105/api/health
     ;;
   staging)
     APP_ROOT=/opt/nhsc/staging-api
@@ -44,7 +44,7 @@ PREVIOUS="$APP_ROOT/previous"
 wait_for_health() {
   local attempt
   for attempt in {1..30}; do
-    if curl --fail --silent --show-error "$HEALTH_URL" >/dev/null; then return 0; fi
+    if curl --fail --silent --show-error "$HEALTH_URL" | grep -Eq '"application"[[:space:]]*:[[:space:]]*"granite-state-appeals-api"'; then return 0; fi
     sleep 1
   done
   return 1
