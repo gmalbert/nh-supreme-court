@@ -600,7 +600,9 @@ jobs:
         if: env.DEPLOY_ENABLED == 'true'
         env:
           RELEASE_ID: ${{ needs.refresh-data.outputs.runtime_release_id }}
+          DEPLOY_KEY_PASSPHRASE: ${{ secrets.NHSC_DEPLOY_SSH_PASSPHRASE }}
         run: |
+          set -euo pipefail
           test -n "$DEPLOY_HOST" && test -n "$DEPLOY_USER"
           ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \
             "sudo /usr/local/sbin/nhsc-release install '$RELEASE_ID'"
