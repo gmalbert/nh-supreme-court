@@ -186,19 +186,17 @@ jobs:
           config="$RUNNER_TEMP/nhsc-release-production.env"
           umask 077
           {
-            printf 'NHSC_RELEASE_ROOT=%q\\n' '/srv/nhsc'
-            printf 'NHSC_SERVICE=%q\\n' 'nhsc-api.service'
-            printf 'NHSC_HEALTH_URL=%q\\n' 'http://127.0.0.1:8000/api/health'
-            printf 'NHSC_R2_POINTER=%q\\n' 'releases/nh-supreme-court/current.json'
-            printf 'AWS_ACCESS_KEY_ID=%q\\n' "$AWS_ACCESS_KEY_ID"
-            printf 'AWS_SECRET_ACCESS_KEY=%q\\n' "$AWS_SECRET_ACCESS_KEY"
-            printf 'NHSC_R2_BUCKET=%q\\n' "$NHSC_R2_BUCKET"
-            printf 'NHSC_R2_ACCOUNT_ID=%q\\n' "$NHSC_R2_ACCOUNT_ID"
+            printf 'NHSC_RELEASE_ROOT=%q\n' '/srv/nhsc'
+            printf 'NHSC_SERVICE=%q\n' 'nhsc-api.service'
+            printf 'NHSC_HEALTH_URL=%q\n' 'http://127.0.0.1:8000/api/health'
+            printf 'NHSC_R2_POINTER=%q\n' 'releases/nh-supreme-court/current.json'
+            printf 'AWS_ACCESS_KEY_ID=%q\n' "$AWS_ACCESS_KEY_ID"
+            printf 'AWS_SECRET_ACCESS_KEY=%q\n' "$AWS_SECRET_ACCESS_KEY"
+            printf 'NHSC_R2_BUCKET=%q\n' "$NHSC_R2_BUCKET"
+            printf 'NHSC_R2_ACCOUNT_ID=%q\n' "$NHSC_R2_ACCOUNT_ID"
           } > "$config"
-          scp -o BatchMode=yes -o StrictHostKeyChecking=yes "$config" \\
-            "$DEPLOY_USER@$DEPLOY_HOST:/tmp/nhsc-release-production-$GITHUB_SHA.env"
-          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" \\
-            "sudo install -o root -g root -m 0600 '/tmp/nhsc-release-production-$GITHUB_SHA.env' /etc/nhsc-release.env && rm -f '/tmp/nhsc-release-production-$GITHUB_SHA.env'"
+          scp -o BatchMode=yes -o StrictHostKeyChecking=yes "$config" "$DEPLOY_USER@$DEPLOY_HOST:/tmp/nhsc-release-production-$GITHUB_SHA.env"
+          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST" "sudo install -o root -g root -m 0600 '/tmp/nhsc-release-production-$GITHUB_SHA.env' /etc/nhsc-release.env && rm -f '/tmp/nhsc-release-production-$GITHUB_SHA.env'"
           rm -f "$config"
 
       - name: Install current verified R2 data release
