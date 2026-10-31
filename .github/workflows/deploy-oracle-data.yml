@@ -188,7 +188,7 @@ jobs:
           set -euo pipefail
           test -n "$AWS_ACCESS_KEY_ID" && test -n "$AWS_SECRET_ACCESS_KEY"
           test -n "$CLOUDFLARE_ACCOUNT_ID" && test -n "$R2_BUCKET"
-          RELEASE_ID="production-${GITHUB_RUN_ID}-${GITHUB_SHA:0:12}"
+          export RELEASE_ID="production-${GITHUB_RUN_ID}-${GITHUB_SHA:0:12}"
           python scripts/build_runtime_release.py --output-root dist/releases --release-id "$RELEASE_ID"
           python scripts/verify_runtime_release.py "dist/releases/$RELEASE_ID"
           R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
