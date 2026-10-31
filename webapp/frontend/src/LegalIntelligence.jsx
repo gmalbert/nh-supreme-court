@@ -7,9 +7,10 @@ import OpenData from './OpenData.jsx';
 import {recordPrivacySafeEvent} from './privacyTelemetry.js';
 import NumberStepper from './NumberStepper.jsx';
 const pretty=s=>String(s || '').replaceAll('_',' ').replace(/\b\w/g,c=>c.toUpperCase());
+const tableValue=(column,value)=>{if(value==null)return '—';if(['outcome','disposition'].includes(column.toLowerCase()))return pretty(value);if(typeof value==='number'&&Number.isFinite(value))return Number(value.toFixed(3)).toString();return String(value);};
 const today=()=>{const now=new Date();return `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;};
 const caseLink=id=>`/case-explorer?case=${encodeURIComponent(id)}`;
-function Table({rows}){if(!rows?.length)return null;const columns=Object.keys(rows[0]);return <div className="table-wrap"><table><thead><tr>{columns.map(c=><th key={c}>{pretty(c)}</th>)}</tr></thead><tbody>{rows.map((r,i)=><tr key={i}>{columns.map(c=><td key={c}>{c==='case_number' ? <a href={caseLink(r[c])}>{r[c]}</a> : String(r[c] ?? '—')}</td>)}</tr>)}</tbody></table></div>;}
+function Table({rows}){if(!rows?.length)return null;const columns=Object.keys(rows[0]);return <div className="table-wrap"><table><thead><tr>{columns.map(c=><th key={c}>{pretty(c)}</th>)}</tr></thead><tbody>{rows.map((r,i)=><tr key={i}>{columns.map(c=><td key={c}>{c==='case_number' ? <a href={caseLink(r[c])}>{r[c]}</a> : tableValue(c,r[c])}</td>)}</tr>)}</tbody></table></div>;}
 function Authority({options,onAdd}){
  const requested=new URLSearchParams(location.search).get('authority');
  const [id,setId]=useState(requested || ''),[asOf,setAsOf]=useState(today()),[query,setQuery]=useState(''),[limit,setLimit]=useState(8),[results,setResults]=useState(null),[authority,setAuthority]=useState(null),[error,setError]=useState(''),[busy,setBusy]=useState(false);

@@ -7,6 +7,7 @@ on:
       - .github/workflows/deploy-oracle-data.yml
       - .github/workflows/deploy-oracle-api.yml
       - deploy/nhsc-release
+      - data/processed/oral_arguments_attorney_stats.json
   workflow_dispatch:
     inputs:
       operation:
@@ -44,6 +45,36 @@ jobs:
         run: |
           test "$DEPLOY_ENABLED" = "true" || { echo "Set NHSC_DEPLOY_ENABLED=true to enable Oracle deployments." >&2; exit 1; }
           test -n "$DEPLOY_HOST" && test -n "$DEPLOY_USER" || { echo "Set NHSC_DEPLOY_HOST and NHSC_DEPLOY_USER." >&2; exit 1; }
+
+      - name: Build and publish staging-only runtime data release
+        if: env.TARGET_ENVIRONMENT == 'staging' && env.TARGET_OPERATION == 'install'
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+        run: |
+          set -euo pipefail
+          test -n "$AWS_ACCESS_KEY_ID" && test -n "$AWS_SECRET_ACCESS_KEY"
+          test -n "$CLOUDFLARE_ACCOUNT_ID" && test -n "$R2_BUCKET"
+          RELEASE_ID="staging-${GITHUB_SHA}"
+          python scripts/build_runtime_release.py --output-root dist/releases --release-id "$RELEASE_ID"
+          python scripts/verify_runtime_release.py "dist/releases/$RELEASE_ID"
+          R2_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          PREFIX="releases/nh-supreme-court/staging/${RELEASE_ID}"
+          aws s3 cp "dist/releases/${RELEASE_ID}/manifest.json" "s3://${R2_BUCKET}/${PREFIX}/manifest.json" --endpoint-url "$R2_ENDPOINT" --no-progress
+          aws s3 cp "dist/releases/${RELEASE_ID}.tar.gz" "s3://${R2_BUCKET}/${PREFIX}/runtime.tar.gz" --endpoint-url "$R2_ENDPOINT" --no-progress
+          python - <<'PY' > dist/staging-current.json
+          import hashlib, json, os
+          release_id = "staging-" + os.environ["GITHUB_SHA"]
+          prefix = f"releases/nh-supreme-court/staging/{release_id}"
+          archive = f"dist/releases/{release_id}.tar.gz"
+          print(json.dumps({"application":"nh-supreme-court", "release_id":release_id,
+              "archive":f"{prefix}/runtime.tar.gz", "manifest":f"{prefix}/manifest.json",
+              "archive_sha256":hashlib.sha256(open(archive,"rb").read()).hexdigest()}))
+          PY
+          aws s3 cp dist/staging-current.json "s3://${R2_BUCKET}/releases/nh-supreme-court/staging/current.json" --endpoint-url "$R2_ENDPOINT" --no-progress
 
       - name: Configure deployment SSH key
         env:
@@ -133,6 +164,7 @@ jobs:
             printf 'NHSC_RELEASE_ROOT=%q\n' '/srv/nhsc-staging'
             printf 'NHSC_SERVICE=%q\n' 'nhsc-staging-api.service'
             printf 'NHSC_HEALTH_URL=%q\n' 'http://127.0.0.1:8104/api/health'
+            printf 'NHSC_R2_POINTER=%q\n' 'releases/nh-supreme-court/staging/current.json'
             printf 'AWS_ACCESS_KEY_ID=%q\n' "$AWS_ACCESS_KEY_ID"
             printf 'AWS_SECRET_ACCESS_KEY=%q\n' "$AWS_SECRET_ACCESS_KEY"
             printf 'NHSC_R2_BUCKET=%q\n' "$NHSC_R2_BUCKET"

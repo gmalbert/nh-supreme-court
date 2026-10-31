@@ -1110,7 +1110,7 @@ def _trial_chart(frame: pd.DataFrame, field: str, title: str, minimum: int, *, v
                          legend=dict(orientation="h", yanchor="top", y=-0.25 if vertical else -0.2, xanchor="left", x=0, font=dict(size=11)),
                          xaxis=dict(title="" if vertical else "Number of Cases", automargin=True, **({"tickangle":-32, "tickfont":{"size":11}} if vertical else {})),
                          yaxis=dict(title="Number of Cases" if vertical else "", automargin=True, **({} if vertical else {"autorange":"reversed", "tickfont":{"size":11}})),
-                         margin={"l":10, "r":10, "t":50, "b":150 if vertical else 90}, hovermode="x" if vertical else "y")
+                         margin={"l":10 if vertical else 180, "r":10, "t":50, "b":150 if vertical else 90}, hovermode="x" if vertical else "y")
     return json.loads(figure.to_json())
 
 
@@ -1219,8 +1219,9 @@ def justice_page(justice: str = Query(min_length=1, max_length=80), year_min: in
     charts = {}
     if not authored.empty:
         per_year = authored.groupby("term_year").size().reset_index(name="count")
+        per_year["term_year"] = pd.to_numeric(per_year["term_year"], errors="coerce").astype(int).astype(str)
         figure = px.bar(per_year, x="term_year", y="count", labels={"term_year":"Year", "count":"Opinions Authored"}, title=f"{name} — Opinions Authored Per Year", color_discrete_sequence=["#003057"])
-        figure.update_layout(plot_bgcolor="white"); charts["authored_year"] = json.loads(figure.to_json())
+        figure.update_layout(plot_bgcolor="white", xaxis={"type":"category", "tickformat":"d"}); charts["authored_year"] = json.loads(figure.to_json())
     if cases:
         vote_counts = pd.Series([str(case["vote"]).replace("_", " ").title() for case in cases]).value_counts()
         figure = px.pie(values=vote_counts.values, names=vote_counts.index, color=vote_counts.index, color_discrete_map={key.replace("_", " ").title(): value for key, value in VOTE_COLORS.items()}, title="Vote Distribution")
@@ -1299,8 +1300,10 @@ def analysis_page(year_min: int = 2000, year_max: int = 2100, rsa: str = Query(d
         fig = px.bar(timeline, x="term_year", y="dissents", color_discrete_sequence=["#C62828"], title="Divided Decisions Per Year")
         fig.update_layout(plot_bgcolor="white")
         add_chart("divided_year",fig)
-    times = df[df["days_to_decision"].notna()]
-    mean_days = df["days_to_decision"].mean()
+    decision_days = pd.to_numeric(df["days_to_decision"], errors="coerce")
+    times = df[decision_days.ge(0)].copy()
+    times["days_to_decision"] = decision_days.loc[times.index]
+    mean_days = times["days_to_decision"].mean()
     rsa_df = df[df["rsa_citations"].fillna("").astype(str).str.contains(rsa.strip(), case=False, regex=False)] if rsa.strip() else df.iloc[0:0]
     def cases(frame):
         return records(frame[[col for col in ("case_name", "citation", "case_number", "date_issued", "days_to_decision", "vote_string", "outcome", "topics", "pdf_url") if col in frame]])

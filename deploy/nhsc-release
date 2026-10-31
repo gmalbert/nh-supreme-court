@@ -18,7 +18,7 @@ set +a
 : "${NHSC_R2_BUCKET:?}" "${NHSC_R2_ACCOUNT_ID:?}" "${NHSC_RELEASE_ROOT:?}" \
   "${NHSC_SERVICE:?}" "${NHSC_HEALTH_URL:?}"
 ENDPOINT="https://${NHSC_R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
-POINTER="releases/nh-supreme-court/current.json"
+POINTER="${NHSC_R2_POINTER:-releases/nh-supreme-court/current.json}"
 CURRENT="${NHSC_RELEASE_ROOT}/current"
 PREVIOUS="${NHSC_RELEASE_ROOT}/previous"
 
