@@ -9,7 +9,7 @@ requires feature and visual parity checks and a staging deployment.
 1. Cloudflare Pages serves the React build. Its Pages Function proxies `/api/*`
    and the API documentation routes to an Access-protected API hostname.
 2. A Cloudflare Tunnel on the Oracle Compute instance forwards staging to
-   FastAPI on `127.0.0.1:8104` and production to `127.0.0.1:8000`. Both API
+   FastAPI on `127.0.0.1:8104` and production to `127.0.0.1:8105`. Both API
    services bind only to loopback and are not directly exposed to the internet.
 3. The existing release installer pulls and verifies runtime data from R2,
    switches `/srv/nhsc/current`, and restarts the service. The API reads
@@ -68,7 +68,7 @@ See Cloudflare's [Git integration guide](https://developers.cloudflare.com/pages
   `/opt/nhsc/staging-api/releases/<git-sha>` for staging. Each environment has
   its own current/previous pointers, systemd unit, health check, and data root.
   The staging API uses `nhsc-staging-api.service`, port 8104, and
-  `/srv/nhsc-staging`; production uses `nhsc-api.service`, port 8000, and
+  `/srv/nhsc-staging`; production uses `nhsc-api.service`, port 8105, and
   `/srv/nhsc`. This lets the staging API share the existing `streamlit-server`
   VM without replacing the Streamlit service. The runtime-data workflow remains
   separate and deploys verified R2 releases through `deploy/nhsc-release`.
@@ -99,12 +99,12 @@ See Cloudflare's [Git integration guide](https://developers.cloudflare.com/pages
   routing shape, not real credentials or a hostname. Keep the tunnel
   credentials protected. Permit the tunnel's required outbound connectivity,
   including the documented TCP/UDP port 7844 as applicable, in both OCI network
-  rules and the instance firewall. Do not open port 8000 to the internet.
+  rules and the instance firewall. Do not open port 8105 to the internet.
 - Install the API runtime prerequisites (`python3`, `python3-venv`, `curl`,
   `tar`, and systemd) on the VM. Configure the existing
   `deploy/nhsc-release` installer for production with
   `NHSC_RELEASE_ROOT=/srv/nhsc`, `NHSC_SERVICE=nhsc-api.service`, and
-  `NHSC_HEALTH_URL=http://127.0.0.1:8000/api/health`. For staging, create a
+  `NHSC_HEALTH_URL=http://127.0.0.1:8105/api/health`. For staging, create a
   separate root-readable `/etc/nhsc-release-staging.env` with
   `NHSC_RELEASE_ROOT=/srv/nhsc-staging`,
   `NHSC_SERVICE=nhsc-staging-api.service`, and
