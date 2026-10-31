@@ -41,6 +41,13 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install runtime-release packaging dependency
+        run: python -m pip install --upgrade pip pandas
+
       - name: Check Oracle deployment configuration
         run: |
           test "$DEPLOY_ENABLED" = "true" || { echo "Set NHSC_DEPLOY_ENABLED=true to enable Oracle deployments." >&2; exit 1; }
