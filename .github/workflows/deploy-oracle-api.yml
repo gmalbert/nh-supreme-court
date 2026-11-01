@@ -2,9 +2,14 @@ name: Deploy FastAPI to Oracle Cloud
 
 on:
   push:
-    branches: [codex/local-time-court-snapshot]
+    branches: [main]
     paths:
-      - .github/workflows/deploy-oracle-api.yml
+      - webapp/backend/**
+      - utils/**
+      - requirements-runtime.txt
+      - deploy/nhsc-api-release
+      - deploy/nhsc-api.service
+      - deploy/nhsc-api-staging.service
   workflow_dispatch:
     inputs:
       operation:
@@ -26,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     concurrency:
-      group: oracle-api-${{ inputs.target_environment || 'staging' }}
+      group: oracle-deploy-${{ inputs.target_environment || 'staging' }}
       cancel-in-progress: false
     environment: ${{ inputs.target_environment || 'staging' }}
     env:
