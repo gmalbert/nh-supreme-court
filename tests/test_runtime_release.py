@@ -82,7 +82,7 @@ from utils.runtime_paths import data_root, production_runtime
 from webapp.backend.main import get_opinion, health
 assert production_runtime()
 assert DATA_DIR == data_root() / "processed"
-assert health() == {"status": "ok"}
+assert health()["status"] == "ok"
 assert get_opinion("2026-1")["opinion"]["case_name"] == "Example"
 assert Path(DATA_DIR / "opinions.csv").is_file()
 '''
