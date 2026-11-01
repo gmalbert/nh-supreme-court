@@ -2,7 +2,7 @@ name: Deploy FastAPI to Oracle Cloud
 
 on:
   push:
-    branches: [codex/local-time-court-snapshot]
+    branches: [main]
     paths:
       - .github/workflows/deploy-oracle-api.yml
   workflow_dispatch:
