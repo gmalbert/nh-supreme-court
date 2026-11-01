@@ -4,10 +4,13 @@ on:
   push:
     branches: [main]
     paths:
-      - .github/workflows/deploy-oracle-data.yml
-      - .github/workflows/deploy-oracle-api.yml
+      - scripts/build_dataset.py
+      - scripts/build_runtime_release.py
+      - scripts/build_staging_runtime_release.py
+      - scripts/verify_runtime_release.py
+      - utils/runtime_release.py
+      - data/processed/**
       - deploy/nhsc-release
-      - data/processed/oral_arguments_attorney_stats.json
   workflow_dispatch:
     inputs:
       operation:
@@ -29,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     concurrency:
-      group: oracle-data-${{ inputs.target_environment || 'staging' }}
+      group: oracle-deploy-${{ inputs.target_environment || 'staging' }}
       cancel-in-progress: false
     environment: ${{ inputs.target_environment || 'staging' }}
     env:
