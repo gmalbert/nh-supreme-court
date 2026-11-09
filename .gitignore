@@ -91,6 +91,8 @@ scripts/*
 !scripts/ingest_manifest_gaps.py
 !scripts/build_unmatched_argument_review_queue.py
 !scripts/reconcile_unmatched_dispositions.py
+!scripts/validate-local.ps1
+!scripts/validate_react_ui.py
 !scripts/ingest_legacy_opinion_mirrors.py
 !scripts/parse_opinions.py
 !scripts/scrape_index.py
